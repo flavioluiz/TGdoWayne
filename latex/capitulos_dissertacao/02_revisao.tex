@@ -1,0 +1,463 @@
+\chapter[Revisão bibliográfica]{Revisão bibliográfica e delimitação da contribuição}
+\label{chap:revisao}
+
+\section{Estratégia de revisão e acervo consultado}
+
+Esta revisão organiza os antecedentes necessários para transformar o
+problema apresentado na introdução em uma investigação verificável.
+O corte bibliográfico é 10 de setembro de 2026. A busca foi dirigida por
+quatro eixos: polarizações de campos massivos, resposta de PTA,
+inferência de massa e efeitos de compressão e verossimilhança. Foram
+combinadas buscas por títulos e identificadores com expressões relativas
+a frequência, covariância, priori e gravidade massiva. As referências
+dos trabalhos centrais, suas páginas de código e registros editoriais
+foram examinados para identificar antecedentes que uma busca somente
+por palavras-chave poderia omitir.
+
+Foram obtidos 22 PDFs com versões explícitas do arXiv, mantidos no
+acervo local \path{literature/papers/}. O catálogo
+\path{literature/catalog.json} registra URLs versionadas, datas,
+identificadores, tamanho e SHA-256; o protocolo e a matriz de
+originalidade acompanham o repositório em \path{docs/literatura/}.
+Fixar a versão permite conferir a fonte realmente utilizada, mesmo
+quando o artigo recebe uma revisão posterior. Os arquivos foram
+verificados quanto ao formato PDF, número de páginas e integridade.
+Essas cópias destinam-se
+à leitura local e não são redistribuídas automaticamente no Git; as
+licenças e a disponibilidade das versões editoriais são questões
+distintas do acesso ao preprint.
+
+A consulta não constitui uma revisão sistemática exaustiva. O catálogo
+distingue leitura dirigida de métodos, consulta anterior e triagem de
+resumos. O download não implica leitura integral, assim como a leitura
+de um código não implica reprodução de suas saídas. Artigos publicados,
+preprints e apresentações são identificados separadamente. Um resultado
+negativo da busca significa que determinada análise não foi localizada
+nas fontes examinadas, e não que ela inexista. Essa delimitação é
+especialmente relevante para trabalhos recentes e será retomada antes
+da submissão do manuscrito.
+
+\section{Do TG às teorias de gráviton massivo}
+
+\subsection{Resultado histórico e objeto de reprodução}
+
+O TG de Wayne Leonardo Silva de Paula investiga polarizações em uma
+teoria de gravitação com termo de massa, utilizando a linearização em
+torno de uma geometria de referência \autocite{tg2003}. Seus capítulos
+4--6 articulam equações de propagação, componentes de curvatura e
+comparação entre frequências; o apêndice computacional documenta parte
+do cálculo. O artigo de de Paula, Miranda e Marinho publicou o resultado
+central em 2004 \autocite{depaula2004}. Assim, a obtenção das formas de
+polarização e a observação de maior relevância cinemática em baixas
+frequências são antecedentes, não hipóteses inéditas desta dissertação.
+
+A reprodução terá função de estabelecer convenções e identificar o
+alcance das aproximações. Devem ser explicitadas assinatura da métrica,
+convenção de Riemann, unidades e distinção entre a perturbação métrica e
+seu traço invertido. A comparação entre amplitudes de curvatura também
+depende da normalização escolhida para as amplitudes métricas. Supor
+componentes métricas comparáveis é uma condição de comparação; não
+determina a distribuição de amplitudes emitida por fontes astrofísicas.
+Portanto, a atualização numérica das tabelas históricas é um benchmark
+cinemático, e não uma previsão autossuficiente de detectabilidade.
+
+\subsection{Vínculos, estabilidade e limite de validade}
+
+Visser introduz uma formulação com métrica de fundo que permite um
+termo massivo e modifica as equações de campo
+\autocite{visser1998}. Sua relação com o termo de Fierz--Pauli precisa
+ser examinada no nível dos vínculos, não apenas pela presença de uma
+relação de dispersão semelhante. A literatura sobre teorias não
+Fierz--Pauli evidencia que um modo escalar adicional pode acompanhar
+problemas de sinal cinético; uma contagem de soluções não demonstra
+estabilidade \autocite{park2010}. O modelo histórico será, por isso,
+utilizado como referência de reprodução com seu domínio declarado.
+
+No campo livre de Fierz--Pauli em quatro dimensões, os vínculos removem
+componentes da perturbação e deixam cinco graus de liberdade massivos.
+No espaço de componentes métricas, esses vínculos podem ser escritos,
+para uma onda plana em fundo plano, como transversalidade
+quadridimensional e traço nulo. Isso difere das duas polarizações
+radiativas da relatividade geral e também de seis amplitudes
+independentes de deformação \autocite{liang2021,bernardo2024}.
+
+As construções de dRGT e Hassan--Rosen mostram que a discussão moderna
+de gravidade massiva exige controlar a estrutura não linear e os
+vínculos responsáveis por eliminar o grau de liberdade indesejado
+\autocite{derham2011,hassan2012}. Elas não tornam qualquer termo de massa
+anterior automaticamente consistente. Tampouco permitem concluir que
+uma população de ondas de Fierz--Pauli com amplitudes arbitrárias
+reproduza a emissão de uma teoria completa. A dissertação adotará o
+setor linear como modelo de propagação e resposta, mantendo separadas
+as hipóteses de geração, de população e de observação.
+
+\section{Polarizações geométricas e resposta observável}
+
+\subsection{Curvatura local e propagação não nula}
+
+A matriz elétrica de Riemann, \(E_{ij}=R_{0i0j}\), descreve a
+aceleração relativa local de partículas em queda livre. Sua simetria
+permite decompor a deformação em duas formas tensoriais, duas
+vetoriais e duas escalares. A classificação geométrica identifica
+padrões possíveis; a teoria determina quantos podem variar de maneira
+independente. A classificação E(2), construída no contexto apropriado
+de propagação nula, também não deve ser confundida com uma prova geral
+de contagem de graus de liberdade para ondas massivas.
+
+Hyun, Kim e Lee apresentam amplitudes exatas para polarizações com
+propagação nula e não nula e discutem limitações de aproximações
+anteriores \autocite{hyun2019}. O ponto relevante para o TG não é
+proibir tetradas nulas, mas evitar que relações simplificadas dependentes
+de propagação quase nula sejam utilizadas perto do limiar massivo sem
+verificação. Essa formulação oferece um antecedente direto para o
+cálculo de curvatura e elimina a pretensão de novidade fundada somente
+em substituir uma expressão aproximada por uma exata.
+
+Para a helicidade zero, uma única amplitude física pode aparecer em
+mais de um padrão de deformação. Uma consequência algébrica útil é que,
+se sua resposta for representada como
+\(\mathcal R_0=u\mathcal R_b+v\mathcal R_l\), a correlação entre
+pulsares \(p\) e \(q\) contém termos cruzados:
+\begin{equation}
+ \begin{aligned}
+ \Gamma_{00}^{pq}={}&|u|^2\Gamma_{bb}^{pq}
+                    +|v|^2\Gamma_{ll}^{pq}\\
+                 &+uv^*\Gamma_{bl}^{pq}
+                    +vu^*\Gamma_{lb}^{pq}.
+ \end{aligned}
+ \label{eq:rev-escalar-vinculado}
+\end{equation}
+Os coeficientes dependem das convenções e do modelo. Somar duas
+contribuições escalares estatisticamente independentes descartaria o
+acoplamento e descreveria outra hipótese. As ORFs podem ser complexas;
+a conjugação relaciona \((\Gamma_{bl}^{pq})^*=\Gamma_{lb}^{qp}\),
+permutando também os pulsares. A redução a duas vezes uma parte real
+exige autocorrelação ou condições adicionais, e não será imposta a
+pares com distâncias e fases arbitrárias. A possibilidade de combinar
+respostas escalares vinculadas e estudar seus multipolos já aparece em
+Bernardo e Ng, inclusive em notebooks associados ao PTAfast
+\autocite{bernardo2024}. A extensão escalar desta dissertação deverá
+respeitar esse antecedente.
+
+\subsection{Da frequência dos pulsos às correlações}
+
+A resposta de uma PTA relaciona o deslocamento de frequência dos
+pulsos às perturbações na linha de visada e nos extremos da trajetória.
+Sua integral temporal produz o resíduo de temporização. Para um setor
+\(A\), uma representação esquemática da correlação é
+\begin{equation}
+ \Gamma_{ab}^{A}(f;m_g)=\mathcal N_A
+ \int d^2\hat\Omega\,
+ \mathcal R_a^{A}(f,\hat\Omega,L_a;m_g)
+ \mathcal R_b^{A*}(f,\hat\Omega,L_b;m_g),
+ \label{eq:rev-orf}
+\end{equation}
+com normalização \(\mathcal N_A\) especificada junto à convenção
+espectral. As funções de redução de sobreposição, ou ORFs, não são
+determinadas apenas pela matriz de marés em um ponto.
+
+Liang e Trodden derivam respostas e ORFs massivas nos setores tensorial,
+vetorial e escalar \autocite{liang2021}. A versão consultada é a revisão
+arXiv v3, de 24 de julho de 2026, posterior ao artigo publicado em 2021.
+Sua seção III trata o movimento dos observadores quando há componentes
+temporais da perturbação. A equação (22) dessa versão contém uma
+contribuição proporcional a \(\epsilon_{00}\). Esse detalhe exige
+confrontar fórmulas escalares e vetoriais de implementações anteriores,
+em vez de adotar seus resultados apenas porque produzem curvas
+plausíveis. Na implementação, a frequência medida deverá ser
+reconstruída por uma derivação independente.
+
+Cordes e colaboradores examinam a ORF para velocidades de fase
+arbitrárias, distâncias finitas e autocorrelações, corrigindo um
+resultado analítico no regime de interesse para gravidade massiva
+\autocite{cordes2025}. A comparação requer distinguir velocidade de
+grupo e de fase: o ramo massivo com grupo subluminal tem fase
+superluminal. Incluir termos dos pulsares ou distância finita já possui
+antecedentes. A contribuição de C05 será a implementação verificada
+com normalizações compatíveis, testes de convergência e recuperação do
+limite tensorial pertinente de Hellings--Downs.
+
+\section{Inferência de massa e polarizações em PTAs}
+
+Wu e colaboradores analisam a massa do gráviton com o conjunto de 15
+anos do NANOGrav \autocite{wu2024}. O trabalho distingue a comparação
+entre modelos da informação associada à frequência mínima e ao
+espectro. Seu resultado impede tratar a inferência massiva com
+informação em frequência como uma novidade desta proposta. Também
+mostra por que o suporte do modelo deve acompanhar a interpretação de
+um limite superior: a condição de uma onda viajante pode excluir uma
+região de parâmetros antes que as correlações observadas acrescentem
+informação.
+
+A busca colaborativa de modos transversais adicionais no mesmo
+conjunto não encontrou evidência significativa para uma componente
+escalar transversal \autocite{nanograv2024}. Essa hipótese
+fenomenológica não coincide automaticamente com a helicidade zero de
+Fierz--Pauli. Distinguir os modelos exige verificar vínculos de
+amplitude, resposta instrumental e espectro, além do nome atribuído à
+polarização. Um processo comum correlacionado ou uma curva de melhor
+ajuste não resolve sozinho essas distinções.
+
+Choi e Kahniashvili consideram contribuições massivas tensoriais,
+vetoriais e escalares em correlações binadas de NANOGrav e CPTA
+\autocite{choi2025}. O código inspecionado utiliza uma grade da razão
+de propagação e ajustes de qui-quadrado, com hipóteses fixadas para a
+mistura dos setores. Há rotinas de covariância na construção dos
+produtos, mas os scripts examinados não realizam a comparação
+inferencial completa proposta aqui. Essa observação se limita aos
+arquivos e commits catalogados: não estabelece ausência de outros
+desenvolvimentos. A melhora de ajuste reportada deve ser distinguida de
+uma detecção estatisticamente calibrada.
+
+Wu, Bi e Huang estudam correlações decorrentes da interferência de um
+conjunto finito de fontes no setor tensorial massivo
+\autocite{wu2025}. Esse antecedente motiva variar as realizações do
+fundo, e não somente adicionar ruído a uma curva média. Atkins, Malhotra
+e Tasinato investigam a estrutura espectral associada à dispersão no
+fundo de binárias \autocite{atkins2024}. A triagem desse trabalho alerta
+para outro limite: escolher um espectro independente da massa é uma
+hipótese fenomenológica do simulador, não uma previsão universal sobre
+a geração do fundo. A modelagem detalhada das fontes permanece fora do
+núcleo inicial.
+
+\section{Compressão de dados e aproximações estatísticas}
+
+\subsection{Tradição metodológica e estatísticas suficientes}
+
+A compressão controlada possui antecedentes anteriores aos testes
+recentes de massa. Van Haasteren propôs acelerar análises de PTA por
+uma transformação linear de resíduos que retém informação relevante,
+comparando a recuperação com dados não comprimidos
+\autocite{vanhaasteren2013}. Seu objetivo e seu operador não são iguais
+à compressão espectral das correlações discutida aqui, mas a existência
+dessa linha de pesquisa impede apresentar a redução dimensional
+validada como conceito novo.
+
+É necessário distinguir três operações. Uma transformação pode
+preservar uma estatística suficiente para o modelo; pode descartar
+informação mantendo uma distribuição probabilística corretamente
+especificada; ou pode combinar redução dimensional com uma aproximação
+da distribuição. Somente o segundo contraste, com demais condições
+controladas, mede diretamente o efeito de descartar informação. A
+igualdade de médias e covariâncias não torna equivalentes todas as
+distribuições possíveis.
+
+Sob a convenção \(\mathbf z_k\sim\mathcal{CN}(0,\mathbf C_k)\), com
+coeficientes complexos próprios independentes entre frequências, uma
+referência é
+\begin{equation}
+ \ln\mathcal L_{\mathrm F}
+ =-\sum_k\left[\ln\det\mathbf C_k
+       +\mathbf z_k^\dagger\mathbf C_k^{-1}\mathbf z_k\right]
+       +\mathrm{const.}
+ \label{eq:rev-fourier}
+\end{equation}
+Fatores de normalização dependem da definição espectral e devem ser
+mantidos quando necessários. Gaussianidade dos coeficientes não implica
+gaussianidade exata de produtos quadráticos usados para estimar
+correlações. Além disso, janela finita, cadência irregular e ajuste do
+modelo de temporização podem comprometer a independência de
+frequências pressuposta nessa referência. A validade deve ser
+estabelecida para o experimento realmente simulado.
+
+\subsection{Comparações de verossimilhança já realizadas}
+
+Franciolini e colaboradores comparam Whittle, aproximações gaussianas
+e análises reduzidas de fundos estocásticos
+\autocite{franciolini2025}. Na seção IV.C, páginas 14--16 da versão
+consultada, as equações (61)--(77) tratam espectros coloridos, covariância
+entre pares e compressão em frequência por filtro ótimo. Os exemplos
+inferem amplitudes com formas espectrais conhecidas. A redução ótima
+apresentada assume sinal fraco e condicionamento em estimativas de
+autopoder; não é uma garantia geral de ausência de viés ou subcobertura.
+
+O apêndice A compara distribuições e diagramas P--P com mil realizações
+por sinal fixo, em diferentes regimes. Portanto, comparar frequência
+preservada e compressão, ou medir erros de verossimilhanças por
+simulação, já possui demonstrações concretas. Esses testes não são uma
+campanha de massa dispersiva em PTA, nem equivalem ao sorteio de
+parâmetros da priori. A consequência para a dissertação é incorporar
+esses métodos como controles e concentrar a pergunta na resposta
+massiva aproximada por uma frequência única.
+
+\section{Antecedentes diretamente competitivos de 2026}
+
+\subsection{Correlações comprimidas de MeerKAT}
+
+Zhao e Wang analisam correlações angulares de MeerKAT e apresentam
+previsões para SKA \autocite{zhao2026}. Na seção III, a compressão dos
+produtos disponíveis motiva a adoção de
+\(f_{\mathrm{ref}}=1/T\). A análise utiliza uma verossimilhança
+diagonal diante da indisponibilidade da covariância completa e uma
+priori uniforme de massa limitada pela propagação real nessa
+frequência. Essas escolhas são explicitadas pelos autores e oferecem
+um caso concreto para investigação, em vez de uma aproximação
+artificialmente escolhida apenas para produzir discrepância.
+
+A revisão não demonstra que esse procedimento cause um erro
+observacional relevante. É preciso reconstruir seus pressupostos e
+verificar o efeito no regime de sensibilidade considerado. Tampouco é
+possível afirmar, em geral, que retirar covariâncias torne um limite
+conservador: o resultado depende das direções em que o sinal varia no
+espaço dos estimadores. A comparação desta dissertação usará dados
+sintéticos com covariância conhecida antes de uma aplicação pública
+condicionada à disponibilidade de produtos adequados.
+
+\subsection{Multifrequência e covariância PTA--astrometria}
+
+Han e Zhao já apresentam inferência dispersiva multifrequência com
+covariância completa \autocite{han2026}. Na seção IV.A, páginas 12--13,
+as equações (21)--(27) empregam uma estatística independente dos
+parâmetros, a mesma binagem angular no modelo e nos dados, e o
+log-determinante da covariância variável. Seus parâmetros incluem
+amplitude, índice espectral e massa. Logo, nenhum desses elementos,
+isoladamente, caracteriza originalidade desta dissertação.
+
+O forecast da equação (30) usa a log-verossimilhança média, com termo
+de traço que considera a covariância dependente dos parâmetros. Dez
+mil realizações validam a covariância na página 16; não constituem uma
+medição da cobertura posterior de massa. Os autores também avaliam
+prioris espectrais e covariância fixa versus variável. Sua comparação
+central explora a complementaridade de canais PTA e astrométricos.
+O procedimento é um antecedente próximo, mas a experiência operacional
+descrita não confronta a previsão espectral comprimida com a mesma
+resposta avaliada em \(f_{\mathrm{ref}}\).
+
+\section{Comparação controlada que permanece em aberto}
+
+O recorte será formulado com operadores e espaços de dados explícitos.
+Se \(\mathbf q\) é um vetor real que reúne os estimadores por frequência
+e par angular (com partes real e imaginária separadas quando necessário),
+uma compressão linear fixada antes da inferência produz
+\begin{equation}
+ \mathbf y=\mathbf W\mathbf q,\qquad
+ \boldsymbol\mu_y=\mathbf W\boldsymbol\mu_q,\qquad
+ \boldsymbol\Sigma_y=\mathbf W\boldsymbol\Sigma_q\mathbf W^\mathsf T.
+ \label{eq:rev-compressao-operador}
+\end{equation}
+Essas identidades de momentos não exigem gaussianidade, mas também não
+a estabelecem. Se \(\mathbf W\) depender dos dados, sua construção
+terá de ser repetida na validação. Um operador recalculado com a massa
+verdadeira injetada não representa automaticamente um procedimento
+disponível ao observador.
+
+A comparação terá quatro configurações, das quais duas constituem
+referências complementares:
+\begin{enumerate}
+ \item \textbf{A0, Fourier:} manter a dependência espectral na
+ distribuição dos coeficientes, sob hipóteses verificadas do simulador.
+ \item \textbf{A, estimadores gaussianos:} manter frequências e os mesmos
+ estimadores angulares utilizados por B, adotando uma aproximação
+ gaussiana declarada. Esse controle permite investigar separadamente a
+ mudança de representação probabilística.
+ \item \textbf{B, compressão consistente:} aplicar o operador fixado
+ aos dados e à previsão dispersiva, propagando sua covariância.
+ \item \textbf{C, frequência de referência:} utilizar os mesmos dados
+ e pesos de B, substituindo a dependência espectral da resposta pela
+ avaliação em \(f_{\mathrm{ref}}\).
+\end{enumerate}
+
+Comparar A0 diretamente a B pode misturar perda de informação,
+binagem angular e erro da aproximação gaussiana. O controle adicional
+torna essas mudanças identificáveis, embora sua interpretação ainda
+dependa da calibração probabilística. O contraste B--C deve registrar
+exatamente quais termos mudam: ORF, covariância de sinal e suporte
+espectral. Conservar inadvertidamente dependência massiva na
+covariância enquanto ela é aproximada na média cria uma experiência
+híbrida; se utilizada como ablação, deverá ser apresentada dessa forma.
+
+A previsão comprimida tensorial pode ser escrita como
+\begin{equation}
+ \mu_{ab}=\int df\,W_{ab}(f)S_h(f)\Gamma_{ab}(f;m_g).
+ \label{eq:rev-previsao-integrada}
+\end{equation}
+Retirar \(\Gamma_{ab}(f_{\mathrm{ref}};m_g)\) da integral não é uma
+identidade geral. Uma resposta quase constante na banda efetiva, ou
+pesos muito concentrados, pode tornar a aproximação adequada. Em
+outros regimes, diferenças de curva podem ser mensuráveis. Sua
+importância deverá ser avaliada em relação à incerteza, por exemplo
+por \(\Delta\boldsymbol\mu^\mathsf T\boldsymbol\Sigma^{-1}
+\Delta\boldsymbol\mu\), e não somente por erro relativo perto de
+zeros da ORF. Esta é uma definição do experimento futuro, sem
+antecipar o sinal ou a dimensão de qualquer viés.
+
+\section{Prioris, suporte de propagação e calibração}
+
+A variável \(f_gT=m_gc^2T/h_{\mathrm P}\) organiza a proximidade do
+limiar à banda observada. A condição de propagação em
+\(f_{\min}=1/T\) define o suporte
+\(0\leq m_g\leq h_{\mathrm P}/(c^2T)\) em alguns modelos, mas não
+constitui, sozinha, informação extraída dos dados. Para uma priori
+uniforme nesse intervalo e uma verossimilhança constante em massa, o
+quantil posterior de 90\% é simplesmente
+\begin{equation}
+ m_{90}=0{,}9\,\frac{h_{\mathrm P}}{c^2T}.
+ \label{eq:rev-priori-sem-informacao}
+\end{equation}
+Esse benchmark elementar servirá para reconhecer inferência pouco
+informativa. A proximidade de um limite publicado a esse valor não
+demonstra, por si só, ausência de informação; a posterior inteira e as
+hipóteses do modelo precisam ser examinadas.
+
+Uma frequência abaixo do limiar não deve levar automaticamente à
+exclusão de toda a hipótese massiva. O simulador pode prever ausência
+da contribuição viajante daquele setor nesse canal. A escolha depende
+do modelo de população e da informação observacional disponível.
+Misturas entre componentes massivas e não massivas exigem suportes
+separados. Também serão distinguidas prioris uniformes em massa, em
+massa ao quadrado e logarítmicas com corte inferior declarado. Uma
+priori contínua logarítmica não inclui o ponto de massa exatamente zero;
+a relatividade geral deverá ser tratada como hipótese separada quando
+houver comparação entre modelos.
+
+As campanhas distinguirão cobertura a parâmetros fixos de calibração
+sob a priori. Na primeira, repetem-se observações em pontos escolhidos
+e mede-se a frequência com que um intervalo contém o valor injetado.
+Na segunda, os parâmetros também são sorteados da priori e verifica-se
+a distribuição dos postos ou quantis posteriores. A segunda avalia
+coerência integrada do procedimento; não exige cobertura nominal em
+todo ponto fixo, especialmente junto a fronteiras. As duas fornecem
+informação complementar. Benchmarks sem flutuações auxiliam o
+planejamento, mas não substituem campanhas de falsos positivos,
+distribuição de limites e recuperação de parâmetros.
+
+Finalmente, fatores de Bayes serão definidos dentro de cada espaço de
+dados e família de modelos. Constantes descartadas em uma comparação
+de posteriores podem ser necessárias à evidência. Números absolutos
+obtidos de espaços comprimidos diferentes não serão comparados como
+se fossem automaticamente o mesmo fator de Bayes. Os testes de
+dispersão de GWTC-4 oferecem contexto adicional para o papel das
+escolhas de inferência, mas suas hipóteses de fonte e faixa espectral
+diferem das presentes \autocite{lvk2026}.
+
+\section{Síntese crítica e decisão de continuidade}
+
+A matriz de originalidade separa três classes de trabalho. São
+\emph{reproduções} a auditoria do TG, a reconstrução dos vínculos e os
+benchmarks de ORFs. São \emph{métodos existentes a adaptar} a
+compressão linear, a inferência multifrequência, a propagação de
+covariâncias e a comparação de verossimilhanças. É
+\emph{contribuição candidata} o mapa calibrado de validade da
+substituição da resposta dispersiva por uma frequência de referência,
+com controle dos efeitos concorrentes no mesmo experimento.
+
+A auditoria encontrou antecipação parcial substancial, suficiente para
+estreitar a alegação de originalidade. Não foi localizada, nas
+formulações e códigos examinados, uma comparação operacionalmente
+igual à proposta completa. Esse resultado justifica continuar o
+desenvolvimento; não prova prioridade absoluta. C08 deverá demonstrar
+um domínio quantitativo de validade ou inadequação, com precisão
+numérica e incerteza Monte Carlo documentadas. Uma posterior mais
+estreita, uma curva visualmente distinta ou uma melhoria isolada de
+qui-quadrado não serão critérios suficientes.
+
+Alternativas contemporâneas incluem testes de polarização com LISA e
+redes espaciais \autocite{akama2026,mu2026}, além de observáveis de
+ordem superior, como os explorados por Jiménez Cruz e colaboradores
+\autocite{jimenez2026}. Elas ampliariam requisitos de resposta,
+modelagem e inferência; não serão acrescentadas ao núcleo por mera
+atualidade. A extensão de helicidade zero permanecerá condicionada à
+derivação completa e à validação do setor tensorial. Essa decisão
+preserva uma pergunta específica e compatível com o escopo de mestrado,
+mantendo explícito que os resultados estatísticos e a contribuição
+final ainda precisam ser produzidos.

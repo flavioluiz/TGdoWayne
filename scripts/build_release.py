@@ -71,9 +71,12 @@ def main():
     shutil.copyfile(pdf, dest)
     files = [ROOT / p for p in ("README.md", "Makefile", ".gitignore", "project_status.json", "TG_Wayne.pdf")]
     files.extend(ROOT.glob("Template*.zip"))
-    for directory in ("latex", "scripts", "templates", "implementation_plan", "output/pesquisa", ".github", "docs"):
+    files.extend(p for p in (ROOT / "pyproject.toml", ROOT / "uv.lock", ROOT / "requirements.txt") if p.exists())
+    for directory in ("latex", "scripts", "templates", "implementation_plan", "output/pesquisa", ".github", "docs", "literature",
+                      "src", "tests", "configs", "results", "figures"):
         files.extend(p for p in (ROOT / directory).rglob("*") if p.is_file()
-                     and "__pycache__" not in p.parts and p.name != ".DS_Store")
+                     and "__pycache__" not in p.parts and p.name != ".DS_Store"
+                     and not p.is_relative_to(ROOT / "literature/papers"))
     files.append(release_dir / "RELEASE_NOTES.md")
     manifest = {
         "schema_version": 1, "version": args.version, "stage": status["current_stage"],

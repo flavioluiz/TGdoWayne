@@ -36,11 +36,10 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Cada afirmação de lacuna é confrontada com os trabalhos mais próximos e suas versões consultadas.
-- [ ] A matriz explica o que é reprodução, contribuição candidata e hipótese ainda não testada.
-- [ ] Há uma pergunta específica e viável que não depende apenas de repetir seis polarizações, incluir distância finita ou melhorar chi-quadrado.
-
-- [ ] Os PDFs disponíveis foram baixados, correspondem às versões catalogadas e possuem hashes conferidos; indisponibilidades são registradas explicitamente.
+- [x] Cada afirmação de lacuna é confrontada com os trabalhos mais próximos e suas versões consultadas.
+- [x] A matriz explica o que é reprodução, contribuição candidata e hipótese ainda não testada.
+- [x] Há uma pergunta específica e viável que não depende apenas de repetir seis polarizações, incluir distância finita ou melhorar chi-quadrado.
+- [x] Os PDFs disponíveis foram baixados, correspondem às versões catalogadas e possuem hashes conferidos; indisponibilidades são registradas explicitamente.
 
 ## Validação exigida
 
@@ -62,3 +61,10 @@ Se houver trabalho equivalente, delimitar cedo uma extensão concreta (por exemp
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência de execução
+
+Capítulo de revisão concluído; protocolo, matriz de 17 entradas e auditorias em `docs/literatura/`.
+O catálogo documenta os 22 PDFs baixados e conferidos em `literature/papers/`; `scripts/download_papers.py --verify` passou 22/22.
+A decisão foi continuar com recorte mais estreito e controles A0/A/B/C, incorporados aos planos C05–C10.
+A validação editorial e bibliográfica está registrada em `docs/validacao_v0.3.0.md`.

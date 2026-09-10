@@ -41,6 +41,16 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 Repetir cenários representativos com prioris e ruídos alternativos; verificar estabilidade numérica das métricas e evidências.
 
+## Refinamento após a revisão C03
+
+- Fatorial separado para covariância completa/diagonal e fixa/variável com parâmetros. Quando variável, incluir log-determinante e avaliar sua adequação probabilística. Medir empiricamente a direção do efeito; não pressupor conservadorismo.
+
+- Distinguir informação da forma angular, da distribuição em frequência e do corte cinemático. Variar priori em massa mantendo constantes os demais elementos da análise; mudanças de medida requerem Jacobiano. Prioris logarítmicas possuem corte inferior próprio e não contêm massa zero.
+
+- SBC e distribuições condicionais de limites são recalibradas para prioris e modelos representativos. Resultado Asimov não é apresentado como distribuição de limites obtida por realizações.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Se a massa não for identificável, reportar restrições condicionais e limitação informacional, sem transformar corte da priori em detecção ou limite universal.

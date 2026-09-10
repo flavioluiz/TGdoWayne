@@ -41,6 +41,16 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 Refinar quadratura e precisão; comparar métodos independentes e limites conhecidos. Reportar erro absoluto junto ao relativo e seu impacto frente ao ruído.
 
+## Refinamento após a revisão C03
+
+- Fixar Liang–Trodden arXiv:2108.05344v3 (24/07/2026) e Cordes et al. arXiv:2407.04464v2 como versões dos benchmarks. Registrar equação, normalização, unidades e ramo de velocidade em cada configuração; revisão posterior ao artigo original não é uma nova medição.
+
+- Documentar a resposta geral incluindo termos temporais da métrica e quatro-velocidades dos observadores; verificar sua redução tensorial. Deixar a implementação da população escalar para C10, sem transplantar fórmulas antigas de códigos sem comparação com a revisão consultada.
+
+- A normalização não é refixada em cada massa de modo a absorver inadvertidamente o sinal dispersivo. Autocorrelação e coincidência angular de pulsares distintos são tratadas separadamente.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Se termos oscilatórios impedirem convergência, usar método apropriado e limitar explicitamente o domínio validado antes de prosseguir à inferência.

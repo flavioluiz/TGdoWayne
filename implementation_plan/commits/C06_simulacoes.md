@@ -42,6 +42,16 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 Verificar média, covariância, ausência de sinal, RG tensorial e casos massivos; reproduzir conjuntos a partir de configuração e semente.
 
+## Refinamento após a revisão C03
+
+- Implementar estimadores angulares por frequência e sua compressão, com pesos, tratamento de pares, unidades e covariância documentados. Guardar a estatística anterior à compressão. Fixar os pesos antes de avaliar parâmetros; quando aprendidos dos dados, repetir sua construção em cada realização. Pesos calculados com a verdade injetada são controle idealizado, não análise observacional realizável.
+
+- `docs/contrato_comparacoes.md`, especificando A0/A/B/C; dados de entrada; família probabilística; médias; covariâncias; normalização; suporte espectral; `f_ref`; pesos e variáveis que mudam em cada contraste.
+
+- Mesma binagem angular atua na estatística e na previsão. Propagação dos momentos pelo operador é verificada contra realizações. Gaussianidade de estimadores quadráticos não é presumida pelo fato de o campo gerador ser gaussiano.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Se uma análise completa de resíduos exceder os recursos, adotar estimadores espectrais validados, registrando o alcance dessa simplificação.

@@ -41,6 +41,16 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 Derivação analítica independente, convergência de ORF, injeções e testes de identificabilidade em cenários selecionados.
 
+## Refinamento após a revisão C03
+
+- Derivar a resposta completa de Fierz–Pauli a partir dos vínculos e do desvio de frequência incluindo observadores, e confrontá-la com Liang–Trodden v3 Eq.(22). Confrontar também as combinações escalares de Bernardo–Ng/PTAfast, compatibilizando teoria e amplitude. A presença de um vínculo transversal/longitudinal por si só tem antecedentes.
+
+- Distinguir a amplitude de população da normalização da polarização e da eficiência de excitação pela fonte. Equipartição e desacoplamento no limite sem massa não são impostos silenciosamente. Declarar se a população é fenomenológica ou derivada de modelo de fonte.
+
+- Subconjunto escalar conserva os controles A0/A/B/C de C06–C09, incluindo covariância. Testar o limite tensorial ao zerar a amplitude escalar; não exigir que o modelo completo de Fierz–Pauli se reduza a RG apenas fazendo a massa tender a zero.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Se a extensão não puder ser validada no prazo, documentar o resultado parcial e a redução de escopo; o artigo tensorial permanece o núcleo, e o marco não pode ser descrito como validação escalar concluída.

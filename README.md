@@ -10,13 +10,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**Introdução concluída; revisão bibliográfica em andamento**  
-**Última etapa concluída:** C02 — Introdução da dissertação.  
-**Progresso:** 2 de 13 marcos concluídos.  
-**Próxima etapa:** C03 — Revisão bibliográfica e originalidade.  
+**Revisão bibliográfica concluída; fundamentos teóricos em andamento**  
+**Última etapa concluída:** C03 — Revisão bibliográfica e originalidade.  
+**Progresso:** 3 de 13 marcos concluídos.  
+**Próxima etapa:** C04 — Fundamentos teóricos e reprodução do TG.  
 **Atualização:** 2026-09-10.
 
-**[Baixar o PDF mais recente — v0.2.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.2.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.2.0) · [PDF versionado no repositório](output/pdf/v0.2.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.3.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.3.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.3.0) · [PDF versionado no repositório](output/pdf/v0.3.0/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -27,10 +27,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Plano de 13 commits com critérios de conclusão, PDFs cumulativos, manifesto de integridade e publicação por tag.
 - Introdução da dissertação concluída: motivação, continuidade com o TG, pergunta, hipótese, objetivos, escopo e critérios de avaliação.
 - Documento cumulativo da dissertação criado, com quadro explícito do estado dos capítulos e metadados vinculados à versão.
+- Revisão bibliográfica detalhada, matriz com 17 entradas, inspeção de códigos públicos e segunda leitura independente dos antecedentes metodológicos.
+- Acervo local de 22 artigos (452 páginas), com versões, URLs, licenças indicadas e SHA-256; script para baixar e verificar as cópias.
+- Recorte refinado diante de trabalhos de 2025–2026; planos C05–C10 atualizados para separar compressão, distribuição probabilística, resposta e suporte.
 
 ### O que está em andamento e o que falta
 
-C03 em andamento: atualização da literatura primária, exame dos trabalhos mais próximos e organização de um acervo local de artigos em literature/papers/. A resposta de PTA, as simulações, a inferência e o artigo permanecem planejados; nenhuma campanha estatística foi concluída.
+C04 em andamento: derivação geral das polarizações, reprodução do TG e testes simbólicos. A resposta de PTA tem protótipo em preparação; simulações, inferência, resultados e artigo ainda não foram concluídos.
 
 ## Roadmap
 
@@ -40,8 +43,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 |---|---|---|---|---|
 | C01 | Proposta de pesquisa, plano e repositório | `v0.1.0` | Concluída | [Detalhes](implementation_plan/commits/C01_proposta_e_repositorio.md) |
 | C02 | Introdução da dissertação | `v0.2.0` | Concluída | [Detalhes](implementation_plan/commits/C02_introducao.md) |
-| C03 | Revisão bibliográfica e originalidade | `v0.3.0` | Em andamento | [Detalhes](implementation_plan/commits/C03_revisao_bibliografica.md) |
-| C04 | Fundamentos teóricos e reprodução do TG | `v0.4.0` | Planejada | [Detalhes](implementation_plan/commits/C04_fundamentos_e_tg.md) |
+| C03 | Revisão bibliográfica e originalidade | `v0.3.0` | Concluída | [Detalhes](implementation_plan/commits/C03_revisao_bibliografica.md) |
+| C04 | Fundamentos teóricos e reprodução do TG | `v0.4.0` | Em andamento | [Detalhes](implementation_plan/commits/C04_fundamentos_e_tg.md) |
 | C05 | Resposta de PTA e correlações validadas | `v0.5.0` | Planejada | [Detalhes](implementation_plan/commits/C05_resposta_pta.md) |
 | C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Planejada | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
 | C07 | Inferência de referência e calibração | `v0.7.0` | Planejada | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
@@ -63,8 +66,10 @@ uma frequência de referência preserva a inferência da massa do gráviton, e q
 limites, evidências entre modelos ou a identificação de uma componente escalar?
 
 Serão comparadas três análises das mesmas simulações: frequência explícita, compressão consistente
-e aproximação por frequência de referência. A contribuição candidata exige confirmação na revisão
-inicial. Os resultados centrais do TG já foram publicados; sua reprodução é uma base de validação.
+e aproximação por frequência de referência, com uma referência adicional em coeficientes Fourier.
+A revisão C03 identificou antecedentes próximos e delimitou a contribuição candidata ao mapa de
+validade dessa substituição dispersiva. Consulte a [decisão de recorte](docs/literatura/decisao_recorte.md).
+Os resultados centrais do TG já foram publicados; sua reprodução é uma base de validação.
 
 ## Identificação da proposta
 
@@ -85,6 +90,8 @@ inicial. Os resultados centrais do TG já foram publicados; sua reprodução é 
 | `latex/chapters.json` | Estado editorial e arquivos dos capítulos |
 | `latex/capitulos_proposta/` | Texto da proposta em LaTeX |
 | `latex/referencias/` | Bibliografia em BibLaTeX |
+| `literature/` | Catálogo e acervo local de 22 artigos, com script de download |
+| `docs/literatura/` | Protocolo, matriz de originalidade e auditoria de métodos/códigos |
 | `implementation_plan/` | Plano geral, roadmap e um Markdown por commit |
 | `project_status.json` | Fonte do painel de estado do README |
 | `scripts/` | Checagens, compilação, atualização do README e integridade |
@@ -94,6 +101,14 @@ inicial. Os resultados centrais do TG já foram publicados; sua reprodução é 
 
 `latex/dissertacao.tex` é o documento cumulativo, iniciado em C02. O quadro de capítulos informa as entregas concluídas e planejadas. A proposta inaugural permanece disponível em sua tag e em `latex/proposta.tex`.
 O Markdown em `output/pesquisa/` preserva a análise inicial; a fonte editorial do PDF passa a ser o LaTeX.
+
+## Artigos da revisão
+
+Os **22 PDFs** foram baixados em `literature/papers/` (25,15 MB; 452 páginas), com versões e
+SHA-256 conferidos. O [catálogo do acervo](literature/README.md) apresenta arquivos e fontes.
+Para reconstituir o acervo em outro checkout, execute `python3 scripts/download_papers.py`;
+para conferir as cópias locais, use `python3 scripts/download_papers.py --verify`.
+O Git versiona catálogo e receita; os PDFs de terceiros permanecem no acervo local.
 
 ## Reproduzir a versão atual
 
@@ -126,10 +141,10 @@ inconsistente. As demais seções do README podem ser editadas diretamente.
 ```bash
 python3 scripts/update_readme.py
 python3 scripts/update_document_state.py
-make release VERSION=v0.3.0 DOCUMENT=dissertacao
+make release VERSION=v0.4.0 DOCUMENT=dissertacao
 ```
 
-O exemplo pressupõe que C03 foi concluído e que seus fontes, estado e notas de release já existem.
+O exemplo pressupõe que C04 foi concluído e que seus fontes, estado e notas de release já existem.
 O [procedimento completo](implementation_plan/README.md#procedimento-de-fechamento-de-cada-marco)
 inclui a inspeção visual, o commit, a tag e a conferência do download. O workflow do GitHub anexa o
 **mesmo PDF que está no commit**, sem recompilá-lo. Versões `v0.*` são publicadas como pré-releases;

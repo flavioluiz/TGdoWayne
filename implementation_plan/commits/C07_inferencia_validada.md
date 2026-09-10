@@ -42,6 +42,16 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 SBC, recuperação de injeções, comparação com quadratura e repetição de cadeias/sementes independentes; testes sob ausência de sinal.
 
+## Refinamento após a revisão C03
+
+- Implementar referência A0 e controle A de mesma família probabilística que será usada em B/C. Retê-los separados para medir o efeito da aproximação de verossimilhança antes da campanha de compressão.
+
+- SBC sorteia parâmetros da priori; cobertura em valores fixos e P–P condicionais são experiências distintas, com denominadores e incertezas reportados. Tratar massa zero, limite superior unilateral e censura pelo suporte cinemático. Uma previsão Asimov dimensiona recursos, mas não valida cobertura.
+
+- Campanha possui controles com mesma família de verossimilhança e estimadores antes/depois da compressão. Divergências A0–A não são atribuídas a perda de frequência.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Não atribuir ao efeito da compressão um viés causado por amostragem inadequada, verossimilhança incorreta ou parâmetro não identificável.

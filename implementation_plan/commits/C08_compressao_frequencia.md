@@ -41,6 +41,18 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 Comparações pareadas, repetição de cenários centrais, controles não dispersivos e inspeção dos casos próximos ao limiar.
 
+## Refinamento após a revisão C03
+
+- Executar A/B/C nas mesmas realizações e comparar também com A0 em cenários centrais. Relatar separadamente A0–A, A–B e B–C, segundo o contrato de comparações aprovado em C06.
+
+- Evidências devem preservar normalizações e ser comparadas como fatores de Bayes entre hipóteses no mesmo espaço de dados. Não subtrair evidências absolutas de A e B como se fossem um único fator de Bayes.
+
+- Definir se C troca a ORF somente na média ou também na covariância do sinal. Uma troca somente na média mantendo massa dispersiva na covariância é ablação explicitamente denominada; a análise de frequência única completa deve aplicar a escolha consistentemente. Não alterar ao mesmo tempo o suporte dos canais sem uma experiência própria.
+
+- Mapa de validade quantitativo em massa, espectro e sinal/ruído inclui diferença de limites, calibração, erro Monte Carlo e erro numérico. Posterior mais estreita ou mera diferença entre Gaussian e Whittle não satisfaz a pergunta principal.
+
+O [contrato metodológico da revisão](../../docs/literatura/ajustes_metodologicos.md) define A0/A/B/C. Estes requisitos integram os critérios de conclusão do marco, além dos itens anteriores.
+
 ## Risco e decisão de escopo
 
 Se não houver efeito relevante, o produto será o domínio de validade; não escolher apenas cenários favoráveis à hipótese de viés.
