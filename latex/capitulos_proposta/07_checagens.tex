@@ -1,0 +1,92 @@
+\chapter{Checagens preliminares}\label{checagens-preliminares-juxe1-executadas}
+
+Foi implementado o script \texttt{checagens\_preliminares.py}, que usa
+somente a biblioteca padrão de Python. A saída está em
+\texttt{checagens\_preliminares.json}. Ele verifica cinemática; não
+implementa a análise estatística proposta.
+
+\section{Escala de frequência}\label{escala-de-frequuxeancia}
+
+O estudo LVK de 2026 reporta
+\(m_g\leq1{,}92\times10^{-23}\,\mathrm{eV}/c^2\) a 90\% de credibilidade
+em seu teste de dispersão. Seu modelo pressupõe sinal descrito
+suficientemente bem por polarizações tensoriais; esse valor não é um
+limite universal para toda teoria ou mistura de modos \autocite{lvk2026}.
+
+Usando esse valor apenas como benchmark, obtém-se
+\(f_g=4{,}6425\times10^{-9}\,\mathrm{Hz}\):
+
+{
+\begingroup
+\small
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.4286}}
+  >{\raggedleft\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5714}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Frequência de referência
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+\(x=(f_g/f)^2\)
+\end{minipage} \\ \addlinespace[4pt]
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\(10^{-8}\) Hz, faixa de PTA & \(2{,}1553\times10^{-1}\) \\ \addlinespace[4pt]
+\(10^{-7}\) Hz, faixa de PTA & \(2{,}1553\times10^{-3}\) \\ \addlinespace[4pt]
+\(10^{-4}\) Hz, referência de baixa frequência para LISA &
+\(2{,}1553\times10^{-9}\) \\ \addlinespace[4pt]
+\(100\) Hz, interferometria terrestre & \(2{,}1553\times10^{-21}\) \\ \addlinespace[4pt]
+\(3000\) Hz, referência do TG para detector ressonante &
+\(2{,}3948\times10^{-24}\) \\ \addlinespace[4pt]
+\end{longtable}
+\endgroup
+}
+
+Esses números justificam investigar dispersão local em PTAs. \textbf{Não
+são razões universais de amplitudes adicionais nem previsões de
+detectabilidade.} Tampouco eliminam testes interferométricos de
+dispersão: pequenos efeitos podem acumular fase ao longo da propagação.
+
+Para o benchmark histórico do artigo de 2004,
+\(m_gc^2=4{,}4\times10^{-22}\) eV e \(f=1{,}1\times10^{-7}\) Hz,
+encontra-se \(x=0{,}93547\), \(v_g/c=0{,}2540\) e
+\((c/v_g)^2-1\simeq14{,}50\). Isso mostra que esse exemplo não está em
+regime quase nulo. É uma checagem de consistência de aproximação, não
+uma nova descoberta sobre polarizações.
+
+\section{Vínculos e matriz de
+marés}\label{vuxednculos-e-matriz-de-maruxe9s}
+
+Foram calculados postos de matrizes com aritmética racional exata em
+quatro configurações de frequência e número de onda. Nos três casos
+massivos, os vínculos linearizados considerados deixam seis amplitudes
+no modelo histórico e cinco em Fierz--Pauli, com postos respectivos seis
+e cinco no mapa para \(R_{0i0j}\). No caso nulo testado, o posto
+observável é dois. Foram verificadas a relação escalar acima, simetrias
+de Riemann, Bianchi e anulação da curvatura de uma perturbação de
+coordenadas linear.
+
+Isso valida os benchmarks implementados, não demonstra estabilidade,
+acoplamento a fontes ou recuperação não linear da RG.
+
+\section{Informação a priori no benchmark de
+MeerKAT}\label{informauxe7uxe3o-a-priori-no-benchmark-de-meerkat}
+
+Com \(T=4{,}5\) anos julianos, a escolha \(m_{\max}c^2=h_{\mathrm P}/T\)
+corresponde a \(2{,}9123\times10^{-23}\) eV. Uma priori uniforme entre
+zero e esse máximo já possui percentil de 90\% igual a
+\(2{,}6210\times10^{-23}\) eV, antes de observar dados.
+
+Os limites de 90\% reportados por Zhao e Wang são \(2{,}10\), \(2{,}58\)
+e \(2{,}25\times10^{-23}\,\mathrm{eV}/c^2\) nas três configurações. A
+comparação aritmética, particularmente para a configuração ER, motiva
+medir quanto a posterior realmente acrescenta à priori. \textbf{Essa
+proximidade, por si só, não prova que a inferência seja inválida ou que
+os dados não contenham informação.} Serão necessárias distribuições
+completas e testes controlados \autocite{zhao2026}.
+
+A execução das checagens é descrita no apêndice de reprodutibilidade e no README do
+repositório.

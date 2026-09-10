@@ -1,0 +1,168 @@
+{
+  "status": "checagens exatas e numericas aprovadas",
+  "escopo": "Cinematica linear; sem ajuste de dados, ORFs ou prova de estabilidade.",
+  "fontes": {
+    "limite_LVK_2026": "https://arxiv.org/pdf/2603.19020",
+    "massa_historica_2004": "https://arxiv.org/abs/gr-qc/0409041"
+  },
+  "postos_exatos": [
+    {
+      "w": 1,
+      "k": 0,
+      "modelo": "Visser_linear",
+      "dimensao_amplitudes_com_vinculos": 6,
+      "posto_mapa_de_mares": 6
+    },
+    {
+      "w": 1,
+      "k": 0,
+      "modelo": "Fierz_Pauli",
+      "dimensao_amplitudes_com_vinculos": 5,
+      "posto_mapa_de_mares": 5
+    },
+    {
+      "w": 5,
+      "k": 3,
+      "modelo": "Visser_linear",
+      "dimensao_amplitudes_com_vinculos": 6,
+      "posto_mapa_de_mares": 6
+    },
+    {
+      "w": 5,
+      "k": 3,
+      "modelo": "Fierz_Pauli",
+      "dimensao_amplitudes_com_vinculos": 5,
+      "posto_mapa_de_mares": 5
+    },
+    {
+      "w": 13,
+      "k": 12,
+      "modelo": "Visser_linear",
+      "dimensao_amplitudes_com_vinculos": 6,
+      "posto_mapa_de_mares": 6
+    },
+    {
+      "w": 13,
+      "k": 12,
+      "modelo": "Fierz_Pauli",
+      "dimensao_amplitudes_com_vinculos": 5,
+      "posto_mapa_de_mares": 5
+    },
+    {
+      "w": 1,
+      "k": 1,
+      "modelo": "Visser_linear",
+      "dimensao_amplitudes_com_vinculos": 6,
+      "posto_mapa_de_mares": 2
+    },
+    {
+      "w": 1,
+      "k": 1,
+      "modelo": "Fierz_Pauli",
+      "dimensao_amplitudes_com_vinculos": 5,
+      "posto_mapa_de_mares": 2
+    }
+  ],
+  "relacao_escalar_FP": "p_l/p_b = -(1-k^2/w^2), p_b=R_0x0x+R_0y0y, p_l=R_0z0z",
+  "escalas": [
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "1e-9",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "21.55317156804426658833681914690069150689581160421544477451701407113214",
+      "propagacao": "evanescente"
+    },
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "1e-8",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "0.2155317156804426658833681914690069150689581160421544477451701407113214",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.8857021419865469277122120945356213432429166725539197964936437552466715",
+      "erro_relativo_projecao_tensorial_quase_nula": "0.1110318579268372026147360005994410571457811927335787136894706575544946",
+      "epsilon_quase_nula": "0.2747487948061449906410225280852213459993729653859462613269120633481847"
+    },
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "1e-7",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "0.002155317156804426658833681914690069150689581160421544477451701407113214",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.9989217601209794315255132169876215278486186468927988874183040466331626",
+      "erro_relativo_projecao_tensorial_quase_nula": "0.001077949228711390901951811984861753363363071843705942410210902035197007",
+      "epsilon_quase_nula": "0.002159972582770298653055787014072202546946147239343676793227334642413666"
+    },
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "1e-4",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "2.155317156804426658833681914690069150689581160421544477451701407113214E-9",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.9999999989223414210171126641554510314914865967191604869246945731003217",
+      "erro_relativo_projecao_tensorial_quase_nula": "1.077658578692550332630694962926773989312815046643038832812764524017591E-9",
+      "epsilon_quase_nula": "2.155317161449818715261492607695016235967333128560866264404689056198658E-9"
+    },
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "100",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "2.155317156804426658833681914690069150689581160421544477451701407113214E-21",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.9999999999999999999989223414215977866705825783686491634849684959078444",
+      "erro_relativo_projecao_tensorial_quase_nula": "1.077658578402213329417131294347935545188147336183196491907065042284587E-21",
+      "epsilon_quase_nula": "2.155317156804426658838327306736484668183294262126921389446311675089673E-21"
+    },
+    {
+      "mg_c2_eV": "1.92e-23",
+      "f_Hz": "3000",
+      "fg_Hz": "4.642539344803042871497519536523470099392171391363853882530959923507601E-9",
+      "x_fg_sobre_f_ao_quadrado": "2.394796840893807398704091016322299056321756844912827197168557119014683E-24",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.9999999999999999999999988026015795530963006479537749573618274691379814",
+      "erro_relativo_projecao_tensorial_quase_nula": "1.197398420446903699352045866601893850345870220534729538729999145832985E-24",
+      "epsilon_quase_nula": "2.394796840893807398704096751374208211281625614172749381597289648621181E-24"
+    },
+    {
+      "mg_c2_eV": "4.4e-22",
+      "f_Hz": "1.1e-7",
+      "fg_Hz": "1.063915266517363991384848227119961897777372610520883181413344982470492E-7",
+      "x_fg_sobre_f_ao_quadrado": "0.9354675159741435151187855532508980688756862675440731238939676246151104",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.2540324467973657983937654765190405641143029397884810679984928405872878",
+      "erro_relativo_projecao_tensorial_quase_nula": "0.6068506555948529795828136500532042351617700969917777469742454858601336",
+      "epsilon_quase_nula": "14.49607170861927546672263203610368129055250699115763277809880442403351"
+    },
+    {
+      "mg_c2_eV": "3e-24",
+      "f_Hz": "2e-9",
+      "fg_Hz": "7.253967726254754486714874275817922030300267799006021691454624880480627E-10",
+      "x_fg_sobre_f_ao_quadrado": "0.1315501194338639318135792184259075409356433813733852830475891972114999",
+      "propagacao": "viajante",
+      "vg_sobre_c": "0.9319065836048890518571055187607277421870342921779439915842834092805731",
+      "erro_relativo_projecao_tensorial_quase_nula": "0.06693423805602145702484204522611301414039369925437432496975559466258842",
+      "epsilon_quase_nula": "0.1514769273134189157391558193920287074719637319481023734796220384199380"
+    },
+    {
+      "mg_c2_eV": "0",
+      "f_Hz": "1e-8",
+      "fg_Hz": "0E+84",
+      "x_fg_sobre_f_ao_quadrado": "0",
+      "propagacao": "viajante",
+      "vg_sobre_c": "1",
+      "erro_relativo_projecao_tensorial_quase_nula": "0",
+      "epsilon_quase_nula": "0"
+    }
+  ],
+  "comparacao_prior_MeerKAT_2026": {
+    "fonte": "https://arxiv.org/html/2607.14790v1",
+    "hipotese": "T=4.5 anos julianos; prior uniforme entre 0 e h/(T*c^2)",
+    "limite_superior_prior_mg_c2_eV": "2.9122533588836910891422744612989825168672813521016E-23",
+    "percentil90_apenas_prior_mg_c2_eV": "2.6210280229953219802280470151690842651805532168914E-23",
+    "limites90_reportados_eV": {
+      "DATA": "2.10e-23",
+      "ER": "2.58e-23",
+      "ALT": "2.25e-23"
+    },
+    "ressalva": "Comparacao aritmetica; nao substitui reanalise dos dados ou medida de informacao."
+  }
+}

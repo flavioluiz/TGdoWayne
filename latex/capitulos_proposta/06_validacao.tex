@@ -1,0 +1,57 @@
+\chapter{Plano de validação}\label{plano-de-validauxe7uxe3o-e-crituxe9rios-de-sucesso}
+
+{
+\begingroup
+\small
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.19}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.385}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 4\tabcolsep) * \real{0.425}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nível
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Verificação
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Critério de planejamento
+\end{minipage} \\ \addlinespace[4pt]
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Matemático & Simetrias de Riemann, identidade de Bianchi, vínculos e
+relação escalar & Igualdades simbólicas ou aritmética exata em
+benchmarks. \\ \addlinespace[4pt]
+Físico & Limites tensorial sem massa, quase nulo e próximo ao limiar &
+Recuperar resultados pertinentes, explicitando setores e convenções. \\ \addlinespace[4pt]
+Numérico & Integração angular e truncamentos espectrais & Tolerância
+inicial de \(10^{-3}\) nas ORFs, com erro absoluto perto de zeros;
+ajustar para ficar abaixo do erro estatístico relevante. \\ \addlinespace[4pt]
+Inferência & Recuperar massa e amplitudes injetadas & Medir viés
+normalizado, largura dos intervalos e estabilidade entre amostradores ou
+execuções. \\ \addlinespace[4pt]
+Calibração & Injeções com parâmetros sorteados da priori e testes em
+pontos fixos & Verificar calibração sob a priori; medir separadamente
+cobertura em parâmetros fixos, sem exigir que cobertura bayesiana seja
+nominal em todo ponto. \\ \addlinespace[4pt]
+Detecção & Realizações de RG com ruído e fundos alternativos & Calibrar
+a distribuição do fator de Bayes ou estatística escolhida sob a hipótese
+nula. \\ \addlinespace[4pt]
+Informação & Comparar priori e posterior & Medir contração, divergência
+de informação quando apropriada e dependência dos limites com o suporte
+da priori. \\ \addlinespace[4pt]
+Robustez & Mudar espectro, ruído, distâncias e covariâncias & Apresentar
+quais conclusões resistem e onde a aproximação falha. \\
+\end{longtable}
+\endgroup
+}
+
+Para cobertura, um conjunto de 500 realizações teria incerteza binomial
+aproximada de 1,3 ponto percentual em torno de 90\%. Esse número é um
+alvo de planejamento para cenários selecionados, não uma promessa de
+executar toda a grade com 500 repetições. Taxas de falso positivo da
+ordem de 1\% requerem amostras maiores ou intervalos de incerteza
+explicitamente largos.
+

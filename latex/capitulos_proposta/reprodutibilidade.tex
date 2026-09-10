@@ -1,0 +1,33 @@
+\chapter{Reprodutibilidade e acompanhamento}
+Esta versão é a proposta de pesquisa, e não uma dissertação concluída.
+O repositório público \url{https://github.com/flavioluiz/TGdoWayne} reúne o TG
+original, o template fornecido, as fontes deste documento, o plano de execução
+e os resultados das checagens preliminares.
+
+O arquivo \texttt{README.md} registra a etapa atual, as entregas concluídas,
+a próxima etapa e o endereço do PDF da versão mais recente. O plano geral
+está em \path{implementation_plan/README.md}; cada arquivo na subpasta
+\texttt{commits} detalha um marco. A sequência prevê 13 commits e 13 versões:
+proposta; introdução; revisão; fundamentos; resposta de PTA; simulações;
+inferência; compressão; robustez; helicidade zero; aplicação ou extensão
+simulada; discussão e artigo; auditoria final.
+
+Cada commit de marco deverá conter as fontes, o PDF cumulativo, as notas da
+versão e um manifesto de integridade. A tag identifica o mesmo commit que
+contém o PDF; a publicação no GitHub anexa esse arquivo sem recompilá-lo.
+As versões a partir de C02 constituirão a dissertação em desenvolvimento.
+Capítulos não concluídos serão identificados como planejados, sem resultados
+fictícios. Correções após publicação receberão nova versão e novo PDF.
+
+A etapa C01 contém um script em Python que usa apenas a biblioteca padrão.
+A partir da raiz do repositório, os comandos são:
+\begin{quote}\small\ttfamily
+python3 scripts/checagens\_preliminares.py\par
+python3 scripts/build\_release.py --build-only\par
+python3 scripts/verify\_release.py v0.1.0
+\end{quote}
+O segundo comando requer pdfLaTeX, latexmk e Biber, além dos pacotes descritos
+no README. O arquivo JSON com as checagens contém aritmética racional para os
+vínculos e os testes de curvatura, e aritmética decimal de alta precisão para
+as escalas físicas. Nenhum dado observacional foi ajustado nesta versão.
+

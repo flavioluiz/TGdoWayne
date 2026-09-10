@@ -1,0 +1,70 @@
+% Compilar pela raiz: python3 scripts/build_release.py --version v0.1.0 --document proposta
+% Não usar \maketitle: o modelo inclui páginas de aprovação de dissertação concluída.
+\documentclass[msc]{ita}
+\input{configuracao}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\centering
+{\large Proposta de pesquisa de mestrado\par}
+\vspace{0.5cm}
+{\normalsize Programa de Física\par}
+\vspace{0.5cm}
+{\large Gráviton de Souza\par}
+{\small Pseudônimo provisório\par}
+\vspace{2.2cm}
+{\LARGE\bfseries Massa do gráviton e polarizações de ondas gravitacionais em PTAs\par}
+\vspace{0.8cm}
+{\Large Efeitos da compressão em frequência e validação estatística\par}
+\vspace{1.8cm}
+\begin{minipage}{0.85\textwidth}
+\normalsize
+Proposta baseada no trabalho de graduação de Wayne Leonardo Silva de Paula,
+\textit{Estados de polarização de ondas gravitacionais com gráviton massivo}
+(ITA, 2003).\par
+\medskip
+Duração prevista: 24 meses.\par
+Versão inaugural: v0.1.0, etapa C01.\par
+\medskip
+Orientação (identificação provisória): Autor do TG do Wayne.\par
+\medskip
+Documento preparado com o template de mestrado do Instituto Tecnológico de
+Aeronáutica fornecido para este projeto. O pseudônimo e a identificação de
+orientação serão substituídos pelos dados acadêmicos definitivos.
+\end{minipage}
+\vfill
+{\large 10 de setembro de 2026\par}
+\end{titlepage}
+\frontmatter
+\hypersetup{pageanchor=true}
+\chapter*{Resumo}
+\addcontentsline{toc}{chapter}{Resumo}
+\input{capitulos_proposta/resumo}
+\par\medskip
+\noindent\textbf{Palavras-chave:} ondas gravitacionais; gráviton massivo;
+polarizações; temporização de pulsares; inferência estatística.
+\par\medskip
+\noindent\textbf{Estado científico desta versão.} A busca bibliográfica é dirigida,
+com corte em 10 de setembro de 2026. O ineditismo do recorte ainda deverá ser
+confirmado. Apenas as checagens cinemáticas do capítulo 7 foram executadas;
+os demais experimentos e os resultados da dissertação são propostos.
+\begingroup
+\singlespacing
+\setlength{\parskip}{0pt}
+\tableofcontents
+\endgroup
+\mainmatter
+\pagenumbering{arabic}
+\input{capitulos_proposta/01_base_historica}
+\input{capitulos_proposta/02_literatura_recente}
+\input{capitulos_proposta/03_alternativas}
+\input{capitulos_proposta/04_objetivos}
+\input{capitulos_proposta/05_metodologia}
+\input{capitulos_proposta/06_validacao}
+\input{capitulos_proposta/07_checagens}
+\input{capitulos_proposta/08_cronograma}
+\input{capitulos_proposta/09_contribuicao}
+\appendix
+\input{capitulos_proposta/reprodutibilidade}
+\printbibliography[heading=bibintoc,title={Referências}]
+\end{document}

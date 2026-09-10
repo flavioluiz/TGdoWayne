@@ -1,0 +1,40 @@
+name: Publicar PDF do marco
+on:
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Conferir checagens, fontes e PDF versionado
+        env:
+          RELEASE_VERSION: ${{ github.ref_name }}
+        run: |
+          python3 scripts/checagens_preliminares.py
+          python3 scripts/verify_release.py "$RELEASE_VERSION"
+      - name: Publicar o mesmo PDF no GitHub Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_VERSION: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          version = os.environ['RELEASE_VERSION']
+          directory = Path('releases') / version
+          manifest = json.loads((directory / 'manifest.json').read_text())
+          command = ['gh', 'release', 'create', version, '--verify-tag',
+                     '--title', version + ' — ' + manifest['stage'] + ' — ' + manifest['document'],
+                     '--notes-file', str(directory / 'RELEASE_NOTES.md'),
+                     manifest['pdf'], str(directory / 'manifest.json')]
+          if version.startswith('v0.'):
+              command.append('--prerelease')
+          subprocess.run(command, check=True)
+          PY

@@ -1,0 +1,153 @@
+\chapter{Formulação e metodologia}\label{formulauxe7uxe3o-e-implementauxe7uxe3o}
+
+\section{Modelo de propagação}\label{modelo-de-propagauxe7uxe3o}
+
+Adotar explicitamente
+
+\[\omega^2=c^2k^2+\left(\frac{m_gc^2}{\hbar}\right)^2,\qquad
+f_g=\frac{m_gc^2}{h_{\mathrm P}},\qquad
+\beta(f)=\frac{ck}{\omega}=\sqrt{1-\left(\frac{f_g}{f}\right)^2}.\]
+
+Aqui \(h_{\mathrm P}\) é a constante de Planck. A velocidade de grupo é
+\(v_g=c\beta\); a velocidade de fase é \(v_{\mathrm{ph}}=c/\beta\). Essa
+distinção precisa ser preservada no cálculo dos fatores de resposta.
+Para \(f<f_g\), o modo livre não é uma onda viajante com número de onda
+real.
+
+A etapa inicial trabalha no regime linear sobre fundo plano, apropriado
+para estudar a resposta local e a propagação na linha de visada
+Terra--pulsar. A geração cosmológica e a distribuição das amplitudes
+serão hipóteses especificadas, não previsões completas de dRGT.
+Fierz--Pauli será utilizado como referência linear de um campo massivo
+saudável. Isso não equivale a resolver a emissão por binárias em uma
+teoria não linear nem o mecanismo de Vainshtein.
+
+\section{Polarizações e
+vínculos}\label{polarizauxe7uxf5es-e-vuxednculos}
+
+Calcular diretamente \(E_{ij}=R_{0i0j}\) a partir de \(h_{\mu\nu}\).
+Para Fierz--Pauli, impor os vínculos de transversalidade
+quadridimensional e traço nulo. Para a helicidade zero, na convenção
+
+\[p_b=R_{0x0x}+R_{0y0y},\qquad p_l=R_{0z0z},\]
+
+o benchmark linear de onda plana resulta em
+
+\[\frac{p_l}{p_b}=-\left(\frac{f_g}{f}\right)^2.\]
+
+Essa relação será uma verificação da implementação. Ela não é a fórmula
+de um escalar genérico em qualquer teoria. Tampouco implica que todas as
+amplitudes adicionais sejam universalmente suprimidas por \(m_g^2/f^2\).
+A intensidade excitada depende do modelo e da fonte.
+
+\section{Resposta e correlações de
+PTA}\label{resposta-e-correlauxe7uxf5es-de-pta}
+
+Derivar a variação de frequência dos pulsos e integrá-la para obter os
+resíduos de temporização. A matriz de marés local, isoladamente, não
+constitui a resposta de uma PTA. Para cada polarização independente
+\(A\), construir \(\mathcal R_a^A(f,\hat\Omega,L_a;m_g)\), incluindo os
+termos da Terra e do pulsar, e então
+
+\[\Gamma_{ab}^{A}(f)=\mathcal N_A\int d^2\hat\Omega\,
+\mathcal R_a^{A}(f,\hat\Omega)\mathcal R_b^{A*}(f,\hat\Omega).\]
+
+Fixar e documentar \(\mathcal N_A\), as convenções espectrais e o
+tratamento das autocorrelações. Comparar integração angular direta com
+um segundo método ou limite analítico. Usar as expressões de
+\textcite{liang2021} e as correções aplicáveis de \textcite{cordes2025}
+como benchmarks, após compatibilizar normalizações.
+
+O limite de Hellings--Downs será exigido no setor tensorial apropriado.
+Não se deve exigir que o modelo massivo completo com amplitudes
+escalares arbitrárias se torne RG apenas tomando \(m_g\to0\); o limite
+com fontes e o desacoplamento dos setores adicionais exigem tratamento
+próprio.
+
+\section{Comparação central}\label{comparauxe7uxe3o-central}
+
+Construir, a partir das mesmas realizações simuladas:
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Análise com frequência explícita:} modelo de covariância ou
+  espectros cruzados dependentes de \(f\), usando uma mesma massa em
+  todas as frequências.
+\item
+  \textbf{Análise comprimida consistente:} aplicar ao modelo os mesmos
+  pesos, janela e compressão utilizados nos estimadores simulados.
+\item
+  \textbf{Análise com frequência de referência:} substituir a
+  dependência relevante por uma avaliação em \(f_{\mathrm{ref}}\),
+  reproduzindo uma aproximação controlada.
+\end{itemize}
+
+Esquematicamente, a previsão comprimida correta tem a forma
+
+\[\langle\widehat C_{ab}\rangle=\int df\,W_{ab}(f)S_h(f)\Gamma_{ab}(f;m_g),\]
+
+em que \(W_{ab}\) inclui o estimador e a observação. Em geral, isso não
+coincide com retirar \(\Gamma_{ab}(f_{\mathrm{ref}};m_g)\) da integral.
+Não existe uma frequência efetiva universal independente do espectro e
+dos pesos. A extensão com várias polarizações deve somar espectros e
+respostas dos setores independentes.
+
+Essa comparação separa a perda causada pela compressão da perda causada
+por aproximar incorretamente o modelo comprimido. Também permite avaliar
+covariância completa e diagonal sem pressupor que ignorar correlações
+seja sempre conservador.
+
+Será útil medir o erro do modelo em unidades do ruído, por exemplo
+\(\Delta\mathbf C^\mathsf T\Sigma^{-1}\Delta\mathbf C\), além de erros
+relativos nas ORFs. Isso aproxima a discussão da consequência
+observacional: uma discrepância matemática grande em um canal pouco
+sensível pode ter efeito estatístico pequeno.
+
+\section{Experimentos numéricos e
+inferência}\label{experimentos-numuxe9ricos-e-inferuxeancia}
+
+Começar com PTAs sintéticas de 10--30 pulsares, duração de 4,5 e 15 anos
+e uma seleção controlada de geometrias, cadências e ruído. Esses
+tamanhos são escolhas de planejamento e poderão ser ajustados após medir
+o custo computacional. Comparar espectro em lei de potência com um
+espectro de baixa frequência modificado; acrescentar sinais comuns
+monopolar e dipolar como testes de robustez.
+
+Explorar massas pela razão adimensional \(f_gT\) e pela posição do
+limiar nos canais observados. Se um canal estiver abaixo de \(f_g\),
+modelar a ausência da contribuição viajante daquele setor. Não excluir
+automaticamente todo o modelo por causa de um canal sem sinal
+confirmado. Uma mistura entre setores massivos e não massivos exige
+suporte espectral separado.
+
+Para massa positiva, comparar escolhas a priori uniformes em \(m_g\) e
+em \(m_g^2\), e uma escolha logarítmica com corte inferior explicitado.
+Incluir RG como hipótese separada: uma priori contínua em \(\log m_g\)
+não contém o ponto \(m_g=0\).
+
+As amplitudes dos setores tensorial e escalar serão parâmetros de
+população especificados. As deformações transversal e longitudinal do
+mesmo modo escalar deverão permanecer correlacionadas. Os modos
+vetoriais e a análise integral de uma segunda PTA serão extensões
+condicionais ao progresso.
+
+\clearpage
+\section{Dados e ferramentas}\label{dados-e-ferramentas}
+
+Usar Python com álgebra simbólica e rotinas numéricas verificáveis. Para
+uma eventual análise completa de resíduos, aproveitar o
+ENTERPRISE, mantido pelo NANOGrav \autocite{enterprise}, em vez de reconstruir toda a infraestrutura de
+temporização. Fixar versões e sementes aleatórias.
+
+Os dados públicos do NANOGrav \autocite{nanogravdata} e os produtos documentados pelos artigos
+servirão como referências. Antes da etapa observacional, verificar quais
+produtos contêm informação em frequência e covariâncias. Correlações
+angulares já comprimidas não permitem recuperar informação espectral
+perdida.
+
+O artigo principal poderá ser concluído com simulações e benchmarks. A
+aplicação a dados públicos será realizada se houver produtos adequados e
+tempo, declarando as limitações de qualquer compressão ou covariância
+indisponível. Uma análise completa dos resíduos não será substituída por
+um ajuste de pontos de uma figura.
