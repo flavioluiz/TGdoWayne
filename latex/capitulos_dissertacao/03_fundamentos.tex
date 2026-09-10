@@ -1,0 +1,625 @@
+\chapter[Fundamentos teóricos]{Fundamentos teóricos e reprodução do TG}
+\label{chap:fundamentos}
+
+Este capítulo reconstrói a cinemática linear que sustenta a pesquisa.
+O objetivo é obter a curvatura sem pressupor propagação nula, resolver
+os vínculos dos modelos históricos e de Fierz--Pauli e estabelecer o
+domínio das comparações com o TG \autocite{tg2003}. A contagem de
+amplitudes será demonstrada por parametrizações e menores não nulos,
+em vez de inferida apenas de exemplos numéricos. A reprodução das
+expressões publicadas será distinguida de sua interpretação como
+deformação observável e de sua utilização futura em uma PTA.
+
+\section{Convenções e domínio da derivação}
+
+Adota-se \(\eta_{\mu\nu}=\operatorname{diag}(1,-1,-1,-1)\), com
+índices gregos de 0 a 3 e espaciais de 1 a 3. Em unidades \(c=1\),
+uma perturbação plana é escrita como
+\begin{equation}
+ g_{\mu\nu}=\eta_{\mu\nu}
+       +\operatorname{Re}\!\left[H_{\mu\nu}e^{-i\omega t+ikz}\right],
+ \qquad q_\mu=(-\omega,0,0,k).
+ \label{eq:fund-onda}
+\end{equation}
+As amplitudes \(H_{\mu\nu}\) são covariantes e podem ser complexas.
+Para a métrica real, a frequência negativa contém o conjugado da
+positiva. A dimensão do espaço de amplitudes em uma frequência não
+deve ser duplicada por contabilizar artificialmente seno e cosseno como
+novos estados de polarização. As identidades polinomiais verificadas
+para amplitudes reais estendem-se por linearidade complexa.
+
+A subida dos índices dá \(q^\mu=(-\omega,0,0,-k)\),
+\(H^{0i}=-H_{0i}\), \(H^{00}=H_{00}\) e \(H^{ij}=H_{ij}\).
+O traço e a reversão do traço são
+\begin{equation}
+ \begin{aligned}
+ H&=H_{00}-H_{11}-H_{22}-H_{33},\\
+ \bar H_{\mu\nu}&=H_{\mu\nu}-\tfrac12\eta_{\mu\nu}H,
+ &\bar H&=-H.
+ \end{aligned}
+ \label{eq:fund-traco}
+\end{equation}
+Em quatro dimensões, a transformação inversa tem a mesma forma:
+\(H_{\mu\nu}=\bar H_{\mu\nu}
+-\eta_{\mu\nu}\bar H/2\). Essa distinção será essencial para
+relacionar a notação do capítulo 4 do TG à entrada de seu apêndice.
+
+Definem-se
+\begin{equation}
+ \Delta=\omega^2-k^2,\qquad \Sigma=\omega^2+k^2.
+ \label{eq:fund-delta-sigma}
+\end{equation}
+As parametrizações serão demonstradas para \(\omega\ne0\) e
+\(k\) real; nesse domínio, \(\Sigma>0\). Ondas massivas viajantes
+pertencem a \(\Delta>0\). O caso nulo \(\Delta=0\) será avaliado
+diretamente, e o limiar \(k=0\) não será removido por divisões
+intermediárias. Para interpretar velocidades no sentido \(+z\),
+escolhem-se \(\omega>0\) e \(k\geq0\). As provas algébricas de
+posto também abrangem os demais sinais permitidos.
+
+Em coordenadas \(x^0=ct\), o parâmetro temporal do cálculo é
+\(\omega_{\mathrm{SI}}/c\). A dispersão operacional empregada no
+projeto e suas escalas são
+\begin{equation}
+ \begin{aligned}
+ \omega_{\mathrm{SI}}^2&=c^2k^2+
+                  \left(\frac{m_gc^2}{\hbar}\right)^2,\\
+ f_g&=\frac{m_gc^2}{h_{\mathrm P}},
+ &\beta&=\frac{ck}{\omega_{\mathrm{SI}}}
+        =\sqrt{1-(f_g/f)^2}.
+ \end{aligned}
+ \label{eq:fund-dispersao-si}
+\end{equation}
+A velocidade de grupo é \(c\beta\); a de fase, \(c/\beta\).
+No limiar, a onda é espacialmente homogênea e não possui direção de
+propagação privilegiada. Abaixo dele, \(k\) imaginário não descreve
+uma onda viajante homogênea. A continuação algébrica de expressões não
+basta para incluí-la na população de ondas viajantes de uma ORF.
+
+\section{Curvatura elétrica sem hipótese de nulidade}
+
+Adota-se a convenção
+\begin{equation}
+ R^\alpha{}_{\beta\gamma\delta}
+ =\partial_\gamma\Gamma^\alpha{}_{\delta\beta}
+  -\partial_\delta\Gamma^\alpha{}_{\gamma\beta}+O(H^2).
+ \label{eq:fund-riemann-convencao}
+\end{equation}
+O símbolo de Christoffel linearizado,
+\begin{equation}
+ \Gamma^\alpha{}_{\mu\nu}
+ =\tfrac12\eta^{\alpha\rho}
+  (H_{\rho\mu,\nu}+H_{\rho\nu,\mu}-H_{\mu\nu,\rho}),
+ \label{eq:fund-christoffel}
+\end{equation}
+fornece, com o fator de fase subentendido,
+\begin{equation}
+ \begin{aligned}
+ R_{\alpha\beta\gamma\delta}^{(1)}
+ =\tfrac12\big(&H_{\alpha\delta,\beta\gamma}
+             +H_{\beta\gamma,\alpha\delta}\\
+             &-H_{\alpha\gamma,\beta\delta}
+             -H_{\beta\delta,\alpha\gamma}\big).
+ \end{aligned}
+ \label{eq:fund-riemann-linear}
+\end{equation}
+Cada derivada segunda da onda plana introduz \(-q_\mu q_\nu\).
+Logo, as seis componentes independentes de
+\(E_{ij}=R_{0i0j}\) são
+\begin{equation}
+ \begin{aligned}
+ E_{11}&=\tfrac12\omega^2H_{11},
+ &E_{22}&=\tfrac12\omega^2H_{22},\\
+ E_{12}&=\tfrac12\omega^2H_{12},
+ &E_{13}&=\tfrac12(\omega^2H_{13}+\omega kH_{01}),\\
+ E_{23}&=\tfrac12(\omega^2H_{23}+\omega kH_{02}),\\
+ E_{33}&=\tfrac12(\omega^2H_{33}+2\omega kH_{03}+k^2H_{00}).
+ \end{aligned}
+ \label{eq:fund-eletrica-geral}
+\end{equation}
+Não foram utilizados equação de campo, relação de dispersão, escolha
+de gauge ou tetrada nula. Portanto, a existência de seis coordenadas
+geométricas nessa matriz ainda não determina o número de amplitudes
+físicas independentes.
+
+O sinal de \eqref{eq:fund-riemann-linear} é oposto à saída do apêndice
+Maple do TG. Na página impressa 44, este apresenta
+\(R_{0x0x}^{\mathrm{TG}}=-\omega^2H_{11}/2\), enquanto
+\eqref{eq:fund-eletrica-geral} fornece o sinal positivo. Com a
+assinatura e a convenção aqui adotadas, a aceleração relativa tem
+componentes espaciais euclidianas
+\(a^i=c^2E_{ij}\xi^j\). Se uma matriz de força for definida por
+\(a^i=-c^2S_{ij}\xi^j\), então \(S_{ij}=-E_{ij}\). Postos e
+quocientes considerados adiante são invariantes sob essa inversão
+global, mas as expressões de desvio geodésico não podem ser combinadas
+com um sinal de curvatura incompatível.
+
+As duas construções de Riemann, pela conexão e pela fórmula explícita,
+permitem verificações independentes. Além das antissimetrias nos pares
+e da simetria de troca de pares, a identidade algébrica de Bianchi é
+\(R_{abcd}+R_{acdb}+R_{adbc}=0\). Em Fourier, a diferencial reduz-se a
+\begin{equation}
+ q_eR_{abcd}+q_cR_{abde}+q_dR_{abec}=0.
+ \label{eq:fund-bianchi-fourier}
+\end{equation}
+Outra verificação é inserir
+\(H^{\xi}_{\mu\nu}=q_\mu\xi_\nu+q_\nu\xi_\mu\), absorvendo
+o fator imaginário na amplitude \(\xi\). Os quatro termos da
+curvatura cancelam identicamente. Isso expressa a invariância da
+curvatura linear sob uma perturbação de coordenadas; não estabelece uma
+liberdade de gauge do campo massivo em fundo fixado.
+
+% Seção produzida pela auditoria independente de ação, unidades e massa.
+\input{capitulos_dissertacao/03a_normalizacao}
+
+\section{Vínculos do modelo histórico e seis amplitudes}
+
+O vínculo linear associado à equação (4.14) do TG é
+\begin{equation}
+ F_\nu\equiv q^\mu H_{\mu\nu}-\tfrac12q_\nu H
+          =q^\mu\bar H_{\mu\nu}=0.
+ \label{eq:fund-visser-vinculo}
+\end{equation}
+No contexto histórico, ele decorre das equações e das condições de
+conservação adotadas \autocite{visser1998,tg2003}. A semelhança com uma
+condição harmônica da relatividade geral não autoriza eliminar modos
+massivos por gauge. De fato, para a perturbação de coordenadas
+anterior, obtém-se \(F_\nu(H^\xi)=\Delta\xi_\nu\). Quando
+\(\Delta\ne0\), uma transformação não trivial desse tipo em geral
+não preserva o vínculo.
+
+As quatro equações podem ser exibidas como
+\begin{equation}
+ \begin{aligned}
+ \omega(H_{00}+H_{11}+H_{22}+H_{33})+2kH_{03}&=0,\\
+ \omega H_{01}+kH_{13}&=0,\\
+ \omega H_{02}+kH_{23}&=0,\\
+ 2\omega H_{03}+k(H_{00}-H_{11}-H_{22}+H_{33})&=0.
+ \end{aligned}
+ \label{eq:fund-visser-equacoes}
+\end{equation}
+Escolhem-se as amplitudes livres
+\begin{equation}
+ (A,D,B,C,V_x,V_y)
+ =(H_{00},H_{33},H_{22},H_{12},H_{13},H_{23}).
+ \label{eq:fund-amplitudes-livres}
+\end{equation}
+Resolver \eqref{eq:fund-visser-equacoes} fornece
+\begin{equation}
+ \begin{aligned}
+ H_{01}&=-\frac{k}{\omega}V_x,
+ &H_{02}&=-\frac{k}{\omega}V_y,\\
+ H_{03}&=-\frac{\omega k}{\Sigma}(A+D),
+ &H_{11}&=-B-\frac{\Delta}{\Sigma}(A+D).
+ \end{aligned}
+ \label{eq:fund-visser-solucao}
+\end{equation}
+Não houve divisão por \(k\) nem por \(\Delta\). A parametrização
+é regular tanto no limiar quanto no ponto nulo do domínio.
+
+Para demonstrar completude, considera-se o jacobiano de
+\((F_0,F_1,F_2,F_3)\) nas colunas
+\((H_{01},H_{02},H_{03},H_{11})\):
+\begin{equation}
+ M_V=\begin{pmatrix}
+ 0&0&-k&-\omega/2\\
+ -\omega&0&0&0\\
+ 0&-\omega&0&0\\
+ 0&0&-\omega&k/2
+ \end{pmatrix},
+ \qquad \det M_V=-\frac{\omega^2\Sigma}{2}.
+ \label{eq:fund-menor-visser}
+\end{equation}
+Como esse menor é não nulo e há quatro linhas, o posto dos vínculos é
+exatamente quatro para todo \(\omega\ne0\), \(k\) real. Das dez
+componentes simétricas restam seis amplitudes. Essa conclusão não
+depende de uma escolha numérica genérica feita por um sistema
+computacional.
+
+Escrevendo \(U=A+D\), sua matriz de marés é
+\begin{equation}
+ E_V=\frac12\begin{pmatrix}
+ -\omega^2(B+\Delta U/\Sigma)&\omega^2C&\Delta V_x\\
+ \omega^2C&\omega^2B&\Delta V_y\\
+ \Delta V_x&\Delta V_y&\Delta(\omega^2D-k^2A)/\Sigma
+ \end{pmatrix}.
+ \label{eq:fund-eletrica-visser}
+\end{equation}
+Definem-se coordenadas de deformação com normalização explícita:
+\begin{equation}
+ \mathbf p=(p_b,p_l,p_+,p_\times,p_x,p_y)
+ =(E_{11}+E_{22},E_{33},E_{11}-E_{22},E_{12},E_{13},E_{23}).
+ \label{eq:fund-coordenadas-mares}
+\end{equation}
+Em particular,
+\begin{equation}
+ \begin{aligned}
+ p_b&=-\frac{\omega^2\Delta}{2\Sigma}(A+D),
+ &p_l&=\frac{\Delta}{2\Sigma}(\omega^2D-k^2A),\\
+ p_+&=p_b-\omega^2B,
+ &p_\times&=\frac{\omega^2C}{2},\\
+ p_x&=\frac{\Delta V_x}{2},
+ &p_y&=\frac{\Delta V_y}{2}.
+ \end{aligned}
+ \label{eq:fund-coordenadas-visser}
+\end{equation}
+O bloco de \((p_b,p_l)\) em \((A,D)\) tem determinante
+\(-\omega^2\Delta^2/(4\Sigma)\). Subtrair a linha de \(p_b\) da
+de \(p_+\) separa as demais quatro amplitudes e resulta em
+\begin{equation}
+ \det\frac{\partial\mathbf p}{\partial(A,D,B,C,V_x,V_y)}
+       =\frac{\omega^6\Delta^4}{32\Sigma}.
+ \label{eq:fund-posto-visser}
+\end{equation}
+O mapa tem, portanto, posto seis quando \(\Delta\ne0\). Isso é
+uma contagem cinemática do modelo linear considerado, e não uma prova
+de seis modos dinamicamente saudáveis.
+
+\section{Fierz--Pauli e o vínculo entre deformações escalares}
+
+Uma normalização compatível com a convenção de curvatura é
+\begin{equation}
+ G_{\mu\nu}^{(1)}
+    -\frac{\mu^2}{2}(H_{\mu\nu}-\eta_{\mu\nu}H)=0,
+ \qquad \mu\ne0.
+ \label{eq:fund-fp-campo}
+\end{equation}
+A identidade de Bianchi implica
+\(\partial^\mu H_{\mu\nu}=\partial_\nu H\). Substituí-la em
+\(R^{(1)}=\partial_\mu\partial_\nu H^{\mu\nu}-\Box H\)
+fornece \(R^{(1)}=0\). O traço de
+\eqref{eq:fund-fp-campo} é então \(3\mu^2H/2=0\), de modo que
+\begin{equation}
+ H=0,\qquad q^\mu H_{\mu\nu}=0,
+ \qquad (\Box+\mu^2)H_{\mu\nu}=0.
+ \label{eq:fund-fp-vinculos}
+\end{equation}
+A última equação dá \(\Delta=\mu^2\). Dividir por \(\mu^2\)
+foi essencial; essa derivação dos vínculos não pode ser repetida em
+massa exatamente zero como se nada mudasse.
+
+Na parametrização anterior, o traço impõe
+\(A=k^2D/\omega^2\), e as componentes eliminadas tornam-se
+\begin{equation}
+ H_{03}=-\frac{k}{\omega}D,
+ \qquad H_{11}=-B-\frac{\Delta}{\omega^2}D,
+ \qquad H_{01,02}=-\frac{k}{\omega}V_{x,y}.
+ \label{eq:fund-fp-solucao}
+\end{equation}
+O jacobiano dos quatro vínculos de divergência seguidos do traço,
+nas colunas \((H_{00},H_{01},H_{02},H_{03},H_{11})\), contém o menor
+\begin{equation}
+ M_F=\begin{pmatrix}
+ -\omega&0&0&-k&0\\
+ 0&-\omega&0&0&0\\
+ 0&0&-\omega&0&0\\
+ 0&0&0&-\omega&0\\
+ 1&0&0&0&-1
+ \end{pmatrix},
+ \qquad\det M_F=-\omega^4.
+ \label{eq:fund-menor-fp}
+\end{equation}
+Restam exatamente cinco amplitudes no domínio considerado. A matriz
+elétrica é
+\begin{equation}
+ E_F=\frac12\begin{pmatrix}
+ -\omega^2B-\Delta D&\omega^2C&\Delta V_x\\
+ \omega^2C&\omega^2B&\Delta V_y\\
+ \Delta V_x&\Delta V_y&\Delta^2D/\omega^2
+ \end{pmatrix}.
+ \label{eq:fund-eletrica-fp}
+\end{equation}
+O menor formado pelas linhas \((p_b,p_+,p_\times,p_x,p_y)\) e
+colunas \((B,C,V_x,V_y,D)\) vale
+\begin{equation}
+ \det J_F^{(5)}=\frac{\omega^4\Delta^3}{16}.
+ \label{eq:fund-posto-fp}
+\end{equation}
+Assim, para \(\Delta\ne0\), o posto observável é cinco. As duas
+formas escalares não podem constituir amplitudes independentes:
+\begin{equation}
+ p_b=-\frac{\Delta D}{2},\qquad
+ p_l=\frac{\Delta^2D}{2\omega^2},\qquad
+ p_l+\frac{\Delta}{\omega^2}p_b=0.
+ \label{eq:fund-identidade-escalar}
+\end{equation}
+A identidade permanece válida quando \(p_b=0\), situação em que
+uma razão não seria definida. Quando \(p_b\ne0\), ela equivale a
+\begin{equation}
+ \boxed{\frac{p_l}{p_b}=-(1-\beta^2)=-\left(\frac{f_g}{f}\right)^2.}
+ \label{eq:fund-razao-escalar}
+\end{equation}
+O modo breathing foi normalizado como a soma das duas componentes
+transversais. Usar apenas uma delas para uma deformação transversal
+isotrópica introduz um fator dois na razão, sem alterar o vínculo
+físico. Para isolar a helicidade zero na base adotada, impõem-se também
+\(C=V_x=V_y=0\) e \(E_{11}=E_{22}\), isto é,
+\(B=-\Delta D/(2\omega^2)\). Essa única amplitude pode produzir
+simultaneamente deformações transversal e longitudinal
+\autocite{liang2021,bernardo2024}.
+
+\section{Limite nulo, limiar e não uniformidade}
+
+Avaliar diretamente \(\Delta=0\), com \(\omega\ne0\), nas
+parametrizações regulares fornece, nos dois casos,
+\begin{equation}
+ E_{\mathrm{nulo}}=\frac{\omega^2}{2}
+ \begin{pmatrix}-B&C&0\\ C&B&0\\0&0&0\end{pmatrix}.
+ \label{eq:fund-eletrica-nula}
+\end{equation}
+Seu posto como mapa de amplitudes é dois. A dimensão do núcleo é
+quatro no espaço de seis amplitudes histórico e três no espaço de
+cinco amplitudes com os vínculos de Fierz--Pauli formalmente mantidos.
+Essa afirmação é algébrica e não pressupõe que a equação massiva
+derive os mesmos vínculos na teoria sem massa.
+
+No espaço harmônico nulo, todas as quatro amplitudes
+\(H^\xi_{\mu\nu}=q_\mu\xi_\nu+q_\nu\xi_\mu\) satisfazem o
+vínculo e têm curvatura zero. O mapa \(\xi\mapsto H^\xi\) é
+injetivo para \(\omega\ne0\): a componente 00 determina
+\(\xi_0\), e as 0i determinam as demais. No subespaço com traço
+nulo, exige-se ainda \(q^\mu\xi_\mu=0\), deixando três
+direções. Essas dimensões coincidem com os núcleos acima e identificam
+as direções sem curvatura nesse caso nulo específico.
+
+No limiar \(k=0\), os menores massivos continuam não nulos. O
+modelo histórico conserva posto seis e Fierz--Pauli, cinco. Neste,
+\(H_{00}=H_{0i}=0\), e a matriz espacial tem traço zero. A relação
+escalar torna-se \(p_l=-p_b\). Como não há direção de propagação
+preferencial, rótulos de helicidade associados a um eixo escolhido não
+devem ser confundidos com uma mudança na contagem de estados.
+
+O ponto \(q_\mu=0\) exige avaliação separada: as derivadas e a
+curvatura desaparecem. Os quatro vínculos históricos tornam-se
+nulos; a imposição formal de traço zero conserva uma equação. Isso
+não descreve uma onda massiva no vácuo, pois
+\(\Delta=\mu^2>0\) não pode ser satisfeita nesse ponto. Campos
+estáticos com \(\omega=0\) também estão fora da parametrização
+utilizada e não devem ser obtidos por divisões por zero.
+
+O desaparecimento de componentes não tensoriais em
+\eqref{eq:fund-eletrica-nula} refere-se a famílias com amplitudes
+métricas limitadas. Uma parametrização alternativa que usa todas as
+componentes espaciais livres exige
+\begin{equation}
+ H_{00}=-H_{33}-\frac{\Sigma}{\Delta}(H_{11}+H_{22}).
+ \label{eq:fund-parametrizacao-singular}
+\end{equation}
+Manter a soma transversal fixa pode, portanto, levar a uma métrica
+ilimitada quando \(\Delta\to0\). Não é legítimo trocar o limite
+e a escolha da família de amplitudes sem examinar essa dependência.
+
+Uma ilustração explícita em Fierz--Pauli é
+\(D=-2\omega^2/\Delta\), \(B=1\) e \(C=V_x=V_y=0\):
+\begin{equation}
+ H_{\mathrm{esc}}=\begin{pmatrix}
+ -2k^2/\Delta&0&0&2\omega k/\Delta\\
+ 0&1&0&0\\
+ 0&0&1&0\\
+ 2\omega k/\Delta&0&0&-2\omega^2/\Delta
+ \end{pmatrix},
+ \label{eq:fund-familia-singular}
+\end{equation}
+para a qual
+\begin{equation}
+ E_{\mathrm{esc}}=\operatorname{diag}
+       (\omega^2/2,\omega^2/2,-\Delta).
+ \label{eq:fund-familia-curvatura}
+\end{equation}
+A deformação breathing não desaparece, mas a métrica não permanece
+limitada. Para uma amplitude global fixa, não se pode prolongar essa
+família até \(\Delta=0\) mantendo o regime linear. Rescalá-la para
+restabelecer pequenas perturbações também altera o limite de
+curvatura. O exemplo demonstra não uniformidade matemática, não a
+continuidade com a relatividade geral, uma previsão de emissão ou uma
+derivação da descontinuidade vDVZ. Essas questões exigem acoplamento a
+fontes e análise dinâmica.
+
+\section{Rastreamento das projeções do TG}
+
+\subsection{Amplitude métrica, tetradas e sinal de curvatura}
+
+A equação (4.21) do TG chama \(A_{\mu\nu}\) à amplitude de
+\(\bar h_{\mu\nu}\), mas o apêndice insere o mesmo nome diretamente
+em \(g_{\mu\nu}=\eta_{\mu\nu}+A_{\mu\nu}e^{i\phi}\).
+A reprodução abaixo usa a amplitude \emph{métrica} do apêndice, com
+\(A_{00}=A\), \(A_{33}=D\), \(A_{22}=B\), \(A_{12}=C\),
+\(A_{13}=V_x\) e \(A_{23}=V_y\). Se o traço for não nulo, esses
+coeficientes não podem ser identificados diretamente com os de
+\(\bar h\) sem aplicar \eqref{eq:fund-traco}.
+
+A tetrada simétrica do apêndice pode ser escrita como
+\begin{equation}
+ \begin{aligned}
+ l^\mu&=\frac{(1,0,0,1)}{\sqrt2},
+ &n^\mu&=\frac{(1,0,0,-1)}{\sqrt2},\\
+ m^\mu&=\frac{(0,1,i,0)}{\sqrt2},
+ &\bar m^\mu&=\frac{(0,1,-i,0)}{\sqrt2}.
+ \end{aligned}
+ \label{eq:fund-tetrada}
+\end{equation}
+Em nossa assinatura, \(l\cdot n=1\) e
+\(m\cdot\bar m=-1\). Os sinais da relação (5.19) do corpo do TG
+devem ser traduzidos para essa convenção. Seus vetores longitudinais
+nas equações (5.12)--(5.13) são \(\sqrt2\,l\) e
+\(n/\sqrt2\); logo, a contração com dois vetores \(n\) muda por
+um fator dois. Mantendo a mesma orientação complexa, a projeção
+\(\Psi_4\) na tetrada do corpo vale metade daquela do apêndice.
+Essa transformação é um boost de tetrada, não uma nova polarização.
+
+\subsection{Expressões reduzidas e contração independente}
+
+As transcrições literais das equações (5.58)--(5.61) simplificam para
+\begin{equation}
+ \begin{aligned}
+ \Psi_2^{\mathrm{TG}}&=
+    \frac{\Delta}{12\Sigma}(\omega^2D-k^2A),\\
+ \Psi_3^{\mathrm{TG}}&=
+    \frac{\Delta(\omega+k)}{8\omega}(V_x+iV_y),\\
+ \Psi_4^{\mathrm{TG}}&=
+    \frac{(\omega+k)^2}{8}
+        \left[-2B-\frac{\Delta}{\Sigma}(A+D)+2iC\right],\\
+ \Phi_{22}^{\mathrm{TG}}&=
+    -\frac{\Delta(\omega+k)^2}{8\Sigma}(A+D).
+ \end{aligned}
+ \label{eq:fund-tg-projecoes}
+\end{equation}
+Essas identidades foram confrontadas com contrações do Riemann
+construído independentemente. Escrevendo \(R(a,b,c,d)\) para a
+contração com quatro vetores, a convenção adotada fornece
+\begin{equation}
+ \begin{aligned}
+ \Psi_2^{\mathrm{TG}}&=R(n,l,n,l)/6,
+ &\Psi_3^{\mathrm{TG}}&=R(n,l,n,m)/2,\\
+ \Psi_4^{\mathrm{TG}}&=R(n,m,n,m),
+ &\Phi_{22}^{\mathrm{TG}}&=R(n,\bar m,n,m).
+ \end{aligned}
+ \label{eq:fund-tg-contracoes}
+\end{equation}
+O sinal acompanha \(R_{\mathrm{TG}}=-R\). A orientação de \(m\)
+foi escolhida para reproduzir o sinal positivo da parte imaginária de
+\(\Psi_4\) impresso no TG. Conjugar a direção transversal sem
+acompanhar a convenção trocaria esse sinal.
+
+Reproduzir essas expressões não demonstra que toda sua interpretação
+nula permaneça válida em propagação massiva. As equações (5.35) e
+(5.36) do TG relacionam as projeções a escalares de Weyl com correções
+de ordem quase nula explicitamente omitidas. O apêndice efetivamente
+contrai Riemann. Para \(k\ne\omega\), seus nomes
+\(\Psi_2^{\mathrm{TG}}\) e \(\Psi_3^{\mathrm{TG}}\) não devem
+ser identificados automaticamente com os escalares exatos de Weyl.
+Na contração \(nmnm\), os termos de Ricci da decomposição de Riemann
+se anulam por nulidade e ortogonalidade dos vetores: esse caso
+particular não sofre a mesma ambiguidade.
+
+O grupo E(2) preserva um vetor de onda nulo. Para um vetor temporal
+massivo, o estabilizador de Lorentz é SO(3). Uma tetrada nula continua
+sendo uma base legítima, mas isso não transforma uma classificação
+quase nula em classificação exata da teoria massiva. A matriz elétrica
+é utilizada aqui para manter a ligação explícita com o observador.
+
+\subsection{Benchmark tensorial de uma conversão quase nula}
+
+Para \(A=D=B=V_x=V_y=0\) e \(C=1\) real, com fase comum,
+\eqref{eq:fund-tg-projecoes} dá
+\(\operatorname{Im}\Psi_4^{\mathrm{TG}}=(\omega+k)^2/4\),
+enquanto a componente exata é \(E_{12}=\omega^2/2\).
+A conversão calibrada na onda nula utiliza
+\(\operatorname{Im}\Psi_4^{\mathrm{TG}}/2\). Seu quociente com
+o valor exato é
+\begin{equation}
+ \mathcal R_T(\beta)
+ =\frac{\operatorname{Im}\Psi_4^{\mathrm{TG}}/2}{E_{12}}
+ =\frac{(1+\beta)^2}{4}.
+ \label{eq:fund-erro-tensorial}
+\end{equation}
+O resultado tende a um para \(\beta\to1\) e vale \(1/4\) no
+limiar, produzindo erro relativo de 75\% nessa conversão. Trata-se de
+uma projeção tensorial e de sua tradução para curvatura, não de uma
+amplitude de polarização adicional ou de um erro medido em dados PTA.
+
+Com \(x=(f_g/f)^2\), uma forma numericamente estável do erro é
+\begin{equation}
+ 1-\mathcal R_T
+ =\frac{x(3+\sqrt{1-x})}{4(1+\sqrt{1-x})}
+ =\frac{x}{2}+O(x^2).
+ \label{eq:fund-erro-estavel}
+\end{equation}
+Essa expressão evita subtrair dois números quase iguais quando
+\(x\) é pequeno. Uma implementação pode reproduzir exatamente a
+álgebra do TG e ainda precisar dessa auditoria para converter as
+projeções em componentes físicas fora do domínio nulo.
+
+\section{Confronto com Hyun e escalas numéricas}
+
+As equações (3.29)--(3.30) de Hyun, Kim e Lee, na página 14 do PDF
+arXiv consultado, empregam as componentes livres
+\((h_{tt},h_{zz},h_{yy},h_{xy},h_{xz},h_{yz})\)
+\autocite{hyun2019}. Após traduzir assinatura, sinal e ordenação, o
+vetor de suas seis amplitudes coincide com
+\eqref{eq:fund-coordenadas-visser}. Por exemplo, sua componente
+longitudinal pode ser escrita como
+\begin{equation}
+ \frac{\omega^2\Delta}{2\Sigma}(A+D)-\frac{\Delta A}{2}
+ =\frac{\Delta}{2\Sigma}(\omega^2D-k^2A)=p_l.
+ \label{eq:fund-hyun-longitudinal}
+\end{equation}
+A transcrição independente das seis componentes foi verificada
+simbolicamente. A expressão equivalente com componentes espaciais
+livres, equação (3.27) da referência, requer atenção à singularidade de
+parametrização discutida anteriormente. A concordância é um benchmark
+de reprodução de um resultado conhecido, sem reivindicação de
+originalidade.
+
+Para dimensionar a relevância das escalas, utiliza-se como benchmark
+\(m_gc^2=1{,}92\times10^{-23}\,\mathrm{eV}\), valor associado ao
+limite de dispersão reportado em GWTC-4 \autocite{lvk2026}. Não se
+trata de massa detectada ou limite universal entre modelos. Com
+\(h_{\mathrm P}=4{,}135667696\ldots\times10^{-15}\,
+\mathrm{eV\,s}\), resulta
+\(f_g=4{,}642539345\ldots\times10^{-9}\,\mathrm{Hz}\).
+As avaliações do script preliminar fornecem:
+
+\begin{center}
+\begingroup\small\singlespacing
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}rccc@{}}
+\toprule
+\(f\) (Hz) & \(x=(f_g/f)^2\) & \(\beta\) & \(1-\mathcal R_T\)\\
+\midrule
+\(10^{-9}\) & \(21{,}5532\) & não viajante & não aplicável\\
+\(10^{-8}\) & \(0{,}215532\) & \(0{,}885702\) & \(0{,}111032\)\\
+\(10^{-7}\) & \(0{,}00215532\) & \(0{,}998922\) & \(0{,}00107795\)\\
+\(10^{-4}\) & \(2{,}15532\times10^{-9}\) & \(\simeq1\) & \(1{,}07766\times10^{-9}\)\\
+\(100\) & \(2{,}15532\times10^{-21}\) & \(\simeq1\) & \(1{,}07766\times10^{-21}\)\\
+\bottomrule
+\end{tabular}
+\endgroup
+\end{center}
+
+Para a escolha histórica do artigo de 2004,
+\(m_gc^2=4{,}4\times10^{-22}\,\mathrm{eV}\) e
+\(f=1{,}1\times10^{-7}\,\mathrm{Hz}\), obtêm-se
+\(x\simeq0{,}935468\), \(\beta\simeq0{,}254032\) e
+\(1-\mathcal R_T\simeq0{,}606851\)
+\autocite{depaula2004}. O regime está longe da onda nula nessa
+conversão operacional de unidades. Isso não equivale a declarar um
+ajuste observacional histórico incorreto: a comparação verifica o
+domínio de uma aproximação cinemática. A relação entre os símbolos de
+massa das equações históricas e a massa operacional deve seguir a
+auditoria de normalização deste capítulo.
+
+\section{Evidência computacional e alcance dos resultados}
+
+A implementação simbólica integrada a esta versão registrou 19 testes
+aprovados, sem falhas, com SymPy 1.14.0: doze de polarizações e sete
+da auditoria independente de Einstein, dinâmica linear e normalização. Os testes comparam as 256
+componentes de Riemann obtidas por duas rotas, verificam simetrias e
+as duas identidades de Bianchi, e anulam a curvatura de perturbações de
+coordenadas. Também confrontam as parametrizações com a solução direta
+dos sistemas de vínculos, demonstram os menores, avaliam os casos
+nulo e de limiar, verificam o vínculo escalar e sua família não
+uniforme, e reproduzem as expressões de Hyun e do TG.
+
+Os cálculos simbólicos gerais ampliam as checagens racionais
+preliminares em \((\omega,k)=(1,0),(5,3),(13,12),(1,1)\). Esses
+exemplos continuam úteis como regressão, mas a prova dos postos é dada
+pelos menores explícitos e seus domínios. As escalas físicas foram
+avaliadas com precisão decimal ampliada, evitando que o arredondamento
+oculte correções pequenas. O módulo \path{src/polarizacoes/}, os testes em \path{tests/} e o
+script \path{scripts/reproduzir_tg.py} acompanham esta versão. O registro
+\path{results/C04/validacao.json} contém os testes executados, as
+expressões simbólicas e as dependências fixadas. A opção \texttt{-{}-check}
+reexecuta a validação sem substituir o registro versionado.
+
+O alcance desses resultados é cinemático. Não foram calculadas neste
+capítulo ORFs, evidências bayesianas, cobertura de intervalos, excitação
+por fontes ou estabilidade não linear. A relação local entre
+\(p_l\) e \(p_b\) não é uma função de resposta de PTA. Em
+particular, a revisão v3 de Liang--Trodden exige incluir componentes
+temporais da métrica e o movimento dos observadores na medição da
+frequência \autocite{liang2021}. A passagem da curvatura local para
+resíduos de temporização será desenvolvida e validada em C05, e a
+população escalar vinculada será examinada em C10. Nenhuma dessas
+validações estatísticas futuras é substituída pelos 19 testes aqui
+registrados.

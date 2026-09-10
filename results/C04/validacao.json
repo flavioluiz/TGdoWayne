@@ -1,0 +1,62 @@
+{
+  "stage": "C04",
+  "status": "PASS",
+  "tests_run": 19,
+  "errors": 0,
+  "failures": 0,
+  "tests": [
+    "tests.test_polarizacoes.GeneralIdentities.test_all_256_connection_components",
+    "tests.test_polarizacoes.GeneralIdentities.test_constraint_rank_proofs",
+    "tests.test_polarizacoes.GeneralIdentities.test_coordinate_perturbation_curvature_vanishes",
+    "tests.test_polarizacoes.GeneralIdentities.test_fp_scalar_relation_including_nonuniform_limit",
+    "tests.test_polarizacoes.GeneralIdentities.test_hyun_equation_330_independent_transcription",
+    "tests.test_polarizacoes.GeneralIdentities.test_regular_parameterizations_constraints",
+    "tests.test_polarizacoes.GeneralIdentities.test_riemann_symmetries_and_bianchi_general",
+    "tests.test_polarizacoes.GeneralIdentities.test_tg_equation_560_from_contraction_and_null_calibration",
+    "tests.test_polarizacoes.GeneralIdentities.test_tg_equations_558_559_561",
+    "tests.test_polarizacoes.GeneralIdentities.test_tidal_closed_forms",
+    "tests.test_polarizacoes.GeneralIdentities.test_tidal_rank_by_minors_massive_and_null",
+    "tests.test_polarizacoes.GeneralIdentities.test_zero_fourvector_separate_domain",
+    "tests.test_normalizacao.EinsteinNormalization.test_connection_ricci_matches_prototype_contraction_both_signatures",
+    "tests.test_normalizacao.EinsteinNormalization.test_fp_mass_equation_divergence_trace_and_reduced_dispersion",
+    "tests.test_normalizacao.EinsteinNormalization.test_general_einstein_lorenz_identity_and_bianchi",
+    "tests.test_normalizacao.EinsteinNormalization.test_literal_tg_and_article_coefficients",
+    "tests.test_normalizacao.EinsteinNormalization.test_operational_dispersion_mass_and_article_factor_two",
+    "tests.test_normalizacao.EinsteinNormalization.test_si_dimensions_expose_tg_c_power",
+    "tests.test_normalizacao.EinsteinNormalization.test_visser_einstein_sign_both_signatures_and_historical_ricci"
+  ],
+  "dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "domain": "omega != 0, k real; Delta > 0 massive travelling; Delta=0 evaluated separately; linear vacuum",
+  "expressions": {
+    "h_Visser": "Matrix([[A, -Vx*k/omega, -Vy*k/omega, -k*omega*(A + D)/(k**2 + omega**2)], [-Vx*k/omega, -B - (A + D)*(-k**2 + omega**2)/(k**2 + omega**2), C, Vx], [-Vy*k/omega, C, B, Vy], [-k*omega*(A + D)/(k**2 + omega**2), Vx, Vy, D]])",
+    "h_FP": "Matrix([[D*k**2/omega**2, -Vx*k/omega, -Vy*k/omega, -D*k/omega], [-Vx*k/omega, -B + D*k**2/omega**2 - D, C, Vx], [-Vy*k/omega, C, B, Vy], [-D*k/omega, Vx, Vy, D]])",
+    "E_Visser": "Matrix([[omega**2*(A*k**2 - A*omega**2 - B*k**2 - B*omega**2 + D*k**2 - D*omega**2)/(2*(k**2 + omega**2)), C*omega**2/2, -Vx*(k - omega)*(k + omega)/2], [C*omega**2/2, B*omega**2/2, -Vy*(k - omega)*(k + omega)/2], [-Vx*(k - omega)*(k + omega)/2, -Vy*(k - omega)*(k + omega)/2, (k - omega)*(k + omega)*(A*k**2 - D*omega**2)/(2*(k**2 + omega**2))]])",
+    "E_FP": "Matrix([[(-B*omega**2 + D*k**2 - D*omega**2)/2, C*omega**2/2, -Vx*(k - omega)*(k + omega)/2], [C*omega**2/2, B*omega**2/2, -Vy*(k - omega)*(k + omega)/2], [-Vx*(k - omega)*(k + omega)/2, -Vy*(k - omega)*(k + omega)/2, D*(k - omega)**2*(k + omega)**2/(2*omega**2)]])",
+    "psi4_TG_factorized": "(k + omega)**2*(A*k**2 - A*omega**2 - 2*B*k**2 - 2*B*omega**2 + 2*I*C*k**2 + 2*I*C*omega**2 + D*k**2 - D*omega**2)/(8*(k**2 + omega**2))",
+    "scalar_ratio_FP": "(k - omega)*(k + omega)/omega**2"
+  },
+  "rank_proofs": {
+    "Visser_constraint_minor": "-omega**2*(omega**2+k**2)/2",
+    "FP_constraint_minor": "-omega**4",
+    "Visser_tidal_determinant": "omega**6*Delta**4/(32*Sigma)",
+    "FP_tidal_minor": "omega**4*Delta**3/16",
+    "null_tidal_rank_bounded_metric": 2,
+    "threshold_ranks": {
+      "Visser": 6,
+      "FP": 5
+    }
+  },
+  "normalization_audit": {
+    "einstein_under_Lorenz": "G_here=-Box(hbar_metric)/2; G_historical=+Box(hbar_metric)/2",
+    "tg_literal_mass_coefficient": "+2*m_TG**2/(hbar_Planck**2*c**2)",
+    "tg_coefficient_dimension_if_SI": "L**(-6)*T**4",
+    "article_2004_literal_mass_coefficient": "-2*m_article**2*c**2/hbar_Planck**2",
+    "article_2004_printed_mass_coefficient": "-m_article**2*c**2/hbar_Planck**2",
+    "operational_definition": "mu=m_g*c/hbar_Planck; omega_SI**2=c**2*k**2+(m_g*c**2/hbar_Planck)**2",
+    "interpretation": "Algebraic diagnostic of consulted equations; not a confirmed editorial erratum."
+  },
+  "scope": "Curvature, constraints and conventions; no PTA inference or nonlinear stability claim."
+}

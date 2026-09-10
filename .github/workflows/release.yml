@@ -13,6 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Preparar ambiente científico fixado
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -r requirements.txt
+          .venv/bin/python scripts/reproduzir_tg.py --check
       - name: Conferir checagens, fontes e PDF versionado
         env:
           RELEASE_VERSION: ${{ github.ref_name }}

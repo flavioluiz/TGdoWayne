@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Convenções, normalizações e limites são reproduzíveis; identidades são demonstradas, não inferidas só de pontos numéricos.
-- [ ] Simetrias de Riemann, Bianchi, perturbação de coordenadas, postos e relação escalar passam nas condições especificadas.
-- [ ] Divergências em relação ao TG são explicadas por aproximação, unidade ou convenção, com referência à equação original.
+- [x] Convenções, normalizações e limites são reproduzíveis; identidades são demonstradas, não inferidas só de pontos numéricos.
+- [x] Simetrias de Riemann, Bianchi, perturbação de coordenadas, postos e relação escalar passam nas condições especificadas.
+- [x] Divergências em relação ao TG são explicadas por aproximação, unidade ou convenção, com referência à equação original.
 
 ## Validação exigida
 
@@ -57,3 +57,11 @@ Não usar a formulação histórica como prova de uma teoria não linear estáve
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência de execução
+
+Derivação geral e auditoria de normalização incorporadas ao capítulo 3. O módulo
+`src/polarizacoes/`, os 19 testes em `tests/` e `scripts/reproduzir_tg.py` reproduzem
+os resultados em `results/C04/validacao.json`, com dependências fixadas.
+As notas técnicas em `docs/fundamentos/` rastreiam equações, unidades e convenções.
+A validação editorial e a conferência da integração estão em `docs/validacao_v0.4.0.md`.

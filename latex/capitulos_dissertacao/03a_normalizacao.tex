@@ -1,0 +1,87 @@
+\section{Einstein linear e normalização histórica da massa}
+\label{sec:fund-normalizacao}
+
+A reprodução geométrica depende de \(\omega\), \(k\) e dos vínculos.
+Relacioná-la a uma massa em unidades físicas exige ainda conferir o
+coeficiente da equação de propagação. Nesta seção, \(\Box\) designa o
+d'Alembertiano de segunda ordem. O símbolo \(\Box^2\) utilizado no TG
+representa esse operador, não sua composição de quarta ordem.
+
+Uma verificação independente, com dez componentes métricas e quatro
+componentes de \(q_\mu\) livres, parte da conexão e contrai Ricci e
+Einstein. Definindo \(B_\nu=q^\alpha\bar H_{\alpha\nu}\), obtém-se
+\begin{equation}
+ G_{\mu\nu}^{(1)}=-\frac12\Box\bar H_{\mu\nu}
+ -\frac12(q_\mu B_\nu+q_\nu B_\mu)
+ +\frac12\eta_{\mu\nu}q^\alpha B_\alpha,
+ \label{eq:fund-einstein-geral}
+\end{equation}
+com \(\Box\mapsto-q^\alpha q_\alpha\) na amplitude de Fourier.
+A contração \(q^\mu G_{\mu\nu}^{(1)}\) é identicamente nula.
+Quando \(B_\nu=0\), resulta
+\(G_{\mu\nu}^{(1)}=-\Box\bar H_{\mu\nu}/2\). A convenção oposta
+de Riemann usada nas equações históricas inverte esse sinal:
+\begin{equation}
+ G_{\mu\nu}^{(1),\mathrm{hist}}=
+       \frac12\Box\bar H_{\mu\nu}.
+ \label{eq:fund-einstein-historico}
+\end{equation}
+A identidade foi conferida para as duas assinaturas de Minkowski.
+Mudar a assinatura modifica a expressão de \(\Box\), mas não elimina
+o fator \(1/2\).
+
+As páginas impressas 23--24 do TG fornecem, nas equações (4.8) e
+(4.9), o coeficiente linear
+\(T_{\mu\nu}^{\mathrm{mass}}
+=-m_{\mathrm{TG}}^2c^2\bar H_{\mu\nu}/(8\pi G\hbar^2)\)
+e \(G_{\mu\nu}=8\pi GT_{\mu\nu}^{\mathrm{mass}}/c^4\) em vácuo
+\autocite{tg2003}. Sua substituição literal em
+\eqref{eq:fund-einstein-historico} produz
+\begin{equation}
+ \left(\Box+\frac{2m_{\mathrm{TG}}^2}{\hbar^2c^2}\right)
+ \bar H_{\mu\nu}=0,
+ \label{eq:fund-tg-literal}
+\end{equation}
+reproduzindo o fator dois das equações (4.17)--(4.19). Há, entretanto,
+uma questão dimensional: se \(m_{\mathrm{TG}}\) é massa SI e
+\(x^0=ct\), então
+\begin{equation}
+ \left[\frac{m_{\mathrm{TG}}^2}{\hbar^2c^2}\right]=L^{-6}T^4,
+ \qquad
+ \left[\left(\frac{m_gc}{\hbar}\right)^2\right]=L^{-2}.
+ \label{eq:fund-dimensoes-massa}
+\end{equation}
+Falta um fator \(c^4\) no primeiro coeficiente relativamente à dimensão
+exigida. Reinterpretar o símbolo como massa previamente reescalada
+exigiria explicitar essa definição e traduzir também a velocidade
+impressa após (4.22). Usar \(c=1\) oculta a questão dimensional,
+sem demonstrar a equivalência das identificações de massa.
+
+O artigo de 2004 adota assinatura \((-+++)\) e escreve \(c^6\) no
+numerador de \(T^{\mathrm{mass}}\), nas equações (4)--(5), restaurando
+a dimensão de densidade de energia \autocite{depaula2004}. Sua equação
+(6) usa \(G=-8\pi GT^{\mathrm{mass}}/c^4\). Denotando por
+\(m_a\) o parâmetro dessa fonte e conservando o sinal de Ricci da
+equação (10), a cadeia literal resulta em
+\begin{equation}
+ \left(\Box-2\frac{m_a^2c^2}{\hbar^2}\right)\bar H_{\mu\nu}=0.
+ \label{eq:fund-artigo-literal}
+\end{equation}
+Já a equação (12) imprime o coeficiente \(-m_a^2c^2/\hbar^2\).
+Portanto, as expressões consultadas apresentam uma discrepância de
+fator dois se o parâmetro de massa for o mesmo. A mudança de assinatura
+explica o sinal relativo ao TG, mas não esse fator. Reduzir o
+coeficiente fonte pela metade ou definir
+\(m_{\mathrm{disp}}^2=2m_a^2\) são escolhas de normalização distintas;
+não se devem aplicar ambas como compensações silenciosas.
+
+Este é um diagnóstico algébrico das equações consultadas, não uma
+errata editorial confirmada ou uma reconstrução da ação não linear.
+A dissertação adota a \emph{massa de dispersão} \(m_g\), definida por
+\eqref{eq:fund-dispersao-si}, e \(\mu=m_gc/\hbar\).
+Esse coeficiente operacional também aparece na formulação linear de
+Visser \autocite{visser1998}. Sua identificação com um parâmetro de
+outra normalização deve ser demonstrada em cada comparação. As tabelas
+em \(\mathrm{eV}/c^2\) e a resposta futura de PTA usarão a definição
+operacional; a reprodução das expressões de curvatura permanecerá em
+\(\omega\) e \(k\), preservando as fontes históricas.
