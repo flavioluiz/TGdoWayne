@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] As curvas de referência coincidem dentro do erro numérico estimado após compatibilizar normalizações.
-- [ ] Tolerâncias iniciais propostas: erro relativo 10^-3 fora dos zeros e absoluto 10^-5 na normalização adotada; ajustes devem ser justificados antes da campanha.
-- [ ] A convergência é demonstrada também nos regimes difíceis; frequências evanescentes e limiar não geram raízes reais artificiais.
+- [x] As curvas de referência coincidem dentro do erro numérico estimado após compatibilizar normalizações.
+- [x] Tolerâncias iniciais propostas: erro relativo 10^-3 fora dos zeros e absoluto 10^-5 na normalização adotada; ajustes devem ser justificados antes da campanha.
+- [x] A convergência é demonstrada também nos regimes difíceis; frequências evanescentes e limiar não geram raízes reais artificiais.
 
 ## Validação exigida
 
@@ -67,3 +67,12 @@ Se termos oscilatórios impedirem convergência, usar método apropriado e limit
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidências do marco concluído
+
+- Derivação e convenções em `latex/capitulos_dissertacao/04_resposta_pta.tex` e `docs/pta/validacao_orf.md`.
+- Implementação própria em `src/pta/`, com domínio comum, resolução explícita e aceitação por refinamento.
+- 23 testes aprovados; 58 casos de campanha com comparação independente, autos, coerência e zeros HD.
+- `configs/benchmarks_orf/c05.json` e `results/C05/checked_benchmark_results.json` fixam as configurações, recursos, erros e hashes.
+- Figura vetorial reproduzível em `figures/C05/orf_limites.pdf`.
+- Domínio delimitado antes da inferência: fases até `2*pi*1000.125+1`; aprovação empírica por ponto, sem extrapolação silenciosa.

@@ -1,0 +1,268 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "valid",
+      "value": {
+        "real": -0.0967838068099176,
+        "imag": -0.00640724793572252
+      },
+      "report": {
+        "status": "PASS",
+        "errors": {
+          "harmonic_nodes": 9.328116403039703e-15,
+          "harmonic_truncation": 8.673617379884035e-19,
+          "direct_refinement": 1.0258436552433459e-15,
+          "independent_crosscheck": 8.006813285903161e-15
+        },
+        "acceptance_limit": 1.0969956601437882e-08,
+        "atol": 1e-08,
+        "rtol": 1e-08,
+        "coarse": {
+          "lmax": 80,
+          "nmu_harmonic": 160,
+          "nmu_direct": 100,
+          "nphi_direct": 200
+        },
+        "fine": {
+          "lmax": 120,
+          "nmu_harmonic": 260,
+          "nmu_direct": 180,
+          "nphi_direct": 360
+        },
+        "resources": {
+          "work_units_proxy": 350000,
+          "estimated_memory_bytes": 8988800,
+          "includes_harmonic_refinement": true,
+          "includes_direct_refinement": true,
+          "hard_max_order": 20000,
+          "warning": "Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits."
+        },
+        "domain": {
+          "beta": 0.9,
+          "cosine": 0.4,
+          "ya": 30.0,
+          "yb": 31.0
+        },
+        "criterion": "Empirical refinement and independent-method agreement, not a rigorous error bound."
+      }
+    },
+    {
+      "case": "valid",
+      "value": {
+        "real": 0.5544630432244175,
+        "imag": -2.019544602209808e-17
+      },
+      "report": {
+        "status": "PASS",
+        "errors": {
+          "harmonic_nodes": 5.2513551582767926e-14,
+          "harmonic_truncation": 0.0,
+          "direct_refinement": 6.883386465305071e-15,
+          "independent_crosscheck": 4.574119052884842e-14
+        },
+        "acceptance_limit": 1.5544630432244174e-08,
+        "atol": 1e-08,
+        "rtol": 1e-08,
+        "coarse": {
+          "lmax": 80,
+          "nmu_harmonic": 160,
+          "nmu_direct": 100,
+          "nphi_direct": 200
+        },
+        "fine": {
+          "lmax": 120,
+          "nmu_harmonic": 260,
+          "nmu_direct": 180,
+          "nphi_direct": 360
+        },
+        "resources": {
+          "work_units_proxy": 285200,
+          "estimated_memory_bytes": 8988800,
+          "includes_harmonic_refinement": true,
+          "includes_direct_refinement": true,
+          "hard_max_order": 20000,
+          "warning": "Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits."
+        },
+        "domain": {
+          "beta": 0.0,
+          "cosine": 1.0,
+          "ya": 27.1,
+          "yb": 27.1
+        },
+        "criterion": "Empirical refinement and independent-method agreement, not a rigorous error bound."
+      }
+    },
+    {
+      "case": "valid",
+      "value": {
+        "real": 0.9515793470778191,
+        "imag": 0.16451232764685225
+      },
+      "report": {
+        "status": "PASS",
+        "errors": {
+          "harmonic_nodes": 1.0381010139653506e-13,
+          "harmonic_truncation": 1.1102230246251565e-16,
+          "direct_refinement": 1.0963276698565927e-14,
+          "independent_crosscheck": 8.451117006091603e-14
+        },
+        "acceptance_limit": 1.9656953762614967e-08,
+        "atol": 1e-08,
+        "rtol": 1e-08,
+        "coarse": {
+          "lmax": 80,
+          "nmu_harmonic": 160,
+          "nmu_direct": 100,
+          "nphi_direct": 200
+        },
+        "fine": {
+          "lmax": 120,
+          "nmu_harmonic": 260,
+          "nmu_direct": 180,
+          "nphi_direct": 360
+        },
+        "resources": {
+          "work_units_proxy": 350000,
+          "estimated_memory_bytes": 8988800,
+          "includes_harmonic_refinement": true,
+          "includes_direct_refinement": true,
+          "hard_max_order": 20000,
+          "warning": "Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits."
+        },
+        "domain": {
+          "beta": 1.0,
+          "cosine": 0.999999999999,
+          "ya": 30.0,
+          "yb": 30.7
+        },
+        "criterion": "Empirical refinement and independent-method agreement, not a rigorous error bound."
+      }
+    },
+    {
+      "case": "valid",
+      "value": {
+        "real": -0.07930763147542731,
+        "imag": 0.0
+      },
+      "report": {
+        "status": "PASS",
+        "errors": {
+          "harmonic_nodes": 7.688294445529209e-15,
+          "harmonic_truncation": 0.0,
+          "analytic_crosscheck": 6.619704784327496e-15
+        },
+        "acceptance_limit": 1.0793076314754274e-08,
+        "atol": 1e-08,
+        "rtol": 1e-08,
+        "coarse": {
+          "lmax": 80,
+          "nmu_harmonic": 160,
+          "nmu_direct": 100,
+          "nphi_direct": 200
+        },
+        "fine": {
+          "lmax": 120,
+          "nmu_harmonic": 260,
+          "nmu_direct": 180,
+          "nphi_direct": 360
+        },
+        "resources": {
+          "work_units_proxy": 158000,
+          "estimated_memory_bytes": 8988800,
+          "includes_harmonic_refinement": true,
+          "includes_direct_refinement": false,
+          "hard_max_order": 20000,
+          "warning": "Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits."
+        },
+        "domain": {
+          "beta": 0.8,
+          "cosine": 0.4,
+          "ya": null,
+          "yb": null
+        },
+        "criterion": "Empirical refinement and independent-method agreement, not a rigorous error bound."
+      }
+    },
+    {
+      "case": "invalid cosine",
+      "expected_error": "ValueError",
+      "message": "Require 0<=beta<=1 and -1<=cosine<=1.",
+      "report": null
+    },
+    {
+      "case": "nonfinite cosine",
+      "expected_error": "ValueError",
+      "message": "cosine must be finite.",
+      "report": null
+    },
+    {
+      "case": "mixed response",
+      "expected_error": "ValueError",
+      "message": "Specify both pulsar phases, or neither for Earth-only.",
+      "report": null
+    },
+    {
+      "case": "outside phase envelope",
+      "expected_error": "ValueError",
+      "message": "Phases outside the audited envelope [0, 2*pi*1000.125+1]. Extend benchmarks first.",
+      "report": null
+    },
+    {
+      "case": "missing explicit resolution",
+      "expected_error": "TypeError",
+      "message": "checked_orf() missing 5 required keyword-only arguments: 'coarse', 'fine', 'budget', 'atol', and 'rtol'",
+      "report": null
+    },
+    {
+      "case": "budget rejected before evaluation",
+      "expected_error": "ValueError",
+      "message": "Resource budget exceeded before any quadrature: {'work_units_proxy': 350000, 'estimated_memory_bytes': 8988800, 'includes_harmonic_refinement': True, 'includes_direct_refinement': True, 'hard_max_order': 20000, 'warning': 'Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits.'}",
+      "report": null
+    },
+    {
+      "case": "underresolved GR auto",
+      "expected_error": "ConvergenceError",
+      "message": "ORF failed explicit refinement/cross-method convergence: {'harmonic_nodes': 2.2504220709151923e-13, 'harmonic_truncation': 0.0002279380011956933, 'direct_refinement': 0.12041109314820364, 'independent_crosscheck': 0.5489033187839943}",
+      "report": {
+        "status": "FAIL",
+        "errors": {
+          "harmonic_nodes": 2.2504220709151923e-13,
+          "harmonic_truncation": 0.0002279380011956933,
+          "direct_refinement": 0.12041109314820364,
+          "independent_crosscheck": 0.5489033187839943
+        },
+        "acceptance_limit": 1.5005744393237978e-05,
+        "atol": 1e-05,
+        "rtol": 1e-05,
+        "coarse": {
+          "lmax": 200,
+          "nmu_harmonic": 6400,
+          "nmu_direct": 200,
+          "nphi_direct": 400
+        },
+        "fine": {
+          "lmax": 250,
+          "nmu_harmonic": 6600,
+          "nmu_direct": 300,
+          "nphi_direct": 600
+        },
+        "resources": {
+          "work_units_proxy": 89160000,
+          "estimated_memory_bytes": 18336000,
+          "includes_harmonic_refinement": true,
+          "includes_direct_refinement": true,
+          "hard_max_order": 20000,
+          "warning": "Resource estimates are conservative proxies, not measured runtime or guaranteed RSS limits."
+        },
+        "domain": {
+          "beta": 1.0,
+          "cosine": 1.0,
+          "ya": 6283.970705342984,
+          "yb": 6283.970705342984
+        },
+        "criterion": "Empirical refinement and independent-method agreement, not a rigorous error bound."
+      }
+    }
+  ]
+}

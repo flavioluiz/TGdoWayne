@@ -18,6 +18,8 @@ jobs:
           python3 -m venv .venv
           .venv/bin/python -m pip install -r requirements.txt
           .venv/bin/python scripts/reproduzir_tg.py --check
+          .venv/bin/python scripts/validar_orf.py --check
+          .venv/bin/python scripts/benchmark_orf.py --verify-only results/C05/checked_benchmark_results.json
       - name: Conferir checagens, fontes e PDF versionado
         env:
           RELEASE_VERSION: ${{ github.ref_name }}

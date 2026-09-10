@@ -1,0 +1,194 @@
+{
+  "default_resolution": [
+    {
+      "beta": 1.0,
+      "y": 6283.970705342984,
+      "cosine": 1.0,
+      "harmonic_default_real": 0.5003465013210471,
+      "direct_default_real": 0.9290666649595885,
+      "reference": 0.9999999620170756,
+      "reference_description": "Exact GR auto"
+    },
+    {
+      "beta": 1.0,
+      "y": 6283.970705342984,
+      "cosine": 0.9238795325112867,
+      "harmonic_default_real": 0.30388059950204743,
+      "direct_default_real": 0.27550845828493414,
+      "reference": 0.30402611436620186,
+      "reference_description": "Stored refined harmonic benchmark_results.json; beta=1, fL_over_c=1000.125, angle=pi/8."
+    }
+  ],
+  "edge_earth": [
+    {
+      "beta": 0.0001,
+      "cosine": -1.0,
+      "value": 0.2000000002857143,
+      "finite": true
+    },
+    {
+      "beta": 0.0001,
+      "cosine": -0.9999999999999999,
+      "value": 0.2000000002857142,
+      "finite": true
+    },
+    {
+      "beta": 0.0001,
+      "cosine": 0.0,
+      "value": -0.10000000028571429,
+      "finite": true
+    },
+    {
+      "beta": 0.0001,
+      "cosine": 0.9999999999999999,
+      "value": 0.2000000008571428,
+      "finite": true
+    },
+    {
+      "beta": 0.0001,
+      "cosine": 1.0,
+      "value": 0.20000000085714287,
+      "finite": true
+    },
+    {
+      "beta": 0.999999,
+      "cosine": -1.0,
+      "value": 0.24999975000900654,
+      "finite": true
+    },
+    {
+      "beta": 0.999999,
+      "cosine": -0.9999999999999999,
+      "value": 0.24999975000900648,
+      "finite": true
+    },
+    {
+      "beta": 0.999999,
+      "cosine": 0.0,
+      "value": -0.14486021486595255,
+      "finite": true
+    },
+    {
+      "beta": 0.999999,
+      "cosine": 0.9999999999999999,
+      "value": 0.4999822369282076,
+      "finite": true
+    },
+    {
+      "beta": 0.999999,
+      "cosine": 1.0,
+      "value": 0.49998223692820853,
+      "finite": true
+    },
+    {
+      "beta": 0.999999999999,
+      "cosine": -1.0,
+      "value": 0.24999999999975,
+      "finite": true
+    },
+    {
+      "beta": 0.999999999999,
+      "cosine": -0.9999999999999999,
+      "value": 0.24999999999974995,
+      "finite": true
+    },
+    {
+      "beta": 0.999999999999,
+      "cosine": 0.0,
+      "value": -0.14486038541978843,
+      "finite": true
+    },
+    {
+      "beta": 0.999999999999,
+      "cosine": 0.9999999999999999,
+      "value": 0.49999999996151173,
+      "finite": true
+    },
+    {
+      "beta": 0.999999999999,
+      "cosine": 1.0,
+      "value": 0.49999999996151373,
+      "finite": true
+    },
+    {
+      "beta": 0.9999999999999999,
+      "cosine": -1.0,
+      "value": 0.24999999999999997,
+      "finite": true
+    },
+    {
+      "beta": 0.9999999999999999,
+      "cosine": -0.9999999999999999,
+      "value": 0.24999999999999992,
+      "finite": true
+    },
+    {
+      "beta": 0.9999999999999999,
+      "cosine": 0.0,
+      "value": -0.14486038541995896,
+      "finite": true
+    },
+    {
+      "beta": 0.9999999999999999,
+      "cosine": 0.9999999999999999,
+      "value": 0.4999999999999921,
+      "finite": true
+    },
+    {
+      "beta": 0.9999999999999999,
+      "cosine": 1.0,
+      "value": 0.4999999999999948,
+      "finite": true
+    },
+    {
+      "beta": 1.0,
+      "cosine": -1.0,
+      "value": 0.25,
+      "finite": true
+    },
+    {
+      "beta": 1.0,
+      "cosine": -0.9999999999999999,
+      "value": 0.25,
+      "finite": true
+    },
+    {
+      "beta": 1.0,
+      "cosine": 0.0,
+      "value": -0.14486038541995894,
+      "finite": true
+    },
+    {
+      "beta": 1.0,
+      "cosine": 0.9999999999999999,
+      "value": 0.4999999999999969,
+      "finite": true
+    },
+    {
+      "beta": 1.0,
+      "cosine": 1.0,
+      "value": 0.5,
+      "finite": true
+    }
+  ],
+  "domain": [
+    {
+      "case": "invalid cosine",
+      "returned_real": 0.4935608926595936,
+      "returned_imag": 0.0,
+      "raised": false
+    },
+    {
+      "case": "nonfinite cosine",
+      "returned_real": "nan",
+      "returned_imag": 0.0,
+      "raised": false
+    },
+    {
+      "case": "mixed Earth/pulsar",
+      "returned_real": -0.1335347549973097,
+      "returned_imag": 0.0021274333800682717,
+      "raised": false
+    }
+  ]
+}

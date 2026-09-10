@@ -1,0 +1,1201 @@
+{
+  "schema_version": 1,
+  "campaign": "C05 checked ORF, 20 primary + 16 coherence + 20 auto + 2 HD zeros",
+  "expected_group_counts": {
+    "primary": 20,
+    "coherence": 16,
+    "auto": 20,
+    "hd_zero": 2
+  },
+  "atol": 1e-05,
+  "rtol": 0.001,
+  "near_zero_magnitude": 1e-05,
+  "acceptance": "Every check must satisfy absolute <=atol; when |Gamma|>near_zero_magnitude also relative <=rtol. The wrapper additionally applies its own atol+rtol*|Gamma| criterion.",
+  "max_phase": 6284.970705342984,
+  "per_call_budget": {
+    "max_work_units": 2000000000,
+    "max_estimated_memory_bytes": 1073741824
+  },
+  "auto_reference": {
+    "small_epsabs": 1e-13,
+    "small_epsrel": 1e-12,
+    "oscillatory_epsabs": 1e-12,
+    "limit": 300
+  },
+  "coarse_provenance": "All 20 primary and 16 coherence resolutions preserve the historical scripts. Auto cases reuse primary resolutions. HD-zero direct coarse grids preserve 720x1440; harmonic coarse 500x1200 is added explicitly.",
+  "fine_increment": {
+    "lmax": 50,
+    "nmu_harmonic": 100,
+    "nmu_direct": 100,
+    "nphi_direct": 200
+  },
+  "notes": [
+    "Each case uses checked_orf. Raw numerical functions are used only for independent auto references and additional Earth-only direct HD-zero checks.",
+    "Bounds are empirical refinement controls and do not certify every point inside the phase envelope.",
+    "Timings include whatever quadrature-node cache is warm at that point in the ordered campaign."
+  ],
+  "cases": [
+    {
+      "id": "primary_01",
+      "group": "primary",
+      "beta": 0,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_02",
+      "group": "primary",
+      "beta": 0.01,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_03",
+      "group": "primary",
+      "beta": 0.9,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_04",
+      "group": "primary",
+      "beta": 1,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_05",
+      "group": "primary",
+      "beta": 0,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_06",
+      "group": "primary",
+      "beta": 0.01,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_07",
+      "group": "primary",
+      "beta": 0.9,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 96,
+        "nmu_harmonic": 202,
+        "nmu_direct": 127,
+        "nphi_direct": 245
+      },
+      "fine": {
+        "lmax": 146,
+        "nmu_harmonic": 302,
+        "nmu_direct": 227,
+        "nphi_direct": 445
+      }
+    },
+    {
+      "id": "primary_08",
+      "group": "primary",
+      "beta": 1,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 97,
+        "nmu_harmonic": 204,
+        "nmu_direct": 128,
+        "nphi_direct": 246
+      },
+      "fine": {
+        "lmax": 147,
+        "nmu_harmonic": 304,
+        "nmu_direct": 228,
+        "nphi_direct": 446
+      }
+    },
+    {
+      "id": "primary_09",
+      "group": "primary",
+      "beta": 0,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_10",
+      "group": "primary",
+      "beta": 0.01,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_11",
+      "group": "primary",
+      "beta": 0.9,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 147,
+        "nmu_harmonic": 304,
+        "nmu_direct": 188,
+        "nphi_direct": 292
+      },
+      "fine": {
+        "lmax": 197,
+        "nmu_harmonic": 404,
+        "nmu_direct": 288,
+        "nphi_direct": 492
+      }
+    },
+    {
+      "id": "primary_12",
+      "group": "primary",
+      "beta": 1,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 153,
+        "nmu_harmonic": 317,
+        "nmu_direct": 196,
+        "nphi_direct": 298
+      },
+      "fine": {
+        "lmax": 203,
+        "nmu_harmonic": 417,
+        "nmu_direct": 296,
+        "nphi_direct": 498
+      }
+    },
+    {
+      "id": "primary_13",
+      "group": "primary",
+      "beta": 0,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_14",
+      "group": "primary",
+      "beta": 0.01,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 96,
+        "nmu_harmonic": 202,
+        "nmu_direct": 127,
+        "nphi_direct": 245
+      },
+      "fine": {
+        "lmax": 146,
+        "nmu_harmonic": 302,
+        "nmu_direct": 227,
+        "nphi_direct": 445
+      }
+    },
+    {
+      "id": "primary_15",
+      "group": "primary",
+      "beta": 0.9,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 656,
+        "nmu_harmonic": 1322,
+        "nmu_direct": 799,
+        "nphi_direct": 760
+      },
+      "fine": {
+        "lmax": 706,
+        "nmu_harmonic": 1422,
+        "nmu_direct": 899,
+        "nphi_direct": 960
+      }
+    },
+    {
+      "id": "primary_16",
+      "group": "primary",
+      "beta": 1,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 719,
+        "nmu_harmonic": 1448,
+        "nmu_direct": 874,
+        "nphi_direct": 817
+      },
+      "fine": {
+        "lmax": 769,
+        "nmu_harmonic": 1548,
+        "nmu_direct": 974,
+        "nphi_direct": 1017
+      }
+    },
+    {
+      "id": "primary_17",
+      "group": "primary",
+      "beta": 1e-05,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "primary_18",
+      "group": "primary",
+      "beta": 0.01,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 152,
+        "nmu_harmonic": 315,
+        "nmu_direct": 195,
+        "nphi_direct": 297
+      },
+      "fine": {
+        "lmax": 202,
+        "nmu_harmonic": 415,
+        "nmu_direct": 295,
+        "nphi_direct": 497
+      }
+    },
+    {
+      "id": "primary_19",
+      "group": "primary",
+      "beta": 0.9,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5745,
+        "nmu_harmonic": 11501,
+        "nmu_direct": 6906,
+        "nphi_direct": 5434
+      },
+      "fine": {
+        "lmax": 5795,
+        "nmu_harmonic": 11601,
+        "nmu_direct": 7006,
+        "nphi_direct": 5634
+      }
+    },
+    {
+      "id": "primary_20",
+      "group": "primary",
+      "beta": 1,
+      "angle_radians": 0.39269908169872414,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6373,
+        "nmu_harmonic": 12757,
+        "nmu_direct": 7660,
+        "nphi_direct": 6011
+      },
+      "fine": {
+        "lmax": 6423,
+        "nmu_harmonic": 12857,
+        "nmu_direct": 7760,
+        "nphi_direct": 6211
+      }
+    },
+    {
+      "id": "coherence_01",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5755,
+        "nmu_harmonic": 11531,
+        "nmu_direct": 6916,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 5805,
+        "nmu_harmonic": 11631,
+        "nmu_direct": 7016,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_02",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 5756,
+        "nmu_harmonic": 11532,
+        "nmu_direct": 6917,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 5806,
+        "nmu_harmonic": 11632,
+        "nmu_direct": 7017,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_03",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 1e-05,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5755,
+        "nmu_harmonic": 11531,
+        "nmu_direct": 6916,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 5805,
+        "nmu_harmonic": 11631,
+        "nmu_direct": 7016,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_04",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 1e-05,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 5756,
+        "nmu_harmonic": 11532,
+        "nmu_direct": 6917,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 5806,
+        "nmu_harmonic": 11632,
+        "nmu_direct": 7017,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_05",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0.001,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5755,
+        "nmu_harmonic": 11531,
+        "nmu_direct": 6916,
+        "nphi_direct": 253
+      },
+      "fine": {
+        "lmax": 5805,
+        "nmu_harmonic": 11631,
+        "nmu_direct": 7016,
+        "nphi_direct": 453
+      }
+    },
+    {
+      "id": "coherence_06",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0.001,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 5756,
+        "nmu_harmonic": 11532,
+        "nmu_direct": 6917,
+        "nphi_direct": 253
+      },
+      "fine": {
+        "lmax": 5806,
+        "nmu_harmonic": 11632,
+        "nmu_direct": 7017,
+        "nphi_direct": 453
+      }
+    },
+    {
+      "id": "coherence_07",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0.01,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5755,
+        "nmu_harmonic": 11531,
+        "nmu_direct": 6916,
+        "nphi_direct": 375
+      },
+      "fine": {
+        "lmax": 5805,
+        "nmu_harmonic": 11631,
+        "nmu_direct": 7016,
+        "nphi_direct": 575
+      }
+    },
+    {
+      "id": "coherence_08",
+      "group": "coherence",
+      "beta": 0.9,
+      "angle_radians": 0.01,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 5756,
+        "nmu_harmonic": 11532,
+        "nmu_direct": 6917,
+        "nphi_direct": 375
+      },
+      "fine": {
+        "lmax": 5806,
+        "nmu_harmonic": 11632,
+        "nmu_direct": 7017,
+        "nphi_direct": 575
+      }
+    },
+    {
+      "id": "coherence_09",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6383,
+        "nmu_harmonic": 12787,
+        "nmu_direct": 7670,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 6433,
+        "nmu_harmonic": 12887,
+        "nmu_direct": 7770,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_10",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 6384,
+        "nmu_harmonic": 12789,
+        "nmu_direct": 7671,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 6434,
+        "nmu_harmonic": 12889,
+        "nmu_direct": 7771,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_11",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 1e-05,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6383,
+        "nmu_harmonic": 12787,
+        "nmu_direct": 7670,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 6433,
+        "nmu_harmonic": 12887,
+        "nmu_direct": 7770,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_12",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 1e-05,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 6384,
+        "nmu_harmonic": 12789,
+        "nmu_direct": 7671,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 6434,
+        "nmu_harmonic": 12889,
+        "nmu_direct": 7771,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "coherence_13",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0.001,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6383,
+        "nmu_harmonic": 12787,
+        "nmu_direct": 7670,
+        "nphi_direct": 255
+      },
+      "fine": {
+        "lmax": 6433,
+        "nmu_harmonic": 12887,
+        "nmu_direct": 7770,
+        "nphi_direct": 455
+      }
+    },
+    {
+      "id": "coherence_14",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0.001,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 6384,
+        "nmu_harmonic": 12789,
+        "nmu_direct": 7671,
+        "nphi_direct": 255
+      },
+      "fine": {
+        "lmax": 6434,
+        "nmu_harmonic": 12889,
+        "nmu_direct": 7771,
+        "nphi_direct": 455
+      }
+    },
+    {
+      "id": "coherence_15",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0.01,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6383,
+        "nmu_harmonic": 12787,
+        "nmu_direct": 7670,
+        "nphi_direct": 390
+      },
+      "fine": {
+        "lmax": 6433,
+        "nmu_harmonic": 12887,
+        "nmu_direct": 7770,
+        "nphi_direct": 590
+      }
+    },
+    {
+      "id": "coherence_16",
+      "group": "coherence",
+      "beta": 1,
+      "angle_radians": 0.01,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 1,
+      "coarse": {
+        "lmax": 6384,
+        "nmu_harmonic": 12789,
+        "nmu_direct": 7671,
+        "nphi_direct": 390
+      },
+      "fine": {
+        "lmax": 6434,
+        "nmu_harmonic": 12889,
+        "nmu_direct": 7771,
+        "nphi_direct": 590
+      }
+    },
+    {
+      "id": "auto_01",
+      "group": "auto",
+      "beta": 0,
+      "angle_radians": 0,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_02",
+      "group": "auto",
+      "beta": 0.01,
+      "angle_radians": 0,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_03",
+      "group": "auto",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_04",
+      "group": "auto",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 0.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_05",
+      "group": "auto",
+      "beta": 0,
+      "angle_radians": 0,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_06",
+      "group": "auto",
+      "beta": 0.01,
+      "angle_radians": 0,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_07",
+      "group": "auto",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 96,
+        "nmu_harmonic": 202,
+        "nmu_direct": 127,
+        "nphi_direct": 245
+      },
+      "fine": {
+        "lmax": 146,
+        "nmu_harmonic": 302,
+        "nmu_direct": 227,
+        "nphi_direct": 445
+      }
+    },
+    {
+      "id": "auto_08",
+      "group": "auto",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 1.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 97,
+        "nmu_harmonic": 204,
+        "nmu_direct": 128,
+        "nphi_direct": 246
+      },
+      "fine": {
+        "lmax": 147,
+        "nmu_harmonic": 304,
+        "nmu_direct": 228,
+        "nphi_direct": 446
+      }
+    },
+    {
+      "id": "auto_09",
+      "group": "auto",
+      "beta": 0,
+      "angle_radians": 0,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_10",
+      "group": "auto",
+      "beta": 0.01,
+      "angle_radians": 0,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_11",
+      "group": "auto",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 147,
+        "nmu_harmonic": 304,
+        "nmu_direct": 188,
+        "nphi_direct": 292
+      },
+      "fine": {
+        "lmax": 197,
+        "nmu_harmonic": 404,
+        "nmu_direct": 288,
+        "nphi_direct": 492
+      }
+    },
+    {
+      "id": "auto_12",
+      "group": "auto",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 10.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 153,
+        "nmu_harmonic": 317,
+        "nmu_direct": 196,
+        "nphi_direct": 298
+      },
+      "fine": {
+        "lmax": 203,
+        "nmu_harmonic": 417,
+        "nmu_direct": 296,
+        "nphi_direct": 498
+      }
+    },
+    {
+      "id": "auto_13",
+      "group": "auto",
+      "beta": 0,
+      "angle_radians": 0,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_14",
+      "group": "auto",
+      "beta": 0.01,
+      "angle_radians": 0,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 96,
+        "nmu_harmonic": 202,
+        "nmu_direct": 127,
+        "nphi_direct": 245
+      },
+      "fine": {
+        "lmax": 146,
+        "nmu_harmonic": 302,
+        "nmu_direct": 227,
+        "nphi_direct": 445
+      }
+    },
+    {
+      "id": "auto_15",
+      "group": "auto",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 656,
+        "nmu_harmonic": 1322,
+        "nmu_direct": 799,
+        "nphi_direct": 760
+      },
+      "fine": {
+        "lmax": 706,
+        "nmu_harmonic": 1422,
+        "nmu_direct": 899,
+        "nphi_direct": 960
+      }
+    },
+    {
+      "id": "auto_16",
+      "group": "auto",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 100.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 719,
+        "nmu_harmonic": 1448,
+        "nmu_direct": 874,
+        "nphi_direct": 817
+      },
+      "fine": {
+        "lmax": 769,
+        "nmu_harmonic": 1548,
+        "nmu_direct": 974,
+        "nphi_direct": 1017
+      }
+    },
+    {
+      "id": "auto_17",
+      "group": "auto",
+      "beta": 1e-05,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 90,
+        "nmu_harmonic": 200,
+        "nmu_direct": 120,
+        "nphi_direct": 240
+      },
+      "fine": {
+        "lmax": 140,
+        "nmu_harmonic": 300,
+        "nmu_direct": 220,
+        "nphi_direct": 440
+      }
+    },
+    {
+      "id": "auto_18",
+      "group": "auto",
+      "beta": 0.01,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 152,
+        "nmu_harmonic": 315,
+        "nmu_direct": 195,
+        "nphi_direct": 297
+      },
+      "fine": {
+        "lmax": 202,
+        "nmu_harmonic": 415,
+        "nmu_direct": 295,
+        "nphi_direct": 497
+      }
+    },
+    {
+      "id": "auto_19",
+      "group": "auto",
+      "beta": 0.9,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 5745,
+        "nmu_harmonic": 11501,
+        "nmu_direct": 6906,
+        "nphi_direct": 5434
+      },
+      "fine": {
+        "lmax": 5795,
+        "nmu_harmonic": 11601,
+        "nmu_direct": 7006,
+        "nphi_direct": 5634
+      }
+    },
+    {
+      "id": "auto_20",
+      "group": "auto",
+      "beta": 1,
+      "angle_radians": 0,
+      "fL_a_over_c": 1000.125,
+      "phase_delta_b": 0,
+      "coarse": {
+        "lmax": 6373,
+        "nmu_harmonic": 12757,
+        "nmu_direct": 7660,
+        "nphi_direct": 6011
+      },
+      "fine": {
+        "lmax": 6423,
+        "nmu_harmonic": 12857,
+        "nmu_direct": 7760,
+        "nphi_direct": 6211
+      }
+    },
+    {
+      "id": "hd_zero_01",
+      "group": "hd_zero",
+      "beta": 1,
+      "root_bracket_radians": [
+        0,
+        1.5707963267948966
+      ],
+      "coarse": {
+        "lmax": 500,
+        "nmu_harmonic": 1200,
+        "nmu_direct": 720,
+        "nphi_direct": 1440
+      },
+      "fine": {
+        "lmax": 550,
+        "nmu_harmonic": 1300,
+        "nmu_direct": 820,
+        "nphi_direct": 1640
+      }
+    },
+    {
+      "id": "hd_zero_02",
+      "group": "hd_zero",
+      "beta": 1,
+      "root_bracket_radians": [
+        1.5707963267948966,
+        3.141592653589793
+      ],
+      "coarse": {
+        "lmax": 500,
+        "nmu_harmonic": 1200,
+        "nmu_direct": 720,
+        "nphi_direct": 1440
+      },
+      "fine": {
+        "lmax": 550,
+        "nmu_harmonic": 1300,
+        "nmu_direct": 820,
+        "nphi_direct": 1640
+      }
+    }
+  ]
+}

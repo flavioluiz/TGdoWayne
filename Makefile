@@ -5,6 +5,8 @@ DOCUMENT ?= $(shell python3 -c 'import json; print(json.load(open("project_statu
 .PHONY: check readme pdf release
 check:
 	$(SCIENTIFIC_PYTHON) scripts/reproduzir_tg.py --check
+	$(SCIENTIFIC_PYTHON) scripts/validar_orf.py --check
+	$(SCIENTIFIC_PYTHON) scripts/benchmark_orf.py --verify-only results/C05/checked_benchmark_results.json
 	python3 scripts/checagens_preliminares.py
 	python3 scripts/update_readme.py --check
 	python3 scripts/verify_release.py $(VERSION)
@@ -18,6 +20,8 @@ pdf:
 
 release:
 	$(SCIENTIFIC_PYTHON) scripts/reproduzir_tg.py --check
+	$(SCIENTIFIC_PYTHON) scripts/validar_orf.py --check
+	$(SCIENTIFIC_PYTHON) scripts/benchmark_orf.py --verify-only results/C05/checked_benchmark_results.json
 	python3 scripts/checagens_preliminares.py
 	python3 scripts/update_readme.py
 	python3 scripts/update_document_state.py

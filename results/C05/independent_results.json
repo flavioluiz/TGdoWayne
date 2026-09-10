@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "tests_run": 4,
+  "failures": 0,
+  "errors": 0,
+  "nmu_explicit": 120,
+  "nphi_explicit": 240,
+  "harmonic_lmax": 170,
+  "harmonic_nmu": 300,
+  "numpy": "2.4.3",
+  "metrics": {
+    "coincidence": [
+      {
+        "beta": 0,
+        "near_vs_coincident_difference": 3.3300495786260905e-07
+      },
+      {
+        "beta": 0.99,
+        "near_vs_coincident_difference": 2.486076381645757e-07
+      },
+      {
+        "beta": 1,
+        "near_vs_coincident_difference": 2.50990832707211e-07
+      }
+    ],
+    "explicit_gram": [
+      {
+        "beta": 0,
+        "max_abs_difference": 5.0515151900755135e-15,
+        "gram_min_eigenvalue": -2.2749820792323225e-15,
+        "harmonic_min_eigenvalue": -9.778201992161288e-18,
+        "near_pair_imaginary": 0.00850429630969877
+      },
+      {
+        "beta": 0.2,
+        "max_abs_difference": 1.0491609040333365e-14,
+        "gram_min_eigenvalue": 0.016675302672583995,
+        "harmonic_min_eigenvalue": 0.01667530267258719,
+        "near_pair_imaginary": 0.09227885694317219
+      },
+      {
+        "beta": 0.9999999999999999,
+        "max_abs_difference": 4.4186877927760807e-14,
+        "gram_min_eigenvalue": 0.030971936223013547,
+        "harmonic_min_eigenvalue": 0.030971936223007365,
+        "near_pair_imaginary": 0.16541382078822015
+      },
+      {
+        "beta": 1,
+        "max_abs_difference": 4.429789879491694e-14,
+        "gram_min_eigenvalue": 0.03097193622301399,
+        "harmonic_min_eigenvalue": 0.030971936223005956,
+        "near_pair_imaginary": 0.1654138207882203
+      }
+    ],
+    "global_rotation": [
+      {
+        "beta": 0,
+        "max_abs_difference": 3.4416913763379853e-15
+      },
+      {
+        "beta": 0.9999999999999999,
+        "max_abs_difference": 4.8405723873656825e-14
+      },
+      {
+        "beta": 1,
+        "max_abs_difference": 4.762856788278311e-14
+      }
+    ],
+    "frequency_reality": {
+      "max_conjugacy_error": 0.0,
+      "time_cov_min_eigenvalue": 0.048508212911775817,
+      "max_time_cov_change_if_imaginary_discarded": 0.08384750861846268
+    }
+  }
+}

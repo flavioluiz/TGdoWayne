@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "tests_run": 23,
+  "failures": 0,
+  "errors": 0,
+  "python": "3.14.3",
+  "numpy": "2.4.3",
+  "scipy": "1.17.1",
+  "source_sha256": {
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887",
+    "tests/test_orf.py": "521b52ebfac26da2e1fed7f30e2a055ab11458df287fe14a8102e8648448b8bf",
+    "scripts/validar_orf.py": "870b4b2c39aaed0546de52b4dab2f1980bf0d218bfc257db4498e80b22348a55"
+  },
+  "independent_physical_metrics": {
+    "coincidence": [
+      {
+        "beta": 0,
+        "near_vs_coincident_difference": 3.3300495786260905e-07
+      },
+      {
+        "beta": 0.99,
+        "near_vs_coincident_difference": 2.486076381645757e-07
+      },
+      {
+        "beta": 1,
+        "near_vs_coincident_difference": 2.50990832707211e-07
+      }
+    ],
+    "explicit_gram": [
+      {
+        "beta": 0,
+        "max_abs_difference": 5.0515151900755135e-15,
+        "gram_min_eigenvalue": -2.2749820792323225e-15,
+        "harmonic_min_eigenvalue": -9.778201992161288e-18,
+        "near_pair_imaginary": 0.00850429630969877
+      },
+      {
+        "beta": 0.2,
+        "max_abs_difference": 1.0491609040333365e-14,
+        "gram_min_eigenvalue": 0.016675302672583995,
+        "harmonic_min_eigenvalue": 0.01667530267258719,
+        "near_pair_imaginary": 0.09227885694317219
+      },
+      {
+        "beta": 0.9999999999999999,
+        "max_abs_difference": 4.4186877927760807e-14,
+        "gram_min_eigenvalue": 0.030971936223013547,
+        "harmonic_min_eigenvalue": 0.030971936223007365,
+        "near_pair_imaginary": 0.16541382078822015
+      },
+      {
+        "beta": 1,
+        "max_abs_difference": 4.429789879491694e-14,
+        "gram_min_eigenvalue": 0.03097193622301399,
+        "harmonic_min_eigenvalue": 0.030971936223005956,
+        "near_pair_imaginary": 0.1654138207882203
+      }
+    ],
+    "global_rotation": [
+      {
+        "beta": 0,
+        "max_abs_difference": 3.4416913763379853e-15
+      },
+      {
+        "beta": 0.9999999999999999,
+        "max_abs_difference": 4.8405723873656825e-14
+      },
+      {
+        "beta": 1,
+        "max_abs_difference": 4.762856788278311e-14
+      }
+    ],
+    "frequency_reality": {
+      "max_conjugacy_error": 0.0,
+      "time_cov_min_eigenvalue": 0.048508212911775817,
+      "max_time_cov_change_if_imaginary_discarded": 0.08384750861846268
+    }
+  },
+  "scope": "23 C05 tests; separate 20-case and 16-case campaigns are not rerun here."
+}
