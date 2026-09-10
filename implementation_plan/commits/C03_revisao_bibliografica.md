@@ -17,7 +17,8 @@ Confirmar ou corrigir a lacuna candidata antes de investir na implementação pr
 2. Comparar Visser, Fierz–Pauli e teorias modernas, polarizações exatas, ORFs, inferência de massa e publicações de 2024–2026 ou posteriores.
 3. Inspecionar códigos e suplementos dos trabalhos mais próximos, especialmente compressão e prioris em PTA.
 4. Criar matriz problema/modelo/dados/aproximação/validação/limitação; separar resultados publicados, preprints e apresentações.
-5. Registrar uma decisão explícita sobre continuidade ou mudança do recorte e ajustar introdução, objetivos e marcos afetados.
+5. Baixar os PDFs consultados em `literature/papers/`, catalogando URL, versão, data, hash e disponibilidade, e fornecer um script para reproduzir o acervo.
+6. Registrar uma decisão explícita sobre continuidade ou mudança do recorte e ajustar introdução, objetivos e marcos afetados.
 
 ## Arquivos e produtos esperados
 
@@ -26,6 +27,8 @@ Confirmar ou corrigir a lacuna candidata antes de investir na implementação pr
 - `docs/literatura/matriz_originalidade.csv`
 - `docs/literatura/decisao_recorte.md`
 - `latex/referencias/referencias.bib`
+- `literature/catalog.json`, `literature/README.md` e `scripts/download_papers.py`
+- `literature/papers/` (acervo local de PDFs, com redistribuição avaliada por licença)
 
 Além desses arquivos, atualizar `project_status.json`, o painel do `README.md`, o estado dos capítulos,
 `releases/v0.3.0/RELEASE_NOTES.md`, o PDF e o manifesto da versão. Diretórios científicos
@@ -36,6 +39,8 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 - [ ] Cada afirmação de lacuna é confrontada com os trabalhos mais próximos e suas versões consultadas.
 - [ ] A matriz explica o que é reprodução, contribuição candidata e hipótese ainda não testada.
 - [ ] Há uma pergunta específica e viável que não depende apenas de repetir seis polarizações, incluir distância finita ou melhorar chi-quadrado.
+
+- [ ] Os PDFs disponíveis foram baixados, correspondem às versões catalogadas e possuem hashes conferidos; indisponibilidades são registradas explicitamente.
 
 ## Validação exigida
 

@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import shutil
 import subprocess
+import sys
 from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,6 +35,8 @@ def main():
                                 cwd=ROOT, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL).returncode == 0
     if tag_exists and not args.build_only:
         raise SystemExit("Tag já existe. Use --build-only para conferir, ou publique uma nova versão.")
+    if args.document == "dissertacao":
+        subprocess.run([sys.executable, str(ROOT / "scripts/update_document_state.py"), "--check"], check=True)
     env = os.environ.copy()
     env["PATH"] = "/Library/TeX/texbin:" + env.get("PATH", "")
     for binary in ("latexmk", "pdflatex", "biber"):

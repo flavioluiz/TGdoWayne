@@ -32,9 +32,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Introdução contém problema, justificativa, objetivos verificáveis e delimitação de 24 meses.
-- [ ] Não afirma originalidade confirmada nem detecção de polarizações adicionais.
-- [ ] PDF cumulativo contém a introdução completa e explicita o que ainda não foi escrito.
+- [x] Introdução contém problema, justificativa, objetivos verificáveis e delimitação de 24 meses.
+- [x] Não afirma originalidade confirmada nem detecção de polarizações adicionais.
+- [x] PDF cumulativo contém a introdução completa e explicita o que ainda não foi escrito.
 
 ## Validação exigida
 
@@ -56,3 +56,10 @@ Se os objetivos dependerem de dados ainda não acessíveis, manter o núcleo com
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência da entrega
+
+Introdução redigida e revisada em `latex/capitulos_dissertacao/01_introducao.tex`;
+PDF cumulativo de 12 páginas, com capa, resumo provisório, quadro de capítulos,
+sumário, introdução e referências. Verificações locais registradas em
+`docs/validacao_v0.2.0.md`; hashes no manifesto do release.

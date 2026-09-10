@@ -1,0 +1,266 @@
+\chapter{Introdução}
+\label{chap:introducao}
+
+\section{Motivação e contexto observacional}
+
+As ondas gravitacionais permitem investigar a gravitação por meio de
+sua propagação e de seus efeitos sobre sistemas de medição. Na
+relatividade geral, as perturbações radiativas do vácuo possuem duas
+polarizações tensoriais. Teorias alternativas podem modificar a relação
+de dispersão, introduzir setores adicionais ou alterar simultaneamente
+esses dois aspectos. A interpretação de um teste observacional exige,
+portanto, relacionar a teoria adotada à resposta do detector e ao
+procedimento estatístico que transforma os dados em limites ou
+evidências entre modelos. Uma assinatura permitida pelas equações não é,
+por si só, uma previsão de amplitude observável.
+
+As redes de temporização de pulsares, designadas pela sigla PTA, do
+inglês \emph{pulsar timing array}, investigam ondas de frequências muito
+baixas por meio de resíduos nos tempos de chegada dos pulsos. Uma
+perturbação gravitacional comum produz uma estrutura de correlação entre
+pulsares que depende de sua distribuição angular, das polarizações e da
+propagação. Para ondas dispersivas, essa estrutura também pode variar
+com a frequência. A resposta incorpora contribuições avaliadas na Terra
+e nos pulsares, com fases associadas às distâncias e à direção de
+propagação. Esses elementos tornam as PTAs especialmente adequadas ao
+estudo conjunto de massa e polarização, mas impedem identificar a
+resposta observacional apenas com a deformação local de partículas
+livres \autocite{liang2021,cordes2025}.
+
+O interesse pelas baixas frequências decorre diretamente da relação de
+dispersão de uma onda livre massiva no regime linear. Denotando por
+\(m_g\) a massa do gráviton, por \(k\) o módulo do vetor de onda e por
+\(h_{\mathrm P}\) a constante de Planck, adota-se
+\begin{equation}
+  \omega^2=c^2k^2+\left(\frac{m_gc^2}{\hbar}\right)^2,
+  \qquad f_g=\frac{m_gc^2}{h_{\mathrm P}},
+  \qquad \beta(f)=\frac{ck}{\omega}
+  =\sqrt{1-\left(\frac{f_g}{f}\right)^2}.
+  \label{eq:intro-dispersao}
+\end{equation}
+A velocidade de grupo é \(c\beta\), enquanto a velocidade de fase é
+\(c/\beta\). Para uma massa fixa, o desvio cinemático cresce quando a
+frequência se aproxima de \(f_g\). Abaixo desse limiar, a solução livre
+considerada não descreve uma onda viajante com número de onda real.
+Logo, a faixa de PTA oferece um regime qualitativamente diferente do
+limite quase nulo, sem que isso garanta sensibilidade superior em toda
+análise: espectro, ruído e tempo de observação também determinam a
+informação disponível \autocite{liang2021,wu2024}.
+
+Estudos recentes com dados do NANOGrav examinam tanto a dispersão massiva
+quanto polarizações transversais adicionais
+\autocite{wu2024,nanograv2024}. A interpretação dos resultados depende do
+modelo de sinal, do suporte espectral e das hipóteses de ruído. Em
+particular, a busca de polarização escalar transversal não apresentou
+evidência significativa para sua inclusão \autocite{nanograv2024}.
+Testes de dispersão de sinais de binárias realizados pelas colaborações
+LIGO, Virgo e KAGRA oferecem outro contexto observacional, com hipóteses
+de fonte e frequências distintas \autocite{lvk2026}. A presente
+dissertação concentra-se na validade da inferência em PTAs, sem tratar
+limites obtidos por métodos diferentes como medidas diretamente
+intercambiáveis.
+
+\section{Continuidade com o trabalho de graduação}
+
+O ponto de partida é o trabalho de graduação de Wayne Leonardo Silva de
+Paula, apresentado ao Instituto Tecnológico de Aeronáutica em 2003
+\autocite{tg2003}. O estudo investigou os estados de polarização de ondas
+gravitacionais com gráviton massivo na formulação de Visser,
+empregando equações linearizadas, tetradas e componentes de curvatura.
+A comparação entre frequências destacou a relevância potencial do
+regime de baixas frequências. Seu núcleo científico foi publicado no
+ano seguinte por de Paula, Miranda e Marinho
+\autocite{depaula2004}. Essa publicação delimita a continuidade proposta:
+reproduzir o cálculo histórico é necessário à formação e à verificação,
+mas não constitui, isoladamente, uma contribuição inédita.
+
+Uma atualização teórica requer distinguir seis deformações geométricas
+possíveis de seis graus de liberdade físicos independentes. A matriz
+simétrica de marés \(E_{ij}=R_{0i0j}\) possui seis componentes. Os
+vínculos das equações de campo, entretanto, podem relacionar essas
+componentes. No modelo linear de Fierz--Pauli em quatro dimensões, um
+campo massivo de spin dois possui cinco graus de liberdade; a
+helicidade zero pode produzir deformações escalar transversal e
+longitudinal vinculadas. Atribuir duas amplitudes estatisticamente
+independentes a essas deformações mudaria o modelo físico
+\autocite{liang2021}.
+
+A atualização também exige delimitar as aproximações. O uso de uma
+tetrada nula não torna nula a propagação da onda. Relações obtidas sob
+hipóteses quase nulas devem ter seu domínio verificado antes de serem
+aplicadas perto do limiar massivo. Expressões exatas e discussões dessas
+limitações já estão disponíveis na literatura \autocite{hyun2019}.
+Além disso, contar componentes de curvatura não estabelece a
+estabilidade da teoria. A formulação histórica de Visser será tratada
+como objeto de reprodução, enquanto Fierz--Pauli fornecerá a referência
+linear para o setor massivo. As construções não lineares de dRGT e
+Hassan--Rosen serão discutidas como contexto, sem transferir suas
+propriedades de consistência automaticamente ao modelo histórico
+\autocite{visser1998,park2010,derham2011,hassan2012}.
+
+\section{Problema de pesquisa e lacuna candidata}
+
+Parte dos produtos de PTA é apresentada na forma de correlações
+angulares já comprimidas em frequência. Essa representação é útil para
+visualizar a correlação espacial, mas sua interpretação por um modelo
+dispersivo exige conhecer como a compressão foi construída. A previsão
+para um estimador comprimido deve conservar os pesos espectrais, a
+janela de observação e as hipóteses que participaram de sua definição.
+Substituir a resposta dependente da frequência por uma avaliação em uma
+única frequência introduz uma aproximação adicional à compressão.
+
+O trabalho de Zhao e Wang sobre MeerKAT e previsões para SKA constitui
+uma motivação direta: diante de produtos comprimidos, adota uma
+frequência de referência associada ao inverso da duração observacional
+e explicita limitações relativas à covariância disponível
+\autocite{zhao2026}. Outros estudos recentes investigam correlações
+massivas, múltiplas polarizações, distâncias finitas e variabilidade
+entre realizações do fundo \autocite{choi2025,cordes2025,wu2025}.
+Consequentemente, nem introduzir massa na resposta de PTA nem conservar
+termos dos pulsares define novidade suficiente. A oportunidade
+considerada aqui é quantificar, de maneira controlada, as consequências
+estatísticas de diferentes tratamentos da frequência.
+
+A pergunta central é: \emph{em quais condições a avaliação da resposta
+em uma frequência de referência preserva a inferência da massa do
+gráviton, quando comparada à análise com frequência explícita e à
+compressão aplicada de modo consistente ao modelo?} A extensão escalar
+perguntará se as mesmas escolhas alteram a recuperação de uma
+contribuição de helicidade zero fisicamente vinculada.
+
+Para precisar a comparação, considere esquematicamente o valor esperado
+de um estimador de correlação entre os pulsares \(a\) e \(b\):
+\begin{equation}
+  \mu_{ab}(m_g)=\int df\,W_{ab}(f)S_h(f)
+  \Gamma_{ab}(f;m_g).
+  \label{eq:intro-compressao}
+\end{equation}
+Nessa expressão, \(S_h\) descreve o espectro do sinal,
+\(\Gamma_{ab}\) representa a resposta correlacionada e \(W_{ab}\)
+reúne os fatores do estimador e da observação, inclusive conversões de
+unidades pertinentes. Uma aproximação de frequência única substitui
+\(\Gamma_{ab}(f;m_g)\) por
+\(\Gamma_{ab}(f_{\mathrm{ref}};m_g)\) na integral. A igualdade entre
+as duas previsões precisa ser demonstrada no regime analisado; não
+decorre apenas da escolha \(f_{\mathrm{ref}}=1/T\).
+
+A hipótese de trabalho é que a adequação dessa aproximação depende da
+variação da resposta ao longo da banda efetivamente medida e da
+relevância dessa variação diante das incertezas. Uma banda estreita ou
+uma resposta quase constante pode tornar as análises equivalentes na
+precisão disponível. Uma resposta variável pode produzir discrepâncias
+mensuráveis, mas a existência, o sinal e a magnitude de eventual viés
+não são pressupostos. Também é possível perder informação com uma
+compressão consistente sem introduzir o mesmo erro de modelagem da
+aproximação de frequência única.
+
+Essa separação exige ainda controlar a forma da verossimilhança.
+Aplicar corretamente os pesos de compressão ao valor esperado não
+garante, por si só, uma descrição correta da distribuição do estimador.
+Assim, alterações decorrentes de uma hipótese gaussiana, de uma
+covariância aproximada ou do descarte da dependência espectral deverão
+ser identificadas em comparações distintas. A utilização de múltiplas
+frequências ou de uma covariância completa é uma escolha metodológica;
+seu emprego isolado não será apresentado como a contribuição original.
+
+Esse recorte é uma \textbf{lacuna candidata}. A revisão iniciada na
+proposta não demonstra prioridade absoluta sobre ele. A revisão
+bibliográfica detalhada deverá confrontar artigos, versões de
+preprints, suplementos e códigos acessíveis, registrando sobreposições
+e diferenças. Até a execução e validação das campanhas numéricas, não
+há resultado estatístico desta dissertação que estabeleça viés,
+detectabilidade escalar ou um novo limite observacional de massa.
+
+\section{Objetivos e critérios de avaliação}
+
+O objetivo geral é construir uma comparação reproduzível entre três
+formas de inferência em PTAs: frequência explícita, compressão
+consistente e resposta avaliada em uma frequência de referência. As
+três análises deverão partir das mesmas realizações simuladas e de
+hipóteses físicas compatíveis, permitindo atribuir diferenças ao
+tratamento da frequência e às aproximações declaradas.
+
+Os objetivos específicos são:
+\begin{enumerate}
+  \item Reproduzir o núcleo linear do TG, documentando convenções,
+  unidades, vínculos e limites de validade, com verificações algébricas
+  independentes dos resultados estatísticos posteriores.
+  \item Implementar a resposta tensorial dispersiva de PTA com termos
+  da Terra e dos pulsares, validando integrações e limites analíticos.
+  \item Gerar conjuntos sintéticos com massa, espectro, geometria,
+  distâncias e ruído conhecidos, preservando a covariância necessária à
+  comparação dos estimadores.
+  \item Quantificar diferenças entre as três análises por meio de
+  recuperação de parâmetros, incertezas, calibração e informação
+  fornecida pelos dados em relação à priori.
+  \item Avaliar a robustez às escolhas a priori, ao suporte espectral e
+  ao tratamento das covariâncias, separando restrições cinemáticas de
+  informação observacional.
+  \item Estender cenários selecionados à helicidade zero de
+  Fierz--Pauli, mantendo o vínculo entre suas deformações transversal e
+  longitudinal, e preparar resultados reproduzíveis para um artigo.
+\end{enumerate}
+
+A avaliação não ficará restrita à concordância visual de curvas. A
+verificação física deverá recuperar o limite tensorial sem massa nas
+condições pertinentes; a verificação numérica deverá demonstrar
+convergência em precisão suficiente para a inferência. Campanhas de
+injeção e recuperação medirão deslocamentos de parâmetros e
+incertezas. Calibração sob a priori e cobertura em parâmetros fixos
+serão avaliadas separadamente, pois respondem a perguntas distintas.
+Quando houver comparação entre modelos, a distribuição da estatística
+sob a hipótese nula será medida antes de interpretar uma preferência
+como evidência de física adicional.
+
+\section{Delimitação e viabilidade}
+
+O trabalho está dimensionado para 24 meses. Seu núcleo compreende
+propagação linear sobre fundo plano, resposta de PTA, simulações e
+inferência estatística. As amplitudes dos setores considerados serão
+hipóteses de população explicitadas. Não serão deduzidas a emissão
+completa de binárias em uma teoria não linear, a história cosmológica
+do fundo ou uma solução do mecanismo de Vainshtein. Essa delimitação
+permite testar a inferência sem apresentar um modelo fenomenológico de
+amplitudes como previsão universal de gravidade massiva.
+
+A sequência prevista reserva os dois primeiros meses à revisão e à
+delimitação definitiva; os meses 3--8 à reconstrução teórica e à
+resposta; os meses 9--15 às simulações e à validação da comparação
+central; e os meses 16--18 à extensão escalar selecionada. Os seis
+meses finais destinam-se à aplicação viável, à consolidação dos
+resultados e à redação. Esse cronograma organiza dependências e não
+constitui evidência de que os experimentos já foram realizados.
+
+A contribuição principal deverá ser sustentável com simulações e
+benchmarks públicos. Uma aplicação observacional dependerá da
+disponibilidade de produtos com informação espectral e covariância
+suficientes. O portal de dados do NANOGrav e a infraestrutura
+ENTERPRISE serão examinados nessa decisão
+\autocite{nanogravdata,enterprise}. Se tais condições não forem
+satisfeitas dentro do escopo, a aplicação será substituída por uma
+campanha simulada ampliada, com justificativa registrada. Informação
+espectral ausente em produtos comprimidos não será tratada como se
+tivesse sido observada.
+
+\section{Organização da dissertação e das entregas}
+
+A dissertação será desenvolvida de forma cumulativa. Após esta
+introdução, a etapa C03 apresentará a revisão bibliográfica e a matriz
+de originalidade. C04 reunirá os fundamentos, a reprodução do TG e os
+vínculos de Fierz--Pauli. C05 desenvolverá a resposta de PTA. C06
+descreverá as simulações e C07 estabelecerá a inferência validada. As
+etapas C08 e C09 tratarão, respectivamente, da comparação de
+compressões e da robustez a prioris e covariâncias. C10 abordará a
+helicidade zero, e C11 documentará a aplicação observacional ou a
+extensão simulada justificada. C12 reunirá discussão, conclusões e
+manuscrito; C13 realizará a auditoria final de consistência e
+reprodutibilidade.
+
+Cada etapa concluída terá um commit, uma versão em PDF e um registro das
+verificações executadas. O quadro de estado dos capítulos distingue, em cada versão, as entregas
+planejadas do conteúdo efetivamente produzido. A conclusão editorial de um
+capítulo não substitui sua validação científica, e a preparação de um
+manuscrito não garante aceitação por um periódico. O resultado esperado
+é uma avaliação verificável das condições em que inferências
+comprimidas são adequadas, mesmo que os testes não encontrem diferença
+estatisticamente relevante nos cenários examinados.

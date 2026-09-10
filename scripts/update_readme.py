@@ -15,6 +15,7 @@ def status_block():
     stages = roadmap["stages"]
     current = next(s for s in stages if s["id"] == status["current_stage"])
     completed = status["completed_stages"]
+    in_progress = status.get("in_progress_stages", [])
     next_stage = next((s for s in stages if s["id"] not in completed), None)
     version = status["latest_version"]
     base = "https://github.com/flavioluiz/TGdoWayne/releases"
@@ -36,7 +37,8 @@ def status_block():
               "| Etapa | Entrega | Versão do PDF | Estado | Plano do commit |",
               "|---|---|---|---|---|"]
     for stage in stages:
-        state = "Concluída" if stage["id"] in completed else "Próxima — não iniciada" if stage == next_stage else "Planejada"
+        state = ("Concluída" if stage["id"] in completed else "Em andamento" if stage["id"] in in_progress
+                 else "Próxima — não iniciada" if stage == next_stage else "Planejada")
         lines.append(f'| {stage["id"]} | {stage["title"]} | `{stage["version"]}` | {state} | '
                      f'[Detalhes](implementation_plan/commits/{stage["plan_file"]}) |')
     lines += ["", "[Plano geral de execução](implementation_plan/README.md). "
