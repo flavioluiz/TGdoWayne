@@ -1,0 +1,107 @@
+{
+  "experiment": "C06 tensorial, ideal periodic band-limited moment validation",
+  "scope": "A reduced synthetic 10-pulsar geometry for moment validation; not an observed or representative PTA and not an inference campaign.",
+  "duration_years": 15.0,
+  "sample_count_periodic_grid": 392,
+  "positive_fourier_channels": [
+    1,
+    2,
+    3
+  ],
+  "geometry": {
+    "count": 10,
+    "directions": "deterministic Fibonacci sphere",
+    "distances_light_years": [
+      100,
+      220,
+      140,
+      280,
+      180,
+      300,
+      120,
+      260,
+      160,
+      240
+    ],
+    "nominal_toa_sigma_nanoseconds": [
+      100,
+      180,
+      280,
+      400,
+      140,
+      220,
+      320,
+      500,
+      160,
+      250
+    ],
+    "red_amplitude_pattern": [
+      0.5,
+      1.2,
+      0.8,
+      1.5,
+      0.6,
+      2.0,
+      0.9,
+      1.6,
+      0.7,
+      1.1
+    ]
+  },
+  "injection": {
+    "u_mass_frequency_times_duration": 0.6,
+    "log10_gw_amplitude": -14.9,
+    "gw_slope": 4.1,
+    "log10_red_amplitude": -15.3,
+    "red_slope": 4.0,
+    "white_efac": 1.1
+  },
+  "fixed_normalization": {
+    "log10_gw_amplitude": -14.7,
+    "gw_slope": 4.333333333333333,
+    "white_component": "2 median(nominal sigma)^2 cadence; fixed before injection"
+  },
+  "estimators": {
+    "cross_bins": 4,
+    "auto_bins": 2,
+    "frequency_weights": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "cumulant_indices": [
+      0,
+      4,
+      8
+    ]
+  },
+  "monte_carlo": {
+    "seed": 691206,
+    "blocks": 128,
+    "draws_per_block": 1024,
+    "saved_draws": 32,
+    "maximum_standard_errors": 6.0
+  },
+  "orf_validation": {
+    "coarse": {
+      "lmax": 460,
+      "nmu_harmonic": 900,
+      "nmu_direct": 500,
+      "nphi_direct": 1000
+    },
+    "fine": {
+      "lmax": 520,
+      "nmu_harmonic": 1000,
+      "nmu_direct": 600,
+      "nphi_direct": 1200
+    },
+    "pair_budget": {
+      "max_work_units": 10000000,
+      "max_estimated_memory_bytes": 64000000
+    },
+    "aggregate_work_budget": 3000000000,
+    "atol": 1e-05,
+    "rtol": 0.001
+  },
+  "case_name": "massive"
+}

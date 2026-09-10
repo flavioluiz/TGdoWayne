@@ -21,7 +21,7 @@ Gerar observações controladas que permitam atribuir diferenças à compressão
 
 ## Arquivos e produtos esperados
 
-- `src/simulation/`
+- `src/pta/simulation.py`, `src/pta/statistics.py` e `src/pta/geometry.py` (pacote compartilhado com C05)
 - `configs/experiments/`
 - `docs/dados_sinteticos.md`
 - `results/C06/`
@@ -34,9 +34,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Realizações independentes recuperam momentos esperados dentro de incertezas Monte Carlo.
-- [ ] Covariâncias são hermitianas/simétricas e positivas no domínio usado; unidades e resposta temporal são consistentes.
-- [ ] As três análises recebem as mesmas realizações e o mesmo modelo físico de geração.
+- [x] Realizações independentes recuperam momentos esperados dentro de incertezas Monte Carlo.
+- [x] Covariâncias são hermitianas/simétricas e positivas no domínio usado; unidades e resposta temporal são consistentes.
+- [x] As três análises recebem as mesmas realizações e o mesmo modelo físico de geração.
 
 ## Validação exigida
 
@@ -68,3 +68,11 @@ Se uma análise completa de resíduos exceder os recursos, adotar estimadores es
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Registro de execução
+
+Concluídos os três controles: massa positiva, GR e ruído branco sem sinal. Cada caso usa 131072 realizações físicas e controles normais pareados, com sementes fixas. Onze testes passaram e os 605 pares necessários às matrizes foram auditados pela interface C05. A covariância e as cumulantes recuperadas mantêm explícita a não normalidade dos estimadores. Os mesmos dados comprimidos alimentam as previsões de B/C_full/C_beta; A conserva os canais, e A0 conserva os coeficientes.
+
+O desenho adota um experimento periódico de Fourier sem ajuste de temporização. A referência de custo utiliza dez pulsares; a extensão prospectiva usa 12 e quatro canais. A configuração declara prioris e recursos. Não foram executadas posteriors ou SBC neste marco. O pacote foi concentrado em `src/pta/` para reutilizar a resposta validada, sem alterar os cinco módulos científicos de C05.
+
+Evidências: `results/C06/`, `docs/dados_sinteticos.md`, `docs/contrato_comparacoes.md` e `docs/validacao_v0.6.0.md`.

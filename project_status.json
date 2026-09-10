@@ -1,18 +1,19 @@
 {
   "schema_version": 1,
-  "current_stage": "C05",
+  "current_stage": "C06",
   "completed_stages": [
     "C01",
     "C02",
     "C03",
     "C04",
-    "C05"
+    "C05",
+    "C06"
   ],
-  "latest_version": "v0.5.0",
+  "latest_version": "v0.6.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.5.0/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.6.0/dissertacao.pdf",
   "updated_at": "2026-09-10",
-  "status_label": "Resposta tensorial de PTA validada; metodologia de simulação em andamento",
+  "status_label": "Simulador e momentos validados; convergência da inferência em avaliação",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -29,15 +30,18 @@
     "Introdução da dissertação concluída: motivação, continuidade com o TG, pergunta, hipótese, objetivos, escopo e critérios de avaliação.",
     "Documento cumulativo da dissertação criado, com quadro explícito do estado dos capítulos e metadados vinculados à versão.",
     "Revisão bibliográfica detalhada, matriz com 17 entradas, inspeção de códigos públicos e segunda leitura independente dos antecedentes metodológicos.",
-    "Acervo local de 22 artigos (452 páginas), com versões, URLs, licenças indicadas e SHA-256; script para baixar e verificar as cópias.",
+    "Acervo inicial de 22 artigos (452 páginas), com versões, URLs, licenças indicadas e SHA-256; script para baixar e verificar as cópias.",
     "Recorte refinado diante de trabalhos de 2025–2026; planos C05–C10 atualizados para separar compressão, distribuição probabilística, resposta e suporte.",
     "Derivação simbólica geral da curvatura, vínculos e postos de Visser/FP; relação escalar, limites e reprodução das projeções do TG confrontados com Hyun.",
     "Auditoria independente de Einstein linear, sinais, unidades e normalização histórica da massa; 19 testes simbólicos aprovados e registro reproduzível com dependências fixadas.",
     "Resposta tensorial com termos da Terra e dos pulsars, fases complexas e normalização espectral explícita; limites de Liang–Trodden/Cordes e Hellings–Downs reproduzidos.",
-    "23 testes de resposta, geometria e interface aprovados; campanha de 58 casos aceita com métodos independentes, refinamento separado e orçamento numérico explícito."
+    "23 testes de resposta, geometria e interface aprovados; campanha de 58 casos aceita com métodos independentes, refinamento separado e orçamento numérico explícito.",
+    "Experimento Fourier periódico com sinal tensorial, ruídos branco/vermelho, estimadores complexos e compressão fixa; contrato A0/A/B/C e desenho prospectivo registrados.",
+    "Onze testes do simulador aprovados; três campanhas com 131072 realizações físicas e controles cada recuperaram momentos e cumulantes, com 605 avaliações auditadas de pares ORF.",
+    "Acervo ampliado para 26 PDFs locais (600 páginas), incluindo quatro referências metodológicas de calibração, com versões publicadas até 2026."
   ],
-  "current_work": "C06 em andamento: experimento Fourier, dados sintéticos, estimadores e propagação da covariância. Inferência, calibração estatística e artigo ainda não estão concluídos.",
+  "current_work": "C07 em andamento: inferência contínua com cinco parâmetros, controles de integração e preparação da calibração. Os pilotos ainda não satisfazem todos os critérios de convergência; SBC, cobertura, comparações inferenciais e artigo permanecem pendentes.",
   "in_progress_stages": [
-    "C06"
+    "C07"
   ]
 }

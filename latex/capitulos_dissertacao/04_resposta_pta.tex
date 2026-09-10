@@ -41,8 +41,8 @@ A onda viajante exige \(f\geq f_g\). O código rejeita frequências
 inferiores, em vez de substituir a raiz por seu módulo. No limiar,
 \(\beta=0\), as expressões serão avaliadas por limites regulares.
 Essa rejeição é o domínio de uma função de resposta de ondas
-viajantes. O simulador futuro deverá decidir, explicitamente, como
-representar um setor ausente abaixo do limiar; rejeitar um argumento
+viajantes. O simulador de C06 fixa um suporte no qual todos os canais
+permanecem viajantes. Uma extensão deverá definir como representar um setor ausente abaixo do limiar; rejeitar um argumento
 da função não equivale a excluir automaticamente uma hipótese física
 inteira.
 
@@ -586,12 +586,12 @@ garantia de convergência. Tampouco a concordância de duas integrações
 da resposta completa valida automaticamente sua substituição pela
 contribuição terrestre e uma diagonal assintótica.
 
-O simulador de C06 deverá utilizar os mesmos espectros, fases e
+O simulador de C06 utiliza os mesmos espectros, fases e
 convenções de covariância. Se incorporar médias em distância ou
 frequência, elas deverão atuar no modelo e na estatística de maneira
-compatível. A positividade de \eqref{eq:pta-positividade} será um
-controle de construção da covariância, e a parte imaginária deverá
-ser conservada quando pertinente. A eventual aproximação por termos
+compatível. A positividade de \eqref{eq:pta-positividade} integra os
+controles de construção da covariância, e a parte imaginária é
+conservada. A eventual aproximação por termos
 incoerentes precisa ser validada nas escalas
 \(\beta y\) e \(\lvert\mathbf b_{ab}\rvert\) utilizadas.
 

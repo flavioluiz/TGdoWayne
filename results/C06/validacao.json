@@ -1,0 +1,43 @@
+{
+  "stage": "C06",
+  "status": "PASS",
+  "tests_run": 11,
+  "cases": {
+    "massive": {
+      "status": "PASS",
+      "saved_realizations_regenerated": 32,
+      "recorded_full_moment_realizations": 131072,
+      "audited_pairs": 275
+    },
+    "gr": {
+      "status": "PASS",
+      "saved_realizations_regenerated": 32,
+      "recorded_full_moment_realizations": 131072,
+      "audited_pairs": 165
+    },
+    "noise_only": {
+      "status": "PASS",
+      "saved_realizations_regenerated": 32,
+      "recorded_full_moment_realizations": 131072,
+      "audited_pairs": 165
+    }
+  },
+  "files_sha256": {
+    "tests/test_simulation.py": "3976a31034144d71b919f0f097f1dcc422fef623dc669a0bb4cd61f535465d8f",
+    "tests/test_geometry.py": "080e857a8e4ad02d35d43484742c360480ca555599813686761dfc740d395981",
+    "scripts/validar_simulador.py": "94f58e70dc1d3bed902c6046fa5086a53cbaae9998eb81210e5700e77b70e508",
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "results/C06/massive/summary.json": "01dbdc36156d9881c10615f4f438c36b38c86b45857613e4b07ed32b0b437c4c",
+    "results/C06/massive/orf_audit.json": "ed28045ddc5d41dcce5dca54bedf728e91bf6b08c42c7823ec11ed5c77a0f455",
+    "results/C06/massive/fixture.npz": "94a7a553fe52224525de30a78782afa45e64def0bd1c870f24121d563b1c8d0a",
+    "configs/experiments/c06_moments_gr.json": "aaed57b1a2006920238058e36a3eedab67b1a19c62636dd916e04b5a7182447a",
+    "results/C06/gr/summary.json": "8d472d87c2711ecdd316892e99e05fadece134936729c672f989fb36ef36fb6f",
+    "results/C06/gr/orf_audit.json": "771ac9c3f67ec7b777ac19839cf99c17eb1353d7f20dc84edf61a132184c2ea8",
+    "results/C06/gr/fixture.npz": "90b8afebd8048ca1005e133958a98e18b877a6c1f01e5fffb318ca5ab3052b5f",
+    "configs/experiments/c06_moments_noise_only.json": "f6edb413b030153eca40c951f827774b6810835c826c506e429010eb65d9e148",
+    "results/C06/noise_only/summary.json": "836c25cf7e859cf40ffe493caa8583c7a6da2936f451f06307a5e7eaec36920b",
+    "results/C06/noise_only/orf_audit.json": "0678fa6c281f5dded8071bebded5a3db66f5804214d0112cb49f11aef0c5073f",
+    "results/C06/noise_only/fixture.npz": "4c87f18fc330488cf32ad264cb051fd703b623034127bf28e10de8284a939920"
+  },
+  "scope": "11 tests, source/config/campaign audit and regeneration of saved draws; no posterior/SBC."
+}

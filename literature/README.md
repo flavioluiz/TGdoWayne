@@ -1,6 +1,6 @@
 # Acervo de artigos
 
-Biblioteca local de apoio à pesquisa, com corte bibliográfico em **10/09/2026**: **22 PDFs**, **25.149.237 bytes** (25,15 MB decimais) e **452 páginas**. Todos os arquivos foram baixados e conferidos; o grau de leitura varia e está registrado por referência. O download de um PDF não equivale a sua leitura integral, reprodução ou validação científica.
+Biblioteca local de apoio à pesquisa, com corte bibliográfico em **10/09/2026**: **26 PDFs**, **36.352.894 bytes** (36,35 MB decimais) e **600 páginas**. Todos os arquivos foram baixados e conferidos; o grau de leitura varia e está registrado por referência. O download de um PDF não equivale a sua leitura integral, reprodução ou validação científica.
 
 O [catálogo](catalog.json) registra título, autores, revisão, datas, URL primária, licença indicada pelo arXiv, caminho local, tamanho e SHA-256. A revisão é fixada por identificador `vN`; uma nova revisão deve entrar em atualização explícita do catálogo. O TG original fornecido pelo usuário permanece em [TG_Wayne.pdf](../TG_Wayne.pdf), fora desta coleção de artigos baixados.
 
@@ -64,8 +64,16 @@ Os nomes abaixo são relativos a `literature/papers/`; os links “fonte” abre
 | `2306.13593v4.pdf` | Testing gravity with cosmic variance-limited pulsar timing array correlations | 9 | [arXiv nonexclusive-distrib 1.0](http://arxiv.org/licenses/nonexclusive-distrib/1.0/) | [fonte](https://arxiv.org/pdf/2306.13593v4) |
 | `1210.0584v2.pdf` | Accelerating pulsar timing data analysis | 9 | [arXiv nonexclusive-distrib 1.0](http://arxiv.org/licenses/nonexclusive-distrib/1.0/) | [fonte](https://arxiv.org/pdf/1210.0584v2) |
 | `2408.10122v2.pdf` | A novel probe of graviton dispersion relations at nano-Hertz frequencies | 19 | [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) | [fonte](https://arxiv.org/pdf/2408.10122v2) |
+| `1804.06788v2.pdf` | Validating Bayesian Inference Algorithms with Simulation-Based Calibration | 19 | [arXiv nonexclusive-distrib 1.0](http://arxiv.org/licenses/nonexclusive-distrib/1.0/) | [fonte](https://arxiv.org/pdf/1804.06788v2) |
+| `2211.02383v3.pdf` | Simulation-Based Calibration Checking for Bayesian Computation: The Choice of Test Quantities Shapes Sensitivity | 50 | [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) | [fonte](https://arxiv.org/pdf/2211.02383v3) |
+| `2508.11814v4.pdf` | Simulation-based validation of Bayes factor computation | 54 | [CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/) | [fonte](https://arxiv.org/pdf/2508.11814v4) |
+| `2502.03279v2.pdf` | Posterior SBC: Simulation-Based Calibration Checking Conditional on Data | 25 | [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/) | [fonte](https://arxiv.org/pdf/2502.03279v2) |
 
 ## Relação com a revisão bibliográfica
+
+O acervo inicial de C03 tinha 22 artigos e 452 páginas. C06 acrescenta quatro referências
+metodológicas de calibração e evidências bayesianas para apoiar a etapa inferencial.
+As versões de preprint e as datas de publicação editorial são registradas separadamente.
 
 A análise crítica e os limites da busca constam de [protocolo](../docs/literatura/protocolo_busca.md), [matriz de originalidade](../docs/literatura/matriz_originalidade.csv) e [decisão do recorte](../docs/literatura/decisao_recorte.md). Os códigos externos inspecionados são descritos na [auditoria de códigos](../docs/literatura/auditoria_codigos.md); essa inspeção não implica que tenham sido executados.
 
