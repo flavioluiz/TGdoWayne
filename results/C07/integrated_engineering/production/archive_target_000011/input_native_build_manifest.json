@@ -1,0 +1,22 @@
+{
+  "recipe": {
+    "source": "src/inference/native/likelihood.cpp",
+    "source_sha256": "4e089ba8588158d7ab3233c2601a55942ddfeb1e28c6d06578a582f22da66154",
+    "compiler": "/usr/bin/c++",
+    "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode-26.6.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+    "flags": [
+      "-O3",
+      "-std=c++17",
+      "-ffp-contract=off",
+      "-fPIC",
+      "-dynamiclib"
+    ],
+    "system": "Darwin",
+    "machine": "arm64",
+    "byteorder": "little"
+  },
+  "recipe_sha256": "c586a0637ce30e440b8a5235aef0aed407458daadaaaf89a0eaa8e0c67f20f43",
+  "binary": "libpta_likelihood.dylib",
+  "binary_sha256": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+  "scope": "Local compiled artifact only; numerical validation is separate."
+}

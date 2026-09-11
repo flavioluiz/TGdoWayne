@@ -1,0 +1,87 @@
+{
+  "status": "PASS",
+  "MH": {
+    "moves": [
+      "mass_prior",
+      "nuisance_prior",
+      "mixture_independent",
+      "symmetric_random_walk"
+    ],
+    "full_hastings_logratios": [
+      -4.086604990127927,
+      -4.086604990127927,
+      -16.627227712808022,
+      -12.913304871140356
+    ],
+    "checks": [
+      {
+        "expected_acceptance": [
+          true,
+          false,
+          true,
+          false
+        ],
+        "actual_acceptance": [
+          true,
+          false,
+          true,
+          false
+        ]
+      },
+      {
+        "expected_acceptance": [
+          false,
+          true,
+          false,
+          true
+        ],
+        "actual_acceptance": [
+          false,
+          true,
+          false,
+          true
+        ]
+      }
+    ],
+    "jacobian_included": true
+  },
+  "provenance": {
+    "training_source_sha256_matches": true,
+    "training_array_shape": [
+      32768,
+      80,
+      4,
+      5
+    ],
+    "selected_training_shape": [
+      16,
+      2048,
+      5
+    ],
+    "selected_training_points_sha256": "12d595820a3274c148ecc455dba684a36382382bd80c198c162e203910e85dc1",
+    "global_parameters_exactly_match_previous_metadata": [
+      0,
+      3,
+      8,
+      9,
+      11,
+      14,
+      20,
+      25,
+      28,
+      35,
+      46,
+      51,
+      52,
+      62,
+      67,
+      78
+    ],
+    "old_seed": 7078501,
+    "new_MH_seed": 7078611,
+    "new_production_adaptation": false,
+    "fit_implementation_inspection": "fit_mixture.py reads only old pilot draws and old MH metadata; fit_proposal accepts only unit_points/log_weights and settings. No truth or new-production array is passed. run_mixture.py uses truth only after sampling, in diagnostics.",
+    "provenance_limit": "Training JSON originally hashes old draws but omits old metadata and fit-source hashes. This audit preserves those current bytes separately; it does not retroactively claim those hashes were recorded before the old run."
+  },
+  "audit_source_sha256": "345795e8e6588ef2aa6b91880239219e15a4ab0712276c6808d468bff5a936d0"
+}

@@ -1,0 +1,353 @@
+{
+  "status": "PURE_PROPOSAL_ENGINEERING_PASS_NOT_POSTERIOR_APPROVAL",
+  "config": {
+    "seed": 907140110,
+    "N": 65536,
+    "projection_seed": 907140111,
+    "alpha_family": 0.01,
+    "projections": 8,
+    "thresholds_per_projection": 5,
+    "no_likelihood_calls": true
+  },
+  "logpdf_scipy_max_error": 1.4210854715202004e-14,
+  "density_ratio_lower_bound": 0.8823529411764706,
+  "minimum_log_ratio_on_test_points": -0.12391893811493215,
+  "projection_cdf_max_standardized_error": 1.9605425215777454,
+  "family_critical_normal": 3.662259930887615,
+  "rows": [
+    {
+      "projection": 0,
+      "threshold": -6.73524061620627,
+      "expected_cdf": 0.02682321901286609,
+      "sample_cdf": 0.0267181396484375,
+      "standardized_error": -0.1664968745830823,
+      "pass_family": true
+    },
+    {
+      "projection": 0,
+      "threshold": -3.374656656563613,
+      "expected_cdf": 0.09525035337771241,
+      "sample_cdf": 0.0958251953125,
+      "standardized_error": 0.5012921443207515,
+      "pass_family": true
+    },
+    {
+      "projection": 0,
+      "threshold": -0.014072696920956692,
+      "expected_cdf": 0.5031146867034392,
+      "sample_cdf": 0.5035552978515625,
+      "standardized_error": 0.2255972850434262,
+      "pass_family": true
+    },
+    {
+      "projection": 0,
+      "threshold": 3.3465112627217,
+      "expected_cdf": 0.9025484726649201,
+      "sample_cdf": 0.901519775390625,
+      "standardized_error": -0.887969321457642,
+      "pass_family": true
+    },
+    {
+      "projection": 0,
+      "threshold": 6.707095222364356,
+      "expected_cdf": 0.9725438095252981,
+      "sample_cdf": 0.9714202880859375,
+      "standardized_error": -1.7601375295907111,
+      "pass_family": true
+    },
+    {
+      "projection": 1,
+      "threshold": 0.07001569933471585,
+      "expected_cdf": 0.022713685004613304,
+      "sample_cdf": 0.02197265625,
+      "standardized_error": -1.2732694464664467,
+      "pass_family": true
+    },
+    {
+      "projection": 1,
+      "threshold": 1.0516090639747233,
+      "expected_cdf": 0.07603500927020819,
+      "sample_cdf": 0.074005126953125,
+      "standardized_error": -1.9605425215777454,
+      "pass_family": true
+    },
+    {
+      "projection": 1,
+      "threshold": 2.0332024286147306,
+      "expected_cdf": 0.5625029061771254,
+      "sample_cdf": 0.5606842041015625,
+      "standardized_error": -0.9385373408197849,
+      "pass_family": true
+    },
+    {
+      "projection": 1,
+      "threshold": 3.014795793254738,
+      "expected_cdf": 0.8826633378858822,
+      "sample_cdf": 0.881103515625,
+      "standardized_error": -1.2407968162061525,
+      "pass_family": true
+    },
+    {
+      "projection": 1,
+      "threshold": 3.996389157894745,
+      "expected_cdf": 0.9683015710995977,
+      "sample_cdf": 0.968292236328125,
+      "standardized_error": -0.013640160126481426,
+      "pass_family": true
+    },
+    {
+      "projection": 2,
+      "threshold": -2.0578538820768766,
+      "expected_cdf": 0.0214306817070543,
+      "sample_cdf": 0.0216064453125,
+      "standardized_error": 0.3107099259746805,
+      "pass_family": true
+    },
+    {
+      "projection": 2,
+      "threshold": 0.19104995804657765,
+      "expected_cdf": 0.07095272424874469,
+      "sample_cdf": 0.072265625,
+      "standardized_error": 1.309086721145492,
+      "pass_family": true
+    },
+    {
+      "projection": 2,
+      "threshold": 2.439953798170032,
+      "expected_cdf": 0.5462284811922921,
+      "sample_cdf": 0.5466156005859375,
+      "standardized_error": 0.1990577572919309,
+      "pass_family": true
+    },
+    {
+      "projection": 2,
+      "threshold": 4.688857638293486,
+      "expected_cdf": 0.8913498560850546,
+      "sample_cdf": 0.8921356201171875,
+      "standardized_error": 0.6463873645868218,
+      "pass_family": true
+    },
+    {
+      "projection": 2,
+      "threshold": 6.93776147841694,
+      "expected_cdf": 0.9674917975716997,
+      "sample_cdf": 0.96722412109375,
+      "standardized_error": -0.38639371262754024,
+      "pass_family": true
+    },
+    {
+      "projection": 3,
+      "threshold": -6.901256201179199,
+      "expected_cdf": 0.02713843626262552,
+      "sample_cdf": 0.026947021484375,
+      "standardized_error": -0.3015765005213484,
+      "pass_family": true
+    },
+    {
+      "projection": 3,
+      "threshold": -3.494371895923619,
+      "expected_cdf": 0.09789107709331421,
+      "sample_cdf": 0.0987396240234375,
+      "standardized_error": 0.7309956442005375,
+      "pass_family": true
+    },
+    {
+      "projection": 3,
+      "threshold": -0.08748759066803859,
+      "expected_cdf": 0.49710711551626247,
+      "sample_cdf": 0.500244140625,
+      "standardized_error": 1.6061837394973593,
+      "pass_family": true
+    },
+    {
+      "projection": 3,
+      "threshold": 3.3193967145875414,
+      "expected_cdf": 0.9043066984708193,
+      "sample_cdf": 0.905059814453125,
+      "standardized_error": 0.6553950942274126,
+      "pass_family": true
+    },
+    {
+      "projection": 3,
+      "threshold": 6.726281019843122,
+      "expected_cdf": 0.9732453808154151,
+      "sample_cdf": 0.973480224609375,
+      "standardized_error": 0.3725705223967382,
+      "pass_family": true
+    },
+    {
+      "projection": 4,
+      "threshold": -0.026709143438474303,
+      "expected_cdf": 0.02415583271046187,
+      "sample_cdf": 0.0247039794921875,
+      "standardized_error": 0.9139776840038705,
+      "pass_family": true
+    },
+    {
+      "projection": 4,
+      "threshold": 1.1641479742500576,
+      "expected_cdf": 0.08226922935226448,
+      "sample_cdf": 0.083404541015625,
+      "standardized_error": 1.057739452940972,
+      "pass_family": true
+    },
+    {
+      "projection": 4,
+      "threshold": 2.3550050919385894,
+      "expected_cdf": 0.5373010543077532,
+      "sample_cdf": 0.541015625,
+      "standardized_error": 1.9071747656427802,
+      "pass_family": true
+    },
+    {
+      "projection": 4,
+      "threshold": 3.5458622096271215,
+      "expected_cdf": 0.895343455209587,
+      "sample_cdf": 0.8957672119140625,
+      "standardized_error": 0.35438760187645135,
+      "pass_family": true
+    },
+    {
+      "projection": 4,
+      "threshold": 4.736719327315653,
+      "expected_cdf": 0.9683778292652012,
+      "sample_cdf": 0.967742919921875,
+      "standardized_error": -0.9288239921599386,
+      "pass_family": true
+    },
+    {
+      "projection": 5,
+      "threshold": -0.9261673185522583,
+      "expected_cdf": 0.026906673464127125,
+      "sample_cdf": 0.0269317626953125,
+      "standardized_error": 0.039693561479407474,
+      "pass_family": true
+    },
+    {
+      "projection": 5,
+      "threshold": 1.1483419642661956,
+      "expected_cdf": 0.09648061309900371,
+      "sample_cdf": 0.096588134765625,
+      "standardized_error": 0.09322817605684154,
+      "pass_family": true
+    },
+    {
+      "projection": 5,
+      "threshold": 3.2228512470846495,
+      "expected_cdf": 0.5034168252616539,
+      "sample_cdf": 0.50103759765625,
+      "standardized_error": -1.2181929783614958,
+      "pass_family": true
+    },
+    {
+      "projection": 5,
+      "threshold": 5.297360529903104,
+      "expected_cdf": 0.9004241780452724,
+      "sample_cdf": 0.8999481201171875,
+      "standardized_error": -0.40700453037213097,
+      "pass_family": true
+    },
+    {
+      "projection": 5,
+      "threshold": 7.371869812721558,
+      "expected_cdf": 0.9731213000652115,
+      "sample_cdf": 0.972625732421875,
+      "standardized_error": -0.7844319768798114,
+      "pass_family": true
+    },
+    {
+      "projection": 6,
+      "threshold": -4.21914674431846,
+      "expected_cdf": 0.025158678976908343,
+      "sample_cdf": 0.025146484375,
+      "standardized_error": -0.019934103605322648,
+      "pass_family": true
+    },
+    {
+      "projection": 6,
+      "threshold": -1.6107966573486214,
+      "expected_cdf": 0.09477594126371261,
+      "sample_cdf": 0.095489501953125,
+      "standardized_error": 0.6236541040087575,
+      "pass_family": true
+    },
+    {
+      "projection": 6,
+      "threshold": 0.9975534296212167,
+      "expected_cdf": 0.5095634137064182,
+      "sample_cdf": 0.510040283203125,
+      "standardized_error": 0.24420185525717295,
+      "pass_family": true
+    },
+    {
+      "projection": 6,
+      "threshold": 3.605903516591055,
+      "expected_cdf": 0.8984349449592981,
+      "sample_cdf": 0.89874267578125,
+      "standardized_error": 0.260792735787635,
+      "pass_family": true
+    },
+    {
+      "projection": 6,
+      "threshold": 6.214253603560893,
+      "expected_cdf": 0.9722360365823437,
+      "sample_cdf": 0.972412109375,
+      "standardized_error": 0.2743504196816175,
+      "pass_family": true
+    },
+    {
+      "projection": 7,
+      "threshold": -2.7054653955680754,
+      "expected_cdf": 0.0265298231233514,
+      "sample_cdf": 0.0268402099609375,
+      "standardized_error": 0.494441321613657,
+      "pass_family": true
+    },
+    {
+      "projection": 7,
+      "threshold": -0.7781926141926263,
+      "expected_cdf": 0.09536785192123864,
+      "sample_cdf": 0.096923828125,
+      "standardized_error": 1.356144313342529,
+      "pass_family": true
+    },
+    {
+      "projection": 7,
+      "threshold": 1.1490801671828228,
+      "expected_cdf": 0.5064595586130599,
+      "sample_cdf": 0.506683349609375,
+      "standardized_error": 0.11459055329973128,
+      "pass_family": true
+    },
+    {
+      "projection": 7,
+      "threshold": 3.076352948558272,
+      "expected_cdf": 0.9001031839778834,
+      "sample_cdf": 0.8993072509765625,
+      "standardized_error": -0.6795078920570574,
+      "pass_family": true
+    },
+    {
+      "projection": 7,
+      "threshold": 5.003625729933721,
+      "expected_cdf": 0.9723362718097749,
+      "sample_cdf": 0.971954345703125,
+      "standardized_error": -0.596150226324741,
+      "pass_family": true
+    }
+  ],
+  "component_counts": [
+    7712,
+    7297,
+    26725,
+    7339,
+    1089,
+    965,
+    3549,
+    967,
+    9893
+  ],
+  "source_sha256": "9d7cd92e8dc353d086e9d9b2f0dbf641d3d3ec66b04955058c7d8ed683381e3f",
+  "likelihood_calls": 0,
+  "uses_truth": false
+}

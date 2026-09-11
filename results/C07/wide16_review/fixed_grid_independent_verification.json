@@ -1,0 +1,218 @@
+{
+  "status": "FIXED54_INDEPENDENT_REPRODUCTION_PASS_NOT_SBC500",
+  "rows": [
+    {
+      "N": 16384,
+      "target": 0,
+      "cdf_count": 54,
+      "precision_pass": 48
+    },
+    {
+      "N": 16384,
+      "target": 3,
+      "cdf_count": 54,
+      "precision_pass": 52
+    },
+    {
+      "N": 16384,
+      "target": 8,
+      "cdf_count": 54,
+      "precision_pass": 53
+    },
+    {
+      "N": 16384,
+      "target": 9,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 16384,
+      "target": 11,
+      "cdf_count": 54,
+      "precision_pass": 50
+    },
+    {
+      "N": 16384,
+      "target": 14,
+      "cdf_count": 54,
+      "precision_pass": 48
+    },
+    {
+      "N": 16384,
+      "target": 20,
+      "cdf_count": 54,
+      "precision_pass": 42
+    },
+    {
+      "N": 16384,
+      "target": 25,
+      "cdf_count": 54,
+      "precision_pass": 47
+    },
+    {
+      "N": 16384,
+      "target": 28,
+      "cdf_count": 54,
+      "precision_pass": 44
+    },
+    {
+      "N": 16384,
+      "target": 35,
+      "cdf_count": 54,
+      "precision_pass": 53
+    },
+    {
+      "N": 16384,
+      "target": 46,
+      "cdf_count": 54,
+      "precision_pass": 49
+    },
+    {
+      "N": 16384,
+      "target": 51,
+      "cdf_count": 54,
+      "precision_pass": 49
+    },
+    {
+      "N": 16384,
+      "target": 52,
+      "cdf_count": 54,
+      "precision_pass": 50
+    },
+    {
+      "N": 16384,
+      "target": 62,
+      "cdf_count": 54,
+      "precision_pass": 48
+    },
+    {
+      "N": 16384,
+      "target": 67,
+      "cdf_count": 54,
+      "precision_pass": 48
+    },
+    {
+      "N": 16384,
+      "target": 78,
+      "cdf_count": 54,
+      "precision_pass": 43
+    },
+    {
+      "N": 65536,
+      "target": 0,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 3,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 8,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 9,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 11,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 14,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 20,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 25,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 28,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 35,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 46,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 51,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 52,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 62,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 67,
+      "cdf_count": 54,
+      "precision_pass": 54
+    },
+    {
+      "N": 65536,
+      "target": 78,
+      "cdf_count": 54,
+      "precision_pass": 54
+    }
+  ],
+  "cdf_count": 1728,
+  "high_level_cdf_count": 864,
+  "high_level_precision_pass": 864,
+  "checks": {
+    "numeric_fields": 33251,
+    "exact_non_numeric_fields": 15874
+  },
+  "maximum_absolute_field_difference": 6.158268339717665e-17,
+  "maximum_difference_field": "N65536.target78.functions[32].cdf.raw_delta_mcse",
+  "absolute_comparison_tolerance": 1e-12,
+  "all_non_numeric_fields_exact": true,
+  "uses_truth": false,
+  "new_likelihood_evaluations": 0,
+  "seconds": 2.045273208990693,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_wide16_diagnostics/verify_fixed_grid.py": "e9307a63478c8e037be8aab43d386419e2c3721e6c6f9d7850c1be0ca46a7cfe",
+    "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json": "c46649ff4b26d0c65fe65e355b532592b56427169e7b53ed5cc553de68fe1ad3",
+    "tmp/c07_cold_tail_review/wide_production/fixed_grid_diagnostics.json": "98aba25bd3d86e3afc9c416b112ccf4b64c19410269099ff418b8c5143a1e78e",
+    "src/inference/iid_diagnostics.py": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+    "src/inference/iid_optimized.py": "b9d1ab59bf0323b933084b518c2bc249e32fdad044a02f7d380e1690d968d458"
+  }
+}

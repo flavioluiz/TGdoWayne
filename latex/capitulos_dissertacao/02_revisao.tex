@@ -5,7 +5,7 @@
 
 Esta revisão organiza os antecedentes necessários para transformar o
 problema apresentado na introdução em uma investigação verificável.
-O corte bibliográfico é 10 de setembro de 2026. A busca foi dirigida por
+O corte bibliográfico é 11 de setembro de 2026. A busca foi dirigida por
 quatro eixos: polarizações de campos massivos, resposta de PTA,
 inferência de massa e efeitos de compressão e verossimilhança. Foram
 combinadas buscas por títulos e identificadores com expressões relativas
@@ -28,7 +28,11 @@ licenças e a disponibilidade das versões editoriais são questões
 distintas do acesso ao preprint. Em C06 foram acrescentadas quatro
 referências metodológicas de calibração e evidências bayesianas,
 totalizando 26 PDFs e 600 páginas. A leitura dirigida desses métodos
-acompanhará sua aplicação na etapa de inferência.
+acompanha sua aplicação na etapa de inferência. Os complementos de C07
+elevam o acervo a 37 PDFs e 839 páginas. A auditoria dirigida de
+11 de setembro acrescenta seis antecedentes à matriz, que passa a
+23 entradas; seus registros de busca e localizadores de leitura são
+preservados separadamente da busca inicial de C03.
 
 A consulta não constitui uma revisão sistemática exaustiva. O catálogo
 distingue leitura dirigida de métodos, consulta anterior e triagem de
@@ -432,6 +436,86 @@ se fossem automaticamente o mesmo fator de Bayes. Os testes de
 dispersão de GWTC-4 oferecem contexto adicional para o papel das
 escolhas de inferência, mas suas hipóteses de fonte e faixa espectral
 diferem das presentes \autocite{lvk2026}.
+
+\section{Atualização metodológica incorporada em C07}
+
+A bibliografia computacional recebeu complementos durante a implementação.
+Owen apresenta uma revisão de RQMC em agosto de 2026
+\autocite{owen2026rqmc}; o relatório de Owen e Zhou fundamenta a
+investigação de propostas defensivas \autocite{owen_zhou1998}.
+Esses antecedentes orientam métodos de integração, sem garantir uma
+taxa de convergência para a verossimilhança específica deste projeto.
+Dwivedi, Shah e Tahbildar comparam amostradores e fluxos normalizantes
+em simulações PTA \autocite{dwivedi2026}. Seus testes de desempenho
+oferecem alternativas para expansão computacional, mas não substituem
+a calibração repetida do experimento aqui definido.
+
+As referências de calibração \autocite{talts2018,modrak2025,sailynoja2026}
+orientam a distinção entre postos marginais, quantidades dependentes dos
+dados e diagnósticos condicionais. A qualidade das evidências exige
+controles próprios \autocite{modrak2026bayes}. Para cadeias de Markov,
+diagnósticos por ranks e eficiência local complementam comparações
+independentes de posteriores \autocite{vehtari2021}.
+
+Uma correção no temperamento paralelo, incorporada em outubro de 2025
+\autocite{ptmcmc2025fix}, e o KDE NANOGrav atualizado em agosto de 2026
+\autocite{nanograv2026kde} reforçam a necessidade de identificar revisões
+de códigos e produtos. O erratum relacionado refere-se à análise de
+populações de binárias supermassivas \autocite{agazie2026erratum};
+seu resumo editorial foi consultado, mas seu PDF não foi obtido.
+Seu escopo declarado não autoriza invalidar genericamente detecções
+PTA ou resultados de massa. O catálogo local registra versões, leitura
+efetiva e arquivos baixados, separando-os de fontes consultadas apenas
+por metadados.
+
+\subsection{Antecedentes adicionais de frequência, priori e informação}
+
+A estatística ótima por frequência (PFOS) de Gersbach e colaboradores
+estima o espectro conservando o índice de frequência e incorpora a
+covariância entre estimadores de pares de pulsars
+\autocite{gersbach2025pfos}. O trabalho apresenta testes P--P em
+100 simulações; sua extensão anisotrópica combina a resolução espectral
+com distribuições nulas que incluem variância cósmica
+\autocite{gersbach2026anisotropic}. Portanto, análise por frequência,
+covariância de pares e calibração já têm antecedentes PTA implementados.
+Esses testes não equivalem à SBC conjunta de massa e parâmetros de
+ruído do presente experimento. A diferença de escopo restringe a
+contribuição candidata à comparação controlada das aproximações,
+sem atribuir novidade aos ingredientes isolados.
+
+Wang e Zhao ajustam correlações angulares publicadas com erros
+diagonais, adotam priori uniforme em velocidade entre $0{,}01$ e $1$
+e convertem velocidade em massa na frequência $1/T$
+\autocite{wang2024graviton}. Para $u=\sqrt{1-\beta^2}$,
+a mudança de variável induz
+\begin{equation}
+ \pi_u(u)=\frac{u}{(1-\beta_{\min})\sqrt{1-u^2}},
+ \qquad 0\leq u\leq\sqrt{1-\beta_{\min}^2}.
+\end{equation}
+Essa priori difere das uniformes em $u$ e em $u^2$. Comparar limites
+exige compatibilizar priori, frequência representativa e espaço de
+dados; a identidade acima não reproduz o limite observacional publicado.
+Monopolo, dipolo e previsão por Fisher também aparecem nesse antecedente.
+
+Alsing e Wandelt derivam compressão por score em torno de um ponto
+fiducial, incluindo derivadas da média e da covariância na família
+gaussiana \autocite{alsing2018compression}. Pollard mostra que preservar
+Fisher pode ocorrer sem suficiência da estatística
+\autocite{pollard2012fisher}. Sob regularidade e para compressão fixa
+$Y=W X$, o score comprimido é a esperança condicional do score completo;
+a perda de Fisher é a média da covariância condicional desse score.
+É uma afirmação local, que não ordena limites posteriores em cada
+realização. Fronteiras do suporte e a comparação entre uma distribuição
+física e sua aproximação gaussiana requerem análise própria.
+
+Finalmente, Crisostomi e colaboradores estudam correlações entre
+frequências introduzidas por uma janela finita e apresentam controles
+analíticos e simulações PTA \autocite{crisostomi2025covariance}.
+Isso limita a transferência de resultados do gerador periódico de C06,
+que define coeficientes independentes, para resíduos observacionais.
+Suprimir covariâncias entre frequências e diagonalizar a covariância
+de estimadores angulares são operações distintas. A análise de janela
+deverá preservar essa separação.
 
 \section{Síntese crítica e decisão de continuidade}
 

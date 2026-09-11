@@ -1,0 +1,139 @@
+{
+  "status": "PASS_analytic_reference_0.001",
+  "scope": "Actual continuous mass/trapezoid and nuisance Sobol engine; analytic five-dimensional target. Not PTA calibration.",
+  "analytic_log_evidence": -0.018182669328163054,
+  "analytic_quantiles": [
+    [
+      0.2501112794536664,
+      0.43100613419366113,
+      0.5719734032591959,
+      0.6119361610646991
+    ],
+    [
+      0.44851199949176024,
+      0.6129931798107202,
+      0.7411272548021368,
+      0.7774352583151787
+    ],
+    [
+      0.07816445245401057,
+      0.27591090641292093,
+      0.44093372953625243,
+      0.4879649523659094
+    ],
+    [
+      0.3296214276609346,
+      0.5269947609810217,
+      0.6807616777496776,
+      0.7243380553022662
+    ],
+    [
+      0.2329727167838894,
+      0.3810012986057636,
+      0.4963402312975921,
+      0.5290373287434138
+    ]
+  ],
+  "records": [
+    {
+      "level": {
+        "name": "analytic_65_11_73001",
+        "mass_nodes": 65,
+        "nuisance_power": 11,
+        "scrambles": 4,
+        "seed": 73001
+      },
+      "log_evidence_error": 0.010947717988137668,
+      "maximum_parameter_quantile_error": 0.0157955771473261,
+      "parameter_max_quantile_errors": [
+        0.0003083544876707478,
+        0.002981468275089827,
+        0.0157955771473261,
+        0.005010399392062936,
+        0.0045420900076682535
+      ],
+      "maximum_pit_error": 0.00816815287106143,
+      "seconds": 1.5654170829802752
+    },
+    {
+      "level": {
+        "name": "analytic_129_14_73001",
+        "mass_nodes": 129,
+        "nuisance_power": 14,
+        "scrambles": 4,
+        "seed": 73001
+      },
+      "log_evidence_error": 0.0022419679364993512,
+      "maximum_parameter_quantile_error": 0.0015830271252875727,
+      "parameter_max_quantile_errors": [
+        7.646163130670125e-05,
+        0.001074369535623787,
+        0.0015830271252875727,
+        0.000648392390478647,
+        0.0003856358350908806
+      ],
+      "maximum_pit_error": 0.0011101169588938475,
+      "seconds": 9.491736582946032
+    },
+    {
+      "level": {
+        "name": "analytic_129_14_73002",
+        "mass_nodes": 129,
+        "nuisance_power": 14,
+        "scrambles": 4,
+        "seed": 73002
+      },
+      "log_evidence_error": -0.0005318200558303947,
+      "maximum_parameter_quantile_error": 0.00239346666061957,
+      "parameter_max_quantile_errors": [
+        7.646163130681227e-05,
+        0.0011563357758965775,
+        0.00239346666061957,
+        0.0020134405522499454,
+        0.0004792494398793701
+      ],
+      "maximum_pit_error": 0.001978592704396931,
+      "seconds": 9.580213250010274
+    },
+    {
+      "level": {
+        "name": "analytic_129_16_73001",
+        "mass_nodes": 129,
+        "nuisance_power": 16,
+        "scrambles": 4,
+        "seed": 73001
+      },
+      "log_evidence_error": 9.894531672418119e-05,
+      "maximum_parameter_quantile_error": 0.0004262315138882089,
+      "parameter_max_quantile_errors": [
+        7.646163130670125e-05,
+        0.0003301822831024426,
+        0.0004262315138882089,
+        0.00010608100388753705,
+        0.00013859949483160938
+      ],
+      "maximum_pit_error": 0.00023299982517188678,
+      "seconds": 36.026566999964416
+    },
+    {
+      "level": {
+        "name": "analytic_129_16_73002",
+        "mass_nodes": 129,
+        "nuisance_power": 16,
+        "scrambles": 4,
+        "seed": 73002
+      },
+      "log_evidence_error": 0.00011968608136904771,
+      "maximum_parameter_quantile_error": 0.0004250889993129281,
+      "parameter_max_quantile_errors": [
+        7.646163130681227e-05,
+        0.0004250889993129281,
+        0.00029107637921599316,
+        0.00031682265011390154,
+        0.0003207484867635557
+      ],
+      "maximum_pit_error": 0.0002483914281500299,
+      "seconds": 36.50353866699152
+    }
+  ]
+}

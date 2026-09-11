@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_BEFORE_NEW_SAMPLES",
+  "seed": 907102102,
+  "levels": [
+    16384,
+    65536
+  ],
+  "replicates": 4,
+  "targets": [
+    0,
+    3,
+    8,
+    9,
+    11,
+    14,
+    20,
+    25,
+    28,
+    35,
+    46,
+    51,
+    52,
+    62,
+    67,
+    78
+  ],
+  "source_planning": "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json",
+  "source_planning_sha256": "c46649ff4b26d0c65fe65e355b532592b56427169e7b53ed5cc553de68fe1ad3",
+  "selection_uses_truth": false,
+  "reason": "Previous truth-blind CDF grid maximum MCSE.008584 at8192 suggested about54k samples per replicate; round prospectively to65536, without inherited approval.",
+  "criteria_unchanged": true,
+  "mcse_cdf_max": 0.00335,
+  "likelihood_values": 5242880,
+  "estimated_peak_numeric_budget_bytes": 3221225472,
+  "notes": "Engineering pilot only; new independent production, fixed lengths, same five-parameter priors, same16 targets and GMM proposal. No SBC500. Raw arrays may exceed100MB and remain local; portable final summaries will be smaller."
+}

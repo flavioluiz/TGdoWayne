@@ -1,0 +1,102 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "legendre",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "panel_nodes",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "b_nodes",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "a_nodes",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "slope_nodes",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "SpectralCN",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "mass_nodes",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/cubature.py",
+      "portable": "src/inference/reference_cubature.py",
+      "symbol": "mass_integral",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_cubature/truncated_cdf.py",
+      "portable": "src/inference/reference_truncated.py",
+      "symbol": "truncated_box",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/bounded.py",
+      "portable": "src/inference/reference_bounded.py",
+      "symbol": "bounded_mass_batch",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/bounded.py",
+      "portable": "src/inference/reference_bounded.py",
+      "symbol": "bounded_mass_integral",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/quantiles.py",
+      "portable": "src/inference/reference_quantiles.py",
+      "symbol": "old_cut_indices",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/quantiles.py",
+      "portable": "src/inference/reference_quantiles.py",
+      "symbol": "reference_coarse_cdf",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/quantiles.py",
+      "portable": "src/inference/reference_quantiles.py",
+      "symbol": "locate",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/quantiles.py",
+      "portable": "src/inference/reference_quantiles.py",
+      "symbol": "summarize_endpoint",
+      "AST_identical_except_YEAR_import": true
+    },
+    {
+      "historical": "tmp/c07_quantiles/quantiles.py",
+      "portable": "src/inference/reference_quantiles.py",
+      "symbol": "one_quantile",
+      "AST_identical_except_YEAR_import": true
+    }
+  ],
+  "scope": "Sixteen mathematical functions/classes; path/config/cache orchestration intentionally changed and tested separately."
+}

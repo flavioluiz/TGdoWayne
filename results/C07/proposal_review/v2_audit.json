@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "invalid_inputs": [
+    {
+      "case": "nontriangular_global_cholesky",
+      "rejected": true
+    },
+    {
+      "case": "negative_global_diagonal",
+      "rejected": true
+    },
+    {
+      "case": "asymmetric_covariance",
+      "rejected": true
+    },
+    {
+      "case": "nan_student_df",
+      "rejected": true
+    },
+    {
+      "case": "near_but_not_normalized_weights",
+      "rejected": true
+    }
+  ],
+  "valid_density_max_abs_difference": 1.7763568394002505e-15,
+  "valid_samples_bit_identical": true,
+  "input_weight_sum_max_error": 1.1102230246251565e-16,
+  "v2_sha256": "4c8c4701d23494d8d2f82db764cd2b000ccca36ba138bbe270e30e44911d6ec4",
+  "scope": "Explicit roundoff normalization of valid weight sums; no covariance repair; historical v1 remains unchanged."
+}

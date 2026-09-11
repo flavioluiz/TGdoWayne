@@ -1,0 +1,283 @@
+{
+  "status": "COMPLETE",
+  "requested_nodes": 7,
+  "new_nodes": 7,
+  "written_nodes": 7,
+  "existing_nodes": 0,
+  "physical_signature": "d280a67225f73cd8f0931a75d3a7f0dad7e2d47bbd82f95fb394ab0eff014726",
+  "provenance": {
+    "name": "real_blas_precomputed_associated_legendre_v2_guarded",
+    "source_sha256": {
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3"
+    },
+    "own_budget": {
+      "maximum_estimated_numeric_memory_bytes": 33554432,
+      "maximum_total_real_multiplications": 10000000,
+      "maximum_requested_nodes": 8,
+      "batch_size": 4,
+      "maximum_batch_real_multiplications": 1000000
+    },
+    "legacy_provider_limits_modified": false,
+    "physical_signature_unchanged": true,
+    "geometry_dot_roundoff_clipping": true,
+    "eigenvalue_clipping": false
+  },
+  "total_real_multiplications": 4757760,
+  "estimated_peak_numeric_bytes": 466672,
+  "estimated_table_storage_bytes": 64512,
+  "timings": [
+    {
+      "frequency": 1,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.0017941660480573773,
+          "evaluation_seconds": 0.0023578329710289836
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.0019657500088214874,
+          "evaluation_seconds": 0.002169208019040525
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.6479873021779667e-17,
+      "minimum_eigenvalue": -3.5389905155069304e-19
+    },
+    {
+      "frequency": 2,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.001488416106440127,
+          "evaluation_seconds": 0.0019625830464065075
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.0020272498950362206,
+          "evaluation_seconds": 0.00221429206430912
+        }
+      ],
+      "maximum_coarse_fine_difference": 6.765421556309548e-17,
+      "minimum_eigenvalue": 1.1424369416196099e-10
+    },
+    {
+      "frequency": 3,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.001619833055883646,
+          "evaluation_seconds": 0.0020895409397780895
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.002031708019785583,
+          "evaluation_seconds": 0.0022689170436933637
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.474514954580286e-16,
+      "minimum_eigenvalue": 1.731385593533444e-09
+    },
+    {
+      "frequency": 4,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.0016166659770533442,
+          "evaluation_seconds": 0.002117791911587119
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.00200208299793303,
+          "evaluation_seconds": 0.002182750031352043
+        }
+      ],
+      "maximum_coarse_fine_difference": 2.706168622523819e-16,
+      "minimum_eigenvalue": 1.0328039075358428e-08
+    }
+  ],
+  "sparse_direct_checks": [
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 7.453957613944353e-20,
+      "seconds": 0.0037679580273106694,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 8.132508849799224e-20,
+      "seconds": 0.002150166081264615,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 5.421517486879235e-20,
+      "seconds": 0.002114332979544997,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 5.422499583113512e-20,
+      "seconds": 0.0022520829224959016,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 6.776263578034403e-20,
+      "seconds": 0.0023240410955622792,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 8.142537899032908e-20,
+      "seconds": 0.0021724579855799675,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 4,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 2.2718175287815495e-19,
+      "seconds": 0.00215329194907099,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    }
+  ],
+  "concurrent_existing_preserved": [],
+  "VECLIB_MAXIMUM_THREADS": "unset",
+  "seconds": 0.3353983749402687,
+  "destination": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache",
+  "source_sha256": {
+    "scripts/gerar_calibracao.py": "d54c544aa53d8db85c8b2f16fb0f877863ac978add666b1cdb719ad488d25242",
+    "tmp/c07_generator_review/rerun_v2/toy_config.json": "92e7ade3871fc35569706c9993fefff0e457b46bccd4d3c491ce75abf8bbf360",
+    "src/inference/data_generation.py": "f9e908b2ae321373b93baec0c702ae8601c4386641c957e566401a72755bbe06",
+    "src/inference/model.py": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "src/inference/orf_backend.py": "05222fa1cf54488ea252c76d05456ca32bae213ef4d8628dfe9c493f32d23673",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/geometry.py": "8c2b644754b2118ab23d3f6224db02e4f5de117837f8a2fd12f4d2eecf63886d",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887"
+  },
+  "config_sha256": "92e7ade3871fc35569706c9993fefff0e457b46bccd4d3c491ce75abf8bbf360",
+  "final_copied_nodes": [
+    {
+      "path": "orf_cache/fe12db5ba702b819e41c11e3cc93b7a15d12fad376a21cb5e68f389bd379c554.npz",
+      "sha256": "7bb9b9406687db4aba47978165521ac7410ffe4841fcc9aad0bd9adda5b7f6fb"
+    },
+    {
+      "path": "orf_cache/1839ce66315cd9447b6bd6dc265403db29de1c5f12d16e4b54ee03fa3ead4275.npz",
+      "sha256": "dd5e0ceaba81ac0517135c4303e0efcc5ab93dd9ff0cab4463d4dd143da82cec"
+    },
+    {
+      "path": "orf_cache/ac22332c14202c4ce94add991598c482c091cb097fbe776d605d23637449f75c.npz",
+      "sha256": "d0798e555982215c9ed49866169caca3053753dc85a30f528d70cefa3d568491"
+    },
+    {
+      "path": "orf_cache/31b003d8e096185dd003d491b3488db346a2fd8dbee1a0692b7e0985e056ba74.npz",
+      "sha256": "7420838ed3cba6792a7f4383292451409fb57866a5455a3aa256c067fcb6b74a"
+    },
+    {
+      "path": "orf_cache/cbcfc76af657c042aa5926c237d5ef82f9330dbce1a970f44a138e63540af6c1.npz",
+      "sha256": "cde6b06052d0f3940967f6a2c56f4f2f8ba1902c480f36fef2f3b5f501282217"
+    },
+    {
+      "path": "orf_cache/3e7f10e6786ace656c10630643412cfcfc610380a852428a9f830bb00c57a7f8.npz",
+      "sha256": "b278f90d7ad75bc41b8f20ff2136ade4a3d37ad4b094b940536c43644f4168a3"
+    },
+    {
+      "path": "orf_cache/78985b38175b65ff6c49513cef7ae112d060234986c4c1b8fa947198f3c15e70.npz",
+      "sha256": "65617bba918bab2c359b04b2de0e6e3dfd1191d268b6b50e589ac3bf37c865d4"
+    }
+  ],
+  "observation_generation": false,
+  "posterior_execution": false
+}

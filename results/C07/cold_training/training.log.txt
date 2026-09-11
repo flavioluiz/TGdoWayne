@@ -1,0 +1,23 @@
+{"setup_complete": true, "table_seconds": 5.443499583052471, "kernel_seconds": 51.14396949997172, "spline_estimated_numeric_bytes": 1440088064, "kernel_budget": {"estimated_retained_bank_bytes": 576115200, "estimated_numeric_bytes": 1094418944, "maximum_estimated_numeric_bytes": 2147483648, "scope": "Numeric arrays; not an imposed process RSS ceiling. ORF spline construction is separately budgeted."}, "maxrss_bytes": 1885519872}
+{"training_steps": 4096, "completed": 2048, "seconds": 2.6186120830243453}
+{"training_steps": 4096, "completed": 4096, "seconds": 5.888186165946536}
+{"training_steps": 8192, "completed": 2048, "seconds": 2.571458625025116}
+{"training_steps": 8192, "completed": 4096, "seconds": 6.5693922500358894}
+{"training_steps": 8192, "completed": 6144, "seconds": 9.951269750017673}
+{"training_steps": 8192, "completed": 8192, "seconds": 13.488932791980915}
+[
+  {
+    "steps": 4096,
+    "seed": 907103101,
+    "training_seconds": 5.888301415950991,
+    "fit_seconds": 1.4415324580622837,
+    "proposal": "tmp/c07_cold_training/results/warmup4096_proposal.json"
+  },
+  {
+    "steps": 8192,
+    "seed": 907103102,
+    "training_seconds": 13.489041917026043,
+    "fit_seconds": 1.575517165940255,
+    "proposal": "tmp/c07_cold_training/results/warmup8192_proposal.json"
+  }
+]

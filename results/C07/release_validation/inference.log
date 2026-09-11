@@ -1,0 +1,180 @@
+test_batch_covariance_matches_declared_physical_psd (test_inference_kernel.IndependentKernelChecks.test_batch_covariance_matches_declared_physical_psd) ... ok
+test_complex_density_against_independent_real_normal (test_inference_kernel.IndependentKernelChecks.test_complex_density_against_independent_real_normal) ... ok
+test_continuous_density_not_discrete_atoms (test_inference_kernel.IndependentKernelChecks.test_continuous_density_not_discrete_atoms) ... ok
+test_moment_polynomial_equals_direct_trace (test_inference_kernel.IndependentKernelChecks.test_moment_polynomial_equals_direct_trace) ... ok
+test_real_normal_density_against_scipy (test_inference_kernel.IndependentKernelChecks.test_real_normal_density_against_scipy) ... ok
+test_boundary_is_structural_not_binomial_point_nine (test_inference_diagnostics.DiagnosticsTests.test_boundary_is_structural_not_binomial_point_nine) ... ok
+test_campaign_gate_and_expected_sample_count (test_inference_diagnostics.DiagnosticsTests.test_campaign_gate_and_expected_sample_count) ... ok
+test_complete_family_has_joint_pit_and_coverage_tests (test_inference_diagnostics.DiagnosticsTests.test_complete_family_has_joint_pit_and_coverage_tests) ... ok
+test_exact_binomial_independent_inversion (test_inference_diagnostics.DiagnosticsTests.test_exact_binomial_independent_inversion) ... ok
+test_holm_known_values_and_arbitrary_order (test_inference_diagnostics.DiagnosticsTests.test_holm_known_values_and_arbitrary_order) ... ok
+test_ks_statistic_against_independent_scipy_frontend (test_inference_diagnostics.DiagnosticsTests.test_ks_statistic_against_independent_scipy_frontend) ... ok
+test_paired_not_independent_errors_and_exact_discordances (test_inference_diagnostics.DiagnosticsTests.test_paired_not_independent_errors_and_exact_discordances) ... ok
+test_strict_invalid_and_no_clipping (test_inference_diagnostics.DiagnosticsTests.test_strict_invalid_and_no_clipping) ... ok
+test_affine_quantile_mcse (test_mcmc_diagnostics.DiagnosticsTests.test_affine_quantile_mcse) ... ok
+test_central_coverage_and_holm_sensitivity (test_mcmc_diagnostics.DiagnosticsTests.test_central_coverage_and_holm_sensitivity) ... ok
+test_constant_and_stuck_cannot_pass (test_mcmc_diagnostics.DiagnosticsTests.test_constant_and_stuck_cannot_pass) ... ok
+test_coverage_bounds (test_mcmc_diagnostics.DiagnosticsTests.test_coverage_bounds) ... ok
+test_fft_against_direct_lag_products (test_mcmc_diagnostics.DiagnosticsTests.test_fft_against_direct_lag_products) ... ok
+test_independent_mc_errors_add_quadratically (test_mcmc_diagnostics.DiagnosticsTests.test_independent_mc_errors_add_quadratically) ... ok
+test_invalid_inputs_rejected (test_mcmc_diagnostics.DiagnosticsTests.test_invalid_inputs_rejected) ... ok
+test_ks_interval_encloses_bruteforce (test_mcmc_diagnostics.DiagnosticsTests.test_ks_interval_encloses_bruteforce) ... ok
+test_minimum_draw_length_works (test_mcmc_diagnostics.DiagnosticsTests.test_minimum_draw_length_works) ... ok
+test_randomized_rank_ties (test_mcmc_diagnostics.DiagnosticsTests.test_randomized_rank_ties) ... ok
+test_rank_scores_ties_and_symmetry (test_mcmc_diagnostics.DiagnosticsTests.test_rank_scores_ties_and_symmetry) ... ok
+test_reference_uses_one_twenty_cut_family (test_mcmc_diagnostics.DiagnosticsTests.test_reference_uses_one_twenty_cut_family) ... ok
+test_rhat_detects_location_and_scale (test_mcmc_diagnostics.DiagnosticsTests.test_rhat_detects_location_and_scale) ... ok
+test_split_drops_only_middle (test_mcmc_diagnostics.DiagnosticsTests.test_split_drops_only_middle) ... ok
+test_corrupted_exact_cache_is_rejected (test_inference_data.InferenceDataTests.test_corrupted_exact_cache_is_rejected) ... ok
+test_missing_truth_node_cannot_fall_back_to_interpolation (test_inference_data.InferenceDataTests.test_missing_truth_node_cannot_fall_back_to_interpolation) ... ok
+test_reproduce_all_sixteen_preparatory_draws (test_inference_data.InferenceDataTests.test_reproduce_all_sixteen_preparatory_draws) ... ok
+test_unsupported_spectral_design_is_rejected (test_inference_data.InferenceDataTests.test_unsupported_spectral_design_is_rejected) ... ok
+test_budget_prevents_basis_allocation (test_orf_blas.BackendTests.test_budget_prevents_basis_allocation) ... ok
+test_existing_cache_bytes_are_preserved (test_orf_blas.BackendTests.test_existing_cache_bytes_are_preserved) ... ok
+test_independent_direct_integrals (test_orf_blas.BackendTests.test_independent_direct_integrals) ... ok
+test_threshold_analytic_normalization (test_orf_blas.BackendTests.test_threshold_analytic_normalization) ... ok
+test_builder_reads_existing_entry_through_guard (test_orf_table_integrity.CacheIntegrityTests.test_builder_reads_existing_entry_through_guard) ... ok
+test_checkpoint_corruption (test_orf_table_integrity.CacheIntegrityTests.test_checkpoint_corruption) ... ok
+test_checkpoint_valid (test_orf_table_integrity.CacheIntegrityTests.test_checkpoint_valid) ... ok
+test_corrupt_matrices_rejected_and_preserved (test_orf_table_integrity.CacheIntegrityTests.test_corrupt_matrices_rejected_and_preserved) ... ok
+test_corrupt_metadata_rejected (test_orf_table_integrity.CacheIntegrityTests.test_corrupt_metadata_rejected) ... ok
+test_digest_detects_psd_preserving_change (test_orf_table_integrity.CacheIntegrityTests.test_digest_detects_psd_preserving_change) ... ok
+test_fresh_build_then_checkpoint_resume (test_orf_table_integrity.CacheIntegrityTests.test_fresh_build_then_checkpoint_resume) ... {"frequency_complete": 1, "total_frequencies": 1, "new_nodes": 2, "timing": {"frequency": 1, "stages": [{"resolution": "coarse", "lmax": 32, "nmu": 90, "basis_build_seconds": 0.0016391670797020197, "evaluation_seconds": 0.00035845895763486624}, {"resolution": "fine", "lmax": 40, "nmu": 110, "basis_build_seconds": 0.0021970829693600535, "evaluation_seconds": 0.0003903750330209732}], "maximum_coarse_fine_difference": 2.2898349882893854e-16, "minimum_eigenvalue": 0.004750564418809467}}
+ok
+test_legacy_and_v2_compatible (test_orf_table_integrity.CacheIntegrityTests.test_legacy_and_v2_compatible) ... ok
+test_batched_integrals_match_unpruned_scalar (test_portable_reference.PortableReferenceTests.test_batched_integrals_match_unpruned_scalar) ... ok
+test_cache_signature_includes_omission_budget (test_portable_reference.PortableReferenceTests.test_cache_signature_includes_omission_budget) ... ok
+test_joint_prior_normalization_and_covariance (test_portable_reference.PortableReferenceTests.test_joint_prior_normalization_and_covariance) ... ok
+test_omission_encloses_finite_quadrature (test_portable_reference.PortableReferenceTests.test_omission_encloses_finite_quadrature) ... ok
+test_spectral_coefficients_against_cholesky (test_portable_reference.PortableReferenceTests.test_spectral_coefficients_against_cholesky) ... ok
+test_truncation_retains_full_prior_measure (test_portable_reference.PortableReferenceTests.test_truncation_retains_full_prior_measure) ... ok
+test_constant_and_different_constant_chains (test_mcmc_optimized.OptimizedTests.test_constant_and_different_constant_chains) ... ok
+test_even_odd_and_ties (test_mcmc_optimized.OptimizedTests.test_even_odd_and_ties) ... ok
+test_folded_scale_difference_preserved (test_mcmc_optimized.OptimizedTests.test_folded_scale_difference_preserved) ... ok
+test_invalid_input_contract (test_mcmc_optimized.OptimizedTests.test_invalid_input_contract) ... ok
+test_rank_scores_match_scipy (test_mcmc_optimized.OptimizedTests.test_rank_scores_match_scipy) ... ok
+test_sorted_quantiles_match_numpy (test_mcmc_optimized.OptimizedTests.test_sorted_quantiles_match_numpy) ... ok
+test_bonferroni_family (test_iid_diagnostics.IIDTests.test_bonferroni_family) ... ok
+test_constant_is_not_zero_error_approval (test_iid_diagnostics.IIDTests.test_constant_is_not_zero_error_approval) ... ok
+test_direct_ratio_influence (test_iid_diagnostics.IIDTests.test_direct_ratio_influence) ... ok
+test_invalid_inputs (test_iid_diagnostics.IIDTests.test_invalid_inputs) ... ok
+test_quantile_inverse_left (test_iid_diagnostics.IIDTests.test_quantile_inverse_left) ... ok
+test_rare_dominant_weight (test_iid_diagnostics.IIDTests.test_rare_dominant_weight) ... ok
+test_replicate_influence_uses_denominator (test_iid_diagnostics.IIDTests.test_replicate_influence_uses_denominator) ... ok
+test_shift_changes_evidence_not_cdf (test_iid_diagnostics.IIDTests.test_shift_changes_evidence_not_cdf) ... ok
+test_underflow_preserved (test_iid_diagnostics.IIDTests.test_underflow_preserved) ... ok
+test_unweighted_matches_sample_mean_variance (test_iid_diagnostics.IIDTests.test_unweighted_matches_sample_mean_variance) ... ok
+test_against_direct_complex_matrix_formulas (test_native_likelihood.NativeTests.test_against_direct_complex_matrix_formulas) ... ok
+test_batch_input_contract_and_safe_empty_or_unaligned_input (test_native_likelihood.NativeTests.test_batch_input_contract_and_safe_empty_or_unaligned_input) ... ok
+test_constructor_rejects_invalid_banks_and_observations (test_native_likelihood.NativeTests.test_constructor_rejects_invalid_banks_and_observations) ... ok
+test_nonpositive_covariance_raises_without_jitter (test_native_likelihood.NativeTests.test_nonpositive_covariance_raises_without_jitter) ... ok
+test_owned_state_survives_source_mutation (test_native_likelihood.NativeTests.test_owned_state_survives_source_mutation) ... ok
+test_threaded_evaluation_and_call_buffers (test_native_likelihood.NativeTests.test_threaded_evaluation_and_call_buffers) ... ok
+test_bracket_decision_roundoff_boundary (test_iid_optimized.OptimizedTests.test_bracket_decision_roundoff_boundary) ... ok
+test_context_ownership_and_returned_summary (test_iid_optimized.OptimizedTests.test_context_ownership_and_returned_summary) ... ok
+test_extreme_weights (test_iid_optimized.OptimizedTests.test_extreme_weights) ... ok
+test_iid_normal (test_iid_optimized.OptimizedTests.test_iid_normal) ... ok
+test_invalid_contract (test_iid_optimized.OptimizedTests.test_invalid_contract) ... ok
+test_precision_threshold_roundoff_boundary (test_iid_optimized.OptimizedTests.test_precision_threshold_roundoff_boundary) ... ok
+test_quantile_exact (test_iid_optimized.OptimizedTests.test_quantile_exact) ... ok
+test_reference_brackets (test_iid_optimized.OptimizedTests.test_reference_brackets) ... ok
+test_single_row_functions (test_iid_optimized.OptimizedTests.test_single_row_functions) ... ok
+test_small_and_subnormal (test_iid_optimized.OptimizedTests.test_small_and_subnormal) ... ok
+test_ties_and_constants (test_iid_optimized.OptimizedTests.test_ties_and_constants) ... ok
+test_zero_and_underflow_weights (test_iid_optimized.OptimizedTests.test_zero_and_underflow_weights) ... ok
+test_coverage_and_paired_bounds_contain_exhaustive_events (test_sbc_sensitivity.SensitivityTests.test_coverage_and_paired_bounds_contain_exhaustive_events) ... ok
+test_holm_bounds_include_correlated_choices (test_sbc_sensitivity.SensitivityTests.test_holm_bounds_include_correlated_choices) ... ok
+test_input_guards_preserve_invalid_observations (test_sbc_sensitivity.SensitivityTests.test_input_guards_preserve_invalid_observations) ... ok
+test_ks_envelope_contains_independent_assignments (test_sbc_sensitivity.SensitivityTests.test_ks_envelope_contains_independent_assignments) ... ok
+test_point_intervals_reproduce_exact_statistics (test_sbc_sensitivity.SensitivityTests.test_point_intervals_reproduce_exact_statistics) ... ok
+test_unresolved_keeps_full_denominator (test_sbc_sensitivity.SensitivityTests.test_unresolved_keeps_full_denominator) ... ok
+test_budget (test_portable_contract.PortableContracts.test_budget) ... ok
+test_checkpoints (test_portable_contract.PortableContracts.test_checkpoints) ... ok
+test_iid_sampler (test_portable_contract.PortableContracts.test_iid_sampler) ... ok
+test_orphan_recovery (test_portable_contract.PortableContracts.test_orphan_recovery) ... ok
+test_target_rng (test_portable_contract.PortableContracts.test_target_rng) ... ok
+test_thread_order (test_portable_contract.PortableContracts.test_thread_order) ... ok
+test_truth_separation (test_portable_contract.PortableContracts.test_truth_separation) ... ok
+test_against_original_v1 (test_campaign_diagnostics.CampaignDiagnosticTests.test_against_original_v1) ... ok
+test_constant_indicator_is_not_approved (test_campaign_diagnostics.CampaignDiagnosticTests.test_constant_indicator_is_not_approved) ... ok
+test_keeps_physical_quantile_units (test_campaign_diagnostics.CampaignDiagnosticTests.test_keeps_physical_quantile_units) ... ok
+test_complete_reader_and_direct_truth_identity (test_campaign_diagnostics.DiagnosticIntegrationTests.test_complete_reader_and_direct_truth_identity) ... ok
+test_nominal_report_matches_existing_analytic_toy (test_campaign_sbc.CampaignSBCTests.test_nominal_report_matches_existing_analytic_toy) ... ok
+test_per_function_gate_separates_unrelated_failure (test_campaign_sbc.CampaignSBCTests.test_per_function_gate_separates_unrelated_failure) ... ok
+test_quantile_cut_failure_is_retained_outside_pit_gate (test_campaign_sbc.CampaignSBCTests.test_quantile_cut_failure_is_retained_outside_pit_gate) ... ok
+test_failure_stops_and_resume_does_not_repeat_retired_target (test_campaign_driver.DriverTests.test_failure_stops_and_resume_does_not_repeat_retired_target) ... {"event": "block_started", "block": 0, "targets": [0, 1], "completed": 0}
+{"event": "block_started", "block": 0, "targets": [1], "completed": 1}
+{"event": "block_completed", "block": 0, "targets": [1], "completed_total": 2, "unresolved_total": 1, "ledger": {"training": 24, "production": 120, "other": 0, "unclosed_reservations": 0, "total": 144}, "seconds_since_attempt_start": 0.035163915948942304}
+{"event": "block_started", "block": 1, "targets": [2], "completed": 2}
+{"event": "block_completed", "block": 1, "targets": [2], "completed_total": 3, "unresolved_total": 1, "ledger": {"training": 36, "production": 168, "other": 0, "unclosed_reservations": 0, "total": 204}, "seconds_since_attempt_start": 0.0665150829590857}
+ok
+test_ledger_reads_scale_linearly (test_campaign_driver.DriverTests.test_ledger_reads_scale_linearly) ... ok
+test_order_counts_and_unresolved_retained (test_campaign_driver.DriverTests.test_order_counts_and_unresolved_retained) ... {"event": "block_started", "block": 0, "targets": [0, 1], "completed": 0}
+{"event": "block_completed", "block": 0, "targets": [0, 1], "completed_total": 2, "unresolved_total": 1, "ledger": {"training": 24, "production": 96, "other": 0, "unclosed_reservations": 0, "total": 120}, "seconds_since_attempt_start": 0.05311508406884968}
+{"event": "block_started", "block": 1, "targets": [2], "completed": 2}
+{"event": "block_completed", "block": 1, "targets": [2], "completed_total": 3, "unresolved_total": 1, "ledger": {"training": 36, "production": 144, "other": 0, "unclosed_reservations": 0, "total": 180}, "seconds_since_attempt_start": 0.08075445902068168}
+ok
+test_single_writer_lock (test_campaign_driver.DriverTests.test_single_writer_lock) ... ok
+test_unclosed_reservation_is_counted_and_budget_rejected_before_work (test_campaign_driver.DriverTests.test_unclosed_reservation_is_counted_and_budget_rejected_before_work) ... ok
+test_eight_components_against_scipy_and_density_bound (test_proposal_broadening.BroadeningTests.test_eight_components_against_scipy_and_density_bound) ... ok
+test_fit_is_not_mutated_and_fitted_vs_proposal_counts (test_proposal_broadening.BroadeningTests.test_fit_is_not_mutated_and_fitted_vs_proposal_counts) ... ok
+test_independent_integral_normalization (test_proposal_broadening.BroadeningTests.test_independent_integral_normalization) ... ok
+test_invalid_config_and_covariance_rejected (test_proposal_broadening.BroadeningTests.test_invalid_config_and_covariance_rejected) ... ok
+test_optional_training_credentials_and_producer (test_proposal_broadening.BroadeningTests.test_optional_training_credentials_and_producer) ... ok
+test_cn_truth_loglikelihood_against_full_solve (test_fixed_generation.FixedGenerationTests.test_cn_truth_loglikelihood_against_full_solve) ... ok
+test_design_mismatch_is_rejected (test_fixed_generation.FixedGenerationTests.test_design_mismatch_is_rejected) ... ok
+test_generated_fixture_runtime_loading (test_fixed_generation.FixedGenerationTests.test_generated_fixture_runtime_loading) ... ok
+test_missing_truth_cannot_be_finite_placeholder (test_fixed_generation.FixedGenerationTests.test_missing_truth_cannot_be_finite_placeholder) ... ok
+test_missing_truth_masks_and_structural_endpoint (test_fixed_generation.FixedGenerationTests.test_missing_truth_masks_and_structural_endpoint) ... ok
+test_no_gw_covariance_is_exact_noise_without_provider (test_fixed_generation.FixedGenerationTests.test_no_gw_covariance_is_exact_noise_without_provider) ... ok
+test_only_two_defined_orf_requests (test_fixed_generation.FixedGenerationTests.test_only_two_defined_orf_requests) ... ok
+test_reproducible_independent_scenario_streams (test_fixed_generation.FixedGenerationTests.test_reproducible_independent_scenario_streams) ... ok
+test_row_and_runtime_target_contract (test_fixed_generation.FixedGenerationTests.test_row_and_runtime_target_contract) ... ok
+test_global_families_unchanged_when_functions_omitted (test_fixed_diagnostics.FixedDiagnosticsTests.test_global_families_unchanged_when_functions_omitted) ... ok
+test_interior_reproduces_unmasked_v1_all_common_fields (test_fixed_diagnostics.FixedDiagnosticsTests.test_interior_reproduces_unmasked_v1_all_common_fields) ... ok
+test_json_masked_summary_and_no_approval (test_fixed_diagnostics.FixedDiagnosticsTests.test_json_masked_summary_and_no_approval) ... ok
+test_other_constant_indicators_stay_unresolved (test_fixed_diagnostics.FixedDiagnosticsTests.test_other_constant_indicators_stay_unresolved) ... ok
+test_structural_forgery_and_finite_missing_truth_rejected (test_fixed_diagnostics.FixedDiagnosticsTests.test_structural_forgery_and_finite_missing_truth_rejected) ... ok
+test_structural_zero_is_exact_and_omitted_from_contrasts (test_fixed_diagnostics.FixedDiagnosticsTests.test_structural_zero_is_exact_and_omitted_from_contrasts) ... ok
+test_toy_file_adapter_writes_resumes_and_rejects_changed_identity (test_fixed_diagnostics.FixedDiagnosticsTests.test_toy_file_adapter_writes_resumes_and_rejects_changed_identity) ... ok
+test_truth_only_loader_hashes_and_masks (test_fixed_diagnostics.FixedDiagnosticsTests.test_truth_only_loader_hashes_and_masks) ... ok
+test_twenty_quantile_products_unchanged_without_truth (test_fixed_diagnostics.FixedDiagnosticsTests.test_twenty_quantile_products_unchanged_without_truth) ... ok
+test_undefined_values_never_enter_cdf (test_fixed_diagnostics.FixedDiagnosticsTests.test_undefined_values_never_enter_cdf) ... ok
+test_changed_generation_or_driver_snapshot_blocks_resume (test_fixed_operational.FixedOperationalTests.test_changed_generation_or_driver_snapshot_blocks_resume) ... ok
+test_failure_resume_reuses_retired_target_and_charges_ledger (test_fixed_operational.FixedOperationalTests.test_failure_resume_reuses_retired_target_and_charges_ledger) ... ok
+test_generation_changed_after_plan_blocks_before_training (test_fixed_operational.FixedOperationalTests.test_generation_changed_after_plan_blocks_before_training) ... ok
+test_generic_archive_retains_masks_and_unresolved_target (test_fixed_operational.FixedOperationalTests.test_generic_archive_retains_masks_and_unresolved_target) ... ok
+test_preflight_requires_all96_a0_targets (test_fixed_operational.FixedOperationalTests.test_preflight_requires_all96_a0_targets) ... ok
+test_v2_preserves_v1_numerical_function_bodies (test_fixed_operational.FixedOperationalTests.test_v2_preserves_v1_numerical_function_bodies) ... ok
+test_wrong_masked_schema_prevents_archive_or_deletion (test_fixed_operational.FixedOperationalTests.test_wrong_masked_schema_prevents_archive_or_deletion) ... ok
+test_analytic_toy64_against_independent_scipy_tests (test_sbc_delivery.DeliveryTests.test_analytic_toy64_against_independent_scipy_tests) ... ok
+test_identity_and_duplicate_guards (test_sbc_delivery.DeliveryTests.test_identity_and_duplicate_guards) ... ok
+test_incomplete_inventory_is_rejected (test_sbc_delivery.DeliveryTests.test_incomplete_inventory_is_rejected) ... ok
+test_numeric_hash_truth_and_specification_guards (test_sbc_delivery.DeliveryTests.test_numeric_hash_truth_and_specification_guards) ... ok
+test_toy_cannot_be_mistaken_for_main500 (test_sbc_delivery.DeliveryTests.test_toy_cannot_be_mistaken_for_main500) ... ok
+test_coherent_false_pass_label_and_nonboolean_flags_rejected (test_compact_archive.CompactArchiveTests.test_coherent_false_pass_label_and_nonboolean_flags_rejected) ... ok
+test_corrupted_bundle_and_unsafe_member_rejected (test_compact_archive.CompactArchiveTests.test_corrupted_bundle_and_unsafe_member_rejected) ... ok
+test_default_inventory_lock_and_raw_guards (test_compact_archive.CompactArchiveTests.test_default_inventory_lock_and_raw_guards) ... ok
+test_missing_state_hash_and_symlink_guards (test_compact_archive.CompactArchiveTests.test_missing_state_hash_and_symlink_guards) ... ok
+test_partition_budget_and_ledger_integrity (test_compact_archive.CompactArchiveTests.test_partition_budget_and_ledger_integrity) ... ok
+test_roundtrip_all_bytes_and_failures_deterministic (test_compact_archive.CompactArchiveTests.test_roundtrip_all_bytes_and_failures_deterministic) ... ok
+test_complete_fixed96_roundtrip_and_explicit_scope (test_compact_archive.FixedCompactArchiveTests.test_complete_fixed96_roundtrip_and_explicit_scope) ... ok
+test_fixed96_missing_id_and_wrong_scope_rejected (test_compact_archive.FixedCompactArchiveTests.test_fixed96_missing_id_and_wrong_scope_rejected) ... ok
+test_generation_mask_inventory_cannot_be_relabelled (test_compact_archive.FixedCompactArchiveTests.test_generation_mask_inventory_cannot_be_relabelled) ... ok
+test_masked_schema_required_even_with_consistent_hashes (test_compact_archive.FixedCompactArchiveTests.test_masked_schema_required_even_with_consistent_hashes) ... ok
+test_constants_infinite_mcse_and_flags_are_not_precision (test_fixed_synthesis.FixedSynthesisTests.test_constants_infinite_mcse_and_flags_are_not_precision) ... ok
+test_contrast_identity_and_guard_reject_omission_or_false_pass (test_fixed_synthesis.FixedSynthesisTests.test_contrast_identity_and_guard_reject_omission_or_false_pass) ... ok
+test_envelope_counts_contain_every_assignment_without_dropping32 (test_fixed_synthesis.FixedSynthesisTests.test_envelope_counts_contain_every_assignment_without_dropping32) ... ok
+test_function_specific_failure_does_not_discard_others (test_fixed_synthesis.FixedSynthesisTests.test_function_specific_failure_does_not_discard_others) ... ok
+test_pointwise_cp_independent_binomial_tail_inversion (test_fixed_synthesis.FixedSynthesisTests.test_pointwise_cp_independent_binomial_tail_inversion) ... ok
+test_prospective_protocol_cannot_reduce_family_or_change_alpha (test_fixed_synthesis.FixedSynthesisTests.test_prospective_protocol_cannot_reduce_family_or_change_alpha) ... ok
+test_real_archive_full96_loader_and_integrity_failures (test_fixed_synthesis.FixedSynthesisTests.test_real_archive_full96_loader_and_integrity_failures) ... ok
+test_strict_scenario_masks_and_expected_contrast_counts (test_fixed_synthesis.FixedSynthesisTests.test_strict_scenario_masks_and_expected_contrast_counts) ... ok
+test_structural_is_exact_even_when_other_functions_fail (test_fixed_synthesis.FixedSynthesisTests.test_structural_is_exact_even_when_other_functions_fail) ... ok
+test_synthesis_keeps96_nan_and_structural_exceptions_no_uniformity (test_fixed_synthesis.FixedSynthesisTests.test_synthesis_keeps96_nan_and_structural_exceptions_no_uniformity) ... ok
+
+----------------------------------------------------------------------
+Ran 164 tests in 42.831s
+
+OK
+C07: 164 testes de componentes; integrais condicionais e TOY conferidos. Campanha PTA não é validada por este comando.

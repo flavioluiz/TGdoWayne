@@ -1,19 +1,20 @@
 {
   "schema_version": 1,
-  "current_stage": "C06",
+  "current_stage": "C07",
   "completed_stages": [
     "C01",
     "C02",
     "C03",
     "C04",
     "C05",
-    "C06"
+    "C06",
+    "C07"
   ],
-  "latest_version": "v0.6.0",
+  "latest_version": "v0.7.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.6.0/dissertacao.pdf",
-  "updated_at": "2026-09-10",
-  "status_label": "Simulador e momentos validados; convergência da inferência em avaliação",
+  "latest_pdf": "output/pdf/v0.7.0/dissertacao.pdf",
+  "updated_at": "2026-09-11",
+  "status_label": "Inferência e calibração documentadas, com falhas numéricas e probabilísticas explícitas",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -38,10 +39,16 @@
     "23 testes de resposta, geometria e interface aprovados; campanha de 58 casos aceita com métodos independentes, refinamento separado e orçamento numérico explícito.",
     "Experimento Fourier periódico com sinal tensorial, ruídos branco/vermelho, estimadores complexos e compressão fixa; contrato A0/A/B/C e desenho prospectivo registrados.",
     "Onze testes do simulador aprovados; três campanhas com 131072 realizações físicas e controles cada recuperaram momentos e cumulantes, com 605 avaliações auditadas de pares ORF.",
-    "Acervo ampliado para 26 PDFs locais (600 páginas), incluindo quatro referências metodológicas de calibração, com versões publicadas até 2026."
+    "Acervo ampliado para 26 PDFs locais (600 páginas), incluindo quatro referências metodológicas de calibração, com versões publicadas até 2026.",
+    "Acervo atualizado até 11/09/2026: 37 PDFs locais, 839 páginas; catálogo com URLs, versões e SHA-256 e revisão dirigida dos antecedentes recentes.",
+    "Inferência com treino separado da produção IID, quatro réplicas, proposta defensiva e backend nativo; 164 testes de componentes e referências independentes preservadas.",
+    "Campanha de 500 realizações e cinco análises concluída; 2500 inferências, 81 alvos com algum diagnóstico pendente e 243 PITs não resolvidos, sem descarte de dados.",
+    "Síntese SBC auditada independentemente: 6202 verificações e reconstrução exata de 15000 flags por função. Controles sem rejeição nominal; dez rejeições persistentes nas aproximações normais.",
+    "Noventa e seis controles A0 concluídos, com 32 observações por cenário, 416 PITs numéricos e 32 estruturais; parâmetros sem verdade definida mascarados. Cobertura condicional reportada separadamente.",
+    "Arquivos compactos restauráveis das campanhas, com verificações de SHA-256, propostas, sementes, diagnósticos e recibos preservados; capítulo 6 incorporado ao PDF cumulativo."
   ],
-  "current_work": "C07 em andamento: inferência contínua com cinco parâmetros, controles de integração e preparação da calibração. Os pilotos ainda não satisfazem todos os critérios de convergência; SBC, cobertura, comparações inferenciais e artigo permanecem pendentes.",
+  "current_work": "C08: comparação das respostas de frequência de referência e da compressão; protocolos, tabelas angulares e estudos de momentos em preparação. C07 concluiu 2500 inferências e 96 controles fixos, com todos os dados preservados. Os resultados da aproximação normal e as limitações de cobertura condicional estão documentados.",
   "in_progress_stages": [
-    "C07"
+    "C08"
   ]
 }

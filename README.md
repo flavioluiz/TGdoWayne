@@ -10,13 +10,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**Simulador e momentos validados; convergência da inferência em avaliação**  
-**Última etapa concluída:** C06 — Metodologia de simulação e dados sintéticos.  
-**Progresso:** 6 de 13 marcos concluídos.  
-**Próxima etapa:** C07 — Inferência de referência e calibração.  
-**Atualização:** 2026-09-10.
+**Inferência e calibração documentadas, com falhas numéricas e probabilísticas explícitas**  
+**Última etapa concluída:** C07 — Inferência de referência e calibração.  
+**Progresso:** 7 de 13 marcos concluídos.  
+**Próxima etapa:** C08 — Resultados sobre compressão em frequência.  
+**Atualização:** 2026-09-11.
 
-**[Baixar o PDF mais recente — v0.6.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.6.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.6.0) · [PDF versionado no repositório](output/pdf/v0.6.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.7.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.7.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.7.0) · [PDF versionado no repositório](output/pdf/v0.7.0/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -37,10 +37,16 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Experimento Fourier periódico com sinal tensorial, ruídos branco/vermelho, estimadores complexos e compressão fixa; contrato A0/A/B/C e desenho prospectivo registrados.
 - Onze testes do simulador aprovados; três campanhas com 131072 realizações físicas e controles cada recuperaram momentos e cumulantes, com 605 avaliações auditadas de pares ORF.
 - Acervo ampliado para 26 PDFs locais (600 páginas), incluindo quatro referências metodológicas de calibração, com versões publicadas até 2026.
+- Acervo atualizado até 11/09/2026: 37 PDFs locais, 839 páginas; catálogo com URLs, versões e SHA-256 e revisão dirigida dos antecedentes recentes.
+- Inferência com treino separado da produção IID, quatro réplicas, proposta defensiva e backend nativo; 164 testes de componentes e referências independentes preservadas.
+- Campanha de 500 realizações e cinco análises concluída; 2500 inferências, 81 alvos com algum diagnóstico pendente e 243 PITs não resolvidos, sem descarte de dados.
+- Síntese SBC auditada independentemente: 6202 verificações e reconstrução exata de 15000 flags por função. Controles sem rejeição nominal; dez rejeições persistentes nas aproximações normais.
+- Noventa e seis controles A0 concluídos, com 32 observações por cenário, 416 PITs numéricos e 32 estruturais; parâmetros sem verdade definida mascarados. Cobertura condicional reportada separadamente.
+- Arquivos compactos restauráveis das campanhas, com verificações de SHA-256, propostas, sementes, diagnósticos e recibos preservados; capítulo 6 incorporado ao PDF cumulativo.
 
 ### O que está em andamento e o que falta
 
-C07 em andamento: inferência contínua com cinco parâmetros, controles de integração e preparação da calibração. Os pilotos ainda não satisfazem todos os critérios de convergência; SBC, cobertura, comparações inferenciais e artigo permanecem pendentes.
+C08: comparação das respostas de frequência de referência e da compressão; protocolos, tabelas angulares e estudos de momentos em preparação. C07 concluiu 2500 inferências e 96 controles fixos, com todos os dados preservados. Os resultados da aproximação normal e as limitações de cobertura condicional estão documentados.
 
 ## Roadmap
 
@@ -54,8 +60,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C04 | Fundamentos teóricos e reprodução do TG | `v0.4.0` | Concluída | [Detalhes](implementation_plan/commits/C04_fundamentos_e_tg.md) |
 | C05 | Resposta de PTA e correlações validadas | `v0.5.0` | Concluída | [Detalhes](implementation_plan/commits/C05_resposta_pta.md) |
 | C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Concluída | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
-| C07 | Inferência de referência e calibração | `v0.7.0` | Em andamento | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
-| C08 | Resultados sobre compressão em frequência | `v0.8.0` | Planejada | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
+| C07 | Inferência de referência e calibração | `v0.7.0` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
+| C08 | Resultados sobre compressão em frequência | `v0.8.0` | Em andamento | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
 | C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Planejada | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Planejada | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
 | C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Planejada | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
@@ -97,13 +103,14 @@ Os resultados centrais do TG já foram publicados; sua reprodução é uma base 
 | `latex/chapters.json` | Estado editorial e arquivos dos capítulos |
 | `latex/capitulos_proposta/` | Texto da proposta em LaTeX |
 | `latex/referencias/` | Bibliografia em BibLaTeX |
-| `literature/` | Catálogo e acervo local de 26 artigos, com script de download |
+| `literature/` | Catálogo e acervo local de 37 artigos e relatórios, com script de download |
 | `docs/literatura/` | Protocolo, matriz de originalidade e auditoria de métodos/códigos |
 | `implementation_plan/` | Plano geral, roadmap e um Markdown por commit |
 | `project_status.json` | Fonte do painel de estado do README |
 | `scripts/` | Checagens, compilação, atualização do README e integridade |
 | `src/polarizacoes/` | Curvatura e vínculos simbólicos gerais |
 | `src/pta/` | Resposta tensorial, ORFs, simulador e estatísticas quadráticas |
+| `src/inference/`, `results/C07/` | Inferência, referências, sínteses500/96, arquivos restauráveis e auditorias |
 | `tests/`, `results/C04/`, `results/C05/`, `results/C06/` | 19 testes simbólicos, 23 de resposta, 11 do simulador e campanhas |
 | `configs/`, `figures/` | Configurações de validação, desenho experimental e figuras científicas |
 | `output/pesquisa/` | Análise inicial e resultados das checagens |
@@ -115,7 +122,7 @@ O Markdown em `output/pesquisa/` preserva a análise inicial; a fonte editorial 
 
 ## Artigos da revisão
 
-Os **26 PDFs** foram baixados em `literature/papers/` (36,35 MB; 600 páginas), com versões e
+Os **37 PDFs** foram baixados em `literature/papers/` (68,91 MB; 839 páginas), com versões e
 SHA-256 conferidos. O [catálogo do acervo](literature/README.md) apresenta arquivos e fontes.
 Para reconstituir o acervo em outro checkout, execute `python3 scripts/download_papers.py`;
 para conferir as cópias locais, use `python3 scripts/download_papers.py --verify`.
@@ -141,12 +148,20 @@ make check
 ```
 
 `make pdf` confere os metadados e o quadro de capítulos e compila uma cópia de conferência em `tmp/latex/<documento>/<documento>.pdf`, sem substituir o
-PDF publicado. `make check` reexecuta os 19 testes simbólicos, os 23 testes de resposta e os 11 do simulador e confere os registros,
+PDF publicado. `make check` reexecuta os 19 testes simbólicos, os 23 testes de resposta, os 11 do simulador e os 164 de inferência e confere os registros,
 além das checagens preliminares, do estado do README e dos hashes do release atual.
 Também confere a procedência da campanha de 58 ORFs e das três campanhas de momentos, regenerando as amostras pequenas. Não repete todas as integrais e sorteios nesse comando.
 As receitas completas do simulador estão em [dados sintéticos](docs/dados_sinteticos.md).
-Para reexecutar a campanha completa, use `.venv/bin/python scripts/benchmark_orf.py`
+Os componentes inferenciais também têm uma checagem própria:
+`make check-inference-components`. Ela reexecuta 164 testes e confere as evidências
+de integração condicional e controles analíticos; não aprova a produção de
+posteriores nem a calibração de PTA. Os protocolos estão em
+[diagnósticos contínuos](docs/protocolo_diagnosticos_c07_v1.md) e
+[diagnósticos de cadeias](docs/protocolo_diagnosticos_mcmc_c07_v2.md).
+Para reexecutar a campanha angular C05, use `.venv/bin/python scripts/benchmark_orf.py`
 (64,82 s na execução registrada).
+As campanhas inferenciais e seus resultados estão descritos em [resultados C07](docs/inferencia/resultados_c07.md).
+Os arquivos [500×5](results/C07/posterior500_compact/README.md) e [96 controles](results/C07/fixed96_compact/README.md) permitem restaurar diagnósticos e propostas; regenerar a produção bruta exige repetir o custo científico documentado.
 A reprodução de conteúdo requer as mesmas fontes; equivalência binária entre diferentes versões
 do TeX não é pressuposta. O manifesto registra a ferramenta utilizada e o SHA-256 do PDF publicado.
 Para conferir uma versão anterior, faça checkout de sua tag e use o número correspondente em `VERSION`.
@@ -163,10 +178,10 @@ inconsistente. As demais seções do README podem ser editadas diretamente.
 ```bash
 python3 scripts/update_readme.py
 python3 scripts/update_document_state.py
-make release VERSION=v0.7.0 DOCUMENT=dissertacao
+make release VERSION=v0.8.0 DOCUMENT=dissertacao
 ```
 
-O exemplo pressupõe que C07 foi concluído e que seus fontes, estado e notas de release já existem.
+O exemplo pressupõe que C08 foi concluído e que seus fontes, estado e notas de release já existem.
 O [procedimento completo](implementation_plan/README.md#procedimento-de-fechamento-de-cada-marco)
 inclui a inspeção visual, o commit, a tag e a conferência do download. O workflow do GitHub anexa o
 **mesmo PDF que está no commit**, sem recompilá-lo. Versões `v0.*` são publicadas como pré-releases;
@@ -175,8 +190,7 @@ por isso o link “PDF mais recente” usa a tag explícita atual e não `/relea
 ## Limites e procedência
 
 Esta versão não demonstra ineditismo definitivo, detectabilidade, estabilidade não linear ou uma
-nova restrição observacional. As verificações implementadas abrangem geometria, consistência linear, resposta tensorial de PTA e momentos dos dados sintéticos; a calibração
-da inferência faz parte dos marcos futuros. A submissão e a aceitação de um artigo não estão realizadas nem garantidas.
+nova restrição observacional. As verificações abrangem geometria, consistência linear, resposta tensorial, momentos e calibração no experimento sintético. A campanha conserva falhas numéricas e identifica desvios da aproximação normal e limitações de cobertura condicional. As comparações das respostas de frequência de referência e a extensão escalar seguem no roadmap. A submissão e a aceitação de um artigo não estão realizadas nem garantidas.
 
 O TG e os materiais de terceiros preservam seus direitos e atribuições. O template mantém sua licença
 Apache 2.0 no próprio diretório; ela não é aplicada automaticamente ao TG ou ao texto da proposta.

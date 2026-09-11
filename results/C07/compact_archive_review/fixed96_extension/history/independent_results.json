@@ -1,0 +1,50 @@
+{
+  "status": "MASKED_TRANSPORT_PASS_WITH_CONSISTENCY_FINDING",
+  "scope": "TRANSPORT_FIXTURES_ONLY_NOT_PTA_OR_POSTERIOR_VALIDATION",
+  "CPU_seconds": 7.598489000000001,
+  "checks": [
+    {
+      "name": "masked NPZ exact bytes target0",
+      "passed": true
+    },
+    {
+      "name": "u0 structural exact zero preserved",
+      "passed": true
+    },
+    {
+      "name": "masked NPZ exact bytes target64",
+      "passed": true
+    },
+    {
+      "name": "undefined noGW PIT remains NaN with false mask",
+      "passed": true
+    },
+    {
+      "name": "all96 IDs and95 unresolved retained",
+      "passed": true
+    }
+  ],
+  "source_hashes": {
+    "scripts/compactar_calibracao.py": "960ff66f69744e60d71cb27154de1e444ec09533c6ede0da14de66d56e7d2978",
+    "tests/test_compact_archive.py": "c16462b4dbdcbfae6b5a3ef5fff004c413f4795867ddd2165167451c0e7f95d8"
+  },
+  "sources_unchanged": true,
+  "finding": {
+    "id": "T1",
+    "reproduced": true,
+    "scope": "PREEXISTING_TRANSPORT_CONSISTENCY_GAP_ALSO_REACHABLE_IN_FIXED96",
+    "target": 95,
+    "accepted_status": "RECORDED_NUMERICAL_CHECKS_PASSED",
+    "retained_flags": {
+      "cdf_precision_pass": false,
+      "pooled_weight_guard_pass": false,
+      "refinement_pass": false,
+      "replication_pass": false,
+      "saturation_guard_pass": false
+    },
+    "description": "Self-consistent receipt/state/completion labels pass although every retained numerical flag is false; declared unresolved count drops94 from95."
+  },
+  "likelihood_values": 0,
+  "posterior_targets": 0,
+  "script_sha256": "5641d05f139ac3a35aedb45f871761392a1de64c9de4d9281e75388e3cd1c75d"
+}

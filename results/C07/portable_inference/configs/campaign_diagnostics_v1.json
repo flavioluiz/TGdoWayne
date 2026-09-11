@@ -1,0 +1,19 @@
+{
+  "protocol": "C07_TARGET_IID_DIAGNOSTICS_v1",
+  "scope": "All 2500 posterior numerical diagnostics; scientific SBC is separate",
+  "population_targets": 2500,
+  "levels": [
+    16384,
+    65536
+  ],
+  "independent_replications": 4,
+  "cdf_mcse_target": 0.00335,
+  "alpha_replicate_family": 0.05,
+  "alpha_refinement_family": 0.05,
+  "global_replicate_contrasts": 510000,
+  "global_refinement_contrasts": 17500,
+  "maximum_saturated_target_weight": 1e-12,
+  "saturation_status": "Prospectively fixed before campaign inference, weight mass rather than row count",
+  "reference": "A0d14 external cubature belongs only to its historical fixture SHA; no automatic datum14 match",
+  "approval": "No numerical context alone authorizes raw deletion"
+}

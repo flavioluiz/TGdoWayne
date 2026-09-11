@@ -1,0 +1,85 @@
+{
+  "backend": "native",
+  "datasets": 16,
+  "estimated_active_raw_bytes": 600834048,
+  "estimated_numeric_bytes": 2457994240,
+  "estimated_raw_per_target_bytes": 37552128,
+  "execution_ready": true,
+  "full_raw_if_never_released_bytes": 600834048,
+  "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+  "input_sha256": {
+    "data": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "experiment": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "native_build_manifest": "7a292917b6db16ac5b27651fd4bb629735619ee08f3e391cb0fbfe602d03f526",
+    "native_library": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+    "settings": "4cd92306b0945515a46278bf463e5a8919009227d02e562379030cce5592fb14",
+    "table": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "table_manifest": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f",
+    "validation_config": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9"
+  },
+  "levels": [
+    16384,
+    65536
+  ],
+  "likelihood_evaluations_this_process": 0,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "pending": [],
+  "planned_training_plus_production_likelihood_values": 5767232,
+  "production_blocks": [
+    [
+      0,
+      3,
+      8,
+      9,
+      11,
+      14,
+      20,
+      25,
+      28,
+      35,
+      46,
+      51,
+      52,
+      62,
+      67,
+      78
+    ]
+  ],
+  "production_likelihood_values": 5242880,
+  "replicates": 4,
+  "samples_per_replicate_main": 65536,
+  "targets": 16,
+  "thread_plan": {
+    "production": 6,
+    "training": 1
+  },
+  "training_blocks": [
+    [
+      0,
+      3,
+      8,
+      9,
+      11,
+      14,
+      20,
+      25,
+      28,
+      35,
+      46,
+      51,
+      52,
+      62,
+      67,
+      78
+    ]
+  ],
+  "training_likelihood_values_including_initialization": 524352,
+  "training_steps": 8192,
+  "truth_deserialized": false
+}

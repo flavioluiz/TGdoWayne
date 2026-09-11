@@ -1,0 +1,13 @@
+# Revisão independente do gerador C07
+
+O fluxo `preflight → build-orfs → generate → verify` passou em uma configuração temporária com 12 pulsares, quatro frequências consecutivas e quatro verdades novas, distintas das 16 usadas no piloto. A configuração mantém as prioris originais e reduz as distâncias a 0,02–0,06 anos-luz apenas para testar rapidamente a implementação. Não representa uma PTA observacional nem uma campanha de calibração.
+
+O preflight declarou 7 nós exatos incluindo âncoras, 4.757.760 multiplicações reais e estimativa de 466.672 bytes numéricos. Os limites explícitos foram 8 nós, 10 milhões de multiplicações, 32 MiB de arrays e lote de 4 nós. A construção reteve coarse/fine e os sete controles independentes. As tentativas de executar `generate` e `build-orfs` novamente foram recusadas; os hashes de todos os arquivos publicados permaneceram iguais.
+
+A revisão encontrou uma lacuna: `verify` não conferia o campo `orf_construction_sha256` já registrado em `generation.json`. Uma cópia privada do manifesto ORF foi alterada após a geração e a verificação inicial aceitou a mudança. O root corrigiu esse ponto. A nova execução completa em `rerun_v2/` passou e a repetição do contraexemplo foi recusada antes da regeneração. A primeira execução, o contraexemplo e as duas versões de fontes estão preservados; a correção não foi retroativamente atribuída à execução original.
+
+Também foram acrescentadas pelo root restrições explícitas aos quatro canais `[1,2,3,4]` e ao índice de ruído vermelho fixo em 4. Elas correspondem ao domínio atual dos cálculos de beta e covariance_batch. Os preflights negativos para canais não consecutivos, três canais e índice vermelho 4,5 foram recusados; o positivo passou. Nenhum preflight criou produto de dados. Evidência em `guard_review/summary.json`.
+
+Uma reconstrução independente dos arrays usou `pta.simulation.residual_covariances` para a PSD física, normalização pela escala salva, normais complexas próprias, produtos diretos q†Hq e traços de Isserlis para o controle gaussiano pareado. Ela não chamou `inference.model.covariance_batch` nem o gerador pareado original. Diferenças máximas: q de 3,58×10⁻¹⁵; estatísticas quadráticas de 1,07×10⁻¹⁴; controle gaussiano de 1,78×10⁻¹⁵. O menor autovalor das covariâncias foi positivo, 0,01498. As quatro verdades estavam estritamente dentro da priori. `independent_arrays.json` preserva os resultados e as convenções.
+
+A verificação é algébrica e operacional. Quatro realizações não estimam com precisão momentos amostrais, cobertura ou calibração posterior. Nenhuma das 500 realizações de produção foi gerada nesta revisão. Não alterei arquivos versionados; o root aplicou as correções. Os snapshots e manifestos SHA preservam as fontes de cada execução.

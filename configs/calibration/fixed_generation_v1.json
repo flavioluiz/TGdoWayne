@@ -1,0 +1,42 @@
+{
+  "protocol": "C07_FIXED_GENERATION_v1_before_new_observations",
+  "maximum_requested_nodes": 3,
+  "requested_signal_mass_nodes": [
+    0,
+    0.995
+  ],
+  "construction_budget": {
+    "maximum_estimated_numeric_memory_bytes": 805306368,
+    "maximum_total_real_multiplications": 20000000000,
+    "maximum_requested_nodes": 3,
+    "batch_size": 2,
+    "maximum_batch_real_multiplications": 6000000000
+  },
+  "direct_checks": {
+    "channels_zero_based": [
+      0,
+      3
+    ],
+    "low_frequency_pairs": [
+      [
+        3,
+        8
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "high_frequency_pairs": [
+      [
+        3,
+        8
+      ]
+    ],
+    "absolute_tolerance": 1e-07,
+    "maximum_work_proxy": 1000000000,
+    "maximum_estimated_memory_bytes": 700000000
+  },
+  "posterior_execution": false,
+  "interpolation_used": false
+}

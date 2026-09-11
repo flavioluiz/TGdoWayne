@@ -1,0 +1,69 @@
+{
+  "status": "DATA_GENERATED_NOT_POSTERIOR_CALIBRATION",
+  "realizations": 4,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "truth_seed": 907081301,
+  "data_seed": 907081302,
+  "config_sha256": "92e7ade3871fc35569706c9993fefff0e457b46bccd4d3c491ce75abf8bbf360",
+  "source_sha256": {
+    "scripts/gerar_calibracao.py": "d54c544aa53d8db85c8b2f16fb0f877863ac978add666b1cdb719ad488d25242",
+    "tmp/c07_generator_review/rerun_v2/toy_config.json": "92e7ade3871fc35569706c9993fefff0e457b46bccd4d3c491ce75abf8bbf360",
+    "src/inference/data_generation.py": "f9e908b2ae321373b93baec0c702ae8601c4386641c957e566401a72755bbe06",
+    "src/inference/model.py": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "src/inference/orf_backend.py": "05222fa1cf54488ea252c76d05456ca32bae213ef4d8628dfe9c493f32d23673",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/geometry.py": "8c2b644754b2118ab23d3f6224db02e4f5de117837f8a2fd12f4d2eecf63886d",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887"
+  },
+  "data_sha256": "e30826c0fb1a9561320b26db89c5952652cd4965a88e55fc68bbbbcf1ebbb638",
+  "orf_construction_sha256": "5becb958fb1425b731a2984a11d86a3aa970ac30c0f5b09fe358c52cc9786257",
+  "truth_orf_records": [
+    {
+      "u": 0.521513428093698,
+      "file": "3e7f10e6786ace656c10630643412cfcfc610380a852428a9f830bb00c57a7f8.npz",
+      "sha256": "b278f90d7ad75bc41b8f20ff2136ade4a3d37ad4b094b940536c43644f4168a3",
+      "maximum_coarse_fine_difference": 2.5673907444456745e-16,
+      "interpolation_used": false
+    },
+    {
+      "u": 0.46924277202757125,
+      "file": "31b003d8e096185dd003d491b3488db346a2fd8dbee1a0692b7e0985e056ba74.npz",
+      "sha256": "7420838ed3cba6792a7f4383292451409fb57866a5455a3aa256c067fcb6b74a",
+      "maximum_coarse_fine_difference": 2.1163626406917047e-16,
+      "interpolation_used": false
+    },
+    {
+      "u": 0.09616881785584741,
+      "file": "1839ce66315cd9447b6bd6dc265403db29de1c5f12d16e4b54ee03fa3ead4275.npz",
+      "sha256": "dd5e0ceaba81ac0517135c4303e0efcc5ab93dd9ff0cab4463d4dd143da82cec",
+      "maximum_coarse_fine_difference": 2.498001805406602e-16,
+      "interpolation_used": false
+    },
+    {
+      "u": 0.24439818571584326,
+      "file": "ac22332c14202c4ce94add991598c482c091cb097fbe776d605d23637449f75c.npz",
+      "sha256": "d0798e555982215c9ed49866169caca3053753dc85a30f528d70cefa3d568491",
+      "maximum_coarse_fine_difference": 2.706168622523819e-16,
+      "interpolation_used": false
+    }
+  ],
+  "numpy_version": "2.4.3",
+  "scipy_version": "1.17.1",
+  "seconds": 0.028641999932006,
+  "posterior_execution": false,
+  "interpolation_in_data_generation": false,
+  "paired_CN_G": true
+}

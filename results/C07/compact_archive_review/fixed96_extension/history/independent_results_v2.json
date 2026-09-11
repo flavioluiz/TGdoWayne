@@ -1,0 +1,40 @@
+{
+  "status": "MASKED_TRANSPORT_PASS_AND_STATUS_CONTRADICTION_REJECTED",
+  "scope": "TRANSPORT_FIXTURES_ONLY_NOT_PTA_OR_POSTERIOR_VALIDATION",
+  "CPU_seconds": 7.287711000000001,
+  "checks": [
+    {
+      "name": "masked NPZ exact bytes target0",
+      "passed": true
+    },
+    {
+      "name": "u0 structural exact zero preserved",
+      "passed": true
+    },
+    {
+      "name": "masked NPZ exact bytes target64",
+      "passed": true
+    },
+    {
+      "name": "undefined noGW PIT remains NaN with false mask",
+      "passed": true
+    },
+    {
+      "name": "all96 IDs and95 unresolved retained",
+      "passed": true
+    }
+  ],
+  "source_hashes": {
+    "scripts/compactar_calibracao.py": "380b7f938c2e7117ccb44d2441d61e0a60d898d75208a7258d88873b40682875",
+    "tests/test_compact_archive.py": "3bbc90812bf91986021ab427e863593351b09a0b17d70377fb5031d9a34eedca"
+  },
+  "sources_unchanged": true,
+  "finding": {
+    "id": "T1",
+    "reproduced": false,
+    "rejection": "Numerical state contradicts its retained flags."
+  },
+  "likelihood_values": 0,
+  "posterior_targets": 0,
+  "script_sha256": "8aad1371bca49e57ca087903f62bd379fa3e68b15c61d38538722424cda1ed77"
+}

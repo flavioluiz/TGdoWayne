@@ -1,0 +1,55 @@
+{
+  "protocol": "C07_FIXED96_SYNTHESIS_v1_BEFORE_POSTERIORS",
+  "date": "2026-09-10",
+  "population_targets": 96,
+  "models": [
+    "A0_CN"
+  ],
+  "discard_realizations": false,
+  "pointwise_cp_alpha": 0.05,
+  "quantile_probabilities": [
+    0.05,
+    0.5,
+    0.9,
+    0.95
+  ],
+  "numerical_sensitivity": {
+    "family_size": 576,
+    "alpha_mc": 0.01,
+    "deterministic_component": 0.002,
+    "cdf_mcse_target": 0.00335
+  },
+  "coverage_intervals": [
+    "prior_lower_bound_to_upper90",
+    "central_equal_tail_90"
+  ],
+  "coverage_null_hypothesis": null,
+  "uniformity_tests": false,
+  "undefined_truth": "NaN with applicability false, never zero; keep all targets",
+  "structural_mass_zero": "F_u(0)=0 exactly; [0,U90] coverage1, central interval coverage0; neither is a nominal90 rejection",
+  "envelope": "Conditional asymptotic numerical sensitivity; unresolved applicable functions get[0,1]; fixed576 denominator is not reduced for omissions",
+  "pointwise_CP": "95 percent exact binomial inversion for each fixed-scenario count, with a union over numerically possible counts; no familywise claim",
+  "quantiles": "All20 per posterior, descriptive; CDF precision does not certify horizontal quantile error",
+  "sources": {
+    "data": {
+      "path": "results/C07/fixed_scenarios/data.npz",
+      "sha256": "834d95fa2a4c6854ac7cb129255769edca4cc4d563d3db99d8c821e69db78a80"
+    },
+    "experiment": {
+      "path": "configs/calibration/fixed_experiment_v1.json",
+      "sha256": "8da5f5af85b21b6df1f45f5f3764e4cf7ea7599773b2e7fc78d40fe16b3a71d2"
+    },
+    "generation": {
+      "path": "results/C07/fixed_scenarios/generation.json",
+      "sha256": "434b3f158f5c8368302e1e90b6a6e103e360721c8a193fe723630bd162e592a4"
+    },
+    "scientific_protocol": {
+      "path": "configs/calibration/fixed_scenarios_v1.json",
+      "sha256": "1aa4f1c020c6a321e292e628c422817a2b9f1eb0cdb8deab615ee98afe84d7c0"
+    },
+    "numerical_protocol": {
+      "path": "tmp/c07_fixed_scenarios/configs/fixed_diagnostics_v1.json",
+      "sha256": "ed45b151f4a86ce03ba3bc0373e9c9c8f6632b58a393607840395f22dc3d1df9"
+    }
+  }
+}

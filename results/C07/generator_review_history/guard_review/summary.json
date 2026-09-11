@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "name": "positive",
+      "returncode": 0,
+      "expected_success": true,
+      "no_output_created": true
+    },
+    {
+      "name": "nonconsecutive",
+      "returncode": 1,
+      "expected_success": false,
+      "no_output_created": true
+    },
+    {
+      "name": "three_channels",
+      "returncode": 1,
+      "expected_success": false,
+      "no_output_created": true
+    },
+    {
+      "name": "different_red_slope",
+      "returncode": 1,
+      "expected_success": false,
+      "no_output_created": true
+    }
+  ],
+  "source_sha256": {
+    "src/inference/data_generation.py": "87db9cefce2e765cf7ce70dfe6ea08e48a2b1a4339879e603f00558cd852d8e4",
+    "scripts/gerar_calibracao.py": "d54c544aa53d8db85c8b2f16fb0f877863ac978add666b1cdb719ad488d25242"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+  "level": 16384,
+  "level_index": 0,
+  "likelihood_evaluations": 16384,
+  "orphan_recovered_by_deterministic_replay": false,
+  "precision_claimed": false,
+  "proposal_sha256": "a156d1686daa2794af88bf206b08d52352c69d6e3fbd72a422d8dd66b83cdc25",
+  "raw_bytes": 1853702,
+  "raw_compression": "stored",
+  "raw_file": "target_000000_N16384_rep_01.npz",
+  "raw_sha256": "6cb52e08ffca55edd8f7a1b53e4da9f05f73732c74008b753b67d4c48751e3f9",
+  "replicate": 1,
+  "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+  "rng_state_after": {
+    "bit_generator": "PCG64",
+    "has_uint32": 0,
+    "state": {
+      "inc": 216261829810165698668304312809072567051,
+      "state": 213292094291631516093373577534088489077
+    },
+    "uinteger": 0
+  },
+  "rng_state_before": {
+    "bit_generator": "PCG64",
+    "has_uint32": 0,
+    "state": {
+      "inc": 216261829810165698668304312809072567051,
+      "state": 230705969161234073401730430643053840244
+    },
+    "uinteger": 0
+  },
+  "samples": 16384,
+  "saturated_normalized_target_weight": 3.060288082459293e-34,
+  "saturated_rows": 1,
+  "seconds": 0.04006216605193913,
+  "seed": 907130102,
+  "status": "IID_REPLICATE_COMPLETE",
+  "target": 0,
+  "uses_truth": false,
+  "weight_summary": {
+    "entropy_effective_count": 10857.882082849277,
+    "evidence_relative_mcse": 0.006780466690468449,
+    "exact_zero_target_weights": 0,
+    "floating_point_weight_underflows": 30,
+    "largest_one_percent_weight_fraction": 0.03946627729981084,
+    "largest_ten_weight_fraction": 0.004885637954636594,
+    "log_evidence": -149.38760782730142,
+    "log_evidence_delta_mcse": 0.006780466690468449,
+    "log_weight_range_finite": 3624.491328711727,
+    "maximum_normalized_weight": 0.0008839514042279153,
+    "n": 16384,
+    "no_unseen_tail_certificate": true,
+    "single_deletion_cdf_bound": 0.000884733465617215,
+    "single_deletion_guard_pass": true,
+    "weight_ess_concentration_only": 9345.176150970214
+  }
+}

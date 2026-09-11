@@ -1,0 +1,73 @@
+{
+  "backend": "native",
+  "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+  "input_sha256": {
+    "data": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "experiment": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "native_build_manifest": "7a292917b6db16ac5b27651fd4bb629735619ee08f3e391cb0fbfe602d03f526",
+    "native_library": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+    "settings": "4cd92306b0945515a46278bf463e5a8919009227d02e562379030cce5592fb14",
+    "table": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "table_manifest": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f",
+    "validation_config": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9"
+  },
+  "native_build_manifest": {
+    "binary": "libpta_likelihood.dylib",
+    "binary_sha256": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+    "recipe": {
+      "byteorder": "little",
+      "compiler": "/usr/bin/c++",
+      "compiler_version": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Applications/Xcode-26.6.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+      "flags": [
+        "-O3",
+        "-std=c++17",
+        "-ffp-contract=off",
+        "-fPIC",
+        "-dynamiclib"
+      ],
+      "machine": "arm64",
+      "source": "src/inference/native/likelihood.cpp",
+      "source_sha256": "4e089ba8588158d7ab3233c2601a55942ddfeb1e28c6d06578a582f22da66154",
+      "system": "Darwin"
+    },
+    "recipe_sha256": "c586a0637ce30e440b8a5235aef0aed407458daadaaaf89a0eaa8e0c67f20f43",
+    "scope": "Local compiled artifact only; numerical validation is separate."
+  },
+  "source_sha256": {
+    "campaign_archive": "94499d0dadab836e1858c411b8973a317aabd9272ec1834053ea41945ef4c34a",
+    "campaign_diagnostic_io": "e57e10a5af9bcb79a522b1f465ecc89214c976aba029179c53b614021143f9f6",
+    "campaign_iid": "8df0ccc17703020ccae44d7015b7a02a3722cc4183988327ec01005d2a59a405",
+    "campaign_io": "97714f090640fa867c173365d9eacb281e8e134916ed4c8686eb31ead3ac63de",
+    "campaign_runtime": "4847333ef0cbe7a709f7cd527dd92687685d7211c7a4103b49e49fb73e927dc6",
+    "campaign_training": "719dd7de07018ee0c0317fda2e65e6e41055533777b4b5844426939578c3fe77",
+    "gmm_density": "4a6b61218617235b4f3d93ab74690ceedcb238618a4462d5429bff86b20f2e86",
+    "gmm_fit": "ac1192280c1b4a128f11ea7fdb8ef61edad07d241ccdac50d22c6439048095b2",
+    "gmm_fit_reference": "ab3aead6bbc64b993c5708093dcfaae4c4a8230ea33689cf33980c46c7fe4415",
+    "gmm_proposal": "d34d95f2f6939ba92d90776e55d2c23f9a010c3b329216d3b664f563580263f9",
+    "gmm_proposal_reference": "d749517213da0d6502206780b16e3bfd665c0d20b16a61de46adda8bb819276c",
+    "iid_diagnostics": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+    "likelihood_threads": "9a1336d71369032956a5c5263cf448962fe5e104254429e61980689cc3fc1e77",
+    "linalg_batch": "29e5fa3bd2de1be3ae0fbfd6e65668993a299fc2a2ab13d7a493f54ee4dd64e4",
+    "mh_training": "166f2fdaca64a509fdca853c092476be280536a96fc5cd6f9a42ee9e1c529d80",
+    "model": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "native_cpp": "4e089ba8588158d7ab3233c2601a55942ddfeb1e28c6d06578a582f22da66154",
+    "native_likelihood": "5da411e92c3340370ce8eebb94862cf32d39f99053f7f871f3c716c0ac8a391f",
+    "orf_cubic_reference": "7ef78217e7d1955591149dc63e7286c8ddeb707c71f960edf0d91c47fd6b3679",
+    "orf_interpolation": "0dafdb3fcd1ad08fe86ca87e0e62740893f607fb3e3dae112d05c1a88fe021b0",
+    "pointwise": "de31f1a9b4294258ef6c89ff7716da01bde5a2243f76ca4d8d032891ac4e47d4",
+    "pointwise_preallocated": "4331a142422cabc753e280e12c01358b5249b80224352e8b9c8c218c0b1106a7",
+    "pta.__init__": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "pta._domain": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "pta.geometry": "8c2b644754b2118ab23d3f6224db02e4f5de117837f8a2fd12f4d2eecf63886d",
+    "pta.orf": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "pta.response": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "pta.simulation": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "pta.statistics": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "pta.validation": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887"
+  },
+  "target_identity": "ef0fc08457b40b393cafe3726c2c8d762d7f1a8984f407be22b7442b96d2ac83",
+  "thread_plan": {
+    "production": 6,
+    "training": 1
+  }
+}

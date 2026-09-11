@@ -1,0 +1,155 @@
+{
+  "status": "FROZEN_WIDE_PROPOSAL_ENGINEERING16",
+  "targets": [
+    0,
+    3,
+    8,
+    9,
+    11,
+    14,
+    20,
+    25,
+    28,
+    35,
+    46,
+    51,
+    52,
+    62,
+    67,
+    78
+  ],
+  "levels": [
+    16384,
+    65536
+  ],
+  "replicates": 4,
+  "seed": 907150101,
+  "rng_recipe": "PCG64 SeedSequence([907150101,320+100*level_index,global_target,replicate]); vector uniform, normal, chisquare draws",
+  "likelihood_batch": 2048,
+  "workers": 6,
+  "maximum_new_likelihood_values": 5300000,
+  "maximum_total_with_previous_values": 10000000,
+  "previous_values_including_replay_and20reference": 2785324,
+  "maximum_estimated_numeric_bytes": 4294967296,
+  "maximum_active_raw_bytes": 671088640,
+  "data": "results/C07/fixtures/pilot_data.npz",
+  "experiment": "configs/calibration/pilot_initial.json",
+  "table": "tmp/c07_sampler/results/table_beta8193_local.npz",
+  "native_library": "tmp/native/c586a0637ce30e440b8a5235/libpta_likelihood.dylib",
+  "uses_truth": false,
+  "requires_independent_diagnostics": true,
+  "proposal_records": [
+    {
+      "target": 0,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000000.json",
+      "source_sha256": "a156d1686daa2794af88bf206b08d52352c69d6e3fbd72a422d8dd66b83cdc25",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000000.json",
+      "sha256": "50db8afc8ce3f543443dc7fb13e5865e7ef2e1f6838f2509eb7e7235bc2565f6"
+    },
+    {
+      "target": 3,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000003.json",
+      "source_sha256": "ee400309f955f8e7df99ff37b9a338f90acd14df8e7b0fbb2e327d11c99a34ad",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000003.json",
+      "sha256": "9991cf96d7f85dcdcd691b4ad4cb46fc2d12b83a5ac442b442ed946a46cb03a5"
+    },
+    {
+      "target": 8,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000008.json",
+      "source_sha256": "640e8162ba3022d5ce73d5c964a02664d3f3c52b7c0beaeda7a092e45ff5093d",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000008.json",
+      "sha256": "1dfabd955bea9143c64cb6bacb09ccf4560a4dc44ab905a15a4ac5d7421ba7fd"
+    },
+    {
+      "target": 9,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000009.json",
+      "source_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000009.json",
+      "sha256": "9e75058a1f861c29adcaebfc085f7354172279aa9bdb7c376bfd3add795ff544"
+    },
+    {
+      "target": 11,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000011.json",
+      "source_sha256": "33cfe05abfcb46113a8ad42f2dbe22e28336d1d506715fbf0982575cb4d6172c",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000011.json",
+      "sha256": "dba627a8c3ebfda2e7f95f24fc975d3e2374ddc743186de5024dd4912ba6d21f"
+    },
+    {
+      "target": 14,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000014.json",
+      "source_sha256": "65ebe1bb8720c88676fa5978917d5fe7306a935af4ffeb4b5b74473bd8d4b4d9",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000014.json",
+      "sha256": "55c02320b088305a233df62ac8a3b4331486f407b11a076e2b21a04178f0c0d6"
+    },
+    {
+      "target": 20,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000020.json",
+      "source_sha256": "472083255b529f84a6659f959999ec41bea80ca26c50859899f367840f817a37",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000020.json",
+      "sha256": "0dc49a200d572c505d3862d86ad78863384cabe7652f6a8df78816147b2e6cb4"
+    },
+    {
+      "target": 25,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000025.json",
+      "source_sha256": "b8d1689372fd8d698c45de073a204651924b7e6316d88521e69501f585c18fec",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000025.json",
+      "sha256": "ba72d5b602214f30ab5d7f667c40ccecb4aec491f558585433dcc587e3433812"
+    },
+    {
+      "target": 28,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000028.json",
+      "source_sha256": "2cdc5115f930a33a44b8714bf9eb5d9fdc5e3dacb1a5c0c9005c89af150f0129",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000028.json",
+      "sha256": "92d8da9e276a069af29c2ec70c52e75a1bb459f40b4ce39de87838453fffd1c5"
+    },
+    {
+      "target": 35,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000035.json",
+      "source_sha256": "6c9ea2d7ae766d0d08a0ae7de498ccb18329c5a35d7612d3cb42597710fc1889",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000035.json",
+      "sha256": "1c53783401fa5094811f76a226c62a8291562b28379fdf6fe89de15fa97a9a4d"
+    },
+    {
+      "target": 46,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000046.json",
+      "source_sha256": "d571def64b099dc8fe9f4094d76e8f10817ba67bfc18877aa655631f618b1116",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000046.json",
+      "sha256": "f5e1808543a8e059446fb7495540f5a0693aa158110be51c150cd7810118c507"
+    },
+    {
+      "target": 51,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000051.json",
+      "source_sha256": "e68e48e0f0a1faae805ee432a8d477fde6d351deb66d6ef41e06e7dedbb00c08",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000051.json",
+      "sha256": "393a6fb06b77284cefd9e403b7dc2ff852158dc51f742b94bdfdca05d02bc815"
+    },
+    {
+      "target": 52,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000052.json",
+      "source_sha256": "fe90ed149a024c3cf8ad4c8880b9924ba336a388d16743058357d7218520ec64",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000052.json",
+      "sha256": "227fcc043fdf136aaacc0b3a89f2ea91ef8330a6dc9445e26f38a95b1a7a2cc9"
+    },
+    {
+      "target": 62,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000062.json",
+      "source_sha256": "550209ac85e319f1dd70a2e781461e04d083c0c776e1b4c7400d628261b1c36c",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000062.json",
+      "sha256": "394a652ce6f63025ef131dc307033fba86ed903c5de98360c839bad761875b4e"
+    },
+    {
+      "target": 67,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000067.json",
+      "source_sha256": "1c58ed92bf15ddb6731a14e245273cdef3571ff572812bd895365a49508c1a1e",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000067.json",
+      "sha256": "e26a7cfa20b6838adbe039fc02a69f807de56090ef3d6e9f6fb6db9d1e5052c7"
+    },
+    {
+      "target": 78,
+      "source": "tmp/c07_integrated_engineering/proposals/target_000078.json",
+      "source_sha256": "e9f141062f992fe5277b1be6b1e21c6c2664140856731a046b677a7f296279fd",
+      "file": "tmp/c07_cold_tail_review/wide_production/proposals/target_000078.json",
+      "sha256": "93e91967fdfbe2353e2ee777c61f6c7c503dce476f0002996cf14d1e290b5474"
+    }
+  ]
+}

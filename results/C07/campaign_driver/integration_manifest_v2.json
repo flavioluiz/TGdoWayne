@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_OPERATIONAL_DRIVER_V2_FOR_REVIEW",
+  "files": [
+    {
+      "source": "scripts/run_calibration_campaign.py",
+      "destination": "scripts/run_calibration_campaign.py",
+      "sha256": "ce2f20ce6c4a191b9245a1d51a49cf0c79f68edbb3cbfb31ce43b242aa6c0e1f"
+    },
+    {
+      "source": "tests/test_campaign_driver.py",
+      "destination": "tests/test_campaign_driver.py",
+      "sha256": "45feaf11e7241463485d2903574fec811dfe126d56fc36f339b6de3e6e090556"
+    },
+    {
+      "source": "README.md",
+      "destination": "docs/inferencia/driver_campanha_c07.md",
+      "sha256": "64d2865862729e3c0eeae9b684254c29afbe86290cd67e269874d7fc04ca1af1"
+    }
+  ],
+  "tests": {
+    "count": 5,
+    "result": "PASS",
+    "log_sha256": "6e161d9298b8832874278e992bbf7d851515559a632255cff1ecbea03733c41f"
+  },
+  "changes": "Exclusive-writer ledger cache, one validation on reopen and final full audit; same immutable intent/end schema, counts and error reservations.",
+  "historical_v1": "archive/v1",
+  "no_campaign500_started": true
+}

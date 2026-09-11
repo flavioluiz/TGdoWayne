@@ -56,3 +56,13 @@ Para exclusão: retirar homônimos de “compressão” referentes à propagaç�
 - `decisao_recorte.md`: decisão e requisitos científicos para os próximos marcos.
 
 O script versionado `scripts/download_papers.py` reconstitui a biblioteca a partir das URLs **versionadas** e dos SHA-256 congelados em `literature/catalog.json`. Não resolve novamente a versão mais recente. O utilitário exploratório usado na coleta inicial permanece temporário.
+
+## Complemento dirigido de 11/09/2026
+
+A [auditoria posterior](atualizacao_20260911/REPORT.md) preserva o corte inicial
+acima e acrescenta uma consulta em 11/09/2026. Foram triadas seis listagens arXiv
+(217 entradas, 195 identificadores distintos), revisões de oito artigos centrais
+e antecedentes específicos ausentes do catálogo. Entraram seis PDFs adicionais;
+a matriz reúne agora 23 entradas. O relatório distingue títulos/resumos,
+leitura dirigida e códigos inspecionados, sem afirmar revisão sistemática
+exaustiva ou prioridade absoluta. O catálogo atual tem 37 PDFs locais e 839 páginas.

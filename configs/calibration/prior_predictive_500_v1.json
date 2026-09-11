@@ -1,0 +1,125 @@
+{
+  "status": "frozen_prior_predictive_data_design_before_generation",
+  "scope": "500 fresh continuous prior-predictive CN datasets with paired Gaussian controls; exact checked ORFs at truths. This configuration does not approve a posterior sampler or claim SBC completed.",
+  "parameters": [
+    "u",
+    "log10_Agw",
+    "gamma_gw",
+    "log10_Ar",
+    "log10_EFAC"
+  ],
+  "prior": {
+    "kind": "independent uniform in these coordinates",
+    "bounds": [
+      [
+        0,
+        1
+      ],
+      [
+        -16,
+        -14
+      ],
+      [
+        3,
+        5.5
+      ],
+      [
+        -17,
+        -14.5
+      ],
+      [
+        -0.3010299956639812,
+        0.3010299956639812
+      ]
+    ]
+  },
+  "fixed_red_slope": 4.0,
+  "n_realizations": 500,
+  "truth_seed": 707409101,
+  "data_seed": 707409102,
+  "n_pulsars": 12,
+  "duration_years": 4.5,
+  "positive_channels": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "distance_range_light_years": [
+    300,
+    1000
+  ],
+  "cadence_days": 14,
+  "geometry_seeds": [
+    80421,
+    80422,
+    80423
+  ],
+  "frequency_weights": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "quantiles": [
+    0.05,
+    0.5,
+    0.9,
+    0.95
+  ],
+  "diagnostic_thresholds": {
+    "maximum_abs_pit_difference": 0.002,
+    "maximum_quantile_difference_fraction_prior_width": 0.001,
+    "maximum_abs_log_evidence_difference": 0.001
+  },
+  "orf": {
+    "lmax_margin": 100,
+    "nmu_margin": 220,
+    "fine_lmax_addition": 40,
+    "fine_nmu_addition": 80,
+    "maximum_matrix_abs_difference": 1e-08,
+    "maximum_phase": 6284,
+    "maximum_total_work_units": 500000000000,
+    "maximum_estimated_memory_bytes": 100000000,
+    "direct_pairs": [
+      [
+        3,
+        8
+      ],
+      [
+        0,
+        11
+      ]
+    ],
+    "direct_mass_points": [
+      0,
+      0.5,
+      1
+    ]
+  },
+  "notes": [
+    "No posterior truth selected from quadrature nodes.",
+    "Mass target is continuous; finite-node positive density interpolation is an integration approximation requiring refinement.",
+    "Gaussian controls share latent normals with the physical draw and have exactly the declared Gaussian marginal; no independent PTA segments invented.",
+    "Mass=0 fixed-truth coverage is a separate future experiment; a continuous prior places no point probability at zero.",
+    "The prior support u<=1 preserves all four travelling-wave Fourier channels.",
+    "The sixteen preparatory datasets are not reused as SBC500 repetitions.",
+    "Data and posterior calculations use different ORF mechanisms: directly checked nodes versus separately validated interpolation.",
+    "Posterior execution settings and its numerical approval are recorded separately.",
+    "Pseudorandom draws use NumPy default_rng/PCG64 with the pinned NumPy version."
+  ],
+  "generation_orf_budget": {
+    "maximum_estimated_numeric_memory_bytes": 805306368,
+    "maximum_total_real_multiplications": 4000000000000,
+    "maximum_requested_nodes": 512,
+    "batch_size": 8,
+    "maximum_batch_real_multiplications": 50000000000
+  }
+}

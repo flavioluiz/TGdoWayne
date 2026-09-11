@@ -1,0 +1,54 @@
+{
+  "scope": "Parity of isotropic unpolarized TT response, including finite pulsar terms; negative beta is an algebraic check, not a new physical population.",
+  "checks": [
+    {
+      "beta": 0.0001,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "beta": 0.01,
+      "absolute_difference": 5.551115123125783e-16
+    },
+    {
+      "beta": 0.2,
+      "absolute_difference": 3.3306690738754696e-16
+    },
+    {
+      "beta": 0.8,
+      "absolute_difference": 5.551115123125783e-16
+    }
+  ],
+  "one_sided_derivatives": [
+    {
+      "step": 0.002,
+      "maximum_abs_derivative": 2.3722822684787114e-06
+    },
+    {
+      "step": 0.001,
+      "maximum_abs_derivative": 7.439113725862106e-08
+    },
+    {
+      "step": 0.0005,
+      "maximum_abs_derivative": 2.3267612279329412e-09
+    }
+  ],
+  "tables": [
+    {
+      "nodes": 139,
+      "linear_fallbacks": [],
+      "minimum_bernstein_eigenvalue": -2.9422184143645126e-16
+    },
+    {
+      "nodes": 277,
+      "linear_fallbacks": [],
+      "minimum_bernstein_eigenvalue": -3.5165368379483494e-16
+    },
+    {
+      "nodes": 553,
+      "linear_fallbacks": [],
+      "minimum_bernstein_eigenvalue": -5.029517729844051e-16
+    }
+  ],
+  "passes": true,
+  "seconds": 0.9288858749205247
+}

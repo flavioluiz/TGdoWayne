@@ -1,0 +1,19 @@
+test_failure_stops_and_resume_does_not_repeat_retired_target (test_campaign_driver.DriverTests.test_failure_stops_and_resume_does_not_repeat_retired_target) ... {"event": "block_started", "block": 0, "targets": [0, 1], "completed": 0}
+{"event": "block_started", "block": 0, "targets": [1], "completed": 1}
+{"event": "block_completed", "block": 0, "targets": [1], "completed_total": 2, "unresolved_total": 1, "ledger": {"training": 24, "production": 120, "other": 0, "unclosed_reservations": 0, "total": 144}, "seconds_since_attempt_start": 0.006753124995157123}
+{"event": "block_started", "block": 1, "targets": [2], "completed": 2}
+{"event": "block_completed", "block": 1, "targets": [2], "completed_total": 3, "unresolved_total": 1, "ledger": {"training": 36, "production": 168, "other": 0, "unclosed_reservations": 0, "total": 204}, "seconds_since_attempt_start": 0.012855499982833862}
+ok
+test_ledger_reads_scale_linearly (test_campaign_driver.DriverTests.test_ledger_reads_scale_linearly) ... ok
+test_order_counts_and_unresolved_retained (test_campaign_driver.DriverTests.test_order_counts_and_unresolved_retained) ... {"event": "block_started", "block": 0, "targets": [0, 1], "completed": 0}
+{"event": "block_completed", "block": 0, "targets": [0, 1], "completed_total": 2, "unresolved_total": 1, "ledger": {"training": 24, "production": 96, "other": 0, "unclosed_reservations": 0, "total": 120}, "seconds_since_attempt_start": 0.011736790998838842}
+{"event": "block_started", "block": 1, "targets": [2], "completed": 2}
+{"event": "block_completed", "block": 1, "targets": [2], "completed_total": 3, "unresolved_total": 1, "ledger": {"training": 36, "production": 144, "other": 0, "unclosed_reservations": 0, "total": 180}, "seconds_since_attempt_start": 0.017873540986329317}
+ok
+test_single_writer_lock (test_campaign_driver.DriverTests.test_single_writer_lock) ... ok
+test_unclosed_reservation_is_counted_and_budget_rejected_before_work (test_campaign_driver.DriverTests.test_unclosed_reservation_is_counted_and_budget_rejected_before_work) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.223s
+
+OK

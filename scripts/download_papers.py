@@ -10,18 +10,43 @@ import re
 import sys
 import tempfile
 import urllib.request
+from urllib.parse import urlsplit
+from datetime import date
 
 
 def validate_record(record: dict, root: Path) -> Path:
-    aid = record["arxiv_id"]
-    version = record["version"]
-    if not re.fullmatch(r"(?:\d{4}\.\d{4,5}|[a-z][a-z0-9.-]*/\d{7})", aid):
-        raise ValueError("Identificador arXiv inválido")
-    if not re.fullmatch(r"v[1-9]\d*", version):
-        raise ValueError("Versão arXiv explícita obrigatória")
-    if record["pdf_url"] != f"https://arxiv.org/pdf/{aid}{version}":
-        raise ValueError("URL não corresponde ao identificador e à versão")
-    expected_path = f"literature/papers/{aid.replace('/', '_')}{version}.pdf"
+    source_type = record.get("source_type", "arxiv")
+    if source_type == "arxiv":
+        aid = record["arxiv_id"]
+        version = record["version"]
+        if not re.fullmatch(r"(?:\d{4}\.\d{4,5}|[a-z][a-z0-9.-]*/\d{7})", aid):
+            raise ValueError("Identificador arXiv inválido")
+        if not re.fullmatch(r"v[1-9]\d*", version):
+            raise ValueError("Versão arXiv explícita obrigatória")
+        if record["pdf_url"] != f"https://arxiv.org/pdf/{aid}{version}":
+            raise ValueError("URL não corresponde ao identificador e à versão")
+        expected_path = f"literature/papers/{aid.replace('/', '_')}{version}.pdf"
+    elif source_type in ("author_report", "publisher_pdf"):
+        key = record["key"]
+        if not re.fullmatch(r"[a-z][a-z0-9_]*", key):
+            raise ValueError("Chave de documento inválida")
+        # An author URL may be unversioned: record the document's month and
+        # pin the downloaded bytes, rather than inventing an arXiv revision.
+        if not re.fullmatch(r"\d{4}-\d{2}", record["document_month"]):
+            raise ValueError("Mês do documento obrigatório: YYYY-MM")
+        date.fromisoformat(record["document_month"] + "-01")
+        url = urlsplit(record["pdf_url"])
+        if (url.scheme != "https" or not url.hostname or url.username or url.password
+                or url.fragment or not url.path.lower().endswith(".pdf")):
+            raise ValueError("Documento deve ter URL primário HTTPS de PDF")
+        if not record.get("version_note"):
+            raise ValueError("Documento sem descrição da versão consultada")
+        if source_type == "publisher_pdf":
+            if not record.get("journal") or not record.get("publication_year"):
+                raise ValueError("PDF editorial exige periódico e ano de publicação")
+        expected_path = f"literature/papers/{key}.pdf"
+    else:
+        raise ValueError("Tipo de fonte desconhecido")
     if record["local_path"] != expected_path:
         raise ValueError("Destino não corresponde ao caminho padronizado da biblioteca")
     if not re.fullmatch(r"[0-9a-f]{64}", record["sha256"]):
@@ -72,7 +97,9 @@ def main() -> int:
             else:
                 request = urllib.request.Request(record["pdf_url"], headers={"User-Agent": "TGdoWayne bibliography downloader"})
                 with urllib.request.urlopen(request, timeout=60) as response:
-                    content = response.read()
+                    # The catalog pins the byte count; one extra byte detects a
+                    # changed/oversized response without an unbounded download.
+                    content = response.read(record["size_bytes"] + 1)
                 validate_content(content, record)
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 temporary_path = None
@@ -84,7 +111,10 @@ def main() -> int:
                 finally:
                     if temporary_path is not None:
                         temporary_path.unlink(missing_ok=True)
-            print(f"OK {record['arxiv_id']}{record['version']}")
+            identifier = (record['arxiv_id'] + record['version']
+                          if record.get('source_type', 'arxiv') == 'arxiv'
+                          else record['key'])
+            print(f"OK {identifier}")
         except (OSError, ValueError) as error:
             failures.append(f"{record.get('key', '?')}: {error}")
     for failure in failures:

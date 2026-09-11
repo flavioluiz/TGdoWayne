@@ -1,0 +1,42 @@
+{
+  "total_benchmark_cases": 87,
+  "exact_cases": 86,
+  "records": [
+    {
+      "case": {
+        "dataset": "pilot277_student",
+        "target": 22,
+        "draws_per_chain": 4096,
+        "seconds": {
+          "reference": 0.19585762498900294,
+          "optimized": 0.07995191705413163
+        },
+        "exact_output_equality": false,
+        "absolute_tolerance": 1e-12,
+        "all_fields_match": true
+      },
+      "differences": [
+        {
+          "path": "/quantiles/14/interval/1",
+          "reference": 0.628599365581769,
+          "optimized": 0.6285993655817691,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "path": "/quantiles/14/effective_ess_for_error",
+          "reference": 3552.3388568513487,
+          "optimized": 3552.3388568513483,
+          "absolute_difference": 4.547473508864641e-13
+        }
+      ]
+    }
+  ],
+  "maximum_absolute_difference": 4.547473508864641e-13,
+  "decisions_failures_statuses_exact": true,
+  "absolute_tolerance": 1e-12,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_mcmc_optimized/audit_roundoff.py": "fa56e99613f451b2110cf0f5ec594b5142bf0a05115e0bcf0269d9baf197a460",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_mcmc_optimized/mcmc_optimized.py": "684fc5331da1227c7034b7e930321615e44b488f920796a96d01cc60c3be6829",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_mcmc_optimized/results/benchmark.json": "f0377ae2e963af78a9fdd58ea89ffa3eb60712d003d800d69a2cb5cc0a0e1937"
+  }
+}

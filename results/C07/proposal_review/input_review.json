@@ -1,0 +1,55 @@
+{
+  "valid_training_fixture": {
+    "targets": [
+      0,
+      3,
+      8,
+      9,
+      11,
+      14,
+      20,
+      25,
+      28,
+      35,
+      46,
+      51,
+      52,
+      62,
+      67,
+      78
+    ],
+    "minimum_component_weight": 0.003365484689432741,
+    "maximum_weight_sum_difference": 1.1102230246251565e-16,
+    "minimum_covariance_eigenvalue": 0.043279161506828596,
+    "maximum_covariance_asymmetry": 4.440892098500626e-16,
+    "minimum_global_cholesky_diagonal": 0.2518216178622104,
+    "maximum_global_upper_triangle": 0.0
+  },
+  "invalid_input_counterexamples": [
+    {
+      "case": "nontriangular_global_cholesky",
+      "invalid_constructor_accepted": true,
+      "logpdf_at_zero_finite": true
+    },
+    {
+      "case": "negative_global_diagonal",
+      "invalid_constructor_accepted": true,
+      "logpdf_at_zero_finite": false
+    },
+    {
+      "case": "asymmetric_covariance",
+      "invalid_constructor_accepted": true,
+      "logpdf_at_zero_finite": true
+    },
+    {
+      "case": "nan_student_df",
+      "invalid_constructor_accepted": true,
+      "logpdf_at_zero_finite": false
+    },
+    {
+      "case": "near_but_not_normalized_weights",
+      "invalid_constructor_accepted": true,
+      "logpdf_at_zero_finite": true
+    }
+  ]
+}

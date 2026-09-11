@@ -1,0 +1,44 @@
+{
+  "scope": "Three engineering targets only; diagnose proposal tails without injected truths; not SBC500.",
+  "targets": [
+    25,
+    51,
+    78
+  ],
+  "training_lengths": [
+    8192,
+    32768
+  ],
+  "training_seeds": [
+    907140101,
+    907140102
+  ],
+  "production_seed": 907140103,
+  "levels": [
+    16384,
+    65536
+  ],
+  "replicates": 4,
+  "chains": 4,
+  "points_for_em": 2048,
+  "adaptation_window": 4000,
+  "em_components": 4,
+  "em_iterations": 80,
+  "covariance_floor": 0.03,
+  "inflation": 1.1,
+  "defensive_fraction": 0.15,
+  "student_df": 5.0,
+  "student_scale": 3.0,
+  "training_workers": 1,
+  "production_workers": 6,
+  "likelihood_batch": 2048,
+  "maximum_likelihood_values": 10000000,
+  "maximum_estimated_numeric_bytes": 4294967296,
+  "maximum_raw_bytes": 524288000,
+  "native_library": "tmp/native/c586a0637ce30e440b8a5235/libpta_likelihood.dylib",
+  "experiment": "configs/calibration/pilot_initial.json",
+  "data": "results/C07/fixtures/pilot_data.npz",
+  "table": "tmp/c07_sampler/results/table_beta8193_local.npz",
+  "frozen_cdf_grid": "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json",
+  "production_rng_recipe": "PCG64 SeedSequence([907140103,320,target,training_steps,N,replicate]); vector uniforms, normals, chi squares per target."
+}

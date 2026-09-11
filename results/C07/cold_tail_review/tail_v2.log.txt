@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/diagnose_tail_v2.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/diagnose_tail_v2.py", line 38, in main
+    for th in theta:direct.append(float(reference(th[None,1:],table(th[0]))[0,25]))
+                                                              ~~~~~^^^^^^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/replay_sources/src/inference/orf_cubic_reference.py", line 25, in __call__
+    j,f=self.location(u);c=self.coeff[j];f=f[:,None,None,None]
+                                           ~^^^^^^^^^^^^^^^^^^
+IndexError: invalid index to scalar variable.

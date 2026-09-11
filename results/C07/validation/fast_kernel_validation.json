@@ -1,0 +1,80 @@
+{
+  "status": "PASS_reference_equivalence",
+  "checks": [
+    {
+      "u": 0,
+      "points": 512,
+      "maximum_abs_logpdf_difference": 3.725290298461914e-09,
+      "maximum_abs_difference_within_30_logunits_of_peak": 2.8421709430404007e-13,
+      "maximum_relative_difference": 1.2073014916217584e-13
+    },
+    {
+      "u": 0.5,
+      "points": 512,
+      "maximum_abs_logpdf_difference": 4.423782229423523e-09,
+      "maximum_abs_difference_within_30_logunits_of_peak": 3.126388037344441e-13,
+      "maximum_relative_difference": 1.1368683772161603e-13
+    },
+    {
+      "u": 0.999999875,
+      "points": 512,
+      "maximum_abs_logpdf_difference": 3.259629011154175e-09,
+      "maximum_abs_difference_within_30_logunits_of_peak": 3.126388037344441e-13,
+      "maximum_relative_difference": 1.9895196601282805e-13
+    },
+    {
+      "u": 1,
+      "points": 512,
+      "maximum_abs_logpdf_difference": 3.958120942115784e-09,
+      "maximum_abs_difference_within_30_logunits_of_peak": 3.694822225952521e-13,
+      "maximum_relative_difference": 1.4210854715202004e-13
+    }
+  ],
+  "timings": [
+    {
+      "kernel": "Likelihood",
+      "columns_per_method": 16,
+      "parameter_points": 512,
+      "seconds": [
+        0.059994042036123574,
+        0.05770566698629409,
+        0.057851833989843726
+      ],
+      "median_seconds_per_parameter_point": 0.00011299186326141353
+    },
+    {
+      "kernel": "FastLikelihood",
+      "columns_per_method": 16,
+      "parameter_points": 512,
+      "seconds": [
+        0.05268533295020461,
+        0.05209199991077185,
+        0.05204933404456824
+      ],
+      "median_seconds_per_parameter_point": 0.00010174218732572626
+    },
+    {
+      "kernel": "Likelihood",
+      "columns_per_method": 500,
+      "parameter_points": 512,
+      "seconds": [
+        1.1804074170067906,
+        1.2898292089812458,
+        1.2332571250153705
+      ],
+      "median_seconds_per_parameter_point": 0.0024087053222956456
+    },
+    {
+      "kernel": "FastLikelihood",
+      "columns_per_method": 500,
+      "parameter_points": 512,
+      "seconds": [
+        0.08889870904386044,
+        0.08744383393786848,
+        0.08738729194737971
+      ],
+      "median_seconds_per_parameter_point": 0.00017078873815989937
+    }
+  ],
+  "scope": "Repeated datasets for timing; no independent500 draws or posterior/SBC acceptance. Floating-point agreement tested at512 continuous nuisance points and four masses, including the endpoint layer."
+}

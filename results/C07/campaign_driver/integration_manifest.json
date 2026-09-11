@@ -1,0 +1,26 @@
+{
+  "status": "FROZEN_OPERATIONAL_DRIVER_FOR_REVIEW",
+  "files": [
+    {
+      "source": "scripts/run_calibration_campaign.py",
+      "destination": "scripts/run_calibration_campaign.py",
+      "sha256": "f30c2f4404eaa6f3f8fcb80151704adf2bd5c0e9ec67a8bd08a9945ac5be6f66"
+    },
+    {
+      "source": "tests/test_campaign_driver.py",
+      "destination": "tests/test_campaign_driver.py",
+      "sha256": "6db05cb28d4a800f0d0a1d7650b7ddfa06d2b22bda2da7d26ff027abd7372f3d"
+    },
+    {
+      "source": "README.md",
+      "destination": "docs/inferencia/driver_campanha_c07.md",
+      "sha256": "3be2a15aefa4b322132c32f20a361acf47679fc2a0db74d0518f05303fe2dbc3"
+    }
+  ],
+  "tests": {
+    "count": 4,
+    "result": "PASS",
+    "log_sha256": "bfb16a503bae90ee67fa93d50b8d87a6409ba6684cac51e3458e8709f0ab8888"
+  },
+  "no_campaign500_started": true
+}

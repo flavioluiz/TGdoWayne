@@ -1,0 +1,4271 @@
+{
+  "scope": "TOY_ONLY_NO_PTA_CALIBRATION",
+  "pta_sbc500_executed": false,
+  "status": "PASS_TOY_CROSSCHECKS_AND_NEGATIVE_CONTROL",
+  "config": {
+    "protocol_id": "C07-diagnostics-v1-before-toy",
+    "state": "prospective_PTA_protocol_no_PTA_campaign_executed_here",
+    "date": "2026-09-10",
+    "alpha": 0.05,
+    "pta_expected_repetitions": 500,
+    "pta_models": [
+      "A0_CN",
+      "A_CN",
+      "B_CN",
+      "A_G",
+      "B_G"
+    ],
+    "correct_family": [
+      "A0_CN",
+      "A_G",
+      "B_G"
+    ],
+    "approximate_family": [
+      "A_CN",
+      "B_CN"
+    ],
+    "pta_parameters": [
+      "u",
+      "log10_Agw",
+      "gamma_gw",
+      "log10_Ar",
+      "log10_EFAC"
+    ],
+    "quantile_probabilities": [
+      0.05,
+      0.5,
+      0.9,
+      0.95
+    ],
+    "central_interval_probabilities": [
+      0.05,
+      0.95
+    ],
+    "uniformity_test": "two-sided one-sample KS, exact finite-n continuous null",
+    "multiplicity": "Holm within group, joint PIT and coverage hypotheses; 93 correct and 62 approximate PTA tests",
+    "coverage_interval": "two-sided Clopper-Pearson, pointwise 95 percent and simultaneous Bonferroni within group",
+    "primary_paired_comparisons": [
+      [
+        "A_CN",
+        "B_CN"
+      ],
+      [
+        "A_G",
+        "B_G"
+      ],
+      [
+        "A0_CN",
+        "A_CN"
+      ]
+    ],
+    "paired_binary_test": "two-sided exact McNemar conditional binomial on discordant pairs; Holm over 15 central-90 coverage contrasts",
+    "paired_continuous_summary": "mean difference, empirical MC standard error and approximate t interval; descriptive",
+    "pit_error_sensitivity": 0.002,
+    "numerical_completion_required": true,
+    "drop_invalid_repetitions": false,
+    "toy": {
+      "label": "TOY_NORMAL_NORMAL_not_PTA",
+      "repetitions": 4096,
+      "predeclared_prefix_repetitions": 500,
+      "dimension": 5,
+      "prior_sd": 1.0,
+      "observation_sd": 0.3,
+      "seed": 707209106,
+      "boundary_repetitions_each": 500,
+      "boundary_truths": [
+        0.0,
+        0.05,
+        0.5,
+        1.0
+      ],
+      "boundary_observation_sd": 0.15,
+      "boundary_seed": 707209107,
+      "deterministic_crosscheck_tolerance": 1e-10,
+      "negative_loglikelihood_detection_threshold": 0.05,
+      "positive_nonrejection_is_not_a_unit_test": true
+    }
+  },
+  "source_hashes": {
+    "configs/calibration/diagnostics_v1.json": "e775f0b94d4890638a04ae6347661766594e0d1acdd557782d786eb8237a0d64",
+    "docs/protocolo_diagnosticos_c07_v1.md": "ab8a2504fd82df3e97861170ba1938017b69a58e4a21cf2ad2eb18ec3ec9449f",
+    "src/inference/diagnostics.py": "79eaef0d51e7276499a887e4d571d807756eb6dd89c01529548068b0cb5e18de",
+    "scripts/validar_diagnosticos_toy.py": "e6104374e5bcacb6ae077733026b36b40d27aed039925d7d2b8c138cb03a47eb"
+  },
+  "numpy_version": "2.4.3",
+  "scipy_version": "1.17.1",
+  "generator": "PCG64",
+  "independent_analytic_checks": {
+    "maximum_posterior_cdf_error": 3.3306690738754696e-16,
+    "maximum_loglikelihood_cdf_normal_tail_error": 2.220446049250313e-16,
+    "maximum_loglikelihood_cdf_quadrature_error": 3.3306690738754696e-16
+  },
+  "reports": {
+    "500": {
+      "scope": "continuous_prior_predictive_SBC",
+      "n": 500,
+      "methods": [
+        "TOY_EXACT",
+        "TOY_IGNORES_DATA_RETURNS_PRIOR"
+      ],
+      "parameters": [
+        "theta_0",
+        "theta_1",
+        "theta_2",
+        "theta_3",
+        "theta_4"
+      ],
+      "numerical_complete": true,
+      "alpha": 0.05,
+      "groups": {
+        "toy_correct": [
+          "TOY_EXACT"
+        ],
+        "toy_negative": [
+          "TOY_IGNORES_DATA_RETURNS_PRIOR"
+        ]
+      },
+      "tests": [
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.049453685293828986,
+          "dplus": 0.049453685293828986,
+          "dminus": 0.020445055164765802,
+          "pvalue": 0.16757402938267207,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.7611096822929286,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49101384301402484,
+          "minimum": 0.0004460549636489766,
+          "maximum": 0.9995809948650064,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.16757402938267207,
+          "sensitivity_pvalue_upper": 0.16757402938267207,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.028456669034180537,
+          "dplus": 0.028456669034180537,
+          "dminus": 0.011039219401782596,
+          "pvalue": 0.8018927206465972,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.05065386391835103,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.4929140612090229,
+          "minimum": 0.0020770367105117545,
+          "maximum": 0.9953325501409727,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.8018927206465972,
+          "sensitivity_pvalue_upper": 0.8018927206465972,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.05248831115486363,
+          "dplus": 0.05248831115486363,
+          "dminus": 0.014046332917899917,
+          "pvalue": 0.12275313587514403,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.8954612073201533,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.48035370027370394,
+          "minimum": 0.0013463882889633823,
+          "maximum": 0.9958687573408821,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.12275313587514403,
+          "sensitivity_pvalue_upper": 0.12275313587514403,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.024031886202474873,
+          "dplus": 0.024031886202474873,
+          "dminus": 0.023943032238549544,
+          "pvalue": 0.9281500338228968,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": 0.0,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5002490923838966,
+          "minimum": 0.0006798007126945858,
+          "maximum": 0.9992784499667758,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.9281500338228968,
+          "sensitivity_pvalue_upper": 0.9281500338228968,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.045277118678078265,
+          "dplus": 0.019526778289338687,
+          "dminus": 0.045277118678078265,
+          "pvalue": 0.24931924034495223,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.5892812818763207,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5159357254126444,
+          "minimum": 0.00020593949750043373,
+          "maximum": 0.9996980940563764,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.24931924034495223,
+          "sensitivity_pvalue_upper": 0.24931924034495223,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "logL_at_truth",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.0315390894015834,
+          "dplus": 0.010373693287195312,
+          "dminus": 0.0315390894015834,
+          "pvalue": 0.6902908319907999,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.1309688752171143,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5061321971523715,
+          "minimum": 0.0017723284871550434,
+          "maximum": 0.9980605618905549,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.6902908319907999,
+          "sensitivity_pvalue_upper": 0.6902908319907999,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 26,
+          "fraction": 0.052,
+          "plugin_mc_se": 0.00992935043192655,
+          "exact_interval": [
+            0.034245698082767936,
+            0.07526637103062216
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.025983876460563302,
+            0.09091469075301556
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.8369951815702925,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 259,
+          "fraction": 0.518,
+          "plugin_mc_se": 0.022346185356789647,
+          "exact_interval": [
+            0.47320683518771733,
+            0.5625791636239124
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.44667338755216535,
+            0.5888186951342822
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.4471295015248138,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 441,
+          "fraction": 0.882,
+          "plugin_mc_se": 0.014427473791346842,
+          "exact_interval": [
+            0.8504396036842726,
+            0.9089483228272132
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8301550610644558,
+            0.922964610562811
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.1795397396901978,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 477,
+          "fraction": 0.954,
+          "plugin_mc_se": 0.009368457717255283,
+          "exact_interval": [
+            0.9317745721187621,
+            0.9706198246075972
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9167156684111492,
+            0.97818789654802
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.7585450748278659,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 451,
+          "fraction": 0.902,
+          "plugin_mc_se": 0.013296315279053816,
+          "exact_interval": [
+            0.8725114573141097,
+            0.9266174143922598
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8533718025441701,
+            0.9391538512381087
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.9406293297295497,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 29,
+          "fraction": 0.058,
+          "plugin_mc_se": 0.010453324829928513,
+          "exact_interval": [
+            0.03918386879718779,
+            0.08223822089383528
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.030269112934686444,
+            0.09843578627865131
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.41052849416388315,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 249,
+          "fraction": 0.498,
+          "plugin_mc_se": 0.02236050088884415,
+          "exact_interval": [
+            0.45329780691899596,
+            0.5427259705561507
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4269109029971976,
+            0.5691455316190527
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.9643353544466507,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 460,
+          "fraction": 0.92,
+          "plugin_mc_se": 0.012132600710482479,
+          "exact_interval": [
+            0.8926545356436476,
+            0.9422338800711657
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8747097646196104,
+            0.9532716463500943
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.15607645188607588,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 483,
+          "fraction": 0.966,
+          "plugin_mc_se": 0.008104813384649892,
+          "exact_interval": [
+            0.9461196492639231,
+            0.9800713999537937
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.932391656730903,
+            0.9860977996620283
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.12228635384484891,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 454,
+          "fraction": 0.908,
+          "plugin_mc_se": 0.012925633446759966,
+          "exact_interval": [
+            0.8791929673892575,
+            0.9318566958433456
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8604322318615049,
+            0.9439132377162693
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.6019765578038838,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 29,
+          "fraction": 0.058,
+          "plugin_mc_se": 0.010453324829928513,
+          "exact_interval": [
+            0.03918386879718779,
+            0.08223822089383528
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.030269112934686444,
+            0.09843578627865131
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.41052849416388315,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 270,
+          "fraction": 0.54,
+          "plugin_mc_se": 0.022289010745208053,
+          "exact_interval": [
+            0.4951875385362402,
+            0.5843368684372416
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.46854133549105637,
+            0.6103299080274778
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.08103234960921356,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 446,
+          "fraction": 0.892,
+          "plugin_mc_se": 0.013880633991284403,
+          "exact_interval": [
+            0.8614396315310624,
+            0.9178196083660021
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8417062836170723,
+            0.9311175018803187
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.5506221012416939,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 478,
+          "fraction": 0.956,
+          "plugin_mc_se": 0.009172131704244116,
+          "exact_interval": [
+            0.9341389996764051,
+            0.9722232327144282
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9192866803294567,
+            0.9795497881110152
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.6082266872159319,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 449,
+          "fraction": 0.898,
+          "plugin_mc_se": 0.013534843922262271,
+          "exact_interval": [
+            0.8680735394352804,
+            0.9231077067733116
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8486909739285569,
+            0.9359542342051504
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.8813903017435116,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 23,
+          "fraction": 0.046,
+          "plugin_mc_se": 0.00936845771725528,
+          "exact_interval": [
+            0.029380175392402796,
+            0.0682254278812379
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.02181210345197991,
+            0.08328433158885068
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.7585450748278569,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 258,
+          "fraction": 0.516,
+          "plugin_mc_se": 0.022349228174592516,
+          "exact_interval": [
+            0.47121279052990117,
+            0.5605969869310433
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4446921129845209,
+            0.5868564060491559
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.5023743407533197,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 439,
+          "fraction": 0.878,
+          "plugin_mc_se": 0.014636666287102402,
+          "exact_interval": [
+            0.8460579031535461,
+            0.9053811035435845
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8255637347754882,
+            0.9196737599092093
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.10116513150305037,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 471,
+          "fraction": 0.942,
+          "plugin_mc_se": 0.010453324829928518,
+          "exact_interval": [
+            0.9177617791061647,
+            0.9608161312028122
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9015642137213484,
+            0.9697308870653134
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.4105284941638866,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 448,
+          "fraction": 0.896,
+          "plugin_mc_se": 0.013651666564928987,
+          "exact_interval": [
+            0.8658592515775192,
+            0.9213480647253657
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8463579925077186,
+            0.9343468375063658
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.7653863920373578,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 19,
+          "fraction": 0.038,
+          "plugin_mc_se": 0.00855055553750749,
+          "exact_interval": [
+            0.023030770806247606,
+            0.05870729046322855
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.016464135820587644,
+            0.07290496244823676
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.25808682180444514,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 235,
+          "fraction": 0.47,
+          "plugin_mc_se": 0.022320394261750844,
+          "exact_interval": [
+            0.42554247267474343,
+            0.514814207739987
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.39943108004173494,
+            0.5414154661607499
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.1946083086078805,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 458,
+          "fraction": 0.916,
+          "plugin_mc_se": 0.012405160216619531,
+          "exact_interval": [
+            0.8881516987545879,
+            0.9387909413916523
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8699257203750694,
+            0.9501776586059775
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.26313834687317583,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 479,
+          "fraction": 0.958,
+          "plugin_mc_se": 0.00897061870775924,
+          "exact_interval": [
+            0.9365130594670811,
+            0.9738164232238529
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9218728935635085,
+            0.9808958133892313
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.4726231618771387,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 460,
+          "fraction": 0.92,
+          "plugin_mc_se": 0.012132600710482479,
+          "exact_interval": [
+            0.8926545356436476,
+            0.9422338800711657
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8747097646196104,
+            0.9532716463500943
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.15607645188607588,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.03947119809462685,
+          "dplus": 0.03947119809462685,
+          "dminus": 0.011716284146938774,
+          "pvalue": 0.40672750037583694,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.37559015781727073,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.4837776058714778,
+          "minimum": 0.0008227300214328807,
+          "maximum": 0.9984936440392692,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.40672750037583694,
+          "sensitivity_pvalue_upper": 0.40672750037583694,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.04403565226280182,
+          "dplus": 0.04403565226280182,
+          "dminus": 0.026150611247961544,
+          "pvalue": 0.27858355342612195,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.5411272284536064,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.48878341967759026,
+          "minimum": 0.004412594722431069,
+          "maximum": 0.9980239697171431,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.27858355342612195,
+          "sensitivity_pvalue_upper": 0.27858355342612195,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.048622281087952524,
+          "dplus": 0.013564638947154206,
+          "dminus": 0.048622281087952524,
+          "pvalue": 0.18189129425236172,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.7256969754212861,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5101023826294377,
+          "minimum": 0.0014938194217722874,
+          "maximum": 0.9968269595686772,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.18189129425236172,
+          "sensitivity_pvalue_upper": 0.18189129425236172,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.05051942381349439,
+          "dplus": 0.024625268533708056,
+          "dminus": 0.05051942381349439,
+          "pvalue": 0.1505443131915093,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.8073816718192077,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5104770774376028,
+          "minimum": 0.0014179308450975917,
+          "maximum": 0.9991704501282531,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.1505443131915093,
+          "sensitivity_pvalue_upper": 0.1505443131915093,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.031058716221774585,
+          "dplus": 0.017966564167653187,
+          "dminus": 0.031058716221774585,
+          "pvalue": 0.7082660025367682,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.11790950684552198,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5017319605779346,
+          "minimum": 0.0006666914346440538,
+          "maximum": 0.996961938869251,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.7082660025367682,
+          "sensitivity_pvalue_upper": 0.7082660025367682,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "logL_at_truth",
+          "diagnostic": "PIT",
+          "n": 500,
+          "statistic": 0.9724553443661746,
+          "dplus": 8.681985241842938e-09,
+          "dminus": 0.9724553443661746,
+          "pvalue": 0.0,
+          "pvalue_numerical_underflow": true,
+          "log10_dkw_tail_upper_bound": -410.3979707334182,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.9982673596901218,
+          "minimum": 0.9390685012225959,
+          "maximum": 0.9999999913180148,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 500,
+          "dkw_simultaneous_half_width": 0.08439707731076404,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.0,
+          "sensitivity_pvalue_upper": 0.0,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 0.0,
+          "reject": true
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 25,
+          "fraction": 0.05,
+          "plugin_mc_se": 0.009746794344808964,
+          "exact_interval": [
+            0.03261518014933006,
+            0.07292762165047895
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.02457975518500094,
+            0.08838424752032702
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 1.0,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 261,
+          "fraction": 0.522,
+          "plugin_mc_se": 0.0223390241505756,
+          "exact_interval": [
+            0.4771970215726314,
+            0.5665414190252522
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4506392914654143,
+            0.5927399171775831
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.3476641793130149,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 452,
+          "fraction": 0.904,
+          "plugin_mc_se": 0.013174520864152895,
+          "exact_interval": [
+            0.874735253436669,
+            0.9283673060246591
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8557199125951166,
+            0.9407457988968462
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.823183762262675,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 476,
+          "fraction": 0.952,
+          "plugin_mc_se": 0.009559916317625384,
+          "exact_interval": [
+            0.9294192037426702,
+            0.9690068312064947
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9141589617428255,
+            0.9768110951728018
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.9184118889878681,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 451,
+          "fraction": 0.902,
+          "plugin_mc_se": 0.013296315279053816,
+          "exact_interval": [
+            0.8725114573141097,
+            0.9266174143922598
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8533718025441701,
+            0.9391538512381087
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.9406293297295497,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 23,
+          "fraction": 0.046,
+          "plugin_mc_se": 0.00936845771725528,
+          "exact_interval": [
+            0.029380175392402796,
+            0.0682254278812379
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.02181210345197991,
+            0.08328433158885068
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.7585450748278569,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 253,
+          "fraction": 0.506,
+          "plugin_mc_se": 0.02235906974809104,
+          "exact_interval": [
+            0.4612530428613475,
+            0.5506756245829323
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4348024984407921,
+            0.5770281975183851
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.8230909082455198,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 458,
+          "fraction": 0.916,
+          "plugin_mc_se": 0.012405160216619531,
+          "exact_interval": [
+            0.8881516987545879,
+            0.9387909413916523
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8699257203750694,
+            0.9501776586059775
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.26313834687317583,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 481,
+          "fraction": 0.962,
+          "plugin_mc_se": 0.008550555537507495,
+          "exact_interval": [
+            0.9412927095367715,
+            0.9769692291937524
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.927095037551763,
+            0.9835358641794123
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.25808682180444764,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 458,
+          "fraction": 0.916,
+          "plugin_mc_se": 0.012405160216619531,
+          "exact_interval": [
+            0.8881516987545879,
+            0.9387909413916523
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8699257203750694,
+            0.9501776586059775
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.26313834687317583,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 22,
+          "fraction": 0.044,
+          "plugin_mc_se": 0.009172131704244111,
+          "exact_interval": [
+            0.02777676728557174,
+            0.06586100032359485
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.020450211888984653,
+            0.08071331967054313
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.608226687215925,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 238,
+          "fraction": 0.476,
+          "plugin_mc_se": 0.02233490541730589,
+          "exact_interval": [
+            0.4314785029700201,
+            0.5208068360624456
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4053011509829111,
+            0.5473760781674577
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.3036673129940777,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 450,
+          "fraction": 0.9,
+          "plugin_mc_se": 0.013416407864998736,
+          "exact_interval": [
+            0.8702909143377968,
+            0.9248641849335745
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8510288678596721,
+            0.937556616446987
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 1.0,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 476,
+          "fraction": 0.952,
+          "plugin_mc_se": 0.009559916317625384,
+          "exact_interval": [
+            0.9294192037426702,
+            0.9690068312064947
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9141589617428255,
+            0.9768110951728018
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.9184118889878681,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 454,
+          "fraction": 0.908,
+          "plugin_mc_se": 0.012925633446759966,
+          "exact_interval": [
+            0.8791929673892575,
+            0.9318566958433456
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8604322318615049,
+            0.9439132377162693
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.6019765578038838,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 29,
+          "fraction": 0.058,
+          "plugin_mc_se": 0.010453324829928513,
+          "exact_interval": [
+            0.03918386879718779,
+            0.08223822089383528
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.030269112934686444,
+            0.09843578627865131
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.41052849416388315,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 241,
+          "fraction": 0.482,
+          "plugin_mc_se": 0.022346185356789647,
+          "exact_interval": [
+            0.43742083637608786,
+            0.5267931648122826
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4111813048657172,
+            0.5533266124478342
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.4471295015248138,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 442,
+          "fraction": 0.884,
+          "plugin_mc_se": 0.014320893826853127,
+          "exact_interval": [
+            0.8526342618752077,
+            0.9107280447461416
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.832456789870367,
+            0.9246038624293099
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.2327517729886996,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 464,
+          "fraction": 0.928,
+          "plugin_mc_se": 0.0115599307956406,
+          "exact_interval": [
+            0.901712562663143,
+            0.949065666874867
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8843609951552611,
+            0.959374258909378
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.030455346817320095,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 0.908737274431198,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 435,
+          "fraction": 0.87,
+          "plugin_mc_se": 0.015039946808416579,
+          "exact_interval": [
+            0.8373235180629985,
+            0.8982170671600536
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.816427312416368,
+            0.9130450390723499
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.030291242481039933,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 0.908737274431198,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.05",
+          "n": 500,
+          "covered": 31,
+          "fraction": 0.062,
+          "plugin_mc_se": 0.010784804124322332,
+          "exact_interval": [
+            0.04251106129638552,
+            0.08685259747910139
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.033180889014787,
+            0.10339677616328924
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.21730895659878363,
+          "null_mc_se": 0.009746794344808964,
+          "central_null_count_interval": [
+            16,
+            35
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.50",
+          "n": 500,
+          "covered": 249,
+          "fraction": 0.498,
+          "plugin_mc_se": 0.02236050088884415,
+          "exact_interval": [
+            0.45329780691899596,
+            0.5427259705561507
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4269109029971976,
+            0.5691455316190527
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.9643353544466507,
+          "null_mc_se": 0.022360679774997897,
+          "central_null_count_interval": [
+            228,
+            272
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.90",
+          "n": 500,
+          "covered": 449,
+          "fraction": 0.898,
+          "plugin_mc_se": 0.013534843922262271,
+          "exact_interval": [
+            0.8680735394352804,
+            0.9231077067733116
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8486909739285569,
+            0.9359542342051504
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.8813903017435116,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.95",
+          "n": 500,
+          "covered": 468,
+          "fraction": 0.936,
+          "plugin_mc_se": 0.01094568408095172,
+          "exact_interval": [
+            0.9108493724491366,
+            0.9558157890532868
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.894137238876335,
+            0.9653482290704064
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.1503660433797946,
+          "null_mc_se": 0.00974679434480897,
+          "central_null_count_interval": [
+            465,
+            484
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "central_90",
+          "n": 500,
+          "covered": 437,
+          "fraction": 0.874,
+          "plugin_mc_se": 0.01484075469779081,
+          "exact_interval": [
+            0.8416860057009945,
+            0.9018038822152772
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8209880264543042,
+            0.916367021677358
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.061816137080851756,
+          "null_mc_se": 0.013416407864998736,
+          "central_null_count_interval": [
+            436,
+            463
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        }
+      ],
+      "nonrejection_does_not_prove_correctness": true,
+      "approximate_family_rejection_does_not_alone_identify_numerical_failure": true
+    },
+    "4096": {
+      "scope": "continuous_prior_predictive_SBC",
+      "n": 4096,
+      "methods": [
+        "TOY_EXACT",
+        "TOY_IGNORES_DATA_RETURNS_PRIOR"
+      ],
+      "parameters": [
+        "theta_0",
+        "theta_1",
+        "theta_2",
+        "theta_3",
+        "theta_4"
+      ],
+      "numerical_complete": true,
+      "alpha": 0.05,
+      "groups": {
+        "toy_correct": [
+          "TOY_EXACT"
+        ],
+        "toy_negative": [
+          "TOY_IGNORES_DATA_RETURNS_PRIOR"
+        ]
+      },
+      "tests": [
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.012400630156541914,
+          "dplus": 0.006330061287614153,
+          "dminus": 0.012400630156541914,
+          "pvalue": 0.5502899215304509,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.24606376894747245,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5042725913193036,
+          "minimum": 1.3965319513138352e-05,
+          "maximum": 0.9998196690726225,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.5502899215304509,
+          "sensitivity_pvalue_upper": 0.5502899215304509,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.01272066695531382,
+          "dplus": 0.01272066695531382,
+          "dminus": 0.0023077226339026785,
+          "pvalue": 0.5172062266669857,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.27466707496880866,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.4953837119340935,
+          "minimum": 0.0003329554273322017,
+          "maximum": 0.9997763475269134,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.5172062266669857,
+          "sensitivity_pvalue_upper": 0.5172062266669857,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.01937668102631207,
+          "dplus": 0.01937668102631207,
+          "dminus": 0.006171071890025109,
+          "pvalue": 0.09110983846369314,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -1.0347441555281873,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49143066424124837,
+          "minimum": 0.00012447097882695623,
+          "maximum": 0.9998920873679498,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.09110983846369314,
+          "sensitivity_pvalue_upper": 0.09110983846369314,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.011966972095042945,
+          "dplus": 0.011966972095042945,
+          "dminus": 0.0030332050503875108,
+          "pvalue": 0.5961764539227994,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.2084683891790084,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49663432031013377,
+          "minimum": 0.00046207326445713134,
+          "maximum": 0.9994685022331684,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.5961764539227994,
+          "sensitivity_pvalue_upper": 0.5961764539227994,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.01127109128647541,
+          "dplus": 0.01127109128647541,
+          "dminus": 0.0050451801890731285,
+          "pvalue": 0.6711096537608966,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.15093644554953112,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49777868455164853,
+          "minimum": 0.00020593949750043373,
+          "maximum": 0.9999594533957632,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.6711096537608966,
+          "sensitivity_pvalue_upper": 0.6711096537608966,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "logL_at_truth",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.022705694159170953,
+          "dplus": 0.0030211416193706153,
+          "dminus": 0.022705694159170953,
+          "pvalue": 0.02885063012090361,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -1.5331578968576367,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5065881339165101,
+          "minimum": 0.0002677503388713253,
+          "maximum": 0.99989338424608,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.02885063012090361,
+          "sensitivity_pvalue_upper": 0.02885063012090361,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 0.8655189036271083,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 197,
+          "fraction": 0.048095703125,
+          "plugin_mc_se": 0.0033432573551335026,
+          "exact_interval": [
+            0.041745382061359866,
+            0.05510005859697845
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.03820232455913186,
+            0.0595487761033583
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.6156644236360523,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2021,
+          "fraction": 0.493408203125,
+          "plugin_mc_se": 0.00781182103633964,
+          "exact_interval": [
+            0.4779845595277211,
+            0.50884125732519
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.46867899120582074,
+            0.5181599667720631
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.40760271372212525,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3694,
+          "fraction": 0.90185546875,
+          "plugin_mc_se": 0.004648593280890686,
+          "exact_interval": [
+            0.892333601935651,
+            0.910799600976639
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8863845601752204,
+            0.915945297638779
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.7154164606401585,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3906,
+          "fraction": 0.95361328125,
+          "plugin_mc_se": 0.003286268152111172,
+          "exact_interval": [
+            0.9467191028932038,
+            0.959850683405478
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9423362747357047,
+            0.963324291172958
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.29865094587120306,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_0",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3709,
+          "fraction": 0.905517578125,
+          "plugin_mc_se": 0.00457029230315074,
+          "exact_interval": [
+            0.8961463206946843,
+            0.9143056643594667
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8902866974252206,
+            0.9193545297885919
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.2517875031443009,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 214,
+          "fraction": 0.05224609375,
+          "plugin_mc_se": 0.0034769202567984363,
+          "exact_interval": [
+            0.045630837288540296,
+            0.05950879008046954
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.04192473009122893,
+            0.06411194118249555
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.4958605818225698,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2060,
+          "fraction": 0.5029296875,
+          "plugin_mc_se": 0.007812365888398156,
+          "exact_interval": [
+            0.4874981801210236,
+            0.5183570123918195
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.47818247225879146,
+            0.5276668797557758
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.7193193389280333,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3699,
+          "fraction": 0.903076171875,
+          "plugin_mc_se": 0.004622719023324087,
+          "exact_interval": [
+            0.8936040665021735,
+            0.911968731928769
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8876845630190379,
+            0.9170824201622906
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.5319471733622674,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3907,
+          "fraction": 0.953857421875,
+          "plugin_mc_se": 0.003278028202849441,
+          "exact_interval": [
+            0.9469791751909996,
+            0.9600784992806961
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.942605875938794,
+            0.9635420688569676
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.2665317128263917,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_1",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3693,
+          "fraction": 0.901611328125,
+          "plugin_mc_se": 0.004653741488754891,
+          "exact_interval": [
+            0.892079561080175,
+            0.9105657225575848
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8861246432390391,
+            0.9157177892420435
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.7546565662137782,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 185,
+          "fraction": 0.045166015625,
+          "plugin_mc_se": 0.00324481432207706,
+          "exact_interval": [
+            0.03901073563071165,
+            0.051980040870600784
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.035587619653294635,
+            0.0563149253975323
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.1620485333776188,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2113,
+          "fraction": 0.515869140625,
+          "plugin_mc_se": 0.007808564170714111,
+          "exact_interval": [
+            0.5004358435307164,
+            0.5312797824660982
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.49111176438733944,
+            0.5405722255124115
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.04382605816656956,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3712,
+          "fraction": 0.90625,
+          "plugin_mc_se": 0.004554384303266023,
+          "exact_interval": [
+            0.8969093485835168,
+            0.9150063912659856
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8910679026353933,
+            0.9200355959797916
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.1928022715425976,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3904,
+          "fraction": 0.953125,
+          "plugin_mc_se": 0.003302673158805831,
+          "exact_interval": [
+            0.94619910413714,
+            0.959394904748989
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9417973063442229,
+            0.9628885002193089
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.389438215205821,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_2",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3719,
+          "fraction": 0.907958984375,
+          "plugin_mc_se": 0.004516935014014449,
+          "exact_interval": [
+            0.8986903928874147,
+            0.9166407725864746
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8928917523918776,
+            0.9216237094420743
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.0905062213799521,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 247,
+          "fraction": 0.060302734375,
+          "plugin_mc_se": 0.0037194824187451203,
+          "exact_interval": [
+            0.05320633916050881,
+            0.06803397709668844
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.04920375462359889,
+            0.07291698097367036
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.0032590569626145217,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 0.10103076584105017,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2041,
+          "fraction": 0.498291015625,
+          "plugin_mc_se": 0.007812454365060561,
+          "exact_interval": [
+            0.4828626460766319,
+            0.5137218249572562
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.47355145659727826,
+            0.5230364213937746
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.839040429721544,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3700,
+          "fraction": 0.9033203125,
+          "plugin_mc_se": 0.0046175173191449,
+          "exact_interval": [
+            0.8938582118807598,
+            0.9122025054806411
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8879446478744206,
+            0.9173097601172177
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.4983242068461504,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3899,
+          "fraction": 0.951904296875,
+          "plugin_mc_se": 0.0033432573551335026,
+          "exact_interval": [
+            0.9448999414030216,
+            0.9582546179386401
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9404512238966416,
+            0.9617976754408681
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.6156644236360551,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_3",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3652,
+          "fraction": 0.8916015625,
+          "plugin_mc_se": 0.004857546285915772,
+          "exact_interval": [
+            0.8816780954789825,
+            0.9009624531976138
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8754908777605476,
+            0.9063670480808077
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.07651624263352036,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 215,
+          "fraction": 0.052490234375,
+          "plugin_mc_se": 0.0034845855342174807,
+          "exact_interval": [
+            0.04585978035042878,
+            0.059767742910025956
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.04214431569988776,
+            0.06437974586164406
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.45163994152090203,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2036,
+          "fraction": 0.4970703125,
+          "plugin_mc_se": 0.007812365888398156,
+          "exact_interval": [
+            0.4816429876081805,
+            0.5125018198789764
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.47233312024422414,
+            0.5218175277412085
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.7193193389280333,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3714,
+          "fraction": 0.90673828125,
+          "plugin_mc_se": 0.004543732015250791,
+          "exact_interval": [
+            0.8974181255736747,
+            0.9154734504907066
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.891588853470585,
+            0.9204894922671412
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.1595619887321243,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3907,
+          "fraction": 0.953857421875,
+          "plugin_mc_se": 0.003278028202849441,
+          "exact_interval": [
+            0.9469791751909996,
+            0.9600784992806961
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.942605875938794,
+            0.9635420688569676
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.2665317128263917,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_correct",
+          "method": "TOY_EXACT",
+          "target": "theta_4",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3692,
+          "fraction": 0.9013671875,
+          "plugin_mc_se": 0.004658880884219373,
+          "exact_interval": [
+            0.8918255374431554,
+            0.910331826863951
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8858647539650427,
+            0.9154902530978533
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.79453990074954,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.02208154047719768,
+          "dplus": 0.02208154047719768,
+          "dminus": 0.003627048170802366,
+          "pvalue": 0.03629151358082028,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -1.4337044041429492,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.4899422093382634,
+          "minimum": 0.00033766214231047473,
+          "maximum": 0.9997421617122333,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.03629151358082028,
+          "sensitivity_pvalue_upper": 0.03629151358082028,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.010110252190573599,
+          "dplus": 0.010110252190573599,
+          "dminus": 0.005531176758633793,
+          "pvalue": 0.7925744666426233,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.06263226362898944,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49732047367222554,
+          "minimum": 0.0002633762630163276,
+          "maximum": 0.9995149852721227,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.7925744666426233,
+          "sensitivity_pvalue_upper": 0.7925744666426233,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.010199955741000688,
+          "dplus": 0.010199955741000688,
+          "dminus": 0.009820943005419913,
+          "pvalue": 0.7836350381780246,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.06911410289156117,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49935007608404564,
+          "minimum": 0.00015563988068563036,
+          "maximum": 0.9997340724625214,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.7836350381780246,
+          "sensitivity_pvalue_upper": 0.7836350381780246,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.021742003823461142,
+          "dplus": 0.004105478738865392,
+          "dminus": 0.021742003823461142,
+          "pvalue": 0.041006133475434026,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -1.3807662958466274,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.5109231117392269,
+          "minimum": 1.1219854183056832e-05,
+          "maximum": 0.9997360114179705,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.041006133475434026,
+          "sensitivity_pvalue_upper": 0.041006133475434026,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.011756144113682643,
+          "dplus": 0.011756144113682643,
+          "dminus": 0.008228459868543037,
+          "pvalue": 0.6187899814296326,
+          "pvalue_numerical_underflow": false,
+          "log10_dkw_tail_upper_bound": -0.19067436232357815,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.49826263932737946,
+          "minimum": 0.00024450744041820417,
+          "maximum": 0.999910830518096,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.6187899814296326,
+          "sensitivity_pvalue_upper": 0.6187899814296326,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "logL_at_truth",
+          "diagnostic": "PIT",
+          "n": 4096,
+          "statistic": 0.973529741081769,
+          "dplus": 1.567808216584865e-09,
+          "dminus": 0.973529741081769,
+          "pvalue": 0.0,
+          "pvalue_numerical_underflow": true,
+          "log10_dkw_tail_upper_bound": -3371.5835652313003,
+          "test_method": "two-sided exact finite-n KS continuous null",
+          "mean": 0.9984326374051875,
+          "minimum": 0.9390685012225959,
+          "maximum": 0.9999999984321918,
+          "exact_zero_count": 0,
+          "exact_one_count": 0,
+          "unique_count": 4096,
+          "dkw_simultaneous_half_width": 0.029487125307683368,
+          "pit_error_sensitivity": 0.0,
+          "sensitivity_pvalue_lower": 0.0,
+          "sensitivity_pvalue_upper": 0.0,
+          "sensitivity_is_not_a_certified_integration_error_bound": true,
+          "family_size": 31,
+          "holm_pvalue": 0.0,
+          "reject": true
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 202,
+          "fraction": 0.04931640625,
+          "plugin_mc_se": 0.003383247241283236,
+          "exact_interval": [
+            0.042886834608459476,
+            0.05639806376310027
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.03929501896847064,
+            0.060893000973085094
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.8859554081093439,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2114,
+          "fraction": 0.51611328125,
+          "plugin_mc_se": 0.007808442105008222,
+          "exact_interval": [
+            0.5006800489805621,
+            0.5315235097201636
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.49135587181912466,
+            0.5408155640732397
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.040657311771114875,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3695,
+          "fraction": 0.902099609375,
+          "plugin_mc_se": 0.0046434362313156645,
+          "exact_interval": [
+            0.8925876600667239,
+            0.9110334620636289
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8866445048653091,
+            0.9161727781958215
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.6769137165336407,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3900,
+          "fraction": 0.9521484375,
+          "plugin_mc_se": 0.0033351887503653556,
+          "exact_interval": [
+            0.9451596800068702,
+            0.958482769913593
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9407202896368367,
+            0.9620159921338336
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.5661529362339157,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_0",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3698,
+          "fraction": 0.90283203125,
+          "plugin_mc_se": 0.004627911736493172,
+          "exact_interval": [
+            0.893349938690225,
+            0.9117349407520254
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8874245063847368,
+            0.9168550518978498
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.5666818168436552,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 213,
+          "fraction": 0.052001953125,
+          "plugin_mc_se": 0.0034692338484400885,
+          "exact_interval": [
+            0.04540193567095079,
+            0.059249796073007
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.041705210967869354,
+            0.06384407041271928
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.542295950499938,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2058,
+          "fraction": 0.50244140625,
+          "plugin_mc_se": 0.00781240686718742,
+          "exact_interval": [
+            0.48701016714393175,
+            0.5178691599502943
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4776948971984995,
+            0.5271795628139371
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.7665661498999675,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3691,
+          "fraction": 0.901123046875,
+          "plugin_mc_se": 0.004664011496415969,
+          "exact_interval": [
+            0.8915715309678002,
+            0.9100979139528708
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8856048922620684,
+            0.9152626892978831
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.8349672890210695,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3887,
+          "fraction": 0.948974609375,
+          "plugin_mc_se": 0.0034382740654238645,
+          "exact_interval": [
+            0.941786597248236,
+            0.9555132507815294
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9372280824072324,
+            0.9591721917471625
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.7469882092825302,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_1",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3674,
+          "fraction": 0.89697265625,
+          "plugin_mc_se": 0.004749915454372463,
+          "exact_interval": [
+            0.8872559932208747,
+            0.9061188139127586
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8811913759568384,
+            0.9113899595605683
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.5149968853398209,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 215,
+          "fraction": 0.052490234375,
+          "plugin_mc_se": 0.0034845855342174807,
+          "exact_interval": [
+            0.04585978035042878,
+            0.059767742910025956
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.04214431569988776,
+            0.06437974586164406
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.45163994152090203,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2037,
+          "fraction": 0.497314453125,
+          "plugin_mc_se": 0.007812387309155721,
+          "exact_interval": [
+            0.48188691200461553,
+            0.5127458281918353
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.47257677578188345,
+            0.5220613182045918
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.7428216578835585,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3700,
+          "fraction": 0.9033203125,
+          "plugin_mc_se": 0.0046175173191449,
+          "exact_interval": [
+            0.8938582118807598,
+            0.9122025054806411
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8879446478744206,
+            0.9173097601172177
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.4983242068461504,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3899,
+          "fraction": 0.951904296875,
+          "plugin_mc_se": 0.0033432573551335026,
+          "exact_interval": [
+            0.9448999414030216,
+            0.9582546179386401
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9404512238966416,
+            0.9617976754408681
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.6156644236360551,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_2",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3684,
+          "fraction": 0.8994140625,
+          "plugin_mc_se": 0.004699682260423255,
+          "exact_interval": [
+            0.8897939614682759,
+            0.9084600462135075
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8837866247874662,
+            0.9136689759207218
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.8963944248594832,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 216,
+          "fraction": 0.052734375,
+          "plugin_mc_se": 0.0034922298198414277,
+          "exact_interval": [
+            0.04608876458350004,
+            0.06002665483175264
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.042363967356568326,
+            0.06464748488302553
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.40974447962005695,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 1982,
+          "fraction": 0.48388671875,
+          "plugin_mc_se": 0.007808442105008222,
+          "exact_interval": [
+            0.46847649027983634,
+            0.499319951019438
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.45918443592676017,
+            0.5086441281808747
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.040657311771114875,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3621,
+          "fraction": 0.884033203125,
+          "plugin_mc_se": 0.005002892203007204,
+          "exact_interval": [
+            0.8738306743102298,
+            0.8936842925428546
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8674781906052185,
+            0.8992694215549577
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.0008522304789138906,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 0.025566914367416718,
+          "reject": true
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3874,
+          "fraction": 0.94580078125,
+          "plugin_mc_se": 0.003537662300166861,
+          "exact_interval": [
+            0.9384207179605443,
+            0.9525364803292387
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.933747436173872,
+            0.9563167595615845
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.2227322822086418,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_3",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3658,
+          "fraction": 0.89306640625,
+          "plugin_mc_se": 0.004828575026501119,
+          "exact_interval": [
+            0.883198592587891,
+            0.9023694833598621
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8770443577302658,
+            0.907738137793954
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.13775212065974735,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.05",
+          "n": 4096,
+          "covered": 209,
+          "fraction": 0.051025390625,
+          "plugin_mc_se": 0.0034382740654238645,
+          "exact_interval": [
+            0.04448674921847062,
+            0.05821340275176405
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.0408278082528375,
+            0.06277191759276747
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.05,
+          "pvalue": 0.7469882092825273,
+          "null_mc_se": 0.003405389799641151,
+          "central_null_count_interval": [
+            178,
+            233
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.50",
+          "n": 4096,
+          "covered": 2042,
+          "fraction": 0.49853515625,
+          "plugin_mc_se": 0.007812466472315371,
+          "exact_interval": [
+            0.4831065887160802,
+            0.5139658150272184
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.4737951414671177,
+            0.523280182525161
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.5,
+          "pvalue": 0.8635384700826476,
+          "null_mc_se": 0.0078125,
+          "central_null_count_interval": [
+            1985,
+            2111
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.90",
+          "n": 4096,
+          "covered": 3705,
+          "fraction": 0.904541015625,
+          "plugin_mc_se": 0.004591372861699405,
+          "exact_interval": [
+            0.8951292043617209,
+            0.9133711067656731
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.8892454988198557,
+            0.918446031877681
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.3484445251687887,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "below_q0.95",
+          "n": 4096,
+          "covered": 3898,
+          "fraction": 0.95166015625,
+          "plugin_mc_se": 0.0033513021918225236,
+          "exact_interval": [
+            0.9446402490935335,
+            0.9580264193427201
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.9401822324461857,
+            0.9615792839762455
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.95,
+          "pvalue": 0.6669886113751444,
+          "null_mc_se": 0.0034053897996411528,
+          "central_null_count_interval": [
+            3863,
+            3918
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        },
+        {
+          "group": "toy_negative",
+          "method": "TOY_IGNORES_DATA_RETURNS_PRIOR",
+          "target": "theta_4",
+          "diagnostic": "central_90",
+          "n": 4096,
+          "covered": 3689,
+          "fraction": 0.900634765625,
+          "plugin_mc_se": 0.004674246486645761,
+          "exact_interval": [
+            0.8910635692766413,
+            0.9096300367051627
+          ],
+          "simultaneous_bonferroni_interval": [
+            0.885085251207302,
+            0.9148074790945105
+          ],
+          "interval_alpha": 0.05,
+          "simultaneous_family_size": 31,
+          "nominal": 0.9,
+          "pvalue": 0.9170367741363017,
+          "null_mc_se": 0.0046875,
+          "central_null_count_interval": [
+            3648,
+            3724
+          ],
+          "family_size": 31,
+          "holm_pvalue": 1.0,
+          "reject": false
+        }
+      ],
+      "nonrejection_does_not_prove_correctness": true,
+      "approximate_family_rejection_does_not_alone_identify_numerical_failure": true
+    }
+  },
+  "paired_coverage": [
+    {
+      "parameter": "theta_0",
+      "n": 4096,
+      "difference_direction": "x_minus_y",
+      "mean_difference": 0.002685546875,
+      "paired_mc_se": 0.006390413989371206,
+      "approximate_t_interval": [
+        -0.0098431374920203,
+        0.0152142312420203
+      ],
+      "interval_is_asymptotic_not_exact": true,
+      "discordant_x_only": 348,
+      "discordant_y_only": 337,
+      "mcnemar_exact_pvalue": 0.7024312758117913,
+      "finite_sample_hoeffding_interval": [
+        -0.03975512549189436,
+        0.04512621924189436
+      ]
+    },
+    {
+      "parameter": "theta_1",
+      "n": 4096,
+      "difference_direction": "x_minus_y",
+      "mean_difference": 0.004638671875,
+      "paired_mc_se": 0.006473564956608723,
+      "approximate_t_interval": [
+        -0.008053033577205708,
+        0.017330377327205708
+      ],
+      "interval_is_asymptotic_not_exact": true,
+      "discordant_x_only": 361,
+      "discordant_y_only": 342,
+      "mcnemar_exact_pvalue": 0.497239685967275,
+      "finite_sample_hoeffding_interval": [
+        -0.03780200049189436,
+        0.04707934424189436
+      ]
+    },
+    {
+      "parameter": "theta_2",
+      "n": 4096,
+      "difference_direction": "x_minus_y",
+      "mean_difference": 0.008544921875,
+      "paired_mc_se": 0.006323500052547369,
+      "approximate_t_interval": [
+        -0.0038525748106564717,
+        0.02094241856065647
+      ],
+      "interval_is_asymptotic_not_exact": true,
+      "discordant_x_only": 353,
+      "discordant_y_only": 318,
+      "mcnemar_exact_pvalue": 0.18929313250813098,
+      "finite_sample_hoeffding_interval": [
+        -0.03389575049189436,
+        0.05098559424189436
+      ]
+    },
+    {
+      "parameter": "theta_3",
+      "n": 4096,
+      "difference_direction": "x_minus_y",
+      "mean_difference": -0.00146484375,
+      "paired_mc_se": 0.00673127537608699,
+      "approximate_t_interval": [
+        -0.014661801680230735,
+        0.011732114180230735
+      ],
+      "interval_is_asymptotic_not_exact": true,
+      "discordant_x_only": 377,
+      "discordant_y_only": 383,
+      "mcnemar_exact_pvalue": 0.8560930253020265,
+      "finite_sample_hoeffding_interval": [
+        -0.04390551611689436,
+        0.04097582861689436
+      ]
+    },
+    {
+      "parameter": "theta_4",
+      "n": 4096,
+      "difference_direction": "x_minus_y",
+      "mean_difference": 0.000732421875,
+      "paired_mc_se": 0.006324899395614058,
+      "approximate_t_interval": [
+        -0.011667818283557113,
+        0.013132662033557113
+      ],
+      "interval_is_asymptotic_not_exact": true,
+      "discordant_x_only": 337,
+      "discordant_y_only": 334,
+      "mcnemar_exact_pvalue": 0.9384647665148912,
+      "finite_sample_hoeffding_interval": [
+        -0.04170825049189436,
+        0.04317309424189436
+      ]
+    }
+  ],
+  "prior_return_checks": {
+    "TOY_EXACT": {
+      "maximum_scaled_quantile_distance": 4.9943667381238175,
+      "median_scaled_quantile_distance": 2.628244313885012,
+      "identical_quantiles_every_replication": false,
+      "equality_of_four_quantiles_does_not_prove_full_posterior_equality": true
+    },
+    "TOY_IGNORES_DATA_RETURNS_PRIOR": {
+      "maximum_scaled_quantile_distance": 0.0,
+      "median_scaled_quantile_distance": 0.0,
+      "identical_quantiles_every_replication": true,
+      "equality_of_four_quantiles_does_not_prove_full_posterior_equality": true
+    },
+    "intervention": {
+      "exact_mean_change": 0.9174311926605505,
+      "prior_algorithm_mean_change": 0.0,
+      "two_datasets": "all zero versus all one, chosen analytically, not selected from simulated results"
+    }
+  },
+  "boundary_toy": [
+    {
+      "scope": "fixed_truth_coverage_not_SBC",
+      "truth": 0.0,
+      "nominal_frequentist_coverage_not_assumed": true,
+      "central_90": {
+        "n": 500,
+        "covered": 0,
+        "fraction": 0.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "upper_quantile_90": {
+        "n": 500,
+        "covered": 500,
+        "fraction": 1.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "median_bias": 0.11665282000522229,
+      "median_bias_mc_se": 0.002728021373163973,
+      "support_to_upper90": {
+        "n": 500,
+        "covered": 500,
+        "fraction": 1.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1,
+        "structural_coverage": 1.0,
+        "explanation": "the fixed lower boundary belongs to [lower_support,U90] for every admissible realization; 90% is not the null"
+      }
+    },
+    {
+      "scope": "fixed_truth_coverage_not_SBC",
+      "truth": 0.05,
+      "nominal_frequentist_coverage_not_assumed": true,
+      "central_90": {
+        "n": 500,
+        "covered": 449,
+        "fraction": 0.898,
+        "plugin_mc_se": 0.013534843922262271,
+        "exact_interval": [
+          0.8680735394352804,
+          0.9231077067733116
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.8680735394352804,
+          0.9231077067733116
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "upper_quantile_90": {
+        "n": 500,
+        "covered": 500,
+        "fraction": 1.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "median_bias": 0.09494285405343081,
+      "median_bias_mc_se": 0.0036380456618285485,
+      "support_to_upper90": {
+        "n": 500,
+        "covered": 500,
+        "fraction": 1.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.9926493899480923,
+          1.0
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      }
+    },
+    {
+      "scope": "fixed_truth_coverage_not_SBC",
+      "truth": 0.5,
+      "nominal_frequentist_coverage_not_assumed": true,
+      "central_90": {
+        "n": 500,
+        "covered": 449,
+        "fraction": 0.898,
+        "plugin_mc_se": 0.013534843922262271,
+        "exact_interval": [
+          0.8680735394352804,
+          0.9231077067733116
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.8680735394352804,
+          0.9231077067733116
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "upper_quantile_90": {
+        "n": 500,
+        "covered": 444,
+        "fraction": 0.888,
+        "plugin_mc_se": 0.014103616557464968,
+        "exact_interval": [
+          0.8570314773083023,
+          0.9142794184723154
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.8570314773083023,
+          0.9142794184723154
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "median_bias": -0.0074635480676088425,
+      "median_bias_mc_se": 0.006495775278022158,
+      "support_to_upper90": {
+        "n": 500,
+        "covered": 444,
+        "fraction": 0.888,
+        "plugin_mc_se": 0.014103616557464968,
+        "exact_interval": [
+          0.8570314773083023,
+          0.9142794184723154
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.8570314773083023,
+          0.9142794184723154
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      }
+    },
+    {
+      "scope": "fixed_truth_coverage_not_SBC",
+      "truth": 1.0,
+      "nominal_frequentist_coverage_not_assumed": true,
+      "central_90": {
+        "n": 500,
+        "covered": 0,
+        "fraction": 0.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "upper_quantile_90": {
+        "n": 500,
+        "covered": 0,
+        "fraction": 0.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      },
+      "median_bias": -0.12091189051363292,
+      "median_bias_mc_se": 0.003110070516456005,
+      "support_to_upper90": {
+        "n": 500,
+        "covered": 0,
+        "fraction": 0.0,
+        "plugin_mc_se": 0.0,
+        "exact_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "simultaneous_bonferroni_interval": [
+          0.0,
+          0.007350610051907784
+        ],
+        "interval_alpha": 0.05,
+        "simultaneous_family_size": 1
+      }
+    }
+  ],
+  "binomial_reference_N500": {
+    "0.05": {
+      "n": 500,
+      "covered": 25,
+      "fraction": 0.05,
+      "plugin_mc_se": 0.009746794344808964,
+      "exact_interval": [
+        0.03261518014933006,
+        0.07292762165047895
+      ],
+      "simultaneous_bonferroni_interval": [
+        0.03261518014933006,
+        0.07292762165047895
+      ],
+      "interval_alpha": 0.05,
+      "simultaneous_family_size": 1,
+      "nominal": 0.05,
+      "pvalue": 1.0,
+      "null_mc_se": 0.009746794344808964,
+      "central_null_count_interval": [
+        16,
+        35
+      ]
+    },
+    "0.5": {
+      "n": 500,
+      "covered": 250,
+      "fraction": 0.5,
+      "plugin_mc_se": 0.022360679774997897,
+      "exact_interval": [
+        0.4552855693242275,
+        0.5447144306757725
+      ],
+      "simultaneous_bonferroni_interval": [
+        0.4552855693242275,
+        0.5447144306757725
+      ],
+      "interval_alpha": 0.05,
+      "simultaneous_family_size": 1,
+      "nominal": 0.5,
+      "pvalue": 1.0,
+      "null_mc_se": 0.022360679774997897,
+      "central_null_count_interval": [
+        228,
+        272
+      ]
+    },
+    "0.9": {
+      "n": 500,
+      "covered": 450,
+      "fraction": 0.9,
+      "plugin_mc_se": 0.013416407864998736,
+      "exact_interval": [
+        0.8702909143377968,
+        0.9248641849335745
+      ],
+      "simultaneous_bonferroni_interval": [
+        0.8702909143377968,
+        0.9248641849335745
+      ],
+      "interval_alpha": 0.05,
+      "simultaneous_family_size": 1,
+      "nominal": 0.9,
+      "pvalue": 1.0,
+      "null_mc_se": 0.013416407864998736,
+      "central_null_count_interval": [
+        436,
+        463
+      ]
+    },
+    "0.95": {
+      "n": 500,
+      "covered": 475,
+      "fraction": 0.95,
+      "plugin_mc_se": 0.00974679434480897,
+      "exact_interval": [
+        0.927072378349521,
+        0.9673848198506699
+      ],
+      "simultaneous_bonferroni_interval": [
+        0.927072378349521,
+        0.9673848198506699
+      ],
+      "interval_alpha": 0.05,
+      "simultaneous_family_size": 1,
+      "nominal": 0.95,
+      "pvalue": 1.0,
+      "null_mc_se": 0.00974679434480897,
+      "central_null_count_interval": [
+        465,
+        484
+      ]
+    }
+  },
+  "prefix_is_part_of_4096_not_an_independent_repetition": true,
+  "wall_seconds": 1.6074376250617206,
+  "input_npz_sha256": "fa13a80cf555133a15663a78775e379ca7e7a1066925dbc910899dd93d88eeb4"
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "status": "prospective_scaffold_no_execution",
+  "execution_enabled": false,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "targets": null,
+  "training": {
+    "steps": 8192,
+    "approved": true,
+    "seed": 907110101,
+    "chains": 4,
+    "points_for_em": 2048,
+    "note": "Candidate supported by independent cold-target and high-level IID validation; execution remains disabled until integrated whole-flow benchmark."
+  },
+  "production": {
+    "levels": [
+      16384,
+      65536
+    ],
+    "replicates": 4,
+    "seed": 907110102,
+    "likelihood_batch": 2048,
+    "descriptive_points_per_replicate": 128,
+    "raw_compression": "stored"
+  },
+  "budget": {
+    "maximum_numeric_bytes": 4294967296,
+    "maximum_active_raw_bytes": 1073741824,
+    "maximum_production_likelihood_values": 900000000,
+    "maximum_training_likelihood_values": 90000000,
+    "maximum_total_likelihood_values": 1000000000
+  },
+  "diagnostics": {
+    "protocol": "configs/calibration/diagnostics_iid_v1.json",
+    "mcse_cdf_max": 0.00335,
+    "release_requires_verified_numeric_summary": true
+  },
+  "notes": [
+    "Low level fixes cuts and checks refinement; high level supplies inference.",
+    "Training, two IID levels, target/replicate seeds and descriptive samples are separate.",
+    "Producer never deserializes truth.",
+    "No native backend is silently enabled.",
+    "Raw quota applies to active blocks; no automatic deletion without linked numerical diagnostics."
+  ],
+  "training_targets_per_block": 64,
+  "production_targets_per_block": 16
+}

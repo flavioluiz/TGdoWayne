@@ -1,0 +1,40 @@
+{
+  "stage": "compact_target_diagnostics_v1",
+  "existing_dependency": {
+    "module": "src/inference/iid_optimized.py",
+    "sha256": "b9d1ab59bf0323b933084b518c2bc249e32fdad044a02f7d380e1690d968d458",
+    "action": "Already integrated ROOT; do not copy"
+  },
+  "files": [
+    {
+      "source": "src/inference/campaign_diagnostics.py",
+      "destination": "src/inference/campaign_diagnostics.py",
+      "sha256": "26ec505180ed183121441f8f9258dcca444ed84b50bd8546a06e41d1ce762c29",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "scripts/diagnose_calibration_target.py",
+      "destination": "scripts/diagnose_calibration_target.py",
+      "sha256": "690bd9977d6bc2e772b2055078a98cb57c4db0edbe93931646e2e3f8d23275f3",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "configs/campaign_diagnostics_v1.json",
+      "destination": "configs/calibration/campaign_diagnostics_v1.json",
+      "sha256": "35cddd37258b7728df3889fd60f4a11b600305e73f1ad8bc347f8ef28250ef76",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "tests/test_campaign_diagnostics.py",
+      "destination": "tests/test_campaign_diagnostics.py",
+      "sha256": "a13387ede6a56d7907ec69c338619de93613e1546e935e0d8e48ab332c0ace35",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "DIAGNOSTIC_READER.md",
+      "destination": "docs/inferencia/leitor_diagnostico_c07.md",
+      "sha256": "4411a8ee9ea65dd65ac3ffae755ed3ff5e6adda57a6a8cb6f27b7571713f523c",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "status": "WIDE16_DIAGNOSTIC_REVIEW_COMPLETE_NOT_SBC500",
+  "criteria_unchanged": true,
+  "new_likelihood_evaluations_in_diagnostics": 0,
+  "versioned_files_modified": false,
+  "package_files": [
+    {
+      "path": "tmp/c07_wide16_diagnostics/REVIEW.md",
+      "sha256": "9f4cd2d1904d068ae96deb9669630abfbf3e3505310ca2cf6d9222e0db4e6d09",
+      "bytes": 10141
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/diagnostics_v1_wide16.json",
+      "sha256": "fdf8127c8bedb97962139e63233e263f411fef95a5de0f01ad3ce11aa42f28ea",
+      "bytes": 2206774
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/diagnostics_v1_wide16_summary.json",
+      "sha256": "23c651249cc3ee2cf7e25af69e4d14636d230df2caafc7ad97788aceae52fa16",
+      "bytes": 687
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/execution_source_audit.json",
+      "sha256": "0d740cb39cf369f3e7c009d4716edd348df6d267d1b00c088c266f26d83db34d",
+      "bytes": 15266
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/fixed_grid_independent_verification.json",
+      "sha256": "c87b4077224f027c5a81fb1ee43520b471f24b4e7f75908b4c1b00cb5b493c07",
+      "bytes": 4482
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/inputs/input_manifest.json",
+      "sha256": "838127b6f458b47af577afa3cc774bbf7b86b30c214a22750a65e4a5574b1bf7",
+      "bytes": 38694
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/inputs/protocol_execution.json",
+      "sha256": "d71141bef91a92bc0fb8538ef085fadb5250313615a5c90fe3451b80fe2114e5",
+      "bytes": 2814
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/inputs/truth_logl_selected.json",
+      "sha256": "b5b1e1177aaaef4858c7d5bfbeda6e0036bbd661c9cdbd2b12d7547e31e2c313",
+      "bytes": 932
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/prepare_inputs.py",
+      "sha256": "2a21d9df0034daa4ea19bd63d6e189b4c64f86deb536dc8e017004eff01f4535",
+      "bytes": 6629
+    },
+    {
+      "path": "tmp/c07_wide16_diagnostics/verify_fixed_grid.py",
+      "sha256": "e9307a63478c8e037be8aab43d386419e2c3721e6c6f9d7850c1be0ca46a7cfe",
+      "bytes": 5228
+    }
+  ],
+  "antecedents": [
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/execution_summary.json",
+      "sha256": "9c7ba20c4ce0368c4941ed1b89d3104478c8e4626bffe40b3d53af7e18e557ec",
+      "bytes": 112063
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/execution_manifest.json",
+      "sha256": "4abc9088eb10a5823bbdda140b4ae1ead2f973991b14ed56335639a18d43f61e",
+      "bytes": 7581
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/config.json",
+      "sha256": "33ac559a5bf3757531dcb9661afdf0a5bfc7d23e349a52dc18a4d04bb5c55de4",
+      "bytes": 7014
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/PROVENANCE_NOTE.md",
+      "sha256": "2cfbd0a5bc9e2832a096c3d3995a3518154df59650543bed01aaca093a214fe5",
+      "bytes": 1449
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/fixed_grid_summary.json",
+      "sha256": "dbb7db9c86f9dfd321987d6eb31e8c73bd56e9af3e7aef14cc1a902852f9f56f",
+      "bytes": 15425
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/fixed_grid_diagnostics.json",
+      "sha256": "98aba25bd3d86e3afc9c416b112ccf4b64c19410269099ff418b8c5143a1e78e",
+      "bytes": 2423879
+    },
+    {
+      "path": "tmp/c07_cold_tail_review/wide_production/diagnose_fixed_grid.py",
+      "sha256": "d1edb15f9206d5232bf452bf02675992081fd1d3796d111c1c2f28baca356d6e",
+      "bytes": 3722
+    },
+    {
+      "path": "scripts/diagnosticar_importancia_iid_otimizada.py",
+      "sha256": "6d4b406cf2eff1f5e9e355a2f89821eac9dfdc5eba276828e7ad2046dbf81b90",
+      "bytes": 8619
+    },
+    {
+      "path": "src/inference/iid_diagnostics.py",
+      "sha256": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+      "bytes": 11141
+    },
+    {
+      "path": "src/inference/iid_optimized.py",
+      "sha256": "b9d1ab59bf0323b933084b518c2bc249e32fdad044a02f7d380e1690d968d458",
+      "bytes": 11850
+    },
+    {
+      "path": "results/C07/reference/quantiles/posterior_reference.json",
+      "sha256": "6dbf185a0326a69832ef211b4f861f887443a07072eaaffff2fafb2bb08ae110",
+      "bytes": 13843
+    }
+  ],
+  "raw_npz_excluded_from_package_manifest": "128 hashes preserved in inputs/input_manifest.json; primary production retains raws",
+  "conclusion": "High-level engineering criteria satisfied for selected16; freeze a new proposal identity before integration, retain all diagnostics in future production."
+}

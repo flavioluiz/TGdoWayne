@@ -1,0 +1,186 @@
+{
+  "label": "GUARDED_CPP_CANDIDATE_INDEPENDENT_REVIEW",
+  "module": "tmp/c07_cpp_review/sources/native_owned.py",
+  "checks": [
+    {
+      "name": "guarded_beta_fixture_matches_direct_matrices",
+      "pass": true,
+      "maximum_abs_difference": 5.684341886080802e-14
+    },
+    {
+      "name": "truncated_meanbank",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "truncated_covbank",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "nonfinite_covbank",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "nonsymmetric_covbank",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "complex_diagonal",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "nonhermitian_gamma",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "wrong_q_shape",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "wrong_y_shape",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "inconsistent_compression",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "nonmonotone_nodes",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "unsupported_coordinate",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "zero_white_pattern",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "zero_frequency",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "zero_scale",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "negative_dt",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "zero_dataset_count",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "theta_strings",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "theta_bool",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "theta_complex",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "theta_nan",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "theta_shape",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "target_float",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "target_bool",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "target_negative",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "target_too_large",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "target_uint_overflow",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "outside_prior",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "empty_batch_supported",
+      "pass": true
+    },
+    {
+      "name": "nonSPD_moment_covariance_raises_without_jitter",
+      "pass": true,
+      "exception": "LinAlgError"
+    },
+    {
+      "name": "static_buffers_owned_aligned_contiguous_readonly",
+      "pass": true
+    },
+    {
+      "name": "static_buffer_write_raises",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "unaligned_theta_copied_safely",
+      "input_aligned": false,
+      "pass": true
+    },
+    {
+      "name": "source_model_and_bounds_mutation_has_no_effect",
+      "pass": true
+    }
+  ],
+  "all_checks_pass": true,
+  "check_count": 34,
+  "per_call_ownership": {
+    "targets_share_caller_memory": false
+  },
+  "source_mutation_test_is_separate_from_concurrent_input_mutation": true,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/guarded_review.py": "c487b4962fc15564f6d21dd83c6dbb627eedb63fb2bb3aa488222d7df7f7c2ec",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/independent_review.py": "dad7a80730d97f264a9e060679944f85be82a48c97f239dcc882924e7b3e4a0c",
+    "tmp/c07_cpp_review/sources/native_owned.py": "5da411e92c3340370ce8eebb94862cf32d39f99053f7f871f3c716c0ac8a391f",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/sources/full_guarded.dylib": "a9e909e653a2a34fa2d40295fd7f3cc28bfc7acf058591bd0adc5ab938bea9d0",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/sources/full_guarded.cpp": "4e089ba8588158d7ab3233c2601a55942ddfeb1e28c6d06578a582f22da66154"
+  }
+}

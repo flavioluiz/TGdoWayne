@@ -1,0 +1,84 @@
+{
+  "status": "TWO_FROZEN_TRAINING_LEVELS_AWAITING_INDEPENDENT_IID",
+  "settings": {
+    "targets": [
+      62
+    ],
+    "training_steps": [
+      4096,
+      8192
+    ],
+    "chains": 4,
+    "seeds": [
+      907103101,
+      907103102
+    ],
+    "points_for_EM": 2048,
+    "selection": "512 fixed evenly spaced time indices in the second half, all four chains.",
+    "adaptation_window": 4000,
+    "mass_probability": 0.15,
+    "nuisance_probability": 0.2,
+    "independence_probability": 0.45,
+    "student_df": 5.0,
+    "student_scales": [
+      1.0,
+      3.0
+    ],
+    "student_weights": [
+      0.75,
+      0.25
+    ],
+    "em_components": 4,
+    "em_iterations": 80,
+    "covariance_floor": 0.03,
+    "inflation": 1.1,
+    "maximum_estimated_numeric_bytes": 2147483648,
+    "table_sha256": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "scope": "One selected pilot target A_Gd14. Adaptive trajectories train proposals only; no posterior or coverage claim. Truth arrays are not loaded."
+  },
+  "levels": [
+    {
+      "steps": 4096,
+      "seed": 907103101,
+      "training_seconds": 5.888301415950991,
+      "fit_seconds": 1.4415324580622837,
+      "proposal": "tmp/c07_cold_training/results/warmup4096_proposal.json"
+    },
+    {
+      "steps": 8192,
+      "seed": 907103102,
+      "training_seconds": 13.489041917026043,
+      "fit_seconds": 1.575517165940255,
+      "proposal": "tmp/c07_cold_training/results/warmup8192_proposal.json"
+    }
+  ],
+  "table_seconds": 5.443499583052471,
+  "kernel_seconds": 51.14396949997172,
+  "spline_estimated_numeric_bytes": 1440088064,
+  "kernel_budget": {
+    "estimated_retained_bank_bytes": 576115200,
+    "estimated_numeric_bytes": 1094418944,
+    "maximum_estimated_numeric_bytes": 2147483648,
+    "scope": "Numeric arrays; not an imposed process RSS ceiling. ORF spline construction is separately budgeted."
+  },
+  "darwin_maxrss_bytes": 1885519872,
+  "source_unchanged": true,
+  "data_fields_loaded": [
+    "q",
+    "x_physical",
+    "x_gaussian"
+  ],
+  "source_sha256": {
+    "tmp/c07_cold_training/run_training.py": "4c4c3c2331e798e8f0335f4f1d48cd942530a4251f4f4cba568fc59d48cac98c",
+    "tmp/c07_memory_kernel/preallocated_cubic.py": "e262b3ac865860b381d16e3084d94f6efb3147c04a4bb7236a9d6d635a03448c",
+    "tmp/c07_sampler/cubic_even.py": "1f4f1b2052ac3f7f84cc55a2429218dca89eea014a74d43aeba6f416ac8f4ca1",
+    "tmp/c07_sampler/cubic.py": "d2aefbccd181509e53437485e0a32689e48fb2fe67a05f29910fa0061460a76b",
+    "tmp/c07_sampler/pointwise.py": "590ea0de044274cf75f18b904f99d5ec3ea22e0f84237ac356a26be5d388aa77",
+    "tmp/c07_sampler/mh.py": "86cffa45ef46f44a599f733fa863512af62c62c9373a860c83b6ca58213a7394",
+    "tmp/c07_sampler/linalg_batch.py": "29e5fa3bd2de1be3ae0fbfd6e65668993a299fc2a2ab13d7a493f54ee4dd64e4",
+    "tmp/c07_efficiency/proposal.py": "016f6e68b407c1eee87ba63e8e4490d037c8cb99834ac9927757c91de58a0182",
+    "configs/calibration/pilot_initial.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "results/C07/fixtures/pilot_data.npz": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "tmp/c07_sampler/results/table_beta8193_local.npz": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d"
+  }
+}

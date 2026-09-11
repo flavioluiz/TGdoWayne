@@ -25,3 +25,11 @@ A inclusão posterior de helicidade zero fica condicionada à derivação da res
 **Estado epistemológico:** nenhum estudo equivalente à comparação tripla calibrada foi localizado nas fontes consultadas. Isso sustenta investimento na execução, não uma declaração de prioridade absoluta. C03 encerra a decisão bibliográfica; a novidade e utilidade final dependem dos resultados de C08–C11 e de nova busca antes de submeter.
 
 A [segunda leitura independente](segunda_leitura_metodos.md) detalha páginas e equações dos antecedentes. Os [ajustes metodológicos](ajustes_metodologicos.md) foram incorporados aos planos C05–C10.
+
+**Reavaliação dirigida em 11/09/2026:** os antecedentes PFOS (2025/2026),
+Wang–Zhao (2024), compressão por score, Fisher e janela finita reforçam o recorte
+acima. Conservar frequência e covariância de pares já tem implementação pública;
+Fisher preservada não implica posterior integralmente preservada. A comparação
+de limites de massa também deve explicitar o Jacobiano da priori de velocidade.
+A [auditoria complementar](atualizacao_20260911/REPORT.md) registra as fontes e
+suas limitações. Nenhuma dessas adições altera retroativamente o protocolo C07.

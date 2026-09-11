@@ -1,0 +1,535 @@
+{
+  "scope": "Algorithmic diagnostic comparison only; both ORF tables unapproved and targets differ slightly",
+  "records": {
+    "pilot139": {
+      "overall": {
+        "targets_examined": 80,
+        "targets_total": 80,
+        "targets_passing_diagnostic_mc_only": 0,
+        "targets_passing_rhat_ess_floors": 59,
+        "maximum_rhat": 1.0278238328893783,
+        "minimum_bulk_ess": 173.20956090316184,
+        "minimum_tail_ess": 48.546794518730444,
+        "cdf_count": 2080,
+        "maximum_mcse": null,
+        "maximum_finite_mcse": 0.03148888696778621,
+        "cdf_above_mcse_target": 1755,
+        "constant_unresolved_indicators": 1,
+        "batch_adequacy_failures": 828,
+        "maximum_estimated_indicator_tau": null,
+        "maximum_finite_estimated_indicator_tau": 1349.9552472968064
+      },
+      "MCSE_percentiles_50_90_95_99": [
+        0.005471506968995768,
+        0.011231700810723387,
+        0.012984026347095463,
+        0.017513192837462655
+      ],
+      "worst_CDFs": [
+        {
+          "mcse": null,
+          "model": "B_G",
+          "realization": 14,
+          "parameter": "log10_Ar",
+          "cut": "truth",
+          "tau": null,
+          "cdf": 1.0
+        },
+        {
+          "mcse": 0.03148888696778621,
+          "model": "A_CN",
+          "realization": 12,
+          "parameter": "log10_Agw",
+          "cut": "truth",
+          "tau": 1161.0618580079688,
+          "cdf": 0.05950927734375
+        },
+        {
+          "mcse": 0.03128993008424079,
+          "model": "A_CN",
+          "realization": 12,
+          "parameter": "log10_Agw",
+          "cut": 0.05,
+          "tau": 1349.9552472968064,
+          "cdf": 0.0500335693359375
+        },
+        {
+          "mcse": 0.022166726322356847,
+          "model": "A_CN",
+          "realization": 12,
+          "parameter": "log10_Ar",
+          "cut": 0.9,
+          "tau": 359.2922413042877,
+          "cdf": 0.9004669189453125
+        },
+        {
+          "mcse": 0.02159968257059061,
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "cut": "truth",
+          "tau": 133.25909120742375,
+          "cdf": 0.64337158203125
+        },
+        {
+          "mcse": 0.020791494111103585,
+          "model": "A0_CN",
+          "realization": 9,
+          "parameter": "log10_Agw",
+          "cut": 0.9,
+          "tau": 315.0205233698758,
+          "cdf": 0.90008544921875
+        },
+        {
+          "mcse": 0.020402317097358225,
+          "model": "A_CN",
+          "realization": 8,
+          "parameter": "log10_Ar",
+          "cut": 0.5,
+          "tau": 109.11863253076065,
+          "cdf": 0.50006103515625
+        },
+        {
+          "mcse": 0.020120110161807415,
+          "model": "A_CN",
+          "realization": 8,
+          "parameter": "log10_Ar",
+          "cut": "truth",
+          "tau": 106.89241617535733,
+          "cdf": 0.54248046875
+        },
+        {
+          "mcse": 0.019949398608290054,
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "log10_Agw",
+          "cut": 0.5,
+          "tau": 104.32767804526098,
+          "cdf": 0.5000457763671875
+        },
+        {
+          "mcse": 0.019658639597756388,
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "cut": 0.9,
+          "tau": 281.39785436855874,
+          "cdf": 0.899993896484375
+        },
+        {
+          "mcse": 0.018944214905702823,
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "cut": 0.5,
+          "tau": 94.07909813117334,
+          "cdf": 0.5
+        },
+        {
+          "mcse": 0.01881737104884379,
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "log10_Agw",
+          "cut": "truth",
+          "tau": 93.56493140161203,
+          "cdf": 0.4554901123046875
+        }
+      ],
+      "worst_rhat": [
+        {
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "rhat": 1.0278238328893783,
+          "bulk_ess": 342.56491871119323,
+          "tail_ess": 233.65891007636122
+        },
+        {
+          "model": "A_CN",
+          "realization": 12,
+          "parameter": "log10_Agw",
+          "rhat": 1.022619772486415,
+          "bulk_ess": 173.20956090316184,
+          "tail_ess": 48.546794518730444
+        },
+        {
+          "model": "B_CN",
+          "realization": 10,
+          "parameter": "gamma_gw",
+          "rhat": 1.017434843908155,
+          "bulk_ess": 477.8473432094018,
+          "tail_ess": 290.15409383402385
+        },
+        {
+          "model": "A_CN",
+          "realization": 12,
+          "parameter": "log10_Ar",
+          "rhat": 1.0162434443450032,
+          "bulk_ess": 257.77834788755706,
+          "tail_ess": 285.62173621160093
+        },
+        {
+          "model": "B_G",
+          "realization": 0,
+          "parameter": "log10_Agw",
+          "rhat": 1.0162073839296772,
+          "bulk_ess": 446.5042088240346,
+          "tail_ess": 520.5035057886276
+        },
+        {
+          "model": "A_CN",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "rhat": 1.015493040909957,
+          "bulk_ess": 492.770122256298,
+          "tail_ess": 226.42757160050527
+        },
+        {
+          "model": "A0_CN",
+          "realization": 9,
+          "parameter": "log10_Agw",
+          "rhat": 1.0151452329693202,
+          "bulk_ess": 370.2183312313511,
+          "tail_ess": 137.59794090172352
+        },
+        {
+          "model": "B_CN",
+          "realization": 10,
+          "parameter": "log10_Agw",
+          "rhat": 1.0135510961585463,
+          "bulk_ess": 556.0834153213348,
+          "tail_ess": 662.6562198361314
+        },
+        {
+          "model": "B_CN",
+          "realization": 0,
+          "parameter": "log10_Agw",
+          "rhat": 1.0135445357666137,
+          "bulk_ess": 363.9789283187587,
+          "tail_ess": 353.1639305754152
+        },
+        {
+          "model": "A_CN",
+          "realization": 4,
+          "parameter": "log10_Agw",
+          "rhat": 1.011933253360535,
+          "bulk_ess": 499.14246275248405,
+          "tail_ess": 175.849020234049
+        },
+        {
+          "model": "A0_CN",
+          "realization": 9,
+          "parameter": "gamma_gw",
+          "rhat": 1.0116423138988013,
+          "bulk_ess": 802.0032630946743,
+          "tail_ess": 911.4132154985266
+        },
+        {
+          "model": "B_CN",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "rhat": 1.0114721063874677,
+          "bulk_ess": 402.93688154446636,
+          "tail_ess": 319.7466596489418
+        }
+      ],
+      "by_model": {
+        "A0_CN": {
+          "max_rhat": 1.0151452329693202,
+          "min_bulk_ess": 370.2183312313511,
+          "min_tail_ess": 137.59794090172352,
+          "max_finite_mcse": 0.020791494111103585
+        },
+        "A_CN": {
+          "max_rhat": 1.022619772486415,
+          "min_bulk_ess": 173.20956090316184,
+          "min_tail_ess": 48.546794518730444,
+          "max_finite_mcse": 0.03148888696778621
+        },
+        "B_CN": {
+          "max_rhat": 1.017434843908155,
+          "min_bulk_ess": 363.9789283187587,
+          "min_tail_ess": 290.15409383402385,
+          "max_finite_mcse": 0.018480485569268536
+        },
+        "A_G": {
+          "max_rhat": 1.0101189061638083,
+          "min_bulk_ess": 389.00521407095073,
+          "min_tail_ess": 134.5306610895615,
+          "max_finite_mcse": 0.019949398608290054
+        },
+        "B_G": {
+          "max_rhat": 1.0278238328893783,
+          "min_bulk_ess": 342.56491871119323,
+          "min_tail_ess": 161.4040459394456,
+          "max_finite_mcse": 0.02159968257059061
+        }
+      }
+    },
+    "pilot277_student": {
+      "overall": {
+        "targets_examined": 80,
+        "targets_total": 80,
+        "targets_passing_diagnostic_mc_only": 0,
+        "targets_passing_rhat_ess_floors": 68,
+        "maximum_rhat": 1.0339735577628244,
+        "minimum_bulk_ess": 78.66203453339482,
+        "minimum_tail_ess": 19.563129616192033,
+        "cdf_count": 2080,
+        "maximum_mcse": 0.04938323808887016,
+        "maximum_finite_mcse": 0.04938323808887016,
+        "cdf_above_mcse_target": 1195,
+        "constant_unresolved_indicators": 0,
+        "batch_adequacy_failures": 227,
+        "maximum_estimated_indicator_tau": 3349.975248630827,
+        "maximum_finite_estimated_indicator_tau": 3349.975248630827
+      },
+      "MCSE_percentiles_50_90_95_99": [
+        0.003667452651191476,
+        0.006996703660739222,
+        0.00812074081433863,
+        0.01300714836340087
+      ],
+      "worst_CDFs": [
+        {
+          "mcse": 0.04938323808887016,
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Ar",
+          "cut": 0.05,
+          "tau": 3349.975248630827,
+          "cdf": 0.05023193359375
+        },
+        {
+          "mcse": 0.046082326266816694,
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Ar",
+          "cut": "truth",
+          "tau": 1069.2130638049643,
+          "cdf": 0.1538238525390625
+        },
+        {
+          "mcse": 0.04069153248839396,
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "loglikelihood",
+          "cut": "truth",
+          "tau": 620.8019875624293,
+          "cdf": 0.22576904296875
+        },
+        {
+          "mcse": 0.022034905530134777,
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "log10_Agw",
+          "cut": 0.5,
+          "tau": 127.28062940467174,
+          "cdf": 0.50006103515625
+        },
+        {
+          "mcse": 0.021847055658960644,
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Ar",
+          "cut": 0.5,
+          "tau": 125.1197166461188,
+          "cdf": 0.5
+        },
+        {
+          "mcse": 0.021759702215673707,
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "cut": 0.5,
+          "tau": 124.12115771870731,
+          "cdf": 0.5000152587890625
+        },
+        {
+          "mcse": 0.019492046021533323,
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Agw",
+          "cut": 0.5,
+          "tau": 99.59895416322735,
+          "cdf": 0.5
+        },
+        {
+          "mcse": 0.018982240464169905,
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "cut": 0.05,
+          "tau": 491.71585700379757,
+          "cdf": 0.0505828857421875
+        },
+        {
+          "mcse": 0.017100746845136752,
+          "model": "A_CN",
+          "realization": 4,
+          "parameter": "log10_Agw",
+          "cut": 0.05,
+          "tau": 403.10194198150054,
+          "cdf": 0.050048828125
+        },
+        {
+          "mcse": 0.017027552820266693,
+          "model": "A_CN",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "cut": 0.9,
+          "tau": 211.11463091404718,
+          "cdf": 0.899993896484375
+        },
+        {
+          "mcse": 0.017018856994231266,
+          "model": "A_CN",
+          "realization": 8,
+          "parameter": "log10_EFAC",
+          "cut": 0.05,
+          "tau": 399.5967871406202,
+          "cdf": 0.0500030517578125
+        },
+        {
+          "mcse": 0.01657478296401651,
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "gamma_gw",
+          "cut": 0.5,
+          "tau": 72.01709898074895,
+          "cdf": 0.5000152587890625
+        }
+      ],
+      "worst_rhat": [
+        {
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Ar",
+          "rhat": 1.0339735577628244,
+          "bulk_ess": 78.66203453339482,
+          "tail_ess": 19.563129616192033
+        },
+        {
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "loglikelihood",
+          "rhat": 1.015416595930176,
+          "bulk_ess": 205.92626076979994,
+          "tail_ess": 640.8363460029036
+        },
+        {
+          "model": "A0_CN",
+          "realization": 11,
+          "parameter": "log10_Agw",
+          "rhat": 1.012876484226482,
+          "bulk_ess": 279.6714003196947,
+          "tail_ess": 455.04109120685376
+        },
+        {
+          "model": "A_G",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "rhat": 1.011084294268041,
+          "bulk_ess": 210.53785005513063,
+          "tail_ess": 133.28022488299348
+        },
+        {
+          "model": "A_CN",
+          "realization": 8,
+          "parameter": "log10_Agw",
+          "rhat": 1.010696110803551,
+          "bulk_ess": 423.9850435384777,
+          "tail_ess": 210.4776826082358
+        },
+        {
+          "model": "A_G",
+          "realization": 3,
+          "parameter": "gamma_gw",
+          "rhat": 1.0079611495774465,
+          "bulk_ess": 1165.0459336103866,
+          "tail_ess": 354.67925003222473
+        },
+        {
+          "model": "B_CN",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "rhat": 1.0072936131390258,
+          "bulk_ess": 892.0084179610049,
+          "tail_ess": 342.39886314776555
+        },
+        {
+          "model": "A_CN",
+          "realization": 8,
+          "parameter": "log10_EFAC",
+          "rhat": 1.0071772567697934,
+          "bulk_ess": 573.7822199608241,
+          "tail_ess": 164.00532263773567
+        },
+        {
+          "model": "B_CN",
+          "realization": 0,
+          "parameter": "log10_Agw",
+          "rhat": 1.0067947995313808,
+          "bulk_ess": 960.1458509760897,
+          "tail_ess": 777.406336795422
+        },
+        {
+          "model": "A_CN",
+          "realization": 4,
+          "parameter": "log10_Ar",
+          "rhat": 1.0066647651508764,
+          "bulk_ess": 662.4271534209156,
+          "tail_ess": 218.4804265894277
+        },
+        {
+          "model": "A0_CN",
+          "realization": 10,
+          "parameter": "gamma_gw",
+          "rhat": 1.0065585973587348,
+          "bulk_ess": 1523.9745124867495,
+          "tail_ess": 472.4594096980967
+        },
+        {
+          "model": "A0_CN",
+          "realization": 0,
+          "parameter": "gamma_gw",
+          "rhat": 1.0062446810167,
+          "bulk_ess": 976.4018516942401,
+          "tail_ess": 380.32055286921576
+        }
+      ],
+      "by_model": {
+        "A0_CN": {
+          "max_rhat": 1.0339735577628244,
+          "min_bulk_ess": 78.66203453339482,
+          "min_tail_ess": 19.563129616192033,
+          "max_finite_mcse": 0.04938323808887016
+        },
+        "A_CN": {
+          "max_rhat": 1.010696110803551,
+          "min_bulk_ess": 423.9850435384777,
+          "min_tail_ess": 162.57922171709018,
+          "max_finite_mcse": 0.017100746845136752
+        },
+        "B_CN": {
+          "max_rhat": 1.0072936131390258,
+          "min_bulk_ess": 892.0084179610049,
+          "min_tail_ess": 294.38267938578946,
+          "max_finite_mcse": 0.01436915407925847
+        },
+        "A_G": {
+          "max_rhat": 1.011084294268041,
+          "min_bulk_ess": 210.53785005513063,
+          "min_tail_ess": 133.28022488299348,
+          "max_finite_mcse": 0.022034905530134777
+        },
+        "B_G": {
+          "max_rhat": 1.0044318370428007,
+          "min_bulk_ess": 886.1150045710043,
+          "min_tail_ess": 255.21898572520374,
+          "max_finite_mcse": 0.013644751710858124
+        }
+      }
+    }
+  }
+}

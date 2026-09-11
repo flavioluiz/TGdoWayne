@@ -1,0 +1,59 @@
+{
+  "status": "FROZEN_SBC_DELIVERY_FOR_REVIEW",
+  "files": [
+    {
+      "source": "scripts/sintetizar_calibracao.py",
+      "destination": "scripts/sintetizar_calibracao.py",
+      "sha256": "2968c8005245386a0a4d666747ac7bcc80217437714ea166a69f160565660c9b"
+    },
+    {
+      "source": "scripts/figuras_calibracao.py",
+      "destination": "scripts/figuras_calibracao.py",
+      "sha256": "b2a0f8b340200eb3ee61063687649aff4708f1b8521455f32ff40725aa5254bf"
+    },
+    {
+      "source": "tests/test_sbc_delivery.py",
+      "destination": "tests/test_sbc_delivery.py",
+      "sha256": "f9df93622a6e7b42b577535ccaa03ddc133d07410dc830dd15f564f61f439415"
+    },
+    {
+      "source": "README.md",
+      "destination": "docs/inferencia/sintese_c07.md",
+      "sha256": "ed8aa114ce85caefd576b82077893326116980227b6ec07141e7d2cac110815e"
+    },
+    {
+      "source": "REVIEW.md",
+      "destination": "docs/inferencia/auditoria_sintese_c07.md",
+      "sha256": "3ac7a6ef15071413d2df02a1276e940528425781d057dd15485ac2d26ebf2af3"
+    }
+  ],
+  "optional_toy_figures": [
+    {
+      "source": "results/toy_figures_v2/ecdf_approximate.pdf",
+      "sha256": "1ec085ec5bcf057768b5f271640d1c8021cea1de6ad663b71dfab532d9378b78",
+      "scope": "TOY64_FORMAT_VALIDATION_ONLY"
+    },
+    {
+      "source": "results/toy_figures_v2/ecdf_correct.pdf",
+      "sha256": "dda81e16525b041d5760ee918bb7cad0b527bcd60cdeb1a54c1ece8f9ba5e0c5",
+      "scope": "TOY64_FORMAT_VALIDATION_ONLY"
+    },
+    {
+      "source": "results/toy_figures_v2/ecdf_approximate.svg",
+      "sha256": "2a2ea70150ee1b89c6cbf72d951ebb13b7ba0668dd1a75be972980296424148e",
+      "scope": "TOY64_FORMAT_VALIDATION_ONLY"
+    },
+    {
+      "source": "results/toy_figures_v2/ecdf_correct.svg",
+      "sha256": "b6cdf40430dde613532d320692a707e945fad255c042085c4aa4f7a0726a6e3d",
+      "scope": "TOY64_FORMAT_VALIDATION_ONLY"
+    }
+  ],
+  "tests": {
+    "count": 5,
+    "result": "PASS",
+    "log_sha256": "b0665935441cab636569eba7f87278341b02363643ff9f21b8f6bc28b88399f2"
+  },
+  "visual_QA": "Both final PDFs inspected completely via Poppler",
+  "no_PTA500_posteriors_processed": true
+}

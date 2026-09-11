@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETE",
+  "requested_nodes": 2,
+  "new_nodes": 2,
+  "written_nodes": 2,
+  "existing_nodes": 0,
+  "physical_signature": "c843ce150113aa2f7cf7f2ec3fbc3faca42a136f368de56b86b15ab2789923a1",
+  "provenance": {
+    "name": "real_blas_precomputed_associated_legendre_v2_guarded",
+    "source_sha256": {
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3"
+    },
+    "own_budget": {
+      "maximum_estimated_numeric_memory_bytes": 805306368,
+      "maximum_total_real_multiplications": 20000000000,
+      "maximum_requested_nodes": 3,
+      "batch_size": 2,
+      "maximum_batch_real_multiplications": 6000000000
+    },
+    "legacy_provider_limits_modified": false,
+    "physical_signature_unchanged": true,
+    "geometry_dot_roundoff_clipping": true,
+    "eigenvalue_clipping": false
+  },
+  "total_real_multiplications": 11907653184,
+  "estimated_peak_numeric_bytes": 548007296,
+  "estimated_table_storage_bytes": 18432,
+  "timings": [
+    {
+      "frequency": 1,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 1496,
+          "nmu": 3012,
+          "basis_build_seconds": 0.13929220801219344,
+          "evaluation_seconds": 0.00471616699360311
+        },
+        {
+          "resolution": "fine",
+          "lmax": 1536,
+          "nmu": 3092,
+          "basis_build_seconds": 0.14789258304517716,
+          "evaluation_seconds": 0.005043999990448356
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.9417800700693988e-13,
+      "minimum_eigenvalue": 0.19836226924895184
+    },
+    {
+      "frequency": 2,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 2892,
+          "nmu": 5805,
+          "basis_build_seconds": 0.500765208969824,
+          "evaluation_seconds": 0.012437416007742286
+        },
+        {
+          "resolution": "fine",
+          "lmax": 2932,
+          "nmu": 5885,
+          "basis_build_seconds": 0.5116371670737863,
+          "evaluation_seconds": 0.012352082994766533
+        }
+      ],
+      "maximum_coarse_fine_difference": 7.134293156241256e-13,
+      "minimum_eigenvalue": 0.32823579917422896
+    },
+    {
+      "frequency": 3,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 4288,
+          "nmu": 8597,
+          "basis_build_seconds": 1.075047624995932,
+          "evaluation_seconds": 0.02656666690018028
+        },
+        {
+          "resolution": "fine",
+          "lmax": 4328,
+          "nmu": 8677,
+          "basis_build_seconds": 1.0920339580625296,
+          "evaluation_seconds": 0.024192624958232045
+        }
+      ],
+      "maximum_coarse_fine_difference": 7.593925488436071e-13,
+      "minimum_eigenvalue": 0.4017710451023174
+    },
+    {
+      "frequency": 4,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 5685,
+          "nmu": 11390,
+          "basis_build_seconds": 1.8636205419898033,
+          "evaluation_seconds": 0.04092679196037352
+        },
+        {
+          "resolution": "fine",
+          "lmax": 5725,
+          "nmu": 11470,
+          "basis_build_seconds": 1.8843244999879971,
+          "evaluation_seconds": 0.04192345903720707
+        }
+      ],
+      "maximum_coarse_fine_difference": 6.693534615465069e-13,
+      "minimum_eigenvalue": 0.4477213147748982
+    }
+  ],
+  "sparse_direct_checks": [],
+  "concurrent_existing_preserved": [],
+  "VECLIB_MAXIMUM_THREADS": "2",
+  "seconds": 7.447823374997824,
+  "destination": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_fixed_scenarios/results/orf_cache"
+}

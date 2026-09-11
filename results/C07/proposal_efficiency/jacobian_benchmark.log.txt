@@ -1,0 +1,43 @@
+{
+  "status": "PASS_EQUIVALENT_LOGISTIC_JACOBIAN",
+  "seed": 907103601,
+  "extreme_points": 20204,
+  "maximum_difference_from_logaddexp": 7.105427357601002e-15,
+  "maximum_difference_from_scipy_logistic_logpdf": 4.440892098500626e-16,
+  "maximum_5d_sum_difference": 1.0658141036401503e-14,
+  "timing_N": 65536,
+  "timings": [
+    {
+      "implementation": "reference",
+      "seconds": [
+        0.05023254198022187,
+        0.049333499977365136,
+        0.0493264578981325,
+        0.049387084087356925,
+        0.04930737498216331,
+        0.04926666698884219,
+        0.04945283301640302,
+        0.04940883396193385
+      ],
+      "median_seconds": 0.04936029203236103
+    },
+    {
+      "implementation": "one_exponential",
+      "seconds": [
+        0.02294591604731977,
+        0.021463458891958,
+        0.021243707975372672,
+        0.021187208010815084,
+        0.021103499922901392,
+        0.021310458076186478,
+        0.02109620801638812,
+        0.02113345800898969
+      ],
+      "median_seconds": 0.021215457993093878
+    }
+  ],
+  "source_sha256": {
+    "benchmark_jacobian.py": "c2eb3df96f2521852df747a80fc8edd520bdcb8169a8cb1d6919202908013a85",
+    "logistic_jacobian.py": "68fa3111dde7cee707b83ee1fd2fa04704cc0028fe3185f885614917cd9dd1a6"
+  }
+}

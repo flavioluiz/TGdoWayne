@@ -1,0 +1,21 @@
+{
+  "schema": "C07_FIXED96_COMPACT_REVIEW_v1",
+  "status": "PASS_TRANSPORT_FIXTURES_ONLY",
+  "tests": 9,
+  "test_wall_seconds": 19.827,
+  "new_fixed96_tests": 4,
+  "scope": "Explicit --fixed96 requires all96 A0 targets, masked schema, immutable generation/mask metadata and all receipts. No scientific arrays are deserialized. No physical fixed96 posterior has yet been produced.",
+  "historical_backward_compatibility": {
+    "bundle": "tmp/c07_integrated_wide3_bundle",
+    "targets": 3,
+    "files": 260,
+    "status": "ALL_ARCHIVED_BYTES_VERIFIED"
+  },
+  "sha256": {
+    "scripts/compactar_calibracao.py": "960ff66f69744e60d71cb27154de1e444ec09533c6ede0da14de66d56e7d2978",
+    "tests/test_compact_archive.py": "c16462b4dbdcbfae6b5a3ef5fff004c413f4795867ddd2165167451c0e7f95d8",
+    "tmp/c07_compact_fixed_review/tests.log": "8d87f9d03eb041d8e29cbff111d6a836fb9585f061bdc6c874719ded02d1b30a",
+    "tmp/c07_compact_fixed_review/original/compactar_calibracao.py": "944e86e2865e1a20234363e79fca47bbbb1d2a69108000b372d73c454dd852b4",
+    "tmp/c07_compact_fixed_review/original/test_compact_archive.py": "5b405320ad22b0551b0d5de89e167ea448c8a49b492212dd91afc107c86cbf43"
+  }
+}

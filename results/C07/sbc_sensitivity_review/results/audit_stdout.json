@@ -1,0 +1,196 @@
+{
+  "checks": {
+    "ks_ecdf": {
+      "boxes": 325,
+      "assignments": 4585,
+      "maximum_roundoff_excess": 0.0,
+      "status": "PASS",
+      "known_loose_lower_example": {
+        "n": 1,
+        "statistic_lower_bound": 0.0,
+        "statistic_upper_bound": 1.0,
+        "pvalue_lower": 0.0,
+        "pvalue_upper": 1.0,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "actual_minimum_statistic_for_that_example": 0.5
+    },
+    "holm": {
+      "boxes": 80,
+      "vectors": 6480,
+      "maximum_closed_testing_difference": 0.0,
+      "status": "PASS"
+    },
+    "coverage": {
+      "cases": 200,
+      "assignments": 23310,
+      "maximum_pvalue_roundoff_excess": 4.440892098500626e-16,
+      "status": "PASS"
+    },
+    "mcnemar": {
+      "cases": 729,
+      "assignments": 4096,
+      "conservative_gap_example": null,
+      "status": "PASS",
+      "unattainable_count_example": {
+        "certain_x": [
+          true,
+          false
+        ],
+        "possible_x": [
+          true,
+          true
+        ],
+        "certain_y": [
+          true,
+          false
+        ],
+        "possible_y": [
+          true,
+          true
+        ],
+        "rectangle_permits": [
+          1,
+          1
+        ],
+        "actual_attainable_counts": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "reason": "First pair is forced agreement; only the second can be discordant."
+      }
+    },
+    "envelope_defaults": {
+      "status": "PASS",
+      "output": {
+        "z": 4.970830636716245,
+        "family_size": 15000,
+        "alpha_mc": 0.01,
+        "deterministic_component": 0.002,
+        "unresolved_count": 2,
+        "status": "ASYMPTOTIC_NUMERICAL_SENSITIVITY_NOT_EXACT_CONFIDENCE"
+      },
+      "lower": [
+        0.09302916936328376,
+        0.0,
+        0.0
+      ],
+      "upper": [
+        0.10697083063671625,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "guard_defect",
+      "finding": "coverage_bounds accepts family_size=.5 and returns narrower simultaneous interval",
+      "example": {
+        "n": 20,
+        "nominal": 0.9,
+        "certainly_covered": 18,
+        "possibly_covered": 18,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.9,
+          0.9
+        ],
+        "pvalue_lower": 1.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.6830172859809177,
+          0.9876514728297052
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.7173814751141391,
+          0.9819347969145814
+        ]
+      }
+    },
+    {
+      "id": "F2",
+      "severity": "guard_contract",
+      "finding": "Numeric scalar controls are not uniformly strict; shape-1 arrays can leak into metadata",
+      "examples": {
+        "boolean_deterministic": {
+          "accepted": true,
+          "metadata_types": {
+            "z": "float",
+            "family_size": "int",
+            "alpha_mc": "float",
+            "deterministic_component": "bool",
+            "unresolved_count": "int",
+            "status": "str"
+          }
+        },
+        "array_alpha": {
+          "accepted": false,
+          "exception": "TypeError"
+        },
+        "array_deterministic": {
+          "accepted": true,
+          "metadata_types": {
+            "z": "float",
+            "family_size": "int",
+            "alpha_mc": "float",
+            "deterministic_component": "ndarray",
+            "unresolved_count": "int",
+            "status": "str"
+          }
+        }
+      }
+    },
+    {
+      "id": "F3",
+      "severity": "interpretation",
+      "finding": "The lower Holm corner means rejection not excluded by marginal bounds; it need not be jointly attainable under extra dependence constraints.",
+      "feasible_pvalue_vectors": [
+        [
+          0.026,
+          0.9
+        ],
+        [
+          0.06,
+          0.01
+        ]
+      ],
+      "actual_adjusted_pvalues": [
+        [
+          0.052,
+          0.9
+        ],
+        [
+          0.06,
+          0.02
+        ]
+      ],
+      "marginal_lower": [
+        0.026,
+        0.01
+      ],
+      "marginal_upper": [
+        0.06,
+        0.9
+      ],
+      "lower_corner_adjusted": [
+        0.026,
+        0.02
+      ],
+      "first_hypothesis_rejected_for_any_feasible_vector": false,
+      "first_hypothesis_rejected_at_marginal_lower_corner": true
+    }
+  ]
+}

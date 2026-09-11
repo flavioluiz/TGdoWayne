@@ -1,0 +1,162 @@
+{
+  "stage": "portable_producer_v2_archive_integrity",
+  "notes": "Only these26newfiles. v1 snapshot preserved in archive/portable_producer_v1. Diagnostic module follows separately. Do not overwrite existing_dependencies/native.",
+  "files": [
+    {
+      "source": "DIAGNOSTIC_SCHEMA.md",
+      "destination": "docs/inferencia/diagnostico_schema_c07.md",
+      "sha256": "d9c021d494e27eea2109bda0f2fc80db2447d5e69ee1fa417eb8a794b844623d",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "README.md",
+      "destination": "docs/inferencia/execucao_c07.md",
+      "sha256": "fc17372827ee5fede945ea0ccd396c924a5f18e1e553a6e22f358b58862b0738",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "configs/campaign_500_prospective.json",
+      "destination": "configs/calibration/campaign_500_prospective.json",
+      "sha256": "e15ac93bbb38236ace460353f89edbd1cd02a21e7021d9a4df9c818053837849",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "scripts/infer_calibration.py",
+      "destination": "scripts/infer_calibration.py",
+      "sha256": "2745307fcdc1d0989789ee6557620ac37a1deeed4840fcf15e2adc140edc35b5",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "scripts/validate_portable_sampler.py",
+      "destination": "scripts/validate_portable_sampler.py",
+      "sha256": "6b2365e40ff3f672af4348c3dc28a221f6fb2d8f9789466d106d89436f00cf4e",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_diagnostic_io.py",
+      "destination": "src/inference/campaign_diagnostic_io.py",
+      "sha256": "e57e10a5af9bcb79a522b1f465ecc89214c976aba029179c53b614021143f9f6",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_iid.py",
+      "destination": "src/inference/campaign_iid.py",
+      "sha256": "8df0ccc17703020ccae44d7015b7a02a3722cc4183988327ec01005d2a59a405",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_io.py",
+      "destination": "src/inference/campaign_io.py",
+      "sha256": "97714f090640fa867c173365d9eacb281e8e134916ed4c8686eb31ead3ac63de",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_runtime.py",
+      "destination": "src/inference/campaign_runtime.py",
+      "sha256": "4847333ef0cbe7a709f7cd527dd92687685d7211c7a4103b49e49fb73e927dc6",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_training.py",
+      "destination": "src/inference/campaign_training.py",
+      "sha256": "719dd7de07018ee0c0317fda2e65e6e41055533777b4b5844426939578c3fe77",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/gmm_density.py",
+      "destination": "src/inference/gmm_density.py",
+      "sha256": "4a6b61218617235b4f3d93ab74690ceedcb238618a4462d5429bff86b20f2e86",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/gmm_fit.py",
+      "destination": "src/inference/gmm_fit.py",
+      "sha256": "ac1192280c1b4a128f11ea7fdb8ef61edad07d241ccdac50d22c6439048095b2",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/gmm_fit_reference.py",
+      "destination": "src/inference/gmm_fit_reference.py",
+      "sha256": "ab3aead6bbc64b993c5708093dcfaae4c4a8230ea33689cf33980c46c7fe4415",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/gmm_proposal.py",
+      "destination": "src/inference/gmm_proposal.py",
+      "sha256": "d34d95f2f6939ba92d90776e55d2c23f9a010c3b329216d3b664f563580263f9",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/gmm_proposal_reference.py",
+      "destination": "src/inference/gmm_proposal_reference.py",
+      "sha256": "d749517213da0d6502206780b16e3bfd665c0d20b16a61de46adda8bb819276c",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/likelihood_threads.py",
+      "destination": "src/inference/likelihood_threads.py",
+      "sha256": "9a1336d71369032956a5c5263cf448962fe5e104254429e61980689cc3fc1e77",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/linalg_batch.py",
+      "destination": "src/inference/linalg_batch.py",
+      "sha256": "29e5fa3bd2de1be3ae0fbfd6e65668993a299fc2a2ab13d7a493f54ee4dd64e4",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/mh_fixed.py",
+      "destination": "src/inference/mh_fixed.py",
+      "sha256": "f8f6d92a90a073a0074d776c4cc851c85628300456cd0a6a8b216cd6df024420",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/mh_reference.py",
+      "destination": "src/inference/mh_reference.py",
+      "sha256": "86cffa45ef46f44a599f733fa863512af62c62c9373a860c83b6ca58213a7394",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/mh_training.py",
+      "destination": "src/inference/mh_training.py",
+      "sha256": "166f2fdaca64a509fdca853c092476be280536a96fc5cd6f9a42ee9e1c529d80",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/orf_cubic_reference.py",
+      "destination": "src/inference/orf_cubic_reference.py",
+      "sha256": "7ef78217e7d1955591149dc63e7286c8ddeb707c71f960edf0d91c47fd6b3679",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/orf_interpolation.py",
+      "destination": "src/inference/orf_interpolation.py",
+      "sha256": "0dafdb3fcd1ad08fe86ca87e0e62740893f607fb3e3dae112d05c1a88fe021b0",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/pointwise.py",
+      "destination": "src/inference/pointwise.py",
+      "sha256": "de31f1a9b4294258ef6c89ff7716da01bde5a2243f76ca4d8d032891ac4e47d4",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/pointwise_preallocated.py",
+      "destination": "src/inference/pointwise_preallocated.py",
+      "sha256": "4331a142422cabc753e280e12c01358b5249b80224352e8b9c8c218c0b1106a7",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "tests/test_portable_contract.py",
+      "destination": "tests/test_portable_contract.py",
+      "sha256": "ce3d11a962797ebed3611518b248af109b775bb07da975e26a763ebecdda71ab",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    },
+    {
+      "source": "src/inference/campaign_archive.py",
+      "destination": "src/inference/campaign_archive.py",
+      "sha256": "94499d0dadab836e1858c411b8973a317aabd9272ec1834053ea41945ef4c34a",
+      "status": "FROZEN_READY_FOR_REVIEW"
+    }
+  ]
+}

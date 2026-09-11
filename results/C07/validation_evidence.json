@@ -1,0 +1,54 @@
+{
+  "status": "EVIDENCE_REVIEW_FOR_FROZEN_C07_RECIPE",
+  "entries": [
+    {
+      "role": "orf_interpolation",
+      "path": "orf_interpolation/orf_table_manifest.json",
+      "sha256": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f"
+    },
+    {
+      "role": "likelihood_kernel",
+      "path": "native_review_history/independent/results/owned_physical_review.json",
+      "sha256": "16dd3b02f082335f37becf0d031de06c7a3b2667f33661cc5caafa0ff2d4df05"
+    },
+    {
+      "role": "external_posterior_reference",
+      "path": "reference/quantiles/posterior_reference.json",
+      "sha256": "6dbf185a0326a69832ef211b4f861f887443a07072eaaffff2fafb2bb08ae110"
+    },
+    {
+      "role": "whole_flow_review",
+      "path": "wide16_review/REVIEW.md",
+      "sha256": "9f4cd2d1904d068ae96deb9669630abfbf3e3505310ca2cf6d9222e0db4e6d09"
+    },
+    {
+      "role": "integrated_execution",
+      "path": "integrated_wide3/campaign/campaign_complete.json",
+      "sha256": "a527d2d595edc5b0640a108f57ba7a0ffbc01dbd0cc72e5e4693475542383413"
+    },
+    {
+      "role": "truth_interpolation500",
+      "path": "truth_interpolation500/validation.json",
+      "sha256": "4a304854a368aa4dee9522a9bac227b33f5756356c88fb5583f74188a19bccce"
+    },
+    {
+      "role": "historical_failed_engineering",
+      "path": "integrated_engineering/diagnostic_summary.json",
+      "sha256": "3fbdf50eccfe69c7565389cda4a7e4dc4eba38a4fe211606c8c2954ab2ead467"
+    },
+    {
+      "role": "proposal_density_review",
+      "path": "cold_tail_review/wide_production/all_densities_audit.json",
+      "sha256": "b0ca8265c80752af74d310b436c309edcedfdf5be2891360f1f79ef6ae29480a"
+    }
+  ],
+  "limitations": [
+    "Finite ORF/kernel benchmark domain, not a global rigorous error certificate.",
+    "A0 external cubature uses historical fixture datum14; it is not fresh500 datum14.",
+    "The16-target wide-proposal trial supports the frozen recipe, not automatic approval of2500 posterior targets.",
+    "Original401/416 cold-proposal failure is preserved; correction uses a new proposal identity.",
+    "SBC sensitivity uses a CLT-based error allowance; an attractive uniformity result never validates the integrator."
+  ],
+  "all_production_targets_retained": true,
+  "scientific_decisions_not_made_from_partial_campaign": true
+}

@@ -1,0 +1,215 @@
+{
+  "status": "PASS_FOR_TESTED_NUMERICAL_RULES",
+  "parameter": 1,
+  "probability": 0.9,
+  "quantile_common_midpoint": -14.641542879790252,
+  "bracket": [
+    -14.642442879790252,
+    -14.640642879790253
+  ],
+  "maximum_midpoint_bracketing_error_fraction_prior": 0.0004499999999998394,
+  "maximum_between_rule_quantile_difference_bound_fraction_prior": 0.0008999999999996788,
+  "maximum_point_estimate_difference_fraction_prior": 5.0932266306702445e-06,
+  "linear_quantile_estimates_by_rule": [
+    {
+      "orders": [
+        20,
+        20,
+        20
+      ],
+      "mass_nodes": 75,
+      "lower_endpoint": {
+        "mass_nodes": 75,
+        "cdf_lower": 0.8994261791973078,
+        "cdf_upper": 0.899426179197315,
+        "omission_error_bound": 7.177601461043458e-15
+      },
+      "upper_endpoint": {
+        "mass_nodes": 75,
+        "cdf_lower": 0.900585124383953,
+        "cdf_upper": 0.9005851243839602,
+        "omission_error_bound": 7.18455116274507e-15
+      },
+      "contained": true,
+      "linear_quantile_estimate": -14.641551657792226
+    },
+    {
+      "orders": [
+        20,
+        20,
+        20
+      ],
+      "mass_nodes": 139,
+      "lower_endpoint": {
+        "mass_nodes": 139,
+        "cdf_lower": 0.8994197495382675,
+        "cdf_upper": 0.8994197495382746,
+        "omission_error_bound": 7.14859788897536e-15
+      },
+      "upper_endpoint": {
+        "mass_nodes": 139,
+        "cdf_lower": 0.9005787524668558,
+        "cdf_upper": 0.9005787524668629,
+        "omission_error_bound": 7.15542920889599e-15
+      },
+      "contained": true,
+      "linear_quantile_estimate": -14.641541716552995
+    },
+    {
+      "orders": [
+        32,
+        20,
+        12
+      ],
+      "mass_nodes": 75,
+      "lower_endpoint": {
+        "mass_nodes": 75,
+        "cdf_lower": 0.899426015878898,
+        "cdf_upper": 0.8994260158789048,
+        "omission_error_bound": 6.817407647431206e-15
+      },
+      "upper_endpoint": {
+        "mass_nodes": 75,
+        "cdf_lower": 0.9005849715358686,
+        "cdf_upper": 0.9005849715358754,
+        "omission_error_bound": 6.814765282202153e-15
+      },
+      "contained": true,
+      "linear_quantile_estimate": -14.641551412190289
+    },
+    {
+      "orders": [
+        32,
+        20,
+        12
+      ],
+      "mass_nodes": 139,
+      "lower_endpoint": {
+        "mass_nodes": 139,
+        "cdf_lower": 0.8994195863472938,
+        "cdf_upper": 0.8994195863473006,
+        "omission_error_bound": 6.793502430231869e-15
+      },
+      "upper_endpoint": {
+        "mass_nodes": 139,
+        "cdf_lower": 0.9005785998592903,
+        "cdf_upper": 0.9005785998592971,
+        "omission_error_bound": 6.79215219627278e-15
+      },
+      "contained": true,
+      "linear_quantile_estimate": -14.641541471338964
+    }
+  ],
+  "locator_history": [
+    {
+      "cut": -14.641542584576941,
+      "estimated_CDF": 0.9000001940976041,
+      "proposed_step": -2.952133114570896e-07,
+      "locator_mass_nodes": 27,
+      "origin_cut_index": 2,
+      "note": "Control-variate location only; its mass error is not assumed bounded."
+    }
+  ],
+  "attempts": [
+    {
+      "bracket": [
+        -14.642442879790252,
+        -14.640642879790253
+      ],
+      "width_fraction_prior": 0.0008999999999996788,
+      "checks": [
+        {
+          "orders": [
+            20,
+            20,
+            20
+          ],
+          "mass_nodes": 75,
+          "lower_endpoint": {
+            "mass_nodes": 75,
+            "cdf_lower": 0.8994261791973078,
+            "cdf_upper": 0.899426179197315,
+            "omission_error_bound": 7.177601461043458e-15
+          },
+          "upper_endpoint": {
+            "mass_nodes": 75,
+            "cdf_lower": 0.900585124383953,
+            "cdf_upper": 0.9005851243839602,
+            "omission_error_bound": 7.18455116274507e-15
+          },
+          "contained": true,
+          "linear_quantile_estimate": -14.641551657792226
+        },
+        {
+          "orders": [
+            20,
+            20,
+            20
+          ],
+          "mass_nodes": 139,
+          "lower_endpoint": {
+            "mass_nodes": 139,
+            "cdf_lower": 0.8994197495382675,
+            "cdf_upper": 0.8994197495382746,
+            "omission_error_bound": 7.14859788897536e-15
+          },
+          "upper_endpoint": {
+            "mass_nodes": 139,
+            "cdf_lower": 0.9005787524668558,
+            "cdf_upper": 0.9005787524668629,
+            "omission_error_bound": 7.15542920889599e-15
+          },
+          "contained": true,
+          "linear_quantile_estimate": -14.641541716552995
+        },
+        {
+          "orders": [
+            32,
+            20,
+            12
+          ],
+          "mass_nodes": 75,
+          "lower_endpoint": {
+            "mass_nodes": 75,
+            "cdf_lower": 0.899426015878898,
+            "cdf_upper": 0.8994260158789048,
+            "omission_error_bound": 6.817407647431206e-15
+          },
+          "upper_endpoint": {
+            "mass_nodes": 75,
+            "cdf_lower": 0.9005849715358686,
+            "cdf_upper": 0.9005849715358754,
+            "omission_error_bound": 6.814765282202153e-15
+          },
+          "contained": true,
+          "linear_quantile_estimate": -14.641551412190289
+        },
+        {
+          "orders": [
+            32,
+            20,
+            12
+          ],
+          "mass_nodes": 139,
+          "lower_endpoint": {
+            "mass_nodes": 139,
+            "cdf_lower": 0.8994195863472938,
+            "cdf_upper": 0.8994195863473006,
+            "omission_error_bound": 6.793502430231869e-15
+          },
+          "upper_endpoint": {
+            "mass_nodes": 139,
+            "cdf_lower": 0.9005785998592903,
+            "cdf_upper": 0.9005785998592971,
+            "omission_error_bound": 6.79215219627278e-15
+          },
+          "contained": true,
+          "linear_quantile_estimate": -14.641541471338964
+        }
+      ]
+    }
+  ],
+  "seconds": 36.70861570793204,
+  "caveat": "Brackets certify location for the compared numerical CDFs; quadrature comparison is not a universal analytic posterior-error bound.",
+  "source_sha256": "6874f033b24a9c9670a32e811e25f558ccc15209a60ceaeed26ecf098aee0c6a"
+}

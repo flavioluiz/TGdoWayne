@@ -33,10 +33,10 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Amostragem e evidências, quando usadas, têm diagnósticos de convergência e verificações independentes.
-- [ ] SBC é compatível com a distribuição de referência dentro da incerteza amostral; eventuais falhas são investigadas.
-- [ ] Cobertura em parâmetros fixos é reportada como diagnóstico, sem presumir cobertura frequentista nominal universal para intervalos bayesianos.
-- [ ] O número de repetições sustenta a precisão declarada; 500 realizações dão cerca de 1,3 ponto percentual a p=0,9.
+- [x] Amostragem e evidências, quando usadas, têm diagnósticos de convergência e verificações independentes.
+- [x] SBC é compatível com a distribuição de referência dentro da incerteza amostral; eventuais falhas são investigadas.
+- [x] Cobertura em parâmetros fixos é reportada como diagnóstico, sem presumir cobertura frequentista nominal universal para intervalos bayesianos.
+- [x] O número de repetições sustenta a precisão declarada; 500 realizações dão cerca de 1,3 ponto percentual a p=0,9.
 
 ## Validação exigida
 
@@ -68,3 +68,11 @@ Não atribuir ao efeito da compressão um viés causado por amostragem inadequad
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Execução registrada em C07
+
+A implementação usa `run_calibration_campaign.py`, `sintetizar_calibracao.py` e os executores separados de cenários fixos, em lugar do nome único prospectivo `calibrar_inferencia.py`. A referência A0, os controles A_G/B_G e as aproximações A_CN/B_CN permanecem distintos.
+
+Foram concluídas 2500 inferências/500 dados e 96 controles fixos. O resumo estatístico foi auditado e não exclui os 81 alvos com algum flag falso ou 243 PITs não resolvidos. Os controles correspondentes à distribuição geradora não tiveram rejeições nominais; a aproximação normal nas estatísticas físicas teve dez rejeições persistentes na sensibilidade. As falhas foram investigadas e conservadas, como detalha [o registro dos resultados](../../docs/inferencia/resultados_c07.md).
+
+A cobertura fixa perto da borda foi 0/32 nos dois eventos de 90%; o critério é reportar e interpretar a cobertura condicional, não impor cobertura frequentista nominal a toda verdade. Precisão horizontal de quantis permanece uma limitação declarada e é tratada no desenho C08. Os protocolos de MCMC e propostas anteriores reprovados ficam preservados.

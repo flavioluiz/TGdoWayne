@@ -1,0 +1,157 @@
+{
+  "label": "DIAGNOSTIC_TOY_NOT_PTA_SBC",
+  "seed": 707210911,
+  "rank_seed": 707210912,
+  "config_sha256": "52fb2edb9d48b22667828e38b31f37246af1b117ddeac286bdbdf62e1dea7efd",
+  "source_sha256": {
+    "src/inference/mcmc_diagnostics.py": "045864e83b9f0715686e4da3cfc4eb7262538e6dd7e034437183df76ac5dfabf",
+    "scripts/validar_diagnosticos_mcmc_toy.py": "2b06caa5cb020c9ec2654a9b958c3548262a04be6947020101365e80b1faba5d"
+  },
+  "dependencies": {
+    "numpy": "2.4.3",
+    "scipy": "1.17.1"
+  },
+  "iid": {
+    "draws": 65536,
+    "ess": {
+      "ess": 64460.89412962246,
+      "ess_raw": 64460.89412962246,
+      "tau": 1.0166784200699364,
+      "status": "estimated",
+      "draws": 65536,
+      "retained_lag_pairs": 2,
+      "reached_last_pair": false
+    },
+    "rhat": {
+      "rank_split": 1.000029367417037,
+      "folded_rank_split": 0.9999798986707632,
+      "maximum": 1.000029367417037,
+      "discarded_middle_draws_per_chain": 0
+    },
+    "bulk_tail": {
+      "bulk": 64456.39475629558,
+      "tail": 63481.576952518015,
+      "tail_05": 65302.257722384435,
+      "tail_95": 63481.576952518015
+    }
+  },
+  "ar1": {
+    "rho": 0.8,
+    "draws": 131072,
+    "theoretical_mean_ess": 14563.555555555551,
+    "theoretical_indicator_at_zero_ess": 20516.60019387105,
+    "mean_ess": {
+      "ess": 13654.57656239717,
+      "ess_raw": 13654.57656239717,
+      "tau": 9.599125934154143,
+      "status": "estimated",
+      "draws": 131072,
+      "retained_lag_pairs": 34,
+      "reached_last_pair": false
+    },
+    "cdf": {
+      "estimate": 0.5015335083007812,
+      "ess": 19737.061180956607,
+      "ess_raw": 19737.061180956607,
+      "tau": 6.640907620353602,
+      "mcse": 0.0035589895927759497,
+      "mcse_spectral": 0.0035589895927759497,
+      "mcse_batches": 0.0034535690719865886,
+      "batch": {
+        "mcse": 0.0034535690719865886,
+        "batch_length": 182,
+        "batches_per_chain": 180,
+        "discarded_draws_per_chain": 8,
+        "status": "estimated"
+      },
+      "batch_adequate": true,
+      "interval": [
+        0.4945580168775875,
+        0.508508999723975
+      ],
+      "normal_critical_value": 1.9599639845400545,
+      "deterministic_error": 0.0,
+      "status": "estimated_asymptotic_not_exact",
+      "precision_pass": false
+    },
+    "rhat": {
+      "rank_split": 1.0001882408426643,
+      "folded_rank_split": 1.000148572760267,
+      "maximum": 1.0001882408426643,
+      "discarded_middle_draws_per_chain": 0
+    },
+    "bulk_tail": {
+      "bulk": 13654.948350803537,
+      "tail": 28531.115425536143,
+      "tail_05": 28531.115425536143,
+      "tail_95": 29866.17027309321
+    },
+    "quantile90": {
+      "estimate": 1.2888665894559506,
+      "mcse": 0.011275351660975819,
+      "interval": [
+        1.265447927380896,
+        1.3104385516813402
+      ],
+      "effective_ess_for_error": 25592.3050907398,
+      "cdf": {
+        "estimate": 0.899993896484375,
+        "ess": 25593.69355155995,
+        "ess_raw": 25593.69355155995,
+        "tau": 5.12126160047779,
+        "mcse": 0.0018752818595365178,
+        "mcse_spectral": 0.0018752818595365178,
+        "mcse_batches": 0.0018584301835591552,
+        "batch": {
+          "mcse": 0.0018584301835591552,
+          "batch_length": 182,
+          "batches_per_chain": 180,
+          "discarded_draws_per_chain": 8,
+          "status": "estimated"
+        },
+        "batch_adequate": true,
+        "interval": [
+          0.8963184115788221,
+          0.9036693813899279
+        ],
+        "normal_critical_value": 1.9599639845400545,
+        "deterministic_error": 0.0,
+        "status": "estimated_asymptotic_not_exact",
+        "precision_pass": true
+      },
+      "status": "estimated_asymptotic_not_exact"
+    }
+  },
+  "repeated_cdf_mcse": {
+    "replications": 128,
+    "draws_per_chain": 4096,
+    "empirical_sd": 0.011092402943127896,
+    "root_mean_squared_estimated_mcse": 0.009916335042374684,
+    "ratio": 1.1185990485121384,
+    "mean_bias": 0.00016069412231445312
+  },
+  "randomized_ranks": {
+    "replications": 2048,
+    "posterior_draws": 64,
+    "iid": {
+      "KS_D": 0.011648517324964358,
+      "p": 0.9407974114773697
+    },
+    "stationary_ar1": {
+      "rho": 0.95,
+      "KS_D": 0.1324660439530942,
+      "p": 8.486570430612527e-32
+    },
+    "warning": "Jitter within rank cells cannot cure nonexchangeable correlated posterior draws. KS observations are reported without seed selection; not unit-test acceptance."
+  },
+  "predeclared_numeric_checks": {
+    "iid_ess_relative_error": true,
+    "ar1_mean_ess_relative_error": true,
+    "ar1_indicator_ess_relative_error": true,
+    "empirical_cdf_sd_to_estimated_mcse": true
+  },
+  "all_numeric_checks_pass": true,
+  "elapsed_seconds": 2.768138625076972,
+  "PTA_data_read": false,
+  "PTA_SBC_executed": false
+}

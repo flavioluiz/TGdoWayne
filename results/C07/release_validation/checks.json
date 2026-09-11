@@ -1,0 +1,39 @@
+{
+  "stage": "C07",
+  "status": "FINAL_REQUIRED_SCIENTIFIC_CHECKS_PASS",
+  "checks": [
+    {
+      "command": ".venv/bin/python scripts/reproduzir_tg.py --check",
+      "exit_code": 0,
+      "log": "results/C07/release_validation/tg.log",
+      "sha256": "90664a3ae653b324e81a01d7d776f20c6d0a53c44095ddf7ea2de9384a6c1af4"
+    },
+    {
+      "command": ".venv/bin/python scripts/validar_orf.py --check",
+      "exit_code": 0,
+      "log": "results/C07/release_validation/orf.log",
+      "sha256": "504e248afcaa9dbd59987b43c3d3cdc8116e02f5eda406a0c5dd16c2900a0aae"
+    },
+    {
+      "command": ".venv/bin/python scripts/benchmark_orf.py --verify-only results/C05/checked_benchmark_results.json",
+      "exit_code": 0,
+      "log": "results/C07/release_validation/benchmark.log",
+      "sha256": "74a934ac35adba740d70d2bb5c73208686c0966ea6676852393553c8b81718da"
+    },
+    {
+      "command": ".venv/bin/python scripts/validar_simulador.py --check",
+      "exit_code": 0,
+      "log": "results/C07/release_validation/simulation.log",
+      "sha256": "464ee72e899f5cdca99a021fc518cdd8571e25de5de689271ea4c5df755623a5"
+    },
+    {
+      "command": ".venv/bin/python scripts/validar_componentes_inferencia.py --check",
+      "exit_code": 0,
+      "log": "results/C07/release_validation/inference.log",
+      "sha256": "bdb2815e7f3eee21cedde5ad6aeda6be82766764f950e761b17e6c4aa0ea7b6c"
+    }
+  ],
+  "unit_tests": 217,
+  "checked_ORF_benchmark_cases": 58,
+  "scope": "Required component and preserved reference checks. Main/fixed production, statistical audits and archive restoration have separate evidence."
+}

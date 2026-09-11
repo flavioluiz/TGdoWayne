@@ -1,0 +1,170 @@
+{
+  "scope": "A0_CN frozen datum14 only; deterministic nuisance cubature, no SBC or approval of all targets",
+  "data_index_zero_based": 14,
+  "order_b_a_gamma": [
+    20,
+    20,
+    20
+  ],
+  "actual_slope_nodes": 35,
+  "mass_nodes": 1,
+  "parameter_points": 126000,
+  "seconds": 0.26452241698279977,
+  "maximum_points_budget": 150000000,
+  "log_mass_marginal": [
+    -76.09023154085534
+  ],
+  "masses": [
+    0.5
+  ],
+  "cdf_cuts": [
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -15.910990238353657
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -15.164352385255253
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -14.644232400075056
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -14.553074099037623
+    },
+    {
+      "parameter": 1,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -15.839561919522918
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": 3.171467101555302
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": 4.285450364801961
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": 5.185287653716211
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": 5.33809407308016
+    },
+    {
+      "parameter": 2,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": 3.102979622785091
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -14.978473773785955
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -14.596094047344582
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -14.527248421779364
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -14.51575625641101
+    },
+    {
+      "parameter": 3,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -14.5197623912345
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -0.2973940910581835
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -0.26732462909858573
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -0.2159062480291402
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -0.1987252706717761
+    },
+    {
+      "parameter": 4,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -0.26822449729865994
+    }
+  ],
+  "cdf_logdrop": 40.0,
+  "cdf_partial_integrals": 392896,
+  "minimum_spectral_denominator": 1.0000011748028423,
+  "minimum_whitened_orf_eigenvalue": 0.02220861121980079,
+  "no_eigenvalue_clipping": true,
+  "prior_preserved": true,
+  "source_hashes": {
+    "tmp/c07_cubature/cubature.py": "d6a2e6f3a661dee16532dfbfe85a54c842cfc25ee7d962b93a8b399942fd97a3",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_scale/scale_marginalization.py": "27fff04861fa6ca20c8dd7e8107676b26da3117b3b2c6755920a5c384bbfe140",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_integration/config.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_integration/results/data.npz": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_integration/src/inference_pilot.py": "ff9ed1af23f26b0cc637baa26d035b94b2aeda157d26d0c4a6c7e1ab8d7ef970"
+  },
+  "cut_source_hash": "3873231cf8b84b7c45b02f095ee8a06fe7ff6188df6d3d206ea20c71f8a351af",
+  "orf_signature": "c843ce150113aa2f7cf7f2ec3fbc3faca42a136f368de56b86b15ab2789923a1",
+  "cache_hashes": {
+    "0.5": "ce78c658d4c76e6bab904f3c568c9c3e99d3bc1af616b9187db2512444f28bdd"
+  },
+  "thresholds": {
+    "maximum_abs_pit_difference": 0.002,
+    "maximum_quantile_difference_fraction_prior_width": 0.001,
+    "maximum_abs_log_evidence_difference": 0.001
+  },
+  "nuisance_quantile_acceptance_assessed": false,
+  "log_evidence_conditional_mass": -76.09023154085534,
+  "original_nuisance_CDF_at_frozen_cuts": [
+    0.0482157404069325,
+    0.5029080350521106,
+    0.9067061465332017,
+    0.9535656550469543,
+    0.0865974405207283,
+    0.06342881024154923,
+    0.5191572075155775,
+    0.8917503179203484,
+    0.9461426003333692,
+    0.03791075241376148,
+    0.04576274347848541,
+    0.5017243208769337,
+    0.8896118008876995,
+    0.9439880662565058,
+    0.9269743829428871,
+    0.062266205363420174,
+    0.5068941413763306,
+    0.9003488293326541,
+    0.9497145942288917,
+    0.49591866016373476
+  ],
+  "absolute_cdf_omission_bound": 9.790968329324425e-19
+}

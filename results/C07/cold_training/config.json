@@ -1,0 +1,36 @@
+{
+  "targets": [
+    62
+  ],
+  "training_steps": [
+    4096,
+    8192
+  ],
+  "chains": 4,
+  "seeds": [
+    907103101,
+    907103102
+  ],
+  "points_for_EM": 2048,
+  "selection": "512 fixed evenly spaced time indices in the second half, all four chains.",
+  "adaptation_window": 4000,
+  "mass_probability": 0.15,
+  "nuisance_probability": 0.2,
+  "independence_probability": 0.45,
+  "student_df": 5.0,
+  "student_scales": [
+    1.0,
+    3.0
+  ],
+  "student_weights": [
+    0.75,
+    0.25
+  ],
+  "em_components": 4,
+  "em_iterations": 80,
+  "covariance_floor": 0.03,
+  "inflation": 1.1,
+  "maximum_estimated_numeric_bytes": 2147483648,
+  "table_sha256": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+  "scope": "One selected pilot target A_Gd14. Adaptive trajectories train proposals only; no posterior or coverage claim. Truth arrays are not loaded."
+}

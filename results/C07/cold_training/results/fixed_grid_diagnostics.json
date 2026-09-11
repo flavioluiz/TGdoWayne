@@ -1,0 +1,4483 @@
+{
+  "status": "truth_blind_one_target_planning_comparison_not_campaign_approval",
+  "read_npz_fields": [
+    "x_unit",
+    "log_weights",
+    "log_likelihood",
+    "targets"
+  ],
+  "no_truth_fields_read": true,
+  "target": 62,
+  "model": "A_G",
+  "data_index": 14,
+  "cdf_mcse_target": 0.00335,
+  "levels": [
+    {
+      "warmup_steps": 4096,
+      "target": 62,
+      "replications": 4,
+      "draws_per_replication": 32768,
+      "grid_points": 54,
+      "precise_grid_points": 51,
+      "maximum_grid_mcse": 0.003973545844872965,
+      "worst_function": "log_likelihood",
+      "worst_probability": 0.5,
+      "functions": [
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.008831294777071572,
+            "estimate": 0.00862789616923586,
+            "mcse": 0.00035812900243311843,
+            "raw_delta_mcse": 0.00035812900243311843,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              3795,
+              125924
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00035812900243311843,
+            "between_replications_influence_mcse": 0.0003133340523739785,
+            "replication_estimates": [
+              0.007739934143880706,
+              0.008859344748250928,
+              0.009218120421860019,
+              0.00869166764130008
+            ],
+            "replication_mcse": [
+              0.0006744721693785876,
+              0.0006963163726438311,
+              0.0007875527343502167,
+              0.0007023999228804897
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.046052223213444626,
+            "estimate": 0.04389046111912262,
+            "mcse": 0.0008290598593462778,
+            "raw_delta_mcse": 0.0007197383518822619,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              11462,
+              118257
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007197383518822619,
+            "between_replications_influence_mcse": 0.0008290598593462778,
+            "replication_estimates": [
+              0.043800102920980924,
+              0.04172270444045392,
+              0.04433490641829298,
+              0.045690087637571174
+            ],
+            "replication_mcse": [
+              0.0014332560575772875,
+              0.001366020775134748,
+              0.0014926504129322796,
+              0.0014639391388904409
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.09392819579195871,
+            "estimate": 0.08905705281583957,
+            "mcse": 0.0010314179729881269,
+            "raw_delta_mcse": 0.0010314179729881269,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              19210,
+              110509
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010314179729881269,
+            "between_replications_influence_mcse": 0.00037767044560783214,
+            "replication_estimates": [
+              0.08864146810237766,
+              0.08820596999076352,
+              0.08961856027192808,
+              0.08975745386657219
+            ],
+            "replication_mcse": [
+              0.0020295568460055903,
+              0.002049454538042708,
+              0.002063189629067805,
+              0.00210679524667695
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.24811515891543245,
+            "estimate": 0.2424000415103457,
+            "mcse": 0.0017860348269141673,
+            "raw_delta_mcse": 0.0017860348269141673,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              38780,
+              90939
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017860348269141673,
+            "between_replications_influence_mcse": 0.0009442393784953893,
+            "replication_estimates": [
+              0.2419645884440718,
+              0.24033034985826274,
+              0.2449124924569916,
+              0.24241638983772473
+            ],
+            "replication_mcse": [
+              0.003741135997968424,
+              0.0033689161119280237,
+              0.003447757984986736,
+              0.0037121837918828904
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.4827221253069457,
+            "estimate": 0.48055458064450757,
+            "mcse": 0.0021952711029525522,
+            "raw_delta_mcse": 0.0021952711029525522,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              62534,
+              67185
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0021952711029525522,
+            "between_replications_influence_mcse": 0.001952965015334635,
+            "replication_estimates": [
+              0.4778332929946921,
+              0.4792269698160181,
+              0.4863999153420194,
+              0.47881484444591565
+            ],
+            "replication_mcse": [
+              0.004558682123641572,
+              0.004199105119852542,
+              0.004161225589745165,
+              0.004614600784475038
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.759750809361057,
+            "estimate": 0.7594287570067715,
+            "mcse": 0.001773214152577255,
+            "raw_delta_mcse": 0.001773214152577255,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              90498,
+              39221
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001773214152577255,
+            "between_replications_influence_mcse": 0.0016975220953445787,
+            "replication_estimates": [
+              0.7591271486722446,
+              0.7556096748062101,
+              0.7591131097878723,
+              0.76381453070296
+            ],
+            "replication_mcse": [
+              0.0037276982522708255,
+              0.003660497632421335,
+              0.003340768686926923,
+              0.0034339266153781884
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.8970207956255005,
+            "estimate": 0.8979679177305334,
+            "mcse": 0.001523316570475931,
+            "raw_delta_mcse": 0.0010939263831364,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              108103,
+              21616
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010939263831364,
+            "between_replications_influence_mcse": 0.001523316570475931,
+            "replication_estimates": [
+              0.8970540740433073,
+              0.8990815895382664,
+              0.89424326099071,
+              0.9014079507978845
+            ],
+            "replication_mcse": [
+              0.002169662037008394,
+              0.0021602801395743843,
+              0.002326957773030097,
+              0.002087807605930517
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9503475122413599,
+            "estimate": 0.9508256379757408,
+            "mcse": 0.0007491578180363496,
+            "raw_delta_mcse": 0.0007491578180363496,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              116965,
+              12754
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007491578180363496,
+            "between_replications_influence_mcse": 0.0007205942273258797,
+            "replication_estimates": [
+              0.9512638746699436,
+              0.9516418918527969,
+              0.9486661689286466,
+              0.9517019239287874
+            ],
+            "replication_mcse": [
+              0.0014934323820020334,
+              0.001448188062803199,
+              0.0015777252973173384,
+              0.0014716578999690328
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9913692361513219,
+            "estimate": 0.9918820736954534,
+            "mcse": 0.0003895411871620169,
+            "raw_delta_mcse": 0.00034544856194802505,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              125773,
+              3946
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00034544856194802505,
+            "between_replications_influence_mcse": 0.0003895411871620169,
+            "replication_estimates": [
+              0.9921184173188149,
+              0.9920860063086918,
+              0.9907507529129068,
+              0.9925559864905859
+            ],
+            "replication_mcse": [
+              0.0006749616490435877,
+              0.0006574005777291967,
+              0.0007319252968563559,
+              0.0006973036339690591
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.013301943106292183,
+            "estimate": 0.015347431418957157,
+            "mcse": 0.0003996912267494224,
+            "raw_delta_mcse": 0.0003996912267494224,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              5559,
+              124160
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0003996912267494224,
+            "between_replications_influence_mcse": 0.0003609411051373047,
+            "replication_estimates": [
+              0.014739406153822984,
+              0.01585632100770832,
+              0.016083872810009787,
+              0.014718871799157447
+            ],
+            "replication_mcse": [
+              0.0007856261561002534,
+              0.0008469917297464982,
+              0.0008068258763357974,
+              0.0007555904085213563
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.046608609470147305,
+            "estimate": 0.0530379038958429,
+            "mcse": 0.0011585434028878814,
+            "raw_delta_mcse": 0.0007338286802365816,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              12744,
+              116975
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007338286802365816,
+            "between_replications_influence_mcse": 0.0011585434028878814,
+            "replication_estimates": [
+              0.050845104879047434,
+              0.05606122300602763,
+              0.053567182681596354,
+              0.051676855368637545
+            ],
+            "replication_mcse": [
+              0.0014463724089546373,
+              0.001526439248049055,
+              0.001468337898051623,
+              0.001425868231860917
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.08450594442072587,
+            "estimate": 0.09622097264352651,
+            "mcse": 0.0013903489151002465,
+            "raw_delta_mcse": 0.0010516635829670629,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              18554,
+              111165
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010516635829670629,
+            "between_replications_influence_mcse": 0.0013903489151002465,
+            "replication_estimates": [
+              0.09327793906668881,
+              0.09929027713674057,
+              0.09776484154390788,
+              0.09455679394625333
+            ],
+            "replication_mcse": [
+              0.0021241418926397563,
+              0.002122856601439997,
+              0.0020997298251410235,
+              0.002064052893109708
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.22399902999881594,
+            "estimate": 0.2541438976202984,
+            "mcse": 0.002028906678888077,
+            "raw_delta_mcse": 0.001672695394161972,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              38308,
+              91411
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001672695394161972,
+            "between_replications_influence_mcse": 0.002028906678888077,
+            "replication_estimates": [
+              0.252980594533732,
+              0.2528415858335844,
+              0.26007947483202426,
+              0.25076298801506913
+            ],
+            "replication_mcse": [
+              0.003421517105167509,
+              0.003254698682626355,
+              0.003303687715954605,
+              0.003391719749851424
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.42237639948400396,
+            "estimate": 0.4820425313795317,
+            "mcse": 0.0034610505541740775,
+            "raw_delta_mcse": 0.0021709778735765927,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              64646,
+              65073
+            ],
+            "precision_pass": false,
+            "pooled_iid_influence_mcse": 0.0021709778735765927,
+            "between_replications_influence_mcse": 0.0034610505541740775,
+            "replication_estimates": [
+              0.47375732876604104,
+              0.4832273645728096,
+              0.4906282160922015,
+              0.48058862554072884
+            ],
+            "replication_mcse": [
+              0.004450060912854347,
+              0.0041689918239901725,
+              0.00414002242684269,
+              0.0045682407467033965
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.6590489336828889,
+            "estimate": 0.7572177921230898,
+            "mcse": 0.002217654258816251,
+            "raw_delta_mcse": 0.002217654258816251,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              91704,
+              38015
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.002217654258816251,
+            "between_replications_influence_mcse": 0.00220614679819443,
+            "replication_estimates": [
+              0.7518289975962802,
+              0.7558451482899131,
+              0.7622428051021165,
+              0.7589415313241188
+            ],
+            "replication_mcse": [
+              0.00469102991317692,
+              0.0041214787278988085,
+              0.003871622065622247,
+              0.004948401367159332
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.7627215737685157,
+            "estimate": 0.9036201558987741,
+            "mcse": 0.0017415677992892137,
+            "raw_delta_mcse": 0.0017415677992892137,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              109579,
+              20140
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017415677992892137,
+            "between_replications_influence_mcse": 0.001196670807243055,
+            "replication_estimates": [
+              0.9010560213961665,
+              0.9051849253111479,
+              0.906099863787843,
+              0.902157758911394
+            ],
+            "replication_mcse": [
+              0.0037234508441537934,
+              0.002575330297439028,
+              0.0026498608287456042,
+              0.004546809174636052
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.8037418766293731,
+            "estimate": 0.954358481641845,
+            "mcse": 0.000972281921412812,
+            "raw_delta_mcse": 0.000972281921412812,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              116458,
+              13261
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.000972281921412812,
+            "between_replications_influence_mcse": 0.00018143494317192992,
+            "replication_estimates": [
+              0.9539330410663047,
+              0.9545045886133112,
+              0.9542151317493502,
+              0.954771364863032
+            ],
+            "replication_mcse": [
+              0.002431437167584146,
+              0.0018144488637792358,
+              0.0017459831377501075,
+              0.001706138449432345
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.8549344677117212,
+            "estimate": 0.9899613948448579,
+            "mcse": 0.0006301100010260465,
+            "raw_delta_mcse": 0.00036697577288562726,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              122229,
+              7490
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00036697577288562726,
+            "between_replications_influence_mcse": 0.0006301100010260465,
+            "replication_estimates": [
+              0.9885981187819753,
+              0.9908604112409087,
+              0.9891768321935476,
+              0.9911762836416911
+            ],
+            "replication_mcse": [
+              0.0007747252986241314,
+              0.0007035919396082819,
+              0.0007907277466871457,
+              0.0006624838834958023
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.012917150707617347,
+            "estimate": 0.011433590957081676,
+            "mcse": 0.0006726560798953057,
+            "raw_delta_mcse": 0.0004054829999989067,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              4103,
+              125616
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0004054829999989067,
+            "between_replications_influence_mcse": 0.0006726560798953057,
+            "replication_estimates": [
+              0.013123783316903812,
+              0.009896726908031403,
+              0.011023572497122321,
+              0.011699115251450884
+            ],
+            "replication_mcse": [
+              0.0009147319336199926,
+              0.000714830133266855,
+              0.0007677144794686914,
+              0.0008333072580175479
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.058834583731461096,
+            "estimate": 0.04980080649751055,
+            "mcse": 0.0007752040633002667,
+            "raw_delta_mcse": 0.0007752040633002667,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              10755,
+              118964
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007752040633002667,
+            "between_replications_influence_mcse": 0.00039440560787854445,
+            "replication_estimates": [
+              0.05043058557762385,
+              0.050064266879496395,
+              0.05006892795190428,
+              0.048659911606485584
+            ],
+            "replication_mcse": [
+              0.0015993598625959828,
+              0.0015220707045192749,
+              0.0015361901003277446,
+              0.0015431227175217617
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.10795449878093692,
+            "estimate": 0.0927600947031429,
+            "mcse": 0.0010536813239194738,
+            "raw_delta_mcse": 0.0010536813239194738,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              16853,
+              112866
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010536813239194738,
+            "between_replications_influence_mcse": 0.0005116452277415752,
+            "replication_estimates": [
+              0.09283982589136652,
+              0.09414126180500859,
+              0.09229403732322315,
+              0.09177079188750316
+            ],
+            "replication_mcse": [
+              0.0021489731770982803,
+              0.0020812844767037486,
+              0.0020560372354568516,
+              0.0021399951078706035
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.2713900027987987,
+            "estimate": 0.247598111215628,
+            "mcse": 0.0023393153223254257,
+            "raw_delta_mcse": 0.0017492914698726551,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              35215,
+              94504
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017492914698726551,
+            "between_replications_influence_mcse": 0.0023393153223254257,
+            "replication_estimates": [
+              0.24272820464534517,
+              0.24728456831401446,
+              0.25403048390748517,
+              0.24638666756462568
+            ],
+            "replication_mcse": [
+              0.0035212719807810756,
+              0.003353974519690328,
+              0.003425172782058745,
+              0.0036752544016512914
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.49249862389474913,
+            "estimate": 0.4931145276499228,
+            "mcse": 0.002196405640293991,
+            "raw_delta_mcse": 0.002196405640293991,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              59808,
+              69911
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.002196405640293991,
+            "between_replications_influence_mcse": 0.0018956634463844896,
+            "replication_estimates": [
+              0.4952326717763865,
+              0.4927918639970334,
+              0.4965554525213047,
+              0.48798820015392236
+            ],
+            "replication_mcse": [
+              0.0045466257618918095,
+              0.004205826466164155,
+              0.004158324675738753,
+              0.004624653285935233
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.7057725573601638,
+            "estimate": 0.7379818177633286,
+            "mcse": 0.00185514299178291,
+            "raw_delta_mcse": 0.00185514299178291,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              85928,
+              43791
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00185514299178291,
+            "between_replications_influence_mcse": 0.0012934082715778783,
+            "replication_estimates": [
+              0.7385250248048778,
+              0.7377945414988413,
+              0.7409688045230073,
+              0.7347102648806136
+            ],
+            "replication_mcse": [
+              0.003983810220931594,
+              0.0035284577786778284,
+              0.0035724481990943645,
+              0.003744888298698851
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.8584584434998145,
+            "estimate": 0.8862428235488911,
+            "mcse": 0.0012680691900432911,
+            "raw_delta_mcse": 0.0012680691900432911,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              106533,
+              23186
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0012680691900432911,
+            "between_replications_influence_mcse": 0.00125833407437909,
+            "replication_estimates": [
+              0.8875388233115364,
+              0.8833035599396631,
+              0.8890043802483716,
+              0.88517831066815
+            ],
+            "replication_mcse": [
+              0.002459924535894054,
+              0.002562915304072429,
+              0.0024766957080520685,
+              0.002635564511010998
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9235709429238289,
+            "estimate": 0.9406303299834837,
+            "mcse": 0.0009947296901320246,
+            "raw_delta_mcse": 0.0009947296901320246,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              115908,
+              13811
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0009947296901320246,
+            "between_replications_influence_mcse": 0.000885347154719104,
+            "replication_estimates": [
+              0.9411606953375554,
+              0.9389797912170552,
+              0.9429099279564983,
+              0.9395125778236461
+            ],
+            "replication_mcse": [
+              0.001874615605402388,
+              0.001990590308397243,
+              0.0019536801567981397,
+              0.0021247717283481
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9837357782967373,
+            "estimate": 0.9880996485177681,
+            "mcse": 0.0005392756154561583,
+            "raw_delta_mcse": 0.0005392756154561583,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              125063,
+              4656
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0005392756154561583,
+            "between_replications_influence_mcse": 0.0004094678663646841,
+            "replication_estimates": [
+              0.9872402489195063,
+              0.9875526451205957,
+              0.9888104616688211,
+              0.9887880416288605
+            ],
+            "replication_mcse": [
+              0.001053650894850747,
+              0.001106098992152856,
+              0.0011440758715251216,
+              0.0010078248985731018
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.043265949310913106,
+            "estimate": 0.010939795558397922,
+            "mcse": 0.0009047093118802884,
+            "raw_delta_mcse": 0.0009047093118802884,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              3862,
+              125857
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0009047093118802884,
+            "between_replications_influence_mcse": 0.000670924262717113,
+            "replication_estimates": [
+              0.012626243461896091,
+              0.009489910368639224,
+              0.010345200665545739,
+              0.011303582286057566
+            ],
+            "replication_mcse": [
+              0.0031825183645211434,
+              0.0008788220747194536,
+              0.0011089011233137449,
+              0.0010313717789376248
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.1888136631095873,
+            "estimate": 0.0442416015895535,
+            "mcse": 0.001166209300616728,
+            "raw_delta_mcse": 0.001166209300616728,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              10454,
+              119265
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001166209300616728,
+            "between_replications_influence_mcse": 0.0005709160387996667,
+            "replication_estimates": [
+              0.043618014046269055,
+              0.04356473380953165,
+              0.04595992818723538,
+              0.04384095930522152
+            ],
+            "replication_mcse": [
+              0.0033891362584017744,
+              0.0017899758762068819,
+              0.00200213118760344,
+              0.001787714199694388
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.4096004643051268,
+            "estimate": 0.09613336098887429,
+            "mcse": 0.0017831538476090246,
+            "raw_delta_mcse": 0.0017831538476090246,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              18304,
+              111415
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017831538476090246,
+            "between_replications_influence_mcse": 0.0012002497265901787,
+            "replication_estimates": [
+              0.09905235102800788,
+              0.09328154853508439,
+              0.09551381119396621,
+              0.09670087783578538
+            ],
+            "replication_mcse": [
+              0.004141136996516383,
+              0.0026049657657998874,
+              0.0027842556202421734,
+              0.004353515234985138
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.9160357216231394,
+            "estimate": 0.2669166061982719,
+            "mcse": 0.0029607893384672244,
+            "raw_delta_mcse": 0.0022957353697303463,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              41508,
+              88211
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0022957353697303463,
+            "between_replications_influence_mcse": 0.0029607893384672244,
+            "replication_estimates": [
+              0.2727448849845431,
+              0.2633597392172775,
+              0.26043516515282394,
+              0.2710681041262481
+            ],
+            "replication_mcse": [
+              0.00479870407814835,
+              0.004285735269115881,
+              0.0040506460538593,
+              0.005114437691236629
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.9611960746516729,
+            "estimate": 0.5259699416788955,
+            "mcse": 0.003394169378123813,
+            "raw_delta_mcse": 0.0021580089004259095,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              66683,
+              63036
+            ],
+            "precision_pass": false,
+            "pooled_iid_influence_mcse": 0.0021580089004259095,
+            "between_replications_influence_mcse": 0.003394169378123813,
+            "replication_estimates": [
+              0.5357958536177342,
+              0.5239390657549037,
+              0.519929119243554,
+              0.524259171621469
+            ],
+            "replication_mcse": [
+              0.0044139156769128635,
+              0.004148162392682328,
+              0.004116497251706812,
+              0.004550306415104864
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.9752710731605115,
+            "estimate": 0.7559012927338484,
+            "mcse": 0.0017526144443470424,
+            "raw_delta_mcse": 0.001589290247509508,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              89942,
+              39777
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001589290247509508,
+            "between_replications_influence_mcse": 0.0017526144443470424,
+            "replication_estimates": [
+              0.7594227119818667,
+              0.752948282460749,
+              0.7528032461008406,
+              0.7584047185856806
+            ],
+            "replication_mcse": [
+              0.0032009554821318263,
+              0.003099455525665078,
+              0.003175998295046155,
+              0.0032283486010571726
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.9861700880861161,
+            "estimate": 0.9053775949371748,
+            "mcse": 0.001042958602070393,
+            "raw_delta_mcse": 0.001042958602070393,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              111312,
+              18407
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001042958602070393,
+            "between_replications_influence_mcse": 0.001017401472815751,
+            "replication_estimates": [
+              0.9079834008529456,
+              0.9030626193327598,
+              0.9056344317845815,
+              0.904862751243775
+            ],
+            "replication_mcse": [
+              0.002089995068182833,
+              0.002089993493134042,
+              0.0020473928459482007,
+              0.002113372316116484
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9918178452989251,
+            "estimate": 0.9557911210552998,
+            "mcse": 0.0007610993567830422,
+            "raw_delta_mcse": 0.0007195654462183468,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              118346,
+              11373
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007195654462183468,
+            "between_replications_influence_mcse": 0.0007610993567830422,
+            "replication_estimates": [
+              0.9569162309481347,
+              0.955785426863641,
+              0.9536223394769786,
+              0.9568167180473731
+            ],
+            "replication_mcse": [
+              0.0014396174771920687,
+              0.0014276925320563677,
+              0.001474756983133773,
+              0.001413816355155074
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9981447327382076,
+            "estimate": 0.9923777771171959,
+            "mcse": 0.0004608866501837287,
+            "raw_delta_mcse": 0.00022207311214918573,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              123650,
+              6069
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00022207311214918573,
+            "between_replications_influence_mcse": 0.0004608866501837287,
+            "replication_estimates": [
+              0.9929838740123573,
+              0.991759052734881,
+              0.9914298070290679,
+              0.9933240554731144
+            ],
+            "replication_mcse": [
+              0.00039351296993401917,
+              0.00048599948366190597,
+              0.0005100659015400306,
+              0.00037292821769385173
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.000759214747401938,
+            "estimate": 0.009971489670089916,
+            "mcse": 0.0015914951751810223,
+            "raw_delta_mcse": 0.00145161775147846,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              1958,
+              127761
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00145161775147846,
+            "between_replications_influence_mcse": 0.0015914951751810223,
+            "replication_estimates": [
+              0.00835783215566922,
+              0.008533452064770802,
+              0.008229781515399937,
+              0.014682704046624988
+            ],
+            "replication_mcse": [
+              0.001960924238326505,
+              0.0025061608841543126,
+              0.0016880317327208673,
+              0.004487287832661159
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.004836275061752705,
+            "estimate": 0.05842334876159555,
+            "mcse": 0.0020310865281448244,
+            "raw_delta_mcse": 0.00183686676866239,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              8321,
+              121398
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00183686676866239,
+            "between_replications_influence_mcse": 0.0020310865281448244,
+            "replication_estimates": [
+              0.05694735886909849,
+              0.05586545522645649,
+              0.05638046956565633,
+              0.06440310040811366
+            ],
+            "replication_mcse": [
+              0.0034126195905864083,
+              0.0032071311859131015,
+              0.0028445123597078065,
+              0.004840015236442587
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.008780886138688299,
+            "estimate": 0.10643360104722545,
+            "mcse": 0.0022480129105953484,
+            "raw_delta_mcse": 0.0019457340997340025,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              15082,
+              114637
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0019457340997340025,
+            "between_replications_influence_mcse": 0.0022480129105953484,
+            "replication_estimates": [
+              0.10209481562288597,
+              0.10534825355100871,
+              0.10549600874745306,
+              0.11268069993536693
+            ],
+            "replication_mcse": [
+              0.0036839944393884274,
+              0.0035231753636631095,
+              0.0031903924533282376,
+              0.004891024548652534
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.02104078080310105,
+            "estimate": 0.2509562825889696,
+            "mcse": 0.0020830918585238835,
+            "raw_delta_mcse": 0.0020830918585238835,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              36820,
+              92899
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0020830918585238835,
+            "between_replications_influence_mcse": 0.0013424471625637353,
+            "replication_estimates": [
+              0.24820054142242867,
+              0.2501091572273831,
+              0.25087994369525973,
+              0.254572008443126
+            ],
+            "replication_mcse": [
+              0.004089736315774175,
+              0.0039114571035974675,
+              0.003710656366098533,
+              0.004830398956964042
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.04397861604285391,
+            "estimate": 0.49059212874985775,
+            "mcse": 0.002198664808186455,
+            "raw_delta_mcse": 0.002198664808186455,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              68859,
+              60860
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.002198664808186455,
+            "between_replications_influence_mcse": 0.0016194950283389931,
+            "replication_estimates": [
+              0.4902085540293497,
+              0.49423292220922566,
+              0.49148064850304696,
+              0.4864939171946039
+            ],
+            "replication_mcse": [
+              0.004545441659585136,
+              0.004209913531464177,
+              0.004151786075023934,
+              0.004659178795966895
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.07699209644397219,
+            "estimate": 0.7420986323669121,
+            "mcse": 0.0019943714598681696,
+            "raw_delta_mcse": 0.0019943714598681696,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              94434,
+              35285
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0019943714598681696,
+            "between_replications_influence_mcse": 0.0015252703233211474,
+            "replication_estimates": [
+              0.7408672016077209,
+              0.7440068039476948,
+              0.745135162072261,
+              0.7384442594496077
+            ],
+            "replication_mcse": [
+              0.004196967687011319,
+              0.0038216642567962893,
+              0.0038704440178995753,
+              0.004057198892365042
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.11315467451667661,
+            "estimate": 0.894578516944644,
+            "mcse": 0.0013833808841436123,
+            "raw_delta_mcse": 0.0013833808841436123,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              107769,
+              21950
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0013833808841436123,
+            "between_replications_influence_mcse": 0.0007264185306237283,
+            "replication_estimates": [
+              0.894187079576042,
+              0.8963974506297209,
+              0.894818407388766,
+              0.8929267182746766
+            ],
+            "replication_mcse": [
+              0.0027189599334409673,
+              0.002642516534509784,
+              0.0027780575719637693,
+              0.0029164516157759203
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.13971548434688483,
+            "estimate": 0.9524206748910427,
+            "mcse": 0.0009258158878120208,
+            "raw_delta_mcse": 0.000910585411649712,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              113406,
+              16313
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.000910585411649712,
+            "between_replications_influence_mcse": 0.0009258158878120208,
+            "replication_estimates": [
+              0.954292398235516,
+              0.953248119226517,
+              0.9521988587143744,
+              0.9499832087236018
+            ],
+            "replication_mcse": [
+              0.0016765966244359429,
+              0.0017443677794781174,
+              0.0019014078005821819,
+              0.0019446661237253547
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.18789172363994922,
+            "estimate": 0.9915979090820553,
+            "mcse": 0.00030830461191377705,
+            "raw_delta_mcse": 0.00030830461191377705,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              119121,
+              10598
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00030830461191377705,
+            "between_replications_influence_mcse": 0.00021307549742597827,
+            "replication_estimates": [
+              0.9918395405922922,
+              0.9919173202846695,
+              0.9909750503780179,
+              0.9916545209001079
+            ],
+            "replication_mcse": [
+              0.0005376238177230665,
+              0.0005750778812067803,
+              0.0006021677248582631,
+              0.0007301382743209529
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 13.07272665199141,
+            "estimate": 0.011551063967455559,
+            "mcse": 0.0002794451483472864,
+            "raw_delta_mcse": 0.0002214475354719418,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              31892,
+              97827
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0002214475354719418,
+            "between_replications_influence_mcse": 0.0002794451483472864,
+            "replication_estimates": [
+              0.011845123551561285,
+              0.01187805806605111,
+              0.011768401437456603,
+              0.01072619758544038
+            ],
+            "replication_mcse": [
+              0.00045692061801262527,
+              0.00047720879000330395,
+              0.0004328296879289668,
+              0.0004015433686450251
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 14.42592172045417,
+            "estimate": 0.04549415909454648,
+            "mcse": 0.0006361300438172313,
+            "raw_delta_mcse": 0.0006361300438172313,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              40202,
+              89517
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0006361300438172313,
+            "between_replications_influence_mcse": 0.00042003693295110405,
+            "replication_estimates": [
+              0.0459316598622581,
+              0.04586491341787074,
+              0.045950856068202005,
+              0.0442509737570603
+            ],
+            "replication_mcse": [
+              0.001267974746564478,
+              0.0012661440970942177,
+              0.0012467108382991302,
+              0.0013056482832786269
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 15.160494885587198,
+            "estimate": 0.09514623093175657,
+            "mcse": 0.0010788847509337377,
+            "raw_delta_mcse": 0.0010788847509337377,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              46799,
+              82920
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010788847509337377,
+            "between_replications_influence_mcse": 0.0005493541834007662,
+            "replication_estimates": [
+              0.09462634992285954,
+              0.09508260798829621,
+              0.09671105967387668,
+              0.09418704002236475
+            ],
+            "replication_mcse": [
+              0.002114023460028614,
+              0.002138897332996631,
+              0.0021713020752648286,
+              0.0022030402762339436
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 16.202404221769754,
+            "estimate": 0.2465940135328984,
+            "mcse": 0.002583109785730557,
+            "raw_delta_mcse": 0.0019955276498155616,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              59667,
+              70052
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0019955276498155616,
+            "between_replications_influence_mcse": 0.002583109785730557,
+            "replication_estimates": [
+              0.2524874026100519,
+              0.2399022592493354,
+              0.24655826499670835,
+              0.24747489539111767
+            ],
+            "replication_mcse": [
+              0.003990621808811276,
+              0.0035237188992939795,
+              0.0035935396913014017,
+              0.004713048000878831
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 17.29157834029553,
+            "estimate": 0.5226940326372619,
+            "mcse": 0.003973545844872965,
+            "raw_delta_mcse": 0.0021768552052554434,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              79612,
+              50107
+            ],
+            "precision_pass": false,
+            "pooled_iid_influence_mcse": 0.0021768552052554434,
+            "between_replications_influence_mcse": 0.003973545844872965,
+            "replication_estimates": [
+              0.533716931371873,
+              0.5171081400320083,
+              0.5165060632237012,
+              0.5234731007970783
+            ],
+            "replication_mcse": [
+              0.004454325766200881,
+              0.004200701902840029,
+              0.0041406977029295475,
+              0.004574087384529228
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 17.970435593764677,
+            "estimate": 0.7668914394545026,
+            "mcse": 0.002066764845404078,
+            "raw_delta_mcse": 0.0016509851436757382,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              102710,
+              27009
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0016509851436757382,
+            "between_replications_influence_mcse": 0.002066764845404078,
+            "replication_estimates": [
+              0.7722284201972904,
+              0.7671663389375262,
+              0.7660385102887217,
+              0.7622207989901046
+            ],
+            "replication_mcse": [
+              0.003311137297591113,
+              0.003184843798182717,
+              0.003289622179307583,
+              0.0034156716780194087
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 18.26132585173051,
+            "estimate": 0.8972681199850207,
+            "mcse": 0.0015027620137092006,
+            "raw_delta_mcse": 0.001131916822868286,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              116504,
+              13215
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001131916822868286,
+            "between_replications_influence_mcse": 0.0015027620137092006,
+            "replication_estimates": [
+              0.900469900405965,
+              0.8983744050997542,
+              0.8969319935898056,
+              0.893362234784838
+            ],
+            "replication_mcse": [
+              0.0021744130020292236,
+              0.0022184808081075736,
+              0.0022719423297662762,
+              0.0023809391862998313
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 18.385546268428527,
+            "estimate": 0.9511790950299659,
+            "mcse": 0.0012948518899112815,
+            "raw_delta_mcse": 0.0007901139809118338,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              123094,
+              6625
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007901139809118338,
+            "between_replications_influence_mcse": 0.0012948518899112815,
+            "replication_estimates": [
+              0.953101968366751,
+              0.9534067555387192,
+              0.9503044656481097,
+              0.947944329603015
+            ],
+            "replication_mcse": [
+              0.0014781029969668541,
+              0.0014115683095879525,
+              0.0017641579266814758,
+              0.0016432236792461813
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 18.499945574669624,
+            "estimate": 0.9914604664014428,
+            "mcse": 0.0003693192214082673,
+            "raw_delta_mcse": 0.00033616078233092363,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              128431,
+              1288
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00033616078233092363,
+            "between_replications_influence_mcse": 0.0003693192214082673,
+            "replication_estimates": [
+              0.991680778400347,
+              0.991897956237618,
+              0.9919037493806308,
+              0.990377321503536
+            ],
+            "replication_mcse": [
+              0.0006521656698618058,
+              0.0005505706606521569,
+              0.0006216160710842065,
+              0.0008283101997821634
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        }
+      ],
+      "weights": {
+        "n": 131072,
+        "log_evidence": 12.432838591789857,
+        "log_evidence_delta_mcse": 0.0049107603874265545,
+        "evidence_relative_mcse": 0.0049107603874265545,
+        "weight_ess_concentration_only": 51715.58850529092,
+        "entropy_effective_count": 75065.10126011557,
+        "maximum_normalized_weight": 0.0009952367811182131,
+        "largest_ten_weight_fraction": 0.00453008163417983,
+        "largest_one_percent_weight_fraction": 0.06807186355653777,
+        "log_weight_range_finite": 7573.185240090601,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 1353,
+        "single_deletion_cdf_bound": 0.000996228264129064,
+        "single_deletion_guard_pass": true,
+        "no_unseen_tail_certificate": true,
+        "pooled_iid_evidence_relative_mcse": 0.0034215821245081476,
+        "between_replications_evidence_relative_mcse": 0.0049107603874265545,
+        "replications": [
+          {
+            "n": 32768,
+            "log_evidence": 12.425928423934018,
+            "log_evidence_delta_mcse": 0.007221101960015651,
+            "evidence_relative_mcse": 0.007221101960015651,
+            "weight_ess_concentration_only": 12097.705864641193,
+            "entropy_effective_count": 18396.279334456118,
+            "maximum_normalized_weight": 0.0023850627458297754,
+            "largest_ten_weight_fraction": 0.010965636196869927,
+            "largest_one_percent_weight_fraction": 0.07147097141337382,
+            "log_weight_range_finite": 7491.594080420888,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 328,
+            "single_deletion_cdf_bound": 0.002390764870055383,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.4354829111759,
+            "log_evidence_delta_mcse": 0.00635903418565052,
+            "evidence_relative_mcse": 0.00635903418565052,
+            "weight_ess_concentration_only": 14093.705696216712,
+            "entropy_effective_count": 19056.938419025053,
+            "maximum_normalized_weight": 0.0021547149400891067,
+            "largest_ten_weight_fraction": 0.0065870902463171935,
+            "largest_one_percent_weight_fraction": 0.06442911482260774,
+            "log_weight_range_finite": 7498.303446838852,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 314,
+            "single_deletion_cdf_bound": 0.0021593677620671795,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.42429196157546,
+            "log_evidence_delta_mcse": 0.006218125010179472,
+            "evidence_relative_mcse": 0.006218125010179472,
+            "weight_ess_concentration_only": 14454.736241790255,
+            "entropy_effective_count": 19003.148949525417,
+            "maximum_normalized_weight": 0.0009449291532466904,
+            "largest_ten_weight_fraction": 0.006495387552551651,
+            "largest_one_percent_weight_fraction": 0.0658089313722568,
+            "log_weight_range_finite": 7571.73852837402,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 355,
+            "single_deletion_cdf_bound": 0.0009458228888681899,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.44550675120579,
+            "log_evidence_delta_mcse": 0.007469226612097822,
+            "evidence_relative_mcse": 0.007469226612097822,
+            "weight_ess_concentration_only": 11586.78443434054,
+            "entropy_effective_count": 18619.964992970105,
+            "maximum_normalized_weight": 0.0039308339427490254,
+            "largest_ten_weight_fraction": 0.010544379186200664,
+            "largest_one_percent_weight_fraction": 0.07060018077507442,
+            "log_weight_range_finite": 7396.253732314371,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 356,
+            "single_deletion_cdf_bound": 0.003946346375029838,
+            "single_deletion_guard_pass": false,
+            "no_unseen_tail_certificate": true
+          }
+        ]
+      }
+    },
+    {
+      "warmup_steps": 8192,
+      "target": 62,
+      "replications": 4,
+      "draws_per_replication": 32768,
+      "grid_points": 54,
+      "precise_grid_points": 53,
+      "maximum_grid_mcse": 0.0040559234956505435,
+      "worst_function": "parameter2",
+      "worst_probability": 0.5,
+      "functions": [
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.008831294777071572,
+            "estimate": 0.008501585792027973,
+            "mcse": 0.0006313932391124254,
+            "raw_delta_mcse": 0.00047720778873858454,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              3760,
+              126176
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00047720778873858454,
+            "between_replications_influence_mcse": 0.0006313932391124254,
+            "replication_estimates": [
+              0.008760112360765767,
+              0.008679351528488264,
+              0.009792197982573728,
+              0.006763653068640097
+            ],
+            "replication_mcse": [
+              0.00098356594553808,
+              0.0008252026742116312,
+              0.0012247667837115561,
+              0.0006973816588537261
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.046052223213444626,
+            "estimate": 0.04372153949930971,
+            "mcse": 0.0011607576684848709,
+            "raw_delta_mcse": 0.0008382399638260129,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              10660,
+              119276
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0008382399638260129,
+            "between_replications_influence_mcse": 0.0011607576684848709,
+            "replication_estimates": [
+              0.04585523520281877,
+              0.04223061658797675,
+              0.045549563535112206,
+              0.04125344811652848
+            ],
+            "replication_mcse": [
+              0.0017638604936087887,
+              0.001508333315320612,
+              0.0018808221107292546,
+              0.0015187352424083608
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.09392819579195871,
+            "estimate": 0.08872728819509108,
+            "mcse": 0.0011584447999249915,
+            "raw_delta_mcse": 0.0011584447999249915,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              18009,
+              111927
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0011584447999249915,
+            "between_replications_influence_mcse": 0.0006750787215121159,
+            "replication_estimates": [
+              0.09053713345796138,
+              0.0881604452140648,
+              0.08887212390838106,
+              0.08734849006896071
+            ],
+            "replication_mcse": [
+              0.00229978647515758,
+              0.0024042523574143437,
+              0.0023802312720525446,
+              0.002172876270998646
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.24811515891543245,
+            "estimate": 0.23873423309488717,
+            "mcse": 0.0019069548708092493,
+            "raw_delta_mcse": 0.0017917209610196537,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              37170,
+              92766
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017917209610196537,
+            "between_replications_influence_mcse": 0.0019069548708092493,
+            "replication_estimates": [
+              0.24001668673359525,
+              0.23776341492260084,
+              0.2430901126286601,
+              0.23404191676820152
+            ],
+            "replication_mcse": [
+              0.003544832821159879,
+              0.003620504427276515,
+              0.003682334693455146,
+              0.0034760939230455675
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.4827221253069457,
+            "estimate": 0.4779045482925407,
+            "mcse": 0.00219833896322696,
+            "raw_delta_mcse": 0.00219833896322696,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              61742,
+              68194
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00219833896322696,
+            "between_replications_influence_mcse": 0.0017803605531096194,
+            "replication_estimates": [
+              0.476623859003274,
+              0.47824594637076534,
+              0.48257941863438136,
+              0.474123461316007
+            ],
+            "replication_mcse": [
+              0.004195539499041369,
+              0.004482339187713692,
+              0.004425362128930335,
+              0.004479495644504264
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.759750809361057,
+            "estimate": 0.7615360798737727,
+            "mcse": 0.0017061468506091452,
+            "raw_delta_mcse": 0.0017061468506091452,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              91464,
+              38472
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017061468506091452,
+            "between_replications_influence_mcse": 0.0008820096785610326,
+            "replication_estimates": [
+              0.7595896835399041,
+              0.7612733926820525,
+              0.7638696759238249,
+              0.7613873561742317
+            ],
+            "replication_mcse": [
+              0.0033423076020879365,
+              0.0034200939439224228,
+              0.0034406780341777864,
+              0.0034432637299797323
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.8970207956255005,
+            "estimate": 0.8985180685307269,
+            "mcse": 0.0011539423231495924,
+            "raw_delta_mcse": 0.0011539423231495924,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              109459,
+              20477
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0011539423231495924,
+            "between_replications_influence_mcse": 0.0005425568587454728,
+            "replication_estimates": [
+              0.8970975084961098,
+              0.8995104776386518,
+              0.8992021671073955,
+              0.898244590495752
+            ],
+            "replication_mcse": [
+              0.0022873822618974526,
+              0.0023108558263900073,
+              0.002361183905473517,
+              0.00226963819028784
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9503475122413599,
+            "estimate": 0.9508349022937164,
+            "mcse": 0.0008556586919818988,
+            "raw_delta_mcse": 0.0008556586919818988,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              118055,
+              11881
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0008556586919818988,
+            "between_replications_influence_mcse": 0.00018476054691404504,
+            "replication_estimates": [
+              0.9510944686236718,
+              0.9511962533371334,
+              0.9504296193113797,
+              0.9506209899941943
+            ],
+            "replication_mcse": [
+              0.0017113732592921186,
+              0.0017459666420687316,
+              0.001733065358118107,
+              0.0016526217925184274
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter0",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9913692361513219,
+            "estimate": 0.9915326166487923,
+            "mcse": 0.0004514137463606872,
+            "raw_delta_mcse": 0.0004514137463606872,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              126080,
+              3856
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0004514137463606872,
+            "between_replications_influence_mcse": 0.0003164248424023511,
+            "replication_estimates": [
+              0.9913145257743068,
+              0.9907559145735746,
+              0.9921853012419413,
+              0.9918740080570794
+            ],
+            "replication_mcse": [
+              0.000883315926782965,
+              0.0011138523096375697,
+              0.0008176461354630625,
+              0.0007524439466736353
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.013301943106292183,
+            "estimate": 0.014215534084531061,
+            "mcse": 0.0005580555453194333,
+            "raw_delta_mcse": 0.0005580555453194333,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              4207,
+              125729
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0005580555453194333,
+            "between_replications_influence_mcse": 0.0003908528604760804,
+            "replication_estimates": [
+              0.013988627451596639,
+              0.013854169149692645,
+              0.01536314435214594,
+              0.013648444298299072
+            ],
+            "replication_mcse": [
+              0.001203520940153265,
+              0.0010119132465331974,
+              0.001223065207848847,
+              0.0010070168721768246
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.046608609470147305,
+            "estimate": 0.05191456595117016,
+            "mcse": 0.0009256233330816057,
+            "raw_delta_mcse": 0.0009256233330816057,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              9667,
+              120269
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0009256233330816057,
+            "between_replications_influence_mcse": 0.0006904170236812409,
+            "replication_estimates": [
+              0.0524787289920321,
+              0.05283927571664587,
+              0.05247767648652952,
+              0.04985340200919874
+            ],
+            "replication_mcse": [
+              0.0019322462854517472,
+              0.0018099402784185043,
+              0.001894792663465196,
+              0.0017630570805848699
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.08450594442072587,
+            "estimate": 0.09670377420951828,
+            "mcse": 0.0011750510809602102,
+            "raw_delta_mcse": 0.0011750510809602102,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              15778,
+              114158
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0011750510809602102,
+            "between_replications_influence_mcse": 0.0011119365367500778,
+            "replication_estimates": [
+              0.09744420617368708,
+              0.09896655408174806,
+              0.09671830029479266,
+              0.09367263536813959
+            ],
+            "replication_mcse": [
+              0.0023974086460419883,
+              0.0023251841830653932,
+              0.0023905721801238816,
+              0.002284903437058709
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.22399902999881594,
+            "estimate": 0.2552599835074427,
+            "mcse": 0.0017126346591774286,
+            "raw_delta_mcse": 0.0016672151271173129,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              38137,
+              91799
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0016672151271173129,
+            "between_replications_influence_mcse": 0.0017126346591774286,
+            "replication_estimates": [
+              0.2578634827050207,
+              0.2583871819865855,
+              0.25346678002206224,
+              0.25132444607333304
+            ],
+            "replication_mcse": [
+              0.003307033087889944,
+              0.0033544007487417557,
+              0.003361211288458779,
+              0.00331169281744692
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.42237639948400396,
+            "estimate": 0.48328287489468763,
+            "mcse": 0.0032103512183436042,
+            "raw_delta_mcse": 0.0021667529692459245,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              64651,
+              65285
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0021667529692459245,
+            "between_replications_influence_mcse": 0.0032103512183436042,
+            "replication_estimates": [
+              0.49076133666875105,
+              0.4856706011783463,
+              0.4810658177457431,
+              0.4756612718212576
+            ],
+            "replication_mcse": [
+              0.0041673130237558816,
+              0.004405494738462475,
+              0.004372281143856047,
+              0.00437269470937303
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.6590489336828889,
+            "estimate": 0.7584463481297677,
+            "mcse": 0.002715507984812023,
+            "raw_delta_mcse": 0.0022075676785469557,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              93142,
+              36794
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0022075676785469557,
+            "between_replications_influence_mcse": 0.002715507984812023,
+            "replication_estimates": [
+              0.7659577358760261,
+              0.7551347811688971,
+              0.7589404788668015,
+              0.7537975154326502
+            ],
+            "replication_mcse": [
+              0.0040357636282259525,
+              0.0042776857497428085,
+              0.00460023622376834,
+              0.0047032636073623
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.7627215737685157,
+            "estimate": 0.9036272748258137,
+            "mcse": 0.0017601054959403108,
+            "raw_delta_mcse": 0.0017237603657944169,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              111027,
+              18909
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0017237603657944169,
+            "between_replications_influence_mcse": 0.0017601054959403108,
+            "replication_estimates": [
+              0.9087314830353024,
+              0.9029570999474479,
+              0.9022501424348649,
+              0.9006041414416578
+            ],
+            "replication_mcse": [
+              0.0028906758021207063,
+              0.0031664154154687554,
+              0.0038074338850136264,
+              0.003816052311858671
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.8037418766293731,
+            "estimate": 0.9533818438452767,
+            "mcse": 0.001357969227684088,
+            "raw_delta_mcse": 0.001357969227684088,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              117515,
+              12421
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001357969227684088,
+            "between_replications_influence_mcse": 0.0012072698286825338,
+            "replication_estimates": [
+              0.9549996035631666,
+              0.9534578584751029,
+              0.9551271534354975,
+              0.9499333899855533
+            ],
+            "replication_mcse": [
+              0.0019873648193901197,
+              0.0021390642405509706,
+              0.003190492342217249,
+              0.003277987194820531
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter1",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.8549344677117212,
+            "estimate": 0.9900351771975396,
+            "mcse": 0.00043210611321312326,
+            "raw_delta_mcse": 0.00043210611321312326,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              122870,
+              7066
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00043210611321312326,
+            "between_replications_influence_mcse": 0.00035291225450673024,
+            "replication_estimates": [
+              0.9906791880852758,
+              0.9890614136493776,
+              0.990392134939482,
+              0.9900140681627241
+            ],
+            "replication_mcse": [
+              0.0007672164395545754,
+              0.0008942996911151274,
+              0.000844890015620278,
+              0.0009401196585040333
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.012917150707617347,
+            "estimate": 0.01095396180965248,
+            "mcse": 0.00043868217237539453,
+            "raw_delta_mcse": 0.0003095955633069665,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              4612,
+              125324
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0003095955633069665,
+            "between_replications_influence_mcse": 0.00043868217237539453,
+            "replication_estimates": [
+              0.010278180601327076,
+              0.012225550478628822,
+              0.010503294295261506,
+              0.010801305592328381
+            ],
+            "replication_mcse": [
+              0.0005830706245786246,
+              0.000657073565051084,
+              0.0006111757971439111,
+              0.0006226251109221952
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.058834583731461096,
+            "estimate": 0.04923346698745561,
+            "mcse": 0.0006671656145725737,
+            "raw_delta_mcse": 0.0006671656145725737,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              12243,
+              117693
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0006671656145725737,
+            "between_replications_influence_mcse": 0.00041078473781295285,
+            "replication_estimates": [
+              0.04932463693409084,
+              0.05033992354665603,
+              0.048809257999664485,
+              0.048456127174560895
+            ],
+            "replication_mcse": [
+              0.0013273711027902116,
+              0.0013709916655504201,
+              0.0013157030549257058,
+              0.0013222065956055708
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.10795449878093692,
+            "estimate": 0.09067751176395543,
+            "mcse": 0.0009421711366888038,
+            "raw_delta_mcse": 0.0009421711366888038,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              18777,
+              111159
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0009421711366888038,
+            "between_replications_influence_mcse": 0.00047442191607839076,
+            "replication_estimates": [
+              0.09048945666446803,
+              0.09115812822255757,
+              0.08944318025854195,
+              0.09162547814553246
+            ],
+            "replication_mcse": [
+              0.0018423166458091296,
+              0.001908592891966544,
+              0.0018646455556701187,
+              0.0019204492433754765
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.2713900027987987,
+            "estimate": 0.24204668456610806,
+            "mcse": 0.0019319210608744284,
+            "raw_delta_mcse": 0.0016425496677360601,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              37258,
+              92678
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0016425496677360601,
+            "between_replications_influence_mcse": 0.0019319210608744284,
+            "replication_estimates": [
+              0.23869739247636207,
+              0.24613330885336138,
+              0.2387973159650907,
+              0.24454538883113436
+            ],
+            "replication_mcse": [
+              0.003181354791332224,
+              0.003347638376066042,
+              0.003285363621259874,
+              0.00332380941548038
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.49249862389474913,
+            "estimate": 0.4922232914966626,
+            "mcse": 0.0040559234956505435,
+            "raw_delta_mcse": 0.00219277218002192,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              61084,
+              68852
+            ],
+            "precision_pass": false,
+            "pooled_iid_influence_mcse": 0.00219277218002192,
+            "between_replications_influence_mcse": 0.0040559234956505435,
+            "replication_estimates": [
+              0.48340965539025,
+              0.502978178404575,
+              0.4902058920338549,
+              0.4922102917608283
+            ],
+            "replication_mcse": [
+              0.004179102862165148,
+              0.0044601263177064185,
+              0.004437460797052205,
+              0.00446117898476828
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.7057725573601638,
+            "estimate": 0.7376267039220412,
+            "mcse": 0.0027233928636709263,
+            "raw_delta_mcse": 0.0018977417562425704,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              85776,
+              44160
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0018977417562425704,
+            "between_replications_influence_mcse": 0.0027233928636709263,
+            "replication_estimates": [
+              0.7317509031255152,
+              0.7420191068504136,
+              0.7342086454958199,
+              0.7425053313646167
+            ],
+            "replication_mcse": [
+              0.003665067880363913,
+              0.004162365713864521,
+              0.003656856816694815,
+              0.0036738652474604503
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.8584584434998145,
+            "estimate": 0.8854616333989938,
+            "mcse": 0.0014027356360659501,
+            "raw_delta_mcse": 0.0014027356360659501,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              106007,
+              23929
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0014027356360659501,
+            "between_replications_influence_mcse": 0.0011853547045665726,
+            "replication_estimates": [
+              0.8830357433275076,
+              0.8876560026733167,
+              0.8838167673860459,
+              0.8873278611953382
+            ],
+            "replication_mcse": [
+              0.00259122021833925,
+              0.003415769829854244,
+              0.0024947851503399647,
+              0.0026209210838417842
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9235709429238289,
+            "estimate": 0.9400529268274329,
+            "mcse": 0.0012001395160423371,
+            "raw_delta_mcse": 0.0012001395160423371,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              115599,
+              14337
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0012001395160423371,
+            "between_replications_influence_mcse": 0.0005248360750408988,
+            "replication_estimates": [
+              0.9389100913070054,
+              0.9394558396965137,
+              0.9406421079490632,
+              0.9411990159743913
+            ],
+            "replication_mcse": [
+              0.0021163100188676042,
+              0.003193980908994205,
+              0.0019158891328828343,
+              0.002155990143320156
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter2",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9837357782967373,
+            "estimate": 0.986205078435583,
+            "mcse": 0.000974601777641452,
+            "raw_delta_mcse": 0.000974601777641452,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              125062,
+              4874
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.000974601777641452,
+            "between_replications_influence_mcse": 0.0006031935552740103,
+            "replication_estimates": [
+              0.9851302586065542,
+              0.985262439659939,
+              0.9868210792937635,
+              0.9876043172468696
+            ],
+            "replication_mcse": [
+              0.001566887245948377,
+              0.0029347831651875137,
+              0.0012647801506561354,
+              0.0015736252318778472
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.043265949310913106,
+            "estimate": 0.00944760513381899,
+            "mcse": 0.000869288920073249,
+            "raw_delta_mcse": 0.000869288920073249,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              2768,
+              127168
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.000869288920073249,
+            "between_replications_influence_mcse": 0.0003407973413481473,
+            "replication_estimates": [
+              0.008528441387077455,
+              0.009468844003339338,
+              0.009608670703293843,
+              0.010179799241924452
+            ],
+            "replication_mcse": [
+              0.0012839618292106545,
+              0.001955374702015377,
+              0.0016417967071477135,
+              0.001975897645557723
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.1888136631095873,
+            "estimate": 0.04229380533894601,
+            "mcse": 0.001309721560911045,
+            "raw_delta_mcse": 0.001309721560911045,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              7699,
+              122237
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001309721560911045,
+            "between_replications_influence_mcse": 0.000748005034072312,
+            "replication_estimates": [
+              0.04004068088820851,
+              0.043168055808523315,
+              0.0430240656207201,
+              0.04292245030894388
+            ],
+            "replication_mcse": [
+              0.0023088756879754584,
+              0.0027272649626918165,
+              0.0026195462944714532,
+              0.002790781688948092
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.4096004643051268,
+            "estimate": 0.0954839287498017,
+            "mcse": 0.0019286660988301785,
+            "raw_delta_mcse": 0.0018529668526368042,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              14771,
+              115165
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0018529668526368042,
+            "between_replications_influence_mcse": 0.0019286660988301785,
+            "replication_estimates": [
+              0.09256512505469376,
+              0.09174550984474378,
+              0.09882434575972904,
+              0.09878916352639606
+            ],
+            "replication_mcse": [
+              0.003122902111147196,
+              0.003385878112045565,
+              0.004128765906838108,
+              0.004065447201535152
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.9160357216231394,
+            "estimate": 0.2666367640941268,
+            "mcse": 0.00236299080011969,
+            "raw_delta_mcse": 0.00236299080011969,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              40058,
+              89878
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00236299080011969,
+            "between_replications_influence_mcse": 0.0020324622837876636,
+            "replication_estimates": [
+              0.26244965472119086,
+              0.2638443941483937,
+              0.2698245584954384,
+              0.27040712308847137
+            ],
+            "replication_mcse": [
+              0.004296371110949132,
+              0.00488375066770925,
+              0.004797943186346321,
+              0.0048879588164371
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.9611960746516729,
+            "estimate": 0.5250700998161496,
+            "mcse": 0.0023166454922367973,
+            "raw_delta_mcse": 0.0021507373665945826,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              66621,
+              63315
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0021507373665945826,
+            "between_replications_influence_mcse": 0.0023166454922367973,
+            "replication_estimates": [
+              0.5232369684898495,
+              0.5197143344102544,
+              0.5268910729017288,
+              0.5304541111409937
+            ],
+            "replication_mcse": [
+              0.004124634740852936,
+              0.004383474355394272,
+              0.004341696304654987,
+              0.004346512888719732
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.9752710731605115,
+            "estimate": 0.7550895368756173,
+            "mcse": 0.0015717148391586758,
+            "raw_delta_mcse": 0.0015717148391586758,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              90359,
+              39577
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0015717148391586758,
+            "between_replications_influence_mcse": 0.0011581389188266645,
+            "replication_estimates": [
+              0.7567442188970461,
+              0.7523619915526294,
+              0.7572522176715004,
+              0.7540066562029673
+            ],
+            "replication_mcse": [
+              0.0030668086126306297,
+              0.0031741075421779477,
+              0.0031654438201637407,
+              0.003166412898340513
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.9861700880861161,
+            "estimate": 0.903438255507221,
+            "mcse": 0.0010468391497846735,
+            "raw_delta_mcse": 0.0010468391497846735,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              111078,
+              18858
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0010468391497846735,
+            "between_replications_influence_mcse": 0.0008967060228320016,
+            "replication_estimates": [
+              0.9049521488674462,
+              0.903504118453944,
+              0.900913060613132,
+              0.904409370807338
+            ],
+            "replication_mcse": [
+              0.0020739038894605722,
+              0.002098986609033433,
+              0.0021305490627050116,
+              0.0020703811049848963
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.9918178452989251,
+            "estimate": 0.9554420542486016,
+            "mcse": 0.0007515520992099519,
+            "raw_delta_mcse": 0.0007515520992099519,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              118296,
+              11640
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007515520992099519,
+            "between_replications_influence_mcse": 0.0004796306104187662,
+            "replication_estimates": [
+              0.9563941125460658,
+              0.9555237535496789,
+              0.9541194212667718,
+              0.9557445990572859
+            ],
+            "replication_mcse": [
+              0.0014848726721337037,
+              0.0015176222848404602,
+              0.0015483799694085319,
+              0.001459062762845286
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter3",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.9981447327382076,
+            "estimate": 0.9927789044825752,
+            "mcse": 0.00025843958506719994,
+            "raw_delta_mcse": 0.00025843958506719994,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              124494,
+              5442
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00025843958506719994,
+            "between_replications_influence_mcse": 0.00021686671205044917,
+            "replication_estimates": [
+              0.993242368248175,
+              0.9925021859173251,
+              0.9930456296994892,
+              0.9923267701980026
+            ],
+            "replication_mcse": [
+              0.000458159663155529,
+              0.0005402030080423304,
+              0.0004976837759012148,
+              0.0005646263950153608
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 0.000759214747401938,
+            "estimate": 0.010590264096347963,
+            "mcse": 0.001157653414833411,
+            "raw_delta_mcse": 0.000847209189192419,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              3479,
+              126457
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.000847209189192419,
+            "between_replications_influence_mcse": 0.001157653414833411,
+            "replication_estimates": [
+              0.008168077910929161,
+              0.011240853588220091,
+              0.013491920133443995,
+              0.009423249928884632
+            ],
+            "replication_mcse": [
+              0.0006654198443101054,
+              0.0013478749746321567,
+              0.0028670848379972035,
+              0.000931301255141169
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 0.004836275061752705,
+            "estimate": 0.060437116769496986,
+            "mcse": 0.0013915372401500559,
+            "raw_delta_mcse": 0.0013915372401500559,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              12510,
+              117426
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0013915372401500559,
+            "between_replications_influence_mcse": 0.0012893676000138084,
+            "replication_estimates": [
+              0.05707663529134417,
+              0.062102396964734775,
+              0.06277737212868811,
+              0.05974939750793945
+            ],
+            "replication_mcse": [
+              0.0018663324411808712,
+              0.0023854585623888746,
+              0.0033909318692970565,
+              0.0031954320759765846
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 0.008780886138688299,
+            "estimate": 0.10746028490656383,
+            "mcse": 0.0016053298554465072,
+            "raw_delta_mcse": 0.0016053298554465072,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              18800,
+              111136
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0016053298554465072,
+            "between_replications_influence_mcse": 0.0014932083037288851,
+            "replication_estimates": [
+              0.10362060071364605,
+              0.11080975385221255,
+              0.1070603737402992,
+              0.1083169654176088
+            ],
+            "replication_mcse": [
+              0.0025432369786360827,
+              0.002942099726442462,
+              0.003659094693140235,
+              0.003556863762418968
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 0.02104078080310105,
+            "estimate": 0.2505483335399903,
+            "mcse": 0.0019159776768022721,
+            "raw_delta_mcse": 0.0019159776768022721,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              38088,
+              91848
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0019159776768022721,
+            "between_replications_influence_mcse": 0.0011155627286640582,
+            "replication_estimates": [
+              0.24804061886771056,
+              0.2531954579645219,
+              0.25136853908006557,
+              0.24955470866270768
+            ],
+            "replication_mcse": [
+              0.0034598233230415804,
+              0.003702629041018683,
+              0.004102538538426226,
+              0.004022978772692193
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 0.04397861604285391,
+            "estimate": 0.48859872221794853,
+            "mcse": 0.0021872625460456793,
+            "raw_delta_mcse": 0.0021872625460456793,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              68891,
+              61045
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0021872625460456793,
+            "between_replications_influence_mcse": 0.0012569331785829531,
+            "replication_estimates": [
+              0.48889696083189527,
+              0.49202655245046567,
+              0.48687910597639344,
+              0.4865835273848579
+            ],
+            "replication_mcse": [
+              0.004174309010295697,
+              0.004440401460812154,
+              0.004429440755268091,
+              0.004449670108177913
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 0.07699209644397219,
+            "estimate": 0.737377940089845,
+            "mcse": 0.002125055333376988,
+            "raw_delta_mcse": 0.002125055333376988,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              94829,
+              35107
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.002125055333376988,
+            "between_replications_influence_mcse": 0.001303768920770343,
+            "replication_estimates": [
+              0.7338512095641515,
+              0.7376151793449204,
+              0.740164168293339,
+              0.7378442720665356
+            ],
+            "replication_mcse": [
+              0.004052375017971754,
+              0.004555497078459731,
+              0.004086469862923086,
+              0.0042826745776179545
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 0.11315467451667661,
+            "estimate": 0.8920971204305995,
+            "mcse": 0.0016339534043826975,
+            "raw_delta_mcse": 0.0016339534043826975,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              108704,
+              21232
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0016339534043826975,
+            "between_replications_influence_mcse": 0.001236838922817786,
+            "replication_estimates": [
+              0.8919194081564872,
+              0.8938498581785065,
+              0.8939391915889855,
+              0.8886518926706122
+            ],
+            "replication_mcse": [
+              0.0030406318000379923,
+              0.003853131589216577,
+              0.0029114127899391488,
+              0.003183051621442835
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 0.13971548434688483,
+            "estimate": 0.9503685907627536,
+            "mcse": 0.0011951588012784962,
+            "raw_delta_mcse": 0.0011951588012784962,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              114323,
+              15613
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0011951588012784962,
+            "between_replications_influence_mcse": 0.0009634993136212866,
+            "replication_estimates": [
+              0.9487714741114107,
+              0.9490160915291188,
+              0.9507341871767242,
+              0.9529535241987901
+            ],
+            "replication_mcse": [
+              0.0022029132734826193,
+              0.003374585040440477,
+              0.0018522487844221764,
+              0.0017616307846662232
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "parameter4",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 0.18789172363994922,
+            "estimate": 0.9904363442503552,
+            "mcse": 0.00040382836239570016,
+            "raw_delta_mcse": 0.00040382836239570016,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              119936,
+              10000
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00040382836239570016,
+            "between_replications_influence_mcse": 0.0002726612204558341,
+            "replication_estimates": [
+              0.990645485360143,
+              0.9900226150269972,
+              0.9899704071272388,
+              0.9911143463871974
+            ],
+            "replication_mcse": [
+              0.0006919555396835851,
+              0.0011485335318778594,
+              0.0006941512062140597,
+              0.0005664650917508089
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.01,
+          "cdf": {
+            "threshold": 13.07272665199141,
+            "estimate": 0.01172793982885072,
+            "mcse": 0.00032197244092557086,
+            "raw_delta_mcse": 0.00025809818567094526,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              33407,
+              96529
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00025809818567094526,
+            "between_replications_influence_mcse": 0.00032197244092557086,
+            "replication_estimates": [
+              0.011863224768527313,
+              0.010872230027529236,
+              0.011754660158791749,
+              0.01242788408514681
+            ],
+            "replication_mcse": [
+              0.0005539109847650869,
+              0.0004407385674863768,
+              0.0005131101601579931,
+              0.0005501884223261468
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.05,
+          "cdf": {
+            "threshold": 14.42592172045417,
+            "estimate": 0.04772373498109959,
+            "mcse": 0.0010401476217334889,
+            "raw_delta_mcse": 0.0008115651957168726,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              41580,
+              88356
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0008115651957168726,
+            "between_replications_influence_mcse": 0.0010401476217334889,
+            "replication_estimates": [
+              0.05082676362013967,
+              0.046626223727755545,
+              0.047123600070218374,
+              0.04634175182807007
+            ],
+            "replication_mcse": [
+              0.0018045090412983696,
+              0.001772434207425469,
+              0.001489244548812535,
+              0.001385288368328821
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.1,
+          "cdf": {
+            "threshold": 15.160494885587198,
+            "estimate": 0.09658282881862625,
+            "mcse": 0.0013697986470579254,
+            "raw_delta_mcse": 0.0013697986470579254,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              47715,
+              82221
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0013697986470579254,
+            "between_replications_influence_mcse": 0.0008184535772401117,
+            "replication_estimates": [
+              0.09717725759298479,
+              0.09752275521449247,
+              0.09748743554567879,
+              0.09413185896579718
+            ],
+            "replication_mcse": [
+              0.002453569046457921,
+              0.0034957827292377603,
+              0.002371621638083915,
+              0.002469241408556026
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.25,
+          "cdf": {
+            "threshold": 16.202404221769754,
+            "estimate": 0.24549484347047903,
+            "mcse": 0.002008380075431269,
+            "raw_delta_mcse": 0.002008380075431269,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              60161,
+              69775
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.002008380075431269,
+            "between_replications_influence_mcse": 0.0014472200759368407,
+            "replication_estimates": [
+              0.24462759210500462,
+              0.24180023758329766,
+              0.2474681487153554,
+              0.24808993581711486
+            ],
+            "replication_mcse": [
+              0.003741815115691867,
+              0.004318964400933937,
+              0.003936696932490364,
+              0.004047710000327437
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.5,
+          "cdf": {
+            "threshold": 17.29157834029553,
+            "estimate": 0.5215052599906441,
+            "mcse": 0.0021646372661940374,
+            "raw_delta_mcse": 0.0021646372661940374,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              79770,
+              50166
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0021646372661940374,
+            "between_replications_influence_mcse": 0.001740643489759917,
+            "replication_estimates": [
+              0.5189208796202456,
+              0.5207177271073272,
+              0.5197660067611019,
+              0.5266273806323907
+            ],
+            "replication_mcse": [
+              0.0041523942845113244,
+              0.004392994461426011,
+              0.004381477475655153,
+              0.004378731531117789
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.75,
+          "cdf": {
+            "threshold": 17.970435593764677,
+            "estimate": 0.7668673513146795,
+            "mcse": 0.0015619405112793534,
+            "raw_delta_mcse": 0.0015619405112793534,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              103432,
+              26504
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0015619405112793534,
+            "between_replications_influence_mcse": 0.0013764272650431866,
+            "replication_estimates": [
+              0.7661102942097204,
+              0.7634495218707307,
+              0.7698491177625839,
+              0.768057110996516
+            ],
+            "replication_mcse": [
+              0.0030660239561581706,
+              0.003153028358543823,
+              0.0031473768358782897,
+              0.00312716525445105
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.9,
+          "cdf": {
+            "threshold": 18.26132585173051,
+            "estimate": 0.8988355030622789,
+            "mcse": 0.001679010274486525,
+            "raw_delta_mcse": 0.001026704440443835,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              117710,
+              12226
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.001026704440443835,
+            "between_replications_influence_mcse": 0.001679010274486525,
+            "replication_estimates": [
+              0.9003824660927747,
+              0.8938573208689282,
+              0.9010511025819881,
+              0.9000730089290429
+            ],
+            "replication_mcse": [
+              0.00199843440198907,
+              0.002079046781221902,
+              0.002111798931856798,
+              0.0020220833877329595
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.95,
+          "cdf": {
+            "threshold": 18.385546268428527,
+            "estimate": 0.9517596599337345,
+            "mcse": 0.0007167319529019257,
+            "raw_delta_mcse": 0.0007167319529019257,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              123974,
+              5962
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.0007167319529019257,
+            "between_replications_influence_mcse": 0.0006719775266596264,
+            "replication_estimates": [
+              0.95268654418173,
+              0.9498726549441843,
+              0.9527446943465026,
+              0.9517430203330377
+            ],
+            "replication_mcse": [
+              0.0014016575605538106,
+              0.0014223766227900033,
+              0.0015019857995747456,
+              0.0014049277225891721
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        },
+        {
+          "function": "log_likelihood",
+          "pilot_quantile_probability": 0.99,
+          "cdf": {
+            "threshold": 18.499945574669624,
+            "estimate": 0.9918105323343063,
+            "mcse": 0.0003494168850327784,
+            "raw_delta_mcse": 0.00029784137949088085,
+            "status": "asymptotic_influence",
+            "positive_weight_counts_below_above": [
+              128720,
+              1216
+            ],
+            "precision_pass": true,
+            "pooled_iid_influence_mcse": 0.00029784137949088085,
+            "between_replications_influence_mcse": 0.0003494168850327784,
+            "replication_estimates": [
+              0.9921274374721778,
+              0.990862189598407,
+              0.9924835580774146,
+              0.9917711139718395
+            ],
+            "replication_mcse": [
+              0.0005714347087403122,
+              0.0005717615241818504,
+              0.000670461246330166,
+              0.0005615638488857071
+            ],
+            "replication_status": [
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence",
+              "asymptotic_influence"
+            ],
+            "all_replications_resolved": true
+          }
+        }
+      ],
+      "weights": {
+        "n": 131072,
+        "log_evidence": 12.439297175427892,
+        "log_evidence_delta_mcse": 0.00341057622095489,
+        "evidence_relative_mcse": 0.00341057622095489,
+        "weight_ess_concentration_only": 51917.47877008503,
+        "entropy_effective_count": 73602.25284203613,
+        "maximum_normalized_weight": 0.0006268485629034287,
+        "largest_ten_weight_fraction": 0.003842304186800639,
+        "largest_one_percent_weight_fraction": 0.07133324244216178,
+        "log_weight_range_finite": 7494.3795454339515,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 1136,
+        "single_deletion_cdf_bound": 0.000627241748492064,
+        "single_deletion_guard_pass": true,
+        "no_unseen_tail_certificate": true,
+        "pooled_iid_evidence_relative_mcse": 0.00341057622095489,
+        "between_replications_evidence_relative_mcse": 0.0027996164645974412,
+        "replications": [
+          {
+            "n": 32768,
+            "log_evidence": 12.432878462193507,
+            "log_evidence_delta_mcse": 0.0063025413169592375,
+            "evidence_relative_mcse": 0.0063025413169592375,
+            "weight_ess_concentration_only": 14237.227788133181,
+            "entropy_effective_count": 18630.93388013838,
+            "maximum_normalized_weight": 0.0008404504015546542,
+            "largest_ten_weight_fraction": 0.00580797836605112,
+            "largest_one_percent_weight_fraction": 0.06743149534394813,
+            "log_weight_range_finite": 7431.430082217328,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 292,
+            "single_deletion_cdf_bound": 0.0008411573525894087,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.443326470922049,
+            "log_evidence_delta_mcse": 0.00699619494641307,
+            "evidence_relative_mcse": 0.00699619494641307,
+            "weight_ess_concentration_only": 12584.500497840958,
+            "entropy_effective_count": 18415.361335472826,
+            "maximum_normalized_weight": 0.0024973115459950173,
+            "largest_ten_weight_fraction": 0.009954243704259895,
+            "largest_one_percent_weight_fraction": 0.07250763807399054,
+            "log_weight_range_finite": 7465.96330441359,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 298,
+            "single_deletion_cdf_bound": 0.0025035637245905715,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.444588472241929,
+            "log_evidence_delta_mcse": 0.006942896902186865,
+            "evidence_relative_mcse": 0.006942896902186865,
+            "weight_ess_concentration_only": 12703.264223323911,
+            "entropy_effective_count": 18294.946533089726,
+            "maximum_normalized_weight": 0.00245034208129726,
+            "largest_ten_weight_fraction": 0.008900931444581869,
+            "largest_one_percent_weight_fraction": 0.0728767519413539,
+            "log_weight_range_finite": 7494.361820303467,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 268,
+            "single_deletion_cdf_bound": 0.0024563610060372104,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 32768,
+            "log_evidence": 12.436348244433312,
+            "log_evidence_delta_mcse": 0.007009135831767352,
+            "evidence_relative_mcse": 0.007009135831767352,
+            "weight_ess_concentration_only": 12555.863553451773,
+            "entropy_effective_count": 18265.682211815405,
+            "maximum_normalized_weight": 0.0022744371666861343,
+            "largest_ten_weight_fraction": 0.010033607894508965,
+            "largest_one_percent_weight_fraction": 0.07260851893245875,
+            "log_weight_range_finite": 7388.468769867427,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 276,
+            "single_deletion_cdf_bound": 0.0022796220237429315,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          }
+        ]
+      }
+    }
+  ],
+  "independent_cdf_contrasts": {
+    "family_size": 54,
+    "alpha": 0.05,
+    "z": 3.3121176662593586,
+    "difference": [
+      0.00012631037720788572,
+      0.00016892161981291176,
+      0.00032976462074849056,
+      0.0036658084154585213,
+      0.002650032351966869,
+      -0.0021073228670012156,
+      -0.000550150800193494,
+      -9.264317975543612e-06,
+      0.0003494570466611169,
+      0.001131897334426096,
+      0.001123337944672738,
+      -0.00048280156599177226,
+      -0.0011160858871443469,
+      -0.0012403435151559505,
+      -0.0012285560066779277,
+      -7.1189270396399e-06,
+      0.0009766377965683137,
+      -7.378235268173938e-05,
+      0.0004796291474291961,
+      0.0005673395100549428,
+      0.0020825829391874773,
+      0.005551426649519936,
+      0.0008912361532601998,
+      0.0003551138412873911,
+      0.000781190149897304,
+      0.0005774031560508153,
+      0.0018945700821850764,
+      0.001492190424578932,
+      0.0019477962506074947,
+      0.0006494322390725865,
+      0.00027984210414511157,
+      0.0008998418627459426,
+      0.0008117558582311224,
+      0.0019393394299538347,
+      0.0003490668066982172,
+      -0.000401127365379339,
+      -0.000618774426258047,
+      -0.0020137680079014356,
+      -0.0010266838593383787,
+      0.00040794904897933915,
+      0.0019934065319092142,
+      0.004720692277067062,
+      0.0024813965140444427,
+      0.0020520841282890556,
+      0.001161564831700046,
+      -0.00017687586139516175,
+      -0.0022295758865531062,
+      -0.0014365978868696727,
+      0.0010991700624193579,
+      0.001188772646617764,
+      2.4088139823019716e-05,
+      -0.0015673830772582331,
+      -0.0005805649037685656,
+      -0.00035006593286346366
+    ],
+    "difference_mcse": [
+      0.0007258882867085134,
+      0.001426428622583585,
+      0.001551069756482986,
+      0.002612737507338508,
+      0.0031067522290488987,
+      0.002460736781279903,
+      0.001911040622028331,
+      0.0011372727172886713,
+      0.0005962522175212301,
+      0.0006864248454144329,
+      0.0014829030214818949,
+      0.0018203887355689144,
+      0.0026551044776905544,
+      0.004720723025519391,
+      0.0035059911618861377,
+      0.002476091629233531,
+      0.0016701534534416616,
+      0.0007640381577311415,
+      0.0008030617972361251,
+      0.0010227664919351062,
+      0.0014134817944303944,
+      0.003033927349610845,
+      0.004612451966068089,
+      0.003295212316354589,
+      0.0018909433453772205,
+      0.0015587886368576367,
+      0.0011138522408324619,
+      0.0012546561941683548,
+      0.0017536860323216987,
+      0.0026266691007851917,
+      0.0037881392567105394,
+      0.004109407755880945,
+      0.0023541335829059223,
+      0.0014777127092755636,
+      0.0010696274064937034,
+      0.0005284009116639422,
+      0.00196799855729112,
+      0.002462049628974979,
+      0.0027623623931322394,
+      0.0028302371188741625,
+      0.003101329454297271,
+      0.0029143400093075405,
+      0.0021409218571231806,
+      0.0015118001251483652,
+      0.0005080640510826343,
+      0.00042632832846341225,
+      0.00121924915732788,
+      0.001743657259692706,
+      0.003272009580139746,
+      0.004524900117737761,
+      0.0025905935781155927,
+      0.002253301837677023,
+      0.0014799817935087667,
+      0.0005084179843864875
+    ],
+    "consistent": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "resolved": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "all_consistent": true,
+    "method": "asymptotic_normal_Bonferroni_not_exact"
+  },
+  "separate_descriptive_evidence_contrast": {
+    "family_size": 1,
+    "alpha": 0.05,
+    "z": 1.9599639845400545,
+    "difference": [
+      -0.006458583638035975
+    ],
+    "difference_mcse": [
+      0.005978929481241666
+    ],
+    "consistent": [
+      true
+    ],
+    "resolved": [
+      true
+    ],
+    "all_consistent": true,
+    "method": "asymptotic_normal_Bonferroni_not_exact"
+  },
+  "source_sha256": {
+    "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json": "c46649ff4b26d0c65fe65e355b532592b56427169e7b53ed5cc553de68fe1ad3",
+    "tmp/c07_cold_training/diagnose_fixed_grid.py": "0a84b6cc9c91ea60304394dee6ec0073db06ada5b09e45912f360a26ecb7d9f3",
+    "src/inference/iid_diagnostics.py": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+    "tmp/c07_cold_training/results/cold4096_iid_N32768.npz": "e922dc509e9f0fdd000790a97101fc2b58fbb923c6d6c19a4353bcb32ef00b51",
+    "tmp/c07_cold_training/results/cold8192_iid_N32768.npz": "2f001bbc3f37b9ce4e85ad4ef2a3ef235605b6912d09787d217d8b5bbdcf6109"
+  },
+  "limitations": [
+    "54 thresholds fixed from old GMM N1024 before these new productions; no cut optimization.",
+    "Both new likelihoods use the approved 8336-node table; old logL cuts came from 553 nodes and serve only as fixed scalar cuts.",
+    "Training streams and IID production streams are independent across both levels.",
+    "These generic T=1 diagnostics do not impersonate the frozen T=16 benchmark.",
+    "Finite IID influence/replication errors are asymptotic and do not certify unseen tails.",
+    "Training size comparison of one difficult dataset cannot validate every new dataset.",
+    "CDF and evidence contrasts are separate descriptive families; no combined global error claim.",
+    "No requirement on evidence MCSE was retrospectively introduced."
+  ]
+}

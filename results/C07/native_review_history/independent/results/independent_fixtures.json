@@ -1,0 +1,319 @@
+{
+  "label": "INDEPENDENT_CPP_PROTOTYPE_REVIEW_NOT_PUBLIC_WRAPPER_APPROVAL",
+  "configuration": {
+    "scope": "independent mathematical and numerical review of frozen C++ prototype",
+    "seed": 707950101,
+    "random_fixtures": [
+      [
+        3,
+        3,
+        3
+      ],
+      [
+        5,
+        4,
+        6
+      ],
+      [
+        16,
+        8,
+        16
+      ]
+    ],
+    "dimensions_order": [
+      "P",
+      "K",
+      "D"
+    ],
+    "toy_rows_each": 120,
+    "toy_absolute_tolerance": 1e-09,
+    "relative_tolerance": 1e-11,
+    "physical_absolute_tolerance": 1e-07,
+    "physical_posterior_points_per_target": 32,
+    "direct_invalid_memory_reads": false,
+    "no_approval_of_public_wrapper": true
+  },
+  "random_matrix_checks": [
+    {
+      "name": "complex_SPD_P3_K3_D3",
+      "N": 120,
+      "maximum_abs_logL": 1.7763568394002505e-14,
+      "maximum_scaled_difference": 2.077581602394906e-15,
+      "pass": true,
+      "tolerances": {
+        "absolute": 1e-09,
+        "relative": 1e-11
+      },
+      "targets_covered": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "unitary_rotated_inputs",
+      "N": 120,
+      "maximum_abs_logL": 2.3092638912203256e-14,
+      "maximum_scaled_difference": 2.700856083113377e-15,
+      "pass": true,
+      "tolerances": {
+        "absolute": 1e-09,
+        "relative": 1e-11
+      },
+      "targets_covered": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "name": "unitary_invariance",
+      "maximum_abs_difference": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "name": "complex_SPD_P5_K4_D6",
+      "N": 120,
+      "maximum_abs_logL": 2.842170943040401e-14,
+      "maximum_scaled_difference": 3.3466244581953093e-16,
+      "pass": true,
+      "tolerances": {
+        "absolute": 1e-09,
+        "relative": 1e-11
+      },
+      "targets_covered": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "name": "complex_SPD_P16_K8_D16",
+      "N": 120,
+      "maximum_abs_logL": 3.410605131648481e-13,
+      "maximum_scaled_difference": 8.600473533312411e-16,
+      "pass": true,
+      "tolerances": {
+        "absolute": 1e-09,
+        "relative": 1e-11
+      },
+      "targets_covered": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    }
+  ],
+  "negative_and_input_checks": [
+    {
+      "name": "nonfinite_theta",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "negative_target",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "too_large_target",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "noninteger_target",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "boolean_target",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "out_of_range_mass",
+      "pass": true,
+      "exception": "ValueError"
+    },
+    {
+      "name": "negative_CN_diagonal",
+      "code": 1,
+      "pass": true,
+      "output_not_consumed": true
+    },
+    {
+      "name": "negative_normal_covariance",
+      "code": 1,
+      "pass": true,
+      "output_not_consumed": true
+    },
+    {
+      "name": "NaN_normal_covariance",
+      "code": 1,
+      "pass": true,
+      "output_not_consumed": true
+    },
+    {
+      "name": "over_capacity_dimensions",
+      "codes": {
+        "P": -1,
+        "D": -1,
+        "K": -1
+      },
+      "pass": true
+    }
+  ],
+  "contract_findings": [
+    {
+      "name": "zero_K",
+      "raw_code": 0,
+      "finite_output": true,
+      "value": [
+        0.0
+      ],
+      "expected_public_behavior": "reject before native call"
+    },
+    {
+      "name": "zero_P",
+      "raw_code": 0,
+      "finite_output": true,
+      "value": [
+        0.0
+      ],
+      "expected_public_behavior": "reject before native call"
+    },
+    {
+      "name": "zero_D",
+      "raw_code": 0,
+      "finite_output": true,
+      "value": [
+        0.0
+      ],
+      "expected_public_behavior": "reject before native call"
+    },
+    {
+      "name": "model_index_5",
+      "raw_code": 0,
+      "finite_output": true,
+      "value": [
+        -22.22875758707684
+      ],
+      "expected_public_behavior": "reject before native call"
+    },
+    {
+      "name": "complex_diagonal_ignored",
+      "raw_code": 0,
+      "finite_output": true,
+      "expected_public_behavior": "reject non-Hermitian table before native call"
+    },
+    {
+      "name": "theta_numeric_strings",
+      "currently_accepted": true,
+      "expected_strict_contract": "reject before float conversion"
+    },
+    {
+      "name": "theta_bool",
+      "currently_accepted": true,
+      "expected_strict_contract": "reject before float conversion"
+    }
+  ],
+  "all_valid_math_checks_pass": true,
+  "all_expected_error_checks_pass": true,
+  "seconds": 2.1152130420086905,
+  "no_unsafe_memory_tests_executed": true,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/independent_review.py": "dad7a80730d97f264a9e060679944f85be82a48c97f239dcc882924e7b3e4a0c",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/review_config.json": "4ac640c57286f0c0df403525dbe045fd71b0885b5edfa1b1c41a9d1d1f40aaed",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/sources/full.cpp": "fb4220e9beaf3e9be83c7ec74007033cdabd9ce620facda629b76ef161aafd2c",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/sources/full_benchmark.py": "18ce3bc33f7949c249af0645d5067a4afaa663ecb4d0c23647be179bbfdfd49c",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cpp_review/sources/full.dylib": "7f941d7ff65c41d18b21779e2ceb9cc410a83f7d8523875816afcec2a36bceed"
+  }
+}

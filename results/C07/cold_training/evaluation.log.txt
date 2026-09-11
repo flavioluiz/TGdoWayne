@@ -1,0 +1,85 @@
+{"setup_complete": true, "seconds": 56.06190241710283, "maxrss_bytes": 2052800512}
+{"training_steps": 4096, "replicate": 0, "spawn_key": [0], "seconds": 1.61369733302854}
+{"training_steps": 4096, "replicate": 1, "spawn_key": [1], "seconds": 1.6956692909589037}
+{"training_steps": 4096, "replicate": 2, "spawn_key": [2], "seconds": 1.9332518329611048}
+{"training_steps": 4096, "replicate": 3, "spawn_key": [3], "seconds": 2.0910952920094132}
+{"training_steps": 8192, "replicate": 0, "spawn_key": [0], "seconds": 2.0886867908993736}
+{"training_steps": 8192, "replicate": 1, "spawn_key": [1], "seconds": 2.0467782920459285}
+{"training_steps": 8192, "replicate": 2, "spawn_key": [2], "seconds": 2.0763862079475075}
+{"training_steps": 8192, "replicate": 3, "spawn_key": [3], "seconds": 2.0874918330227956}
+[
+  {
+    "training_steps": 4096,
+    "seed": 907103301,
+    "replicates": [
+      {
+        "replicate": 0,
+        "spawn_key": [
+          0
+        ],
+        "seconds": 1.61369733302854
+      },
+      {
+        "replicate": 1,
+        "spawn_key": [
+          1
+        ],
+        "seconds": 1.6956692909589037
+      },
+      {
+        "replicate": 2,
+        "spawn_key": [
+          2
+        ],
+        "seconds": 1.9332518329611048
+      },
+      {
+        "replicate": 3,
+        "spawn_key": [
+          3
+        ],
+        "seconds": 2.0910952920094132
+      }
+    ],
+    "seconds": 9.104593166033737,
+    "file": "tmp/c07_cold_training/results/cold4096_iid_N32768.npz",
+    "sha256": "e922dc509e9f0fdd000790a97101fc2b58fbb923c6d6c19a4353bcb32ef00b51"
+  },
+  {
+    "training_steps": 8192,
+    "seed": 907103302,
+    "replicates": [
+      {
+        "replicate": 0,
+        "spawn_key": [
+          0
+        ],
+        "seconds": 2.0886867908993736
+      },
+      {
+        "replicate": 1,
+        "spawn_key": [
+          1
+        ],
+        "seconds": 2.0467782920459285
+      },
+      {
+        "replicate": 2,
+        "spawn_key": [
+          2
+        ],
+        "seconds": 2.0763862079475075
+      },
+      {
+        "replicate": 3,
+        "spawn_key": [
+          3
+        ],
+        "seconds": 2.0874918330227956
+      }
+    ],
+    "seconds": 10.134235374978743,
+    "file": "tmp/c07_cold_training/results/cold8192_iid_N32768.npz",
+    "sha256": "2f001bbc3f37b9ce4e85ad4ef2a3ef235605b6912d09787d217d8b5bbdcf6109"
+  }
+]

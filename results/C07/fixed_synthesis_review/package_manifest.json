@@ -1,0 +1,83 @@
+{
+  "status": "FIXED96_SYNTHESIS_PROSPECTIVE_TESTED_NO_PTA_POSTERIORS",
+  "files": [
+    {
+      "path": "tmp/c07_fixed_synthesis/INTEGRACAO.md",
+      "sha256": "3a3ca78aff73e21888e29b13576ea964696a382a7288cb2633c79639f06403ef",
+      "bytes": 2847
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/PROTOCOLO.md",
+      "sha256": "902beaf6c4052c66c573271e5370841184bade5d4fda19ba77e17b7bb7732aca",
+      "bytes": 7338
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/configs/fixed_synthesis_v1.json",
+      "sha256": "75baad769c20020a6b7695f771b4c3e8009b489a125f91f79e555d967a5f6580",
+      "bytes": 2112
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/results/tests.json",
+      "sha256": "0e66bac6b4351e74ed6461897c3653a58c40e2b1ea8a8fefc633ab5a5b4b755e",
+      "bytes": 2526
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/results/toy_summary.json",
+      "sha256": "30bfeed50bfefcd6bdccbaa71a1a8dc68f645ef2a48ec36ab79b694c4ada6239",
+      "bytes": 82838
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/scripts/sintetizar_injecoes_fixas.py",
+      "sha256": "c1113115634dfcd51b3a8253a9ac3fa2780fa62b002e1724a90199ecd6cd5747",
+      "bytes": 3562
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/src/inference/fixed_synthesis.py",
+      "sha256": "b3c2b630ec5a9231dd1ac02a1215e4a11970df0e7eb3e9ba629311475c4d9c21",
+      "bytes": 27676
+    },
+    {
+      "path": "tmp/c07_fixed_synthesis/tests/test_fixed_synthesis.py",
+      "sha256": "556597746586cb5a777ddc4ab1847a7ee93b348e459d23ec3b6f88ac7a04ada8",
+      "bytes": 16779
+    }
+  ],
+  "root_dependencies": [
+    {
+      "path": "src/inference/campaign_io.py",
+      "sha256": "97714f090640fa867c173365d9eacb281e8e134916ed4c8686eb31ead3ac63de",
+      "bytes": 3603
+    },
+    {
+      "path": "src/inference/campaign_archive.py",
+      "sha256": "94499d0dadab836e1858c411b8973a317aabd9272ec1834053ea41945ef4c34a",
+      "bytes": 5426
+    },
+    {
+      "path": "src/inference/diagnostics.py",
+      "sha256": "79eaef0d51e7276499a887e4d571d807756eb6dd89c01529548068b0cb5e18de",
+      "bytes": 13106
+    },
+    {
+      "path": "src/inference/sbc_sensitivity.py",
+      "sha256": "d14af4de7b5e200a70e7a58517b97388517d22275467ed308f3ccf044891dae8",
+      "bytes": 7330
+    },
+    {
+      "path": "src/inference/iid_diagnostics.py",
+      "sha256": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+      "bytes": 11141
+    },
+    {
+      "path": "tmp/c07_fixed_scenarios/src/inference/fixed_diagnostics_v2.py",
+      "sha256": "4f5e7e593f39f263809824c36a832c83b444990d8c4518d8389d185f5cd64091",
+      "bytes": 19039
+    }
+  ],
+  "tests": 10,
+  "failures": 0,
+  "PTA_likelihood_evaluations": 0,
+  "root_sources_modified": false,
+  "uniformity_tests": false,
+  "retains_all96": true
+}

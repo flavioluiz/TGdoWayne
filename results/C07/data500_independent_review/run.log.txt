@@ -1,0 +1,74 @@
+{
+  "status": "PASS_INDEPENDENT_GENERATION_AND_EXTREME_MOMENTS_NOT_SBC",
+  "N": 500,
+  "question": "Do the actual500 draws preserve complex normalization, imaginary cross-statistic signs and paired Gaussian moments at the realized condition/signal extremes?",
+  "maximum_q_error_standard_deviation": 7.399082276812769e-16,
+  "maximum_physical_error_standard_deviation": 4.494527485466981e-15,
+  "maximum_gaussian_error_standard_deviation": 2.9210190962666026e-15,
+  "extreme_indices": [
+    138,
+    295,
+    333,
+    475
+  ],
+  "extreme_rows": [
+    {
+      "index": 138,
+      "u": 0.9995687513795501,
+      "C_condition_max": 18.263872708578724,
+      "Sigma_condition_max": 30.5298872964264,
+      "gw_to_noise_trace_max": 9.798227009217738,
+      "gw_to_noise_trace_min": 0.04945209186380413,
+      "q_error_in_standard_deviation": 3.1066994122810644e-16,
+      "physical_error_in_standard_deviation": 6.212005111331218e-16,
+      "gaussian_error_in_standard_deviation": 1.5250127848380275e-15,
+      "frequency_ORF_variation": 0.4262722075796824
+    },
+    {
+      "index": 295,
+      "u": 0.6146546447133027,
+      "C_condition_max": 6.471942415289799,
+      "Sigma_condition_max": 29.6473682718351,
+      "gw_to_noise_trace_max": 474.4135252313698,
+      "gw_to_noise_trace_min": 0.5752041400107127,
+      "q_error_in_standard_deviation": 1.8936192205783632e-16,
+      "physical_error_in_standard_deviation": 7.299312097560093e-16,
+      "gaussian_error_in_standard_deviation": 6.327911570167196e-16,
+      "frequency_ORF_variation": 0.33593887615461204
+    },
+    {
+      "index": 333,
+      "u": 0.00194828200457986,
+      "C_condition_max": 22.247874959202466,
+      "Sigma_condition_max": 31.81594869918088,
+      "gw_to_noise_trace_max": 13.082119429234886,
+      "gw_to_noise_trace_min": 0.01634017626323434,
+      "q_error_in_standard_deviation": 2.6162286305910253e-16,
+      "physical_error_in_standard_deviation": 9.344423205540072e-16,
+      "gaussian_error_in_standard_deviation": 1.1375677248082187e-15,
+      "frequency_ORF_variation": 0.0007031763975501341
+    },
+    {
+      "index": 475,
+      "u": 0.7433634504930375,
+      "C_condition_max": 24.9987060043913,
+      "Sigma_condition_max": 33.497598877755784,
+      "gw_to_noise_trace_max": 0.0005497006595514683,
+      "gw_to_noise_trace_min": 5.6088645574889725e-06,
+      "q_error_in_standard_deviation": 2.991320246064147e-16,
+      "physical_error_in_standard_deviation": 1.2138193254485625e-15,
+      "gaussian_error_in_standard_deviation": 7.078927381411707e-16,
+      "frequency_ORF_variation": 0.3754115388804786
+    }
+  ],
+  "no_model_covariance_or_pair_helpers_imported": true,
+  "orf_quadrature_not_repeated": true,
+  "numpy_version": "2.4.3",
+  "seconds": 2.5783321659546345,
+  "limitations": [
+    "Checked ORF cache values are inputs; this review does not independently recompute their quadrature.",
+    "No posterior training, IID inference, coverage or SBC run is performed.",
+    "The Gaussian controls have declared matched moments but are not the exact quadratic physical distribution.",
+    "Numerical reproduction in standardized units tests the generated observations, not empirical moment convergence across different truths."
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "scope": "Four new toy truths only, not production500 or calibration",
+  "stages": [
+    {
+      "action": "preflight",
+      "suffix": "",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "preflight",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 0,
+      "seconds": 1.3832580000162125,
+      "expected_returncode": 0
+    },
+    {
+      "action": "build-orfs",
+      "suffix": "",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "build-orfs",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 0,
+      "seconds": 1.6714367909589782,
+      "expected_returncode": 0
+    },
+    {
+      "action": "generate",
+      "suffix": "",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "generate",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 0,
+      "seconds": 1.55726358294487,
+      "expected_returncode": 0
+    },
+    {
+      "action": "verify",
+      "suffix": "",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "verify",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 0,
+      "seconds": 1.5134335829643533,
+      "expected_returncode": 0
+    },
+    {
+      "action": "generate",
+      "suffix": "_refuse_overwrite",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "generate",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 1,
+      "seconds": 1.3035317920148373,
+      "expected_returncode": 1
+    },
+    {
+      "action": "build-orfs",
+      "suffix": "_refuse_overwrite",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "build-orfs",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 1,
+      "seconds": 1.2477608328917995,
+      "expected_returncode": 1
+    },
+    {
+      "action": "verify",
+      "suffix": "_altered_construction_manifest",
+      "command": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv/bin/python",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py",
+        "verify",
+        "--config",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/toy_config.json",
+        "--output",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/altered_manifest_product",
+        "--construction-cache",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+      ],
+      "returncode": 1,
+      "seconds": 1.3293305829865858,
+      "expected_returncode": 1
+    }
+  ],
+  "source_hashes_preserved": true,
+  "output_files_preserved_after_refusals": true,
+  "unexpected_acceptance_altered_construction_manifest": false,
+  "source_sha256": {
+    "scripts/gerar_calibracao.py": "d54c544aa53d8db85c8b2f16fb0f877863ac978add666b1cdb719ad488d25242",
+    "configs/calibration/prior_predictive_500_v1.json": "f22b0a8cd7c86e477365ea02d3b37a836458d44285b0abd323bccd174c89fdfa",
+    "src/inference/orf_backend.py": "05222fa1cf54488ea252c76d05456ca32bae213ef4d8628dfe9c493f32d23673",
+    "src/inference/quadrature.py": "42255b247875eb3857ef456bc5c1a5f19683f85d07ed6afa5fd7839f5d9e9a42",
+    "src/inference/diagnostics.py": "79eaef0d51e7276499a887e4d571d807756eb6dd89c01529548068b0cb5e18de",
+    "src/inference/scale_cn.py": "27fff04861fa6ca20c8dd7e8107676b26da3117b3b2c6755920a5c384bbfe140",
+    "src/inference/likelihood_reference.py": "29a2c4137d566ff95766a1feccf68033358e354a5249cd89f869451b7f575498",
+    "src/inference/data_generation.py": "f9e908b2ae321373b93baec0c702ae8601c4386641c957e566401a72755bbe06",
+    "src/inference/__init__.py": "21d80a76b7cb264c5b8f60bac29cbb80c90ab7f6604e5137de1c9411d2b0f812",
+    "src/inference/model.py": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+    "src/inference/mcmc_diagnostics.py": "045864e83b9f0715686e4da3cfc4eb7262538e6dd7e034437183df76ac5dfabf",
+    "src/inference/likelihood.py": "8d27cc67b6c2ae6cc2a8eac56c5fe9368169e5b15085768862864ea883ca6335",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/inference/scale_gaussian.py": "184f1c074df74a963c0ee5c229c47b11766db96842066539fbaa5af8179a1129",
+    "src/inference/scale_kernel.py": "43b38ebf9e20f232a0d4ff7fb0b374d20992307dfd2e3a0d6f6ee0e5ec6fa09f",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/geometry.py": "8c2b644754b2118ab23d3f6224db02e4f5de117837f8a2fd12f4d2eecf63886d",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887"
+  },
+  "original_product_sha256": {
+    "orf_construction.json": "5becb958fb1425b731a2984a11d86a3aa970ac30c0f5b09fe358c52cc9786257",
+    "data.npz": "e30826c0fb1a9561320b26db89c5952652cd4965a88e55fc68bbbbcf1ebbb638",
+    "generation.json": "3430934657073a5022def416ffefaf3513d5ee5b93f3a8450a459ae6031bef91",
+    "orf_cache/ac22332c14202c4ce94add991598c482c091cb097fbe776d605d23637449f75c.npz": "d0798e555982215c9ed49866169caca3053753dc85a30f528d70cefa3d568491",
+    "orf_cache/fe12db5ba702b819e41c11e3cc93b7a15d12fad376a21cb5e68f389bd379c554.npz": "7bb9b9406687db4aba47978165521ac7410ffe4841fcc9aad0bd9adda5b7f6fb",
+    "orf_cache/cbcfc76af657c042aa5926c237d5ef82f9330dbce1a970f44a138e63540af6c1.npz": "cde6b06052d0f3940967f6a2c56f4f2f8ba1902c480f36fef2f3b5f501282217",
+    "orf_cache/1839ce66315cd9447b6bd6dc265403db29de1c5f12d16e4b54ee03fa3ead4275.npz": "dd5e0ceaba81ac0517135c4303e0efcc5ab93dd9ff0cab4463d4dd143da82cec",
+    "orf_cache/78985b38175b65ff6c49513cef7ae112d060234986c4c1b8fa947198f3c15e70.npz": "65617bba918bab2c359b04b2de0e6e3dfd1191d268b6b50e589ac3bf37c865d4",
+    "orf_cache/3e7f10e6786ace656c10630643412cfcfc610380a852428a9f830bb00c57a7f8.npz": "b278f90d7ad75bc41b8f20ff2136ade4a3d37ad4b094b940536c43644f4168a3",
+    "orf_cache/31b003d8e096185dd003d491b3488db346a2fd8dbee1a0692b7e0985e056ba74.npz": "7420838ed3cba6792a7f4383292451409fb57866a5455a3aa256c067fcb6b74a"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "status": "COMPLETE",
+  "requested_nodes": 7,
+  "new_nodes": 7,
+  "written_nodes": 7,
+  "existing_nodes": 0,
+  "physical_signature": "d280a67225f73cd8f0931a75d3a7f0dad7e2d47bbd82f95fb394ab0eff014726",
+  "provenance": {
+    "name": "real_blas_precomputed_associated_legendre_v2_guarded",
+    "source_sha256": {
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+      "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3"
+    },
+    "own_budget": {
+      "maximum_estimated_numeric_memory_bytes": 33554432,
+      "maximum_total_real_multiplications": 10000000,
+      "maximum_requested_nodes": 8,
+      "batch_size": 4,
+      "maximum_batch_real_multiplications": 1000000
+    },
+    "legacy_provider_limits_modified": false,
+    "physical_signature_unchanged": true,
+    "geometry_dot_roundoff_clipping": true,
+    "eigenvalue_clipping": false
+  },
+  "total_real_multiplications": 4757760,
+  "estimated_peak_numeric_bytes": 466672,
+  "estimated_table_storage_bytes": 64512,
+  "timings": [
+    {
+      "frequency": 1,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.0017941660480573773,
+          "evaluation_seconds": 0.0023578329710289836
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.0019657500088214874,
+          "evaluation_seconds": 0.002169208019040525
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.6479873021779667e-17,
+      "minimum_eigenvalue": -3.5389905155069304e-19
+    },
+    {
+      "frequency": 2,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.001488416106440127,
+          "evaluation_seconds": 0.0019625830464065075
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.0020272498950362206,
+          "evaluation_seconds": 0.00221429206430912
+        }
+      ],
+      "maximum_coarse_fine_difference": 6.765421556309548e-17,
+      "minimum_eigenvalue": 1.1424369416196099e-10
+    },
+    {
+      "frequency": 3,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.001619833055883646,
+          "evaluation_seconds": 0.0020895409397780895
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.002031708019785583,
+          "evaluation_seconds": 0.0022689170436933637
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.474514954580286e-16,
+      "minimum_eigenvalue": 1.731385593533444e-09
+    },
+    {
+      "frequency": 4,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 32,
+          "nmu": 90,
+          "basis_build_seconds": 0.0016166659770533442,
+          "evaluation_seconds": 0.002117791911587119
+        },
+        {
+          "resolution": "fine",
+          "lmax": 40,
+          "nmu": 110,
+          "basis_build_seconds": 0.00200208299793303,
+          "evaluation_seconds": 0.002182750031352043
+        }
+      ],
+      "maximum_coarse_fine_difference": 2.706168622523819e-16,
+      "minimum_eigenvalue": 1.0328039075358428e-08
+    }
+  ],
+  "sparse_direct_checks": [
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 7.453957613944353e-20,
+      "seconds": 0.0037679580273106694,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 8.132508849799224e-20,
+      "seconds": 0.002150166081264615,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 5.421517486879235e-20,
+      "seconds": 0.002114332979544997,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 5.422499583113512e-20,
+      "seconds": 0.0022520829224959016,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 6.776263578034403e-20,
+      "seconds": 0.0023240410955622792,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 8.142537899032908e-20,
+      "seconds": 0.0021724579855799675,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 4,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 2.2718175287815495e-19,
+      "seconds": 0.00215329194907099,
+      "all_direct_checks_work_proxy": 169400,
+      "maximum_direct_memory_estimate_bytes": 5466560,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    }
+  ],
+  "concurrent_existing_preserved": [],
+  "VECLIB_MAXIMUM_THREADS": "unset",
+  "seconds": 0.3353983749402687,
+  "destination": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_generator_review/rerun_v2/construction_cache"
+}

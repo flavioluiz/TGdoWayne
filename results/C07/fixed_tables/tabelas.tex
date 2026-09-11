@@ -1,0 +1,58 @@
+% Existing summary only; no new statistical tests.
+% SHA256: 1273de6e7f2b835a5c349c5df243b60ac5f865ff0f55f61bfb2715e0ac0c11d5
+\begin{table}[htbp]
+\centering
+\caption{Funções resolvidas nos três cenários fixos: 32 dados A0 em cada cenário.}
+\label{tab:c07-fixed-resolucao}
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Cenário & $u$ & $\log A$ & $\gamma$ & $\log A_r$ & $\log E$ & $\log L$ \\
+\midrule
+$u=0$, com GW & 32$^\ast$ & 32 & 32 & 32 & 32 & 32 \\
+$u=0{,}995$, com GW & 32 & 32 & 32 & 32 & 32 & 32 \\
+Sem GW & --- & --- & --- & 32 & 32 & --- \\
+\bottomrule
+\end{tabular}
+\endgroup
+\par\smallskip\begin{minipage}{0.96\textwidth}\footnotesize O asterisco indica $F_u(0)=0$ estrutural, sem integração numérica. Traços indicam ausência de verdade geradora definida: sem GW não há massa, amplitude ou inclinação do sinal a recuperar. As duas funções de ruído permanecem aplicáveis. Nenhum dado é removido.\end{minipage}
+\end{table}
+\begin{table}[htbp]
+\centering
+\caption{Coberturas condicionais selecionadas nos cenários fixos.}
+\label{tab:c07-fixed-coberturas}
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lllr rr@{}}
+\toprule
+Cenário & Par. & Evento & Cont. & IC 95\% & Faixa \\
+\midrule
+$u=0$, com GW & $u$ & $F\leq0{,}90$ & 32/32 & $[0{,}891;1]$ & $[1;1]$ \\
+$u=0$, com GW & $u$ & $0{,}05\leq F\leq0{,}95$ & 0/32 & $[0;0{,}109]$ & $[0;0]$ \\
+$u=0{,}995$, com GW & $u$ & $F\leq0{,}90$ & 0/32 & $[0;0{,}109]$ & $[0;0]$ \\
+$u=0{,}995$, com GW & $u$ & $0{,}05\leq F\leq0{,}95$ & 0/32 & $[0;0{,}109]$ & $[0;0]$ \\
+Sem GW & $\log A_r$ & $F\leq0{,}90$ & 21/32 & $[0{,}468;0{,}814]$ & $[0{,}625;0{,}688]$ \\
+Sem GW & $\log A_r$ & $0{,}05\leq F\leq0{,}95$ & 30/32 & $[0{,}792;0{,}992]$ & $[0{,}938;0{,}938]$ \\
+Sem GW & $\log E$ & $F\leq0{,}90$ & 27/32 & $[0{,}672;0{,}947]$ & $[0{,}844;0{,}875]$ \\
+Sem GW & $\log E$ & $0{,}05\leq F\leq0{,}95$ & 29/32 & $[0{,}750;0{,}980]$ & $[0{,}875;0{,}906]$ \\
+\bottomrule
+\end{tabular}
+\endgroup
+\par\smallskip\begin{minipage}{0.96\textwidth}\footnotesize $F$ é a CDF posterior na verdade. Os ICs de Clopper--Pearson são ponto a ponto, condicionados à contagem calculada; as faixas usam a sensibilidade numérica operacional e $[0,1]$ para funções não resolvidas. Em $u=0$, as coberturas de $[0,U_{90}]$ e do intervalo central são estruturalmente 1 e 0. Não se exige cobertura nominal de 90\% para toda verdade fixa e não se executa SBC nestes cenários.\end{minipage}
+\end{table}
+\begin{table}[htbp]
+\centering
+\caption{Quantis de massa calculados: descrição das 32 realizações por cenário.}
+\label{tab:c07-fixed-quantis}
+\begingroup\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Cenário & Mediana $Q_{50}$ & Mediana $Q_{90}$ & Mediana $Q_{95}$ & Extremos $Q_{95}$ \\
+\midrule
+$u=0$, com GW & $0{,}494$ & $0{,}897$ & $0{,}948$ & $[0{,}870;0{,}961]$ \\
+$u=0{,}995$, com GW & $0{,}527$ & $0{,}908$ & $0{,}954$ & $[0{,}923;0{,}970]$ \\
+Sem GW & $0{,}531$ & $0{,}910$ & $0{,}955$ & $[0{,}950;0{,}959]$ \\
+\bottomrule
+\end{tabular}
+\endgroup
+\par\smallskip\begin{minipage}{0.96\textwidth}\footnotesize As medianas e os extremos são tomados entre os 32 dados; não são intervalos de erro numérico. Precisão da CDF não certifica precisão horizontal dos quantis. Sem GW, estes números descrevem o ajuste de um modelo com sinal, sem representar recuperação de uma massa geradora nem detecção.\end{minipage}
+\end{table}

@@ -1,0 +1,21 @@
+{
+  "protocol": "C07_FIXED_MASKED_IID_DIAGNOSTICS_v1_before_posterior_production",
+  "population_targets": 96,
+  "models": ["A0_CN"],
+  "levels": [16384, 65536],
+  "independent_replications": 4,
+  "cdf_mcse_target": 0.00335,
+  "alpha_replicate_family": 0.05,
+  "alpha_refinement_family": 0.05,
+  "global_replicate_contrasts": 19584,
+  "global_refinement_contrasts": 672,
+  "denominators": "Conservative maxima204*96 and7*96, fixed before sampling. Undefined and analytically structural functions omit tests without decreasing these denominators.",
+  "maximum_saturated_target_weight": 1e-12,
+  "scenario_counts": {"mass_zero_signal_present": {"replication_contrasts_per_target": 192, "refinement_contrasts_per_target": 6}, "near_kinematic_edge": {"replication_contrasts_per_target": 204, "refinement_contrasts_per_target": 7}, "no_gravitational_signal": {"replication_contrasts_per_target": 156, "refinement_contrasts_per_target": 3}},
+  "planned_executed_replication_contrasts": 17664,
+  "planned_executed_refinement_contrasts": 512,
+  "undefined_truth": "NaN plus applicable=false; no CDF, bias, coverage or truth-logL substituted.",
+  "structural_mass_zero": "Continuous uniform mass prior on[0,1] and no atom implies posterior F_u(0)=0 exactly, with MCSE0 and structural flag. Other constant indicators remain unresolved.",
+  "quantiles": "Twenty cuts from the lower independent level remain for every posterior, including unidentifiable or truthless generating parameters.",
+  "scope": "Numerical fixed-truth diagnostics; no uniformity SBC, no universal nominal fixed-truth coverage, no Bayes factor and no automatic raw release."
+}

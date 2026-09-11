@@ -1,0 +1,507 @@
+{
+  "logpdf_scipy": {
+    "original8192": {
+      "max_logpdf_difference_scipy": 8.881784197001252e-15
+    },
+    "new8192": {
+      "max_logpdf_difference_scipy": 1.5987211554602254e-14
+    },
+    "new32768": {
+      "max_logpdf_difference_scipy": 1.6342482922482304e-13
+    }
+  },
+  "max_native_vs_direct_cholesky_logL": 2.842170943040401e-14,
+  "top": [
+    {
+      "rep": 0,
+      "index": 18751,
+      "normalized_weight": 0.011326769894439091,
+      "x_unit": [
+        0.19231397740144157,
+        0.999307318562179,
+        0.539505544315307,
+        0.742584868184318,
+        0.8001524082873146
+      ],
+      "theta": [
+        0.19231397740144157,
+        -14.001385362875642,
+        4.348763860788267,
+        -15.143537829539206,
+        0.18070975633052766
+      ],
+      "z": [
+        -1.435044061760969,
+        7.274247428693796,
+        0.15835224556124672,
+        1.0594470841331398,
+        1.3872471852719805
+      ],
+      "draw_component": 4,
+      "log_likelihood": -72.67223316363867,
+      "direct_cholesky_log_likelihood": -72.67223316363865,
+      "logpdf": {
+        "original8192": -19.358701568375125,
+        "new8192": -18.21937601533107,
+        "new32768": -20.46559463394718
+      },
+      "new_to_old_density_ratios": {
+        "new8192": 3.124660236770623,
+        "new32768": 0.3305844714291626
+      },
+      "old_density_responsibilities": [
+        1.5543213898637553e-34,
+        6.634338178514501e-10,
+        1.3420943332316297e-77,
+        2.1705251185275457e-90,
+        0.9999999993365662
+      ],
+      "old_gaussian_mahalanobis_squared": [
+        181.9260042717143,
+        69.77137895610308,
+        383.9842283085356,
+        436.6404519746183
+      ]
+    },
+    {
+      "rep": 0,
+      "index": 15884,
+      "normalized_weight": 0.0016363054320716578,
+      "x_unit": [
+        0.9564442223769402,
+        0.999528909738339,
+        0.693375117975602,
+        0.9601437054875368,
+        0.8724807402107391
+      ],
+      "theta": [
+        0.9564442223769402,
+        -14.000942180523323,
+        4.733437794939006,
+        -14.599640736281158,
+        0.22425575122111058
+      ],
+      "z": [
+        3.089180111955211,
+        7.659989642702536,
+        0.8159460306990249,
+        3.1818026185691664,
+        1.92307316921474
+      ],
+      "draw_component": 4,
+      "log_likelihood": -70.89707878534051,
+      "direct_cholesky_log_likelihood": -70.89707878534051,
+      "logpdf": {
+        "original8192": -19.477126642707283,
+        "new8192": -18.336035977821066,
+        "new32768": -20.319512988250896
+      },
+      "new_to_old_density_ratios": {
+        "new8192": 3.1301804820491843,
+        "new32768": 0.4306815411872649
+      },
+      "old_density_responsibilities": [
+        1.2247544246523095e-38,
+        1.2490652696627063e-08,
+        1.3813033283264669e-77,
+        1.6810896177965445e-88,
+        0.999999987509348
+      ],
+      "old_gaussian_mahalanobis_squared": [
+        201.06013254616678,
+        64.13761558973857,
+        384.16348612683265,
+        428.17801567767384
+      ]
+    }
+  ],
+  "regions": [
+    {
+      "proposal": "original8192",
+      "weights": {
+        "n": 262144,
+        "log_evidence": -75.32782890150577,
+        "log_evidence_delta_mcse": 0.013426154399231179,
+        "evidence_relative_mcse": 0.013426154399231179,
+        "weight_ess_concentration_only": 6985.249476201544,
+        "entropy_effective_count": 125731.08689810675,
+        "maximum_normalized_weight": 0.011326769894439091,
+        "largest_ten_weight_fraction": 0.016978694603056285,
+        "largest_one_percent_weight_fraction": 0.08006695614369598,
+        "log_weight_range_finite": 1969770.1634420136,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 5855,
+        "single_deletion_cdf_bound": 0.011456535435099955,
+        "single_deletion_guard_pass": false,
+        "no_unseen_tail_certificate": true,
+        "pooled_iid_evidence_relative_mcse": 0.011804433231826174,
+        "between_replications_evidence_relative_mcse": 0.013426154399231179,
+        "replications": [
+          {
+            "n": 65536,
+            "log_evidence": -75.28840070200188,
+            "log_evidence_delta_mcse": 0.04434744802980003,
+            "evidence_relative_mcse": 0.04434744802980003,
+            "weight_ess_concentration_only": 504.55997937722566,
+            "entropy_effective_count": 25044.31922995316,
+            "maximum_normalized_weight": 0.04355546149263366,
+            "largest_ten_weight_fraction": 0.05786296282773216,
+            "largest_one_percent_weight_fraction": 0.11460605099130347,
+            "log_weight_range_finite": 1109757.5904828156,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1474,
+            "single_deletion_cdf_bound": 0.04553893063220017,
+            "single_deletion_guard_pass": false,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.34120948265642,
+            "log_evidence_delta_mcse": 0.00531872991308262,
+            "evidence_relative_mcse": 0.00531872991308262,
+            "weight_ess_concentration_only": 22963.565047293643,
+            "entropy_effective_count": 34209.06730615342,
+            "maximum_normalized_weight": 0.00151290302523718,
+            "largest_ten_weight_fraction": 0.008206977825099424,
+            "largest_one_percent_weight_fraction": 0.06818326596394597,
+            "log_weight_range_finite": 1969766.7506284683,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1441,
+            "single_deletion_cdf_bound": 0.001515195368894606,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.33952825545141,
+            "log_evidence_delta_mcse": 0.006853596771401384,
+            "evidence_relative_mcse": 0.006853596771401384,
+            "weight_ess_concentration_only": 16069.455778472906,
+            "entropy_effective_count": 33947.032358497854,
+            "maximum_normalized_weight": 0.004994609827255855,
+            "largest_ten_weight_fraction": 0.009137632008934998,
+            "largest_one_percent_weight_fraction": 0.06823556432908615,
+            "log_weight_range_finite": 1056077.705699508,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1433,
+            "single_deletion_cdf_bound": 0.005019681176188135,
+            "single_deletion_guard_pass": false,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.34324021453716,
+            "log_evidence_delta_mcse": 0.005375410364498238,
+            "evidence_relative_mcse": 0.005375410364498238,
+            "weight_ess_concentration_only": 22648.320298726165,
+            "entropy_effective_count": 34018.45942766724,
+            "maximum_normalized_weight": 0.0015777979603410254,
+            "largest_ten_weight_fraction": 0.00868132701376892,
+            "largest_one_percent_weight_fraction": 0.06749822726035914,
+            "log_weight_range_finite": 1428390.2971523495,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1499,
+            "single_deletion_cdf_bound": 0.001580291340795277,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          }
+        ]
+      },
+      "regions": [
+        {
+          "region": "Agw_gt_0.99",
+          "posterior_probability": 0.024609253626302174,
+          "probability_mcse": 0.013437168481838738,
+          "proposal_draw_fraction": 0.010517120361328125,
+          "proposal_draw_count": 2757
+        },
+        {
+          "region": "Agw_gt_0.999",
+          "posterior_probability": 0.012965547421219803,
+          "probability_mcse": 0.01278845790127263,
+          "proposal_draw_fraction": 0.001300811767578125,
+          "proposal_draw_count": 341
+        },
+        {
+          "region": "Agw_gt_0.99_gamma_lt_0.75",
+          "posterior_probability": 0.024044656009513332,
+          "probability_mcse": 0.013514780292013095,
+          "proposal_draw_fraction": 0.008525848388671875,
+          "proposal_draw_count": 2235
+        },
+        {
+          "region": "old_p_over_q_gt100",
+          "posterior_probability": 0.01536350711240364,
+          "probability_mcse": null,
+          "proposal_draw_fraction": 1.9073486328125e-05,
+          "proposal_draw_count": 5
+        },
+        {
+          "region": "old_p_over_q_gt1000",
+          "posterior_probability": 0.011326769894442146,
+          "probability_mcse": null,
+          "proposal_draw_fraction": 3.814697265625e-06,
+          "proposal_draw_count": 1
+        }
+      ]
+    },
+    {
+      "proposal": "new8192",
+      "weights": {
+        "n": 262144,
+        "log_evidence": -75.33780116340773,
+        "log_evidence_delta_mcse": 0.002712461043738246,
+        "evidence_relative_mcse": 0.002712461043738246,
+        "weight_ess_concentration_only": 89508.57374761371,
+        "entropy_effective_count": 141610.0873187192,
+        "maximum_normalized_weight": 0.000674915160367913,
+        "largest_ten_weight_fraction": 0.004069040417732179,
+        "largest_one_percent_weight_fraction": 0.06784092459447977,
+        "log_weight_range_finite": 2079577.6627728918,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 5794,
+        "single_deletion_cdf_bound": 0.0006753709784801617,
+        "single_deletion_guard_pass": true,
+        "no_unseen_tail_certificate": true,
+        "pooled_iid_evidence_relative_mcse": 0.002712461043738246,
+        "between_replications_evidence_relative_mcse": 0.0018158052692286149,
+        "replications": [
+          {
+            "n": 65536,
+            "log_evidence": -75.33309856198187,
+            "log_evidence_delta_mcse": 0.005492238468725648,
+            "evidence_relative_mcse": 0.005492238468725648,
+            "weight_ess_concentration_only": 22015.272698437697,
+            "entropy_effective_count": 35492.32978548631,
+            "maximum_normalized_weight": 0.002686995017521469,
+            "largest_ten_weight_fraction": 0.007861082057106526,
+            "largest_one_percent_weight_fraction": 0.06762416328278019,
+            "log_weight_range_finite": 1343889.97591326,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1481,
+            "single_deletion_cdf_bound": 0.0026942344119624466,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.33964971674747,
+            "log_evidence_delta_mcse": 0.005430840606293994,
+            "evidence_relative_mcse": 0.005430840606293994,
+            "weight_ess_concentration_only": 22345.18593805689,
+            "entropy_effective_count": 35329.276613627015,
+            "maximum_normalized_weight": 0.002366335536362929,
+            "largest_ten_weight_fraction": 0.008243667436574481,
+            "largest_one_percent_weight_fraction": 0.06854015873115922,
+            "log_weight_range_finite": 2040511.689519694,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1408,
+            "single_deletion_cdf_bound": 0.0023719483620624955,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.34145788045939,
+            "log_evidence_delta_mcse": 0.005181849070664287,
+            "evidence_relative_mcse": 0.005181849070664287,
+            "weight_ess_concentration_only": 23747.362751596633,
+            "entropy_effective_count": 35371.05171506184,
+            "maximum_normalized_weight": 0.0012599204322801764,
+            "largest_ten_weight_fraction": 0.008191910207913655,
+            "largest_one_percent_weight_fraction": 0.06748289290707687,
+            "log_weight_range_finite": 1343745.021859348,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1449,
+            "single_deletion_cdf_bound": 0.0012615098342959282,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.33701826074386,
+            "log_evidence_delta_mcse": 0.005583922239289058,
+            "evidence_relative_mcse": 0.005583922239289058,
+            "weight_ess_concentration_only": 21533.85620493222,
+            "entropy_effective_count": 35417.65112691604,
+            "maximum_normalized_weight": 0.002335074278910574,
+            "largest_ten_weight_fraction": 0.00958019646326236,
+            "largest_one_percent_weight_fraction": 0.06783223412440892,
+            "log_weight_range_finite": 2079577.5184734194,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1446,
+            "single_deletion_cdf_bound": 0.0023405396127590987,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          }
+        ]
+      },
+      "regions": [
+        {
+          "region": "Agw_gt_0.99",
+          "posterior_probability": 0.009199665036439986,
+          "probability_mcse": 0.0004158861714286976,
+          "proposal_draw_fraction": 0.020954132080078125,
+          "proposal_draw_count": 5493
+        },
+        {
+          "region": "Agw_gt_0.999",
+          "posterior_probability": 1.584443983193573e-05,
+          "probability_mcse": 1.1549674060567793e-05,
+          "proposal_draw_fraction": 0.00189971923828125,
+          "proposal_draw_count": 498
+        },
+        {
+          "region": "Agw_gt_0.99_gamma_lt_0.75",
+          "posterior_probability": 0.008890502533372535,
+          "probability_mcse": 0.00041476410674496977,
+          "proposal_draw_fraction": 0.017498016357421875,
+          "proposal_draw_count": 4587
+        },
+        {
+          "region": "old_p_over_q_gt100",
+          "posterior_probability": 0.0031529278996796917,
+          "probability_mcse": 0.0006317761864964701,
+          "proposal_draw_fraction": 0.0004425048828125,
+          "proposal_draw_count": 116
+        },
+        {
+          "region": "old_p_over_q_gt1000",
+          "posterior_probability": 0.0005331538903858846,
+          "probability_mcse": null,
+          "proposal_draw_fraction": 3.0517578125e-05,
+          "proposal_draw_count": 8
+        }
+      ]
+    },
+    {
+      "proposal": "new32768",
+      "weights": {
+        "n": 262144,
+        "log_evidence": -75.33861827235889,
+        "log_evidence_delta_mcse": 0.002812746464445419,
+        "evidence_relative_mcse": 0.002812746464445419,
+        "weight_ess_concentration_only": 103220.54492232433,
+        "entropy_effective_count": 144806.36256098136,
+        "maximum_normalized_weight": 0.0007448959325306919,
+        "largest_ten_weight_fraction": 0.0028515481009283774,
+        "largest_one_percent_weight_fraction": 0.058100222129254586,
+        "log_weight_range_finite": 2173698.34434728,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 4720,
+        "single_deletion_cdf_bound": 0.0007454512161094718,
+        "single_deletion_guard_pass": true,
+        "no_unseen_tail_certificate": true,
+        "pooled_iid_evidence_relative_mcse": 0.0024234931290743607,
+        "between_replications_evidence_relative_mcse": 0.002812746464445419,
+        "replications": [
+          {
+            "n": 65536,
+            "log_evidence": -75.33612078677587,
+            "log_evidence_delta_mcse": 0.0050700647874686675,
+            "evidence_relative_mcse": 0.0050700647874686675,
+            "weight_ess_concentration_only": 24411.70609334332,
+            "entropy_effective_count": 35972.529613938445,
+            "maximum_normalized_weight": 0.0025189923784914763,
+            "largest_ten_weight_fraction": 0.006009946351814453,
+            "largest_one_percent_weight_fraction": 0.06022231852427984,
+            "log_weight_range_finite": 1276678.098320537,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1187,
+            "single_deletion_cdf_bound": 0.0025253537252784477,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.33294120266143,
+            "log_evidence_delta_mcse": 0.005308022788307315,
+            "evidence_relative_mcse": 0.005308022788307315,
+            "weight_ess_concentration_only": 23023.721420511407,
+            "entropy_effective_count": 35996.51452543189,
+            "maximum_normalized_weight": 0.002962716349566695,
+            "largest_ten_weight_fraction": 0.006905699669346285,
+            "largest_one_percent_weight_fraction": 0.059259574761569477,
+            "log_weight_range_finite": 1571442.224713485,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1160,
+            "single_deletion_cdf_bound": 0.00297152012081169,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.33934621780018,
+            "log_evidence_delta_mcse": 0.004585024544938098,
+            "evidence_relative_mcse": 0.004585024544938098,
+            "weight_ess_concentration_only": 27562.698110154375,
+            "entropy_effective_count": 36254.57222407356,
+            "maximum_normalized_weight": 0.0012803324200337202,
+            "largest_ten_weight_fraction": 0.00465736077847117,
+            "largest_one_percent_weight_fraction": 0.05776486530332767,
+            "log_weight_range_finite": 2173697.498955479,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1165,
+            "single_deletion_cdf_bound": 0.0012819737726164338,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          },
+          {
+            "n": 65536,
+            "log_evidence": -75.34611242464138,
+            "log_evidence_delta_mcse": 0.004351021468854919,
+            "evidence_relative_mcse": 0.004351021468854919,
+            "weight_ess_concentration_only": 29248.414021265486,
+            "entropy_effective_count": 36592.59973722427,
+            "maximum_normalized_weight": 0.0007706406875485327,
+            "largest_ten_weight_fraction": 0.0035901694038402987,
+            "largest_one_percent_weight_fraction": 0.055174062960505935,
+            "log_weight_range_finite": 1797657.3249785423,
+            "exact_zero_target_weights": 0,
+            "floating_point_weight_underflows": 1199,
+            "single_deletion_cdf_bound": 0.0007712350326443512,
+            "single_deletion_guard_pass": true,
+            "no_unseen_tail_certificate": true
+          }
+        ]
+      },
+      "regions": [
+        {
+          "region": "Agw_gt_0.99",
+          "posterior_probability": 0.011324473045637662,
+          "probability_mcse": 0.0011427234210007779,
+          "proposal_draw_fraction": 0.01271820068359375,
+          "proposal_draw_count": 3334
+        },
+        {
+          "region": "Agw_gt_0.999",
+          "posterior_probability": 0.0006452997287214046,
+          "probability_mcse": 0.0006310741318851146,
+          "proposal_draw_fraction": 0.00072479248046875,
+          "proposal_draw_count": 190
+        },
+        {
+          "region": "Agw_gt_0.99_gamma_lt_0.75",
+          "posterior_probability": 0.010979356299466447,
+          "probability_mcse": 0.001134440668885502,
+          "proposal_draw_fraction": 0.010997772216796875,
+          "proposal_draw_count": 2883
+        },
+        {
+          "region": "old_p_over_q_gt100",
+          "posterior_probability": 0.004793354055166565,
+          "probability_mcse": 0.001110777213182643,
+          "proposal_draw_fraction": 0.0004730224609375,
+          "proposal_draw_count": 124
+        },
+        {
+          "region": "old_p_over_q_gt1000",
+          "posterior_probability": 0.0013411722471396992,
+          "probability_mcse": null,
+          "proposal_draw_fraction": 3.814697265625e-05,
+          "proposal_draw_count": 10
+        }
+      ]
+    }
+  ]
+}

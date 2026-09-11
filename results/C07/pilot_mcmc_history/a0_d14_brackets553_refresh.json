@@ -1,0 +1,1763 @@
+{
+  "quantile_brackets": 20,
+  "one_sided_inequalities": 40,
+  "alpha_per_pilot_family": 0.05,
+  "z": 3.0233414397391476,
+  "rows": [
+    {
+      "parameter_index": 0,
+      "probability": 0.05,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.05693196533312437,
+          "cdf_mc": {
+            "estimate": 0.04972076416015625,
+            "ess": 22205.042367647628,
+            "ess_raw": 22205.042367647628,
+            "tau": 5.9028034186942016,
+            "mcse": 0.001458709173571452,
+            "mcse_spectral": 0.001458709173571452,
+            "mcse_batches": 0.001446224584358789,
+            "batch": {
+              "mcse": 0.001446224584358789,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04331058826717003,
+              0.05613094005314247
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.0499973294507459,
+          "reference_resolution_spread": 2.6704611319275373e-06,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0002792358398437528,
+          "allowed_error": 0.006410175892986216,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.000276565290589649,
+          "difference_divided_by_MCSE_descriptive": -0.18959590821830258
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.05693499684084829,
+          "cdf_mc": {
+            "estimate": 0.04972076416015625,
+            "ess": 22205.042367647628,
+            "ess_raw": 22205.042367647628,
+            "tau": 5.9028034186942016,
+            "mcse": 0.001458709173571452,
+            "mcse_spectral": 0.001458709173571452,
+            "mcse_batches": 0.001446224584358789,
+            "batch": {
+              "mcse": 0.001446224584358789,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04331058826717003,
+              0.05613094005314247
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.05000000065655677,
+          "reference_resolution_spread": 2.670460060132107e-06,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0002792358398437528,
+          "allowed_error": 0.006410175892986216,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.00027923649640052006,
+          "difference_divided_by_MCSE_descriptive": -0.19142712026472508
+        }
+      ],
+      "horizontal_bracket_width": 3.0315077239190247e-06,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 0,
+      "probability": 0.5,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.5387230955225162,
+          "cdf_mc": {
+            "estimate": 0.5020675659179688,
+            "ess": 20119.997985826292,
+            "ess_raw": 20119.997985826292,
+            "tau": 6.514513574620375,
+            "mcse": 0.003631175144887236,
+            "mcse_spectral": 0.0035249448355013967,
+            "mcse_batches": 0.003631175144887236,
+            "batch": {
+              "mcse": 0.003631175144887236,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.4890892836274804,
+              0.5150458482084571
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.49996202368661735,
+          "reference_resolution_spread": 3.797621309131749e-05,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.00206756591796875,
+          "allowed_error": 0.012978282290488384,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0021055422313513983,
+          "difference_divided_by_MCSE_descriptive": 0.5798514660786996
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.5387610170164417,
+          "cdf_mc": {
+            "estimate": 0.5021438598632812,
+            "ess": 20134.033126890852,
+            "ess_raw": 20134.033126890852,
+            "tau": 6.509972402148345,
+            "mcse": 0.0036286521213188217,
+            "mcse_spectral": 0.003523713763057744,
+            "mcse_batches": 0.0036286521213188217,
+            "batch": {
+              "mcse": 0.0036286521213188217,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.48917320553450067,
+              0.5151145141920618
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.5000000001001451,
+          "reference_resolution_spread": 3.803176823569121e-05,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.00214385986328125,
+          "allowed_error": 0.012970654328780558,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0021438597631361356,
+          "difference_divided_by_MCSE_descriptive": 0.5908143551542651
+        }
+      ],
+      "horizontal_bracket_width": 3.792149392556343e-05,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 0,
+      "probability": 0.9,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.9133144342289329,
+          "cdf_mc": {
+            "estimate": 0.9023590087890625,
+            "ess": 17153.35047360132,
+            "ess_raw": 17153.35047360132,
+            "tau": 7.6411894108802425,
+            "mcse": 0.0022663724823804936,
+            "mcse_spectral": 0.0022663724823804936,
+            "mcse_batches": 0.0022339839954871317,
+            "batch": {
+              "mcse": 0.0022339839954871317,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.893506990945197,
+              0.911211026632928
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.8999775946418188,
+          "reference_resolution_spread": 2.2405244450074413e-05,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.002359008789062478,
+          "allowed_error": 0.008852017843865427,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.002381414147243688,
+          "difference_divided_by_MCSE_descriptive": 1.0507602637066789
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.9133341147457389,
+          "cdf_mc": {
+            "estimate": 0.9023590087890625,
+            "ess": 17153.35047360132,
+            "ess_raw": 17153.35047360132,
+            "tau": 7.6411894108802425,
+            "mcse": 0.0022663724823804936,
+            "mcse_spectral": 0.0022663724823804936,
+            "mcse_batches": 0.0022339839954871317,
+            "batch": {
+              "mcse": 0.0022339839954871317,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.893506990945197,
+              0.911211026632928
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9000000001138464,
+          "reference_resolution_spread": 2.238266746312778e-05,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.002359008789062478,
+          "allowed_error": 0.008852017843865427,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.002359008675216101,
+          "difference_divided_by_MCSE_descriptive": 1.0408742135530638
+        }
+      ],
+      "horizontal_bracket_width": 1.9680516806008796e-05,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 0,
+      "probability": 0.95,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.9569687935686547,
+          "cdf_mc": {
+            "estimate": 0.9503250122070312,
+            "ess": 18324.1256863154,
+            "ess_raw": 18324.1256863154,
+            "tau": 7.152974294314385,
+            "mcse": 0.0016050676197870526,
+            "mcse_spectral": 0.0016050676197870526,
+            "mcse_batches": 0.001571948837081613,
+            "batch": {
+              "mcse": 0.001571948837081613,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9434723447585456,
+              0.9571776796555169
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9499916725882634,
+          "reference_resolution_spread": 8.327296161070308e-06,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0003250122070312944,
+          "allowed_error": 0.006852667448485675,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0003333396187678028,
+          "difference_divided_by_MCSE_descriptive": 0.20767948630851304
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.9569760032971367,
+          "cdf_mc": {
+            "estimate": 0.9503250122070312,
+            "ess": 18324.1256863154,
+            "ess_raw": 18324.1256863154,
+            "tau": 7.152974294314385,
+            "mcse": 0.0016050676197870526,
+            "mcse_spectral": 0.0016050676197870526,
+            "mcse_batches": 0.001571948837081613,
+            "batch": {
+              "mcse": 0.001571948837081613,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9434723447585456,
+              0.9571776796555169
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9500000001155122,
+          "reference_resolution_spread": 8.332442230418735e-06,
+          "reference_omission_bound": 0.0,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0003250122070312944,
+          "allowed_error": 0.006852667448485675,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.000325012091519028,
+          "difference_divided_by_MCSE_descriptive": 0.2024912143964053
+        }
+      ],
+      "horizontal_bracket_width": 7.209728482004962e-06,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 1,
+      "probability": 0.05,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.044368578654435886,
+          "cdf_mc": {
+            "estimate": 0.0477294921875,
+            "ess": 9053.96820889615,
+            "ess_raw": 9053.96820889615,
+            "tau": 14.476746215125063,
+            "mcse": 0.00224054716949514,
+            "mcse_spectral": 0.00224054716949514,
+            "mcse_batches": 0.002168126803030834,
+            "batch": {
+              "mcse": 0.002168126803030834,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.03895555308227509,
+              0.05650343129272491
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.04949672812450598,
+          "reference_resolution_spread": 9.607127781086078e-07,
+          "reference_omission_bound": 3.864963904476326e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0022705078125000028,
+          "allowed_error": 0.008773939105224908,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0017672359370059787,
+          "difference_divided_by_MCSE_descriptive": -0.7887519446440344
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.045268578654435565,
+          "cdf_mc": {
+            "estimate": 0.0492401123046875,
+            "ess": 9063.350765269486,
+            "ess_raw": 9063.350765269486,
+            "tau": 14.461759606862435,
+            "mcse": 0.0022727441503760846,
+            "mcse_spectral": 0.0022727441503760846,
+            "mcse_batches": 0.002188860445973106,
+            "batch": {
+              "mcse": 0.002188860445973106,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04036883073293074,
+              0.05811139387644426
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.05050282010897554,
+          "reference_resolution_spread": 9.801964498887261e-07,
+          "reference_omission_bound": 3.851086116668512e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0007598876953125028,
+          "allowed_error": 0.008871281571756758,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0012627078042880407,
+          "difference_divided_by_MCSE_descriptive": -0.5555873080034517
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999996788,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 1,
+      "probability": 0.5,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.4181784374942268,
+          "cdf_mc": {
+            "estimate": 0.5037841796875,
+            "ess": 10861.327741861172,
+            "ess_raw": 10861.327741861172,
+            "tau": 12.067769531972507,
+            "mcse": 0.004797512405118236,
+            "mcse_spectral": 0.004797512405118236,
+            "mcse_batches": 0.004749824891426137,
+            "batch": {
+              "mcse": 0.004749824891426137,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.4872796616254434,
+              0.5202886977495566
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.4993649719866957,
+          "reference_resolution_spread": 8.961038117816233e-06,
+          "reference_omission_bound": 6.328271240363392e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0037841796875,
+          "allowed_error": 0.01650451806205659,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.004419207700804284,
+          "difference_divided_by_MCSE_descriptive": 0.9211456537537335
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.41907843749422646,
+          "cdf_mc": {
+            "estimate": 0.5045394897460938,
+            "ess": 10880.430944686395,
+            "ess_raw": 10880.430944686395,
+            "tau": 12.046581671841846,
+            "mcse": 0.0047932386894616865,
+            "mcse_spectral": 0.0047932386894616865,
+            "mcse_batches": 0.004747114952845249,
+            "batch": {
+              "mcse": 0.004747114952845249,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.48804789258568326,
+              0.5210310869065042
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.5006339227842685,
+          "reference_resolution_spread": 8.980019855608923e-06,
+          "reference_omission_bound": 6.328271240363392e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.00453948974609375,
+          "allowed_error": 0.01649159716041048,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.003905566961825202,
+          "difference_divided_by_MCSE_descriptive": 0.8148075267797322
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999996788,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 1,
+      "probability": 0.9,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.6787785601048739,
+          "cdf_mc": {
+            "estimate": 0.8971481323242188,
+            "ess": 8019.498071579297,
+            "ess_raw": 8019.498071579297,
+            "tau": 16.344165037524313,
+            "mcse": 0.0033920682059239648,
+            "mcse_spectral": 0.0033920682059239648,
+            "mcse_batches": 0.0033037985988188185,
+            "batch": {
+              "mcse": 0.0033037985988188185,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8848927519508272,
+              0.9094035126976103
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.8994195863472938,
+          "reference_resolution_spread": 6.592850014031093e-06,
+          "reference_omission_bound": 7.216449660063518e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.002851867675781272,
+          "allowed_error": 0.012255380373391547,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.002271454023075048,
+          "difference_divided_by_MCSE_descriptive": -0.6696368955990162
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.6796785601048736,
+          "cdf_mc": {
+            "estimate": 0.89794921875,
+            "ess": 7990.612942322788,
+            "ess_raw": 7990.612942322788,
+            "tau": 16.40324727853715,
+            "mcse": 0.0033864448570002353,
+            "mcse_spectral": 0.0033864448570002353,
+            "mcse_batches": 0.0032852967774049248,
+            "batch": {
+              "mcse": 0.0032852967774049248,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8857108396804396,
+              0.9101875978195604
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.9005785998592903,
+          "reference_resolution_spread": 6.524524662654407e-06,
+          "reference_omission_bound": 7.216449660063518e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.002050781250000022,
+          "allowed_error": 0.012238379069560323,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0026293811092903407,
+          "difference_divided_by_MCSE_descriptive": -0.77644291294307
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999996788,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 1,
+      "probability": 0.95,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.7241127057518835,
+          "cdf_mc": {
+            "estimate": 0.9461441040039062,
+            "ess": 8193.632800806272,
+            "ess_raw": 8193.632800806272,
+            "tau": 15.996811571431689,
+            "mcse": 0.0024937735995752977,
+            "mcse_spectral": 0.0024937735995752977,
+            "mcse_batches": 0.0024600322091698395,
+            "batch": {
+              "mcse": 0.0024600322091698395,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9366045749389827,
+              0.9556836330688298
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9495936572896893,
+          "reference_resolution_spread": 3.853769635187021e-06,
+          "reference_omission_bound": 7.549516567451064e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0038558959960937056,
+          "allowed_error": 0.009539529064923457,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0034495532857830025,
+          "difference_divided_by_MCSE_descriptive": -1.3832664225695865
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.7250127057518831,
+          "cdf_mc": {
+            "estimate": 0.9464645385742188,
+            "ess": 8147.288253986053,
+            "ess_raw": 8147.288253986053,
+            "tau": 16.087806876830847,
+            "mcse": 0.002493827487260986,
+            "mcse_spectral": 0.002493827487260986,
+            "mcse_batches": 0.0024612833806029366,
+            "batch": {
+              "mcse": 0.0024612833806029366,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.936924846588422,
+              0.9560042305600155
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9504041546307139,
+          "reference_resolution_spread": 3.838160102631605e-06,
+          "reference_omission_bound": 7.549516567451064e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0035354614257812056,
+          "allowed_error": 0.00953969198579669,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0039396160564951765,
+          "difference_divided_by_MCSE_descriptive": -1.5797468255601455
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999996788,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 2,
+      "probability": 0.05,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.05420802364513637,
+          "cdf_mc": {
+            "estimate": 0.05182647705078125,
+            "ess": 13157.545847061065,
+            "ess_raw": 13157.545847061065,
+            "tau": 9.961736141643534,
+            "mcse": 0.0019325569908288222,
+            "mcse_spectral": 0.0019325569908288222,
+            "mcse_batches": 0.0018946108098983427,
+            "batch": {
+              "mcse": 0.0018946108098983427,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04398369741575088,
+              0.05966925668581162
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.049584748909012745,
+          "reference_resolution_spread": 6.741888839839616e-07,
+          "reference_omission_bound": 8.208711488322251e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0018264770507812472,
+          "allowed_error": 0.007842779635030366,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.002241728141768505,
+          "difference_divided_by_MCSE_descriptive": 1.159980353700766
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.05510802364513641,
+          "cdf_mc": {
+            "estimate": 0.0524444580078125,
+            "ess": 13252.976074948465,
+            "ess_raw": 13252.976074948465,
+            "tau": 9.890005026701875,
+            "mcse": 0.0019364015954372803,
+            "mcse_spectral": 0.0019364015954372803,
+            "mcse_batches": 0.001894466302569832,
+            "batch": {
+              "mcse": 0.001894466302569832,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04459005482034997,
+              0.06029886119527503
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.050415988649793915,
+          "reference_resolution_spread": 6.852782196697937e-07,
+          "reference_omission_bound": 8.222589276130066e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0024444580078124972,
+          "allowed_error": 0.00785440318746253,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.002028469358018585,
+          "difference_divided_by_MCSE_descriptive": 1.0475457997959943
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000397,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 2,
+      "probability": 0.5,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.4996484249538614,
+          "cdf_mc": {
+            "estimate": 0.5065078735351562,
+            "ess": 11556.705541129666,
+            "ess_raw": 11556.705541129666,
+            "tau": 11.341640533586506,
+            "mcse": 0.004650677135343157,
+            "mcse_spectral": 0.004650677135343157,
+            "mcse_batches": 0.004537393865949931,
+            "batch": {
+              "mcse": 0.004537393865949931,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.4904472886290259,
+              0.5225684584412865
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.49951126745955643,
+          "reference_resolution_spread": 4.445028431887543e-06,
+          "reference_omission_bound": 8.43769498715119e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.00650787353515625,
+          "allowed_error": 0.016060584906130312,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0069966060755998205,
+          "difference_divided_by_MCSE_descriptive": 1.5044273923959606
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.5005484249538614,
+          "cdf_mc": {
+            "estimate": 0.507354736328125,
+            "ess": 11559.547382518791,
+            "ess_raw": 11559.547382518791,
+            "tau": 11.33885226321377,
+            "mcse": 0.004649996228736394,
+            "mcse_spectral": 0.004649996228736394,
+            "mcse_batches": 0.004538757186774158,
+            "batch": {
+              "mcse": 0.004538757186774158,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.4912962100351555,
+              0.5234132626210946
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.5004890117065323,
+          "reference_resolution_spread": 4.4440688021785135e-06,
+          "reference_omission_bound": 8.43769498715119e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.007354736328125,
+          "allowed_error": 0.0160585262929695,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.006865724621592739,
+          "difference_divided_by_MCSE_descriptive": 1.4765011161005726
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 2,
+      "probability": 0.9,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.8845646586907971,
+          "cdf_mc": {
+            "estimate": 0.9007949829101562,
+            "ess": 11345.71850050968,
+            "ess_raw": 11345.71850050968,
+            "tau": 11.552551739593389,
+            "mcse": 0.0028064919150082818,
+            "mcse_spectral": 0.0028064919150082818,
+            "mcse_batches": 0.002732011131472015,
+            "batch": {
+              "mcse": 0.002732011131472015,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8903099996032189,
+              0.9112799662170936
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.8995838177610503,
+          "reference_resolution_spread": 7.681363282108222e-07,
+          "reference_omission_bound": 8.326672684688674e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0007949829101562278,
+          "allowed_error": 0.010484983306937416,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0012111651491059083,
+          "difference_divided_by_MCSE_descriptive": 0.43155839595651724
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.8854646586907972,
+          "cdf_mc": {
+            "estimate": 0.9019851684570312,
+            "ess": 11427.81897069867,
+            "ess_raw": 11427.81897069867,
+            "tau": 11.469555156244006,
+            "mcse": 0.0027814030150055597,
+            "mcse_spectral": 0.0027814030150055597,
+            "mcse_batches": 0.0027122350515353098,
+            "batch": {
+              "mcse": 0.0027122350515353098,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8915760374611496,
+              0.912394299452913
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9004137409233434,
+          "reference_resolution_spread": 7.595925179959551e-07,
+          "reference_omission_bound": 8.326672684688674e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.001985168457031228,
+          "allowed_error": 0.010409130995881715,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0015714275336878858,
+          "difference_divided_by_MCSE_descriptive": 0.5649765694543711
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 2,
+      "probability": 0.95,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.9403019037905253,
+          "cdf_mc": {
+            "estimate": 0.9498672485351562,
+            "ess": 10692.127139736502,
+            "ess_raw": 10692.127139736502,
+            "tau": 12.258739377768954,
+            "mcse": 0.0021103776072429756,
+            "mcse_spectral": 0.0021103776072429756,
+            "mcse_batches": 0.0020616257508699696,
+            "batch": {
+              "mcse": 0.0020616257508699696,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9414868564616811,
+              0.9582476406086314
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9496070103915404,
+          "reference_resolution_spread": 3.114845225082874e-07,
+          "reference_omission_bound": 8.215650382226158e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0001327514648437056,
+          "allowed_error": 0.008380392073475235,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.00026023814361586517,
+          "difference_divided_by_MCSE_descriptive": 0.12331354480009084
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.9412019037905253,
+          "cdf_mc": {
+            "estimate": 0.9506149291992188,
+            "ess": 10624.243821437029,
+            "ess_raw": 10624.243821437029,
+            "tau": 12.33706626117992,
+            "mcse": 0.0021020892009672113,
+            "mcse_spectral": 0.0021020892009672113,
+            "mcse_batches": 0.0020544649220821465,
+            "batch": {
+              "mcse": 0.0020544649220821465,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9422595958079064,
+              0.9589702625905311
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9503914451317043,
+          "reference_resolution_spread": 3.053855698320618e-07,
+          "reference_omission_bound": 8.215650382226158e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0006149291992187944,
+          "allowed_error": 0.008355333391312322,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.00022348406751449001,
+          "difference_divided_by_MCSE_descriptive": 0.10631521602968168
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 3,
+      "probability": 0.05,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.8072244194179383,
+          "cdf_mc": {
+            "estimate": 0.04911041259765625,
+            "ess": 4455.664791552347,
+            "ess_raw": 4455.664791552347,
+            "tau": 29.41693465103211,
+            "mcse": 0.003237394182794535,
+            "mcse_spectral": 0.003237394182794535,
+            "mcse_batches": 0.003016816831353937,
+            "batch": {
+              "mcse": 0.003016816831353937,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.03732266460804308,
+              0.06089816058726942
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.049872474131765286,
+          "reference_resolution_spread": 7.242922229179494e-06,
+          "reference_omission_bound": 1.2281842209915794e-14,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0008895874023437528,
+          "allowed_error": 0.01178774798961317,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0007620615341090362,
+          "difference_divided_by_MCSE_descriptive": -0.23539349584276476
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.8081244194179383,
+          "cdf_mc": {
+            "estimate": 0.0493316650390625,
+            "ess": 4476.766185808621,
+            "ess_raw": 4476.766185808621,
+            "tau": 29.278276898958698,
+            "mcse": 0.003236645947168541,
+            "mcse_spectral": 0.003236645947168541,
+            "mcse_batches": 0.003015759519211911,
+            "batch": {
+              "mcse": 0.003015759519211911,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.03754617922122409,
+              0.06111715085690091
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.05012834425945105,
+          "reference_resolution_spread": 7.274904309517716e-06,
+          "reference_omission_bound": 1.2621848011207248e-14,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0006683349609375028,
+          "allowed_error": 0.011785485817838413,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0007966792203885492,
+          "difference_divided_by_MCSE_descriptive": -0.246143456341122
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 3,
+      "probability": 0.5,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.960895687631222,
+          "cdf_mc": {
+            "estimate": 0.49243927001953125,
+            "ess": 9879.948438152936,
+            "ess_raw": 9879.948438152936,
+            "tau": 13.266465996304735,
+            "mcse": 0.005029710712912994,
+            "mcse_spectral": 0.005029710712912994,
+            "mcse_batches": 0.004957043695313921,
+            "batch": {
+              "mcse": 0.004957043695313921,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.47523273719128145,
+              0.509645802847781
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.49397914252212427,
+          "reference_resolution_spread": 9.565204301509311e-06,
+          "reference_omission_bound": 8.215650382226158e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.00756072998046875,
+          "allowed_error": 0.017206532828249785,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0015398725025930204,
+          "difference_divided_by_MCSE_descriptive": -0.30615528217947785
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.961795687631222,
+          "cdf_mc": {
+            "estimate": 0.5027236938476562,
+            "ess": 10118.725166863807,
+            "ess_raw": 10118.725166863807,
+            "tau": 12.953410418658935,
+            "mcse": 0.004970506664894945,
+            "mcse_spectral": 0.004970506664894945,
+            "mcse_batches": 0.0048972154855434985,
+            "batch": {
+              "mcse": 0.0048972154855434985,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.48569615507117975,
+              0.5197512326241328
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.5060699397705261,
+          "reference_resolution_spread": 9.365800053617868e-06,
+          "reference_omission_bound": 8.215650382226158e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.00272369384765625,
+          "allowed_error": 0.01702753877647651,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.003346245922869806,
+          "difference_divided_by_MCSE_descriptive": -0.6732202868780442
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 3,
+      "probability": 0.9,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.9892408505535769,
+          "cdf_mc": {
+            "estimate": 0.8960647583007812,
+            "ess": 15518.747089434475,
+            "ess_raw": 15518.747089434475,
+            "tau": 8.446042663407852,
+            "mcse": 0.0024497557516634633,
+            "mcse_spectral": 0.0024497557516634633,
+            "mcse_batches": 0.0023900122248738773,
+            "batch": {
+              "mcse": 0.0023900122248738773,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8866583102195378,
+              0.9054712063820247
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.8947082806569386,
+          "reference_resolution_spread": 2.136019818355095e-06,
+          "reference_omission_bound": 7.771561172376096e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.003935241699218772,
+          "allowed_error": 0.009406448081243473,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.001356477643842613,
+          "difference_divided_by_MCSE_descriptive": 0.5537195464982665
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.9901408505535769,
+          "cdf_mc": {
+            "estimate": 0.9073410034179688,
+            "ess": 15997.396830499385,
+            "ess_raw": 15997.396830499385,
+            "tau": 8.193333039667328,
+            "mcse": 0.0022924739328814892,
+            "mcse_spectral": 0.0022924739328814892,
+            "mcse_batches": 0.0022236799413929654,
+            "batch": {
+              "mcse": 0.0022236799413929654,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8984100719771664,
+              0.9162719348587711
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.905212992016831,
+          "reference_resolution_spread": 1.925624650622737e-06,
+          "reference_omission_bound": 7.771561172376096e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.007341003417968728,
+          "allowed_error": 0.008930931440802387,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0021280114011377194,
+          "difference_divided_by_MCSE_descriptive": 0.9282598029208335
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000119,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 3,
+      "probability": 0.95,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.9938663486489439,
+          "cdf_mc": {
+            "estimate": 0.9489974975585938,
+            "ess": 17185.647099867303,
+            "ess_raw": 17185.647099867303,
+            "tau": 7.626829483832008,
+            "mcse": 0.0016782062397894732,
+            "mcse_spectral": 0.0016782062397894732,
+            "mcse_batches": 0.0016401447479623007,
+            "batch": {
+              "mcse": 0.0016401447479623007,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9419237070894094,
+              0.9560712880277781
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9454932089069816,
+          "reference_resolution_spread": 1.1132836812421942e-06,
+          "reference_omission_bound": 7.993605777301127e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0010025024414062056,
+          "allowed_error": 0.007073790469184328,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0035042886516121197,
+          "difference_divided_by_MCSE_descriptive": 2.088115613282265
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.994766348648944,
+          "cdf_mc": {
+            "estimate": 0.9576416015625,
+            "ess": 16800.060480649492,
+            "ess_raw": 16800.060480649492,
+            "tau": 7.80187667484711,
+            "mcse": 0.0015538741615577687,
+            "mcse_spectral": 0.0015538741615577687,
+            "mcse_batches": 0.0015176179617171805,
+            "batch": {
+              "mcse": 0.0015176179617171805,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9509437094177224,
+              0.9643394937072776
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9544218353707057,
+          "reference_resolution_spread": 9.320276269653149e-07,
+          "reference_omission_bound": 7.993605777301127e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.007641601562500044,
+          "allowed_error": 0.0066978921447775255,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0032197661917943154,
+          "difference_divided_by_MCSE_descriptive": 2.0720894081709162
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000001229,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 4,
+      "probability": 0.05,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.004393770875761049,
+          "cdf_mc": {
+            "estimate": 0.04462432861328125,
+            "ess": 9120.371766786495,
+            "ess_raw": 9120.371766786495,
+            "tau": 14.371343992502883,
+            "mcse": 0.002162054641610568,
+            "mcse_spectral": 0.002162054641610568,
+            "mcse_batches": 0.0020762903082726753,
+            "batch": {
+              "mcse": 0.0020762903082726753,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.03608769922031965,
+              0.05316095800624285
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.04539630466971128,
+          "reference_resolution_spread": 3.144225040814519e-05,
+          "reference_omission_bound": 7.882583474838611e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.005375671386718753,
+          "allowed_error": 0.008536629392961601,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0007719760564300279,
+          "difference_divided_by_MCSE_descriptive": -0.3570566819046552
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.005293770875761098,
+          "cdf_mc": {
+            "estimate": 0.0528411865234375,
+            "ess": 9429.522914697729,
+            "ess_raw": 9429.522914697729,
+            "tau": 13.900173018902052,
+            "mcse": 0.0023038426968806486,
+            "mcse_spectral": 0.0023038426968806486,
+            "mcse_batches": 0.0021886945630123474,
+            "batch": {
+              "mcse": 0.0021886945630123474,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.04387588342731784,
+              0.06180648961955716
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.054609274819138735,
+          "reference_resolution_spread": 3.723604822413601e-05,
+          "reference_omission_bound": 7.653599976009673e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0028411865234374972,
+          "allowed_error": 0.008965303096119662,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0017680882957012353,
+          "difference_divided_by_MCSE_descriptive": -0.7674518308455639
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000492,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 4,
+      "probability": 0.5,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.054644516050031164,
+          "cdf_mc": {
+            "estimate": 0.49131011962890625,
+            "ess": 10855.866870879148,
+            "ess_raw": 10855.866870879148,
+            "tau": 12.07384003129225,
+            "mcse": 0.004798131534275343,
+            "mcse_spectral": 0.004798131534275343,
+            "mcse_batches": 0.004654388965791421,
+            "batch": {
+              "mcse": 0.004654388965791421,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.47480372972801244,
+              0.5078165095298001
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.4967125086175629,
+          "reference_resolution_spread": 0.00011841511550031436,
+          "reference_omission_bound": 8.826273045769994e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.00868988037109375,
+          "allowed_error": 0.01650638990089382,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.005402388988656637,
+          "difference_divided_by_MCSE_descriptive": -1.1259359919720404
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.05554451605003121,
+          "cdf_mc": {
+            "estimate": 0.498291015625,
+            "ess": 10850.648333243038,
+            "ess_raw": 10850.648333243038,
+            "tau": 12.079646853767791,
+            "mcse": 0.004799982160926111,
+            "mcse_spectral": 0.004799982160926111,
+            "mcse_batches": 0.004656935875487025,
+            "batch": {
+              "mcse": 0.004656935875487025,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.4817790306478634,
+              0.5148030006021366
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": false
+          },
+          "reference_cdf": 0.5033919855649944,
+          "reference_resolution_spread": 0.00011747028029507334,
+          "reference_omission_bound": 8.881784197001252e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.001708984375,
+          "allowed_error": 0.016511984977136573,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.005100969939994426,
+          "difference_divided_by_MCSE_descriptive": -1.062706020351176
+        }
+      ],
+      "horizontal_bracket_width": 0.0009000000000000466,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": false,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 4,
+      "probability": 0.9,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.1409482513341494,
+          "cdf_mc": {
+            "estimate": 0.9001235961914062,
+            "ess": 10897.20109806145,
+            "ess_raw": 10897.20109806145,
+            "tau": 12.028042689174283,
+            "mcse": 0.002872268523039622,
+            "mcse_spectral": 0.002872268523039622,
+            "mcse_batches": 0.0027192044950558342,
+            "batch": {
+              "mcse": 0.0027192044950558342,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8894397477396422,
+              0.9108074446431703
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.8989796119259424,
+          "reference_resolution_spread": 4.179323415753888e-05,
+          "reference_omission_bound": 8.770761894538737e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0001235961914062278,
+          "allowed_error": 0.010683848451764046,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0011439842654638044,
+          "difference_divided_by_MCSE_descriptive": 0.3982859737129193
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.14184825133414936,
+          "cdf_mc": {
+            "estimate": 0.9021148681640625,
+            "ess": 10988.701106150244,
+            "ess_raw": 10988.701106150244,
+            "tau": 11.927888358583216,
+            "mcse": 0.0028347587535448274,
+            "mcse_spectral": 0.0028347587535448274,
+            "mcse_batches": 0.0026848937122033586,
+            "batch": {
+              "mcse": 0.0026848937122033586,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.8915444245528071,
+              0.9126853117753179
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.901010066641494,
+          "reference_resolution_spread": 4.136015413258587e-05,
+          "reference_omission_bound": 8.770761894538737e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.002114868164062478,
+          "allowed_error": 0.01057044361125537,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": 0.0011048015225685326,
+          "difference_divided_by_MCSE_descriptive": 0.38973387812525256
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999999564,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    },
+    {
+      "parameter_index": 4,
+      "probability": 0.95,
+      "ends": [
+        {
+          "side": "lower",
+          "x_unit": 0.16993857739196544,
+          "cdf_mc": {
+            "estimate": 0.9487762451171875,
+            "ess": 12357.501351631101,
+            "ess_raw": 12357.501351631101,
+            "tau": 10.606674947496522,
+            "mcse": 0.001983134972068737,
+            "mcse_spectral": 0.001983134972068737,
+            "mcse_batches": 0.00189023369363451,
+            "batch": {
+              "mcse": 0.00189023369363451,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9407805509755361,
+              0.9567719392588389
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9494287636294908,
+          "reference_resolution_spread": 2.8383380902052835e-05,
+          "reference_omission_bound": 7.882583474838611e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": -0.0012237548828124556,
+          "allowed_error": 0.007995694141651348,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.0006525185123033017,
+          "difference_divided_by_MCSE_descriptive": -0.3290338385907326
+        },
+        {
+          "side": "upper",
+          "x_unit": 0.1708385773919654,
+          "cdf_mc": {
+            "estimate": 0.9495162963867188,
+            "ess": 12318.095232761958,
+            "ess_raw": 12318.095232761958,
+            "tau": 10.640606158928932,
+            "mcse": 0.001972672711598021,
+            "mcse_spectral": 0.001972672711598021,
+            "mcse_batches": 0.0018791643674590333,
+            "batch": {
+              "mcse": 0.0018791643674590333,
+              "batch_length": 182,
+              "batches_per_chain": 180,
+              "discarded_draws_per_chain": 8,
+              "status": "estimated"
+            },
+            "batch_adequate": true,
+            "interval": [
+              0.9415522332307018,
+              0.9574803595427357
+            ],
+            "normal_critical_value": 3.0233414397391476,
+            "deterministic_error": 0.002,
+            "status": "estimated_asymptotic_not_exact",
+            "precision_pass": true
+          },
+          "reference_cdf": 0.9505657122657041,
+          "reference_resolution_spread": 2.798205784415586e-05,
+          "reference_omission_bound": 7.882583474838611e-15,
+          "reference_refinement_within_tolerance": true,
+          "signed_inequality_violation": 0.0004837036132812056,
+          "allowed_error": 0.007964063156016889,
+          "inequality_consistent": true,
+          "difference_MC_minus_quadrature_descriptive": -0.001049415878985327,
+          "difference_divided_by_MCSE_descriptive": -0.5319766795654699
+        }
+      ],
+      "horizontal_bracket_width": 0.0008999999999999564,
+      "horizontal_refinement_pass": true,
+      "bracket_consistent": true,
+      "mc_precision_pass": true,
+      "reference_refinement_pass": true
+    }
+  ],
+  "consistent_brackets": 20,
+  "brackets_passing_mc_precision": 14,
+  "reference_refinement_pass": true,
+  "all_bracket_diagnostic_checks_pass": false,
+  "no_automatic_ORF_or_global_Rhat_approval": true,
+  "endpoint_differences_are_descriptive_not_second_test_family": true,
+  "reference_midpoint_CDF_not_evaluated": true,
+  "max_reference_midpoint_vertical_envelope": 0.00606994062907773,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_mcmc_followup/compare_brackets.py": "ae2d7de4323970985891a3c1c201313bc969dce45d5bcb0026d1bf8c0a612d4e",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_mcmc_diagnostics/src/mcmc_diagnostics.py": "045864e83b9f0715686e4da3cfc4eb7262538e6dd7e034437183df76ac5dfabf",
+    "tmp/c07_quantiles/results/posterior_reference.json": "6dbf185a0326a69832ef211b4f861f887443a07072eaaffff2fafb2bb08ae110",
+    "tmp/c07_sampler/results/pilot553_refresh_draws.npy": "833ccda38ab1d6f66bd6854fc3e72d1b7e669d94106bb2296d75b9889761047d"
+  },
+  "label": "A0_D14_BRACKET_CHECKS_ONLY_NOT_SBC_OR_NUMERICAL_APPROVAL"
+}

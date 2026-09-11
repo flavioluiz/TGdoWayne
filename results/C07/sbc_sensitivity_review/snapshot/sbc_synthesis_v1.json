@@ -1,0 +1,77 @@
+{
+  "protocol": "C07_SBC_synthesis_v1_before_posterior_production",
+  "date": "2026-09-10",
+  "scientific_protocol": "configs/calibration/diagnostics_v1.json",
+  "scientific_protocol_sha256": "e775f0b94d4890638a04ae6347661766594e0d1acdd557782d786eb8237a0d64",
+  "n_realizations": 500,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "families": {
+    "correct": {
+      "models": [
+        "A0_CN",
+        "A_G",
+        "B_G"
+      ],
+      "hypotheses": 93
+    },
+    "approximate": {
+      "models": [
+        "A_CN",
+        "B_CN"
+      ],
+      "hypotheses": 62
+    },
+    "paired_central90": {
+      "pairs": [
+        [
+          "A_CN",
+          "B_CN"
+        ],
+        [
+          "A_G",
+          "B_G"
+        ],
+        [
+          "A0_CN",
+          "A_CN"
+        ]
+      ],
+      "hypotheses": 15
+    }
+  },
+  "scientific_alpha": 0.05,
+  "multiplicity": "Holm within each distinct predeclared family; no global FWER claim across families",
+  "probabilities": [
+    0.05,
+    0.5,
+    0.9,
+    0.95
+  ],
+  "coverage_events": "Posterior PIT <= p and .05 <= PIT <= .95 for the continuous model; these directly measured CDFs avoid treating quantile inversion error as zero.",
+  "numerical_sensitivity": {
+    "family_size": 15000,
+    "alpha_mc": 0.01,
+    "normal_quantile": "norm.isf(alpha_mc/(2*family_size))",
+    "cdf_mcse_target": 0.00335,
+    "deterministic_component": 0.002,
+    "construction": "PIT +/- (deterministic_component+z*MCSE), limited to probability support; PIT point estimates themselves never clipped.",
+    "unresolved_interval": [
+      0.0,
+      1.0
+    ],
+    "interval_kind": "Asymptotic CLT-based sensitivity; refinement component is observed-scale allowance, not a global certified bound.",
+    "resolved_for_function": "High-level PIT MCSE passes; both-level pooled weight deletion and saturation guards pass; all six replicate contrasts at each level for this function and for logZ are resolved/compatible; its refinement and logZ refinement pass; independent ORF/kernel/reference validation is present. Other parameter-PIT failures are retained separately and do not by themselves replace this function by [0,1].",
+    "cdf_precision_of_low_selected_quantiles": "Reported separately for quantile products; these twenty additional CDFs do not create twenty additional SBC PITs."
+  },
+  "decision": "Report nominal tests and simultaneous sensitivity bounds separately. Any failure of integration remains visible and is investigated; an attractive SBC curve never overrides a numerical failure.",
+  "data_sha256": "63679c96852f3c0aa1e25c8a3f087c0646ceb22cd7701758491cabdd42ac0103",
+  "discard_realizations": false,
+  "quantiles": "Weighted quantiles descriptive until horizontal numerical uncertainty is evaluated; CDF precision alone does not imply a horizontal .001 error bound.",
+  "frozen_before_production": true
+}

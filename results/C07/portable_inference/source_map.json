@@ -1,0 +1,74 @@
+{
+  "pointwise.py": {
+    "source": "tmp/c07_sampler/pointwise.py",
+    "source_sha256": "590ea0de044274cf75f18b904f99d5ec3ea22e0f84237ac356a26be5d388aa77",
+    "port_sha256": "de31f1a9b4294258ef6c89ff7716da01bde5a2243f76ca4d8d032891ac4e47d4",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "orf_cubic_reference.py": {
+    "source": "tmp/c07_sampler/cubic.py",
+    "source_sha256": "d2aefbccd181509e53437485e0a32689e48fb2fe67a05f29910fa0061460a76b",
+    "port_sha256": "7ef78217e7d1955591149dc63e7286c8ddeb707c71f960edf0d91c47fd6b3679",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "orf_interpolation.py": {
+    "source": "tmp/c07_sampler/cubic_even.py",
+    "source_sha256": "1f4f1b2052ac3f7f84cc55a2429218dca89eea014a74d43aeba6f416ac8f4ca1",
+    "port_sha256": "0dafdb3fcd1ad08fe86ca87e0e62740893f607fb3e3dae112d05c1a88fe021b0",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "linalg_batch.py": {
+    "source": "tmp/c07_sampler/linalg_batch.py",
+    "source_sha256": "29e5fa3bd2de1be3ae0fbfd6e65668993a299fc2a2ab13d7a493f54ee4dd64e4",
+    "port_sha256": "29e5fa3bd2de1be3ae0fbfd6e65668993a299fc2a2ab13d7a493f54ee4dd64e4",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "pointwise_preallocated.py": {
+    "source": "tmp/c07_memory_kernel/preallocated_cubic.py",
+    "source_sha256": "e262b3ac865860b381d16e3084d94f6efb3147c04a4bb7236a9d6d635a03448c",
+    "port_sha256": "4331a142422cabc753e280e12c01358b5249b80224352e8b9c8c218c0b1106a7",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "gmm_proposal_reference.py": {
+    "source": "tmp/c07_sampler/mixture_proposal.py",
+    "source_sha256": "fe3fd453c9f273a0e82e97bee02ae0e30f69231dd4604024330222600a35b6e3",
+    "port_sha256": "d749517213da0d6502206780b16e3bfd665c0d20b16a61de46adda8bb819276c",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "gmm_proposal.py": {
+    "source": "tmp/c07_sampler/mixture_proposal_v2.py",
+    "source_sha256": "4c8c4701d23494d8d2f82db764cd2b000ccca36ba138bbe270e30e44911d6ec4",
+    "port_sha256": "d34d95f2f6939ba92d90776e55d2c23f9a010c3b329216d3b664f563580263f9",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "mh_reference.py": {
+    "source": "tmp/c07_sampler/mh.py",
+    "source_sha256": "86cffa45ef46f44a599f733fa863512af62c62c9373a860c83b6ca58213a7394",
+    "port_sha256": "86cffa45ef46f44a599f733fa863512af62c62c9373a860c83b6ca58213a7394",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "mh_fixed.py": {
+    "source": "tmp/c07_sampler/mh_mixture.py",
+    "source_sha256": "f8f6d92a90a073a0074d776c4cc851c85628300456cd0a6a8b216cd6df024420",
+    "port_sha256": "f8f6d92a90a073a0074d776c4cc851c85628300456cd0a6a8b216cd6df024420",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "gmm_fit.py": {
+    "source": "tmp/c07_em_efficiency/fast_fit.py",
+    "source_sha256": "98eb98267d27ab48452e2f365d68745fa00a2c18f7a58ed828d340a52012627e",
+    "port_sha256": "ac1192280c1b4a128f11ea7fdb8ef61edad07d241ccdac50d22c6439048095b2",
+    "change": "Relative imports only; scientific bodies unchanged."
+  },
+  "gmm_fit_reference.py": {
+    "source": "tmp/c07_efficiency/proposal.py",
+    "source_sha256": "016f6e68b407c1eee87ba63e8e4490d037c8cb99834ac9927757c91de58a0182",
+    "port_sha256": "ab3aead6bbc64b993c5708093dcfaae4c4a8230ea33689cf33980c46c7fe4415",
+    "change": "Retains reference weighted-EM and fitting record; removes unused historical RQMC sampling methods."
+  },
+  "gmm_density.py": {
+    "source": "tmp/c07_proposal_efficiency/multiple_rhs.py",
+    "source_sha256": "77f6accf1c08aabb765d29f22a8a30ca006ddc1d71c6fa14f6d0ec8509123950",
+    "port_sha256": "4a6b61218617235b4f3d93ab74690ceedcb238618a4462d5429bff86b20f2e86",
+    "change": "Relative imports only; optimized density body audited by fundamentos."
+  }
+}

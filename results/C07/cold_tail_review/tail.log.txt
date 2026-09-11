@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/diagnose_tail.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/diagnose_tail.py", line 33, in main
+    ts=scipy_terms(q,z);scientific_checks[key]=dict(max_logpdf_difference_scipy=float(np.max(abs(logsumexp(ts,axis=1)-logqs[key]))))
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/diagnose_tail.py", line 20, in scipy_terms
+    terms=[np.log(.85*q.weights[0,k])+multivariate_normal.logpdf(z,mean=q.means[0,k],cov=q.covs[0,k]) for k in range(4)]
+                                                                                         ^^^^^^
+AttributeError: 'MultipleRHSGaussianDefensiveProposal' object has no attribute 'covs'. Did you mean: 'cov'?

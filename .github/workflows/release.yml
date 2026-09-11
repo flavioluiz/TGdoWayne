@@ -21,6 +21,7 @@ jobs:
           .venv/bin/python scripts/validar_orf.py --check
           .venv/bin/python scripts/benchmark_orf.py --verify-only results/C05/checked_benchmark_results.json
           .venv/bin/python scripts/validar_simulador.py --check
+          .venv/bin/python scripts/validar_componentes_inferencia.py --check
       - name: Conferir checagens, fontes e PDF versionado
         env:
           RELEASE_VERSION: ${{ github.ref_name }}

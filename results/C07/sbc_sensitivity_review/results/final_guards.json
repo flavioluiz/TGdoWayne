@@ -1,0 +1,76 @@
+{
+  "root_source": "src/inference/sbc_sensitivity.py",
+  "root_sha256": "d14af4de7b5e200a70e7a58517b97388517d22275467ed308f3ccf044891dae8",
+  "guards": [
+    {
+      "key": "alpha_mc",
+      "type": "bool",
+      "rejected": true
+    },
+    {
+      "key": "alpha_mc",
+      "type": "bool",
+      "rejected": true
+    },
+    {
+      "key": "alpha_mc",
+      "type": "ndarray",
+      "rejected": true
+    },
+    {
+      "key": "alpha_mc",
+      "type": "ndarray",
+      "rejected": true
+    },
+    {
+      "key": "deterministic_component",
+      "type": "bool",
+      "rejected": true
+    },
+    {
+      "key": "deterministic_component",
+      "type": "bool",
+      "rejected": true
+    },
+    {
+      "key": "deterministic_component",
+      "type": "ndarray",
+      "rejected": true
+    },
+    {
+      "key": "deterministic_component",
+      "type": "ndarray",
+      "rejected": true
+    },
+    {
+      "key": "family_size",
+      "type": "float",
+      "rejected": true
+    },
+    {
+      "key": "family_size",
+      "type": "int",
+      "rejected": true
+    },
+    {
+      "key": "family_size",
+      "type": "bool",
+      "rejected": true
+    },
+    {
+      "key": "family_size",
+      "type": "bool",
+      "rejected": true
+    }
+  ],
+  "corrected_scalar_metadata": {
+    "z": 4.970830636716245,
+    "family_size": 15000,
+    "alpha_mc": 0.01,
+    "deterministic_component": 0.002,
+    "unresolved_count": 0,
+    "status": "ASYMPTOTIC_NUMERICAL_SENSITIVITY_NOT_EXACT_CONFIDENCE"
+  },
+  "status": "F1_F2_F3_CLOSED",
+  "tests": 12
+}

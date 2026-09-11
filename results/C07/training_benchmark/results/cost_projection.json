@@ -1,0 +1,46 @@
+{
+  "scope": "Local cost projection for 500 datasets times five model families; no statistical approval implied.",
+  "groups": [
+    {
+      "targets_per_block": 16,
+      "best_measured_workers": 1,
+      "complete_block_seconds": 27.26320466690231,
+      "blocks_for_2500_targets": 157,
+      "projected_training_plus_em_minutes": 71.33871887839437,
+      "last_block_counted_full": true,
+      "all_thread_selected_point_hashes_identical": true,
+      "all_thread_fit_hashes_identical": true
+    },
+    {
+      "targets_per_block": 64,
+      "best_measured_workers": 4,
+      "complete_block_seconds": 76.83263608405832,
+      "blocks_for_2500_targets": 40,
+      "projected_training_plus_em_minutes": 51.221757389372215,
+      "last_block_counted_full": true,
+      "all_thread_selected_point_hashes_identical": true,
+      "all_thread_fit_hashes_identical": true
+    }
+  ],
+  "read_only_native_parameters": true,
+  "thread_rng_invariance": true,
+  "total_training_likelihood_points": 7865280,
+  "extra_native_anchor_points": 560,
+  "total_em_fits": 240,
+  "setup_seconds": 55.01668483298272,
+  "maximum_rss_bytes": 3257303040,
+  "estimated_array_budget_bytes": 3221225472,
+  "native_reference_anchor_logl_difference": 1.0913936421275139e-11,
+  "source_sha256": {
+    "tmp/c07_training_benchmark/results/benchmark_summary.json": "14be850d373a78868742aa61e3f883f066102b53e5166cd355ce2413f7f22bf0",
+    "tmp/c07_training_benchmark/analyze_benchmark.py": "9cc606068ca9f703da927ee1b205acace5825d955743b2f35fc2b05fae460504"
+  },
+  "limitations": [
+    "Budgets are explicit estimated numeric arrays, not RSS enforcement; observed RSS slightly exceeded 3 GiB and requires headroom.",
+    "Group16 contains the selected difficult pilot targets and is not model-balanced; group64 is approximately model-balanced.",
+    "Warmup states and fitted proposal densities are engineering artifacts, not posterior inference or SBC500.",
+    "1/4/6 thread runs use exactly the same streams and trajectories; they are repeated timing configurations, not independent scientific data.",
+    "Single runs per configuration under shared machine load do not establish a precise ranking when times differ only slightly.",
+    "Likelihood-only bulk throughput cannot be substituted for measured sequential warmup throughput."
+  ]
+}

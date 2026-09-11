@@ -1,0 +1,96 @@
+{
+  "scope": "Timing only; two RNG recipes generate different independent streams with unchanged proposal distribution. No posterior/precision claim.",
+  "N": 65536,
+  "proposal_timings": [
+    {
+      "repeat": 0,
+      "old_sample_seconds": 1.7640451659681275,
+      "old_density_seconds": 0.11049437499605119,
+      "new_sample_seconds": 0.025077749975025654,
+      "new_density_seconds": 0.028323875041678548,
+      "expit_and_exact_jacobian_seconds": 0.04572341591119766
+    },
+    {
+      "repeat": 1,
+      "old_sample_seconds": 1.754581707995385,
+      "old_density_seconds": 0.10919291595928371,
+      "new_sample_seconds": 0.024967457982711494,
+      "new_density_seconds": 0.02790066704619676,
+      "expit_and_exact_jacobian_seconds": 0.04550675000064075
+    },
+    {
+      "repeat": 2,
+      "old_sample_seconds": 1.7535083749098703,
+      "old_density_seconds": 0.11126587493345141,
+      "new_sample_seconds": 0.02669187495484948,
+      "new_density_seconds": 0.028030749992467463,
+      "expit_and_exact_jacobian_seconds": 0.045426250086165965
+    }
+  ],
+  "io_timings": [
+    {
+      "compressed": true,
+      "repeat": 0,
+      "bytes": 6983991,
+      "write_seconds": 0.7587666669860482,
+      "hash_seconds": 0.011833207914605737,
+      "read_and_exact_verify_seconds": 0.06982462503947318,
+      "sha256": "5e4c6a1e9001894d3d01fc60a665f4e9050ae99806aa59d2f628bfec4c2dca71"
+    },
+    {
+      "compressed": true,
+      "repeat": 1,
+      "bytes": 6983991,
+      "write_seconds": 0.7524416249943897,
+      "hash_seconds": 0.011844165972433984,
+      "read_and_exact_verify_seconds": 0.06963433302007616,
+      "sha256": "5e4c6a1e9001894d3d01fc60a665f4e9050ae99806aa59d2f628bfec4c2dca71"
+    },
+    {
+      "compressed": true,
+      "repeat": 2,
+      "bytes": 6983991,
+      "write_seconds": 0.7517362500075251,
+      "hash_seconds": 0.011855666991323233,
+      "read_and_exact_verify_seconds": 0.0696560830110684,
+      "sha256": "5e4c6a1e9001894d3d01fc60a665f4e9050ae99806aa59d2f628bfec4c2dca71"
+    },
+    {
+      "compressed": false,
+      "repeat": 0,
+      "bytes": 7407878,
+      "write_seconds": 0.006517000030726194,
+      "hash_seconds": 0.013396749971434474,
+      "read_and_exact_verify_seconds": 0.005413959035649896,
+      "sha256": "189245327542f894e08675079b30b6a1b31d642a6ae0f36340186fea30451dbc"
+    },
+    {
+      "compressed": false,
+      "repeat": 1,
+      "bytes": 7407878,
+      "write_seconds": 0.006016915896907449,
+      "hash_seconds": 0.012436416000127792,
+      "read_and_exact_verify_seconds": 0.005324916914105415,
+      "sha256": "189245327542f894e08675079b30b6a1b31d642a6ae0f36340186fea30451dbc"
+    },
+    {
+      "compressed": false,
+      "repeat": 2,
+      "bytes": 7407878,
+      "write_seconds": 0.006745291990227997,
+      "hash_seconds": 0.012359666987322271,
+      "read_and_exact_verify_seconds": 0.005327209015376866,
+      "sha256": "189245327542f894e08675079b30b6a1b31d642a6ae0f36340186fea30451dbc"
+    }
+  ],
+  "all_io_arrays_equal": true,
+  "compression_is_lossless": true,
+  "source_sha256": {
+    "tmp/c07_cold_training/results/warmup8192_proposal.json": "2f4462bd9c1a09936cd466ba553dab42bc1dd6162c5deac178adad3fdd5e34d4",
+    "tmp/c07_cold_final/results/cold8192_iid_N65536.npz": "38081f0150c0818d74a40ed8675369a33b13b9292312a6ecb8141713306f9b5b",
+    "tmp/c07_proposal_efficiency/benchmark_pipeline_overheads.py": "04ad052fe76827827677edde72fabf93616715ac79c31cf98c180a5ac6c836b2",
+    "tmp/c07_proposal_efficiency/multiple_rhs.py": "77f6accf1c08aabb765d29f22a8a30ca006ddc1d71c6fa14f6d0ec8509123950",
+    "tmp/c07_proposal_efficiency/vector_sample.py": "3de709e79802c5d1506d011c876493aee1ea2278d6359118d79f9a02297263e0",
+    "tmp/c07_iid_gmm/gaussian_adapter.py": "dd34d31be66cb5672e006a4a1386922fe6c4ee2f45c4b26759b5c141161b7d56"
+  }
+}

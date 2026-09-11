@@ -1,0 +1,62 @@
+{
+  "tables": {
+    "4097": {
+      "fallback_intervals": [],
+      "minimum_Bernstein_eigenvalue": -2.1383569579369574e-16,
+      "maximum_offgrid_abs_loglikelihood_error": 0.02616015132650773,
+      "offgrid_target_of_max": 0,
+      "offgrid_mass_of_max": 0.9999999989800156
+    },
+    "8193": {
+      "fallback_intervals": [],
+      "minimum_Bernstein_eigenvalue": -2.8055951949492515e-16,
+      "maximum_offgrid_abs_loglikelihood_error": 0.0038941004314665406,
+      "offgrid_target_of_max": 0,
+      "offgrid_mass_of_max": 0.9999999989800156
+    }
+  },
+  "comparisons": {
+    "posterior": {
+      "maximum_abs_loglikelihood_difference": 4.929992897473312e-06,
+      "target_of_max": 10,
+      "mass_of_max": 0.9999329346740785,
+      "q99_abs": 8.63879959922543e-08,
+      "points": 82240
+    },
+    "prior": {
+      "maximum_abs_loglikelihood_difference": 0.001370795420370996,
+      "target_of_max": 25,
+      "mass_of_max": 0.993266744172509,
+      "q99_abs": 1.1762646317947719e-05,
+      "points": 4096
+    },
+    "new_coarse_nodes": {
+      "maximum_abs_loglikelihood_difference": 0.031562769867832685,
+      "target_of_max": 10,
+      "mass_of_max": 0.9999999925494194,
+      "q99_abs": 1.2031405252344173e-06,
+      "points": 327680
+    },
+    "offgrid": {
+      "maximum_abs_loglikelihood_difference": 0.02226605089504119,
+      "target_of_max": 0,
+      "mass_of_max": 0.9999999989800156,
+      "q99_abs": 1.1518253799103208e-05,
+      "points": 6400
+    }
+  },
+  "threshold": 0.001,
+  "seconds": 205.59493120899424,
+  "source_sha256": {
+    "tmp/c07_sampler/validate_dense.py": "38f6056e313b2b44ede68b2a7c6aeac44462768d0ae1041faaf271709754a226",
+    "tmp/c07_sampler/cubic_even.py": "1f4f1b2052ac3f7f84cc55a2429218dca89eea014a74d43aeba6f416ac8f4ca1",
+    "tmp/c07_sampler/pointwise.py": "590ea0de044274cf75f18b904f99d5ec3ea22e0f84237ac356a26be5d388aa77",
+    "src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3"
+  },
+  "table_sha256": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_sampler/results/table_beta4097.npz": "b7e393d49d88026ca675367bd51711692e86b66b36d51a01f81161006342584e",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_sampler/results/table_beta8193.npz": "507a81302baf0e115ffa8e3b720c881f7ccb02aac5c5dcd875a8f6cea6786b6c"
+  },
+  "passes_tested_domain": false
+}

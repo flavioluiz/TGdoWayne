@@ -1,0 +1,108 @@
+{
+  "status": "FROZEN_TRAINING_AND_INDEPENDENT_IID_COMPLETE_AWAITING_DIAGNOSTICS",
+  "config": {
+    "scope": "Three engineering targets only; diagnose proposal tails without injected truths; not SBC500.",
+    "targets": [
+      25,
+      51,
+      78
+    ],
+    "training_lengths": [
+      8192,
+      32768
+    ],
+    "training_seeds": [
+      907140101,
+      907140102
+    ],
+    "production_seed": 907140103,
+    "levels": [
+      16384,
+      65536
+    ],
+    "replicates": 4,
+    "chains": 4,
+    "points_for_em": 2048,
+    "adaptation_window": 4000,
+    "em_components": 4,
+    "em_iterations": 80,
+    "covariance_floor": 0.03,
+    "inflation": 1.1,
+    "defensive_fraction": 0.15,
+    "student_df": 5.0,
+    "student_scale": 3.0,
+    "training_workers": 1,
+    "production_workers": 6,
+    "likelihood_batch": 2048,
+    "maximum_likelihood_values": 10000000,
+    "maximum_estimated_numeric_bytes": 4294967296,
+    "maximum_raw_bytes": 524288000,
+    "native_library": "tmp/native/c586a0637ce30e440b8a5235/libpta_likelihood.dylib",
+    "experiment": "configs/calibration/pilot_initial.json",
+    "data": "results/C07/fixtures/pilot_data.npz",
+    "table": "tmp/c07_sampler/results/table_beta8193_local.npz",
+    "frozen_cdf_grid": "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json",
+    "production_rng_recipe": "PCG64 SeedSequence([907140103,320,target,training_steps,N,replicate]); vector uniforms, normals, chi squares per target."
+  },
+  "training": [
+    {
+      "steps": 8192,
+      "file": "tmp/c07_cold_tail_review/results/train8192_proposals.json",
+      "sha256": "f257a3e36d709e8358ce4688d0bd91ca4cad6a06ad1ab5e3fedfddced46f5860",
+      "training_seconds": 2.4696771249873564
+    },
+    {
+      "steps": 32768,
+      "file": "tmp/c07_cold_tail_review/results/train32768_proposals.json",
+      "sha256": "e5fbd6e3988532a7234e1ac32a3f821be862b89791ac19eaa2320d6924eeb5b8",
+      "training_seconds": 10.391988249961287
+    }
+  ],
+  "production": [
+    {
+      "training_steps": 8192,
+      "N": 16384,
+      "R": 4,
+      "seconds": 0.3013882499653846,
+      "file": "tmp/c07_cold_tail_review/results/train8192_iid_N16384.npz",
+      "sha256": "81dfa3d0f8c77333d944cf4bf832863911cdb01637fe898b221035eb61ebee13"
+    },
+    {
+      "training_steps": 8192,
+      "N": 65536,
+      "R": 4,
+      "seconds": 1.2217466670554131,
+      "file": "tmp/c07_cold_tail_review/results/train8192_iid_N65536.npz",
+      "sha256": "a0a7337c52094ec98f0b693c368088ae80d18927a6c76e47a504381574ba62d2"
+    },
+    {
+      "training_steps": 32768,
+      "N": 16384,
+      "R": 4,
+      "seconds": 0.29801691696047783,
+      "file": "tmp/c07_cold_tail_review/results/train32768_iid_N16384.npz",
+      "sha256": "53abfda5d6c20117cdf68f05a142eb5314144f9afbab0793c69828e13cca848c"
+    },
+    {
+      "training_steps": 32768,
+      "N": 65536,
+      "R": 4,
+      "seconds": 1.3168192920275033,
+      "file": "tmp/c07_cold_tail_review/results/train32768_iid_N65536.npz",
+      "sha256": "17ba9f50a9bdad559bc791a2086077519971f613b605267d2432acb682b745b6"
+    }
+  ],
+  "likelihood_evaluations": 2457624,
+  "source_unchanged": true,
+  "uses_truth": false,
+  "RSS_max_bytes": 4001906688,
+  "input_sha256": {
+    "tmp/c07_cold_tail_review/run_comparison.py": "7005cc0b6a9d79318d8fa31a17f53a75173f5cdfc676a252b4e318e5b7b657a5",
+    "tmp/c07_cold_tail_review/config.json": "5cb5ecb13925ae3cd7659195197fda0f24a2b903aa88beea6a643b5893e8344d",
+    "results/C07/fixtures/pilot_data.npz": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "configs/calibration/pilot_initial.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "tmp/c07_sampler/results/table_beta8193_local.npz": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "tmp/native/c586a0637ce30e440b8a5235/libpta_likelihood.dylib": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+    "tmp/c07_iid_portable/results/gmm_truth_blind_planning.json": "c46649ff4b26d0c65fe65e355b532592b56427169e7b53ed5cc553de68fe1ad3"
+  }
+}

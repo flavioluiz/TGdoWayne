@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py", line 136, in <module>
+    if __name__ == '__main__':main()
+                              ~~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/gerar_calibracao.py", line 40, in main
+    truth = prior_truths(config); exp = experiment(config)
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/src/inference/data_generation.py", line 18, in prior_truths
+    raise ValueError('The C07 generator requires the four consecutive channels [1,2,3,4].')
+ValueError: The C07 generator requires the four consecutive channels [1,2,3,4].

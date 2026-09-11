@@ -1,0 +1,10 @@
+--- a/src/inference/campaign_runtime.py
++++ b/src/inference/campaign_runtime.py
+@@ -35,6 +35,7 @@
+   self.backend_factory=backend_factory;self.threads=positive_int(threads,'production threads');self.training_threads=positive_int(training_threads,'training threads');self.thread_plan={'training':self.training_threads,'production':self.threads};self.phase=None
+   if backend_factory and not backend_factory.startswith('inference.'):raise ValueError('Optional backend factory must be an explicit inference.module:function.')
+   modules=['campaign_runtime','campaign_archive','campaign_io','campaign_training','campaign_iid','campaign_diagnostic_io','pointwise','pointwise_preallocated','orf_cubic_reference','orf_interpolation','linalg_batch','gmm_proposal','gmm_proposal_reference','gmm_density','likelihood_threads','gmm_fit','gmm_fit_reference','mh_training','model','iid_diagnostics']
++  if 'gaussian_broadening' in self.settings.get('training',{}):modules.append('proposal_broadening')
+   self.source_paths={name:Path(importlib.util.find_spec('inference.'+name).origin) for name in modules}
+   if self.native_library:
+    spec=importlib.util.find_spec('inference.native_likelihood')

@@ -1,0 +1,186 @@
+{
+  "scope": "A0_CN datum14, original-coordinate CDFs by smooth panels for truncated numerator integrals; no completed SBC or all-target approval",
+  "order": 12,
+  "mass_nodes": 1,
+  "masses": [
+    0.5
+  ],
+  "parameter_points": 326592,
+  "seconds": 0.6439602080499753,
+  "maximum_points_budget": 1500000000,
+  "cdf_cuts": [
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -15.910990238353657
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -15.164352385255253
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -14.644232400075056
+    },
+    {
+      "parameter": 1,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -14.553074099037623
+    },
+    {
+      "parameter": 1,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -15.839561919522918
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": 3.171467101555302
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": 4.285450364801961
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": 5.185287653716211
+    },
+    {
+      "parameter": 2,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": 5.33809407308016
+    },
+    {
+      "parameter": 2,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": 3.102979622785091
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -14.978473773785955
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -14.596094047344582
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -14.527248421779364
+    },
+    {
+      "parameter": 3,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -14.51575625641101
+    },
+    {
+      "parameter": 3,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -14.5197623912345
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.05",
+      "value": -0.2973940910581835
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.5",
+      "value": -0.26732462909858573
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.9",
+      "value": -0.2159062480291402
+    },
+    {
+      "parameter": 4,
+      "kind": "frozen_prior_RQMC_quantile_0.95",
+      "value": -0.1987252706717761
+    },
+    {
+      "parameter": 4,
+      "kind": "truth_PIT_diagnostic_only",
+      "value": -0.26822449729865994
+    }
+  ],
+  "cut_source_hash": "3873231cf8b84b7c45b02f095ee8a06fe7ff6188df6d3d206ea20c71f8a351af",
+  "log_evidence": -76.0902257682151,
+  "original_nuisance_CDF_at_frozen_cuts": [
+    0.05015999266137164,
+    0.505109680763697,
+    0.9057740879773529,
+    0.9537964073459264,
+    0.09057893362495406,
+    0.06342866742765015,
+    0.5191580578513812,
+    0.8917502177885277,
+    0.946139984572747,
+    0.03791061096118045,
+    0.045698085505119335,
+    0.4978075400344747,
+    0.891913670408312,
+    0.9431862177270502,
+    0.9262252781051024,
+    0.061649869419199234,
+    0.501009267323909,
+    0.8962599043516748,
+    0.9472076973237735,
+    0.49002451231489513
+  ],
+  "log_mass_marginal": [
+    -76.0902257682151
+  ],
+  "log_CDF_numerator_mass_marginals": [
+    [
+      -79.08276329717698,
+      -76.77320545187305,
+      -76.18919112326577,
+      -76.13753080801465,
+      -78.49175938188131,
+      -78.84806512032249,
+      -76.74577266732894,
+      -76.20479497873228,
+      -76.14559051385716,
+      -79.36275000170336,
+      -79.17592464284158,
+      -76.78776751066397,
+      -76.20461170135438,
+      -76.14871731032952,
+      -76.16686356124802,
+      -78.87650993568809,
+      -76.78135644863094,
+      -76.19975060446394,
+      -76.14446265670296,
+      -76.80352563221135
+    ]
+  ],
+  "minimum_spectral_denominator": 1.0000011735673529,
+  "minimum_whitened_orf_eigenvalue": 0.022003852992802102,
+  "source_hashes": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cubature/cubature.py": "d6a2e6f3a661dee16532dfbfe85a54c842cfc25ee7d962b93a8b399942fd97a3",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cubature/truncated_cdf.py": "e18e21255e225c07704048a99ddbdc742ed2d29cb0f0557b444f3ad703381819",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_scale/scale_marginalization.py": "27fff04861fa6ca20c8dd7e8107676b26da3117b3b2c6755920a5c384bbfe140",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_integration/config.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_integration/results/data.npz": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8"
+  },
+  "orf_signature": "c843ce150113aa2f7cf7f2ec3fbc3faca42a136f368de56b86b15ab2789923a1",
+  "cache_hashes": {
+    "0.5": "ce78c658d4c76e6bab904f3c568c9c3e99d3bc1af616b9187db2512444f28bdd"
+  },
+  "thresholds": {
+    "maximum_abs_pit_difference": 0.002,
+    "maximum_quantile_difference_fraction_prior_width": 0.001,
+    "maximum_abs_log_evidence_difference": 0.001
+  },
+  "nuisance_quantile_acceptance_assessed": false,
+  "prior_preserved": true,
+  "no_cdf_pruning": true,
+  "no_eigenvalue_clipping": true
+}

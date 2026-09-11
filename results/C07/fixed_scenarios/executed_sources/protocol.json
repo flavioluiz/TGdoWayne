@@ -1,0 +1,47 @@
+{
+  "protocol_id": "C07-fixed-scenarios-v1-before-generation",
+  "date": "2026-09-10",
+  "status": "prospective_not_executed",
+  "experiment_config": "configs/calibration/pilot_initial.json",
+  "repetitions_per_scenario": 32,
+  "models": ["A0_CN"],
+  "parameter_order": ["u", "log10_Agw", "gamma_gw", "log10_Ar", "log10_EFAC"],
+  "scenarios": [
+    {
+      "id": "mass_zero_signal_present",
+      "data_seed": 707309101,
+      "signal_present": true,
+      "truth": [0.0, -15.0, 4.333333333333333, -15.5, 0.0],
+      "coverage_parameters": ["u", "log10_Agw", "gamma_gw", "log10_Ar", "log10_EFAC"]
+    },
+    {
+      "id": "near_kinematic_edge",
+      "data_seed": 707309102,
+      "signal_present": true,
+      "truth": [0.995, -15.0, 4.333333333333333, -15.5, 0.0],
+      "coverage_parameters": ["u", "log10_Agw", "gamma_gw", "log10_Ar", "log10_EFAC"]
+    },
+    {
+      "id": "no_gravitational_signal",
+      "data_seed": 707309103,
+      "signal_present": false,
+      "truth": [null, null, null, -15.5, 0.0],
+      "coverage_parameters": ["log10_Ar", "log10_EFAC"],
+      "generation": "Set the GW covariance contribution identically to zero; never use a finite log amplitude as a substitute for zero.",
+      "inference": "Fit the declared signal-plus-noise model with its original finite log prior; this is an out-of-prior negative diagnostic, not SBC or a null-model Bayes factor."
+    }
+  ],
+  "quantile_probabilities": [0.05, 0.5, 0.9, 0.95],
+  "coverage_reporting": "Counts and pointwise 95 percent Clopper-Pearson intervals; no demand of universal nominal frequentist coverage for fixed-truth Bayesian intervals.",
+  "precision": {
+    "binomial_standard_error_at_population_coverage_0_9": 0.05303300858899106,
+    "maximum_binomial_standard_error": 0.08838834764831843,
+    "interpretation": "32 repetitions are a coarse stress diagnostic. The N=500 precision statement belongs only to the separate prior-predictive campaign."
+  },
+  "structural_exceptions": [
+    "At u=0, [0,U90] has structural 100 percent coverage and F_u(0)=0; a constant support-boundary indicator is exact, not an unresolved sampled tail.",
+    "When GW amplitude is zero, mass and GW slope have no generating truth and receive no PIT, recovery bias or coverage score.",
+    "Other unresolved constant indicators remain failures under the applicable numerical protocol."
+  ],
+  "completion": "Keep every realization, report numerical failures, and do not execute until the chosen ORF and posterior production pipeline have passed their separate validation."
+}

@@ -1,0 +1,66 @@
+{
+  "configuration": "tmp/c07_integration/campaign500_draft.json",
+  "config_sha256": "3d9d5fd395cf2f12d64de37643a5785bcade34d69da931abd96d5bc0ca9ed1e5",
+  "output": "tmp/c07_integration/results/campaign500",
+  "data_generation": false,
+  "integration": false,
+  "n_realizations": 500,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "levels": [
+    {
+      "level": {
+        "name": "endpoint_129_13",
+        "mass_nodes": 129,
+        "endpoint_beta_nodes": [
+          0,
+          0.0002,
+          0.0005,
+          0.001,
+          0.002,
+          0.005,
+          0.01,
+          0.02,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "nuisance_power": 13,
+        "scrambles": 4,
+        "seed": 7071010
+      },
+      "parameter_points_upper_bound": 4587520,
+      "two_nuisance_weight_arrays_bytes": 1310720000
+    },
+    {
+      "level": {
+        "name": "endpoint_129_13_independent",
+        "mass_nodes": 129,
+        "endpoint_beta_nodes": [
+          0,
+          0.0002,
+          0.0005,
+          0.001,
+          0.002,
+          0.005,
+          0.01,
+          0.02,
+          0.05,
+          0.1,
+          0.15
+        ],
+        "nuisance_power": 13,
+        "scrambles": 4,
+        "seed": 7072010
+      },
+      "parameter_points_upper_bound": 4587520,
+      "two_nuisance_weight_arrays_bytes": 1310720000
+    }
+  ],
+  "status": "cost_and_contract_preview_only; convergence_and_independent_reference_required_before_SBC500"
+}

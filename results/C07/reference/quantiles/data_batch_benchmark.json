@@ -1,0 +1,41 @@
+{
+  "scope": "Workload only:16 data vectors at three fixed mass/ratio combinations; not posterior normalization, global PIT or SBC",
+  "normalization_approach": "Spectral projection and logdet shared; gamma scale integral vectorized over16 data vectors.",
+  "PIT_limitation": "Conditional EFAC CDF numerator shares coefficients, but ratio-space kinks were NOT certified at these orders; use aligned boxes or new convergence checks.",
+  "status": "PASS_LOCAL_KERNEL_EQUIVALENCE",
+  "rows": [
+    {
+      "u": 0.0,
+      "b": -16.0,
+      "parameter_nodes": 1200,
+      "data_vectors": 16,
+      "log_scale_integral_max_abs_error": 4.547473508864641e-13,
+      "conditional_scale_CDF_max_abs_error": 2.842170943040401e-14,
+      "scalar_seconds": 0.09121558407787234,
+      "batched_seconds": 0.053878917009569705,
+      "speedup": 1.6929735997045203
+    },
+    {
+      "u": 0.5,
+      "b": -15.2,
+      "parameter_nodes": 1200,
+      "data_vectors": 16,
+      "log_scale_integral_max_abs_error": 3.410605131648481e-13,
+      "conditional_scale_CDF_max_abs_error": 5.517808432387028e-14,
+      "scalar_seconds": 0.08853312500286847,
+      "batched_seconds": 0.053028207970783114,
+      "speedup": 1.66954774431841
+    },
+    {
+      "u": 1.0,
+      "b": -14.5,
+      "parameter_nodes": 1200,
+      "data_vectors": 16,
+      "log_scale_integral_max_abs_error": 6.821210263296962e-13,
+      "conditional_scale_CDF_max_abs_error": 5.5844218138645374e-14,
+      "scalar_seconds": 0.07255254196934402,
+      "batched_seconds": 0.040472083957865834,
+      "speedup": 1.792656440544947
+    }
+  ]
+}

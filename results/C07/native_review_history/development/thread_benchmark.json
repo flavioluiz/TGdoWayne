@@ -1,0 +1,56 @@
+{
+  "N": 65536,
+  "batch": 2048,
+  "cases": [
+    {
+      "threads": 1,
+      "times": [
+        0.6185631670523435,
+        0.60514541703742,
+        0.6021650420734659,
+        0.6040192920481786
+      ],
+      "median": 0.6045823545427993,
+      "all_outputs_bitwise_equal": true
+    },
+    {
+      "threads": 2,
+      "times": [
+        0.3247594579588622,
+        0.3254737500101328,
+        0.3321062920149416,
+        0.32543833390809596
+      ],
+      "median": 0.3254560419591144,
+      "all_outputs_bitwise_equal": true
+    },
+    {
+      "threads": 4,
+      "times": [
+        0.19225491606630385,
+        0.1930143329082057,
+        0.18904245900921524,
+        0.1898587909527123
+      ],
+      "median": 0.19105685350950807,
+      "all_outputs_bitwise_equal": true
+    },
+    {
+      "threads": 6,
+      "times": [
+        0.1558662090683356,
+        0.14846533292438835,
+        0.1528812920441851,
+        0.15300366608425975
+      ],
+      "median": 0.15294247906422243,
+      "all_outputs_bitwise_equal": true
+    }
+  ],
+  "source_sha256": {
+    "tmp/c07_cpp_moments/thread_benchmark.py": "671d5abe423b5cb9a9f8ea9ced93b655b07fdab4746bdc8d04d0bed15d3a3b9d",
+    "tmp/c07_cpp_moments/full_benchmark.py": "18ce3bc33f7949c249af0645d5067a4afaa663ecb4d0c23647be179bbfdfd49c",
+    "tmp/c07_cpp_moments/full.cpp": "fb4220e9beaf3e9be83c7ec74007033cdabd9ce620facda629b76ef161aafd2c"
+  },
+  "note": "Same fixed input arrays; no random number generation in worker threads. Shared read-only banks; elapsed times depend on concurrent machine load."
+}

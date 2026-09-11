@@ -1,0 +1,34 @@
+{
+  "scope": "Likelihood timing with repeated saved data, not500 independent simulations or calibration. Excludes ORF generation, summaries, IO and adaptation; simultaneous workspace tasks may affect wall time.",
+  "results": [
+    {
+      "dataset_columns_per_method": 16,
+      "number_distinct_saved_pilot_datasets": 16,
+      "parameter_points": 512,
+      "five_model_columns": 80,
+      "seconds": [
+        0.060192541917786,
+        0.05861716694198549,
+        0.05846924998331815
+      ],
+      "median_seconds_per_parameter_point": 0.0001144866541835654,
+      "projection_139_mass_8192_nuisance_4_scrambles_seconds": 521.4583171159029,
+      "checksum": -613847479.8386028
+    },
+    {
+      "dataset_columns_per_method": 500,
+      "number_distinct_saved_pilot_datasets": 16,
+      "parameter_points": 512,
+      "five_model_columns": 2500,
+      "seconds": [
+        1.2137484169797972,
+        1.2111777919344604,
+        1.1355217919917777
+      ],
+      "median_seconds_per_parameter_point": 0.002365581624871993,
+      "projection_139_mass_8192_nuisance_4_scrambles_seconds": 10774.63763704896,
+      "checksum": -19328328832.332333
+    }
+  ],
+  "numpy": "2.4.3"
+}

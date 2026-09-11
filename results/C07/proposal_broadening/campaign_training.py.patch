@@ -1,0 +1,15 @@
+--- a/src/inference/campaign_training.py
++++ b/src/inference/campaign_training.py
+@@ -35,6 +35,12 @@
+  for index,target in enumerate(pending):
+   start=perf_counter();fit,diagnostics=fit_proposal(points[index],np.zeros(selected),components=4,iterations=80,covariance_floor=.03,inflation=1.10)
+   row=dict(status='FROZEN_PROPOSAL',identity=runtime.target_identity,training_execution_identity=runtime.identity,training_configuration_sha256=canonical_hash(cfg),target=target,model=MODELS[target//runtime.n],datum=target%runtime.n,uses_truth=False,weights=fit.component_weights.tolist(),means=fit.means.tolist(),covariances=fit.covariances.tolist(),global_mean=meta['mean'][index],global_cholesky=meta['cholesky'][index],random_walk_logscale=meta['logscale'][index],defensive_fraction=.15,student_df=5.,student_scale=3.,training_steps=steps,chains=chains,seed=cfg['seed'],rng_recipe=meta['rng_recipe'],selection_indices=selection.tolist(),training_points_sha256=hashlib.sha256(points[index].tobytes()).hexdigest(),likelihood_evaluations=(steps+1)*chains,training_block_seconds=elapsed,em_seconds=perf_counter()-start,em_diagnostics=diagnostics,input_sha256=runtime.input_hashes,posterior_claimed=False)
++  if 'gaussian_broadening' in cfg:
++   from .proposal_broadening import broaden_gaussian_fit
++   row['unbroadened_gaussian_fit']={key:row[key] for key in ('weights','means','covariances')}
++   row['unbroadened_gaussian_fit_sha256']=canonical_hash(row['unbroadened_gaussian_fit'])
++   weights,means,covariances,description=broaden_gaussian_fit(fit.component_weights,fit.means,fit.covariances,cfg['gaussian_broadening'],defensive_fraction=row['defensive_fraction'])
++   row.update(weights=weights.tolist(),means=means.tolist(),covariances=covariances.tolist(),gaussian_broadening=description)
+   runtime.verify_unchanged();validate_proposal(row);row['proposal_content_hash']=canonical_hash(row);write_json_new(output/f'target_{target:06d}.json',row);completed.append(row)
+  return completed
+ 

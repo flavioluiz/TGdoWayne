@@ -1,0 +1,70 @@
+{
+  "budget": {
+    "maximum_active_raw_bytes": 1073741824,
+    "maximum_numeric_bytes": 4294967296,
+    "maximum_production_likelihood_values": 6000000,
+    "maximum_total_likelihood_values": 7000000,
+    "maximum_training_likelihood_values": 600000
+  },
+  "diagnostics": {
+    "mcse_cdf_max": 0.00335,
+    "protocol": "configs/calibration/diagnostics_iid_v1.json",
+    "release_requires_verified_numeric_summary": true
+  },
+  "execution_enabled": true,
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "notes": [
+    "Low level fixes cuts and checks refinement; high level supplies inference.",
+    "Training, two IID levels, target/replicate seeds and descriptive samples are separate.",
+    "Producer never deserializes truth.",
+    "No native backend is silently enabled.",
+    "Raw quota applies to active blocks; no automatic deletion without linked numerical diagnostics."
+  ],
+  "production": {
+    "descriptive_points_per_replicate": 128,
+    "levels": [
+      16384,
+      65536
+    ],
+    "likelihood_batch": 2048,
+    "raw_compression": "stored",
+    "replicates": 4,
+    "seed": 907130102
+  },
+  "production_targets_per_block": 16,
+  "schema": 1,
+  "status": "ENGINEERING_WHOLE_FLOW_NOT_SBC500",
+  "targets": [
+    0,
+    3,
+    8,
+    9,
+    11,
+    14,
+    20,
+    25,
+    28,
+    35,
+    46,
+    51,
+    52,
+    62,
+    67,
+    78
+  ],
+  "training": {
+    "approved": true,
+    "chains": 4,
+    "note": "Candidate supported by independent cold-target and high-level IID validation; execution remains disabled until integrated whole-flow benchmark.",
+    "points_for_em": 2048,
+    "seed": 907130101,
+    "steps": 8192
+  },
+  "training_targets_per_block": 64
+}

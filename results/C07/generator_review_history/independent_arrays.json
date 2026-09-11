@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "scope": "Four toy draws and algebraic reproduction; not an empirical covariance/pseudocovariance campaign.",
+  "arrays_shapes": {
+    "truth": [
+      4,
+      5
+    ],
+    "q": [
+      4,
+      4,
+      12
+    ],
+    "x_physical": [
+      4,
+      4,
+      10
+    ],
+    "x_gaussian": [
+      4,
+      4,
+      10
+    ],
+    "directions": [
+      12,
+      3
+    ],
+    "distances_ly": [
+      12
+    ],
+    "sigma": [
+      12
+    ],
+    "red_pattern": [
+      12
+    ],
+    "frequency_hz": [
+      4
+    ],
+    "scale": [
+      4
+    ],
+    "config_sha256": []
+  },
+  "rows": [
+    {
+      "realization": 0,
+      "q_max_abs_error": 3.580361673049448e-15,
+      "quadratic_max_abs_error": 1.0658141036401503e-14,
+      "paired_gaussian_max_abs_error": 1.7763568394002505e-15
+    },
+    {
+      "realization": 1,
+      "q_max_abs_error": 6.280369834735101e-16,
+      "quadratic_max_abs_error": 1.7763568394002505e-15,
+      "paired_gaussian_max_abs_error": 8.881784197001252e-16
+    },
+    {
+      "realization": 2,
+      "q_max_abs_error": 2.482534153247273e-16,
+      "quadratic_max_abs_error": 3.3306690738754696e-16,
+      "paired_gaussian_max_abs_error": 1.1102230246251565e-16
+    },
+    {
+      "realization": 3,
+      "q_max_abs_error": 1.2412670766236366e-16,
+      "quadratic_max_abs_error": 1.1102230246251565e-16,
+      "paired_gaussian_max_abs_error": 2.220446049250313e-16
+    }
+  ],
+  "strictly_interior_prior_truths": true,
+  "truths_distinct_from_pilot16": true,
+  "minimum_covariance_eigenvalue": 0.014980573572566682,
+  "conventions": "Proper CN z=(N(0,1)+iN(0,1))/sqrt(2), normalized PSD C/scale, quadratic q^H H q, Gaussian trace moments and shared latent normals.",
+  "physical_covariance_builder": "pta.simulation.residual_covariances; does not call inference.model.covariance_batch",
+  "source_sha256": "c865f7bb997ce141cd19977566e35ee3cb922147f66d88c0f95c7d4ca71611d4"
+}

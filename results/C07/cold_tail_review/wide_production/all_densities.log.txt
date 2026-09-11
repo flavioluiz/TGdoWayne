@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/wide_production/audit_all_densities.py", line 24, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c07_cold_tail_review/wide_production/audit_all_densities.py", line 20, in main
+    terms=[np.log(.85*w)+multivariate_normal.logpdf(z,mean=m,cov=C) for w,m,C in zip(b.weights[0],b.means[0],b.cov[0])];L=b.global_chol[0];terms.append(np.log(.15)+multivariate_t.logpdf(z,loc=b.global_mean[0],shape=5.4*L@L.T,df=5));ld=b.logpdf(z);scipy_error=float(np.max(abs(ld-logsumexp(terms,axis=0))));stored_error=float(np.max(abs(ld-stored)));bound=float(np.min(ld-a.logpdf(z)));assert scipy_error<1e-10 and stored_error==0 and bound>=np.log(15/17)-1e-13;results.append(dict(target=item['target'],anchors=len(z),scipy_logpdf_max_error=scipy_error,stored_logpdf_max_error=stored_error,minimum_log_density_ratio=bound,minimum_component_eigenvalue=float(np.min(np.linalg.eigvalsh(b.cov))),mapping_exact=True))
+                                                                                                                                                                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

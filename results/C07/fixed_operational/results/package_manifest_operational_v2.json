@@ -1,0 +1,63 @@
+{
+  "scope": "FIXED96_OPERATIONAL_V2_PREFLIGHT_AND_TOY_ONLY",
+  "files": {
+    "src/inference/fixed_diagnostics_v2.py": {
+      "sha256": "4f5e7e593f39f263809824c36a832c83b444990d8c4518d8389d185f5cd64091",
+      "bytes": 19039
+    },
+    "scripts/run_fixed_campaign.py": {
+      "sha256": "495cc13c70381d5fb6e8c1a9017d76441881824b4abb6ba7a5d5649fb50b1ccf",
+      "bytes": 17054
+    },
+    "configs/fixed_campaign_prospective_v1.json": {
+      "sha256": "856377c733f9bf1930f4eb324bde84eff9b02c407d657df2f2ff3d6b10820f6b",
+      "bytes": 2360
+    },
+    "configs/fixed_diagnostics_v1.json": {
+      "sha256": "ed45b151f4a86ce03ba3bc0373e9c9c8f6632b58a393607840395f22dc3d1df9",
+      "bytes": 1638
+    },
+    "tests/test_fixed_operational.py": {
+      "sha256": "029158b8df1ec20d40636dec1f7d1c25bf0ea187dee1713acfbf9265fe461585",
+      "bytes": 10743
+    },
+    "tests/test_fixed_diagnostics_v2.py": {
+      "sha256": "0ff7bf89bc26fc626582f177c733ec6012755d0b5c59e8809c34fa5ae2eaa39e",
+      "bytes": 771
+    },
+    "INTEGRACAO_OPERACIONAL.md": {
+      "sha256": "207c52507668cf00617b154179292b8c236c3366ff8588a9e3b79ca8c3f47c89",
+      "bytes": 7825
+    },
+    "results/fixed_operational_preflight_final.json": {
+      "sha256": "7694da3de127f481c6d70018a0149c4d168f8eeb72b4ae59e2af8f1380e54212",
+      "bytes": 6252
+    },
+    "results/tests_operational_complete.json": {
+      "sha256": "fbb105c6d2efda894f773a8bf9d4ddf79e836da0c283a737dc1a273fad22ad2d",
+      "bytes": 6295
+    }
+  },
+  "v1_preserved": {
+    "path": "archive/masked_reader_v1/src/inference/fixed_diagnostics.py",
+    "sha256": "94079e15546b3606a3049387ce0ec51b02272a683a2d124bed1014eb685194aa"
+  },
+  "executed_runtime_input_sha256": {
+    "data": "834d95fa2a4c6854ac7cb129255769edca4cc4d563d3db99d8c821e69db78a80",
+    "experiment": "8da5f5af85b21b6df1f45f5f3764e4cf7ea7599773b2e7fc78d40fe16b3a71d2",
+    "settings": "856377c733f9bf1930f4eb324bde84eff9b02c407d657df2f2ff3d6b10820f6b",
+    "table": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "table_manifest": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f",
+    "validation_config": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9"
+  },
+  "executed_driver_source_sha256": {
+    "base_driver": "ce2f20ce6c4a191b9245a1d51a49cf0c79f68edbb3cbfb31ce43b242aa6c0e1f",
+    "campaign_archive": "94499d0dadab836e1858c411b8973a317aabd9272ec1834053ea41945ef4c34a",
+    "campaign_diagnostic_io": "e57e10a5af9bcb79a522b1f465ecc89214c976aba029179c53b614021143f9f6",
+    "campaign_iid": "8df0ccc17703020ccae44d7015b7a02a3722cc4183988327ec01005d2a59a405",
+    "fixed_driver": "495cc13c70381d5fb6e8c1a9017d76441881824b4abb6ba7a5d5649fb50b1ccf",
+    "fixed_masked_reader": "4f5e7e593f39f263809824c36a832c83b444990d8c4518d8389d185f5cd64091",
+    "iid_diagnostics": "25a999477c9232d5a8da8cffeb0bdc50972d2d31c8892f1868af4b214ea06ced",
+    "iid_optimized": "b9d1ab59bf0323b933084b518c2bc249e32fdad044a02f7d380e1690d968d458"
+  }
+}

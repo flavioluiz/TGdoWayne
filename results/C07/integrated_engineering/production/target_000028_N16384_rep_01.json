@@ -1,0 +1,58 @@
+{
+  "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+  "level": 16384,
+  "level_index": 0,
+  "likelihood_evaluations": 16384,
+  "orphan_recovered_by_deterministic_replay": false,
+  "precision_claimed": false,
+  "proposal_sha256": "2cdc5115f930a33a44b8714bf9eb5d9fdc5e3dacb1a5c0c9005c89af150f0129",
+  "raw_bytes": 1853702,
+  "raw_compression": "stored",
+  "raw_file": "target_000028_N16384_rep_01.npz",
+  "raw_sha256": "e20edc9b9c677d46c0d2aba018d427d2b0113dfb1927659267090807648bcacf",
+  "replicate": 1,
+  "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+  "rng_state_after": {
+    "bit_generator": "PCG64",
+    "has_uint32": 0,
+    "state": {
+      "inc": 161533461605005076836805933017222937031,
+      "state": 22903075185645909601458640530715192586
+    },
+    "uinteger": 0
+  },
+  "rng_state_before": {
+    "bit_generator": "PCG64",
+    "has_uint32": 0,
+    "state": {
+      "inc": 161533461605005076836805933017222937031,
+      "state": 251287168171138039625141551733380975758
+    },
+    "uinteger": 0
+  },
+  "samples": 16384,
+  "saturated_normalized_target_weight": 0.0,
+  "saturated_rows": 0,
+  "seconds": 0.04407420800998807,
+  "seed": 907130102,
+  "status": "IID_REPLICATE_COMPLETE",
+  "target": 28,
+  "uses_truth": false,
+  "weight_summary": {
+    "entropy_effective_count": 8927.3675278456,
+    "evidence_relative_mcse": 0.01073001278882466,
+    "exact_zero_target_weights": 0,
+    "floating_point_weight_underflows": 0,
+    "largest_one_percent_weight_fraction": 0.06518117828598906,
+    "largest_ten_weight_fraction": 0.01457826633230149,
+    "log_evidence": 53.180595067912805,
+    "log_evidence_delta_mcse": 0.01073001278882466,
+    "log_weight_range_finite": 189.64304160864563,
+    "maximum_normalized_weight": 0.006170721045699388,
+    "n": 16384,
+    "no_unseen_tail_certificate": true,
+    "single_deletion_cdf_bound": 0.006209035270315413,
+    "single_deletion_guard_pass": false,
+    "weight_ess_concentration_only": 5676.615578894457
+  }
+}

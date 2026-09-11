@@ -1,0 +1,147 @@
+{
+  "status": "FAIL_production_independent_scrambles_no_campaign_approval",
+  "realization_indices": [
+    1,
+    13,
+    12,
+    14
+  ],
+  "number_scrambles_per_set": 4,
+  "points_per_scramble": 2560,
+  "total_wall_seconds": 294.66166545811575,
+  "training_truth_used": false,
+  "production_truth_used_only_for_diagnostics": true,
+  "records": [
+    {
+      "method": "A0_CN",
+      "max_logZ_difference": 0.01705728330855294,
+      "logZ_differences": [
+        0.005790655837603964,
+        0.006358639730080995,
+        0.01705728330855294,
+        0.0068111836189359565
+      ],
+      "max_quantile_difference_fraction_prior_width": 0.02705618287134186,
+      "parameter_max_quantile_differences": [
+        0.005503977502733903,
+        0.00735329669395135,
+        0.014593257887303323,
+        0.02705618287134186,
+        0.007889292106152414
+      ],
+      "max_marginal_pit_difference": 0.0104215630208766,
+      "max_data_dependent_pit_difference": 0.01581017384228489,
+      "failed_local_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "method": "A_CN",
+      "max_logZ_difference": 0.009625766437530103,
+      "logZ_differences": [
+        0.005668923580650187,
+        0.007879696993086327,
+        0.009625766437530103,
+        0.0018518171403627548
+      ],
+      "max_quantile_difference_fraction_prior_width": 0.02244124727098864,
+      "parameter_max_quantile_differences": [
+        0.008063161212318537,
+        0.008486467872532266,
+        0.01914905757834475,
+        0.02244124727098864,
+        0.003286282563338359
+      ],
+      "max_marginal_pit_difference": 0.014945012712287459,
+      "max_data_dependent_pit_difference": 0.007034097048041255,
+      "failed_local_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "method": "B_CN",
+      "max_logZ_difference": 0.024064130288691032,
+      "logZ_differences": [
+        0.011699398116249426,
+        0.003821942602037609,
+        0.0038838915123733386,
+        0.024064130288691032
+      ],
+      "max_quantile_difference_fraction_prior_width": 0.022137098013043043,
+      "parameter_max_quantile_differences": [
+        0.007350972071603512,
+        0.00669578133133264,
+        0.013393733550435983,
+        0.022137098013043043,
+        0.0028084400351804247
+      ],
+      "max_marginal_pit_difference": 0.01721712203869514,
+      "max_data_dependent_pit_difference": 0.008177205035636903,
+      "failed_local_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "method": "A_G",
+      "max_logZ_difference": 0.019155783145492933,
+      "logZ_differences": [
+        0.0009251072741918165,
+        0.0012488857925276875,
+        0.019155783145492933,
+        0.013090853397487834
+      ],
+      "max_quantile_difference_fraction_prior_width": 0.02893628639999264,
+      "parameter_max_quantile_differences": [
+        0.007624505310057983,
+        0.013127229998179502,
+        0.008755036130855487,
+        0.02893628639999264,
+        0.005033127582440244
+      ],
+      "max_marginal_pit_difference": 0.02440601126645292,
+      "max_data_dependent_pit_difference": 0.0064620063859135435,
+      "failed_local_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "method": "B_G",
+      "max_logZ_difference": 0.006707869603093997,
+      "logZ_differences": [
+        0.00615503593088107,
+        0.006707869603093997,
+        0.002108887880137189,
+        0.0012857103854244656
+      ],
+      "max_quantile_difference_fraction_prior_width": 0.014284922901152085,
+      "parameter_max_quantile_differences": [
+        0.0011204929081356507,
+        0.011026486507314637,
+        0.014284922901152085,
+        0.009145774219567925,
+        0.0014463406297727003
+      ],
+      "max_marginal_pit_difference": 0.0062283313710194965,
+      "max_data_dependent_pit_difference": 0.004330428189122548,
+      "failed_local_indices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "decision": "Do not spend on remaining groups or a larger campaign automatically. Retain as a valid continuous MIS baseline and compare scale marginalization."
+}

@@ -1,0 +1,490 @@
+{
+  "datum": 9,
+  "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+  "input_sha256": {
+    "data": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8",
+    "experiment": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "native_build_manifest": "7a292917b6db16ac5b27651fd4bb629735619ee08f3e391cb0fbfe602d03f526",
+    "native_library": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6",
+    "settings": "4cd92306b0945515a46278bf463e5a8919009227d02e562379030cce5592fb14",
+    "table": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d",
+    "table_manifest": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f",
+    "validation_config": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9"
+  },
+  "levels": [
+    16384,
+    65536
+  ],
+  "model": "A0_CN",
+  "posterior_precision_claimed": false,
+  "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+  "replicates": [
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 16384,
+      "level_index": 0,
+      "likelihood_evaluations": 16384,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 1853702,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N16384_rep_00.npz",
+      "raw_sha256": "dfb1ad1130280cd95a79a625b94b7d1f259b6c90a44f0355344df73f2729fd62",
+      "replicate": 0,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 229922603990986865256614520582168977355,
+          "state": 91699008376141731192818366366040155429
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 229922603990986865256614520582168977355,
+          "state": 249395055752337261855790848402303131381
+        },
+        "uinteger": 0
+      },
+      "samples": 16384,
+      "saturated_normalized_target_weight": 2.0077740947004585e-76,
+      "saturated_rows": 1,
+      "seconds": 0.04734708298929036,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 10710.32757471492,
+        "evidence_relative_mcse": 0.0076090536213608145,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 48,
+        "largest_one_percent_weight_fraction": 0.052447580372038845,
+        "largest_ten_weight_fraction": 0.011120331132081359,
+        "log_evidence": -192.73092047478326,
+        "log_evidence_delta_mcse": 0.0076090536213608145,
+        "log_weight_range_finite": 7945.919831752249,
+        "maximum_normalized_weight": 0.0015474182456555264,
+        "n": 16384,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0015498164599230286,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 8408.355521374035
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 16384,
+      "level_index": 0,
+      "likelihood_evaluations": 16384,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 1853702,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N16384_rep_01.npz",
+      "raw_sha256": "08cd939efc7be3477c5e73f318d853bc60434e750d4c7d582328d1b3c5aca238",
+      "replicate": 1,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 10521597062682894984540481621430162319,
+          "state": 191652882956794297226004802087544138722
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 10521597062682894984540481621430162319,
+          "state": 108772833096371934989472265321061222162
+        },
+        "uinteger": 0
+      },
+      "samples": 16384,
+      "saturated_normalized_target_weight": 0.0,
+      "saturated_rows": 0,
+      "seconds": 0.046855583088472486,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 10820.112368617769,
+        "evidence_relative_mcse": 0.00705011188861073,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 36,
+        "largest_one_percent_weight_fraction": 0.04654904745344849,
+        "largest_ten_weight_fraction": 0.006681209502223245,
+        "log_evidence": -192.73977208081618,
+        "log_evidence_delta_mcse": 0.00705011188861073,
+        "log_weight_range_finite": 6235.5340569334885,
+        "maximum_normalized_weight": 0.0013146649561334362,
+        "n": 16384,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0013163955752646457,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 9030.470597979409
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 16384,
+      "level_index": 0,
+      "likelihood_evaluations": 16384,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 1853702,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N16384_rep_02.npz",
+      "raw_sha256": "9e1b24e6930c6f412e66a9944a829850e38df32799e4af4296ddeb6364393a8b",
+      "replicate": 2,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 254104644289140270588595483301309441887,
+          "state": 264011560098338766624953211063241272019
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 254104644289140270588595483301309441887,
+          "state": 2822639773639961490999603139474995264
+        },
+        "uinteger": 0
+      },
+      "samples": 16384,
+      "saturated_normalized_target_weight": 0.0,
+      "saturated_rows": 0,
+      "seconds": 0.04654950008261949,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 10922.424302160438,
+        "evidence_relative_mcse": 0.00680175947181051,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 33,
+        "largest_one_percent_weight_fraction": 0.042743066160785784,
+        "largest_ten_weight_fraction": 0.0050843811280515995,
+        "log_evidence": -192.74778412295223,
+        "log_evidence_delta_mcse": 0.00680175947181051,
+        "log_weight_range_finite": 7816.221320063481,
+        "maximum_normalized_weight": 0.0007589070913771012,
+        "n": 16384,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0007594834687673323,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 9319.988960063043
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 16384,
+      "level_index": 0,
+      "likelihood_evaluations": 16384,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 1853702,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N16384_rep_03.npz",
+      "raw_sha256": "8b9e4f7f56964ac4c52a5c83e1898c3a66e5fda4f875cbc510c473dcc088476f",
+      "replicate": 3,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 213929952408602820690047551550070176201,
+          "state": 4879339977615735711077189369352947590
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 213929952408602820690047551550070176201,
+          "state": 114309830974427389108370244483894428166
+        },
+        "uinteger": 0
+      },
+      "samples": 16384,
+      "saturated_normalized_target_weight": 1.0692539777088418e-30,
+      "saturated_rows": 1,
+      "seconds": 0.046565791009925306,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 10867.770049435367,
+        "evidence_relative_mcse": 0.0069642202371174335,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 48,
+        "largest_one_percent_weight_fraction": 0.04710315028789319,
+        "largest_ten_weight_fraction": 0.005852124531132614,
+        "log_evidence": -192.73118835714445,
+        "log_evidence_delta_mcse": 0.0069642202371174335,
+        "log_weight_range_finite": 7708.031684576391,
+        "maximum_normalized_weight": 0.0009088681937607213,
+        "n": 16384,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0009096949866000656,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 9129.705397702464
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 65536,
+      "level_index": 1,
+      "likelihood_evaluations": 65536,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 7407878,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N65536_rep_00.npz",
+      "raw_sha256": "f19ad153397473b757db50658040f574f5cf258ca0b6121bac85eae12139f0bf",
+      "replicate": 0,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 295663673198031408177231454787896094387,
+          "state": 167614311111291108914341231113174995983
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 295663673198031408177231454787896094387,
+          "state": 227638710398549825210594707506370207133
+        },
+        "uinteger": 0
+      },
+      "samples": 65536,
+      "saturated_normalized_target_weight": 6.338037270682256e-43,
+      "saturated_rows": 3,
+      "seconds": 0.18467891600448638,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 43320.872747872316,
+        "evidence_relative_mcse": 0.0036446773181810967,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 137,
+        "largest_one_percent_weight_fraction": 0.048513623641210694,
+        "largest_ten_weight_fraction": 0.0036499184801433286,
+        "log_evidence": -192.73674174038948,
+        "log_evidence_delta_mcse": 0.0036446773181810967,
+        "log_weight_range_finite": 7963.80118026605,
+        "maximum_normalized_weight": 0.0007976081437087709,
+        "n": 65536,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0007982448302860805,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 35035.769091594084
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 65536,
+      "level_index": 1,
+      "likelihood_evaluations": 65536,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 7407878,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N65536_rep_01.npz",
+      "raw_sha256": "4025ae1199ebc2c2d9b52f9349c23a8d649818dd49ad5afc1f71a4dbb3779539",
+      "replicate": 1,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 37811485266531929081873421119889238661,
+          "state": 164797586893296138867817113692688766673
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 37811485266531929081873421119889238661,
+          "state": 255229040443360235662807265211761164706
+        },
+        "uinteger": 0
+      },
+      "samples": 65536,
+      "saturated_normalized_target_weight": 2.3555631583773277e-36,
+      "saturated_rows": 4,
+      "seconds": 0.20034037495497614,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 43399.12882920969,
+        "evidence_relative_mcse": 0.0035385613400717953,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 146,
+        "largest_one_percent_weight_fraction": 0.04774582228106476,
+        "largest_ten_weight_fraction": 0.0027909653188847154,
+        "log_evidence": -192.73458284335035,
+        "log_evidence_delta_mcse": 0.0035385613400717953,
+        "log_weight_range_finite": 7940.535907127999,
+        "maximum_normalized_weight": 0.00036587954211446025,
+        "n": 65536,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.00036601345895122907,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 35997.1016250117
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 65536,
+      "level_index": 1,
+      "likelihood_evaluations": 65536,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 7407878,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N65536_rep_02.npz",
+      "raw_sha256": "547e8a16fee1e995bd68f27f55b9813134a6392543be17bad2d130e48674b944",
+      "replicate": 2,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 339565980129146395388700449676205164267,
+          "state": 83470687017973243623432223890041497438
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 339565980129146395388700449676205164267,
+          "state": 266830834908621272878316480777823779763
+        },
+        "uinteger": 0
+      },
+      "samples": 65536,
+      "saturated_normalized_target_weight": 1.5404523519268478e-50,
+      "saturated_rows": 3,
+      "seconds": 0.19073029200080782,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 43369.996756631546,
+        "evidence_relative_mcse": 0.003517798540563169,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 161,
+        "largest_one_percent_weight_fraction": 0.046546639689271474,
+        "largest_ten_weight_fraction": 0.0025976911768538194,
+        "log_evidence": -192.74082345910486,
+        "log_evidence_delta_mcse": 0.003517798540563169,
+        "log_weight_range_finite": 6221.481089920748,
+        "maximum_normalized_weight": 0.0005446841788549931,
+        "n": 65536,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0005449810213951232,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 36187.95134955677
+      }
+    },
+    {
+      "identity": "a684eb460aa451e46aaba590906e15bfaf33074ed751252eecacf158b8baa98d",
+      "level": 65536,
+      "level_index": 1,
+      "likelihood_evaluations": 65536,
+      "orphan_recovered_by_deterministic_replay": false,
+      "precision_claimed": false,
+      "proposal_sha256": "b5dbc887a9b9f2f1a2f56be804c8b66c473af8cc7e507fe24f1274144a10c238",
+      "raw_bytes": 7407878,
+      "raw_compression": "stored",
+      "raw_file": "target_000009_N65536_rep_03.npz",
+      "raw_sha256": "50d275945d2e35a4f9a7e7af8d1600b6637286e8f26d42ab6b71f4a457ff9667",
+      "replicate": 3,
+      "rng_recipe": "PCG64 SeedSequence([master,320+100*level_index,global_target,replicate]); uniforms, normals and chisquares outside likelihood workers",
+      "rng_state_after": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 13777174720416584974073436491137942321,
+          "state": 199706674896473311144722000141809043011
+        },
+        "uinteger": 0
+      },
+      "rng_state_before": {
+        "bit_generator": "PCG64",
+        "has_uint32": 0,
+        "state": {
+          "inc": 13777174720416584974073436491137942321,
+          "state": 327246699248915660141308148510294263746
+        },
+        "uinteger": 0
+      },
+      "samples": 65536,
+      "saturated_normalized_target_weight": 2.3734602509622752e-73,
+      "saturated_rows": 2,
+      "seconds": 0.19479487498756498,
+      "seed": 907130102,
+      "status": "IID_REPLICATE_COMPLETE",
+      "target": 9,
+      "uses_truth": false,
+      "weight_summary": {
+        "entropy_effective_count": 43447.43640150546,
+        "evidence_relative_mcse": 0.0035382776782720885,
+        "exact_zero_target_weights": 0,
+        "floating_point_weight_underflows": 142,
+        "largest_one_percent_weight_fraction": 0.04708100457692131,
+        "largest_ten_weight_fraction": 0.002918315755924684,
+        "log_evidence": -192.73619274258664,
+        "log_evidence_delta_mcse": 0.0035382776782720885,
+        "log_weight_range_finite": 8044.776890175786,
+        "maximum_normalized_weight": 0.0004243245838372222,
+        "n": 65536,
+        "no_unseen_tail_certificate": true,
+        "single_deletion_cdf_bound": 0.0004245047116223183,
+        "single_deletion_guard_pass": true,
+        "weight_ess_concentration_only": 35999.70298224068
+      }
+    }
+  ],
+  "status": "IID_COMPLETE_AWAITING_DIAGNOSTICS",
+  "target": 9,
+  "uses_truth": false
+}
