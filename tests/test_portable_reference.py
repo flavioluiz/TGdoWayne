@@ -16,7 +16,15 @@ class PortableReferenceTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.e=experiment(json.loads(CONFIG.read_text()));cls.box=LogAmplitudeBox()
-        with np.load(DATA,allow_pickle=False) as p:cls.q=p['q'][14]
+        with np.load(DATA,allow_pickle=False) as p:
+            cls.q=p['q'][14]
+            # The frozen cache signature uses the archived geometry, not a
+            # platform-specific last bit from regenerating trigonometric data.
+            for field, member in [('points','directions'), ('distance_ly','distances_ly'),
+                                  ('sigma','sigma'), ('red','red_pattern'),
+                                  ('f','frequency_hz'), ('scale','scale')]:
+                np.testing.assert_allclose(cls.e[field],p[member],rtol=1e-14,atol=1e-15)
+                cls.e[field]=p[member].copy()
         cls.table=FrozenMassTable(cls.e,json.loads(CONFIG.read_text())['orf'])
     def test_joint_prior_normalization_and_covariance(self):
         box=self.box;volume=np.ptp(box.gw)*np.ptp(box.red)*np.ptp(box.efac)

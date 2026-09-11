@@ -16,7 +16,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 **Próxima etapa:** C08 — Resultados sobre compressão em frequência.  
 **Atualização:** 2026-09-11.
 
-**[Baixar o PDF mais recente — v0.7.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.7.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.7.0) · [PDF versionado no repositório](output/pdf/v0.7.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.7.1](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.7.1/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.7.1) · [PDF versionado no repositório](output/pdf/v0.7.1/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -43,6 +43,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Síntese SBC auditada independentemente: 6202 verificações e reconstrução exata de 15000 flags por função. Controles sem rejeição nominal; dez rejeições persistentes nas aproximações normais.
 - Noventa e seis controles A0 concluídos, com 32 observações por cenário, 416 PITs numéricos e 32 estruturais; parâmetros sem verdade definida mascarados. Cobertura condicional reportada separadamente.
 - Arquivos compactos restauráveis das campanhas, com verificações de SHA-256, propostas, sementes, diagnósticos e recibos preservados; capítulo 6 incorporado ao PDF cumulativo.
+- Correção de portabilidade dos testes entre macOS e Linux: fixtures com geometria preservada, identidade dos caches mantida e tolerância explícita ao arredondamento BLAS.
 
 ### O que está em andamento e o que falta
 
@@ -60,7 +61,7 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C04 | Fundamentos teóricos e reprodução do TG | `v0.4.0` | Concluída | [Detalhes](implementation_plan/commits/C04_fundamentos_e_tg.md) |
 | C05 | Resposta de PTA e correlações validadas | `v0.5.0` | Concluída | [Detalhes](implementation_plan/commits/C05_resposta_pta.md) |
 | C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Concluída | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
-| C07 | Inferência de referência e calibração | `v0.7.0` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
+| C07 | Inferência de referência e calibração | `v0.7.1` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
 | C08 | Resultados sobre compressão em frequência | `v0.8.0` | Em andamento | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
 | C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Planejada | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Planejada | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |

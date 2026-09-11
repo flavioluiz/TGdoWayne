@@ -86,7 +86,13 @@ class FixedDiagnosticsTests(unittest.TestCase):
     def test_twenty_quantile_products_unchanged_without_truth(self):
         a,_=self.run_case('interior');b,_=self.run_case('absent');c,_=self.run_case('zero')
         for name in ['quantiles_unit','quantiles_physical','independent_cuts_unit','cut_cdf','cut_mcse','cut_precision_pass']:
-            np.testing.assert_array_equal(a[name],b[name]);np.testing.assert_array_equal(a[name],c[name])
+            if name=='cut_precision_pass':
+                np.testing.assert_array_equal(a[name],b[name]);np.testing.assert_array_equal(a[name],c[name])
+            else:
+                # Different mask widths can select different BLAS reductions.
+                # Permit only roundoff; all Boolean decisions remain exact.
+                np.testing.assert_allclose(a[name],b[name],rtol=0,atol=2e-14,err_msg=name)
+                np.testing.assert_allclose(a[name],c[name],rtol=0,atol=2e-14,err_msg=name)
 
     def test_other_constant_indicators_stay_unresolved(self):
         levels=copy.deepcopy(self.levels)

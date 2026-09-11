@@ -1,0 +1,23 @@
+{
+  "schema": "C07_PUBLICATION_PORTABILITY_FIX_v1",
+  "status": "LOCAL_164_TESTS_PASS_LINUX_VALIDATION_PENDING",
+  "failed_run": 34573650645,
+  "failed_job": 103181110915,
+  "original_commit": "771a27b3c1f3331721c557481c6f77e572982a65",
+  "original_tag": "v0.7.0",
+  "replacement_version": "v0.7.1",
+  "tests_run": 164,
+  "core_sources_or_experiments_changed": false,
+  "changed_component_inputs": [
+    "tests/test_fixed_diagnostics.py",
+    "tests/test_fixed_generation.py",
+    "tests/test_inference_data.py",
+    "tests/test_portable_reference.py"
+  ],
+  "previous_component_record_sha256": "0469831b6bdc9b60010d421a767bcfec2b188a66adce61ba4df93b0d1f72e52f",
+  "current_component_record_sha256": "1b7f1602e4bc97692532925df2ae6c748b8a28d65b369b45f338082ec271305d",
+  "log_sha256": "94954822485e4e2bf6d436a8b18ed749943aa8368f271bab3a5d25834f2f2369",
+  "reason": "Archived geometry bytes are part of exact cache identity; regenerated trigonometric coordinates are mathematically consistent but not bitwise portable. BLAS reductions at different mask widths also differ by roundoff.",
+  "test_contract": "Compare declared and archived geometry with rtol=1e-14,atol=1e-15 before using stored fields in historical-fixture tests. Production cache identity and observation-loader guards unchanged. Mask-independent numerical summaries compared with absolute tolerance2e-14; Boolean decisions remain exact.",
+  "scientific_campaigns_rerun": false
+}

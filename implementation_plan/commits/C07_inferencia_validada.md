@@ -76,3 +76,7 @@ A implementação usa `run_calibration_campaign.py`, `sintetizar_calibracao.py` 
 Foram concluídas 2500 inferências/500 dados e 96 controles fixos. O resumo estatístico foi auditado e não exclui os 81 alvos com algum flag falso ou 243 PITs não resolvidos. Os controles correspondentes à distribuição geradora não tiveram rejeições nominais; a aproximação normal nas estatísticas físicas teve dez rejeições persistentes na sensibilidade. As falhas foram investigadas e conservadas, como detalha [o registro dos resultados](../../docs/inferencia/resultados_c07.md).
 
 A cobertura fixa perto da borda foi 0/32 nos dois eventos de 90%; o critério é reportar e interpretar a cobertura condicional, não impor cobertura frequentista nominal a toda verdade. Precisão horizontal de quantis permanece uma limitação declarada e é tratada no desenho C08. Os protocolos de MCMC e propostas anteriores reprovados ficam preservados.
+
+### Correção de publicação — v0.7.1
+
+O commit científico `771a27b` e a tag `v0.7.0` foram enviados. A primeira execução Linux encontrou diferenças de arredondamento na geometria regenerada, que alteravam a assinatura dos caches exatos, e uma asserção indevida de igualdade bit a bit entre reduções BLAS de tamanhos diferentes. O commit de correção conserva os kernels e resultados e torna os testes de fixtures portáveis, verificando a geometria antes de usar os bytes versionados. O PDF cumulativo correspondente é publicado como `v0.7.1`; a tentativa anterior permanece no histórico.

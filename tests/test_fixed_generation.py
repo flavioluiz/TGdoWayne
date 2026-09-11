@@ -96,8 +96,19 @@ class FixedGenerationTests(unittest.TestCase):
     def test_generated_fixture_runtime_loading(self):
         path=ROOT/'results/C07/fixed_scenarios/data.npz'
         if not path.exists():self.skipTest('Checked exact-ORF observations not generated yet.')
-        observed=load_observations(path,self.exp)
+        frozen_exp=dict(self.exp)
+        with np.load(path,allow_pickle=False) as a:
+            for field, member in [('points','directions'), ('distance_ly','distances_ly'),
+                                  ('sigma','sigma'), ('red','red_pattern'),
+                                  ('f','frequency_hz'), ('scale','scale')]:
+                np.testing.assert_allclose(frozen_exp[field],a[member],rtol=1e-14,atol=1e-15)
+                frozen_exp[field]=a[member].copy()
+        observed=load_observations(path,frozen_exp)
         self.assertEqual(observed['q'].shape,(96,4,12))
+        # The production loader must still reject an actually changed geometry.
+        changed=dict(frozen_exp);changed['points']=frozen_exp['points'].copy()
+        changed['points'][0,0]+=1e-6
+        with self.assertRaises(ValueError):load_observations(path,changed)
         with np.load(path,allow_pickle=False) as a:
             self.assertTrue(np.all(a['gw_covariance_by_scenario'][2]==0))
             self.assertTrue(np.isnan(a['truth'][64:,:3]).all())

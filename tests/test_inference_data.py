@@ -3,6 +3,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,9 +17,20 @@ class InferenceDataTests(unittest.TestCase):
     def setUpClass(cls):
         cls.config = json.loads((ROOT/'configs/calibration/pilot_initial.json').read_text())
         cls.cache = ROOT/'results/C07/fixtures/orf_cache'
+        cls.exp = experiment(cls.config)
+        # Exact cache keys bind the archived geometry bytes. libm sin/cos can
+        # differ by an ulp across platforms; verify the design before using its
+        # archived realization, without weakening the cache identity check.
+        with np.load(ROOT/'results/C07/fixtures/pilot_data.npz', allow_pickle=False) as data:
+            for field, member in [('points','directions'), ('distance_ly','distances_ly'),
+                                  ('sigma','sigma'), ('red','red_pattern'),
+                                  ('f','frequency_hz'), ('scale','scale')]:
+                np.testing.assert_allclose(cls.exp[field], data[member], rtol=1e-14, atol=1e-15)
+                cls.exp[field] = data[member].copy()
 
     def test_reproduce_all_sixteen_preparatory_draws(self):
-        arrays, records = generate_prior_fixture(self.config, self.cache)
+        with patch('inference.data_generation.experiment', return_value=self.exp):
+            arrays, records = generate_prior_fixture(self.config, self.cache)
         with np.load(ROOT/'results/C07/fixtures/pilot_data.npz') as expected:
             for name, value in arrays.items():
                 np.testing.assert_allclose(value, expected[name], rtol=1e-12, atol=1e-12)
@@ -33,7 +45,7 @@ class InferenceDataTests(unittest.TestCase):
             self.assertEqual(list(Path(temporary).iterdir()), [])
 
     def test_corrupted_exact_cache_is_rejected(self):
-        provider = StoredExactORF(experiment(self.config), self.config['orf'], self.cache)
+        provider = StoredExactORF(self.exp, self.config['orf'], self.cache)
         gamma = provider.evaluate(0.)
         filename = provider.records[0]['file']
         with np.load(self.cache/filename) as existing:
@@ -41,7 +53,7 @@ class InferenceDataTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temporary:
             corrupted = gamma.copy(); corrupted[0,0,0] = np.nan
             np.savez_compressed(Path(temporary)/filename, Gamma=corrupted, record=record)
-            reader = StoredExactORF(experiment(self.config), self.config['orf'], temporary)
+            reader = StoredExactORF(self.exp, self.config['orf'], temporary)
             with self.assertRaises(RuntimeError):
                 reader.evaluate(0.)
 
