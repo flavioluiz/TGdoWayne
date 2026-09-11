@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/preflight.py", line 30, in <module>
+    maximum_phase=float(b_of([boundary])[0]*phase[k-1].max());lc=int(np.ceil(maximum_phase)+100);nc=int(np.ceil(2*maximum_phase)+220);lf=lc+40;nf=nc+80
+                        ~~~~^^^^^^^^^^^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/preflight.py", line 9, in b_of
+    def b_of(u):return np.sqrt((1-u)*(1+u))
+                                ~^~
+TypeError: unsupported operand type(s) for -: 'int' and 'list'

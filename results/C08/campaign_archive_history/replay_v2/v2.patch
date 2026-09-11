@@ -1,0 +1,181 @@
+--- tmp/c08_campaign_archive_v1/scripts/campanha_compressao.py
++++ tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py
+@@ -19,7 +19,8 @@
+ import tempfile
+ import zipfile
+ 
+-SCHEMA = 'C08_LOSSLESS_EVIDENCE_BUNDLE_v1'
++SCHEMA = 'C08_LOSSLESS_EVIDENCE_BUNDLE_v2'
++READABLE_SCHEMAS = {SCHEMA, 'C08_LOSSLESS_EVIDENCE_BUNDLE_v1'}
+ CAP = 90*1024**2
+ INVENTORY_CAP = 128*1024**2
+ FLAGS = {'cdf_precision_pass', 'pooled_weight_guard_pass', 'saturation_guard_pass', 'replication_pass', 'refinement_pass'}
+@@ -74,9 +75,12 @@
+ @contextlib.contextmanager
+ def campaign_locks(root, campaigns):
+     with contextlib.ExitStack() as stack:
++        held = set()
+         for row in sorted(campaigns, key=lambda row: row['path']):
+-            p = source(root, row['path'])/'.campaign.lock'
++            p = source(root,row['lock_path']) if row.get('kind')=='offline' else source(root,row['path'])/'.campaign.lock'
+             require(p.is_file() and not p.is_symlink(), 'Completed campaign lock missing')
++            if p in held: continue
++            held.add(p)
+             stream = stack.enter_context(p.open('rb'))
+             try:
+                 fcntl.flock(stream, fcntl.LOCK_EX | fcntl.LOCK_NB)
+@@ -106,7 +110,7 @@
+     return sorted(files), sorted(excluded)
+ 
+ 
+-def audit_campaign(root, item, hashes):
++def audit_standard_campaign(root, item, hashes):
+     """Hash/identity checks only; preserves every existing numerical flag."""
+     base = item['path']
+     def record(name):
+@@ -173,6 +177,116 @@
+         artifact_hashes_verified=checked,original_ledger=complete['ledger'],scientific_approval_inferred=False)
+ 
+ 
++def audit_replay(root,item,hashes,dependencies):
++    """Transport assertions only; ROOT's completed numerical audit is required.
++
++    Never reopens compact numeric arrays or recomputes KL/statistics. Original
++    C07 proposal/checkpoint dependencies may remain in their separate bundle.
++    """
++    base=item['path'];prefix=str(root)+os.sep
++    def entry(name):
++        relative(name);key=base+'/'+name;require(key in hashes,'Replay member absent: '+key)
++        return hashes[key]
++    def record(name):entry(name);return read(root/base/name)
++    def included_ref(ref):
++        value=ref['path'];require(isinstance(value,str) and value.startswith(prefix),'Reference must use frozen repository prefix')
++        name=value[len(prefix):];relative(name)
++        require(name in hashes and hashes[name]['sha256']==ref['sha256'],'Transported replay artifact SHA differs')
++        return name
++    def dependency_ref(ref):
++        value=ref['path'];require(isinstance(value,str) and value.startswith(prefix),'C07 reference prefix differs')
++        name=value[len(prefix):];relative(name)
++        expected=hashes.get(name) or dependencies.get(name)
++        require(expected is not None and expected['sha256']==ref['sha256'],'Unlisted C07 external dependency')
++    complete=record('complete.json');execution=record('replay_execution.json')
++    review=read(bound(root,item['root_review']));plan=read(bound(root,item['replay_plan']))
++    require(item['root_review']['path'] in hashes and item['replay_plan']['path'] in hashes,'ROOT review and replay plan must travel')
++    require(review.get('schema')=='ROOT_C08_REPLAY_RESULT_REVIEW_v1' and review.get('status')=='ALL160_REPLAY_PRODUCTS_REVIEWED','Reviewed closed replay required')
++    require(entry('complete.json')['sha256']==item['completion_sha256']==review['execution_complete_sha256'],'Replay completion SHA differs')
++    require(complete['status']=='ALL160_MATCHED_HIGH_REPLAYS_ARCHIVED' and complete['plan_sha256']==item['replay_plan']['sha256']==review['plan_sha256'],'Replay status/plan differs')
++    require(execution['identity']==complete['identity']==review['identity'] and execution['authorization_sha256']==review['authorization_sha256'],'Replay execution identity differs')
++    models=['A0_CN','A_CN','B_CN','A_G','B_G'];ids=review['cohort_ids']
++    require(len(ids)==32 and ids==sorted(set(ids)) and all(type(d)is int and 0<=d<500 for d in ids),'Exact original32 cohort')
++    targets=[500*i+d for i in range(5) for d in ids]
++    require(complete['targets']==targets==[r['target'] for r in plan['rows']] and len(targets)==160,'All160 model/data targets required')
++    require(review['by_model']=={m:32 for m in models} and plan['identity']==review['original_runtime_identity'],'Cohort/model/runtime namespace differs')
++    required=dict(training=0,production=41943040,other=0,total=41943040,unclosed_reservations=0)
++    cross=dict(training=0,production=1048576,other=0,total=1048576,unclosed_reservations=0)
++    require(complete['ledger']==review['ledger']==required and complete['optional_KL']['cross_ledger']==review['cross_ledger']==cross,'Replay/cross ledger differs')
++    require(complete['optional_KL']['status']=='EIGHT_RAW_PRODUCTS_CONSUMED_FOUR_KL_PAIRS' and complete['optional_KL']['extra_replay_LL']==0 and complete['optional_KL']['additional_banks']==0,'Optional completion scope differs')
++    require(review['raw_empty'] and review['endpoint_statistics_retained'] and review['all_failures_preserved'] and review['original_all3200_brackets']==[0.,1.],'ROOT preservation limitations differ')
++    require(len([n for n in hashes if re.fullmatch(re.escape(base)+r'/archives/target_\d{6}\.json',n)])==160,'Exactly160 replay archives')
++    require(len([n for n in hashes if re.fullmatch(re.escape(base)+r'/replicas/target_\d{6}_rep[0-3]\.json',n)])==640,'Exactly640 replay receipts')
++    retired={};optional_ids=[25,26,44,48];optional_targets=[1500+d for d in optional_ids]+[2000+d for d in optional_ids]
++    artifact_count=0;optional_count=0
++    for index,row in enumerate(plan['rows']):
++        t=row['target'];require(row['datum']==t%500 and row['scientific_model']==models[t//500],'Frozen target model mapping')
++        archive=record(f'archives/target_{t:06d}.json');state=record(f'state/target_{t:06d}.json')
++        require(archive['target']==t and archive['plan_sha256']==complete['plan_sha256'] and archive['status']=='REPLAY_COMPACT_PRESERVED','Replay archive mismatch')
++        require(state['status']=='C08_REPLAY_TARGET_ARCHIVED' and state['target']==t and state['archive_sha256']==entry(f'archives/target_{t:06d}.json')['sha256'],'Replay state SHA differs')
++        require(archive['all_failures_retained'] and archive['no_SBC_or_physical_approval'],'Replay numerical limitations missing')
++        require(archive['original_files']==row['original_files'] and archive['original_receipt']==row['original_receipt'],'C07 provenance differs')
++        for ref in list(row['original_files'].values())+[row['original_receipt']]:dependency_ref(ref)
++        included_ref(row['cut_manifest'])
++        cp=row['high_checkpoints'];require(len(cp)==4 and [c['replicate'] for c in cp]==list(range(4)),'Four original checkpoints required')
++        raw={c['raw_file']:c['raw_sha256'] for c in cp};require(len(raw)==4 and not set(raw).intersection(retired) and archive['raw_sha256']==raw,'Unique original raw SHA map differs');retired.update(raw)
++        for c in cp:
++            receipt=record(f'replicas/target_{t:06d}_rep{c["replicate"]}.json')
++            require(receipt['status']=='BIT_EXACT_HIGH_REPLAY' and receipt['target']==t and receipt['samples']==65536
++                and receipt['raw_sha256']==receipt['original_raw_sha256']==c['raw_sha256'],'Replay raw receipt differs')
++            require(receipt['original_rng_state_before']==c['rng_state_before'] and receipt['original_rng_state_after']==c['rng_state_after']
++                and receipt['new_seed'] is False and receipt['uses_truth'] is False,'Frozen RNG/truth policy differs')
++        require(len(archive['artifacts'])==3+(t in optional_targets),'All endpoint/consumer artifacts required')
++        for ref in archive['artifacts']:included_ref(ref);artifact_count+=1
++        if t in optional_targets:
++            rec=record(f'optional_kl/receipts/target_{t:06d}.json');optional_count+=1
++            require(rec['status']=='CONSUMPTION_COMPLETE' and rec['target']==t and rec['raw_sha256']==raw and rec['all_failures_retained'],'Optional consumer missing or altered')
++            require(len(rec['artifacts'])==(9 if t<2000 else 2),'Optional9/2 artifacts required')
++            for ref in rec['artifacts']:included_ref(ref)
++    require(len(retired)==640 and optional_count==8 and artifact_count==review['counts']['archive_artifacts_verified']==488,'Replay artifact counts differ')
++    for d in optional_ids:
++        pair=record(f'optional_kl/pairs/datum_{d:03d}.json')
++        require(pair['datum']==d and pair['clipped'] is False and pair['no_uniform_certificate'] is True,'KL limitations missing')
++        included_ref(pair['AG_statistics']);included_ref(pair['BG_statistics'])
++    return dict(kind='replay',path=base,scope='CLOSED_C07_HIGH_REPLAY_AND_OPTIONAL_KL_LOSSLESS_TRANSPORT',
++        completion_sha256=item['completion_sha256'],root_review=item['root_review'],replay_plan=item['replay_plan'],
++        targets=targets,cohort_ids=ids,by_model=review['by_model'],retired_raw_sha256=retired,
++        original_ledger=required,cross_ledger=cross,original_brackets=[0.,1.],common_failure_counts=review['common_failure_counts'],
++        endpoint_statistics=review['counts']['endpoint_statistics'],quantiles=3200,optional_receipts=8,KL_pairs=4,
++        independent_numerical_audit_not_repeated=True,scientific_approval_inferred=False)
++
++
++def audit_offline(root,item,hashes):
++    """Future ROOT-consolidated analysis roots; no implicit finite PASS upgrade.
++
++    Legacy finite/partial output is not accepted directly. ROOT must first
++    provide this explicit closed-root inventory/completion/review contract.
++    """
++    base=item['path'];name=item['completion_file'];relative(name)
++    completion=read(root/base/name);review=read(bound(root,item['root_review']))
++    require(hashes[base+'/'+name]['sha256']==item['completion_sha256']==review.get('completion_sha256'),'Offline completion SHA differs')
++    require(completion.get('schema')=='C08_OFFLINE_ROOT_COMPLETE_v1' and completion.get('status')=='ALL_SELECTED_ANALYSIS_BYTES_PRESERVED','Explicit offline consolidation required')
++    require(review.get('schema')=='ROOT_C08_OFFLINE_ROOT_REVIEW_v1' and review.get('status')=='OFFLINE_ROOT_COMPLETE_REVIEWED'
++        and review.get('root_path')==base and review.get('lock_path')==item['lock_path'],'ROOT offline root/lock review required')
++    require(completion.get('workers_exited') is True and completion.get('all_failures_preserved') is True
++        and completion.get('no_uniform_proof') is True and completion.get('identity')==review.get('identity'),'Closed offline scope/limitations required')
++    artifacts=completion['artifacts'];require(artifacts and len({a['file'] for a in artifacts})==len(artifacts),'Unique offline artifacts')
++    for a in artifacts:
++        relative(a['file']);r=hashes[base+'/'+a['file']]
++        require(r['sha256']==a['sha256'] and r['bytes']==a['bytes'],'Offline artifact SHA/size differs')
++    require(review.get('artifact_count')==len(artifacts),'Reviewed offline count differs')
++    return dict(kind='offline',path=base,scope=completion['scope'],completion_sha256=item['completion_sha256'],root_review=item['root_review'],
++        identity=completion['identity'],artifact_count=len(artifacts),all_failures_preserved=True,scientific_approval_inferred=False)
++
++
++def audit_campaign(root,item,hashes,dependencies=None):
++    kind=item.get('kind','campaign')
++    if kind=='replay':return audit_replay(root,item,hashes,dependencies or {})
++    if kind=='offline':return audit_offline(root,item,hashes)
++    require(kind=='campaign','Unknown closed-root kind')
++    return audit_standard_campaign(root,item,hashes)
++
++
+ def plan(selection, repository, output):
+     root = Path(repository).resolve(); selection_sha = sha(selection); spec = read(selection)
+     require(sha(selection) == selection_sha, 'Selection changed while reading')
+@@ -193,7 +307,8 @@
+             require((before.st_size,before.st_mtime_ns) == (after.st_size,after.st_mtime_ns), 'Source changed while hashing')
+             require(before.st_size < CAP-4096, 'Large input requires its separate lossless transport: '+name)
+             entries[name] = dict(path=name,bytes=before.st_size,sha256=h)
+-        audits = [audit_campaign(root,row,entries) for row in campaigns]
++        dependencies={d['path']:d for d in spec.get('external_dependencies',[])}
++        audits = [audit_campaign(root,row,entries,dependencies) for row in campaigns]
+         for name, old in scans.items(): require(scan(root,name)[0] == old, 'Inventory changed while planning')
+     require(sha(selection) == selection_sha, 'Selection changed during planning')
+     value = dict(schema='C08_FROZEN_ARCHIVE_INVENTORY_v1',selection_sha256=selection_sha,selection=spec,
+@@ -233,7 +348,8 @@
+         # Recheck completion/ROOT hashes and all frozen campaign bindings.
+         indexed = {r['path']:r for r in rows}
+         for r in rows: require(sha(source(root,r['path'])) == r['sha256'], 'Frozen source changed before packing')
+-        for item in frozen['selection']['campaigns']: audit_campaign(root,item,indexed)
++        dependencies={d['path']:d for d in frozen.get('external_dependencies',[])}
++        for item in frozen['selection']['campaigns']: audit_campaign(root,item,indexed,dependencies)
+         with tempfile.TemporaryDirectory(prefix='.c08_pack_',dir=out.parent) as temp:
+             stage = Path(temp); parts=[]
+             for k, group in enumerate(partition(rows,cap)):
+@@ -274,7 +390,7 @@
+ 
+ def verify(bundle, dependency_root=None):
+     bundle=Path(bundle).resolve();m=read(bundle/'bundle.json')
+-    require(m['schema']==SCHEMA and m['status']=='LOSSLESS_BYTES_NO_NEW_SCIENTIFIC_APPROVAL','Bundle schema/status')
++    require(m['schema'] in READABLE_SCHEMAS and m['status']=='LOSSLESS_BYTES_NO_NEW_SCIENTIFIC_APPROVAL','Bundle schema/status')
+     require(m.get('raw_arrays_included') is False and m.get('originals_removed') is False,'Transport markers differ')
+     require(type(m['maximum_archive_bytes']) is int and 0<m['maximum_archive_bytes']<=CAP,'Archive budget invalid')
+     require(sha(source(bundle,'campanha_compressao.py'))==m['source_sha256'],'Transport source changed')

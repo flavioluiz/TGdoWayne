@@ -1,0 +1,52 @@
+{
+  "schema": "C08_FROZEN_COEFFICIENT_LOADER_V2_SMALL_REVIEW_v1",
+  "created_utc": "2026-09-11T04:27:39.403491+00:00",
+  "status": "14_SMALL_SYNTHETIC_TESTS_PASS_PENDING_ROOT_REVIEW",
+  "source_files_modified_by_this_task": [],
+  "new_source": "tmp/c08_runtime_design/src/frozen_coefficient_orf_v2.py",
+  "tests": {
+    "count": 14,
+    "passed": 14,
+    "command": "VECLIB_MAXIMUM_THREADS=1 .venv/bin/python -B tmp/c08_runtime_design/test_frozen_coefficients_v2.py",
+    "log": "tmp/c08_runtime_design/test_frozen_coefficients_v2.log"
+  },
+  "checks": {
+    "budget_before_coercion_copy_and_numeric_validation": true,
+    "bounded_tile_finiteness_and_hermiticity": true,
+    "bounded_tile_endpoints_and_Bernstein": true,
+    "C1_optional_default_false": true,
+    "valid_toy_matches_v1_bit_exactly": true,
+    "native_table_attributes_preserved": true,
+    "constructor_requires_existing_ndarrays": true,
+    "clipping_or_fallback": false
+  },
+  "arithmetic_only_example_no_table_loaded": {
+    "nodes": 9248,
+    "frequencies": 4,
+    "pulsars": 12,
+    "tile": 128,
+    "persistent_owned_numeric_bytes": 426258944,
+    "reusable_workspace_bytes": 3022848,
+    "maximum_eigenvalue_result_bytes": 49152,
+    "owned_and_temporary_estimate_bytes": 429330944,
+    "caller_logical_input_bytes": 426184960,
+    "simultaneous_loader_numeric_bytes_excluding_backend": 855515904,
+    "backend_workspace_included": false,
+    "RSS_guarantee": false
+  },
+  "execution_scope": {
+    "real_tables_loaded": 0,
+    "ORF_integrals": 0,
+    "likelihoods": 0,
+    "moment_banks_constructed": 0,
+    "scientific_validation_claimed": false
+  },
+  "sha256": {
+    "tmp/c08_runtime_design/src/frozen_coefficient_orf.py": "1e2a76efe26321b861b0cbf392f0b584e263352f9badc7ad492333acac468030",
+    "tmp/c08_runtime_design/src/frozen_coefficient_orf_v2.py": "41cbf02150bb0a7bce5e383ee35a5b2f96d9948df1f8292003078d105faf1b94",
+    "tmp/c08_runtime_design/test_frozen_coefficients_v2.py": "2138c9f3a492c861b90fcd18e9a4d802e4223f846e87f0bf892d1f91b9969243",
+    "tmp/c08_runtime_design/test_frozen_coefficients_v2.log": "7af421fc2839e88741623ea60ff12ec20fe87dae06dc1942666e7ba60adee7b3",
+    "tmp/c08_runtime_design/LOADER_V2_REVIEW.md": "b58dfc23a13b22edc6213c44473cc7340ddc0644c91ff7c181440d01bc1d040c",
+    "src/inference/native_likelihood.py": "5da411e92c3340370ce8eebb94862cf32d39f99053f7f871f3c716c0ac8a391f"
+  }
+}

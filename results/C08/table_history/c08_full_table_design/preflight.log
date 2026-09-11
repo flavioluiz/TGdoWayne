@@ -1,0 +1,43 @@
+{
+  "status": "PROSPECTIVE_NOT_AUTHORIZED_NOT_EXECUTED",
+  "curves": {
+    "coarse": {
+      "nodes": 4169,
+      "source": "tmp/c07_sampler/results/table_beta4097_local.npz",
+      "source_channel": 1,
+      "curve": "Same inherited beta-coordinate CubicSpline not-a-knot at beta1, clamped derivative zero at beta0, validate all Bernstein matrices; no fallback",
+      "source_hash_verified_against_ROOT_history": true
+    },
+    "fine": {
+      "nodes": 8336,
+      "source": "tmp/c08_beta_table/first_curve_root.npz",
+      "source_channel": 1,
+      "curve": "Explicit original coefficients, no fit, no subdivision needed on its own knots",
+      "root_first_curve_identity_reused": true
+    },
+    "export": {
+      "channels": 4,
+      "nodes": 8336,
+      "coefficient_bytes": 307261440,
+      "matrix_bytes": 76824576,
+      "repeat_all_four_channels_bitexact": true,
+      "no_spline_in_loader": true
+    }
+  },
+  "budget": {
+    "own_ledger_independent_of_C_beta": true,
+    "maximum_new_real_harmonic_products": 0,
+    "maximum_new_direct_angular_work": 0,
+    "planned_new_logL": 1322688,
+    "maximum_new_logL": 1400000,
+    "maximum_numeric_bytes": 1073741824,
+    "maximum_RSS_bytes": 1610612736,
+    "workers": 1,
+    "VECLIB_MAXIMUM_THREADS": 1,
+    "phase_policy": "coarse/fine curve+gate worker without basis, then fresh export worker if needed; never native likelihood bank",
+    "estimated_wall_time": "A few seconds to tens of seconds excluding IO; not a promise; record actual cost",
+    "no_posterior": true,
+    "no_C07_mutation": true,
+    "no_T_window_execution": true
+  }
+}

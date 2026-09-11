@@ -1,0 +1,37 @@
+{
+  "construction_configuration_sha256": "0dd3eb5b9fd2bab793906031f27f027cbdd3d3ce3d0ba89deac539015a32cbb3",
+  "created_utc": "2026-09-11T03:30:09.536673+00:00",
+  "first_coarse_equals_first_fine": true,
+  "first_independent_oracle_nodes": 143,
+  "no_automatic_refinement": true,
+  "normal_logL_values": 878592,
+  "root_reviewer_notes": {
+    "curve_algebra_v1": "/root/introducao_c02 independently confirmed formulas, identified coordinate-collapse and integer-coefficient contract defects. Both are guarded in v2; v1 and tests preserved.",
+    "gate_kernel": "Reviewer confirmed fixed w for means, w squared for independent-frequency covariance, and normalized logpdf; independent trace/SciPy toy test passed."
+  },
+  "schema": "C08_BETA_INDEPENDENT_GATES_v1",
+  "sequence": [
+    "construction_finished",
+    "source_and_channel_hashes",
+    "physical_anchors",
+    "curves_PSD_parity",
+    "direct_sky",
+    "likelihood_at143_nodes64_nuisances32_observations",
+    "algebraic_common_knots_export"
+  ],
+  "source_sha256": {
+    "tmp/c08_beta_table/curve_algebra_v2.py": "9f5833995ef8e503cf4406c5f847235530b719e524d34354a8353d8a85e24421",
+    "tmp/c08_beta_table/freeze_gates.py": "acd6eff6ab847bd4266e06de6adab2fb8690940b6c7172831b038160219e831d",
+    "tmp/c08_beta_table/gate_kernel.py": "4ff3b8961f810dc3c7c0d15ab32a0284bd6159fb2d4f704bd04fec56a86af949",
+    "tmp/c08_beta_table/test_curve_algebra_v2.log": "cdccda1dba0feb7acff3397703244111fb03566c3264d400a37a2da24e728b4a",
+    "tmp/c08_beta_table/test_curve_algebra_v2.py": "cc8d29a3d11509b6b7d5c5df1b7b1f345bb0c1fa081f9c46f93541c8a11eccf7",
+    "tmp/c08_beta_table/test_gate_kernel.log": "9af241314bd24a988c5eceebf5fc58ce5b0053f79d1e3b62f9eb8e23707843e3",
+    "tmp/c08_beta_table/test_gate_kernel.py": "b462a2fd2f9c6641f2e98f789da713867bc7b296789f1bf4b0bd14213c9d8e30",
+    "tmp/c08_beta_table/validate_table.py": "d059ac931bc51da28c654780377ddb3799d7ffed0e37e06373f88cea7a4af771"
+  },
+  "toy_checks_reported_separately": {
+    "direct_angular_grid_points": 48600,
+    "normal_density_values_including_scipy_reference": 24,
+    "real_multiplications": 56400
+  }
+}

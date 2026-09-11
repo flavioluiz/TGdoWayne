@@ -1,0 +1,400 @@
+{
+  "status": "TABLE_ONLY_PREFLIGHT_NO_EXECUTION",
+  "workers": 1,
+  "blas_threads": 1,
+  "rss_operational_stop_bytes": 1610612736,
+  "maximum_estimated_numeric_bytes": 1073741824,
+  "maximum_real_multiplications": 50000000000000,
+  "planned_real_multiplications": 48508435951296,
+  "remaining_real_multiplications": 1491564048704,
+  "maximum_requested_table_nodes_per_frequency": 10000,
+  "validation_seed": 808120101,
+  "validation_nodes": 143,
+  "rows": [
+    {
+      "channel": 1,
+      "table_nodes_evaluated": 0,
+      "coarse_interpolation_nodes": null,
+      "validation_and_table_unique_evaluations": 143,
+      "validation_nodes": 143,
+      "real_multiplications": 31743117120,
+      "real_multiplications_per_node": 221979840,
+      "maximum_basis_buffers_bytes": 56564704,
+      "reserve_bytes": 990704,
+      "estimated_numeric_bytes": 57555408,
+      "coarse": [
+        1496,
+        3012
+      ],
+      "fine": [
+        1536,
+        3092
+      ],
+      "table_reuses_C07_first_curve": true
+    },
+    {
+      "channel": 2,
+      "table_nodes_evaluated": 8313,
+      "coarse_interpolation_nodes": 4157,
+      "validation_and_table_unique_evaluations": 8454,
+      "validation_nodes": 143,
+      "real_multiplications": 6904792326240,
+      "real_multiplications_per_node": 816748560,
+      "maximum_basis_buffers_bytes": 173385464,
+      "reserve_bytes": 58569312,
+      "estimated_numeric_bytes": 231954776,
+      "coarse": [
+        2892,
+        5805
+      ],
+      "fine": [
+        2932,
+        5885
+      ],
+      "table_reuses_C07_first_curve": false
+    },
+    {
+      "channel": 3,
+      "table_nodes_evaluated": 8317,
+      "coarse_interpolation_nodes": 4159,
+      "validation_and_table_unique_evaluations": 8458,
+      "validation_nodes": 143,
+      "real_multiplications": 15102750548256,
+      "real_multiplications_per_node": 1785617232,
+      "maximum_basis_buffers_bytes": 352553688,
+      "reserve_bytes": 58597024,
+      "estimated_numeric_bytes": 411150712,
+      "coarse": [
+        4288,
+        8597
+      ],
+      "fine": [
+        4328,
+        8677
+      ],
+      "table_reuses_C07_first_curve": false
+    },
+    {
+      "channel": 4,
+      "table_nodes_evaluated": 8317,
+      "coarse_interpolation_nodes": 4159,
+      "validation_and_table_unique_evaluations": 8458,
+      "validation_nodes": 143,
+      "real_multiplications": 26469149959680,
+      "real_multiplications_per_node": 3129480960,
+      "maximum_basis_buffers_bytes": 594231232,
+      "reserve_bytes": 58597024,
+      "estimated_numeric_bytes": 652828256,
+      "coarse": [
+        5685,
+        11390
+      ],
+      "fine": [
+        5725,
+        11470
+      ],
+      "table_reuses_C07_first_curve": false
+    }
+  ],
+  "union_interpolation_nodes": 8464,
+  "common_complex_matrix_bytes": 78004224,
+  "common_cubic_coefficient_bytes": 311980032,
+  "direct_angular_work_separate_budget": 8000000000,
+  "likelihood_validation_budget": 1000000,
+  "maximum_phase": 5585.0536063818545,
+  "execution_authorized": false,
+  "first_curve_source": "tmp/c07_sampler/results/table_beta8193_local.npz",
+  "source_sha256": "43a7efb8859d5d7f1a8a3c7ba257f4db5a128f4ccb723c9e15fdcdff78f4c915",
+  "direct_checks": [
+    {
+      "channel": 2,
+      "beta": 0.001,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        226,
+        452
+      ],
+      "fine_nmu_nphi": [
+        306,
+        612
+      ],
+      "angular_work_proxy_both_pairs": 578848,
+      "memory_estimate_bytes": 15206976
+    },
+    {
+      "channel": 2,
+      "beta": 0.05,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        500,
+        1000
+      ],
+      "fine_nmu_nphi": [
+        580,
+        1160
+      ],
+      "angular_work_proxy_both_pairs": 2345600,
+      "memory_estimate_bytes": 28823680
+    },
+    {
+      "channel": 2,
+      "beta": 0.5,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        3013,
+        6026
+      ],
+      "fine_nmu_nphi": [
+        3093,
+        6186
+      ],
+      "angular_work_proxy_both_pairs": 74579272,
+      "memory_estimate_bytes": 153709728
+    },
+    {
+      "channel": 2,
+      "beta": 0.9,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        5247,
+        10494
+      ],
+      "fine_nmu_nphi": [
+        5327,
+        10654
+      ],
+      "angular_work_proxy_both_pairs": 223631752,
+      "memory_estimate_bytes": 264730592
+    },
+    {
+      "channel": 3,
+      "beta": 0.001,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        229,
+        458
+      ],
+      "fine_nmu_nphi": [
+        309,
+        618
+      ],
+      "angular_work_proxy_both_pairs": 591688,
+      "memory_estimate_bytes": 15356064
+    },
+    {
+      "channel": 3,
+      "beta": 0.05,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        639,
+        1278
+      ],
+      "fine_nmu_nphi": [
+        719,
+        1438
+      ],
+      "angular_work_proxy_both_pairs": 3701128,
+      "memory_estimate_bytes": 35731424
+    },
+    {
+      "channel": 3,
+      "beta": 0.5,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        4409,
+        8818
+      ],
+      "fine_nmu_nphi": [
+        4489,
+        8978
+      ],
+      "angular_work_proxy_both_pairs": 158361608,
+      "memory_estimate_bytes": 223085344
+    },
+    {
+      "channel": 3,
+      "beta": 0.9,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        7760,
+        15520
+      ],
+      "fine_nmu_nphi": [
+        7840,
+        15680
+      ],
+      "angular_work_proxy_both_pairs": 486732800,
+      "memory_estimate_bytes": 389616640
+    },
+    {
+      "channel": 4,
+      "beta": 0.001,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        232,
+        464
+      ],
+      "fine_nmu_nphi": [
+        312,
+        624
+      ],
+      "angular_work_proxy_both_pairs": 604672,
+      "memory_estimate_bytes": 15505152
+    },
+    {
+      "channel": 4,
+      "beta": 0.05,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        779,
+        1558
+      ],
+      "fine_nmu_nphi": [
+        859,
+        1718
+      ],
+      "angular_work_proxy_both_pairs": 5378888,
+      "memory_estimate_bytes": 42688864
+    },
+    {
+      "channel": 4,
+      "beta": 0.5,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        5806,
+        11612
+      ],
+      "fine_nmu_nphi": [
+        5886,
+        11772
+      ],
+      "angular_work_proxy_both_pairs": 273418528,
+      "memory_estimate_bytes": 292510656
+    },
+    {
+      "channel": 4,
+      "beta": 0.9,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "coarse_nmu_nphi": [
+        10274,
+        19840
+      ],
+      "fine_nmu_nphi": [
+        10354,
+        20000
+      ],
+      "angular_work_proxy_both_pairs": 821832320,
+      "memory_estimate_bytes": 514552384
+    }
+  ],
+  "planned_direct_angular_work_proxy": 2051757104,
+  "maximum_direct_estimated_memory_bytes": 514552384
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "C08_EXISTING_C07_DESCRIPTIVE_COMPARISONS_v1",
+  "scope": "DESCRIPTION_OF_ALREADY_PUBLISHED_500_DATASETS_NO_NEW_INFERENCE",
+  "contrasts_new_minus_old": [["A_CN", "A0_CN"], ["B_CN", "A_CN"], ["B_G", "A_G"]],
+  "quantiles": [0.05, 0.5, 0.9, 0.95],
+  "parameters": ["u", "log10_Agw", "gamma_gw", "log10_Ar", "log10_EFAC"],
+  "width": "Q95-Q05 for each of five parameters",
+  "units": "fraction of prior width, signed new minus old",
+  "u_bins": [0, 0.5, 0.9, 1],
+  "gamma_bins": [3, 4.25, 5.5],
+  "bin_boundary_rule": "[lower,upper), final bin includes upper endpoint",
+  "groupings": ["all500", "u marginal bins", "gamma marginal bins", "u x gamma cells"],
+  "summaries": ["n", "mean", "median", "standard deviation ddof1", "empirical percentiles5/25/75/95", "minimum", "maximum"],
+  "guards": "Report original per-function PIT resolution, independent LOW-cut CDF precision and high-weight summaries; never filter on guards",
+  "figures": ["all20 quantiles plus five widths: means and medians over all500", "u-Q95 and u-width empirical mean by3x2 fixed truth bins"],
+  "confidence_intervals": false,
+  "hypothesis_tests": false,
+  "small_shift_or_equivalence_decisions": false,
+  "horizontal_quantile_precision_claim": false,
+  "new_likelihood_evaluations": 0,
+  "new_simulations": 0,
+  "posterior_raw_access": false
+}

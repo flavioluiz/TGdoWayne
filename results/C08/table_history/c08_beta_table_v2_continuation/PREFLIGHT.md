@@ -1,0 +1,13 @@
+# Continuação técnica v2: processos sequenciais
+
+Status: proposta não executada. A tentativa v2 permanece falha por RSS em seu diretório original; não há reinterpretação desse resultado como aprovação.
+
+O ledger v2 gastou **215.183.215.872 produtos harmônicos**, sem trabalho angular ou logL. Somado à v1, o início desta continuação é **48.723.619.167.168 produtos / 2.051.757.104 pontos angulares / 878.592 logL**. A preparação interrompida da base coarse k4 consumiu tempo e memória (tentativa completa47,247s; pico2.109.554.688B), mas não iniciou nenhuma avaliação de β. Nenhum produto de ORF foi omitido do ledger; a recorrência de preparação é registrada como custo de construção, conforme o contrato histórico dos produtos.
+
+Serão dois trabalhadores novos, sequenciais e com BLAS1: primeiro os72 controles coarse k4; depois os mesmos72 fine k4. Cada trabalhador encerra seu processo antes do próximo. Um terceiro processo novo executa os12 controles angulares, os gates de logL e a exportação comum. O controlador é pequeno e não mantém bases nem curvas. Os trabalhadores harmônicos não carregam as curvas/oráculos dos demais canais. A retenção de alocador observada não atravessa processos.
+
+Restam **225.322.629.120 produtos**, **5.844.792 pontos angulares** e **516.096 logL**. O total final previsto permanece **48.948.941.796.288 / 2.057.601.896 / 1.394.688**, exatamente o plano v2. Os limites não aumentam:50T/8G/1,6M cumulativos,600mil novos logL v2,1GiB estimado numérico,1,5GiB RSS,um trabalhador. Valores exatos de cada base/buffers estão no JSON; ambas ficam abaixo de666MB incluindo reserva64MiB.
+
+As quatro curvas locais e os oráculos completos dos canais1–3 serão reutilizados por hashes, validação de shape/finitude/Hermiticidade/PSD e identidade. Não se repetem essas quadraturas. O novo registro vinculará também todos os143 caches históricos e a autorização v2 anterior. Nó antigo/fase/canal1/coeficientes externos permanecem idênticos. As sementes,72 controles,64 nuisances,32 observações e tolerâncias (.001 logL) não mudam. Nova falha interrompe e preserva; nenhuma expansão/refinamento automático.
+
+Na exportação, o banco final ocupa426,1MB (340,9MB coeficientes e85,2MB matrizes). Carrega-se e subdivide-se um canal por vez, sem base harmônica residente; estimativa conservadora850MB para matrizes/coeficientes/subdivisão e temporários. O guard de RSS é medido por processo em bytes Darwin; a estimativa numérica não é garantia de RSS. Esta continuação não instancia banco de likelihood nativo, não faz posterior, não altera fontes/caches C07 e não executa mapa T/janela.

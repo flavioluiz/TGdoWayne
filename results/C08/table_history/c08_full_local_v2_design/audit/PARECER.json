@@ -1,0 +1,143 @@
+{
+  "counts": {
+    "old": 8336,
+    "old_patch": 241,
+    "local": 353,
+    "new_global": 8448,
+    "inserted": 112,
+    "historic": 215,
+    "historic_in_patch": 57,
+    "new": 72,
+    "fresh": true,
+    "new_u_bitexact_plan": true
+  },
+  "oldeta_reproduced": true,
+  "cache_identity_groups": {
+    "d2d301cd50dc16f6b688660057a2bd6cfb126ef1216923ebbd1822eb818d86a8": {
+      "count": 118,
+      "first": 0,
+      "last": 117
+    },
+    "e2dba0ec8f22102ab97710639914ce0e3f1818235bdd59faa9e8cfa847c9ce8e": {
+      "count": 97,
+      "first": 118,
+      "last": 214
+    }
+  },
+  "invalid_caches": [],
+  "ledger_sums": {
+    "original": {
+      "real": 0,
+      "angular": 0,
+      "logL": 724992
+    },
+    "continuation": {
+      "real": 0,
+      "angular": 0,
+      "logL": 597696
+    }
+  },
+  "budget_arithmetic": {
+    "local_real": 739842816,
+    "oracle_real": 15982548480,
+    "new_real": 16722391296,
+    "angular": 1352456,
+    "historical_logL": 116736,
+    "new_controls_logL": 442368,
+    "reference_logL": 1728,
+    "total_new_logL": 560832,
+    "cumulative_logL": 1883520
+  },
+  "independent_reference_correspondence": [
+    {
+      "u": 0,
+      "beta": 1.0,
+      "historical_indices": [
+        0
+      ],
+      "new_indices": [],
+      "eta": "old808140201"
+    },
+    {
+      "u": 0.999982833714964,
+      "beta": 0.005859375000004136,
+      "historical_indices": [],
+      "new_indices": [
+        58
+      ],
+      "eta": "new808150201"
+    },
+    {
+      "u": 1,
+      "beta": 0.0,
+      "historical_indices": [
+        142
+      ],
+      "new_indices": [],
+      "eta": "old808140201"
+    }
+  ],
+  "direct_reference_correspondence": [
+    {
+      "beta_desired": 0.00390625,
+      "beta_effective": 0.003906249999999999,
+      "u": 0.9999923705763647,
+      "historical_indices": [
+        202
+      ],
+      "work": 600328
+    },
+    {
+      "beta_desired": 0.015625,
+      "beta_effective": 0.015624999999998222,
+      "u": 0.9998779222360098,
+      "historical_indices": [
+        194
+      ],
+      "work": 752128
+    }
+  ],
+  "input_hash_mismatches": [],
+  "preflight_source_hash_matches": true,
+  "execution_sources_available": [
+    "tmp/c08_full_local_v2_execution/worker.py"
+  ],
+  "schema": "C08_C_FULL_LOCAL_V2_READONLY_PREFLIGHT_AUDIT_v1",
+  "created_utc": "2026-09-11T04:59:56.326600+00:00",
+  "quadratures_executed": 0,
+  "likelihoods_executed": 0,
+  "source_files_modified": 0,
+  "scientific_candidate_PASS_claimed": false,
+  "input_hash_manifest": {
+    "path": "tmp/c08_full_local_v2_design/audit/input_hashes.json",
+    "sha256": "db6e5fc0b2bc0dce802b6a7ca8db3a4ebebbe3fbf286fa183dcaf61dc576b7bf",
+    "files": 235
+  },
+  "primary_sha256": {
+    "tmp/c08_full_local_v2_design/PREFLIGHT.md": "be1ee3cb40d91c44a5c1640a79f1986d4de06d2c1806e4d13d0413bcae70cf0e",
+    "tmp/c08_full_local_v2_design/preflight.json": "5f8af0121da7276d0deb0c9a0ec04e15da3bb87da1c20d6cbf56f2b1cc0b91e4",
+    "tmp/c08_full_local_v2_design/prepare_preflight.py": "eb2173bd951f1a48f6a139d97c22712c21423744c8de7c63e6807e0247750ac8"
+  },
+  "historical_controls_globally_sorted": false,
+  "cache_mapping_coarse_v2": "historical logL_fine",
+  "source_review_limit": "Read-only review of worker.py; no source executed",
+  "execution_sources_reviewed": {
+    "tmp/c08_full_local_v2_execution/worker.py": "2666e65ffd4e01ec8b5617fd3a00e5fe29ca2b0fa2ccf477ccc93601c71a2c46"
+  },
+  "source_findings": [
+    {
+      "kind": "explicit_nonfinite_reference_guard",
+      "resolved_in_current_source": false,
+      "description": "Explicit isfinite guard recommended, but write_json allow_nan=False already rejects nonfinite references before PASS. All54 executed reference rows finite.",
+      "severity": "defense_in_depth_not_false_PASS_vulnerability"
+    }
+  ],
+  "post_execution_readonly_check": {
+    "reference_cases": 54,
+    "nonfinite_reference_rows": [],
+    "source_sha256": "2666e65ffd4e01ec8b5617fd3a00e5fe29ca2b0fa2ccf477ccc93601c71a2c46",
+    "references_sha256": "482f557fb5a1ddd192169f510feaa6c1a112524e315b2196f6d985ac24dea0bf",
+    "identity_guard_present": true,
+    "serialization_guard": "beta_builder.write_json uses allow_nan=False and independent_references.json is written before PASS; nonfinite references cannot be exported as PASS"
+  }
+}

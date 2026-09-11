@@ -1,0 +1,12 @@
+from pathlib import Path
+import datetime,json,shutil
+from beta_builder import HERE,ROOT,sha_file,write_json
+inputs=HERE/'inputs';inputs.mkdir(exist_ok=True)
+for src,name in [('configs/calibration/pilot_initial.json','experiment.json'),('results/C07/fixtures/pilot_data.npz','pilot_data.npz')]:
+ target=inputs/name
+ if target.exists():raise FileExistsError(target)
+ shutil.copyfile(ROOT/src,target)
+paths=list((HERE/'executed_sources').rglob('*.py'))+[HERE/x for x in ['beta_builder.py','test_builder.py','test_builder.log','prepare_preflight_v2.py','preflight_v2.json','nodes_plan_v2.npz','verify_first_curve.py','first_curve_identity.json','first_curve_root.npz','freeze_execution.py']]+list(inputs.iterdir())+[ROOT/'results/C07/orf_interpolation/orf_table_pilot12x4.npz']
+cfg=dict(schema='C08_BETA_TABLE_AUTHORIZED_EXECUTION_v1',created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),authorization=dict(scope='C_beta_TABLE_AND_GATES_ONLY',execution_allowed=True,authority='parent /root explicit tool message, 2026-09-11',text='Only C_beta table and gates; 50T real products, 1M logL, 8G direct angular work, one worker, 1.5 GiB RSS; no C07 mutations; no automatic expansion/refinement.'),maximum_real_multiplications=50_000_000_000_000,maximum_direct_angular_work=8_000_000_000,maximum_logL_values=1_000_000,maximum_RSS_bytes=1_610_612_736,maximum_numeric_bytes=1_073_741_824,maximum_batch_real_multiplications=50_000_000_000,workers=1,blas_threads=1,checkpoint_nodes=256,interpolation_validation_seed=808120101,likelihood_nuisance_seed=808120201,likelihood_nuisances=64,likelihood_data_count=16,likelihood_models=['C_beta_CN','C_beta_G'],thresholds=dict(harmonic_coarse_fine_matrix=1e-8,direct_coarse_fine=1e-7,direct_harmonic=1e-7,PSD_roundoff=1e-12,likelihood_coarse_fine=1e-3,likelihood_fine_oracle=1e-3),inherited_first_curve=dict(root_source='results/C07/orf_interpolation/orf_table_pilot12x4.npz',verification='tmp/c08_beta_table/first_curve_identity.json',coarse_fine_policy='Identical inherited first curve in coarse/fine, isolating new curves k2-4; first curve separately tested against 143 independent harmonic oracle nodes.'),source_sha256={str(p.relative_to(ROOT)):sha_file(p) for p in sorted(paths)})
+write_json(HERE/'execution_authorized.json',cfg)
+print(json.dumps({'execution_sha256':sha_file(HERE/'execution_authorized.json'),'sources':len(paths),'first_curve_verified':json.loads((HERE/'first_curve_identity.json').read_text())['status']}))

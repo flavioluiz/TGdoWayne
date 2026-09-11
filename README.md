@@ -10,13 +10,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**Inferência e calibração documentadas, com falhas numéricas e probabilísticas explícitas**  
-**Última etapa concluída:** C07 — Inferência de referência e calibração.  
-**Progresso:** 7 de 13 marcos concluídos.  
-**Próxima etapa:** C08 — Resultados sobre compressão em frequência.  
+**Compressão e resposta comparadas; limites de massa permanecem inconclusivos na resolução avaliada**  
+**Última etapa concluída:** C08 — Resultados sobre compressão em frequência.  
+**Progresso:** 8 de 13 marcos concluídos.  
+**Próxima etapa:** C09 — Robustez a prioris, ruído e covariâncias.  
 **Atualização:** 2026-09-11.
 
-**[Baixar o PDF mais recente — v0.7.1](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.7.1/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.7.1) · [PDF versionado no repositório](output/pdf/v0.7.1/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.8.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.0) · [PDF versionado no repositório](output/pdf/v0.8.0/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -44,10 +44,18 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Noventa e seis controles A0 concluídos, com 32 observações por cenário, 416 PITs numéricos e 32 estruturais; parâmetros sem verdade definida mascarados. Cobertura condicional reportada separadamente.
 - Arquivos compactos restauráveis das campanhas, com verificações de SHA-256, propostas, sementes, diagnósticos e recibos preservados; capítulo 6 incorporado ao PDF cumulativo.
 - Correção de portabilidade dos testes entre macOS e Linux: fixtures com geometria preservada, identidade dos caches mantida e tolerância explícita ao arredondamento BLAS.
+- Mapas de compressão e resposta concluídos em massa, espectro, amplitudes, duração e janela; expansão de dispersão fraca e necessidade de covariâncias entre frequências na janela Hann projetada documentadas.
+- Descrição pareada das 500 realizações de C07 preservada, com 2500 posteriores e todos os casos numericamente pendentes mantidos.
+- Dezesseis alvos de engenharia e 128 alvos C_beta/C_full concluídos; 160 alvos HIGH de C07 reproduzidos com 640 réplicas de SHA e estados RNG originais idênticos.
+- Controles da resposta concluídos em 288 nuvens e 324 vinculações; interrupção por CPU e continuação exclusivamente estatística registradas separadamente, sem repetir avaliações físicas.
+- Síntese dos 32 dados compartilhados: 5760 quantis, 4480 diferenças de quantis e 1120 diferenças de larguras; 24 dados sorteados separados dos oito de fronteira.
+- Todos os 224 contrastes primários individuais e as sete médias piloto permaneceram inconclusivos na escala de 0,01; 4300 quantis mantêm intervalos [0,1], sem alegar equivalência ou ausência de efeito.
+- Divergências de forma posterior A_G para B_G avaliadas em quatro dados fixos, com MCSE e covariâncias auditadas; não tratadas como fatores de Bayes.
+- Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256.
 
 ### O que está em andamento e o que falta
 
-C08: comparação das respostas de frequência de referência e da compressão; protocolos, tabelas angulares e estudos de momentos em preparação. C07 concluiu 2500 inferências e 96 controles fixos, com todos os dados preservados. Os resultados da aproximação normal e as limitações de cobertura condicional estão documentados.
+C09 em preparação: robustez a prioris, ruído e covariâncias, com reparo e validação do diagnóstico de forma no piloto antes de ampliar a campanha. C08 está concluído como comparação executada com limitações explícitas; melhorar a resolução dos quantis permanece uma extensão metodológica, sem aprovação implícita nas próximas etapas.
 
 ## Roadmap
 
@@ -62,8 +70,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C05 | Resposta de PTA e correlações validadas | `v0.5.0` | Concluída | [Detalhes](implementation_plan/commits/C05_resposta_pta.md) |
 | C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Concluída | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
 | C07 | Inferência de referência e calibração | `v0.7.1` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
-| C08 | Resultados sobre compressão em frequência | `v0.8.0` | Em andamento | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
-| C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Planejada | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
+| C08 | Resultados sobre compressão em frequência | `v0.8.0` | Concluída | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
+| C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Em andamento | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Planejada | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
 | C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Planejada | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
 | C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Planejada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |

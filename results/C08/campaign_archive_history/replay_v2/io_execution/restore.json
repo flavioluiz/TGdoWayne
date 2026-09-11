@@ -1,0 +1,27 @@
+{
+  "child_cpu_seconds": 0.769479,
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "-B",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py",
+    "restaurar",
+    "--pacote",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+    "--destino",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/restored_replay_v1",
+    "--max-bytes",
+    "2147483648"
+  ],
+  "cumulative_children_max_rss_bytes": 44236800,
+  "operation": "restore",
+  "result": {
+    "bytes": 194676319,
+    "files": 2893,
+    "raw_arrays_restored": false,
+    "status": "ALL_SELECTED_BYTES_RESTORED"
+  },
+  "returncode": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "496827719a9cd35e33504a3a5ccf4d5d1cd5b8983567865a62ccf686fbf77f27",
+  "wall_seconds": 0.8588224580744281
+}

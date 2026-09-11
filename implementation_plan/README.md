@@ -2,8 +2,9 @@
 
 Este plano transforma a proposta de mestrado em uma sequência de **13 marcos**. Cada marco é um
 commit que inclui o texto atualizado, os artefatos científicos pertinentes, um PDF cumulativo e
-seu manifesto. Cada commit de marco recebe uma tag e um GitHub Release. Esta entrega executa somente
-C01; C02–C13 são o plano futuro da dissertação, não resultados já produzidos.
+seu manifesto. Cada commit de marco recebe uma tag e um GitHub Release. O estado efetivamente
+executado é mantido no README da raiz e em `project_status.json`; a tabela abaixo descreve
+a sequência de marcos, sem transformar etapas futuras em resultados já produzidos.
 
 ## Regra de acompanhamento
 

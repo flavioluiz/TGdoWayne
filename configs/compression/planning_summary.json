@@ -1,0 +1,47 @@
+{
+  "ORF_evaluations": 0,
+  "budget": {
+    "C_cap": 60000000,
+    "C_total_with_engineering": 51905088,
+    "ORF_work_authorized": false,
+    "combined_cap": 110000000,
+    "engineering_both_variants": {
+      "production": 5242880,
+      "targets": 16,
+      "total": 5767232,
+      "training": 524352
+    },
+    "extra_retries_authorized": false,
+    "main_both_variants": {
+      "production": 41943040,
+      "targets": 128,
+      "total": 46137856,
+      "training": 4194816
+    },
+    "maximum_planned_combined": 94897216,
+    "optional_KL_cross": 1048576,
+    "required_C07_high_replay": 41943040,
+    "reserved_direct_truth_likelihoods_all_four_checks": 512,
+    "unallocated_combined": 15102784
+  },
+  "cohort_index_sha256": "d5d48fba41f9d1b4dd72bf9cd8cd0cd4444a29fcc3d35d725d25092351164222",
+  "execution_authorization_created": false,
+  "likelihood_evaluations": 0,
+  "missing_execution_inputs": [
+    "C07 publication/resource receipt",
+    "response-specific v2 gate/domain compatibility",
+    "direct refined truth likelihood64 records per variant",
+    "approved training/settings",
+    "runtime authorization",
+    "driver lifecycle authorization",
+    "posterior-region deterministic checks separately pending"
+  ],
+  "posterior_samples": 0,
+  "runtime_instantiated": false,
+  "schema": "C08_DRIVER_DESIGN_v1",
+  "source_sha256": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_driver_design/c08_contract.py": "17efc7b0eb3da804dadb85e7cc0daeed67951091ca8396807324654bbf9ae163",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_driver_design/prepare_contract.py": "da915626685fbb6326eb1cf06448ce89f0d8bb4ae2a82d1aae9abfe7deb045de"
+  },
+  "status": "PROSPECTIVE_CONTRACT_ONLY"
+}

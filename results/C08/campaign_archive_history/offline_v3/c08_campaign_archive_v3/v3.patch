@@ -1,0 +1,65 @@
+--- tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py
++++ tmp/c08_campaign_archive_v3/scripts/campanha_compressao.py
+@@ -19,8 +19,8 @@
+ import tempfile
+ import zipfile
+ 
+-SCHEMA = 'C08_LOSSLESS_EVIDENCE_BUNDLE_v2'
+-READABLE_SCHEMAS = {SCHEMA, 'C08_LOSSLESS_EVIDENCE_BUNDLE_v1'}
++SCHEMA = 'C08_LOSSLESS_EVIDENCE_BUNDLE_v3'
++READABLE_SCHEMAS = {SCHEMA, 'C08_LOSSLESS_EVIDENCE_BUNDLE_v2', 'C08_LOSSLESS_EVIDENCE_BUNDLE_v1'}
+ CAP = 90*1024**2
+ INVENTORY_CAP = 128*1024**2
+ FLAGS = {'cdf_precision_pass', 'pooled_weight_guard_pass', 'saturation_guard_pass', 'replication_pass', 'refinement_pass'}
+@@ -262,21 +262,46 @@
+     Legacy finite/partial output is not accepted directly. ROOT must first
+     provide this explicit closed-root inventory/completion/review contract.
+     """
+-    base=item['path'];name=item['completion_file'];relative(name)
+-    completion=read(root/base/name);review=read(bound(root,item['root_review']))
++    base=item['path'];name=item['completion_file'];relative(base);relative(name)
++    require(base+'/'+name in hashes,'Offline completion absent from selected inventory')
++    completion=read(source(root,base+'/'+name));review=read(bound(root,item['root_review']))
+     require(hashes[base+'/'+name]['sha256']==item['completion_sha256']==review.get('completion_sha256'),'Offline completion SHA differs')
+     require(completion.get('schema')=='C08_OFFLINE_ROOT_COMPLETE_v1' and completion.get('status')=='ALL_SELECTED_ANALYSIS_BYTES_PRESERVED','Explicit offline consolidation required')
+     require(review.get('schema')=='ROOT_C08_OFFLINE_ROOT_REVIEW_v1' and review.get('status')=='OFFLINE_ROOT_COMPLETE_REVIEWED'
+         and review.get('root_path')==base and review.get('lock_path')==item['lock_path'],'ROOT offline root/lock review required')
+     require(completion.get('workers_exited') is True and completion.get('all_failures_preserved') is True
+         and completion.get('no_uniform_proof') is True and completion.get('identity')==review.get('identity'),'Closed offline scope/limitations required')
+-    artifacts=completion['artifacts'];require(artifacts and len({a['file'] for a in artifacts})==len(artifacts),'Unique offline artifacts')
++    # v3: a small NEW metadata root may refer to selected repository members.
++    # It never adopts or rewrites a failed physical root as its completion.
++    namespace=completion.get('artifact_namespace','base')
++    require(namespace in ('base','repository'),'Unknown offline artifact namespace')
++    require(review.get('artifact_namespace','base')==namespace,'ROOT offline namespace differs')
++    artifacts=completion['artifacts']
++    key='path' if namespace=='repository' else 'file'
++    require(artifacts and all(key in a for a in artifacts)
++        and len({a[key] for a in artifacts})==len(artifacts),'Unique offline artifacts')
++    if namespace=='repository':
++        require(isinstance(completion.get('identity'),str) and completion['identity'].strip(),'Explicit offline identity required')
++        require(type(review.get('artifact_count')) is int,'Explicit ROOT integer artifact count required')
++        rr=item['root_review'];relative(rr['path'])
++        require(rr['path'] in hashes and hashes[rr['path']]['sha256']==rr['sha256'],'ROOT review absent from selected inventory')
+     for a in artifacts:
+-        relative(a['file']);r=hashes[base+'/'+a['file']]
++        relative(a[key])
++        if namespace=='repository':
++            require('file' not in a,'Repository artifacts use path only; no mixed coordinate fields')
++            require(type(a.get('bytes')) is int and a['bytes']>=0
++                and isinstance(a.get('sha256'),str) and re.fullmatch('[0-9a-f]{64}',a['sha256']) is not None,'Explicit artifact size/SHA required')
++            name=a['path']
++        else:
++            name=base+'/'+a['file']
++        require(name in hashes,'Offline artifact absent from selected inventory: '+name)
++        r=hashes[name]
+         require(r['sha256']==a['sha256'] and r['bytes']==a['bytes'],'Offline artifact SHA/size differs')
+     require(review.get('artifact_count')==len(artifacts),'Reviewed offline count differs')
+-    return dict(kind='offline',path=base,scope=completion['scope'],completion_sha256=item['completion_sha256'],root_review=item['root_review'],
++    result=dict(kind='offline',path=base,scope=completion['scope'],completion_sha256=item['completion_sha256'],root_review=item['root_review'],
+         identity=completion['identity'],artifact_count=len(artifacts),all_failures_preserved=True,scientific_approval_inferred=False)
++    if namespace=='repository':result['artifact_namespace']='repository'
++    return result
+ 
+ 
+ def audit_campaign(root,item,hashes,dependencies=None):

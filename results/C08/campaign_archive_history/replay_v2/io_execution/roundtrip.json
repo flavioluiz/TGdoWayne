@@ -1,0 +1,113 @@
+{
+  "authorization_sha256": "703071f87f7299749603a41eb37c5c07f0693d3adfff5c7aa725768e855af1cb",
+  "bank_builds": 0,
+  "bundle_destination": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+  "bundle_sha256": "dc19cc38d0b6d6a36ac123e782d8092d6bc63f45061ba3cc82356d5c4ba59d25",
+  "bundled_cli_sha256": "323b2cf7467bd1618917a0afec4d17ce6556d5bfe9c63c337cfa7bf2c3822f07",
+  "child_cpu_seconds": 3.60468,
+  "child_peak_rss_bytes": 44236800,
+  "controller_cpu_seconds": 0.059154,
+  "controller_peak_rss_bytes": 27082752,
+  "external_dependencies_verified": 1289,
+  "failure": null,
+  "frozen_bindings_preserved": true,
+  "launcher_sha256": "a41a790f9f1ea297dd4dddab19ced7ddc940ea0ba9359ea8f9b756317f65874b",
+  "likelihood_calls": 0,
+  "official_promoted": false,
+  "operations": [
+    {
+      "child_cpu_seconds": 2.477256,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py",
+        "empacotar",
+        "--inventario",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/inventory_replay_v1.json",
+        "--repositorio",
+        "/Volumes/MacSSD/Development/github/TGdoWayne",
+        "--saida",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+        "--max-parte-bytes",
+        "94371840"
+      ],
+      "cumulative_children_max_rss_bytes": 44236800,
+      "operation": "pack",
+      "result": {
+        "archive_bytes": 37217792,
+        "bundle_sha256": "dc19cc38d0b6d6a36ac123e782d8092d6bc63f45061ba3cc82356d5c4ba59d25",
+        "files": 2893,
+        "parts": 3,
+        "restored_bytes": 194676319,
+        "status": "LOSSLESS_BYTES_NO_NEW_SCIENTIFIC_APPROVAL"
+      },
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "341fafe3aab620ad447ebd27c7f2dd802f18cf26cf1b0c1315e9265493453970",
+      "wall_seconds": 2.486222625011578
+    },
+    {
+      "child_cpu_seconds": 0.35794499999999996,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py",
+        "verificar",
+        "--pacote",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+        "--dependencias",
+        "/Volumes/MacSSD/Development/github/TGdoWayne"
+      ],
+      "cumulative_children_max_rss_bytes": 44236800,
+      "operation": "verify_dependencies",
+      "result": {
+        "files": 2893,
+        "scientific_approval_inferred": false,
+        "status": "ALL_ARCHIVED_BYTES_VERIFIED"
+      },
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "8fe9d5a0f391b4d0cdef38efd5e42598991508ea171a4ff22f47e077aa5e6dcb",
+      "wall_seconds": 0.36127250001300126
+    },
+    {
+      "child_cpu_seconds": 0.769479,
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "-B",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py",
+        "restaurar",
+        "--pacote",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+        "--destino",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/restored_replay_v1",
+        "--max-bytes",
+        "2147483648"
+      ],
+      "cumulative_children_max_rss_bytes": 44236800,
+      "operation": "restore",
+      "result": {
+        "bytes": 194676319,
+        "files": 2893,
+        "raw_arrays_restored": false,
+        "status": "ALL_SELECTED_BYTES_RESTORED"
+      },
+      "returncode": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "496827719a9cd35e33504a3a5ccf4d5d1cd5b8983567865a62ccf686fbf77f27",
+      "wall_seconds": 0.8588224580744281
+    }
+  ],
+  "original_files_deleted": false,
+  "physics_calls": 0,
+  "real_numeric_arrays_deserialized": 0,
+  "relocation_map_sha256": "b7079d6d946a67bb3a9f3eb0064815be97641adcded88fb943ef0cb5a54dfe41",
+  "resource_scope": "Controller process including imports plus three sequential CLI children including startup/exit; max child RSS, no RSS guarantee or concurrent peak measurement.",
+  "restore_destination": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/restored_replay_v1",
+  "schema": "C08_REPLAY_TRANSPORT_ROUNDTRIP_v1",
+  "status": "ALL_REPLAY_BYTES_PACKED_DEPENDENCIES_VERIFIED_AND_RESTORED",
+  "sum_of_process_peak_rss_upper_envelope_bytes": 71319552,
+  "total_cpu_seconds": 3.663834,
+  "utc": "2026-09-11T09:06:01.525532+00:00",
+  "wall_seconds": 3.7249842500314116
+}

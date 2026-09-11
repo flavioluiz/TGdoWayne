@@ -1,0 +1,61 @@
+{
+  "complete_bundle_files": [
+    {
+      "bytes": 1204,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/bundle.json",
+      "sha256": "dc19cc38d0b6d6a36ac123e782d8092d6bc63f45061ba3cc82356d5c4ba59d25"
+    },
+    {
+      "bytes": 33526,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/campanha_compressao.py",
+      "sha256": "323b2cf7467bd1618917a0afec4d17ce6556d5bfe9c63c337cfa7bf2c3822f07"
+    },
+    {
+      "bytes": 14252765,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/evidence_part000.zip",
+      "sha256": "0dc6f366b06eb683b25aa47db57df0c9b3337444c7144c91377b0bd29c71d4ca"
+    },
+    {
+      "bytes": 14671321,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/evidence_part001.zip",
+      "sha256": "e5b986cb6443e58e78eeee944529424d359240824e24fc1a42c655330f40bc8b"
+    },
+    {
+      "bytes": 8293706,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/evidence_part002.zip",
+      "sha256": "3070d22121045dc3eb25be29cb9b6d22f40f295ac56d4f87623965d925d28312"
+    },
+    {
+      "bytes": 257720,
+      "path": "tmp/c08_campaign_archive_v2/bundle_replay_v1/inventory.json.gz",
+      "sha256": "e8578f41ba1b3475cf32005a4729bd01ce107ddc34b2f238961e1d219c396e13"
+    }
+  ],
+  "copy_restoration_duplicate": false,
+  "include_external_C07_dependencies": false,
+  "minimum_executable_copy": [
+    {
+      "destination": "scripts/campanha_compressao.py",
+      "replaces_sha256": "cde31612240f4534848e5cc220b9850b382feaa1d7bc8363d8c2411222a68d62",
+      "sha256": "323b2cf7467bd1618917a0afec4d17ce6556d5bfe9c63c337cfa7bf2c3822f07",
+      "source": "tmp/c08_campaign_archive_v2/scripts/campanha_compressao.py"
+    }
+  ],
+  "official_promotion_authorized": false,
+  "optional_unchanged_tests": [
+    {
+      "destination": "tests/test_transport.py",
+      "sha256": "4c8674599d2e97dafbc057a611ec5581605daec4834f000e00d28e3a35718ddc",
+      "source": "tmp/c08_campaign_archive_v2/tests/test_transport.py"
+    },
+    {
+      "destination": "tests/test_root_kinds.py",
+      "sha256": "b87fd0695d8aff54695f0431ba0df90c83f757af32b38d8979d2f73dcfbcb782",
+      "source": "tmp/c08_campaign_archive_v2/tests/test_root_kinds.py"
+    }
+  ],
+  "preserve_legacy_bundled_verifiers": true,
+  "required_external_dependencies_for_full_verification": 1289,
+  "schema": "C08_ARCHIVE_V2_OFFICIAL_COPY_PLAN_v1",
+  "status": "PROPOSED_NOT_EXECUTED"
+}

@@ -1,0 +1,48 @@
+{
+  "schema": "C08_REPLAY_TRANSPORT_PREFLIGHT_v2",
+  "status": "SOURCE_AND_INVENTORY_READY_FOR_ROOT_REVIEW",
+  "real_pack_executed": false,
+  "real_restore_executed": false,
+  "official_script_promoted": false,
+  "new_physics": 0,
+  "source_sha256": "323b2cf7467bd1618917a0afec4d17ce6556d5bfe9c63c337cfa7bf2c3822f07",
+  "selection_sha256": "c23906ae128be9a8e45c7000a3b3d193cf0e55e7e17abee6581b7260df8d9e0a",
+  "inventory_sha256": "7b4634fcc0e48b3aa4abe9b825431b25c5d9c56343e705ce452e91d8f4d3a7ea",
+  "files": 2893,
+  "uncompressed_bytes": 194676319,
+  "external_C07_dependencies": 1289,
+  "planned_parts": 3,
+  "part_uncompressed_bytes": [
+    92982374,
+    91973477,
+    9720468
+  ],
+  "maximum_ZIP_bytes": 94371840,
+  "original_engineering_main_bytes_duplicated": 0,
+  "original_C07_campaign_trees_included": false,
+  "physical_table_arrays_included": false,
+  "closed_kind": "replay",
+  "original_root": "tmp/c08_required_high_replay_with_kl_v1",
+  "root_review": {
+    "path": "tmp/c08_replay_ROOT/result_review.json",
+    "sha256": "1fd9c56e069dd67a5d15e68bd1662c0e58b73f25c543769c4f94c12e863c9f39"
+  },
+  "replay_plan": {
+    "path": "tmp/c08_quantile_replay_design/frozen_c07/replay_plan.json",
+    "sha256": "ebf97eeca6cb6c3b2a97e931f08027fdd267f187d15227fb1b43c27843431ef8"
+  },
+  "source_v1_unchanged_sha256": "cde31612240f4534848e5cc220b9850b382feaa1d7bc8363d8c2411222a68d62",
+  "toy_results_sha256": "512391c5b244f9b3bf609c79a5f304896ce1b851a461070c923c3fe255ca580c",
+  "prospective_bundle": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/bundle_replay_v1",
+  "prospective_restore": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v2/restored_replay_v1",
+  "pending": [
+    "ROOT source/diff/inventory review",
+    "ROOT I/O authorization for real pack/verify/restore",
+    "Separate promotion of official script, preserving bundled v1"
+  ],
+  "limitations": [
+    "Transport relies on the accepted ROOT numerical audit; does not redo it or infer scientific PASS.",
+    "External C07 dependencies are listed by SHA and require their own existing archive or explicit dependency-root verification.",
+    "Generic offline support requires a future ROOT consolidation receipt; no finite/supplemental roots selected now."
+  ]
+}

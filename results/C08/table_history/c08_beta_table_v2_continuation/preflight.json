@@ -1,0 +1,121 @@
+{
+  "continuation_baseline": {
+    "angular": 2051757104,
+    "logL": 878592,
+    "real": 48723619167168
+  },
+  "count_failed_k4_basis_as_additional_orf_products": 0,
+  "created_utc": "2026-09-11T04:26:29.419407+00:00",
+  "execution_enabled": false,
+  "execution_policy": "Exactly one fresh harmonic worker at a time, worker exits before the next starts; a third fresh process handles direct/LL/export gates without any harmonic basis. Small controller only. No allocator-release assumption, no RSS increase.",
+  "failed_attempt_peak_RSS_bytes": 2109554688,
+  "failed_attempt_seconds": 47.2474710829556,
+  "gates": {
+    "common_coeff_bytes": 340881408,
+    "common_gamma_bytes": 85229568,
+    "common_nodes": 9248,
+    "direct_cases": 12,
+    "export_estimate_not_RSS_guarantee": true,
+    "export_estimated_peak_numeric_bytes": 850000000,
+    "export_tile_channels": 1,
+    "historical_mass_points": 143,
+    "historical_new_fine_recalculations": 36,
+    "maximum_RSS_bytes": 1610612736,
+    "maximum_numeric_bytes": 1073741824,
+    "new_mass_controls": 72,
+    "new_nuisances": 64,
+    "observations": 32,
+    "planned_angular": 5844792,
+    "planned_logL": 516096,
+    "reused_historical_original_fine_and_oracle_logL_caches": 143
+  },
+  "input_sha256": {
+    "tmp/c08_beta_table_v2/execution_authorized.json": "0a52c6656b79628b93c8e1c4d267fd617e17bae3a6824fa20d7b050ae2e04718",
+    "tmp/c08_beta_table_v2/preflight.json": "3b7aa6030cbd4a5883534c14854a5821bf61689adfcefba8026a8b92bdac6772",
+    "tmp/c08_beta_table_v2/results/curve_channel01.npz": "b61c4ccf583d11209ea53fc1be3849958cd49f37f2dceaea2cbcf191aa1a7cec",
+    "tmp/c08_beta_table_v2/results/curve_channel02.npz": "42515108753792e3447fcfd236223c4f43a7d35a743e38b72ac97f0a910c5f60",
+    "tmp/c08_beta_table_v2/results/curve_channel03.npz": "926b62e340a500d365ff62c580e0f882dd5bdd6510c74cef986db438e8d9c129",
+    "tmp/c08_beta_table_v2/results/curve_channel04.npz": "954f91535cb895221f9a44ba57a097f8752f6a5ab6d4b54e8c5512647f6e38ce",
+    "tmp/c08_beta_table_v2/results/failure.json": "50222ecef5be7ec074728308cf6df9cf39b46e7397cc168a55a4084131933064",
+    "tmp/c08_beta_table_v2/results/local_curves.json": "959133c98e5feac73fff658394265eeb226511d0546c82271174eb3cd6879c72",
+    "tmp/c08_beta_table_v2/results/local_quadrature_channel02.npz": "462553e284f0f6017b8d5ea24b89cea1b34d27e011e3571f9362a394cfe8deda",
+    "tmp/c08_beta_table_v2/results/local_quadrature_channel03.npz": "40cacc3142a72bfe9600781eca2ae3790daa625fcd4a7fbb471138099a3b808c",
+    "tmp/c08_beta_table_v2/results/local_quadrature_channel04.npz": "2930e93c7b6623d8fbd7c0e016d07e66f522f24f63a42d3e54f682553a2d3d77",
+    "tmp/c08_beta_table_v2/results/oracle_channel01.npz": "67320c2f80591ff2083fa1388eace5e71e4545fd246ef81ffcc17bbb52ffdf48",
+    "tmp/c08_beta_table_v2/results/oracle_channel02.npz": "5c2c9b0617791f364d5d415e6a2c1cd348174bae4f737e9d10cd48e5f4e79f75",
+    "tmp/c08_beta_table_v2/results/oracle_channel03.npz": "5ff8307a645b4450219cfed59004ef53d785fd166eff258f04e6a54959d41907",
+    "tmp/c08_beta_table_v2/results/resource_delta_ledger.jsonl": "aa2a5eb399a5a81d497c61343697b38fbe4676db6061e353bda20cf53e482555",
+    "tmp/c08_beta_table_v2/run_local_v2.py": "e9982ba843dc3130250dfc80528a2a9713844f3da9d4a6ecf1480ba9d3c0b844"
+  },
+  "maximum_additional_logL_v2_total": 600000,
+  "no_posterior_or_C07_mutation": true,
+  "no_repeated_completed_quadratures": true,
+  "original_v1_baseline": {
+    "angular": 2051757104,
+    "logL": 878592,
+    "real": 48508435951296
+  },
+  "planned_final_cumulative": {
+    "angular": 2057601896,
+    "logL": 1394688,
+    "real": 48948941796288
+  },
+  "remaining_work": {
+    "angular": 5844792,
+    "logL": 516096,
+    "real": 225322629120
+  },
+  "schema": "C08_V2_TECHNICAL_CONTINUATION_PREFLIGHT_v1",
+  "status": "PROSPECTIVE_NOT_EXECUTED",
+  "unchanged_controls_and_seeds": true,
+  "unchanged_cumulative_caps": {
+    "angular": 8000000000,
+    "logL": 1600000,
+    "real": 50000000000000
+  },
+  "unchanged_tolerances": {
+    "direct": 1e-07,
+    "harmonic": 1e-08,
+    "logL": 0.001
+  },
+  "v2_failed_attempt_spent": {
+    "angular": 0,
+    "logL": 0,
+    "real": 215183215872
+  },
+  "why": "Failure occurred immediately after basis preparation, before any beta evaluation or ledger charge for k4. Basis preparation CPU/RSS are recorded below, not erased or called zero work.",
+  "workers": [
+    {
+      "estimated_recurring_arrays": 653550656,
+      "fresh_OS_process": true,
+      "load_other_channel_curves": false,
+      "maximum_RSS_bytes": 1610612736,
+      "maximum_numeric_bytes": 1073741824,
+      "nodes": 72,
+      "numeric_basis_buffers_bytes": 586441792,
+      "orders": [
+        5685,
+        11390
+      ],
+      "planned_real_products": 111872033280,
+      "reserved_numeric_bytes": 67108864,
+      "stage": "k4_coarse"
+    },
+    {
+      "estimated_recurring_arrays": 661340096,
+      "fresh_OS_process": true,
+      "load_other_channel_curves": false,
+      "maximum_RSS_bytes": 1610612736,
+      "maximum_numeric_bytes": 1073741824,
+      "nodes": 72,
+      "numeric_basis_buffers_bytes": 594231232,
+      "orders": [
+        5725,
+        11470
+      ],
+      "planned_real_products": 113450595840,
+      "reserved_numeric_bytes": 67108864,
+      "stage": "k4_fine"
+    }
+  ]
+}

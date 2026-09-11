@@ -1,0 +1,1349 @@
+{
+  "schema": "C08_G2_WEAK_EXECUTION_SPEC_v1",
+  "scope": "C08_G2_AND_WEAK_DISPERSION_MOMENTS_ONLY",
+  "status": "PROSPECTIVE_SOURCES_AND_METADATA_ONLY_PENDING_ROOT_REVIEW",
+  "execution_allowed": false,
+  "candidate": {
+    "schema": "C08_WEAK_AND_EIGHT_MASS_PREFLIGHT_CANDIDATE_v1",
+    "status": "ARITHMETIC_ONLY_NOT_EXECUTABLE",
+    "execution_allowed": false,
+    "scope": "G2 finite moments and analytic weak-dispersion expansion; no likelihood/posterior",
+    "map_u": [
+      0.0,
+      0.05,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1.0
+    ],
+    "weak_u": [
+      0.001,
+      0.002,
+      0.004
+    ],
+    "nuisance_vertices": 16,
+    "responses": [
+      "B",
+      "C_beta",
+      "C_full"
+    ],
+    "rows": [
+      {
+        "channel": 1,
+        "phase_max": 1396.2634015954636,
+        "requests": [
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "B",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "C_beta",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "B",
+            "beta": 0.998749217771909
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "C_beta",
+            "beta": 0.998749217771909
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "B",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "C_beta",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "B",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "C_beta",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "B",
+            "beta": 0.6614378277661477
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "C_beta",
+            "beta": 0.6614378277661477
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "B",
+            "beta": 0.4358898943540673
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "C_beta",
+            "beta": 0.4358898943540673
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "B",
+            "beta": 0.1410673597966589
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "C_beta",
+            "beta": 0.1410673597966589
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "B",
+            "beta": 0.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "C_beta",
+            "beta": 0.0
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "B",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "C_beta",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "B",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "C_beta",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "B",
+            "beta": 0.9999919999679997
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "C_beta",
+            "beta": 0.9999919999679997
+          }
+        ],
+        "finite_difference_h": 1e-07,
+        "finite_difference_betas": [
+          0.9999999,
+          0.9999998,
+          0.9999996
+        ],
+        "all_requested_betas": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.8660254037844386,
+          0.9682458365518543,
+          0.998749217771909,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999999,
+          1.0
+        ],
+        "reuse_existing_beta": [
+          0.8660254037844386,
+          1.0
+        ],
+        "new_beta": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.9682458365518543,
+          0.998749217771909,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999999
+        ],
+        "new_nodes": 12,
+        "levels": [
+          {
+            "label": "H00",
+            "lmax": 1497,
+            "nmu": 3013,
+            "real_BLAS_products": 1514502528,
+            "other_real_operation_proxy": 57665312,
+            "charged_real_proxy": 1572167840,
+            "numeric_arrays_allowance_bytes": 113188224
+          },
+          {
+            "label": "H01",
+            "lmax": 1497,
+            "nmu": 3093,
+            "real_BLAS_products": 1554715008,
+            "other_real_operation_proxy": 58681632,
+            "charged_real_proxy": 1613396640,
+            "numeric_arrays_allowance_bytes": 114242944
+          },
+          {
+            "label": "H11",
+            "lmax": 1537,
+            "nmu": 3093,
+            "real_BLAS_products": 1596284928,
+            "other_real_operation_proxy": 59694912,
+            "charged_real_proxy": 1655979840,
+            "numeric_arrays_allowance_bytes": 115401664
+          }
+        ]
+      },
+      {
+        "channel": 2,
+        "phase_max": 2792.5268031909272,
+        "requests": [
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "B",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "C_beta",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "B",
+            "beta": 0.9996874511566102
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "C_beta",
+            "beta": 0.998749217771909
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "B",
+            "beta": 0.9921567416492215
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "C_beta",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "B",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "C_beta",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "B",
+            "beta": 0.9270248108869579
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "C_beta",
+            "beta": 0.6614378277661477
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "B",
+            "beta": 0.8930285549745876
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "C_beta",
+            "beta": 0.4358898943540673
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "B",
+            "beta": 0.8688929738466068
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "C_beta",
+            "beta": 0.1410673597966589
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "B",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "C_beta",
+            "beta": 0.0
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "B",
+            "beta": 0.9999998749999922
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "C_beta",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "B",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "C_beta",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "B",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "C_beta",
+            "beta": 0.9999919999679997
+          }
+        ],
+        "finite_difference_h": 1e-07,
+        "finite_difference_betas": [
+          0.9999999,
+          0.9999998,
+          0.9999996
+        ],
+        "all_requested_betas": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.8660254037844386,
+          0.8688929738466068,
+          0.8930285549745876,
+          0.9270248108869579,
+          0.9682458365518543,
+          0.9921567416492215,
+          0.998749217771909,
+          0.9996874511566102,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999998749999922,
+          0.9999999,
+          1.0
+        ],
+        "reuse_existing_beta": [
+          0.8660254037844386,
+          0.9682458365518543,
+          1.0
+        ],
+        "new_beta": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.8688929738466068,
+          0.8930285549745876,
+          0.9270248108869579,
+          0.9921567416492215,
+          0.998749217771909,
+          0.9996874511566102,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999998749999922,
+          0.9999999
+        ],
+        "new_nodes": 17,
+        "levels": [
+          {
+            "label": "H00",
+            "lmax": 2893,
+            "nmu": 5806,
+            "real_BLAS_products": 7656674112,
+            "other_real_operation_proxy": 170088288,
+            "charged_real_proxy": 7826762400,
+            "numeric_arrays_allowance_bytes": 220749248
+          },
+          {
+            "label": "H01",
+            "lmax": 2893,
+            "nmu": 5886,
+            "real_BLAS_products": 7762174272,
+            "other_real_operation_proxy": 171743328,
+            "charged_real_proxy": 7933917600,
+            "numeric_arrays_allowance_bytes": 222697408
+          },
+          {
+            "label": "H11",
+            "lmax": 2933,
+            "nmu": 5886,
+            "real_BLAS_products": 7869534912,
+            "other_real_operation_proxy": 173376288,
+            "charged_real_proxy": 8042911200,
+            "numeric_arrays_allowance_bytes": 224749888
+          }
+        ]
+      },
+      {
+        "channel": 3,
+        "phase_max": 4188.790204786391,
+        "requests": [
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "B",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "C_beta",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "B",
+            "beta": 0.9998611014647095
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "C_beta",
+            "beta": 0.998749217771909
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "B",
+            "beta": 0.9965217285917831
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "C_beta",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "B",
+            "beta": 0.9860132971832694
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "C_beta",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "B",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "C_beta",
+            "beta": 0.6614378277661477
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "B",
+            "beta": 0.9539392014169457
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "C_beta",
+            "beta": 0.4358898943540673
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "B",
+            "beta": 0.9439809320108113
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "C_beta",
+            "beta": 0.1410673597966589
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "B",
+            "beta": 0.9428090415820634
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "C_beta",
+            "beta": 0.0
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "B",
+            "beta": 0.999999944444443
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "C_beta",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "B",
+            "beta": 0.9999997777777531
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "C_beta",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "B",
+            "beta": 0.9999991111107162
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "C_beta",
+            "beta": 0.9999919999679997
+          }
+        ],
+        "finite_difference_h": 1e-07,
+        "finite_difference_betas": [
+          0.9999999,
+          0.9999998,
+          0.9999996
+        ],
+        "all_requested_betas": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.8660254037844386,
+          0.9428090415820634,
+          0.9439809320108113,
+          0.9539392014169457,
+          0.9682458365518543,
+          0.9860132971832694,
+          0.9965217285917831,
+          0.998749217771909,
+          0.9998611014647095,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999991111107162,
+          0.9999994999998749,
+          0.9999996,
+          0.9999997777777531,
+          0.9999998,
+          0.9999999,
+          0.999999944444443,
+          1.0
+        ],
+        "reuse_existing_beta": [
+          0.8660254037844386,
+          0.9860132971832694,
+          1.0
+        ],
+        "new_beta": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.9428090415820634,
+          0.9439809320108113,
+          0.9539392014169457,
+          0.9682458365518543,
+          0.9965217285917831,
+          0.998749217771909,
+          0.9998611014647095,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999991111107162,
+          0.9999994999998749,
+          0.9999996,
+          0.9999997777777531,
+          0.9999998,
+          0.9999999,
+          0.999999944444443
+        ],
+        "new_nodes": 20,
+        "levels": [
+          {
+            "label": "H00",
+            "lmax": 4289,
+            "nmu": 8598,
+            "real_BLAS_products": 19466422272,
+            "other_real_operation_proxy": 323478912,
+            "charged_real_proxy": 19789901184,
+            "numeric_arrays_allowance_bytes": 390659200
+          },
+          {
+            "label": "H01",
+            "lmax": 4289,
+            "nmu": 8678,
+            "real_BLAS_products": 19647547392,
+            "other_real_operation_proxy": 325695872,
+            "charged_real_proxy": 19973243264,
+            "numeric_arrays_allowance_bytes": 393500800
+          },
+          {
+            "label": "H11",
+            "lmax": 4329,
+            "nmu": 8678,
+            "real_BLAS_products": 19830826752,
+            "other_real_operation_proxy": 327879232,
+            "charged_real_proxy": 20158705984,
+            "numeric_arrays_allowance_bytes": 396446720
+          }
+        ]
+      },
+      {
+        "channel": 4,
+        "phase_max": 5585.0536063818545,
+        "requests": [
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "B",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.0,
+            "variant": "C_beta",
+            "beta": 1.0
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "B",
+            "beta": 0.9999218719480037
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.05,
+            "variant": "C_beta",
+            "beta": 0.998749217771909
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "B",
+            "beta": 0.998044963916957
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.25,
+            "variant": "C_beta",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "B",
+            "beta": 0.9921567416492215
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.5,
+            "variant": "C_beta",
+            "beta": 0.8660254037844386
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "B",
+            "beta": 0.982264602843857
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.75,
+            "variant": "C_beta",
+            "beta": 0.6614378277661477
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "B",
+            "beta": 0.9743587634952539
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.9,
+            "variant": "C_beta",
+            "beta": 0.4358898943540673
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "B",
+            "beta": 0.9688878934118229
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 0.99,
+            "variant": "C_beta",
+            "beta": 0.1410673597966589
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "B",
+            "beta": 0.9682458365518543
+          },
+          {
+            "kind": "G2_distributional_map",
+            "u": 1.0,
+            "variant": "C_beta",
+            "beta": 0.0
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "B",
+            "beta": 0.9999999687499996
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.001,
+            "variant": "C_beta",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "B",
+            "beta": 0.9999998749999922
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.002,
+            "variant": "C_beta",
+            "beta": 0.999997999998
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "B",
+            "beta": 0.9999994999998749
+          },
+          {
+            "kind": "weak_expansion",
+            "u": 0.004,
+            "variant": "C_beta",
+            "beta": 0.9999919999679997
+          }
+        ],
+        "finite_difference_h": 1e-07,
+        "finite_difference_betas": [
+          0.9999999,
+          0.9999998,
+          0.9999996
+        ],
+        "all_requested_betas": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.8660254037844386,
+          0.9682458365518543,
+          0.9688878934118229,
+          0.9743587634952539,
+          0.982264602843857,
+          0.9921567416492215,
+          0.998044963916957,
+          0.998749217771909,
+          0.9999218719480037,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999998749999922,
+          0.9999999,
+          0.9999999687499996,
+          1.0
+        ],
+        "reuse_existing_beta": [
+          0.8660254037844386,
+          0.9921567416492215,
+          0.998749217771909,
+          1.0
+        ],
+        "new_beta": [
+          0.0,
+          0.1410673597966589,
+          0.4358898943540673,
+          0.6614378277661477,
+          0.9682458365518543,
+          0.9688878934118229,
+          0.9743587634952539,
+          0.982264602843857,
+          0.998044963916957,
+          0.9999218719480037,
+          0.9999919999679997,
+          0.999997999998,
+          0.9999994999998749,
+          0.9999996,
+          0.9999998,
+          0.9999998749999922,
+          0.9999999,
+          0.9999999687499996
+        ],
+        "new_nodes": 18,
+        "levels": [
+          {
+            "label": "H00",
+            "lmax": 5686,
+            "nmu": 11391,
+            "real_BLAS_products": 31083760800,
+            "other_real_operation_proxy": 471533580,
+            "charged_real_proxy": 31555294380,
+            "numeric_arrays_allowance_bytes": 623073304
+          },
+          {
+            "label": "H01",
+            "lmax": 5686,
+            "nmu": 11471,
+            "real_BLAS_products": 31302064800,
+            "other_real_operation_proxy": 474120780,
+            "charged_real_proxy": 31776185580,
+            "numeric_arrays_allowance_bytes": 626808984
+          },
+          {
+            "label": "H11",
+            "lmax": 5726,
+            "nmu": 11471,
+            "real_BLAS_products": 31522308000,
+            "other_real_operation_proxy": 476681900,
+            "charged_real_proxy": 31998989900,
+            "numeric_arrays_allowance_bytes": 630648664
+          }
+        ]
+      }
+    ],
+    "workers": 12,
+    "BLAS_threads": 1,
+    "planned_real_operation_proxy": 183897455812,
+    "maximum_real_operation_proxy": 200000000000,
+    "within_original_extra_map_cap": true,
+    "new_frequency_ORF_nodes": 67,
+    "quadrature_frequency_matrices": 201,
+    "analytic_derivative_frequency_evaluations": 12,
+    "maximum_numeric_arrays_allowance_bytes": 630648664,
+    "maximum_numeric_ORF_bytes": 1073741824,
+    "maximum_RSS_bytes": 1610612736,
+    "maximum_CPU_seconds_proposed": 600,
+    "likelihood_evaluations": 0,
+    "data_draws": 0,
+    "posterior_evaluations": 0,
+    "direct_sky_new_calls": 0,
+    "direct_sky_rationale": "Gamma cache at beta1 is independently checked in the complete T/window map; derivative has an independent high precision transfer/Gram test plus planned one-sided finite differences and separated angular resolutions. No direct sky derivative has yet been calculated.",
+    "weak_phase_guide_max": 0.04468042885105483,
+    "weak_phase_guide_is_uniform_error_bound": false,
+    "proposed_gates": {
+      "Gamma_refinement_absolute": 1e-08,
+      "derivative_refinement_relative_or_absolute": 1e-07,
+      "derivative_finite_difference_relative_or_absolute": 1e-05,
+      "moment_refinement_relative_or_absolute": 1e-10
+    },
+    "weak_remainder_policy": "Report norms and consecutive scaling ratios for u=.001,.002,.004. O(u^4) is a fixed-phase asymptotic statement, not a requirement of an exact measured ratio16 at finite precision or cancellation.",
+    "memory_and_execution_limitations": [
+      "Fresh process per channel/resolution required.",
+      "Moment worker and independent metrics not yet budgeted or implemented in this candidate.",
+      "Caches must be verified against the completed map and authorization/source closure before reuse.",
+      "No runner or execution authorization is created by this metadata script."
+    ],
+    "source_sha256": {
+      "tmp/c08_weak_dispersion/prepare.py": "2eb5e82fe1c3a5203fc046dd65fd886efb79c5a893280300eef277dabd324443",
+      "tmp/c08_weak_dispersion/derivative.py": "9fb139171f556f02347d856dff9efc8cfed542fd5be17fc853efef164566bbf3",
+      "tmp/c08_weak_dispersion/validation.json": "67c16a33243b9f3197ebb4b786af18dd6bd346a180f6c717aef7e3e9b6f5a39a",
+      "tmp/c08_weak_dispersion/contraction_validation.json": "59171cd799e01270a11d3c3b13cd766cf240a4e57a0a6637813c06e28bfb7afa",
+      "tmp/c08_window_moments/map_preflight.json": "d51e7476b6ecbcac4d1f34d8c5ceed46fd5f149951e692c78259c57a1970635d",
+      "tmp/c08_window_map_v1/complete.json": "f12f22ba45bd288ac39b8167b10f4238c0cd73498914e94bc338d6ae48837afa",
+      "tmp/c08_execution_design/config_prospectiva.json": "188e4a0b5728b7437628152063ff4fe3cd6cbb1d8e89af8887b0824a5e40fb57"
+    }
+  },
+  "candidate_sha256": "a782aed86ef57b878b666b5a8315ab8bd359b4ea604ad4d17c840a8c9f03ee86",
+  "duration_years": 4.5,
+  "experiment_config": "configs/calibration/prior_predictive_500_v1.json",
+  "nuisance_vertices": {
+    "log10_Agw": [
+      -16,
+      -14
+    ],
+    "gamma_gw": [
+      3,
+      5.5
+    ],
+    "log10_Ar": [
+      -17,
+      -14.5
+    ],
+    "log10_EFAC": [
+      -0.3010299956639812,
+      0.3010299956639812
+    ]
+  },
+  "operator": "identity in four physical positive modes; independent frequencies; no Hann in this G2/weak extension",
+  "counts": {
+    "fresh_harmonic_workers": 12,
+    "moment_workers": 1,
+    "total_fresh_processes": 13,
+    "new_frequency_nodes": 67,
+    "new_frequency_matrices_all_resolutions": 201,
+    "analytic_derivative_frequency_evaluations": 12,
+    "G2_parameter_points": 128,
+    "G2_distinct_moments": 384,
+    "G2_moment_evaluations_all_resolutions": 1152,
+    "G2_comparisons_all_resolutions": 1152,
+    "weak_parameter_points": 48,
+    "weak_physical_moment_calls": 288,
+    "weak_first_variations": 144,
+    "total_window_moment_calls": 1440
+  },
+  "scope_extension": {
+    "original_extra_G2_frequency_nodes": 24,
+    "new_nodes": 67,
+    "reason": "Explicit extension includes first-channel new masses, three weak masses, beta0 and backward-difference nodes. Staying below the old work cap is not authorization.",
+    "C_full_new_channel_evaluations": 0,
+    "C_full_reuses_channel1_at_the_same_u": true
+  },
+  "derivative_checks": {
+    "at_beta": 1.0,
+    "fixed_pulsar_phases": true,
+    "step": 1e-07,
+    "finite_difference": "Second-order backward D_h=(3G1-4G(1-h)+G(1-2h))/(2h), and D_2h=(3G1-4G(1-2h)+G(1-4h))/(4h)",
+    "h_and_2h_not_h_and_half_h": true,
+    "refinement_pairs": [
+      "H00/H01",
+      "H01/H11"
+    ],
+    "Gamma_from_derivative_against_existing_beta1_cache": true,
+    "independent_direct_sky_derivative": false,
+    "direct_sky_rationale": "Earlier T/window sky checks at beta=1 cover ONLY two pulsar pairs in channel4 per duration. They do not certify the whole matrix or every channel. Other channels retain harmonic refinement/antecedents. This candidate adds no sky calls; scalar and complex-contraction high-precision tests, separate resolution checks and backward differences support the derivative in the stated finite scope.",
+    "threshold_beta0": "(1-exp(-i*y_a))*(1-exp(+i*y_b))*P2(p_a dot p_b)/5, compared at each channel/resolution without extra quadrature"
+  },
+  "weak_expansion": {
+    "delta_Gamma": "C_beta-B = -u^2/2*(1-k^-2)*D_k plus remainder",
+    "delta_C": "s_g,k delta_Gamma; s_g=Pgw/scale; all noise retained in C_GR",
+    "delta_mean": "sum_k w_k tr(H_i delta_C_k)",
+    "delta_covariance": "sum_k w_k^2 [tr(H_i delta_C_k H_j C_GR,k)+tr(H_i C_GR,k H_j delta_C_k)]",
+    "proper_complex_covariance_has_no_extra_factor2": true,
+    "rest_policy": "Save actual, first order, remainder norms and consecutive-u ratios; no required ratio16, no proof claim.",
+    "C_full_excluded_from_u_squared_fit": "C_full has a finite-phase u=0 constant term."
+  },
+  "cached_rows": [
+    {
+      "channel": 1,
+      "level": 0,
+      "map_row": 0,
+      "report_path": "tmp/c08_window_map_v1/harmonic_00_0/report.json",
+      "report_sha256": "28edf82174e9dad6df4bdd1450c58f845a42e0b1e41bc0d491b55b3f9521d0d2",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_00_0/arrays.npz",
+      "arrays_sha256": "4f0e80bba744c222ef7056be4324be210e122d36453a8c20c13f6a390db28024",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ]
+    },
+    {
+      "channel": 1,
+      "level": 1,
+      "map_row": 0,
+      "report_path": "tmp/c08_window_map_v1/harmonic_00_1/report.json",
+      "report_sha256": "ad9978832430ac4428361695968be22733318751481e6f1429c677de1b770afe",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_00_1/arrays.npz",
+      "arrays_sha256": "90f16973c0db4c84e09a32adb2127bf00f120950096721c2c92ecacdcb7a55b6",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ]
+    },
+    {
+      "channel": 1,
+      "level": 2,
+      "map_row": 0,
+      "report_path": "tmp/c08_window_map_v1/harmonic_00_2/report.json",
+      "report_sha256": "c6b7c99f6e9b6efb2614de02bb627576efabd14008ac30c6ff4d58d70dd14488",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_00_2/arrays.npz",
+      "arrays_sha256": "90f16973c0db4c84e09a32adb2127bf00f120950096721c2c92ecacdcb7a55b6",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ]
+    },
+    {
+      "channel": 2,
+      "level": 0,
+      "map_row": 1,
+      "report_path": "tmp/c08_window_map_v1/harmonic_01_0/report.json",
+      "report_sha256": "de74739ba05b7d3bcdcc7ebc2a1a4cc47d961970918cdd5fbc7e9ca7bf48cd66",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_01_0/arrays.npz",
+      "arrays_sha256": "a3b7c326a4de5cf170ea2acee35577630143b94b07e14cefa17d1da041f542ad",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ]
+    },
+    {
+      "channel": 2,
+      "level": 1,
+      "map_row": 1,
+      "report_path": "tmp/c08_window_map_v1/harmonic_01_1/report.json",
+      "report_sha256": "653fc75bade556f453e1003d16631ae71b775f85866797bc8a0e8e50988d0d5b",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_01_1/arrays.npz",
+      "arrays_sha256": "afd6f0bcf8f398097d68d5093f99cc8501fd8e2c1e1a08849f79de33d923f24a",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ]
+    },
+    {
+      "channel": 2,
+      "level": 2,
+      "map_row": 1,
+      "report_path": "tmp/c08_window_map_v1/harmonic_01_2/report.json",
+      "report_sha256": "567097a92466282c6569003689928c8a16f6bce4c110ffa2e0a79a44212ae47c",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_01_2/arrays.npz",
+      "arrays_sha256": "afd6f0bcf8f398097d68d5093f99cc8501fd8e2c1e1a08849f79de33d923f24a",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ]
+    },
+    {
+      "channel": 3,
+      "level": 0,
+      "map_row": 2,
+      "report_path": "tmp/c08_window_map_v1/harmonic_02_0/report.json",
+      "report_sha256": "eba467bf44b003b559b380506631bc87715ec1b0b9dd6961b3200f8ec2bbee53",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_02_0/arrays.npz",
+      "arrays_sha256": "8e3db85faa847cff9a25ce256623422bdf22c0b012daecb6587efc05b58a2ca9",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ]
+    },
+    {
+      "channel": 3,
+      "level": 1,
+      "map_row": 2,
+      "report_path": "tmp/c08_window_map_v1/harmonic_02_1/report.json",
+      "report_sha256": "79fd87017cb8a949c3507f80d08973d7dd220125a8945b7f28333312284cd7a6",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_02_1/arrays.npz",
+      "arrays_sha256": "696ec9e97c2eee014d732b68b28568b8704e54cd6905e080ae47f003110c3b0e",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ]
+    },
+    {
+      "channel": 3,
+      "level": 2,
+      "map_row": 2,
+      "report_path": "tmp/c08_window_map_v1/harmonic_02_2/report.json",
+      "report_sha256": "1b3d43aca1d8e8471b9b82660b8f8e9f22fc5f000966f982dd42ae46f4ad47fb",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_02_2/arrays.npz",
+      "arrays_sha256": "696ec9e97c2eee014d732b68b28568b8704e54cd6905e080ae47f003110c3b0e",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ]
+    },
+    {
+      "channel": 4,
+      "level": 0,
+      "map_row": 3,
+      "report_path": "tmp/c08_window_map_v1/harmonic_03_0/report.json",
+      "report_sha256": "8f4190b6731960511215f0ff1d09e2c82cab9dfc21b3e96be847ac71e240e101",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_03_0/arrays.npz",
+      "arrays_sha256": "2a9f5c85c29b76d5300b083bbbc2539fc5677fb993d070cbd2a5cad049b0bdeb",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ]
+    },
+    {
+      "channel": 4,
+      "level": 1,
+      "map_row": 3,
+      "report_path": "tmp/c08_window_map_v1/harmonic_03_1/report.json",
+      "report_sha256": "4f5ec020a963522a36091baeccb00f5389c07ffc4abaca9140482bfb4156c303",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_03_1/arrays.npz",
+      "arrays_sha256": "6c95fd687bad1fad89146b1524800ad2c3cb998e9b22b514fc9f76637e371033",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ]
+    },
+    {
+      "channel": 4,
+      "level": 2,
+      "map_row": 3,
+      "report_path": "tmp/c08_window_map_v1/harmonic_03_2/report.json",
+      "report_sha256": "338e3fd796802e128cdc88bb449384d76b0cfd24c8f01deb93781d919eed2aff",
+      "arrays_path": "tmp/c08_window_map_v1/harmonic_03_2/arrays.npz",
+      "arrays_sha256": "cfc294e89bb967c8c0902da807752d80e29f1055b0f85f682125585d0a325750",
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ]
+    }
+  ],
+  "cache_authorization_sha256": "f53140a1048cd178a4d4c14f9ed5db70fecbbe9318234b0e429d5baeacdfbaad",
+  "caps": {
+    "real_proxy": 200000000000,
+    "CPU_seconds": 600,
+    "numeric_ORF": 1073741824,
+    "RSS": 1610612736,
+    "moment_numeric": 268435456,
+    "angular": 0
+  },
+  "planned_real_operation_proxy": 183897455812,
+  "memory": {
+    "maximum_harmonic_numeric_allowance_bytes": 630648664,
+    "bank_array_allowance_bytes": 4194304,
+    "output_array_allowance_bytes": 16777216,
+    "transient_window_and_variation_allowance_bytes": 16777216,
+    "accumulators_python_numeric_reserve_bytes": 67108864,
+    "moment_peak_numeric_allowance_bytes": 104857600,
+    "moment_cap_bytes": 268435456,
+    "RSS_note": "Postworker ru_maxrss check in Darwin bytes; array allowances do not guarantee RSS."
+  },
+  "gates": {
+    "Gamma_refinement_absolute": 1e-08,
+    "derivative_refinement_relative_or_absolute": 1e-07,
+    "derivative_finite_difference_relative_or_absolute": 1e-05,
+    "moment_refinement_relative_or_absolute": 1e-10,
+    "threshold_analytic_absolute": 1e-08,
+    "distribution_metric_resolution_absolute": 0.001
+  },
+  "CPU_accounting": "Cumulative child user+system including imports, RLIMIT_CPU per child; controller metadata/hash/refinement comparisons excluded. Every basis uses a fresh process. No automatic retry/refinement.",
+  "operation_accounting": "183897455812 is the frozen harmonic/basis/derivative proxy, not a universal FLOP count. Moments and metric costs are bounded by the fixed call counts, numeric memory and measured child CPU.",
+  "execution_command": "python run_weak_map.py --execute --authorization ROOT_AUTH.json --output NEW_DIRECTORY",
+  "authorization_created": false,
+  "physical_ORF_calls_during_preparation": 0,
+  "likelihood_evaluations": 0,
+  "data_draws": 0,
+  "posterior_evaluations": 0,
+  "new_direct_sky_calls": 0,
+  "source_sha256": {
+    "tmp/c08_window_moments/run_map.py": "26cf83717583538bbcb2d462e44b8f45b3d046c350f8ec66a4f218b25f8f8545",
+    "tmp/c08_window_moments/window_moments.py": "bcc262f3a6c53e020715b9b86ae89881699063d5faaf76795e3cf276df6362a4",
+    "tmp/c08_gaussian_comparison/src/inference/gaussian_metrics.py": "5df8e74d1217d06dc9a629f409ae870ebeb36be32cbc6e1cf902c9f09adc980f",
+    "src/inference/__init__.py": "21d80a76b7cb264c5b8f60bac29cbb80c90ab7f6604e5137de1c9411d2b0f812",
+    "src/inference/model.py": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/geometry.py": "8c2b644754b2118ab23d3f6224db02e4f5de117837f8a2fd12f4d2eecf63886d",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887",
+    "tmp/c08_weak_dispersion/derivative.py": "9fb139171f556f02347d856dff9efc8cfed542fd5be17fc853efef164566bbf3",
+    "tmp/c08_weak_dispersion/execution_contract.py": "8027ae824c17322dd188ea2fdd15089094430442ef6edbc3e636add7e767cdd9",
+    "tmp/c08_weak_dispersion/weak_moment_deltas.py": "7141b34160ee17c378e81eac4a80d9d6dbe08c2e67f739adc5694bfc3f8437e1",
+    "tmp/c08_weak_dispersion/run_weak_map.py": "adccebe3278db20b3e5a071468543281991585eef00d4588dc1ad136d04625e2",
+    "tmp/c08_weak_dispersion/prepare_execution_spec.py": "36e17b33d977d4961587c8531f46d7c6de86f328e8dcd27acd1dbc560e3280b4",
+    "tmp/c08_weak_dispersion/test_execution_guards.py": "f2e3972ff0e672d7fa70a06424ab1c7969b18479947696ae5ab53ba836a6eda0"
+  },
+  "input_sha256": {
+    "tmp/c08_weak_dispersion/preflight_candidate.json": "a782aed86ef57b878b666b5a8315ab8bd359b4ea604ad4d17c840a8c9f03ee86",
+    "tmp/c08_window_moments/map_preflight.json": "d51e7476b6ecbcac4d1f34d8c5ceed46fd5f149951e692c78259c57a1970635d",
+    "tmp/c08_window_map_v1/complete.json": "f12f22ba45bd288ac39b8167b10f4238c0cd73498914e94bc338d6ae48837afa",
+    "tmp/c08_window_moments/ROOT_authorization_20260911.json": "f53140a1048cd178a4d4c14f9ed5db70fecbbe9318234b0e429d5baeacdfbaad",
+    "configs/calibration/prior_predictive_500_v1.json": "f22b0a8cd7c86e477365ea02d3b37a836458d44285b0abd323bccd174c89fdfa",
+    "tmp/c08_weak_dispersion/prepare.py": "2eb5e82fe1c3a5203fc046dd65fd886efb79c5a893280300eef277dabd324443",
+    "tmp/c08_weak_dispersion/derivative.py": "9fb139171f556f02347d856dff9efc8cfed542fd5be17fc853efef164566bbf3",
+    "tmp/c08_weak_dispersion/validation.json": "67c16a33243b9f3197ebb4b786af18dd6bd346a180f6c717aef7e3e9b6f5a39a",
+    "tmp/c08_weak_dispersion/contraction_validation.json": "59171cd799e01270a11d3c3b13cd766cf240a4e57a0a6637813c06e28bfb7afa",
+    "tmp/c08_execution_design/config_prospectiva.json": "188e4a0b5728b7437628152063ff4fe3cd6cbb1d8e89af8887b0824a5e40fb57",
+    "tmp/c08_window_map_v1/harmonic_00_0/report.json": "28edf82174e9dad6df4bdd1450c58f845a42e0b1e41bc0d491b55b3f9521d0d2",
+    "tmp/c08_window_map_v1/harmonic_00_0/arrays.npz": "4f0e80bba744c222ef7056be4324be210e122d36453a8c20c13f6a390db28024",
+    "tmp/c08_window_map_v1/harmonic_00_1/report.json": "ad9978832430ac4428361695968be22733318751481e6f1429c677de1b770afe",
+    "tmp/c08_window_map_v1/harmonic_00_1/arrays.npz": "90f16973c0db4c84e09a32adb2127bf00f120950096721c2c92ecacdcb7a55b6",
+    "tmp/c08_window_map_v1/harmonic_00_2/report.json": "c6b7c99f6e9b6efb2614de02bb627576efabd14008ac30c6ff4d58d70dd14488",
+    "tmp/c08_window_map_v1/harmonic_00_2/arrays.npz": "90f16973c0db4c84e09a32adb2127bf00f120950096721c2c92ecacdcb7a55b6",
+    "tmp/c08_window_map_v1/harmonic_gate_00.json": "6d09012ee754eba4b08238858c0a848f0983ee6e4ac67f3e83791f215a74a85f",
+    "tmp/c08_window_map_v1/harmonic_01_0/report.json": "de74739ba05b7d3bcdcc7ebc2a1a4cc47d961970918cdd5fbc7e9ca7bf48cd66",
+    "tmp/c08_window_map_v1/harmonic_01_0/arrays.npz": "a3b7c326a4de5cf170ea2acee35577630143b94b07e14cefa17d1da041f542ad",
+    "tmp/c08_window_map_v1/harmonic_01_1/report.json": "653fc75bade556f453e1003d16631ae71b775f85866797bc8a0e8e50988d0d5b",
+    "tmp/c08_window_map_v1/harmonic_01_1/arrays.npz": "afd6f0bcf8f398097d68d5093f99cc8501fd8e2c1e1a08849f79de33d923f24a",
+    "tmp/c08_window_map_v1/harmonic_01_2/report.json": "567097a92466282c6569003689928c8a16f6bce4c110ffa2e0a79a44212ae47c",
+    "tmp/c08_window_map_v1/harmonic_01_2/arrays.npz": "afd6f0bcf8f398097d68d5093f99cc8501fd8e2c1e1a08849f79de33d923f24a",
+    "tmp/c08_window_map_v1/harmonic_gate_01.json": "a79d809ba2255142e4dc1b83c034fd1c07da557cbf5298b985179d373c4d1d93",
+    "tmp/c08_window_map_v1/harmonic_02_0/report.json": "eba467bf44b003b559b380506631bc87715ec1b0b9dd6961b3200f8ec2bbee53",
+    "tmp/c08_window_map_v1/harmonic_02_0/arrays.npz": "8e3db85faa847cff9a25ce256623422bdf22c0b012daecb6587efc05b58a2ca9",
+    "tmp/c08_window_map_v1/harmonic_02_1/report.json": "79fd87017cb8a949c3507f80d08973d7dd220125a8945b7f28333312284cd7a6",
+    "tmp/c08_window_map_v1/harmonic_02_1/arrays.npz": "696ec9e97c2eee014d732b68b28568b8704e54cd6905e080ae47f003110c3b0e",
+    "tmp/c08_window_map_v1/harmonic_02_2/report.json": "1b3d43aca1d8e8471b9b82660b8f8e9f22fc5f000966f982dd42ae46f4ad47fb",
+    "tmp/c08_window_map_v1/harmonic_02_2/arrays.npz": "696ec9e97c2eee014d732b68b28568b8704e54cd6905e080ae47f003110c3b0e",
+    "tmp/c08_window_map_v1/harmonic_gate_02.json": "e263092c3a4926b82cd35a75d56ba8dca09c6ac8b7850d9271e39619b8bb648d",
+    "tmp/c08_window_map_v1/harmonic_03_0/report.json": "8f4190b6731960511215f0ff1d09e2c82cab9dfc21b3e96be847ac71e240e101",
+    "tmp/c08_window_map_v1/harmonic_03_0/arrays.npz": "2a9f5c85c29b76d5300b083bbbc2539fc5677fb993d070cbd2a5cad049b0bdeb",
+    "tmp/c08_window_map_v1/harmonic_03_1/report.json": "4f5ec020a963522a36091baeccb00f5389c07ffc4abaca9140482bfb4156c303",
+    "tmp/c08_window_map_v1/harmonic_03_1/arrays.npz": "6c95fd687bad1fad89146b1524800ad2c3cb998e9b22b514fc9f76637e371033",
+    "tmp/c08_window_map_v1/harmonic_03_2/report.json": "338e3fd796802e128cdc88bb449384d76b0cfd24c8f01deb93781d919eed2aff",
+    "tmp/c08_window_map_v1/harmonic_03_2/arrays.npz": "cfc294e89bb967c8c0902da807752d80e29f1055b0f85f682125585d0a325750",
+    "tmp/c08_window_map_v1/harmonic_gate_03.json": "c0ff6b5a0a6e66b23bdaa9460bbe2142fdf3d7dff6f4510c3bb1d45536636bef"
+  }
+}

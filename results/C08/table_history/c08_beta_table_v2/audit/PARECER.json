@@ -1,0 +1,88 @@
+{
+  "created_utc": "2026-09-11T04:17:25.246335+00:00",
+  "implementation_conditions": [
+    "Clamp in x=-beta with the corresponding derivative sign.",
+    "Reject Bernstein failures; do not apply linear fallback or eigenvalue clipping.",
+    "Freeze and verify ledger, caches, validation matrices and kernel before reuse.",
+    "Release arrays by stage and measure Darwin RSS."
+  ],
+  "input_hash_manifest": {
+    "file_count": 168,
+    "path": "tmp/c08_beta_table_v2/audit/input_hashes.json",
+    "sha256": "ae46ef0cc20e10fa53a9b07c0686052db5b6865690e95cd4f8cd22eb663180fa"
+  },
+  "join_beta_effective": 0.015624999999998222,
+  "likelihoods_executed": 0,
+  "primary_artifact_sha256": {
+    "tmp/c08_beta_table_v2/PREFLIGHT.md": "cf4e4c5131b82630ed54e4d0c96d65d298932304070780ac4fad1c84b9c58dc1",
+    "tmp/c08_beta_table_v2/preflight.json": "3b7aa6030cbd4a5883534c14854a5821bf61689adfcefba8026a8b92bdac6772",
+    "tmp/c08_beta_table_v2/preflight_corrected.py": "4b2087e7b1e2a96c943d5865bf7605325dd9cb089500cc267369c5094edeb06d"
+  },
+  "quadratures_executed": 0,
+  "schema": "C08_BETA_V2_INDEPENDENT_PREFLIGHT_AUDIT_v1",
+  "scientific_approval": false,
+  "source_files_modified": 0,
+  "splines_constructed": 0,
+  "status": "PREFLIGHT_ARITHMETIC_AND_ALGEBRA_REVIEW_ONLY",
+  "verified_cost": {
+    "baseline": {
+      "angular": 2051757104,
+      "logL": 878592,
+      "real": 48508435951296
+    },
+    "matrix_coefficient_basis_bytes": 1020342208,
+    "new_controls_logL": 442368,
+    "new_direct_angular_work": 5844792,
+    "new_historical_logL": 73728,
+    "new_real_products": 440505844992
+  },
+  "verified_counts": {
+    "cache_logL_shape": [
+      64,
+      32
+    ],
+    "channels": [
+      {
+        "channel": 2,
+        "inserted_nodes": 840,
+        "join_is_existing_node": true,
+        "new_nodes": 9153,
+        "old_nodes": 8313,
+        "old_patch_nodes": 249,
+        "patch_nodes": 1089
+      },
+      {
+        "channel": 3,
+        "inserted_nodes": 868,
+        "join_is_existing_node": true,
+        "new_nodes": 9185,
+        "old_nodes": 8317,
+        "old_patch_nodes": 253,
+        "patch_nodes": 1121
+      },
+      {
+        "channel": 4,
+        "inserted_nodes": 868,
+        "join_is_existing_node": true,
+        "new_nodes": 9185,
+        "old_nodes": 8317,
+        "old_patch_nodes": 253,
+        "patch_nodes": 1121
+      }
+    ],
+    "distinct_cache_construction_identities": 1,
+    "distinct_cache_nuisance_hashes": 1,
+    "distinct_cache_observation_hashes": 1,
+    "historical_affected": 36,
+    "historical_caches": 143,
+    "historical_masses": 143,
+    "new_masses": 72,
+    "new_masses_inside_patch": 21,
+    "new_points_distinct_and_fresh": true,
+    "union_nodes": 9248
+  },
+  "written_opinion": {
+    "path": "tmp/c08_beta_table_v2/audit/PARECER.md",
+    "sha256": "3a3f0e0198665f7ac51d9fb45e5396af733a9fb12ee19a87da9dde050d836636"
+  }
+}

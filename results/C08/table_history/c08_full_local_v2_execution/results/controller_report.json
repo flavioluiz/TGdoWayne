@@ -1,0 +1,34 @@
+{
+  "status": "SEQUENTIAL_C_FULL_V2_COMPLETED",
+  "rows": [
+    {
+      "stage": "local",
+      "exit_code": 0,
+      "seconds": 4.4788835840299726
+    },
+    {
+      "stage": "oracle_coarse",
+      "exit_code": 0,
+      "seconds": 4.160777583019808
+    },
+    {
+      "stage": "oracle_fine",
+      "exit_code": 0,
+      "seconds": 4.306015582988039
+    },
+    {
+      "stage": "gates",
+      "exit_code": 0,
+      "seconds": 5.101685957983136
+    },
+    {
+      "stage": "export",
+      "exit_code": 0,
+      "seconds": 7.736694916966371
+    }
+  ],
+  "seconds": 25.787917125038803,
+  "maximum_worker_RSS_bytes": 712392704,
+  "workers_simultaneous": 1,
+  "BLAS_threads": 1
+}

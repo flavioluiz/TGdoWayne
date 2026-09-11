@@ -1,0 +1,108 @@
+{
+  "status": "TABLE_ONLY_PREFLIGHT_NO_EXECUTION",
+  "workers": 1,
+  "blas_threads": 1,
+  "rss_operational_stop_bytes": 1610612736,
+  "maximum_estimated_numeric_bytes": 1073741824,
+  "maximum_real_multiplications": 50000000000000,
+  "planned_real_multiplications": 48502704104544,
+  "remaining_real_multiplications": 1497295895456,
+  "maximum_requested_table_nodes_per_frequency": 10000,
+  "validation_seed": 808120101,
+  "validation_nodes": 143,
+  "rows": [
+    {
+      "channel": 1,
+      "table_nodes_evaluated": 0,
+      "coarse_interpolation_nodes": null,
+      "validation_and_table_unique_evaluations": 143,
+      "validation_nodes": 143,
+      "real_multiplications": 31743117120,
+      "real_multiplications_per_node": 221979840,
+      "maximum_basis_buffers_bytes": 56564704,
+      "reserve_bytes": 990704,
+      "estimated_numeric_bytes": 57555408,
+      "coarse": [
+        1496,
+        3012
+      ],
+      "fine": [
+        1536,
+        3092
+      ],
+      "table_reuses_C07_first_curve": true
+    },
+    {
+      "channel": 2,
+      "table_nodes_evaluated": 8313,
+      "coarse_interpolation_nodes": 4157,
+      "validation_and_table_unique_evaluations": 8453,
+      "validation_nodes": 143,
+      "real_multiplications": 6903975577680,
+      "real_multiplications_per_node": 816748560,
+      "maximum_basis_buffers_bytes": 173385464,
+      "reserve_bytes": 58562384,
+      "estimated_numeric_bytes": 231947848,
+      "coarse": [
+        2892,
+        5805
+      ],
+      "fine": [
+        2932,
+        5885
+      ],
+      "table_reuses_C07_first_curve": false
+    },
+    {
+      "channel": 3,
+      "table_nodes_evaluated": 8317,
+      "coarse_interpolation_nodes": 4159,
+      "validation_and_table_unique_evaluations": 8457,
+      "validation_nodes": 143,
+      "real_multiplications": 15100964931024,
+      "real_multiplications_per_node": 1785617232,
+      "maximum_basis_buffers_bytes": 352553688,
+      "reserve_bytes": 58590096,
+      "estimated_numeric_bytes": 411143784,
+      "coarse": [
+        4288,
+        8597
+      ],
+      "fine": [
+        4328,
+        8677
+      ],
+      "table_reuses_C07_first_curve": false
+    },
+    {
+      "channel": 4,
+      "table_nodes_evaluated": 8317,
+      "coarse_interpolation_nodes": 4159,
+      "validation_and_table_unique_evaluations": 8457,
+      "validation_nodes": 143,
+      "real_multiplications": 26466020478720,
+      "real_multiplications_per_node": 3129480960,
+      "maximum_basis_buffers_bytes": 594231232,
+      "reserve_bytes": 58590096,
+      "estimated_numeric_bytes": 652821328,
+      "coarse": [
+        5685,
+        11390
+      ],
+      "fine": [
+        5725,
+        11470
+      ],
+      "table_reuses_C07_first_curve": false
+    }
+  ],
+  "union_interpolation_nodes": 8464,
+  "common_complex_matrix_bytes": 78004224,
+  "common_cubic_coefficient_bytes": 311980032,
+  "direct_angular_work_separate_budget": 8000000000,
+  "likelihood_validation_budget": 1000000,
+  "maximum_phase": 5585.0536063818545,
+  "execution_authorized": false,
+  "first_curve_source": "tmp/c07_sampler/results/table_beta8193_local.npz",
+  "source_sha256": "f7e6d92a2a59746158eb16571bc246831080b096b890006f78e1a52bd37cd014"
+}

@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] A diferença entre compressão e modelagem aproximada é isolada com controles compartilhados.
-- [ ] Conclusões incluem incerteza Monte Carlo, convergência e condições de validade.
-- [ ] Um resultado nulo inclui limites quantitativos para efeitos que a campanha conseguiria detectar.
+- [x] A diferença entre compressão e modelagem aproximada é isolada com controles compartilhados.
+- [x] Conclusões incluem incerteza Monte Carlo, convergência e condições de validade.
+- [x] Um resultado nulo inclui limites quantitativos para efeitos que a campanha conseguiria detectar.
 
 ## Validação exigida
 
@@ -69,3 +69,30 @@ Se não houver efeito relevante, o produto será o domínio de validade; não es
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+
+## Entrega executada em v0.8.0
+
+As tarefas foram concluídas com o alcance descrito em [RESULTADOS.md](../../docs/C08/RESULTADOS.md).
+Foram executados mapas de momentos, descrição dos 500 dados, 16 alvos de engenharia,
+128 alvos C, reprodução de 160 HIGH e síntese 32×9 com todas as falhas preservadas.
+A interpretação de C foi dividida em C_beta (dispersão comum) e C_full (dispersão
+mais fase de referência), ambas na média e na covariância, sem alterar o dado B.
+
+A comparação primária não resolveu efeitos na faixa ±0,01: todos os 224 contrastes
+individuais e as sete médias piloto são inconclusivos quando a incerteza numérica
+é propagada. Portanto, o terceiro critério não é usado para afirmar um resultado
+nulo ou ausência de viés. A entrega quantifica a resolução insuficiente e preserva
+os intervalos; não reivindica um domínio de equivalência de limites de massa.
+Os mapas finitos de discrepância, as médias descritivas e quatro valores de KL posteriores
+são resultados de alcance distinto e explicitamente delimitado.
+
+A análise compacta original dos controles atingiu o teto de CPU depois de
+terminar a física. A continuação calculou somente 181 relatórios faltantes e
+reutilizou 143 completos, com custo adicional separado. Não houve repetição
+física, descarte ou relaxamento de critérios. C09 trata robustez em um desenho
+próprio; a resolução horizontal dos quantis C08 permanece uma extensão aberta.
+
+O PDF incorpora o capítulo 7; o manifesto da versão registra fontes, protocolos,
+configurações, tabelas, figuras e pacotes restauráveis. O plano anterior ao
+fechamento foi preservado em `docs/C08/plano_C08_antes_fechamento.md`.

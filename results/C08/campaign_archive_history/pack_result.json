@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v1/scripts/campanha_compressao.py",
+    "empacotar",
+    "--inventario",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v1/inventory_engineering_main_v2.json",
+    "--repositorio",
+    "/Volumes/MacSSD/Development/github/TGdoWayne",
+    "--saida",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_campaign_archive_v1/bundle_engineering_main_v2"
+  ],
+  "source_sha256": "cde31612240f4534848e5cc220b9850b382feaa1d7bc8363d8c2411222a68d62",
+  "stage": "pack",
+  "new_physics_calls": 0,
+  "original_inventory_sha256": "2a991276e31017562bdc60c8f4723cc9fb537d77d28de4c0286cf772843d4739",
+  "rss_accounting": "Darwin ru_maxrss bytes",
+  "maximum_archive_bytes": 94371840,
+  "maximum_restored_bytes": 2147483648,
+  "exit_code": 0,
+  "wall_seconds": 32.21878133295104,
+  "child_CPU_seconds": 30.8149,
+  "maximum_child_RSS_bytes": 63176704,
+  "stdout": "{\"archive_bytes\": 72051520, \"bundle_sha256\": \"bdc393fa11be1eeea1e456ed3ddd04a21378db4a287a0e7def57df158560dcd2\", \"files\": 10821, \"parts\": 4, \"restored_bytes\": 344695765, \"status\": \"LOSSLESS_BYTES_NO_NEW_SCIENTIFIC_APPROVAL\"}\n",
+  "stderr": ""
+}

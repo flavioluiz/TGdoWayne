@@ -1,0 +1,41 @@
+{
+  "scope": "FINITE_DURATION_WINDOW_DISTRIBUTIONAL_MAP_NOT_POSTERIOR_OR_SBC",
+  "complete_sha256": "f12f22ba45bd288ac39b8167b10f4238c0cd73498914e94bc338d6ae48837afa",
+  "moment_report_sha256": "514e59bd23f83dc7e5ab486d565e15fe529d0705e5a3298c157c5b3217b45cc9",
+  "arrays_sha256": "043eba60b414eec16335da1eb6795858c3dc6c085b16c41206605933bdd31e6f",
+  "writer_sha256": "4a2f61345c59f202aecd842da750c6b8062828f9b39efb429207aba7f2107800",
+  "finite_moment_cases": 1440,
+  "finite_comparison_cases": 1440,
+  "independent_real_references": 72,
+  "nuisance_grid": "16 Cartesian boundary vertices; no probabilistic weighting",
+  "KL_scope": "between real normal distributions defined by quadratic means/covariances; not the full CN-induced quadratic law",
+  "mean_shift_scope": "sqrt((mu_p-mu_q)^T Sigma_p^-1 (mu_p-mu_q))",
+  "covariance_scope": "Frobenius norm of Sigma_q^-1/2 Sigma_p Sigma_q^-1/2 - I",
+  "duration_scope": "u fixed across T implies different physical graviton mass; weights and physical normalization recomputed at each T",
+  "windows_scope": "finite complex-linear positive-mode projection, proper CN, independent input frequencies; no irregular TOA or timing fit",
+  "B_C_beta_u0_exact": true,
+  "wrong_cross_frequency_omission": {
+    "Retangular peri\u00f3dica": {
+      "maximum_relative_Frobenius": 0.0,
+      "minimum_relative_Frobenius": 0.0
+    },
+    "Hann projetada": {
+      "maximum_relative_Frobenius": 0.4713828749755964,
+      "minimum_relative_Frobenius": 0.26300527242651744
+    }
+  },
+  "global_maxima": {
+    "KL_p_to_q": 21.17913788258166,
+    "mean_shift_metric_p_squared": 7.145746111384097,
+    "covariance_difference_metric_q": 8.73702698008813
+  },
+  "products": {
+    "KL_p_to_q.pdf": "aff5180d2914649b9cb1e0b487b06c5c9f2cbc52345ddab0ae7a86282b3a5ab5",
+    "KL_p_to_q.svg": "4237826a9fbeb2a047daf7c0e4e4a992f60274e4b037df80a2d35d3be98b10cb",
+    "covariance_difference_metric_q.pdf": "bc5a55977c1ee214ca5f20663646091bcfaa5d29b23e11584b93374f7183fc28",
+    "covariance_difference_metric_q.svg": "61aea63682351f9bd8b7d66f781aadce51be9a350c739de852ff9d6eea45f41c",
+    "envelopes.csv": "2928649a725d0b57d8262298d415ca002ad3a757e7062c9021100b819a0063b4",
+    "mean_shift_metric_p_squared.pdf": "85cf197223792dc34039d90f2217735ee5eef1b004c1d562d990a83f8da8a3cb",
+    "mean_shift_metric_p_squared.svg": "acba51176eb3e797bc13d7c0de5145c04d53fef4f8061578ccc29cdb17b4c777"
+  }
+}

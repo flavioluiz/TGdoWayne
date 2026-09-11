@@ -1,0 +1,83 @@
+{
+  "budget": {
+    "backend_workspace_allowance_bytes": 33554432,
+    "maximum_active_raw_bytes": 1073741824,
+    "maximum_loader_owned_numeric_bytes": 1073741824,
+    "maximum_numeric_bytes": 4294967296,
+    "maximum_production_likelihood_values": 2621440,
+    "maximum_total_likelihood_values": 2883616,
+    "maximum_training_likelihood_values": 262176,
+    "validation_tile_size": 128
+  },
+  "cohort_index_sha256": "d5d48fba41f9d1b4dd72bf9cd8cd0cd4444a29fcc3d35d725d25092351164222",
+  "execution_enabled": false,
+  "memory_scope": "Prospective 32MiB backend allowance; numeric cap is not an RSS guarantee. Runtime v2 must pass actual metadata preflight.",
+  "models": [
+    "C_full_CN",
+    "C_full_G"
+  ],
+  "no_retry_or_replacement": true,
+  "no_truth_in_training_or_production": true,
+  "phase": "engineering",
+  "production": {
+    "descriptive_points_per_replicate": 128,
+    "levels": [
+      16384,
+      65536
+    ],
+    "likelihood_batch": 2048,
+    "raw_compression": "stored",
+    "replicates": 4,
+    "seed": 808120301
+  },
+  "production_targets_per_block": 1,
+  "response_variant": "C_full",
+  "schema": "C08_DRIVER_SETTINGS_v1",
+  "status": "PROSPECTIVE_NOT_AUTHORIZED",
+  "targets": [
+    {
+      "datum": 25,
+      "model": "C_full_CN"
+    },
+    {
+      "datum": 26,
+      "model": "C_full_CN"
+    },
+    {
+      "datum": 44,
+      "model": "C_full_CN"
+    },
+    {
+      "datum": 48,
+      "model": "C_full_CN"
+    },
+    {
+      "datum": 25,
+      "model": "C_full_G"
+    },
+    {
+      "datum": 26,
+      "model": "C_full_G"
+    },
+    {
+      "datum": 44,
+      "model": "C_full_G"
+    },
+    {
+      "datum": 48,
+      "model": "C_full_G"
+    }
+  ],
+  "training": {
+    "approved": false,
+    "chains": 4,
+    "gaussian_broadening": {
+      "variance_multiplier": 9,
+      "wide_total_probability": 0.1
+    },
+    "points_for_em": 2048,
+    "seed": 808120201,
+    "steps": 8192
+  },
+  "training_targets_per_block": 16
+}

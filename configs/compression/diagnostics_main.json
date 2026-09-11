@@ -1,0 +1,20 @@
+{
+  "alpha_refinement_family": 0.05,
+  "alpha_replicate_family": 0.05,
+  "cdf_mcse_target": 0.00335,
+  "execution_targets_per_variant": 64,
+  "family_scope": "Both C_beta and C_full; engineering is separate from main",
+  "global_refinement_contrasts": 896,
+  "global_replicate_contrasts": 26112,
+  "independent_replications": 4,
+  "levels": [
+    16384,
+    65536
+  ],
+  "maximum_saturated_target_weight": 1e-12,
+  "no_scientific_calibration_claim": true,
+  "numerical_failures_retained": true,
+  "phase": "main",
+  "population_targets": 128,
+  "protocol": "C08_TARGET_IID_DIAGNOSTICS_v1"
+}

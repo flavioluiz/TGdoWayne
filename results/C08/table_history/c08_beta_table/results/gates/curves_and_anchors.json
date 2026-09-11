@@ -1,0 +1,104 @@
+{
+  "anchors": [
+    {
+      "channel": 1,
+      "massless_ROOT_matrix_error": 0.0,
+      "threshold_matrix_error": 5.972999875843142e-14,
+      "threshold_rank_numerical": 5
+    },
+    {
+      "channel": 2,
+      "massless_ROOT_matrix_error": 0.0,
+      "threshold_matrix_error": 1.795230630867812e-13,
+      "threshold_rank_numerical": 5
+    },
+    {
+      "channel": 3,
+      "massless_ROOT_matrix_error": 0.0,
+      "threshold_matrix_error": 2.4547031173035634e-13,
+      "threshold_rank_numerical": 5
+    },
+    {
+      "channel": 4,
+      "massless_ROOT_matrix_error": 0.0,
+      "threshold_matrix_error": 1.149080830492988e-13,
+      "threshold_rank_numerical": 5
+    }
+  ],
+  "curves": [
+    {
+      "channel": 1,
+      "coarse_policy": "same inherited curve; separate harmonic oracle validation",
+      "inherited_ROOT_first_curve": true,
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -2.7903034844784863e-16,
+      "node_count": 8336
+    },
+    {
+      "channel": 2,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -4.49476223810092e-16,
+      "node_count": 4157,
+      "resolution": "coarse",
+      "threshold_derivative_error": 1.0031055433448375e-15
+    },
+    {
+      "channel": 2,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -3.51245469695593e-16,
+      "node_count": 8313,
+      "resolution": "fine",
+      "threshold_derivative_error": 2.14205988124428e-16
+    },
+    {
+      "channel": 3,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -4.015338044671682e-16,
+      "node_count": 4159,
+      "resolution": "coarse",
+      "threshold_derivative_error": 8.334036638708473e-16
+    },
+    {
+      "channel": 3,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -2.253706682760521e-16,
+      "node_count": 8317,
+      "resolution": "fine",
+      "threshold_derivative_error": 6.719271587333474e-16
+    },
+    {
+      "channel": 4,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -3.464309324636069e-16,
+      "node_count": 4159,
+      "resolution": "coarse",
+      "threshold_derivative_error": 2.9518412714522042e-15
+    },
+    {
+      "channel": 4,
+      "fallback_intervals": [],
+      "maximum_Bernstein_hermiticity_error": 0.0,
+      "minimum_Bernstein_eigenvalue": -3.464309324636069e-16,
+      "node_count": 8317,
+      "resolution": "fine",
+      "threshold_derivative_error": 9.498234430648002e-16
+    }
+  ],
+  "interpolation": {
+    "by_channel_fine_oracle": [
+      3.025033498813616e-08,
+      6.900529692811711e-07,
+      1.6816857045145477e-06,
+      6.1116408766691235e-06
+    ],
+    "first_curve_coarse_fine_is_identical": true,
+    "maximum_coarse_fine_matrix": 0.00048691578440288616,
+    "maximum_fine_oracle_matrix": 6.1116408766691235e-06,
+    "validation_nodes": 143
+  }
+}

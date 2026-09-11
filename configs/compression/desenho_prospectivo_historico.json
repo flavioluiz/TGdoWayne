@@ -1,0 +1,574 @@
+{
+  "schema": "C08_EXECUTION_DESIGN_v4",
+  "status": "PROSPECTIVE_ONLY_NO_SCIENTIFIC_EXECUTION",
+  "execution_enabled": false,
+  "scope": "Paired C07 reuse plus bounded C_full/C_beta inference at one frozen 12p4f periodic geometry; no observational PTA claim.",
+  "required_c07_release": "v0.7.0",
+  "final_c07_campaign_manifest": null,
+  "final_c07_commit": null,
+  "input_document_sha256": {
+    "implementation_plan/commits/C08_compressao_frequencia.md": "9aaf4c9a3c7751c9a2125841759f85dca783c497c5979835f073e4332b2f2316",
+    "docs/contrato_comparacoes.md": "11cf8b686ad2f192b060aff80f093a85dd50a37c485d97b145268e73f695a5b3",
+    "docs/literatura/ajustes_metodologicos.md": "b95dc4151ac6910d4a09aaa31120ace9d14ad72e6535bf81aec825239bdc722e",
+    "tmp/c08_theory/COMPRESSAO_E_INFORMACAO.md": "cf8937a75d8fbbfa847b8d2f3d9ab0648d9eb2bb9c69b9f6c5f041bf9b3f1d2d",
+    "tmp/c08_theory/validation.json": "641ce5f0f5ed31d7365b0dda88a5b7d3dd30c60ddf35ad17f8e6ffee7b7e5dfa",
+    "tmp/c08_response_approximation/DESENHO_C08.md": "8a8160c6afe842a2d73b333a3f14fcbc09536230f9f2f5cccab6b402882aeda9",
+    "tmp/c08_response_approximation/preflight.json": "7fcf1600fabae21b88f324eb7908c440505a261df3b4cf55719c8e648ae88630",
+    "tmp/c08_response_approximation/small_oracles_v2.json": "aac0271d92cc61bb536dc627fc5dfe4bdb45f0966206a25ac874e60e7af6c862",
+    "configs/calibration/prior_predictive_500_v1.json": "f22b0a8cd7c86e477365ea02d3b37a836458d44285b0abd323bccd174c89fdfa"
+  },
+  "fixed_experiment": {
+    "parameters": [
+      "u",
+      "log10_Agw",
+      "gamma_gw",
+      "log10_Ar",
+      "log10_EFAC"
+    ],
+    "prior_bounds": [
+      [
+        0,
+        1
+      ],
+      [
+        -16,
+        -14
+      ],
+      [
+        3,
+        5.5
+      ],
+      [
+        -17,
+        -14.5
+      ],
+      [
+        -0.3010299956639812,
+        0.3010299956639812
+      ]
+    ],
+    "n_pulsars": 12,
+    "duration_years": 4.5,
+    "positive_channels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "f_ref_channel": 1,
+    "frequency_weights": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "fixed_red_slope": 4,
+    "window": "periodic independent positive Fourier channels",
+    "normalization": "C05 absolute fixed, complete Earth/pulsar terms"
+  },
+  "responses": {
+    "B": "Gamma_k(beta_k(u), y_k), beta_k=sqrt(1-(u/k)^2)",
+    "C_beta": "Gamma_k(beta_ref(u),y_k), beta_ref=sqrt(1-u^2)",
+    "C_full": "Gamma_1(beta_ref(u),y_1) repeated for all k",
+    "replace": [
+      "mean",
+      "signal_covariance"
+    ],
+    "retain": [
+      "PSD_at_true_channel_frequency",
+      "noise_PSD",
+      "fixed_scale",
+      "same_observed_B",
+      "same_W",
+      "prior",
+      "all_four_channels"
+    ]
+  },
+  "reuse": {
+    "expected_data_count": 500,
+    "expected_posterior_count": 2500,
+    "models": [
+      "A0_CN",
+      "A_CN",
+      "B_CN",
+      "A_G",
+      "B_G"
+    ],
+    "compact_primary_fields": [
+      "quantiles_unit",
+      "quantiles_physical",
+      "pit",
+      "pit_mcse",
+      "cut_cdf",
+      "cut_mcse",
+      "cdf_precision_by_level",
+      "weight_deletion_guard_by_level",
+      "replication_pass",
+      "refinement_pass"
+    ],
+    "do_not_infer_from_compact": [
+      "posterior_mean",
+      "posterior_variance",
+      "posterior_KL",
+      "uniform_CDF_error",
+      "horizontal_quantile_MCSE"
+    ],
+    "descriptive_resamples_used_for_inference": false,
+    "replace_failed_cases": false
+  },
+  "cohorts": {
+    "representative": {
+      "selection_seed": 808110101,
+      "algorithm": "NumPy default_rng/PCG64 choice(500,24,replace=False), sort IDs; no observations or truths read",
+      "ids": [
+        25,
+        26,
+        44,
+        48,
+        102,
+        142,
+        157,
+        189,
+        191,
+        197,
+        249,
+        272,
+        285,
+        313,
+        327,
+        346,
+        355,
+        380,
+        409,
+        446,
+        461,
+        463,
+        479,
+        489
+      ],
+      "n": 24
+    },
+    "stress": {
+      "n_max": 8,
+      "selection": "After binding final data SHA, choose4 smallest u and4 largest u outside representative cohort, ties by datumID; truth used for design strata only",
+      "selected_ids": null,
+      "pool_with_representative_population_statistics": false
+    },
+    "n_unique_max": 32,
+    "posterior_variants": [
+      "C_full_CN",
+      "C_full_G",
+      "C_beta_CN",
+      "C_beta_G"
+    ],
+    "new_posteriors_max": 128
+  },
+  "small_response_design": {
+    "u_nodes": [
+      0,
+      0.05,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.99,
+      1
+    ],
+    "gamma_gw": [
+      3,
+      5.5
+    ],
+    "log10_Agw": [
+      -16,
+      -14
+    ],
+    "log10_Ar": [
+      -17,
+      -14.5
+    ],
+    "log10_EFAC": [
+      -0.3010299956639812,
+      0.3010299956639812
+    ],
+    "parameter_cases": 128,
+    "response_unique_u": 8,
+    "new_frequency_channels": [
+      2,
+      3,
+      4
+    ],
+    "maximum_new_response_matrices": 24,
+    "maximum_real_multiplications": 200000000000,
+    "maximum_direct_angular_work_proxy": 2000000000,
+    "maximum_estimated_numeric_bytes": 1073741824,
+    "rss_headroom_bytes": 1610612736,
+    "weak_u_expansion_nodes": [
+      0.001,
+      0.002,
+      0.004
+    ],
+    "weak_phase_condition": "max_k y_k*u^2/2 <= 0.1 for C_beta expansion control"
+  },
+  "C_beta_dense_table": {
+    "enabled": false,
+    "requires_separate_execution_authorization": true,
+    "beta_domain_per_frequency": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "reuse_channel1_only": true,
+    "initial_nested_uniform_nodes": [
+      4097,
+      8193
+    ],
+    "threshold_patch": {
+      "channel2_denominator": 131072,
+      "channels3_4_denominator": 262144,
+      "numerators": [
+        0,
+        128
+      ]
+    },
+    "maximum_nodes_per_new_frequency": 10000,
+    "maximum_real_multiplications": 50000000000000,
+    "maximum_estimated_numeric_bytes": 1073741824,
+    "rss_headroom_bytes": 1610612736,
+    "beta_batch_size": 8,
+    "maximum_batch_real_multiplications": 50000000000,
+    "blas_threads": 1,
+    "coarse_lmax_nmu": [
+      [
+        1496,
+        3012
+      ],
+      [
+        2892,
+        5805
+      ],
+      [
+        4288,
+        8597
+      ],
+      [
+        5685,
+        11390
+      ]
+    ],
+    "fine_lmax_nmu": [
+      [
+        1536,
+        3092
+      ],
+      [
+        2932,
+        5885
+      ],
+      [
+        4328,
+        8677
+      ],
+      [
+        5725,
+        11470
+      ]
+    ],
+    "max_new_offgrid_u": 144,
+    "maximum_direct_angular_work_proxy": 8000000000,
+    "do_not_extrapolate_C07_channels_2_3_4": true,
+    "planned_real_multiplications": 48508435951296,
+    "actual_validation_nodes": 143,
+    "execution_record": "tmp/c08_beta_table/execution_authorized.json",
+    "status": "Separately authorized construction in progress; this prospective C08 campaign config remains disabled."
+  },
+  "numerical_gates": {
+    "orf_maximum_matrix_absolute_difference": 1e-08,
+    "maximum_abs_logL_difference": 0.001,
+    "maximum_fixed_CDF_deterministic_difference": 0.002,
+    "maximum_quantile_reference_difference_prior_width": 0.001,
+    "iid_cdf_mcse_max": 0.00335,
+    "single_deletion_bound_max": 0.00335,
+    "independent_replicates": 4,
+    "iid_levels": [
+      16384,
+      65536
+    ],
+    "test_replicate_family_alpha": 0.05,
+    "test_refinement_family_alpha": 0.05,
+    "population_new_targets": 128,
+    "all_failures_retained": true,
+    "scientific_C_misspecification_not_sampler_failure": true,
+    "no_automatic_seed_retry": true
+  },
+  "inference_proposal": {
+    "algorithm": "C07 audited target-seeded training plus exact Gaussian/Student IID importance",
+    "training_steps": 8192,
+    "chains": 4,
+    "EM_points": 2048,
+    "local_gaussian_components": 4,
+    "local_narrow_total_weight": 0.75,
+    "local_wide_total_weight": 0.1,
+    "local_wide_covariance_factor": 9,
+    "global_student_total_weight": 0.15,
+    "global_student_df": 5,
+    "global_student_scale": 3,
+    "fitting_uses_truth": false,
+    "fit_reused_from_B_allowed_only_as_initialization": true,
+    "old_raw_denominator_never_changed": true
+  },
+  "seeds": {
+    "cohort": 808110101,
+    "C_full_training": 808110201,
+    "C_beta_training": 808110202,
+    "C_full_production": 808110301,
+    "C_beta_production": 808110302,
+    "orf_validation": 808110401,
+    "matched_C_controls": 808110501,
+    "paired_bootstrap": 808110601,
+    "optional_moment_replay_analysis": 808110701
+  },
+  "cost": {
+    "new_C_posteriors_max": 128,
+    "likelihood_values_per_training_including_initial": 32772,
+    "likelihood_values_per_production": 327680,
+    "new_C_training_likelihood_values": 4194816,
+    "new_C_production_likelihood_values": 41943040,
+    "new_C_total_likelihood_values": 46137856,
+    "maximum_C_likelihood_values": 60000000,
+    "active_native_banks": 1,
+    "maximum_native_estimated_numeric_bytes": 4294967296,
+    "maximum_active_raw_bytes": 1073741824,
+    "max_active_C_targets": 16,
+    "raw_retirement_requires_verified_archive": true,
+    "execution_time_is_not_guaranteed": true,
+    "required_C07_high_replay_likelihood_values": 41943040,
+    "new_C_plus_required_replay_likelihood_values": 88080896,
+    "maximum_combined_C_inference_replay_logL_values": 110000000,
+    "optional_KL_cross_only_if_required_replays_reused": 1048576,
+    "optional_total_including_redundant_replay_not_additive": true
+  },
+  "optional_moment_replays": {
+    "enabled": false,
+    "data_ids": [
+      25,
+      26,
+      44,
+      48
+    ],
+    "families": [
+      "A_G",
+      "B_G"
+    ],
+    "levels": [
+      65536
+    ],
+    "replicates": 4,
+    "exact_replay_likelihood_values": 2097152,
+    "cross_B_on_A_likelihood_values": 1048576,
+    "total_likelihood_values": 3145728,
+    "maximum_likelihood_values": 4000000,
+    "purposes": [
+      "moments_influence_MCSE",
+      "selected_posterior_KL_AG_to_BG"
+    ],
+    "do_not_claim_population_average_ordering_from_four_cases": true,
+    "comment_v3": "A_G/B_G high raws for these four IDs are already covered by required 32-case replays. Optional moments add no logL; KL cross adds 1,048,576, not a duplicate replay charge."
+  },
+  "aggregate_analysis": {
+    "primary_u_quantile": 0.95,
+    "secondary_u_quantiles": [
+      0.05,
+      0.5,
+      0.9
+    ],
+    "central_interval": [
+      0.05,
+      0.95
+    ],
+    "primary_effect_tolerance_prior_width": 0.01,
+    "minimum_regime_bin_count": 20,
+    "u_bin_edges": [
+      0,
+      0.5,
+      0.9,
+      1
+    ],
+    "gamma_bin_edges": [
+      3,
+      4.25,
+      5.5
+    ],
+    "noise_regime": "log10(trace integrated GW covariance / trace integrated intrinsic+white covariance), true parameters for labeled diagnostics only",
+    "paired_bootstrap_replicates": 10000,
+    "bootstrap_family_alpha": 0.05,
+    "quantile_uncertainty": "500-case compact quantiles remain descriptive. The matched 32-case cohort requires exact high raw replay and independent-low-cut simultaneous CDF brackets for all 9 posterior families; paired shifts inherit endpoint interval arithmetic.",
+    "do_not_use_A_B_log_evidence_difference_as_Bayes_factor": true
+  },
+  "not_in_minimum": [
+    "new_observational_data",
+    "new_duration_or_window_posterior_campaign",
+    "500timesallCvariants",
+    "scalar_or_vector_sectors",
+    "C09_covariance_factorial",
+    "model_average_claim",
+    "universal_coverage_from_n24"
+  ],
+  "completion_condition": "Validated baseline posterior comparisons plus distributional T/window map with explicit scope; no claim of posterior/SBC calibration in new windows/durations.",
+  "duration_window_distribution_map": {
+    "enabled": false,
+    "purpose": "Distributional discrepancy of means/covariances, not posterior or SBC extension",
+    "duration_years": [
+      4.5,
+      9,
+      15
+    ],
+    "u_nodes": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      0.995
+    ],
+    "gamma_gw": [
+      3,
+      5.5
+    ],
+    "log10_Agw": [
+      -16,
+      -14
+    ],
+    "log10_Ar": [
+      -17,
+      -14.5
+    ],
+    "log10_EFAC": [
+      -0.3010299956639812,
+      0.3010299956639812
+    ],
+    "windows": [
+      "periodic_rectangle",
+      "periodic_Hann_projected_positive_modes1to4"
+    ],
+    "parameter_cases": 240,
+    "response_window_moment_cases": 1440,
+    "responses": [
+      "B",
+      "C_beta",
+      "C_full"
+    ],
+    "maximum_additional_harmonic_real_multiplications": 200000000000,
+    "maximum_direct_angular_work_proxy": 2000000000,
+    "maximum_moment_numeric_bytes": 268435456,
+    "maximum_ORF_numeric_bytes": 1073741824,
+    "RSS_headroom_bytes": 1610612736,
+    "workers": 1,
+    "covariance_dimension_before_compression": 40,
+    "covariance_dimension_after_compression": 10,
+    "complex_mode_covariance_dimension": 48,
+    "Hann_physical_operator": "diag(.5)+offdiag(-.25), q0=q5=0; keep only positive modes1..4",
+    "normalized_operator": "D^(-1/2) S D^(1/2), fixed D=diag(scale_k), applied to physical coefficients before normalization",
+    "pseudocovariance": "P=0 preserved by this complex-linear projection; not asserted for a general window",
+    "covariance_cross_frequency_retained": true,
+    "posterior_campaign": false,
+    "SBC_claim": false,
+    "TOA_irregular_claim": false,
+    "small_algebraic_validation": "hann_algebra_validation.json",
+    "execution_requires_separate_authorization": true
+  },
+  "required_matched_replays": {
+    "execution_enabled": false,
+    "data_cohort": "same 24 representative plus 8 frozen stress IDs used by C responses",
+    "maximum_datasets": 32,
+    "families": [
+      "A0_CN",
+      "A_CN",
+      "B_CN",
+      "A_G",
+      "B_G"
+    ],
+    "level": 65536,
+    "replicates": 4,
+    "training_likelihood_values": 0,
+    "replayed_likelihood_values": 41943040,
+    "original_raw_SHA_must_match": true,
+    "existing_compact_fields_for_cut_selection": [
+      "independent_cuts_unit"
+    ],
+    "low_high_independence": "PCG64 SeedSequence stages 320 and 420 are independent; use only saved low-level quantiles to choose endpoints.",
+    "quantile_probabilities": [
+      0.05,
+      0.5,
+      0.9,
+      0.95
+    ],
+    "parameters": "all five in prior-unit coordinates",
+    "endpoint_offsets": [
+      0,
+      -0.0005,
+      0.0005,
+      -0.001,
+      0.001,
+      -0.002,
+      0.002,
+      -0.004,
+      0.004,
+      -0.008,
+      0.008,
+      -0.016,
+      0.016,
+      -0.032,
+      0.032,
+      -0.064,
+      0.064,
+      -0.128,
+      0.128,
+      -0.256,
+      0.256
+    ],
+    "add_exact_support_endpoints": [
+      0,
+      1
+    ],
+    "maximum_endpoints_per_quantile": 23,
+    "freeze_cut_manifest_before_reading_replayed_high_samples": true,
+    "primary_family": {
+      "parameter": "u",
+      "probability": 0.95,
+      "maximum_tests": 6624,
+      "alpha": 0.025
+    },
+    "secondary_family": {
+      "other_parameter_probability_combinations": 19,
+      "maximum_tests": 125856,
+      "alpha": 0.025
+    },
+    "bracket_rule": "lower=max(cut: Fhat+z*MCSE+delta_op<p), upper=min(cut: Fhat-z*MCSE-delta_op>p); exact support CDF endpoints and simultaneous fixed-family bands. Missing numerical validation gives UNRESOLVED.",
+    "MCSE": "existing IID influence and replicate dispersion maximum; retain weight, tail, saturation and replicate checks; normal approximation is operational, not finite-sample theorem",
+    "no_horizontal_precision_assumed_from_vertical_MCSE": true,
+    "no_population_claim_for_500_small_shifts_without_additional_budget": true,
+    "deterministic_CDF_uncertainty": {
+      "operational_margin": 0.002,
+      "status": "conditional on finite coarse/fine and oracle tests plus checks in the relevant posterior domain; not a rigorous uniform bound",
+      "add_to_each_CDF_band_before_crossing": true,
+      "unresolved_if_validation_evidence_missing_or_failed": true,
+      "never_infer_uniform_CDF_bound_from_finite_max_logL_alone": true,
+      "both_backend_full_replay_not_authorized": true
+    },
+    "algorithm_source": "tmp/c08_execution_design/quantile_brackets.py",
+    "algorithm_source_sha256": "b4345a3df31ea4f7fafa34282f06a923f15c8788cce14ee917fd22ce47217c95"
+  },
+  "table_execution_record": "tmp/c08_beta_table/execution_authorized.json"
+}

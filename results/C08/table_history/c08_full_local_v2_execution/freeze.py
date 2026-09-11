@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,sys,datetime
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1];OLD=ROOT/'tmp/c08_beta_table';HIST=ROOT/'tmp/c08_full_table_execution';CONT=ROOT/'tmp/c08_full_original_diagnostics/execution';sys.path.insert(0,str(OLD));from beta_builder import sha_file,write_json
+pre=ROOT/'tmp/c08_full_local_v2_design/preflight.json';p=json.loads(pre.read_text());h=json.loads((CONT/'authorization.json').read_text())['input_source_sha256']|p['input_sha256'];files=set(HERE.glob('*.py'))|{pre,pre.parent/'PREFLIGHT.md',ROOT/'tmp/c08_beta_table_v2/patch_curve.py',CONT/'authorization.json'}
+for f in files:h[str(f.relative_to(ROOT))]=sha_file(f)
+for name,sha in h.items():
+ if sha_file(ROOT/name)!=sha:raise RuntimeError('Frozen source/input changed '+name)
+a=dict(schema='C08_C_FULL_LOCAL_V2_AUTHORIZED_v1',recorded_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),authorization=dict(allowed=True,source='Parent explicitly read PREFLIGHT.md/preflight.json and authorized exact112newnodes,72newcontrols,4directs,54references,5freshsequentialworkers',no_automatic_retry_or_refinement=True,no_C07_or_C_beta_modification=True,no_native_bank_or_posterior=True),baseline_logL=1322688,planned_additional_logL=560832,planned_cumulative_logL=1883520,maximum_additional_logL=600000,maximum_cumulative_logL=2000000,maximum_real_products=20000000000,maximum_direct_angular=2000000,maximum_numeric_bytes=1073741824,maximum_RSS_bytes=1610612736,workers=1,BLAS_threads=1,historical_cache_identities=[json.loads((HIST/'results/failure_gates.json').read_text())['identity'],json.loads((CONT/'results/report.json').read_text())['identity']],input_source_sha256=h)
+write_json(HERE/'authorization.json',a);print(json.dumps(dict(files=len(h),authorization_sha256=sha_file(HERE/'authorization.json'))))

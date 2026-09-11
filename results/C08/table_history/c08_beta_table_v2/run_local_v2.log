@@ -1,0 +1,26 @@
+{"stage": "local_coarse", "channel": 2, "nodes": 1089, "real_delta": 1151133984, "seconds": 1.7941279578953981, "RSS_peak_bytes": 294780928}
+{"stage": "local_fine", "channel": 2, "nodes": 1089, "real_delta": 3006894528, "seconds": 2.5212076669558883, "RSS_peak_bytes": 297598976}
+{"stage": "local_coarse", "channel": 3, "nodes": 1121, "real_delta": 4565039688, "seconds": 4.34483245795127, "RSS_peak_bytes": 453083136}
+{"stage": "local_fine", "channel": 3, "nodes": 1121, "real_delta": 6942142608, "seconds": 5.232873542001471, "RSS_peak_bytes": 456114176}
+{"stage": "local_coarse", "channel": 4, "nodes": 1121, "real_delta": 8929406568, "seconds": 7.257037874893285, "RSS_peak_bytes": 577585152}
+{"stage": "local_fine", "channel": 4, "nodes": 1121, "real_delta": 11830330368, "seconds": 8.233941416954622, "RSS_peak_bytes": 578846720}
+{"stage": "new_oracle_coarse", "channel": 1, "nodes": 72, "real_delta": 19611410688, "seconds": 10.468491457984783, "RSS_peak_bytes": 618184704}
+{"stage": "new_oracle_fine", "channel": 1, "nodes": 72, "real_delta": 27812878848, "seconds": 11.773256166954525, "RSS_peak_bytes": 656637952}
+{"stage": "new_oracle_coarse", "channel": 2, "nodes": 72, "real_delta": 56812615488, "seconds": 15.583148624980822, "RSS_peak_bytes": 804356096}
+{"stage": "new_oracle_fine", "channel": 2, "nodes": 72, "real_delta": 86618775168, "seconds": 19.80284037499223, "RSS_peak_bytes": 951418880}
+{"stage": "new_oracle_coarse", "channel": 3, "nodes": 72, "real_delta": 150304800960, "seconds": 28.276138124987483, "RSS_peak_bytes": 1271201792}
+{"stage": "new_oracle_fine", "channel": 3, "nodes": 72, "real_delta": 215183215872, "seconds": 36.94606541690882, "RSS_peak_bytes": 1591607296}
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/run_local_v2.py", line 129, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/run_local_v2.py", line 64, in run
+    k=row['channel'];co,cs=harmonic(k,newu,row['oracle_orders_coarse'],'new_oracle_coarse');fi,fs=harmonic(k,newu,row['oracle_orders_fine'],'new_oracle_fine');error=float(np.max(abs(co-fi)))
+                           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/run_local_v2.py", line 36, in harmonic
+    basis=RealHarmonicBasis(e['points'],lmax=lmax,nmu=nmu,budget=TableBudget(auth['maximum_numeric_bytes']-reserve,2_000_000_000_000,8),planned_batch=8);rss('basis '+label);values=np.empty((N,P,P),complex);beta=beta_from_u(nodes)
+                                                                                                                                                         ~~~^^^^^^^^^^^^^^^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table_v2/run_local_v2.py", line 30, in rss
+    if peak>auth['maximum_RSS_bytes']:raise MemoryError('Observed Darwin RSS ceiling exceeded at '+phase)
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError: Observed Darwin RSS ceiling exceeded at basis new_oracle_coarse

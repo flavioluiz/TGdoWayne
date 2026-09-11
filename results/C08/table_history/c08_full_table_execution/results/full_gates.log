@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_full_table_execution/full_gates.py", line 83, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_full_table_execution/full_gates.py", line 58, in run
+    write_json(out/'likelihood_failed.json',dict(rows=rows,failed=row));raise RuntimeError('C_full interpolation logL gate failed')
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: C_full interpolation logL gate failed

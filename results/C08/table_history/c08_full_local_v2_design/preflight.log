@@ -1,0 +1,49 @@
+{
+  "counts": {
+    "old_nodes": 8336,
+    "old_patch_nodes": 241,
+    "local_candidate_nodes": 353,
+    "newly_inserted_nodes": 112,
+    "new_nodes": 8448,
+    "old_control_points": 215,
+    "old_controls_in_patch": 57,
+    "new_control_points": 72
+  },
+  "local_harmonic": {
+    "coarse_orders": [
+      122,
+      264
+    ],
+    "fine_orders": [
+      162,
+      344
+    ],
+    "maximum_effective_beta_y": 21.816615649926636,
+    "physical_phase_y_unchanged": true,
+    "real_products": 739842816,
+    "maximum_basis_buffers": 2506048,
+    "preserve_old_nodes_after_coarse_fine_and_old_reproduction_1e_8": true
+  },
+  "budget": {
+    "own_C_full_ledger": true,
+    "baseline": {
+      "angular": 0,
+      "logL": 1322688,
+      "real": 0
+    },
+    "planned_new_real_products": 16722391296,
+    "planned_new_angular_work": 1352456,
+    "planned_new_logL": 560832,
+    "planned_cumulative_logL": 1883520,
+    "requested_cumulative_real_products_cap": 20000000000,
+    "requested_cumulative_angular_cap": 2000000,
+    "requested_new_logL_cap": 600000,
+    "requested_cumulative_logL_cap": 2000000,
+    "maximum_numeric_bytes": 1073741824,
+    "maximum_RSS_bytes": 1610612736,
+    "workers": 1,
+    "VECLIB_MAXIMUM_THREADS": 1,
+    "phase_policy": "Fresh sequential workers: local curve; full-resolution oracle coarse; oracle fine; direct+LLgates; export. No native bank. Allocator retention cannot cross workers.",
+    "no_automatic_expansion": true
+  }
+}

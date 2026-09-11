@@ -1,0 +1,762 @@
+[
+  {
+    "id": "window_design",
+    "value": {
+      "T": [
+        4.5,
+        9,
+        15
+      ],
+      "u": [
+        0,
+        0.2,
+        0.5,
+        0.8,
+        0.995
+      ],
+      "vertices": 16,
+      "moments": 1440,
+      "all_resolution_moments": 4320,
+      "real_reference_cases": 72
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_moments/map_preflight.json",
+        "sha256": "d51e7476b6ecbcac4d1f34d8c5ceed46fd5f149951e692c78259c57a1970635d",
+        "locator": "/map_design"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/moments_00/report.json",
+        "sha256": "514e59bd23f83dc7e5ab486d565e15fe529d0705e5a3298c157c5b3217b45cc9",
+        "locator": "/unique_moment_cases,/moment_evaluations_all_resolutions,/independent_real_reference_cases"
+      }
+    ]
+  },
+  {
+    "id": "window_validation",
+    "value": {
+      "moment_resolution": 1.5147067432283926e-12,
+      "metric_resolution": 1.723599041270063e-11,
+      "real_reference_max": 1.5009102981411764e-15
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_v1/moments_00/report.json",
+        "sha256": "514e59bd23f83dc7e5ab486d565e15fe529d0705e5a3298c157c5b3217b45cc9",
+        "locator": "/mean_and_covariance_normalized_resolution_max,/distribution_metric_resolution_max,/reference_checks"
+      }
+    ]
+  },
+  {
+    "id": "window_harmonic_refinement_max",
+    "value": 1.917466185830108e-12,
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_00.json",
+        "sha256": "6d09012ee754eba4b08238858c0a848f0983ee6e4ac67f3e83791f215a74a85f",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_01.json",
+        "sha256": "a79d809ba2255142e4dc1b83c034fd1c07da557cbf5298b985179d373c4d1d93",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_02.json",
+        "sha256": "e263092c3a4926b82cd35a75d56ba8dca09c6ac8b7850d9271e39619b8bb648d",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_03.json",
+        "sha256": "c0ff6b5a0a6e66b23bdaa9460bbe2142fdf3d7dff6f4510c3bb1d45536636bef",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_04.json",
+        "sha256": "a2c25a3926c5fad06fc43c93ed60a3d545cb499b6bbfc1419ed371d8db690340",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_05.json",
+        "sha256": "6d09012ee754eba4b08238858c0a848f0983ee6e4ac67f3e83791f215a74a85f",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_06.json",
+        "sha256": "73db0a960baa1b72208cb4c3565c3bde327cbe27dfed46cff0efcf7a467cbda5",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_07.json",
+        "sha256": "a79d809ba2255142e4dc1b83c034fd1c07da557cbf5298b985179d373c4d1d93",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_08.json",
+        "sha256": "8677f0438fc897d67c69f135c3f0eb63948cb80e9a1837762f6e71e3d8899996",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_09.json",
+        "sha256": "ab9092485e2cc8fcb680c1eda3453c05f9ad20cd2a64320fcb6309dc96ec200d",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_10.json",
+        "sha256": "c289e3efac81b172eebff6fcf929e3537ed0c460eb5848eca4dcecb7c079f000",
+        "locator": "/errors"
+      },
+      {
+        "path": "tmp/c08_window_map_v1/harmonic_gate_11.json",
+        "sha256": "046dd0795ee3ccb018405ac879dba7e8b8af81806dd2e7d2446f7c0eb6101532",
+        "locator": "/errors"
+      }
+    ]
+  },
+  {
+    "id": "window_direct_checks",
+    "value": {
+      "count": 12,
+      "coarse_fine": 1.168059051933076e-13,
+      "fine_harmonic": 1.3189564593283432e-13
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_v1/complete.json",
+        "sha256": "f12f22ba45bd288ac39b8167b10f4238c0cd73498914e94bc338d6ae48837afa",
+        "locator": "/workers[name=direct_*]/checks"
+      }
+    ]
+  },
+  {
+    "id": "window_omitting_cross_frequency",
+    "value": {
+      "Retangular periódica": {
+        "maximum_relative_Frobenius": 0.0,
+        "minimum_relative_Frobenius": 0.0
+      },
+      "Hann projetada": {
+        "maximum_relative_Frobenius": 0.4713828749755964,
+        "minimum_relative_Frobenius": 0.26300527242651744
+      }
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_summary_v1/summary.json",
+        "sha256": "1197605345cf920e39645f751eba6f51ed6f3b6678618c61b6ccb1a2b6ee50fc",
+        "locator": "/wrong_cross_frequency_omission"
+      }
+    ]
+  },
+  {
+    "id": "window_table_B_to_C_beta",
+    "value": {
+      "KL_p_to_q": {
+        "value": 21.17913788258166,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "mean_shift_metric_p_squared": {
+        "value": 7.145746111384097,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "covariance_difference_metric_q": {
+        "value": 8.73702698008813,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      }
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_summary_v1/envelopes.csv",
+        "sha256": "2928649a725d0b57d8262298d415ca002ad3a757e7062c9021100b819a0063b4",
+        "locator": "max per metric over rows filtered p=B,q=C_beta"
+      }
+    ]
+  },
+  {
+    "id": "window_table_B_to_C_full",
+    "value": {
+      "KL_p_to_q": {
+        "value": 21.12768457681855,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "mean_shift_metric_p_squared": {
+        "value": 7.136101791153432,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "covariance_difference_metric_q": {
+        "value": 8.727245473039885,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      }
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_summary_v1/envelopes.csv",
+        "sha256": "2928649a725d0b57d8262298d415ca002ad3a757e7062c9021100b819a0063b4",
+        "locator": "max per metric over rows filtered p=B,q=C_full"
+      }
+    ]
+  },
+  {
+    "id": "window_table_C_beta_to_C_full",
+    "value": {
+      "KL_p_to_q": {
+        "value": 0.00030562719970991044,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "mean_shift_metric_p_squared": {
+        "value": 0.0004118461761317524,
+        "T": 9.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      },
+      "covariance_difference_metric_q": {
+        "value": 0.028329644696490967,
+        "T": 15.0,
+        "u": 0.995,
+        "window": 0,
+        "eta_index": 8
+      }
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_map_summary_v1/envelopes.csv",
+        "sha256": "2928649a725d0b57d8262298d415ca002ad3a757e7062c9021100b819a0063b4",
+        "locator": "max per metric over rows filtered p=C_beta,q=C_full"
+      }
+    ]
+  },
+  {
+    "id": "G2_design_and_resources",
+    "value": {
+      "new_nodes": 67,
+      "derivatives": 12,
+      "processes": 13,
+      "RSS_bytes": 643530752,
+      "resources": {
+        "real_proxy": 183897455812,
+        "child_CPU_seconds": 95.539948,
+        "angular": 0
+      },
+      "moments": 384,
+      "moment_resolution": 1.521466318523707e-12,
+      "metric_resolution": 1.9134471784809648e-11
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_map_v1/complete.json",
+        "sha256": "be1efe581d61226bf1054c1bb3bbafd47c6e91fb3e4ea547ba60857517aafb2b",
+        "locator": "top-level counts/resources and /workers[name=moments_00]"
+      }
+    ]
+  },
+  {
+    "id": "G2_independent_metrics",
+    "value": {
+      "count": 384,
+      "max_errors": {
+        "KL": 1.1102230246251565e-15,
+        "mean_squared_in_p": 1.5543122344752192e-15,
+        "covariance_in_q": 2.4899706176923835e-15
+      }
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_summary_v1/summary.json",
+        "sha256": "32594aab16fd0664a4ec78079f4a19c76be271e8bfd94d8b9902614633ad153c",
+        "locator": "/independent_fine_comparisons,/independent_metric_max_errors"
+      }
+    ]
+  },
+  {
+    "id": "G2_table",
+    "value": [
+      {
+        "p": "B",
+        "q": "C_beta",
+        "metric": "KL",
+        "maximum": 1.886833412787258,
+        "u": 0.99,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "B",
+        "q": "C_beta",
+        "metric": "mean_squared_in_p",
+        "maximum": 1.738523979883225,
+        "u": 0.99,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "B",
+        "q": "C_beta",
+        "metric": "covariance_in_q",
+        "maximum": 2.1317658206714962,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "B",
+        "q": "C_full",
+        "metric": "KL",
+        "maximum": 3.409087315695403,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "B",
+        "q": "C_full",
+        "metric": "mean_squared_in_p",
+        "maximum": 2.291685787273503,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "B",
+        "q": "C_full",
+        "metric": "covariance_in_q",
+        "maximum": 2.854373808031715,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "C_beta",
+        "q": "C_full",
+        "metric": "KL",
+        "maximum": 1.3841042883407602,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "C_beta",
+        "q": "C_full",
+        "metric": "mean_squared_in_p",
+        "maximum": 1.0091051461945588,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      },
+      {
+        "p": "C_beta",
+        "q": "C_full",
+        "metric": "covariance_in_q",
+        "maximum": 1.5754178725522683,
+        "u": 1.0,
+        "eta_index": 8,
+        "eta": [
+          -14.0,
+          3.0,
+          -17.0,
+          -0.3010299956639812
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "path": "tmp/c08_weak_summary_v1/summary.json",
+        "sha256": "32594aab16fd0664a4ec78079f4a19c76be271e8bfd94d8b9902614633ad153c",
+        "locator": "/extrema"
+      }
+    ]
+  },
+  {
+    "id": "G2_phase_freeze_endpoint",
+    "value": {
+      "p": "C_beta",
+      "q": "C_full",
+      "u": "1.0",
+      "KL_min": "2.7723074854028297e-10",
+      "KL_max": "1.3841042883407602",
+      "mean_squared_in_p_min": "4.226272686934687e-10",
+      "mean_squared_in_p_max": "1.0091051461945588",
+      "covariance_in_q_min": "1.6237680452558666e-05",
+      "covariance_in_q_max": "1.5754178725522683"
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_summary_v1/g2_envelopes.csv",
+        "sha256": "5e4cf34f62d2f3c5f32abfca9967795247b144c7cc2d02b9c3d732d9051a58bf",
+        "locator": "p=C_beta,q=C_full,u=1"
+      }
+    ]
+  },
+  {
+    "id": "weak_derivative_and_threshold_checks",
+    "value": {
+      "finite_difference_max": 2.9257142416457818e-08,
+      "threshold_max": 1.301181384860736e-12,
+      "beta1_cache_max": 0.0
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_map_v1/complete.json",
+        "sha256": "be1efe581d61226bf1054c1bb3bbafd47c6e91fb3e4ea547ba60857517aafb2b",
+        "locator": "/workers[name=harmonic_*]"
+      },
+      {
+        "path": "tmp/c08_weak_dispersion/execution_spec.json",
+        "sha256": "0bf2a3a9a35bb3996b706f8375afbaac178ecba77d16363c7aa70d2a398729bb",
+        "locator": "/derivative_checks,/gates"
+      }
+    ]
+  },
+  {
+    "id": "weak_remainders",
+    "value": [
+      {
+        "quantity": "Gamma",
+        "u": "0.001",
+        "relative_remainder_min": "0.0002059271340143047",
+        "relative_remainder_max": "0.0002059271340143047",
+        "absolute_remainder_min": "1.0364304847082253e-08",
+        "absolute_remainder_max": "1.0364304847082253e-08"
+      },
+      {
+        "quantity": "Gamma",
+        "u": "0.002",
+        "relative_remainder_min": "0.0008237021231173992",
+        "relative_remainder_max": "0.0008237021231173992",
+        "absolute_remainder_min": "1.6573163741212766e-07",
+        "absolute_remainder_max": "1.6573163741212766e-07"
+      },
+      {
+        "quantity": "Gamma",
+        "u": "0.004",
+        "relative_remainder_min": "0.0032946511705017494",
+        "relative_remainder_max": "0.0032946511705017494",
+        "absolute_remainder_min": "2.645456959751771e-06",
+        "absolute_remainder_max": "2.645456959751771e-06"
+      },
+      {
+        "quantity": "C",
+        "u": "0.001",
+        "relative_remainder_min": "0.00015523561110101095",
+        "relative_remainder_max": "0.00016542748498671564",
+        "absolute_remainder_min": "8.466764119487854e-13",
+        "absolute_remainder_max": "5.459881693853728e-08"
+      },
+      {
+        "quantity": "C",
+        "u": "0.002",
+        "relative_remainder_min": "0.0006209919998604324",
+        "relative_remainder_max": "0.000660594798872749",
+        "absolute_remainder_min": "1.354127552310036e-11",
+        "absolute_remainder_max": "8.732635027413001e-07"
+      },
+      {
+        "quantity": "C",
+        "u": "0.004",
+        "relative_remainder_min": "0.002484731062423",
+        "relative_remainder_max": "0.002642771249799658",
+        "absolute_remainder_min": "2.163077351166049e-10",
+        "absolute_remainder_max": "1.3951865555986506e-05"
+      },
+      {
+        "quantity": "mean",
+        "u": "0.001",
+        "relative_remainder_min": "0.0001521626180756274",
+        "relative_remainder_max": "0.00016691318812332733",
+        "absolute_remainder_min": "1.2896127992753608e-13",
+        "absolute_remainder_max": "6.477103711633726e-09"
+      },
+      {
+        "quantity": "mean",
+        "u": "0.002",
+        "relative_remainder_min": "0.0006089218338941826",
+        "relative_remainder_max": "0.0006601989644231514",
+        "absolute_remainder_min": "2.0622231722854306e-12",
+        "absolute_remainder_max": "1.0359433961865523e-07"
+      },
+      {
+        "quantity": "mean",
+        "u": "0.004",
+        "relative_remainder_min": "0.002436415790994714",
+        "relative_remainder_max": "0.0026411909506904316",
+        "absolute_remainder_min": "3.29508944389891e-11",
+        "absolute_remainder_max": "1.6549839549971588e-06"
+      },
+      {
+        "quantity": "covariance",
+        "u": "0.001",
+        "relative_remainder_min": "0.00014763939749795748",
+        "relative_remainder_max": "0.00018874945462879966",
+        "absolute_remainder_min": "5.402001251312726e-15",
+        "absolute_remainder_max": "1.102102753300066e-08"
+      },
+      {
+        "quantity": "covariance",
+        "u": "0.002",
+        "relative_remainder_min": "0.0005908133732217774",
+        "relative_remainder_max": "0.000755367541903825",
+        "absolute_remainder_min": "8.640119227085062e-14",
+        "absolute_remainder_max": "1.762678352867279e-07"
+      },
+      {
+        "quantity": "covariance",
+        "u": "0.004",
+        "relative_remainder_min": "0.002363893518057896",
+        "relative_remainder_max": "0.00302117509802774",
+        "absolute_remainder_min": "1.379556106932067e-12",
+        "absolute_remainder_max": "2.815889459350579e-06"
+      }
+    ],
+    "sources": [
+      {
+        "path": "tmp/c08_weak_summary_v1/weak_envelopes.csv",
+        "sha256": "5a9252b84b4d4c966b16d30b37f50d1447a9d6483995e0abcbbd94f78ede1a24",
+        "locator": "all 12 rows; relative columns are fractions, chapter converts to percent"
+      }
+    ]
+  },
+  {
+    "id": "weak_remainder_ratios",
+    "value": {
+      "Gamma": [
+        {
+          "eta_index": 0,
+          "quantity": "Gamma",
+          "u_pair": [
+            0.001,
+            0.002
+          ],
+          "remainder_ratio": 15.990617784538077,
+          "denominator_above_roundoff_guide": true,
+          "roundoff_guide": 1.4210854715202004e-14,
+          "guide_not_a_certified_error_bound": true
+        },
+        {
+          "eta_index": 0,
+          "quantity": "Gamma",
+          "u_pair": [
+            0.002,
+            0.004
+          ],
+          "remainder_ratio": 15.962293024193496,
+          "denominator_above_roundoff_guide": true,
+          "roundoff_guide": 1.4210854715202004e-14,
+          "guide_not_a_certified_error_bound": true
+        }
+      ],
+      "suppressed": [
+        {
+          "eta_index": 0,
+          "quantity": "covariance",
+          "u_pair": [
+            0.001,
+            0.002
+          ],
+          "remainder_ratio": null,
+          "denominator_above_roundoff_guide": false,
+          "roundoff_guide": 1.4210854715202004e-14,
+          "guide_not_a_certified_error_bound": true
+        },
+        {
+          "eta_index": 2,
+          "quantity": "covariance",
+          "u_pair": [
+            0.001,
+            0.002
+          ],
+          "remainder_ratio": null,
+          "denominator_above_roundoff_guide": false,
+          "roundoff_guide": 1.4210854715202004e-14,
+          "guide_not_a_certified_error_bound": true
+        }
+      ]
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_summary_v1/summary.json",
+        "sha256": "32594aab16fd0664a4ec78079f4a19c76be271e8bfd94d8b9902614633ad153c",
+        "locator": "/weak_remainder_ratios; Gamma repeated across nuisance vertices"
+      }
+    ]
+  },
+  {
+    "id": "weak_sign_and_moments",
+    "value": {
+      "delta_Gamma": "C_beta-B = -u^2/2*(1-k^-2)*D_k plus remainder",
+      "delta_C": "s_g,k delta_Gamma; s_g=Pgw/scale; all noise retained in C_GR",
+      "delta_mean": "sum_k w_k tr(H_i delta_C_k)",
+      "delta_covariance": "sum_k w_k^2 [tr(H_i delta_C_k H_j C_GR,k)+tr(H_i C_GR,k H_j delta_C_k)]",
+      "proper_complex_covariance_has_no_extra_factor2": true,
+      "rest_policy": "Save actual, first order, remainder norms and consecutive-u ratios; no required ratio16, no proof claim.",
+      "C_full_excluded_from_u_squared_fit": "C_full has a finite-phase u=0 constant term."
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_weak_dispersion/execution_spec.json",
+        "sha256": "0bf2a3a9a35bb3996b706f8375afbaac178ecba77d16363c7aa70d2a398729bb",
+        "locator": "/weak_expansion"
+      },
+      {
+        "path": "tmp/c08_weak_dispersion/weak_moment_deltas.py",
+        "sha256": "7141b34160ee17c378e81eac4a80d9d6dbe08c2e67f739adc5694bfc3f8437e1",
+        "locator": "first_variation; proper-complex trace product rule"
+      }
+    ]
+  },
+  {
+    "id": "Hann_scope_and_normalization",
+    "value": {
+      "enabled": false,
+      "purpose": "Distributional discrepancy of means/covariances, not posterior or SBC extension",
+      "duration_years": [
+        4.5,
+        9,
+        15
+      ],
+      "u_nodes": [
+        0,
+        0.2,
+        0.5,
+        0.8,
+        0.995
+      ],
+      "gamma_gw": [
+        3,
+        5.5
+      ],
+      "log10_Agw": [
+        -16,
+        -14
+      ],
+      "log10_Ar": [
+        -17,
+        -14.5
+      ],
+      "log10_EFAC": [
+        -0.3010299956639812,
+        0.3010299956639812
+      ],
+      "windows": [
+        "periodic_rectangle",
+        "periodic_Hann_projected_positive_modes1to4"
+      ],
+      "parameter_cases": 240,
+      "response_window_moment_cases": 1440,
+      "responses": [
+        "B",
+        "C_beta",
+        "C_full"
+      ],
+      "maximum_additional_harmonic_real_multiplications": 200000000000,
+      "maximum_direct_angular_work_proxy": 2000000000,
+      "maximum_moment_numeric_bytes": 268435456,
+      "maximum_ORF_numeric_bytes": 1073741824,
+      "RSS_headroom_bytes": 1610612736,
+      "workers": 1,
+      "covariance_dimension_before_compression": 40,
+      "covariance_dimension_after_compression": 10,
+      "complex_mode_covariance_dimension": 48,
+      "Hann_physical_operator": "diag(.5)+offdiag(-.25), q0=q5=0; keep only positive modes1..4",
+      "normalized_operator": "D^(-1/2) S D^(1/2), fixed D=diag(scale_k), applied to physical coefficients before normalization",
+      "pseudocovariance": "P=0 preserved by this complex-linear projection; not asserted for a general window",
+      "covariance_cross_frequency_retained": true,
+      "posterior_campaign": false,
+      "SBC_claim": false,
+      "TOA_irregular_claim": false,
+      "small_algebraic_validation": "hann_algebra_validation.json",
+      "execution_requires_separate_authorization": true
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_moments/map_preflight.json",
+        "sha256": "d51e7476b6ecbcac4d1f34d8c5ceed46fd5f149951e692c78259c57a1970635d",
+        "locator": "/map_design"
+      },
+      {
+        "path": "tmp/c08_window_moments/window_moments.py",
+        "sha256": "bcc262f3a6c53e020715b9b86ae89881699063d5faaf76795e3cf276df6362a4",
+        "locator": "finite positive-mode projection and full frequency covariance"
+      }
+    ]
+  },
+  {
+    "id": "figure_mean_is_square_root",
+    "value": {
+      "window": true,
+      "G2": true
+    },
+    "sources": [
+      {
+        "path": "tmp/c08_window_moments/summarize_map.py",
+        "sha256": "4a2f61345c59f202aecd842da750c6b8062828f9b39efb429207aba7f2107800",
+        "locator": "definitions/sqrt branch"
+      },
+      {
+        "path": "tmp/c08_weak_dispersion/plot_completed.py",
+        "sha256": "0a93c108190da94fd3e6ae985e742c84bc23a11fbe8d658ce3c142682d252910",
+        "locator": "metric mean_squared_in_p sqrt branch"
+      }
+    ]
+  }
+]

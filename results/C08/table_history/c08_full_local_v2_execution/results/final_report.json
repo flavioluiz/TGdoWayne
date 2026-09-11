@@ -1,0 +1,157 @@
+{
+  "RSS_peak_bytes": 712392704,
+  "channels": 4,
+  "checks": {
+    "maximum_Bernstein_hermiticity_error": 0.0,
+    "minimum_Bernstein_eigenvalue": -2.7903034844784863e-16
+  },
+  "expanded_channels_bitexact": true,
+  "finite_checks_not_uniform_proof": true,
+  "gate_report_sha256": "97781f3e32045611c95c82af9273eb75c3840cfad9c502bf07bedaa54b4ffe7a",
+  "identity": "ae5a1192bfc00d6f09514dc9bdcf3017d3cd4e106f1b7bdc57169276f96d5e45",
+  "no_C07_or_C_beta_modifications": true,
+  "no_posterior_or_native_bank": true,
+  "nodes": 8448,
+  "resource_cumulative": {
+    "angular": 1352456,
+    "logL": 1883520,
+    "real": 16722391296
+  },
+  "resource_delta": {
+    "angular": 1352456,
+    "logL": 560832,
+    "real": 16722391296
+  },
+  "seconds": 5.552383124944754,
+  "stage": "export",
+  "status": "C_FULL_V2_PASS_STATED_FINITE_TABLE_GATES_ONLY",
+  "table_sha256": "96e552bc97b4978fbe8c8c825c63cef8c7cf6ad31895b4eb22204aaaf0f150ed",
+  "u0_C_full_minus_B_matrix_max_by_channel": [
+    0.0,
+    0.0007036636951799872,
+    0.0006701627120303465,
+    0.0005459261535353167
+  ],
+  "u1_rank": 5,
+  "gates": {
+    "RSS_peak_bytes": 323436544,
+    "direct_maximum": 1.2089408496501816e-14,
+    "harmonic_coarse_fine": 1.9562129693895258e-13,
+    "historical_controls": 215,
+    "historical_outside_Gamma_bitexact": true,
+    "identity": "ae5a1192bfc00d6f09514dc9bdcf3017d3cd4e106f1b7bdc57169276f96d5e45",
+    "maximum_SciPy_logpdf_error": 5.002220859751105e-12,
+    "maximum_covariance_error": 1.0633197288494731e-15,
+    "maximum_logL_coarse_fine": 3.722212295542704e-05,
+    "maximum_logL_fine_oracle": 1.2951240933034569e-05,
+    "maximum_mean_error": 3.1746060454104016e-16,
+    "new_controls": 72,
+    "resource_delta": {
+      "angular": 1352456,
+      "logL": 560832,
+      "real": 16722391296
+    },
+    "seconds": 2.907115290989168,
+    "stage": "gates",
+    "status": "C_FULL_V2_GATES_PASS_PENDING_EXPORT"
+  },
+  "execution_controller": {
+    "status": "SEQUENTIAL_C_FULL_V2_COMPLETED",
+    "rows": [
+      {
+        "stage": "local",
+        "exit_code": 0,
+        "seconds": 4.4788835840299726
+      },
+      {
+        "stage": "oracle_coarse",
+        "exit_code": 0,
+        "seconds": 4.160777583019808
+      },
+      {
+        "stage": "oracle_fine",
+        "exit_code": 0,
+        "seconds": 4.306015582988039
+      },
+      {
+        "stage": "gates",
+        "exit_code": 0,
+        "seconds": 5.101685957983136
+      },
+      {
+        "stage": "export",
+        "exit_code": 0,
+        "seconds": 7.736694916966371
+      }
+    ],
+    "seconds": 25.787917125038803,
+    "maximum_worker_RSS_bytes": 712392704,
+    "workers_simultaneous": 1,
+    "BLAS_threads": 1
+  },
+  "read_only_audit": {
+    "RSS_peak_bytes": 697597952,
+    "all_exported_channels_bitexact": true,
+    "all_reference_numeric_fields_finite": true,
+    "array_metadata_sha256": {
+      "coeff": {
+        "dtype": "<c16",
+        "sha256": "4a3a67f14364056e4e882ec6a4816fa82b313a1ab9d5edf5ba9d18377a5e32e3",
+        "shape": [
+          8447,
+          4,
+          4,
+          12,
+          12
+        ]
+      },
+      "matrices": {
+        "dtype": "<c16",
+        "sha256": "e099149fc56043b5715618f8a7ea430acd4f01da673fd944e69eac67de949444",
+        "shape": [
+          8448,
+          4,
+          12,
+          12
+        ]
+      },
+      "nodes": {
+        "dtype": "<f8",
+        "sha256": "6ba575b5e9bf3d4a02a642452341ae29e51b0cc9c6c0767d2666dc420a58ce19",
+        "shape": [
+          8448
+        ]
+      }
+    },
+    "checked_LL_caches": 287,
+    "checked_independent_references": 54,
+    "frozen_files": 272,
+    "no_ORF_or_logL_evaluations": true,
+    "old_nodes_and_external_coefficients_bitexact": true,
+    "reference_finitude_guard_note": "Executed source writes JSON with allow_nan=False before PASS/export; explicit np.isfinite at comparison point is recommended for clearer future errors, without changing this source.",
+    "resource_cumulative": {
+      "angular": 1352456,
+      "logL": 1883520,
+      "real": 16722391296
+    },
+    "resource_delta": {
+      "angular": 1352456,
+      "logL": 560832,
+      "real": 16722391296
+    },
+    "seconds": 3.443248042021878,
+    "source_sha256": "7105adb92da2e63c12c77f7c7b108cce36eea8ecd79930f0353689e5efc141a1",
+    "status": "READ_ONLY_C_FULL_V2_AUDIT_PASS",
+    "table_sha256": "96e552bc97b4978fbe8c8c825c63cef8c7cf6ad31895b4eb22204aaaf0f150ed"
+  },
+  "original_candidate_failed_and_preserved": true,
+  "original_failure_path": "tmp/c08_full_table_execution/results/failure_gates.json",
+  "original_diagnostic_report_path": "tmp/c08_full_original_diagnostics/execution/results/report.json",
+  "finite_tests_not_posterior_validation": true,
+  "derived_from_sha256": {
+    "tmp/c08_full_local_v2_execution/results/export_report.json": "3a2144cfc18636e07cb83a61176e8ce65a8f5c3f5439f3f40c156835c3bdb08c",
+    "tmp/c08_full_local_v2_execution/results/gates_report.json": "97781f3e32045611c95c82af9273eb75c3840cfad9c502bf07bedaa54b4ffe7a",
+    "tmp/c08_full_local_v2_execution/results/controller_report.json": "8a6534534a1d4ceee6feb8c6dbfd0f1e429c8535e7e7465421eb06d03069378b",
+    "tmp/c08_full_local_v2_execution/audit_completed.json": "b9103ce83bfffee7e1ab2d9949eaffe1f0ceb340ce7accef74142bd75e304a17"
+  }
+}

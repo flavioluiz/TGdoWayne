@@ -1,0 +1,98 @@
+{
+  "schema": "C08_OFFLINE_TRANSPORT_SELECTION_PROPOSAL_v3",
+  "status": "NOT_AN_EXECUTABLE_SELECTION_NO_INVENTORY_NO_PACK",
+  "new_metadata_root_proposed": "tmp/c08_offline_transport_ROOT",
+  "new_metadata_files_proposed": [
+    "complete.json",
+    "ROOT_review.json"
+  ],
+  "completion_schema": "C08_OFFLINE_ROOT_COMPLETE_v1",
+  "review_schema": "ROOT_C08_OFFLINE_ROOT_REVIEW_v1",
+  "artifact_namespace": "repository",
+  "scope": "C08_FINITE_OFFLINE_SUPPLEMENTAL_PAIRED_LOSSLESS_TRANSPORT_ONLY",
+  "completion_sha256": null,
+  "ROOT_review_sha256": null,
+  "identity": null,
+  "artifact_count": null,
+  "proposed_lock_path": "tmp/c08_posterior_campaign/.campaign.lock",
+  "proposed_payload_roots": [
+    {
+      "path": "tmp/c08_finite_domain_execution_CANDIDATE",
+      "purpose": "Immutable FAILED original,12ORF+3LL complete,143 first finite reports,requests/logs/source snapshots"
+    },
+    {
+      "path": "tmp/c08_finite_assess_continuation_OUTPUT",
+      "purpose": "Immutable181 additional offline finite assessments and separate cumulative-cost receipts"
+    },
+    {
+      "path": "tmp/c08_finite_ROOT",
+      "purpose": "ROOT original/continuation authorizations,source reviews,launchers,cost records and consolidated finite review"
+    },
+    {
+      "path": "tmp/c08_supplemental_ROOT",
+      "purpose": "All288 offline supplemental/evidence documents,index,authorizations and paired-synthesis reviews/lifecycle"
+    },
+    {
+      "path": "tmp/c08_paired_synthesis_OUTPUT",
+      "purpose": "Closed32x9 paired compact arrays/CSV/JSON/PDF,all failures retained; review still ROOT-owned"
+    }
+  ],
+  "proposed_source_roots": [
+    "tmp/c08_finite_domain_executor_v1",
+    "tmp/c08_finite_assess_continuation_v1",
+    "tmp/c08_finite_executor_review_v1",
+    "tmp/c08_posterior_domain_preflight",
+    "tmp/c08_synthesis_design",
+    "tmp/c08_paired_synthesis_v1"
+  ],
+  "proposed_individual_files": [
+    "tmp/c08_G0/finite_assessment_continuation_budget_v1.json",
+    "tmp/c08_campaign_archive_v3/scripts/campanha_compressao.py",
+    "tmp/c08_campaign_archive_v3/tests/test_repository_namespace.py",
+    "tmp/c08_campaign_archive_v3/README.md",
+    "tmp/c08_campaign_archive_v3/v3.patch",
+    "tmp/c08_campaign_archive_v3/toy_result.json",
+    "tmp/c08_campaign_archive_v3/toy.log",
+    "tmp/c08_campaign_archive_v3/selection_proposal.json",
+    "tmp/c08_campaign_archive_v3/manifest.json"
+  ],
+  "optional_QA_roots": [
+    "tmp/c08_synthesis_visual"
+  ],
+  "references_only_no_duplicate_bytes": [
+    {
+      "product": "C07 original data,models,proposals,checkpoints,priors and source closure",
+      "policy": "Resolve existing C07 repository/bundle references; no C07 tree copied"
+    },
+    {
+      "product": "C08 main and engineering campaigns,LOW archives,tables and runtime approvals",
+      "policy": "Use already-produced engineering/main bundle; no whole campaign or tables copied"
+    },
+    {
+      "product": "C07 HIGH replay plus optionalKL and original source dependencies",
+      "policy": "Use existing tmp/c08_campaign_archive_v2/bundle_replay_v1; no replay root or restored tree copied"
+    },
+    {
+      "product": "Already-transported C08_G0/allocation/shared sources",
+      "policy": "Keep external relativepath+SHA dependencies derived from frozen existing manifests; avoid duplicate top-level sources"
+    }
+  ],
+  "exclusions": [
+    "C09 sources or results",
+    "posterior raw directories",
+    "all __pycache__/.DS_Store/locks",
+    "restored bundle trees",
+    "existing bundle archives",
+    "new inventory/bundle output from its own selection"
+  ],
+  "pending_before_inventory": [
+    "ROOT consolidates exact selected-file list in new metadata completion with repository-relative artifacts and real hashes/sizes",
+    "ROOT review binds namespace=repository,identity,count,completion SHA,root path and lock path",
+    "List all external dependencies with real path/SHA from existing manifests; none are fabricated here",
+    "ROOT reads v3 delta/source; only then plan actual inventory and review it before pack"
+  ],
+  "originals_moved_or_copied_into_metadata": false,
+  "real_selected_file_hashing_performed": false,
+  "real_arrays_opened": false,
+  "new_physics": 0
+}

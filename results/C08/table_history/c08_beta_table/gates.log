@@ -1,0 +1,24 @@
+{"stage": "interpolation_curves", "completed_channel": 1, "RSS_peak_bytes": 290684928}
+{"stage": "interpolation_curves", "completed_channel": 2, "RSS_peak_bytes": 746209280}
+{"stage": "interpolation_curves", "completed_channel": 3, "RSS_peak_bytes": 919060480}
+{"stage": "interpolation_curves", "completed_channel": 4, "RSS_peak_bytes": 919060480}
+{"stage": "direct", "completed": 2, "angular_work": 578848, "RSS_peak_bytes": 921387008}
+{"stage": "direct", "completed": 4, "angular_work": 2924448, "RSS_peak_bytes": 926580736}
+{"stage": "direct", "completed": 6, "angular_work": 77503720, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 8, "angular_work": 301135472, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 10, "angular_work": 301727160, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 12, "angular_work": 305428288, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 14, "angular_work": 463789896, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 16, "angular_work": 950522696, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 18, "angular_work": 951127368, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 20, "angular_work": 956506256, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 22, "angular_work": 1229924784, "RSS_peak_bytes": 971505664}
+{"stage": "direct", "completed": 24, "angular_work": 2051757104, "RSS_peak_bytes": 971505664}
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table/validate_table.py", line 130, in <module>
+    if __name__=='__main__':run()
+                            ~~~^^
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c08_beta_table/validate_table.py", line 112, in run
+    write_json(dest/'likelihood_failed.json',dict(rows=details,maximum_coarse_fine=maxcf,maximum_fine_oracle=maxfo,worst_coarse_fine=worstcf,worst_fine_oracle=worstfo));raise ValueError('Likelihood interpolation gate failed; no automatic refinement')
+                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Likelihood interpolation gate failed; no automatic refinement

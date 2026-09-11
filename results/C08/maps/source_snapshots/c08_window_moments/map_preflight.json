@@ -1,0 +1,1394 @@
+{
+  "schema": "C08_DURATION_WINDOW_MAP_PREFLIGHT_v1",
+  "status": "DESIGN_ONLY_NO_PHYSICAL_EXECUTION",
+  "execution_enabled": false,
+  "map_design": {
+    "enabled": false,
+    "purpose": "Distributional discrepancy of means/covariances, not posterior or SBC extension",
+    "duration_years": [
+      4.5,
+      9,
+      15
+    ],
+    "u_nodes": [
+      0,
+      0.2,
+      0.5,
+      0.8,
+      0.995
+    ],
+    "gamma_gw": [
+      3,
+      5.5
+    ],
+    "log10_Agw": [
+      -16,
+      -14
+    ],
+    "log10_Ar": [
+      -17,
+      -14.5
+    ],
+    "log10_EFAC": [
+      -0.3010299956639812,
+      0.3010299956639812
+    ],
+    "windows": [
+      "periodic_rectangle",
+      "periodic_Hann_projected_positive_modes1to4"
+    ],
+    "parameter_cases": 240,
+    "response_window_moment_cases": 1440,
+    "responses": [
+      "B",
+      "C_beta",
+      "C_full"
+    ],
+    "maximum_additional_harmonic_real_multiplications": 200000000000,
+    "maximum_direct_angular_work_proxy": 2000000000,
+    "maximum_moment_numeric_bytes": 268435456,
+    "maximum_ORF_numeric_bytes": 1073741824,
+    "RSS_headroom_bytes": 1610612736,
+    "workers": 1,
+    "covariance_dimension_before_compression": 40,
+    "covariance_dimension_after_compression": 10,
+    "complex_mode_covariance_dimension": 48,
+    "Hann_physical_operator": "diag(.5)+offdiag(-.25), q0=q5=0; keep only positive modes1..4",
+    "normalized_operator": "D^(-1/2) S D^(1/2), fixed D=diag(scale_k), applied to physical coefficients before normalization",
+    "pseudocovariance": "P=0 preserved by this complex-linear projection; not asserted for a general window",
+    "covariance_cross_frequency_retained": true,
+    "posterior_campaign": false,
+    "SBC_claim": false,
+    "TOA_irregular_claim": false,
+    "small_algebraic_validation": "hann_algebra_validation.json",
+    "execution_requires_separate_authorization": true
+  },
+  "rows": [
+    {
+      "duration_years": 4.5,
+      "channel": 1,
+      "phase_max": 1396.2634015954636,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.6
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.09987492177719094
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ],
+      "unique_nodes": 5,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 1497,
+          "nmu": 3013,
+          "real_products": 540893760,
+          "arrays_estimate_bytes": 113188224
+        },
+        {
+          "label": "H01",
+          "lmax": 1497,
+          "nmu": 3093,
+          "real_products": 555255360,
+          "arrays_estimate_bytes": 114242944
+        },
+        {
+          "label": "H11",
+          "lmax": 1537,
+          "nmu": 3093,
+          "real_products": 570101760,
+          "arrays_estimate_bytes": 115401664
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 4.5,
+      "channel": 2,
+      "phase_max": 2792.5268031909272,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.99498743710662
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9682458365518543
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.916515138991168
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.8674639761972828
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 2893,
+          "nmu": 5806,
+          "real_products": 3626845632,
+          "arrays_estimate_bytes": 220749248
+        },
+        {
+          "label": "H01",
+          "lmax": 2893,
+          "nmu": 5886,
+          "real_products": 3676819392,
+          "arrays_estimate_bytes": 222697408
+        },
+        {
+          "label": "H11",
+          "lmax": 2933,
+          "nmu": 5886,
+          "real_products": 3727674432,
+          "arrays_estimate_bytes": 224749888
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 4.5,
+      "channel": 3,
+      "phase_max": 4188.790204786391,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9977753031397177
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9860132971832694
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9637888196533974
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9433966409852338
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 4289,
+          "nmu": 8598,
+          "real_products": 7963536384,
+          "arrays_estimate_bytes": 390659200
+        },
+        {
+          "label": "H01",
+          "lmax": 4289,
+          "nmu": 8678,
+          "real_products": 8037633024,
+          "arrays_estimate_bytes": 393500800
+        },
+        {
+          "label": "H11",
+          "lmax": 4329,
+          "nmu": 8678,
+          "real_products": 8112610944,
+          "arrays_estimate_bytes": 396446720
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 4.5,
+      "channel": 4,
+      "phase_max": 5585.0536063818545,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.998749217771909
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9921567416492215
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9685677247874822
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ],
+      "unique_nodes": 8,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 5686,
+          "nmu": 11391,
+          "real_products": 12433504320,
+          "arrays_estimate_bytes": 623073304
+        },
+        {
+          "label": "H01",
+          "lmax": 5686,
+          "nmu": 11471,
+          "real_products": 12520825920,
+          "arrays_estimate_bytes": 626808984
+        },
+        {
+          "label": "H11",
+          "lmax": 5726,
+          "nmu": 11471,
+          "real_products": 12608923200,
+          "arrays_estimate_bytes": 630648664
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 9,
+      "channel": 1,
+      "phase_max": 698.1317007977318,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.6
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.09987492177719094
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ],
+      "unique_nodes": 5,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 799,
+          "nmu": 1617,
+          "real_products": 154843920,
+          "arrays_estimate_bytes": 82805680
+        },
+        {
+          "label": "H01",
+          "lmax": 799,
+          "nmu": 1697,
+          "real_products": 162504720,
+          "arrays_estimate_bytes": 83413680
+        },
+        {
+          "label": "H11",
+          "lmax": 839,
+          "nmu": 1697,
+          "real_products": 170650320,
+          "arrays_estimate_bytes": 84125680
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 9,
+      "channel": 2,
+      "phase_max": 1396.2634015954636,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.99498743710662
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9682458365518543
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.916515138991168
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.8674639761972828
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 1497,
+          "nmu": 3013,
+          "real_products": 973608768,
+          "arrays_estimate_bytes": 113188224
+        },
+        {
+          "label": "H01",
+          "lmax": 1497,
+          "nmu": 3093,
+          "real_products": 999459648,
+          "arrays_estimate_bytes": 114242944
+        },
+        {
+          "label": "H11",
+          "lmax": 1537,
+          "nmu": 3093,
+          "real_products": 1026183168,
+          "arrays_estimate_bytes": 115401664
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 9,
+      "channel": 3,
+      "phase_max": 2094.3951023931954,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9977753031397177
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9860132971832694
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9637888196533974
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9433966409852338
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 2195,
+          "nmu": 4409,
+          "real_products": 2089442736,
+          "arrays_estimate_bytes": 159161296
+        },
+        {
+          "label": "H01",
+          "lmax": 2195,
+          "nmu": 4489,
+          "real_products": 2127355056,
+          "arrays_estimate_bytes": 160662736
+        },
+        {
+          "label": "H11",
+          "lmax": 2235,
+          "nmu": 4489,
+          "real_products": 2166140016,
+          "arrays_estimate_bytes": 162268176
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 9,
+      "channel": 4,
+      "phase_max": 2792.5268031909272,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.998749217771909
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9921567416492215
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9685677247874822
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ],
+      "unique_nodes": 8,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 2893,
+          "nmu": 5806,
+          "real_products": 3223862784,
+          "arrays_estimate_bytes": 220749248
+        },
+        {
+          "label": "H01",
+          "lmax": 2893,
+          "nmu": 5886,
+          "real_products": 3268283904,
+          "arrays_estimate_bytes": 222697408
+        },
+        {
+          "label": "H11",
+          "lmax": 2933,
+          "nmu": 5886,
+          "real_products": 3313488384,
+          "arrays_estimate_bytes": 224749888
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 15,
+      "channel": 1,
+      "phase_max": 418.8790204786391,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.6
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.09987492177719094
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9797958971132712,
+        1.0
+      ],
+      "unique_nodes": 5,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 519,
+          "nmu": 1058,
+          "real_products": 65765280,
+          "arrays_estimate_bytes": 75004640
+        },
+        {
+          "label": "H01",
+          "lmax": 519,
+          "nmu": 1138,
+          "real_products": 70738080,
+          "arrays_estimate_bytes": 75433440
+        },
+        {
+          "label": "H11",
+          "lmax": 559,
+          "nmu": 1138,
+          "real_products": 76200480,
+          "arrays_estimate_bytes": 75966560
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 15,
+      "channel": 2,
+      "phase_max": 837.7580409572782,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.99498743710662
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9682458365518543
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.916515138991168
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.8674639761972828
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.8674639761972828,
+        0.916515138991168,
+        0.9682458365518543,
+        0.9797958971132712,
+        0.99498743710662,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 938,
+          "nmu": 1896,
+          "real_products": 383735232,
+          "arrays_estimate_bytes": 87621568
+        },
+        {
+          "label": "H01",
+          "lmax": 938,
+          "nmu": 1976,
+          "real_products": 399926592,
+          "arrays_estimate_bytes": 88318528
+        },
+        {
+          "label": "H11",
+          "lmax": 978,
+          "nmu": 1976,
+          "real_products": 416999232,
+          "arrays_estimate_bytes": 89119808
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 15,
+      "channel": 3,
+      "phase_max": 1256.6370614359173,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.9977753031397177
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9860132971832694
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9637888196533974
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9433966409852338
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9433966409852338,
+        0.9637888196533974,
+        0.9797958971132712,
+        0.9860132971832694,
+        0.9977753031397177,
+        1.0
+      ],
+      "unique_nodes": 9,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 1357,
+          "nmu": 2734,
+          "real_products": 800777664,
+          "arrays_estimate_bytes": 105856448
+        },
+        {
+          "label": "H01",
+          "lmax": 1357,
+          "nmu": 2814,
+          "real_products": 824209344,
+          "arrays_estimate_bytes": 106821568
+        },
+        {
+          "label": "H11",
+          "lmax": 1397,
+          "nmu": 2814,
+          "real_products": 848522304,
+          "arrays_estimate_bytes": 107891008
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    },
+    {
+      "duration_years": 15,
+      "channel": 4,
+      "phase_max": 1675.5160819145565,
+      "requests": [
+        {
+          "u": 0,
+          "variant": "B",
+          "beta": 1.0
+        },
+        {
+          "u": 0,
+          "variant": "C_beta",
+          "beta": 1.0
+        },
+        {
+          "u": 0.2,
+          "variant": "B",
+          "beta": 0.998749217771909
+        },
+        {
+          "u": 0.2,
+          "variant": "C_beta",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.5,
+          "variant": "B",
+          "beta": 0.9921567416492215
+        },
+        {
+          "u": 0.5,
+          "variant": "C_beta",
+          "beta": 0.8660254037844386
+        },
+        {
+          "u": 0.8,
+          "variant": "B",
+          "beta": 0.9797958971132712
+        },
+        {
+          "u": 0.8,
+          "variant": "C_beta",
+          "beta": 0.6
+        },
+        {
+          "u": 0.995,
+          "variant": "B",
+          "beta": 0.9685677247874822
+        },
+        {
+          "u": 0.995,
+          "variant": "C_beta",
+          "beta": 0.09987492177719094
+        }
+      ],
+      "unique_beta": [
+        0.09987492177719094,
+        0.6,
+        0.8660254037844386,
+        0.9685677247874822,
+        0.9797958971132712,
+        0.9921567416492215,
+        0.998749217771909,
+        1.0
+      ],
+      "unique_nodes": 8,
+      "levels": [
+        {
+          "label": "H00",
+          "lmax": 1776,
+          "nmu": 3572,
+          "real_products": 1217337600,
+          "arrays_estimate_bytes": 129709280
+        },
+        {
+          "label": "H01",
+          "lmax": 1776,
+          "nmu": 3652,
+          "real_products": 1244601600,
+          "arrays_estimate_bytes": 130942560
+        },
+        {
+          "label": "H11",
+          "lmax": 1816,
+          "nmu": 3652,
+          "real_products": 1272648960,
+          "arrays_estimate_bytes": 132280160
+        }
+      ],
+      "workers": "one fresh process per frequency/resolution; serial, BLAS1"
+    }
+  ],
+  "direct_checks": [
+    {
+      "duration_years": 4.5,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.0,
+      "beta": 1.0,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          11391,
+          19840
+        ],
+        [
+          11471,
+          20000
+        ]
+      ],
+      "sky_points": 910834880,
+      "arrays_estimate_bytes": 630931456,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    },
+    {
+      "duration_years": 4.5,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.995,
+      "beta": 0.09987492177719094,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          1336,
+          2672
+        ],
+        [
+          1416,
+          2832
+        ]
+      ],
+      "sky_points": 15159808,
+      "arrays_estimate_bytes": 136708096,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    },
+    {
+      "duration_years": 9,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.0,
+      "beta": 1.0,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          5806,
+          11612
+        ],
+        [
+          5886,
+          11772
+        ]
+      ],
+      "sky_points": 273418528,
+      "arrays_estimate_bytes": 356417536,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    },
+    {
+      "duration_years": 9,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.995,
+      "beta": 0.09987492177719094,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          778,
+          1556
+        ],
+        [
+          858,
+          1716
+        ]
+      ],
+      "sky_points": 5365792,
+      "arrays_estimate_bytes": 109281280,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    },
+    {
+      "duration_years": 15,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.0,
+      "beta": 1.0,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          3572,
+          7144
+        ],
+        [
+          3652,
+          7304
+        ]
+      ],
+      "sky_points": 104385152,
+      "arrays_estimate_bytes": 246611968,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    },
+    {
+      "duration_years": 15,
+      "channel": 4,
+      "variant": "C_beta",
+      "u": 0.995,
+      "beta": 0.09987492177719094,
+      "pairs": [
+        [
+          3,
+          8
+        ],
+        [
+          0,
+          11
+        ]
+      ],
+      "orders_nmu_nphi": [
+        [
+          555,
+          1110
+        ],
+        [
+          635,
+          1270
+        ]
+      ],
+      "sky_points": 2845000,
+      "arrays_estimate_bytes": 98320384,
+      "harmonic_reference": "H11 same represented beta/physical phases; no respline"
+    }
+  ],
+  "total_unique_frequency_ORF_nodes": 93,
+  "quadrature_matrix_evaluations": 279,
+  "planned_real_products": 101671909920,
+  "maximum_real_products": 200000000000,
+  "planned_direct_sky_points": 1312009160,
+  "maximum_direct_sky_points": 2000000000,
+  "maximum_harmonic_arrays_estimate_bytes": 630648664,
+  "maximum_direct_arrays_estimate_bytes": 630931456,
+  "maximum_numeric_ORF_bytes": 1073741824,
+  "maximum_RSS_bytes": 1610612736,
+  "moment_array_estimate_bytes": 296000,
+  "maximum_moment_numeric_bytes": 268435456,
+  "maximum_CPU_seconds_proposed": 600,
+  "gates": {
+    "harmonic_nmu_max_abs": 1e-08,
+    "harmonic_lmax_max_abs": 1e-08,
+    "direct_coarse_fine_max_abs": 1e-07,
+    "direct_harmonic_max_abs": 1e-07,
+    "moment_normalized_max_abs": 1e-10,
+    "distribution_metric_resolution_max_abs": 0.001
+  },
+  "moment_cases": 1440,
+  "complex_covariance_dimension": 48,
+  "quadratic_covariance_dimension": 40,
+  "windows": [
+    "periodic_rectangle",
+    "periodic_Hann_projected_positive_modes1to4"
+  ],
+  "likelihood_evaluations": 0,
+  "posterior_evaluations": 0,
+  "weak_dispersion_expansion_and_extra8u_map_included": false,
+  "new_duration_ORFs_reused_as_C07_table": false,
+  "source_sha256": {
+    "tmp/c08_window_moments/prepare_map.py": "40bbba5b4210648ae869fa6a2a51aa19109113382993f7e6d5707debdcc1d471",
+    "tmp/c08_window_moments/window_moments.py": "bcc262f3a6c53e020715b9b86ae89881699063d5faaf76795e3cf276df6362a4",
+    "tmp/c08_execution_design/config_prospectiva.json": "188e4a0b5728b7437628152063ff4fe3cd6cbb1d8e89af8887b0824a5e40fb57",
+    "configs/calibration/prior_predictive_500_v1.json": "f22b0a8cd7c86e477365ea02d3b37a836458d44285b0abd323bccd174c89fdfa",
+    "src/inference/model.py": "5e67e6b34f35f977baefd39cbea2708753ce73250500df980a53e8a1b60795de",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b"
+  },
+  "within_proposed_budgets": true
+}

@@ -1,0 +1,413 @@
+{
+  "schema": "C08_BETA_LOCAL_REFINEMENT_PREFLIGHT_v2",
+  "status": "PROSPECTIVE_ONLY_NOT_AUTHORIZED_OR_STARTED",
+  "created_utc": "2026-09-11T04:02:05.043973+00:00",
+  "execution_enabled": false,
+  "refinement": {
+    "patch_beta_interval": [
+      0,
+      0.015625
+    ],
+    "join_on_existing_uniform_knot": true,
+    "uniform_subdivision_factor": 8,
+    "base_uniform_spacing": 0.0001220703125,
+    "new_local_uniform_spacing": 1.52587890625e-05,
+    "retain_all_old_fine_nodes": true,
+    "new_coarse": "entire original fine curve, unchanged",
+    "new_fine": "replace only the geometric patch by a spline through old+new validated nodes, clamped to old boundary value/first derivative at beta_join and zero derivative at beta0; retain old polynomial coefficients outside patch exactly",
+    "do_not_refine_only_failure_point": true,
+    "old_coarse_is_not_modified": true
+  },
+  "validation": {
+    "new_seed": 808130101,
+    "new_nuisance_seed": 808130201,
+    "new_random_mass_points": 64,
+    "new_anchor_mass_points": 8,
+    "new_control_u": [
+      0.046166341992909365,
+      0.0677864368639215,
+      0.11595173675749004,
+      0.148146927978264,
+      0.15928802670196507,
+      0.2883784377501055,
+      0.3103360208298772,
+      0.3111977887341276,
+      0.34465967240863027,
+      0.3815605277266425,
+      0.4080256415096737,
+      0.44526574821394804,
+      0.4493300880195,
+      0.5022018578847716,
+      0.5145506782606776,
+      0.5325755420360618,
+      0.5520467726270104,
+      0.5523154733458029,
+      0.5693875640038204,
+      0.6117229251089864,
+      0.6337626699942526,
+      0.6455924187789209,
+      0.6496846125286939,
+      0.6686650933895218,
+      0.6936167188394767,
+      0.7142437467016707,
+      0.7309648471021643,
+      0.7317005231260096,
+      0.7364598619474712,
+      0.7693680443056737,
+      0.8016833118759007,
+      0.854386042436281,
+      0.8580912718893218,
+      0.8689879122437051,
+      0.8773460476110251,
+      0.8855527916149761,
+      0.9131625081435187,
+      0.9400807259035424,
+      0.9417827577915137,
+      0.9645517209122215,
+      0.9704742602830957,
+      0.9724677841753542,
+      0.9770298245477339,
+      0.9822480124520684,
+      0.9906724997375046,
+      0.992661391418304,
+      0.9948507419475877,
+      0.9990858532468571,
+      0.9995097272439858,
+      0.9997984137756888,
+      0.9998776836718635,
+      0.9998779222360098,
+      0.9998781605672401,
+      0.9998948198249498,
+      0.9999694819561995,
+      0.9999697259209795,
+      0.99997761369116,
+      0.9999836842921521,
+      0.9999860077825655,
+      0.9999923705763647,
+      0.9999980926495482,
+      0.9999995231627281,
+      0.9999997179467736,
+      0.9999998807907033,
+      0.9999999638644175,
+      0.9999999927662171,
+      0.999999996401383,
+      0.9999999978063149,
+      0.9999999994217262,
+      0.9999999999863777,
+      0.9999999999974136,
+      0.9999999999987994
+    ],
+    "anchor_beta": [
+      0.015625,
+      0.0156097412109375,
+      0.0156402587890625,
+      0.0078125,
+      0.00390625,
+      0.001953125,
+      0.0009765625,
+      0.00048828125
+    ],
+    "historical_masses": 143,
+    "historical_affected_masses": 36,
+    "history_reuse": "Existing original-fine and exact-oracle logL caches. Reuse new-fine logL outside patch only after bit-exact gamma/polynomial verification; no truth or data-based new point selection.",
+    "new_controls": "64 new nuisances across72 new mass points, all32 engineering observations, old-fine/new-fine/exact-oracle. All original thresholds unchanged.",
+    "required_new_thresholds": {
+      "matrix_coarse_fine": 1e-08,
+      "direct_coarse_fine": 1e-07,
+      "direct_harmonic": 1e-07,
+      "logL_coarse_fine": 0.001,
+      "logL_fine_oracle": 0.001
+    },
+    "no_posterior_validation_claim": true
+  },
+  "rows": [
+    {
+      "channel": 1,
+      "new_oracle_nodes": 72,
+      "oracle_orders_coarse": [
+        1496,
+        3012
+      ],
+      "oracle_orders_fine": [
+        1536,
+        3092
+      ],
+      "oracle_full_resolution_real_products": 15982548480,
+      "old_fine_becomes_new_coarse": true
+    },
+    {
+      "channel": 2,
+      "new_oracle_nodes": 72,
+      "oracle_orders_coarse": [
+        2892,
+        5805
+      ],
+      "oracle_orders_fine": [
+        2932,
+        5885
+      ],
+      "oracle_full_resolution_real_products": 58805896320,
+      "old_fine_becomes_new_coarse": true,
+      "local_candidate_nodes": 1089,
+      "old_nodes_in_patch": 249,
+      "new_interpolation_nodes": 9153,
+      "newly_inserted_nodes": 840,
+      "patch_coarse_harmonic_orders": [
+        144,
+        308
+      ],
+      "patch_fine_harmonic_orders": [
+        184,
+        388
+      ],
+      "maximum_patch_phase": 43.63323129985327,
+      "local_real_products": 3006894528,
+      "maximum_local_estimated_numeric_bytes": 2895712,
+      "boundary_u": 0.9998779222360098,
+      "new_direct_checks": [
+        {
+          "beta": 0.00390625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            242,
+            484
+          ],
+          "fine_nmu_nphi": [
+            322,
+            644
+          ],
+          "work": 648992
+        },
+        {
+          "beta": 0.015625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            308,
+            616
+          ],
+          "fine_nmu_nphi": [
+            388,
+            776
+          ],
+          "work": 981632
+        }
+      ]
+    },
+    {
+      "channel": 3,
+      "new_oracle_nodes": 72,
+      "oracle_orders_coarse": [
+        4288,
+        8597
+      ],
+      "oracle_orders_fine": [
+        4328,
+        8677
+      ],
+      "oracle_full_resolution_real_products": 128564440704,
+      "old_fine_becomes_new_coarse": true,
+      "local_candidate_nodes": 1121,
+      "old_nodes_in_patch": 253,
+      "new_interpolation_nodes": 9185,
+      "newly_inserted_nodes": 868,
+      "patch_coarse_harmonic_orders": [
+        166,
+        351
+      ],
+      "patch_fine_harmonic_orders": [
+        206,
+        431
+      ],
+      "maximum_patch_phase": 65.44984694977991,
+      "local_real_products": 3935248080,
+      "maximum_local_estimated_numeric_bytes": 3296856,
+      "boundary_u": 0.9998779222360098,
+      "new_direct_checks": [
+        {
+          "beta": 0.00390625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            253,
+            506
+          ],
+          "fine_nmu_nphi": [
+            333,
+            666
+          ],
+          "work": 699592
+        },
+        {
+          "beta": 0.015625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            351,
+            702
+          ],
+          "fine_nmu_nphi": [
+            431,
+            862
+          ],
+          "work": 1235848
+        }
+      ]
+    },
+    {
+      "channel": 4,
+      "new_oracle_nodes": 72,
+      "oracle_orders_coarse": [
+        5685,
+        11390
+      ],
+      "oracle_orders_fine": [
+        5725,
+        11470
+      ],
+      "oracle_full_resolution_real_products": 225322629120,
+      "old_fine_becomes_new_coarse": true,
+      "local_candidate_nodes": 1121,
+      "old_nodes_in_patch": 253,
+      "new_interpolation_nodes": 9185,
+      "newly_inserted_nodes": 868,
+      "patch_coarse_harmonic_orders": [
+        188,
+        395
+      ],
+      "patch_fine_harmonic_orders": [
+        228,
+        475
+      ],
+      "maximum_patch_phase": 87.26646259970654,
+      "local_real_products": 4888187760,
+      "maximum_local_estimated_numeric_bytes": 3717320,
+      "boundary_u": 0.9998779222360098,
+      "new_direct_checks": [
+        {
+          "beta": 0.00390625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            264,
+            528
+          ],
+          "fine_nmu_nphi": [
+            344,
+            688
+          ],
+          "work": 752128
+        },
+        {
+          "beta": 0.015625,
+          "pairs": [
+            [
+              3,
+              8
+            ],
+            [
+              0,
+              11
+            ]
+          ],
+          "coarse_nmu_nphi": [
+            395,
+            790
+          ],
+          "fine_nmu_nphi": [
+            475,
+            950
+          ],
+          "work": 1526600
+        }
+      ]
+    }
+  ],
+  "cost": {
+    "previous_real_products": 48508435951296,
+    "new_patch_real_products": 11830330368,
+    "new_oracle_real_products": 428675514624,
+    "planned_new_real_products": 440505844992,
+    "planned_cumulative_real_products": 48948941796288,
+    "maximum_cumulative_real_products": 50000000000000,
+    "remaining_real_products_after_plan": 1051058203712,
+    "previous_logL": 878592,
+    "new_historical_logL": 73728,
+    "new_control_logL": 442368,
+    "planned_new_logL": 516096,
+    "planned_cumulative_logL": 1394688,
+    "requested_new_logL_cap": 600000,
+    "requested_cumulative_logL_cap": 1600000,
+    "previous_direct_angular_work": 2051757104,
+    "planned_new_direct_angular_work": 5844792,
+    "planned_cumulative_direct_angular_work": 2057601896,
+    "maximum_cumulative_direct_angular_work": 8000000000
+  },
+  "resources": {
+    "workers": 1,
+    "VECLIB_MAXIMUM_THREADS": 1,
+    "maximum_RSS_bytes": 1610612736,
+    "maximum_estimated_numeric_bytes": 1073741824,
+    "union_interpolation_nodes": 9248,
+    "common_matrix_bytes": 85229568,
+    "common_coefficient_bytes": 340881408,
+    "maximum_basis_buffers_bytes": 594231232,
+    "estimated_time": "Expected a few minutes, dominated by eight full-resolution basis preparations and72 independent oracle points; measure, not promise. No native bank or posterior.",
+    "old_run_RSS_peak_bytes": 1360314368
+  },
+  "input_sha256": {
+    "tmp/c08_beta_table/execution_authorized.json": "0dd3eb5b9fd2bab793906031f27f027cbdd3d3ce3d0ba89deac539015a32cbb3",
+    "tmp/c08_beta_table/preflight_v2.json": "68e8179230cba5031c9b7f67e8a6b00c945a9824e90b18a4632c668e9431476e",
+    "tmp/c08_beta_table/results/gates/failure.json": "783b88547c1c84656b49cca5499c4d23d9fcfae22e30ffae79d72107be5a6b78",
+    "tmp/c08_beta_table/results/original_diagnostic_continuation/report.json": "42ec53a32eb41334ad4cd5ba81fd54f50a484b33f73642fdf0815b676705d8d2",
+    "tmp/c08_beta_table/inputs/experiment.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "tmp/c08_beta_table/first_curve_root.npz": "e83bc2e21e1b8115db0f767ffd5c0c2a34204d70f584f5a6e96cd17406d6e204",
+    "tmp/c08_beta_table/results/gates/curve_channel01.npz": "b61c4ccf583d11209ea53fc1be3849958cd49f37f2dceaea2cbcf191aa1a7cec",
+    "tmp/c08_beta_table/results/gates/curve_channel02.npz": "1d75973b649fa62a6d38cba1645733c41355d8484f334e303e2847463ce67e31",
+    "tmp/c08_beta_table/results/gates/curve_channel03.npz": "07ff624a716321022ffa344e41b45a3c4caecb49c0e4feb7c975ea2ad03572b9",
+    "tmp/c08_beta_table/results/gates/curve_channel04.npz": "b1c59f7b50195bbf5cab4ddcc3726f159ed2ec88e30354828b0d585ae50e0af8"
+  },
+  "source_sha256": "4b2087e7b1e2a96c943d5865bf7605325dd9cb089500cc267369c5094edeb06d",
+  "no_scientific_computations": true
+}
