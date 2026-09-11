@@ -10,13 +10,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**Compressão e resposta comparadas; limites de massa permanecem inconclusivos na resolução avaliada**  
+**Trabalho pausado a pedido do usuário; C09–C11 preservados como drafts**  
 **Última etapa concluída:** C08 — Resultados sobre compressão em frequência.  
 **Progresso:** 8 de 13 marcos concluídos.  
 **Próxima etapa:** C09 — Robustez a prioris, ruído e covariâncias.  
 **Atualização:** 2026-09-11.
 
-**[Baixar o PDF mais recente — v0.8.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.0) · [PDF versionado no repositório](output/pdf/v0.8.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.8.5](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.5/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.5) · [PDF versionado no repositório](output/pdf/v0.8.5/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -52,10 +52,12 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Todos os 224 contrastes primários individuais e as sete médias piloto permaneceram inconclusivos na escala de 0,01; 4300 quantis mantêm intervalos [0,1], sem alegar equivalência ou ausência de efeito.
 - Divergências de forma posterior A_G para B_G avaliadas em quatro dados fixos, com MCSE e covariâncias auditadas; não tratadas como fatores de Bayes.
 - Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256.
+- Piloto parcial C09 e reparos D1/D1b preservados: 544316 avaliações acumuladas; 13/14 eventos resolvidos na representação tabulada, caso 10 pendente e todos os intervalos do evento físico [0,1].
+- Texto desenvolvido e resultados parciais de C09–C11 incorporados como drafts, com tarefas pendentes e arquivos de retomada. Nenhuma nova simulação física iniciada para v0.8.5.
 
 ### O que está em andamento e o que falta
 
-C09 em preparação: robustez a prioris, ruído e covariâncias, com reparo e validação do diagnóstico de forma no piloto antes de ampliar a campanha. C08 está concluído como comparação executada com limitações explícitas; melhorar a resolução dos quantis permanece uma extensão metodológica, sem aprovação implícita nas próximas etapas.
+Pausa solicitada pelo usuário após v0.8.5. C09 parcial: piloto e reparos executados; D2/D3 e calibração ampliada pendentes. C10 e C11 têm texto e preparações em draft, sem campanhas de inferência concluídas. C12–C13 permanecem planejados. Retomar somente após nova solicitação. Consulte o plano intermediário C08.5 e docs/pausa_v0.8.5/README.md.
 
 ## Roadmap
 
@@ -71,9 +73,9 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Concluída | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
 | C07 | Inferência de referência e calibração | `v0.7.1` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
 | C08 | Resultados sobre compressão em frequência | `v0.8.0` | Concluída | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
-| C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Em andamento | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
-| C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Planejada | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
-| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Planejada | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
+| C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Pausada — draft | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
+| C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Pausada — draft | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
+| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Pausada — draft | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
 | C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Planejada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
 | C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Planejada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
 
@@ -204,3 +206,9 @@ nova restrição observacional. As verificações abrangem geometria, consistên
 O TG e os materiais de terceiros preservam seus direitos e atribuições. O template mantém sua licença
 Apache 2.0 no próprio diretório; ela não é aplicada automaticamente ao TG ou ao texto da proposta.
 Consulte [a procedência do template](templates/README.md) e as referências da proposta.
+
+## Pausa e versão intermediária v0.8.5
+
+[Plano do commit C08.5](implementation_plan/commits/C08_5_estado_parcial_e_pausa.md) ·
+[Resultados preservados e ponto de retomada](docs/pausa_v0.8.5/README.md).
+Nenhuma campanha será retomada sem nova solicitação do usuário.

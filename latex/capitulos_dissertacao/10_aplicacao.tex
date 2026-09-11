@@ -1,0 +1,110 @@
+\chapter[Aplicação e alcance: draft]{Aplicação e ampliação da população: viabilidade e desenho preparado}
+\label{cap:c11-parcial}
+
+\noindent\textbf{Estado: draft parcial; trabalho pausado.}
+
+A etapa C11 foi preparada em duas frentes: uma auditoria de produtos públicos de PTA e o desenho de uma extensão simulada com geometria derivada de metadados públicos. A primeira estabeleceu a disponibilidade de insumos, mas não construiu uma likelihood observacional. A segunda definiu populações aninhadas, um controle gaussiano conjunto e componentes candidatos de simulação. Não foram executadas ORFs, dados físicos ou posteriores C11. Este capítulo apresenta o desenvolvimento existente e as condições ainda necessárias para sua aplicação.
+
+\section{Produtos públicos e o que eles permitem reconstruir}
+
+O levantamento de 10 de setembro de 2026 distinguiu conteúdo efetivamente inspecionado, conteúdo declarado pelos depositantes e informação ainda não estabelecida. Foram consultados metadados, documentação e pequenos exemplos oficiais. O pacote MeerKAT de arquivos de timing foi adquirido e inventariado; os conjuntos grandes de cadeias e observações de outras colaborações não foram integralmente transferidos. Nenhum código externo consultado foi executado e nenhum TOA foi submetido à inferência deste trabalho.
+
+O \href{https://zenodo.org/records/16051178}{NANOGrav15 timing, versão 2.1.0}, disponibiliza TOAs, modelos e produtos derivados, incluindo resíduos pós-ajuste. O produto \href{https://zenodo.org/records/21844115}{NANOGrav15 KDE, versão 2.0.0} fornece densidades espectrais marginais e frequências; não contém, por isso, a realização complexa conjunta necessária à análise A0. Suas notas de versão registram correções específicas, reforçando a necessidade de fixar o produto e a versão usados como referência. As \href{https://github.com/nanograv/15yr_stochastic_analysis/tree/a3e8b8776a646208ca2d307f83c20bc70e029933}{receitas oficiais de análise fixadas por commit} ajudam a identificar benchmarks, mas uma cadeia de amplitudes espectrais ou parâmetros de uma ORF não equivale aos dados originais com fases e covariâncias preservadas.
+
+A distribuição \href{https://docs.datacentral.org.au/meerkat-pulsar-timing-array/45-year/accessing-the-data/}{MeerKAT PTA de 4,5 anos} fornece TOAs e modelos de timing. O pacote inspecionado contém 83 arquivos PAR e 83 TIM. Ele não especificou, sozinho, toda a configuração estocástica necessária para reproduzir uma análise publicada: a ausência de opções de ruído num pacote não prova a ausência desses processos nas observações. As 32 sub-bandas descritas pelo produto são frequências eletromagnéticas de rádio, não 32 modos gravitacionais na série temporal. A descrição e a licença CC BY 4.0 foram conferidas no \href{https://api.datacite.org/dois/10.57891/j0vh-5g31}{registro DataCite do depósito}.
+
+Os \href{https://zenodo.org/records/8300645}{dados EPTA DR2, versão 2.1}, contêm TOAs, modelos, relógios e configurações; as \href{https://zenodo.org/records/8091568}{cadeias EPTA GWB} são outro produto, condicionado à análise correspondente. O \href{https://ipta4gw.org/data-release/}{IPTA DR2} também oferece insumos de timing, embora a licença dos arquivos examinados não tenha sido estabelecida na auditoria realizada. Isso exige esclarecimento antes de eventual redistribuição, sem implicar impossibilidade de leitura ou inexistência de dados públicos.
+
+Assim, a escolha de uma extensão simulada não decorre da falta de TOAs. O impedimento atual da aplicação observacional é a ausência de um adaptador validado para janela, timing, ruído e benchmark do conjunto escolhido. EPTA DR2new e NANOGrav15 foram identificados como candidatos a essa preparação futura, não como dados já analisados neste projeto.
+
+\section{Contrato observacional e pseudocovariância}
+
+No experimento Fourier usado nos capítulos anteriores, os coeficientes complexos são diretamente observados por definição, próprios e independentes entre frequências positivas. Um PTA real observa tempos de chegada irregulares. Um modelo mínimo é
+\begin{equation}
+ \boldsymbol d=M\,\delta\boldsymbol\xi+F\boldsymbol a+\boldsymbol n,
+\end{equation}
+em que $M$ representa o modelo linearizado de timing e $F$ a base amostrada nas datas reais. A marginalização e a modelagem dos processos estocásticos produzem uma covariância temporal $K(\theta)$. Relógios, efemérides, flags instrumentais, frequências de rádio, ruídos brancos, vermelhos e cromáticos fazem parte desse modelo.
+
+Se $G^{\mathsf T}M=0$ e $D$ é uma transformação complexa fixa, então $\widetilde q=DG^{\mathsf T}\boldsymbol d$ possui
+\begin{align}
+ \widetilde C&=DG^{\mathsf T}KG D^\dagger,\\
+ \widetilde P&=DG^{\mathsf T}KG D^{\mathsf T}.
+\end{align}
+Em geral, existem correlações entre frequências e pseudocovariância $\widetilde P\ne0$. Uma DFT ou a escolha de frequências $n/T$ não elimina essas propriedades. Se a projeção reduz o posto, a densidade deve ser formulada no suporte correto; acrescentar uma diagonal artificial não recupera a informação perdida.
+
+Para explicitar a consequência, a representação real de $\widetilde q$ tem covariância
+\begin{equation}
+ K_R=\frac12\begin{pmatrix}
+ \operatorname{Re}(\widetilde C+\widetilde P)&-\operatorname{Im}(\widetilde C-\widetilde P)\\
+ \operatorname{Im}(\widetilde C+\widetilde P)&\operatorname{Re}(\widetilde C-\widetilde P)
+ \end{pmatrix}.
+\end{equation}
+Para observações reais centradas e formas quadráticas simétricas $J_i$, os momentos são
+\begin{equation}
+ \mu_i=\operatorname{tr}(J_iK_R),\qquad
+ \Sigma_{ij}=2\operatorname{tr}(J_iK_RJ_jK_R).
+\end{equation}
+Não se deve reaplicar a fórmula da CN própria sem considerar essa representação e sua normalização. Os estimadores quadráticos permanecem, em geral, não gaussianos.
+
+A reconstrução de A exigiria os mesmos autos e pares, incluindo partes real e imaginária e todos os acoplamentos pertinentes. Uma compressão fixa preservaria $\mu_B=W\mu_A$ e $\Sigma_B=W\Sigma_AW^{\mathsf T}$; não bastaria somar blocos diagonais por frequência. C$_\beta$ e C$_{\rm full}$ deveriam usar exatamente o mesmo dado B, alterando a resposta e recalculando média e covariância. Resíduos embranquecidos, médias por época, covariâncias de parâmetros ajustados e posteriors espectrais não são produtos intercambiáveis com esse vetor observado.
+
+Uma futura aplicação requer primeiro reproduzir um resultado publicado compatível com dataset, versão, seleção e ruído. Fixar uma média posterior de ruído como se fosse conhecida pode definir um estudo condicional, mas não reproduz uma análise que marginalizou conjuntamente esses parâmetros. Também será necessário validar a resposta no suporte das distâncias e frequências observacionais; a precisão de casos sintéticos com fases menores não se transfere automaticamente a pulsares a distâncias de quiloparsecs.
+
+\section{Extensão simulada com populações aninhadas}
+
+O ramo candidato compara P12K4 e P16K8: doze pulsares/quatro frequências e dezesseis pulsares/oito frequências. A geometria foi preparada a partir do \href{https://doi.org/10.57891/j0vh-5g31}{produto público MeerKAT}. Dos 83 PAR, 72 possuem RAJ/DECJ explícitos. Um algoritmo determinístico inicia no nome lexicograficamente primeiro e acrescenta a posição que maximiza a menor separação angular, com desempate lexicográfico. Nenhum resíduo ou resultado de inferência participa da seleção. Esse filtro de formato e a seleção angular não constituem amostra representativa da colaboração.
+
+Os primeiros doze dos dezesseis pulsares formam o subconjunto P12. As posições públicas são tratadas como geometria fixa, sem nova solução de movimento próprio. Distâncias de 100--500 anos-luz, precisões nominais de 100--1000 ns e multiplicadores de ruído vermelho entre 0,5 e 2 são \emph{sintéticos}. Os valores dos pulsares compartilhados permanecem iguais nas duas configurações.
+
+Ambas usam $T=4{,}5$ anos e $f_k=k/T$. Em P12K4, as dimensões são 48 coeficientes complexos em A0, 40 estimadores reais em A e 10 em B; em P16K8, são 128, 80 e10. O máximo $fL/c$ passa de aproximadamente 397 para 889 ciclos. O último valor permanece dentro da faixa anteriormente testada em C05, mas a nova geometria e suas quadraturas ainda precisam de controles próprios. A comparação amplia simultaneamente a população e a banda; não separa causalmente o efeito de aumentar apenas uma delas.
+
+Com nuisances conhecidos, a geração proposta usa
+\begin{equation}
+ C_k(u)=P_{\rm GW}(f_k)\Gamma_k(u)+
+ \operatorname{diag}\!\left[r_a^2P_{\rm red}(f_k)+2(\mathrm{EFAC}\,\sigma_a)^2\Delta t\right],
+ \qquad q_k\sim\mathcal{CN}_{\rm pr\acute opria}(0,C_k).
+\end{equation}
+A cadência nominal é 14 dias, com $\Delta t=T/\lceil T/(14\,\mathrm{dias})\rceil$. Ela determina a potência branca do experimento periódico; não introduz uma janela real. Os parâmetros centrais propostos são $(\log_{10}A_{\rm GW},\gamma_{\rm GW},\log_{10}A_r,\log_{10}\mathrm{EFAC})=(-15,13/3,-15{,}5,0)$, com índice vermelho individual quatro. A variável inferida é $u=f_gT$, uniforme em $[0,1]$.
+
+A escala numérica por frequência deve ser comum aos canais compartilhados, usando a mediana das precisões da população 16, sem recalculá-la para P12. Nas unidades de C06, $C_k$ é uma PSD unilateral de resíduos em s$^3$, $q_k$ tem unidade s$^{3/2}$ e o coeficiente periódico é $q_k/\sqrt{2T}$. A conversão de massa é $m_gc^2=hu/T$; o suporte escolhido e seus quantis sem dados não representam uma restrição observacional.
+
+Cada realização gerará um único vetor complexo de forma $8\times16$. P12K4 receberá os quatro primeiros canais e os doze primeiros pulsares, sem novo sorteio. Sua covariância é a submatriz principal correspondente. Esse pareamento permite diferenças por realização, conservando a independência entre IDs de engenharia ou calibração.
+
+\section{Controle gaussiano conjunto desenvolvido}
+
+O controle G precisa preservar também a covariância cruzada entre estimadores das duas populações. Compartilhar uma semente entre duas fatorações arbitrárias não basta. Para cada frequência, escreva $C=LL^\dagger$ e $A_i=L^\dagger H_iL$. Seja $W$ uma matriz hermitiana aleatória com diagonal normal padrão real e elementos superiores $(x+iy)/\sqrt2$, com variáveis normais independentes. Define-se
+\begin{equation}
+ Y_i=\operatorname{tr}(H_iC)+\operatorname{tr}(A_iW).
+\end{equation}
+As coordenadas reais de $A_i$ na base hermitiana ortonormal são sua diagonal, $\sqrt2\operatorname{Re}A_{i,ab}$ e $\sqrt2\operatorname{Im}A_{i,ab}$ para $a<b$. Consequentemente,
+\begin{equation}
+ \mathbb E[Y_i]=\operatorname{tr}(H_iC),\qquad
+ \operatorname{Cov}(Y_i,Y_j)=\operatorname{Re}\operatorname{tr}(H_iCH_jC).
+\end{equation}
+Incorporar os estimadores P12 com zeros no espaço de 16 pulsares e concatená-los aos P16 permite aplicar o mesmo vetor latente e obter a covariância conjunta correta. A construção continua válida para estimadores redundantes e uma covariância conjunta singular, sem jitter ou recorte de autovalores.
+
+O componente foi verificado com covariâncias sintéticas: momentos, termos cruzados, orientação imaginária, estimadores nulos/duplicados e compressão linear. Uma revisão independente usou cubatura determinística em vez de repetir os sorteios do autor e encontrou erro absoluto máximo aproximadamente $1{,}60\times10^{-12}$. A versão 2 corrigiu uma guarda de memória que omitia a saída completa do método de covariância; o caso negativo correspondente passou na regressão. Esses testes aprovam a álgebra examinada e essa correção, não uma simulação física C11.
+
+Os latentes CN e G usarão bancos independentes, condicionados à mesma massa. Dentro de G, A/B/C analisam o mesmo $Y$; a aproximação de resposta não altera a observação gerada. A normal conjunta reproduz os primeiros dois momentos do estimador CN, não sua distribuição inteira. A0 de P12 é marginal de A0 de P16, permitindo discutir informação esperada sob a priori; B16 e A\_G16 não determinam necessariamente os respectivos vetores P12. Não se exige ordenação dos limites superiores em realizações individuais.
+
+\section{Programa proposto, recursos e pendências}
+
+O desenho prevê nove análises por população: A0\_CN, A\_CN, B\_CN, C$_\beta$\_CN, C$_{\rm full}$\_CN, A\_G, B\_G, C$_\beta$\_G e C$_{\rm full}$\_G. As médias e covariâncias serão recalculadas para cada resposta. Em $u=0$, C$_\beta$ deve coincidir com B; C$_{\rm full}$ pode diferir por congelar também as fases dos pulsares.
+
+Antes da campanha, foi proposto um piloto de 16 realizações novas de engenharia. O núcleo posterior seria composto por 500 massas contínuas e 500 realizações conjuntas, resultando em 9.000 posteriores condicionais nas duas populações. Três células condicionais adicionais de 32 realizações, com massas/ruídos prefixados, estudariam controles de fronteira e ruído. Verdades fixas não receberiam um teste de uniformidade de SBC. As seis famílias corretamente especificadas do núcleo --- A0\_CN, A\_G e B\_G nas duas populações --- teriam uma família prospectiva de 42 testes com Holm; as demais análises são aproximações e seus desvios científicos devem ser distinguidos de falhas numéricas.
+
+O custo dominante pode continuar sendo a resposta. A contagem preparatória para a geometria P16, incluindo resposta dispersiva e C$_\beta$, estimou cerca de40,16 trilhões de multiplicações reais dominantes na construção inicial com referências de geração e engenharia. É uma conta de operações, não tempo medido. No oitavo canal, C$_\beta$ percorre uma variação de fase muito maior que a resposta dispersiva física; a aparência suave de poucos nós não controla aliasing ou a precisão da posterior. Não se propôs herdar automaticamente uma tabela densa de outra geometria.
+
+A execução deverá conservar integralmente todos os IDs e seus estados, usar gates próprios para evidência, CDFs, quantis, momentos e informação, e propagar intervalos não resolvidos. O evento de logL exige tratamento de contornos e de eventuais átomos; uma likelihood constante não produz automaticamente um PIT contínuo uniforme. A não rejeição marginal tampouco demonstra aprendizagem a partir dos dados. O limite de custo final depende de controles independentes de céu, refinamentos, testes de momentos, piloto completo e medição da cadeia de execução.
+
+Na pausa desta versão, o candidato de piloto C11 permanece incompleto, sem manifesto final ou autorização. Uma suíte de seis testes sintéticos passou antes de alterações posteriores de preparação; essas alterações não receberam verificação final. Nenhuma realização física, ORF ou posterior C11 foi calculada. O acoplamento gaussiano desenvolvido e a geometria documentada são componentes reutilizáveis, não evidência de calibração da nova população.
+
+O fechamento de C11 requer a decisão formal do ramo, a validação das respostas e do modelo gerador, a conclusão do piloto, a fixação do orçamento e a execução das comparações com todos os seus controles. Uma alegação observacional exigirá adicionalmente o adaptador de timing/janela/ruído e a reprodução de um benchmark público. A extensão periódica proposta tem contribuição metodológica delimitada; não deve ser renomeada como análise de TOAs para preencher essa lacuna.
+
+\noindent\textbf{Pendências gerais e retomada.} C09 ainda requer as campanhas
+pareadas e a calibração ampliada; C10 e C11 dependem dos pilotos e controles
+descritos acima. Depois dessas etapas, C12 deverá consolidar discussão,
+conclusões e manuscrito de artigo; C13 deverá realizar a auditoria final de
+reprodução e do documento. Não há artigo submetido, defesa ou aprovação
+institucional. A retomada fica condicionada a nova solicitação do usuário,
+com os arquivos, resultados inconclusivos e critérios anteriores preservados.

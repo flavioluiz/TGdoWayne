@@ -1,0 +1,391 @@
+% Registro cumulativo para v0.8.5: fundamentos e diagnóstico completos de C09.
+\chapter[Robustez estatística]{Robustez estatística: fundamentos e resultados parciais}
+\label{chap:robustez}
+
+\noindent\textbf{Estado: draft parcial; trabalho pausado.}
+
+Este capítulo reúne a fundamentação, os diagnósticos já executados e as
+pendências de C09 na versão~0.8.5. As continuações D1 e D1b foram calculadas
+e auditadas antes deste fechamento. A publicação não executa novas
+simulações e conserva os estados inconclusivos. C09 permanece parcial;
+os componentes e desenhos posteriores não representam resultados de uma
+campanha concluída.
+
+% Rascunho de fundamentação C09. Não contém resultados da campanha futura.
+\section{Medida de priori, suporte e informação}
+\label{sec:c09-medida}
+
+Os experimentos deste capítulo usam a massa adimensional
+\(u=m_g c^2T/h\), com as demais grandezas especificadas em cada cenário.
+A escolha de \(u\) fixa uma unidade física; uma mudança posterior de coordenada
+deve preservar a medida de probabilidade. Por exemplo, representar a mesma
+priori uniforme em \(u\in[0,1]\) pela coordenada \(v=u^2\) exige a densidade
+\(1/(2\sqrt v)\) em \(v\). Escolher uma densidade uniforme em \(v\)
+define outra priori, cuja densidade em \(u\) é proporcional a \(u\).
+
+Para tornar explícita também a mudança de suporte, considere
+\(0\leq a<b\leq1\). As três medidas normalizadas são
+\begin{equation}
+ \begin{aligned}
+ \pi_1(u)&=\frac{\mathbf 1_{[a,b]}(u)}{b-a},\\
+ \pi_2(u)&=\frac{2u\,\mathbf 1_{[a,b]}(u)}{b^2-a^2},\\
+ \pi_{\log}(u)&=\frac{\mathbf 1_{[a,b]}(u)}{u\log(b/a)}.
+ \end{aligned}
+ \label{eq:c09-prioris}
+\end{equation}
+A última expressão requer \(a>0\): não existe priori logarítmica própria
+em massa com corte inferior nulo. Seus quantis prévios de ordem \(p\) são,
+respectivamente,
+\begin{equation}
+ \begin{aligned}
+ Q_p^{(1)}&=a+p(b-a),\\
+ Q_p^{(2)}&=\sqrt{a^2+p(b^2-a^2)},\\
+ Q_p^{(\log)}&=a(b/a)^p.
+ \end{aligned}
+ \label{eq:c09-quantis-prioris}
+\end{equation}
+Essas referências analíticas permitem identificar o efeito do suporte sem
+confundi-lo com informação trazida pela observação.
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=\textwidth]{../figures/robustez/prioris_suporte.pdf}
+ \caption{Referências analíticas de priori, sem dados simulados. À esquerda,
+ as três CDFs e seus quantis de ordem \(0,95\): \(0,9500\), \(0,9747\) e
+ \(0,7079\). As duas primeiras medidas têm suporte \([0,1]\); a logarítmica
+ usa \([10^{-3},1]\). À direita, o corte superior \(b\) varia, mantendo
+ corte inferior zero nas medidas uniformes e \(10^{-3}\) na logarítmica.
+ Sob likelihood constante, essas curvas também são os quantis posteriores.}
+ \label{fig:c09-prioris}
+\end{figure}
+
+Outro exemplo relevante para a comparação bibliográfica é a priori uniforme
+ em velocidade de \textcite{wang2024graviton}. Para explicitar o
+ Jacobiano na unidade adotada aqui, considere a conversão na frequência
+ de referência \(1/T\). Se
+ \(\beta\sim\mathcal U[\beta_{\min},1]\) e
+ \(u=\sqrt{1-\beta^2}\), a medida induzida é
+\begin{equation}
+ \pi_u(u)=\frac{u}{(1-\beta_{\min})\sqrt{1-u^2}},\qquad
+ 0\leq u\leq\sqrt{1-\beta_{\min}^2}.
+ \label{eq:c09-priori-velocidade}
+\end{equation}
+Ela difere das três medidas da Eq.~\eqref{eq:c09-prioris}. Por isso, comparar
+limites publicados exige conservar também a transformação e o suporte da
+priori, além da frequência usada para converter velocidade em massa.
+
+Para um mesmo dado \(d\) e uma likelihood \(L(d\mid u)\), cada análise usa
+\begin{equation}
+ Z_\pi(d)=\int_a^b L(d\mid u)\pi(u)\,du,\qquad
+ p_\pi(u\mid d)=\frac{L(d\mid u)\pi(u)}{Z_\pi(d)}.
+ \label{eq:c09-evidencia-priori}
+\end{equation}
+O contraste entre prioris deve manter esse dado e a likelihood. Uma nova
+simulação com outra semente muda simultaneamente a observação e não mede,
+isoladamente, a sensibilidade à priori. Se \(\pi_1\) e \(\pi_0\) têm suporte
+compatível, vale ainda
+\begin{equation}
+ \frac{Z_{\pi_1}(d)}{Z_{\pi_0}(d)}
+ =\mathbb E_{p_{\pi_0}(u\mid d)}
+       \left[\frac{\pi_1(u)}{\pi_0(u)}\right].
+ \label{eq:c09-reponderacao}
+\end{equation}
+A identidade não garante eficiência numérica de reponderação. Se a nova
+priori atribui probabilidade a uma região ausente no suporte de \(\pi_0\),
+essa região precisa ser integrada separadamente. Uma mudança de corte ou
+de priori tampouco transforma uma amostra de calibração anterior em verdades
+sorteadas da nova medida.
+
+A informação relativa à priori é medida, em nats, por
+\begin{equation}
+ D_{\mathrm{KL}}[p_\pi\Vert\pi]
+ =\mathbb E_{p_\pi}[\log L(d\mid u)]-\log Z_\pi(d).
+ \label{eq:c09-kl-priori}
+\end{equation}
+Essa quantidade é invariante sob uma mudança bijetiva de coordenada quando
+as duas densidades recebem o mesmo Jacobiano. Ela muda quando se altera a
+medida de priori. A igualdade de um único quantil posterior e prévio não
+determina a divergência: redistribuições de massa dentro das regiões abaixo
+e acima desse quantil podem manter sua posição e modificar a densidade.
+Por isso, quantis, larguras, distâncias entre CDFs e divergência são produtos
+distintos, cada um com seu controle numérico.
+
+\section{Covariância e hipóteses de ruído}
+\label{sec:c09-fatorial}
+
+Para a estatística comprimida \(z\), as quatro variantes normais usam a
+mesma média variável \(\mu(u)\). Elas combinam covariância completa ou
+diagonal com covariância variável ou fixada em uma massa de referência
+declarada. A densidade em cada variante é
+\begin{equation}
+ \log L=-\frac12\left[
+ (z-\mu)^{\mathsf T}\Sigma^{-1}(z-\mu)
+ +\log\det\Sigma+D\log(2\pi)\right].
+ \label{eq:c09-normal-fatorial}
+\end{equation}
+O termo de determinante participa da comparação quando \(\Sigma\) varia.
+Fixar a covariância não equivale a fixar a média. Nas observações físicas,
+a densidade normal aplicada à estatística quadrática continua sendo uma
+aproximação; sua aprovação numérica não a converte em distribuição exata.
+
+Não existe ordenação universal da informação após diagonalizar uma
+covariância. Considere o exemplo local
+\(\Sigma=\left(\begin{smallmatrix}1&\rho\\\rho&1\end{smallmatrix}\right)\)
+e uma média linear com derivada \(g\), com \(|\rho|<1\). Para
+\(g=(1,1)^{\mathsf T}\), a informação de Fisher é
+\(2/(1+\rho)\); para \(g=(1,-1)^{\mathsf T}\), é
+\(2/(1-\rho)\). A substituição diagonal fornece \(2\) em ambos os casos.
+Com \(\rho>0\), portanto, o sentido da alteração depende da direção do
+sinal. Esse contraexemplo local fundamenta medir a direção do efeito sobre
+os limites posteriores, sem tratá-la como propriedade universal.
+
+\begin{figure}[htbp]
+ \centering
+ \includegraphics[width=0.88\textwidth]{../figures/robustez/fisher_direcao.pdf}
+ \caption{Razão analítica entre as informações de Fisher completa e diagonal
+ no exemplo de duas dimensões. A mesma correlação pode aumentar ou diminuir
+ essa razão, conforme a derivada da média \(g\). Trata-se de um contraexemplo
+ local, não de uma previsão quantitativa dos limites PTA.}
+ \label{fig:c09-fisher-direcao}
+\end{figure}
+
+Uma hipótese discreta de distância com escalas \(s_j\) e probabilidades
+\(w_j\) deve ser marginalizada na likelihood,
+\begin{equation}
+ L_{\mathrm{marg}}(d\mid u)=\sum_j w_j L(d\mid u,s_j),\qquad
+ \sum_jw_j=1.
+ \label{eq:c09-mistura-distancia}
+\end{equation}
+Em geral, essa mistura de densidades não é a densidade normal obtida ao
+substituir suas covariâncias pela média. Uma escala global compartilhada
+pelos pulsars também representa uma hipótese diferente de distâncias
+astrométricas independentes.
+
+\section{Interpretação da escala de massa}
+\label{sec:c09-escala}
+
+No suporte propagante adotado, \(u\leq1\) equivale a
+\(m_gc^2\leq h/T\). Sob uma likelihood constante e priori uniforme em
+\(u\), segue exatamente \(Q_{0,95}(m_gc^2)=0,95h/T\). Esse cálculo é uma
+referência sem informação dos dados, e não uma previsão da posterior real.
+Um limite numérico próximo dessa escala deve ser comparado com a priori,
+a forma posterior e os controles de integração antes de se atribuir sua
+origem à sensibilidade física. O contraste com a análise MeerKAT de
+\textcite{zhao2026} permanece condicionado às diferenças de dados,
+modelagem, parametrização e suporte; o experimento Fourier deste trabalho
+não constitui uma reanálise de tempos de chegada observacionais.
+
+% Texto sustentado pelos registros nominal14, D1 e D1b já executados.
+\section{Validação separada das quantidades posteriores}
+\label{sec:c09-validacao-funcional}
+
+O cálculo de um quantil de massa e o de uma probabilidade ordenada pela
+likelihood são problemas numéricos diferentes. Para uma verdade injetada
+\(u_\star\), a probabilidade acumulada de massa é
+\begin{equation}
+ F(u_\star\mid d)=Z^{-1}\int_a^{u_\star}L(d\mid u)\pi(u)\,du.
+ \label{eq:c09-pit-massa}
+\end{equation}
+Seu domínio tem fronteira conhecida. Já a quantidade dependente do dado
+\begin{equation}
+ H(d,u_\star)=Z^{-1}\int_{\{u:\,\log L(d\mid u)\leq
+                  \log L(d\mid u_\star)\}}
+                  L(d\mid u)\pi(u)\,du
+ \label{eq:c09-pit-logl}
+\end{equation}
+exige identificar todas as componentes do conjunto integrado. Uma pequena
+oscilação pode ter efeito reduzido na CDF de massa e introduzir vários
+cruzamentos do nível de log-likelihood. Verificar alguns pontos ou apenas
+o primeiro cruzamento não controla esse segundo cálculo.
+
+Um exemplo analítico torna explícita a distinção. Para priori uniforme em
+\([0,1]\) e \(L(u)=1+\varepsilon\sin(2\pi n u)\), com
+\(0<\varepsilon<1\) e \(n\) inteiro positivo, tem-se \(Z=1\) e
+\begin{equation}
+ F(u)-u=\frac{\varepsilon}{2\pi n}
+              [1-\cos(2\pi n u)].
+ \label{eq:c09-exemplo-oscilatorio}
+\end{equation}
+Logo, \(\sup_u|F(u)-u|\leq\varepsilon/(\pi n)\), enquanto a amplitude
+das oscilações de log-likelihood não diminui com \(n\). Esse exemplo não é
+uma validação do modelo PTA: justifica controles próprios para cada
+quantidade e a preservação de uma falha do evento de logL quando a CDF de
+massa já está numericamente resolvida.
+
+Para uma CDF referenciada, sejam \(N\) e \(Z\) os integrais não normalizados
+do numerador e denominador, com estimativas de intervalo
+\([N_-,N_+]\) e \([Z_-,Z_+]\), \(Z_->0\). A propagação usada é
+\begin{equation}
+ F\in\left[\max(0,N_-/Z_+),\;
+                  \min(1,N_+/Z_-)\right].
+ \label{eq:c09-razao-integral}
+\end{equation}
+Os erros de quadratura adaptativa são estimativas operacionais. A aritmética
+de ponto flutuante empregada não fornece, por si só, limites rigorosos com
+arredondamento dirigido. O termo ``intervalo operacional'' mantém essa
+distinção em relação a uma demonstração uniforme do erro.
+
+Um intervalo candidato \([u_-,u_+]\) para o quantil de ordem \(p\) só passa
+no controle de referência quando sua largura é no máximo \(0,001\) e
+\begin{equation}
+ F_{\rm ref,+}(u_-)\leq p\leq F_{\rm ref,-}(u_+).
+ \label{eq:c09-bracket-quantil}
+\end{equation}
+São exigidas também concordância entre resoluções e referências próprias:
+\(0,001\) para log-evidência, momentos, KL e distância de Wasserstein em
+\(u\), e \(0,002\) para CDF. Uma tolerância é um critério de aceitação;
+não é uma medição de erro que possa ser somada como se tivesse sido observada.
+O teste de cada métrica conserva seu alcance e suas possíveis falhas.
+
+\subsection{Diagnóstico de engenharia: catorze casos preservados}
+\label{sec:c09-nominal14}
+
+Antes das comparações pareadas, foram executados catorze casos com verdade
+fixa e parâmetros de espectro e ruído conhecidos. Eles abrangem prioris,
+variantes de covariância e condições de fronteira ou de ruído. As observações
+foram geradas com sementes distintas por caso. Portanto, diferenças entre
+esses catorze resultados não isolam efeitos de priori ou covariância, nem
+representam uma calibração sob o prior preditivo.
+
+Na execução original, os catorze controles locais de CDF passaram, mas o
+critério conjunto preservou nove probabilidades acumuladas de massa como
+não resolvidas, com intervalo \([0,1]\). Quatro permaneceram estreitas e
+uma foi estruturalmente \([0,0]\), pois sua massa verdadeira era zero.
+Somente um dos catorze casos passou no conjunto original de diagnósticos.
+Esses registros são mantidos, sem reclassificação retrospectiva.
+
+Para estudar especificamente o evento da Eq.~\eqref{eq:c09-pit-logl}, a
+continuação D1 reutilizou a resposta interpolada por canal e os mesmos dados.
+Em \(x=-\sqrt{1-u^2}\), a resposta possui representação polinomial por
+células. Dessa representação são obtidos limites operacionais da variação
+matricial da covariância e, por consequência, da log-likelihood. As células
+são classificadas como inteiramente internas, externas ou ambíguas em
+relação ao nível da verdade. A subdivisão prioriza a maior massa ambígua;
+as uniões resultantes recebem integrais de referência independentes do
+interpolante usado para procurar cruzamentos.
+
+Se \(N\) é a massa não normalizada das células internas e \(A\) a das
+ambíguas, o intervalo básico do evento é
+\begin{equation}
+ H\in\left[\max(0,N_-/Z_+),\;
+           \min(1,(N_++A_+)/Z_-)\right].
+ \label{eq:c09-intervalo-evento}
+\end{equation}
+O diagnóstico acrescenta a discrepância entre duas representações e
+controla separadamente a massa ambígua e o erro operacional da quadratura.
+Não se pressupõe um número fixo de raízes, nem se excluem regiões porque
+uma busca pontual não encontrou cruzamentos.
+
+D1 armazenou e contabilizou \(325\,629\) novas avaliações de likelihood.
+Nove eventos da tabela passaram; cinco chegaram ao limite por caso durante
+as integrações de referência. A continuação D1b carregou os \(125\,000\)
+valores efetivamente salvos desses cinco casos, preservando seus bytes e
+seu custo histórico. Foram necessárias \(8\,099\) novas avaliações e
+\(35,40\) segundos adicionais de CPU. A auditoria conferiu os valores
+reutilizados bit a bit, as contagens e a reconstrução dos intervalos.
+
+No conjunto das duas continuações, treze eventos da tabela atingiram o
+critério operacional. O caso de ruído vermelho forte, ID~10, alcançou o
+limite de \(2\,399\) subdivisões, com erro total estimado de \(0,01503\),
+acima da meta de \(0,002\). Seu intervalo permanece \([0,1]\).
+O custo científico acumulado do diagnóstico nominal e de suas continuações
+é \(544\,316\) avaliações de likelihood e \(484,42\) segundos de CPU,
+no alcance de medição explicitado pelos recibos de execução.
+
+Essas aprovações referem-se ao evento da \emph{tabela salva}. Os controles
+físicos em pontos finitos da resposta não foram transformados em uma margem
+uniforme de probabilidade. Por isso, as continuações conservam os catorze
+intervalos físicos desse evento como \([0,1]\). O resultado distingue uma
+dificuldade de integração, uma evidência de convergência em pontos testados
+e uma afirmação uniforme que não foi demonstrada.
+
+\subsection{Alcance da calibração}
+
+Uma distribuição de limites em verdades fixas responde a uma pergunta
+condicional. Para avaliar calibração sob uma priori alternativa, as verdades
+precisam ser sorteadas dessa própria medida e as observações da família
+analisada. Reponderar a posterior de um banco anterior não satisfaz essa
+condição de geração. Do mesmo modo, parâmetros de ruído tratados como
+conhecidos delimitam um experimento condicional; sua calibração não aprova
+automaticamente uma análise com marginalização desses parâmetros.
+
+A não rejeição de um teste marginal também não demonstra aprendizagem:
+um algoritmo que devolve sempre a priori produz probabilidades acumuladas
+uniformes quando a verdade é sorteada da própria priori. A comparação entre
+posterior e priori, os diagnósticos dependentes do dado e os estudos
+condicionais são necessários para sustentar alegações mais específicas.
+Falhas numéricas permanecem na população de avaliação por meio de seus
+intervalos não resolvidos, sem exclusão de realizações.
+
+
+\section{Trabalho pendente no fechamento da versão}
+\label{sec:c09-pendencias-v085}
+
+\subsection{Comparações pareadas de priori e covariância: D2}
+
+A etapa D2 permanece prospectiva. Seu desenho e componentes matemáticos
+foram preparados e revisados, mas não há resultado de execução física D2
+incorporado nesta versão. O objetivo é aplicar medidas e suportes distintos
+à \emph{mesma observação}, separando uma mudança de análise de uma mudança
+do dado. Faltam os contrastes pareados entre prioris uniformes em massa,
+em massa ao quadrado e logarítmicas com cortes explícitos, assim como sua
+comparação quantitativa por evidência, CDF, quantis, momentos, informação
+relativa à priori e distância entre distribuições.
+
+O fatorial de covariância completa ou diagonal e fixa ou variável também
+precisa ser executado sobre dados compartilhados. A âncora da covariância
+fixa deve ser declarada; a média continua variável e o determinante
+permanece na densidade. A direção do efeito sobre os limites será um
+resultado a medir, não uma premissa. Cada quantidade terá seu próprio
+controle: a aprovação de quantis não aprova automaticamente uma distância
+de Wasserstein, e uma falha do evento de logL não será apagada pela
+concordância de uma CDF de massa. As regras prospectivas não reclassificam
+os registros históricos do diagnóstico nominal ou de D1/D1b.
+
+\subsection{Ruído, espectros, distâncias e calibração: D3}
+
+D3 designa a integração das comparações e dos experimentos que ainda faltam
+para atender ao alcance de C09. Permanecem pendentes os estudos
+representativos de ruído, espectros alternativos, contaminantes
+monopolares e dipolares, variabilidade entre realizações e incerteza de
+distância. Os casos nominais já calculados ajudam a identificar dificuldades,
+mas não substituem uma distribuição de resultados sob cada cenário.
+A inclusão e a omissão de um contaminante devem ser confrontadas no mesmo
+dado quando a pergunta for sensibilidade à hipótese de análise.
+
+O tratamento prospectivo de distâncias usa uma hipótese discreta global,
+marginalizada na likelihood conforme a
+Eq.~\eqref{eq:c09-mistura-distancia}. Sua execução e suas referências
+numéricas próprias continuam pendentes. Essa hipótese não equivale à
+marginalização de doze medidas astrométricas independentes; distâncias
+alteradas também não herdam automaticamente a precisão de uma tabela
+construída nas distâncias nominais.
+
+O desenho de calibração prevê grupos de \(500\) novas realizações,
+com verdades sorteadas da priori e observações geradas da família
+correspondente. Os \(18\) grupos corretamente especificados e a família
+prospectiva de \(126\) testes, com correção de Holm a \(0,05\),
+\textbf{ainda não foram executados em C09}. Nessa família, \(108\) testes
+referem-se a massa e cobertura e \(18\) ao evento de logL. Quantidades não
+resolvidas devem conservar sua identificação e seus intervalos, sem
+exclusão de realizações ou interpretação de um preenchimento conservador
+como aprovação. As famílias aproximadas ou com componentes omitidos
+exigem interpretação própria; não se deve fabricar uniformidade para
+considerar correta a avaliação numérica.
+
+\subsection{Condições para a continuação}
+
+O fechamento futuro exige configuração, fontes, dados, referências e
+orçamento definidos antes de cada execução. Os resultados das tabelas e
+a evidência física nos pontos testados precisam manter seus alcances
+separados. Os parâmetros auxiliares conhecidos delimitam um experimento
+condicional; nenhuma dessas verificações constitui, por si só, robustez
+das posteriores de cinco parâmetros ou uma reanálise observacional.
+
+No estado publicado, treze dos catorze eventos da tabela passaram, o
+ID~10 permanece não resolvido e os catorze intervalos físicos de evento
+continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
+\textbf{C09 não é declarado concluído na versão~0.8.5}; C10 e C11 também
+permanecem abertos. A fundamentação, os cálculos realizados, os resultados
+inconclusivos e as tarefas restantes são preservados para permitir uma
+retomada sem alterar retroativamente os critérios.

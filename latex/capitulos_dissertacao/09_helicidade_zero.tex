@@ -1,0 +1,151 @@
+\chapter[Helicidade zero: draft]{Extensão escalar vinculada de Fierz--Pauli: fundamentos e validação parcial}
+\label{cap:c10-parcial}
+
+\noindent\textbf{Estado: draft parcial; trabalho pausado.}
+
+Este capítulo reúne a extensão teórica e os componentes numéricos já desenvolvidos para incluir a helicidade zero de Fierz--Pauli. Há uma derivação da resposta observável, verificações independentes da função de redução de sobreposição (ORF) e um resultado negativo de interpolação que restringe o uso desses cálculos. O executor de inferência foi preparado e verificado com exemplos sintéticos; o piloto físico escalar não foi executado. Portanto, os resultados seguintes não estabelecem recuperação de uma população escalar, identificabilidade estatística ou conclusão da etapa C10.
+
+\section{Uma amplitude escalar e seus vínculos}
+
+Mantêm-se a assinatura $(+---)$, a perturbação covariante $g_{\mu\nu}=\eta_{\mu\nu}+H_{\mu\nu}$ e a fase $\exp[i\omega(t-\beta\widehat\Omega\cdot\boldsymbol{x}/c)]$. A direção $\widehat\Omega$ aponta no sentido de propagação, enquanto $\boldsymbol p_a$ aponta da Terra para o pulsar. Definem-se
+\begin{equation}
+ \beta=\frac{ck}{\omega},\qquad
+ \chi=1-\beta^2=\left(\frac{f_g}{f}\right)^2,
+ \qquad y_a=\frac{\omega L_a}{c}.
+\end{equation}
+Para o modo massivo viajante, $0\leq\beta<1$. O ponto $\beta=0$ é o limiar; $\beta\to1$ será empregado apenas como limite formal da resposta.
+
+Sejam $e^1_\mu,e^2_\mu$ dois vetores espaciais transversais ortonormais e
+\begin{equation}
+ U_\mu=\frac{(\beta,-\widehat\Omega)}{\sqrt\chi},
+ \qquad U_\mu U^\mu=-1.
+\end{equation}
+Uma polarização real de helicidade zero, na mesma norma de Lorentz dois das polarizações reais tensoriais, é
+\begin{equation}
+ E^{(0)}_{\mu\nu}=\frac{e^1_\mu e^1_\nu+e^2_\mu e^2_\nu-2U_\mu U_\nu}{\sqrt3},
+ \qquad H_{\mu\nu}=h_0E^{(0)}_{\mu\nu}.
+\end{equation}
+Ela satisfaz transversalidade em relação ao quadrimomento da onda, traço nulo e $E^{(0)}_{\mu\nu}E^{(0)\mu\nu}=2$. Escrevendo $P_{ij}=\delta_{ij}-\Omega_i\Omega_j$, suas componentes são
+\begin{align}
+ E^{(0)}_{00}&=-\frac{2\beta^2}{\sqrt3\chi},&
+ E^{(0)}_{0i}&=\frac{2\beta\Omega_i}{\sqrt3\chi},\\
+ E^{(0)}_{ij}&=\frac1{\sqrt3}\left(P_{ij}-\frac{2\Omega_i\Omega_j}{\chi}\right).
+\end{align}
+Existe uma amplitude física $h_0$. As deformações transversal escalar e longitudinal são componentes vinculadas dessa amplitude; atribuir-lhes potências independentes definiria outro modelo.
+
+\section{Resposta de frequência com os observadores}
+
+A presença de $H_{0\mu}$ exige incluir o movimento e a normalização dos observadores nos extremos do percurso. Esse requisito é consistente com a formulação corrigida de \href{https://arxiv.org/pdf/2108.05344v3}{Liang--Trodden, versão 3}, especialmente sua Eq.~(22). Não basta transportar uma razão entre componentes de maré para uma resposta de timing.
+
+Em unidades $c=1$, parametriza-se a trajetória não perturbada do fóton por $\boldsymbol{x}(s)=s\boldsymbol p$ e $t(s)=t-s$. Com $\mu=\widehat\Omega\cdot\boldsymbol p$, $D=1+\beta\mu$ e $\Delta H=H_E-H_P$, as contribuições à diferença fracionária de frequência são
+\begin{align}
+ G_{\rm f\acute oton}&=\frac{\Delta H_{00}-2p^i\Delta H_{0i}+p^ip^j\Delta H_{ij}}{2D},\\
+ G_{\rm obs}&=p^i\Delta H_{0i}+\frac{\beta\mu-1}{2}\Delta H_{00}.
+\end{align}
+A segunda expressão decorre de $\delta u^0=-H_{00}/2$ e $\delta u^i=H_{0i}+\beta\Omega_iH_{00}/2$, com constantes homogêneas de movimento nulas. A soma fornece
+\begin{equation}
+ \frac{\nu_E-\nu_P}{\nu_P}=\frac{p^ip^j\Delta Q_{ij}}{2D},\qquad
+ Q_{ij}=H_{ij}+\beta\Omega_iH_{0j}+\beta\Omega_jH_{0i}+\beta^2\Omega_i\Omega_jH_{00}.
+\end{equation}
+Para a polarização vinculada,
+\begin{equation}
+ \frac{Q_{ij}}{h_0}=\frac{P_{ij}-2\chi\Omega_i\Omega_j}{\sqrt3},\qquad
+ \frac{p^ip^jQ_{ij}}{h_0}=\frac{1+(2\beta^2-3)\mu^2}{\sqrt3}.
+ \label{eq:c10-q-observavel}
+\end{equation}
+Os termos métricos individualmente grandes cancelam nessa combinação. O cálculo independente de curvatura dá $Q_{ij}=2R_{0i0j}/\omega^2$, nas convenções adotadas. Para propagação ao longo de $z$,
+\begin{equation}
+ R_{0i0j}=\frac{\omega^2h_0}{2\sqrt3}\operatorname{diag}(1,1,-2\chi).
+\end{equation}
+Assim, se $p_b=R_{0x0x}+R_{0y0y}$ e $p_l=R_{0z0z}$, vale $p_l=-\chi p_b$. Na base de norma dois $e^b=P$ e $e^l=\sqrt2\,\widehat\Omega\widehat\Omega$, a razão entre coeficientes é, diferentemente, $-\sqrt2\chi$.
+
+Definindo $A_\beta(\mu)=1+(2\beta^2-3)\mu^2$, o núcleo geométrico pode ser escrito como
+\begin{equation}
+ R_a^{(0)}=\frac{A_\beta(\mu_a)}{2\sqrt3}\,g(y_a,D_a),\qquad
+ g(y,D)=\frac{1-e^{-iyD}}{D}
+       =iy\,e^{-iyD/2}\operatorname{sinc}(yD/2),
+\end{equation}
+com $\operatorname{sinc}(x)=\sin(x)/x$. A forma sinc trata a singularidade removível em $D=0$. O redshift $z=(\nu_P-\nu_E)/\nu_P$ contém $-R_a^{(0)}h_0$ e o residual é sua integral temporal. Um sinal global cancela na ORF, mas deve ser conservado na geração de séries.
+
+\section{ORF, normalização e limites independentes}
+
+Adota-se a normalização fixa
+\begin{equation}
+ \Gamma_0^{ab}=\frac{1}{32\pi}\int d\Omega\,
+ A_\beta(\mu_a)A_\beta(\mu_b)
+ g(y_a,D_a)g^*(y_b,D_b).
+\end{equation}
+Equivalentemente, escrevendo $Q/h_0=b_0e^b+l_0e^l$, com $b_0=1/\sqrt3$ e $l_0=-\sqrt{2/3}\chi$,
+\begin{equation}
+ \Gamma_0^{ab}=|b_0|^2\Gamma_{bb}^{ab}+|l_0|^2\Gamma_{ll}^{ab}
+ +b_0l_0^*\Gamma_{bl}^{ab}+l_0b_0^*\Gamma_{lb}^{ab}.
+\end{equation}
+Os termos cruzados são necessários. Para distâncias distintas, a conjugação relaciona também os índices dos pulsares; a soma cruzada não pode ser substituída automaticamente por duas vezes uma parte real. No exemplo terrestre de limiar e separação de $90^\circ$, a combinação vinculada vale $-1/20$, enquanto eliminar os termos cruzados produziria $+1/12$. A mudança de sinal ilustra um erro de modelo, não apenas uma alteração de escala.
+
+A segunda rota de integração usa
+\begin{align}
+ c_\ell^{(0)}(\beta,y)&=\int_{-1}^{1} A_\beta(x)g(y,1+\beta x)P_\ell(x)\,dx,\\
+ \Gamma_0^{ab}&=\frac1{32}\sum_{\ell=0}^{\infty}(2\ell+1)
+ c_\ell^{(0)}(\beta,y_a)c_\ell^{(0)*}(\beta,y_b)P_\ell(\boldsymbol p_a\cdot\boldsymbol p_b).
+\end{align}
+O corte comum entre pares conserva a estrutura de Gram. A soma escalar começa em $\ell=0$, enquanto a tensorial começa em $\ell=2$. O confronto independente usa um céu global e a contração explícita de $Q_{ij}$, evitando reproduzir apenas a mesma fórmula em coordenadas de um par.
+
+No limiar, apenas o multipolo quadrupolar sobrevive:
+\begin{equation}
+ \Gamma_0(0,d;y_a,y_b)=\frac{(1-e^{-iy_a})(1-e^{iy_b})P_2(d)}{10},
+ \qquad \Gamma_{0,aa}(0,y)=\frac25\sin^2(y/2).
+\end{equation}
+A ORF escalar é metade da tensorial nesse limite, de modo que a covariância depende de uma combinação de potências $S_T+S_0/2$. Essa degenerescência algébrica não resolve a identificabilidade numa banda inteira. Em $k=0$, o eixo de helicidade é entendido por continuidade de uma família orientada e pela média populacional especificada.
+
+No limite formal $\beta\to1$, obtêm-se
+\begin{equation}
+ \Gamma_0^{EE}(1,d)=\frac{3+d}{24},\qquad
+ \Gamma_{0,aa}(1,y)=\frac13\left[1-\frac{3}{2y^2}
+ \left(1-\frac{\sin 2y}{2y}\right)\right].
+\end{equation}
+Entretanto, a polarização métrica canônica cresce como $h_0/\chi$. O limite finito da resposta não demonstra um limite regular da teoria com fontes e amplitude fixa; a validade linear requer amplitudes métricas pequenas. Também não se pode substituir automaticamente os termos dos pulsares por uma média incoerente: a supressão depende de $\beta y$ e das diferenças de fase dos pares, e não apenas de $y$ grande.
+
+A população futura é parametrizada por $\varepsilon=S_0/S_T$, sendo $S_T$ a potência por polarização tensorial e $S_0$ a potência de uma helicidade zero. Com setores populacionais independentes,
+\begin{equation}
+ S^r_{ab}(f)=\frac{S_T(f)\Gamma_T^{ab}(f)+S_0(f)\Gamma_0^{ab}(f)}{6\pi^2f^2}.
+\end{equation}
+Não se renormaliza a diagonal da ORF para cada massa. Equipartição por grau de liberdade corresponderia a $S_0=S_T$, mas não foi deduzida uma hipótese de emissão, screening ou equipartição física. O modo escalar de \href{https://arxiv.org/pdf/2306.13593v4}{Bernardo--Ng} pertence a outra combinação escalar--tensorial; o sinal e a proporção longitudinal diferem dos de Fierz--Pauli, impedindo transferir diretamente seus cancelamentos multipolares.
+
+Uma auditoria algébrica também identificou diferença entre o produto compacto acima e um termo da expansão impressa da Eq.~(45) de Liang--Trodden: o fator angular requerido é $\sin(2\xi)$ onde a expansão consultada apresenta $\sin\xi$. Em $\beta=0{,}9$ e $\xi=\pi/2$, a leitura literal produz $0{,}03162079$, enquanto a construção por observadores, a expansão harmônica e a referência terrestre independente dão $0{,}02036600$. Registra-se a discrepância da expressão examinada, sem alegar errata formal ou impacto inferencial já medido.
+
+\section{Modelo estatístico e momentos implementados}
+
+Para massa fixa, a covariância de cada coeficiente complexo próprio é afim na potência escalar,
+\begin{equation}
+ C_k(u,\varepsilon)=C_{0k}(u)+\varepsilon C_{1k}(u),\qquad 0\leq\varepsilon\leq1.
+\end{equation}
+$C_0$ inclui ruído e setor tensorial, enquanto $C_1$ contém a contribuição escalar na convenção espectral declarada. Para $X_i=q^\dagger H_iq$, com $H_i$ hermitiana,
+\begin{align}
+ \mu_i(\varepsilon)&=\operatorname{tr}(H_iC_0)+\varepsilon\operatorname{tr}(H_iC_1),\\
+ \Sigma_{ij}(\varepsilon)&=\operatorname{tr}(H_iC_0H_jC_0)\notag\\
+ &\quad
+ +\varepsilon\left[\operatorname{tr}(H_iC_0H_jC_1)+\operatorname{tr}(H_iC_1H_jC_0)\right]\notag
+ \\
+ &\quad +\varepsilon^2\operatorname{tr}(H_iC_1H_jC_1).
+\end{align}
+O termo misto completo impede tratar a covariância como interpolação linear. Com frequências independentes, a compressão fixa usa $\mu_B=\sum_k w_k\mu_k$ e $\Sigma_B=\sum_k w_k^2\Sigma_k$. A0 conserva a densidade CN normalizada; A e B aplicam as normais aos estimadores físicos ou ao controle G. Zerando $\varepsilon$, recupera-se o modelo tensorial na mesma massa, e não necessariamente a teoria sem massa.
+
+O candidato inferencial é condicional em $(u,\varepsilon)$, com quatro nuisances conhecidas, $u\in[0{,}001,1]$ e medida própria $du/0{,}999\,d\varepsilon$. A hipótese nula $\varepsilon=0$ usa a mesma priori em $u$. A API seletiva calcula cinco análises dispersivas e somente B\_CN/B\_G em cada aproximação C, totalizando nove análises; não calcula densidades descartadas para ocultar seu custo. Em C$_\beta$, congelam-se conjuntamente $\beta$ e $\chi$ do vínculo escalar, preservando as fases por canal. Em C$_{\rm full}$, congela-se a ORF inteira, mantendo os espectros e ruídos nas frequências físicas.
+
+\section{Resultados numéricos concluídos e falha preservada}
+
+As verificações iniciais incluíram nove testes simbólicos/numéricos e nove casos adicionais de ORF finita, chegando ao domínio de fase já examinado em C05. Eles verificaram observadores, normalização, vínculo, termos cruzados, rotação, positividade e limites. São controles discretos, sem certificação uniforme do domínio contínuo.
+
+Na geometria integrada C06 --- dez pulsares, três canais, $T=15$ anos e distâncias sintéticas de 100--300 anos-luz --- as fases chegam a $120\pi$ radianos. Foram concluídos controles de oito massas e uma tabela nodal aninhada de 129/257/513 massas, para os setores TT e escalar e para as cinco configurações únicas de velocidade/fase necessárias às respostas dispersiva e C$_\beta$. Os controles de céu independente passaram: a maior diferença harmônico--direto foi aproximadamente $3{,}28\times10^{-12}$. Na tabela, o refinamento da quadratura angular teve erro máximo $5{,}24\times10^{-13}$; o mínimo autovalor, aproximadamente $-2{,}40\times10^{-16}$, foi compatível com roundoff, sem recorte de autovalores.
+
+Esses resultados não aprovaram a interpolação em massa. A interpolação linear de 129 para 257 nós apresentou erro absoluto máximo $0{,}23918$; de 257 para 513, $0{,}10553$. Ambos reprovaram seus critérios. O estado da tabela permanece \texttt{COMPONENT\_ORF\_TABLE\_FAIL}. A convergência angular de valores nodais e a precisão entre nós são questões diferentes; a primeira não autoriza promover a segunda. O conjunto consumiu aproximadamente 133,91 s de CPU combinada e não calculou posteriores escalares.
+
+A alternativa preparada consulta apenas nós explicitamente disponíveis, com recibo de reutilização que aceita seus controles angulares e preserva a falha de interpolação. A integração da likelihood, da evidência e dos contornos continua a exigir validação própria. Para o evento de logL em $\varepsilon$, o candidato utiliza envelopes matriciais de células inteiras e classificação dentro/fora/ambígua; não supõe a existência de apenas duas raízes.
+
+\section{Estado do executor e trabalho pendente}
+
+O executor seletivo preparado organiza 16 dados de engenharia, nove análises, malhas aninhadas em $(u,\varepsilon)$, quatro referências mais finas, produtos de quadratura independentes e referências de evento. Foram executados \emph{onze testes sintéticos} de álgebra e persistência, incluindo falhas parciais. Isso valida componentes do percurso, não um piloto físico. Nenhuma ORF adicional, realização PTA ou posterior desse executor foi produzida.
+
+A alocação prospectiva mais recente prevê 14.991.120 valores de logL sob teto de 15 milhões, com reservas anteriores às avaliações e sem refinamento automático. Esses números delimitam uma proposta de execução; não representam trabalho realizado nem aprovação dos custos físicos. As autorizações do piloto, seu pré-requisito C09 e a validação integral continuam pendentes.
+
+Para concluir C10 faltam executar e avaliar o piloto, validar as integrais e os eventos bidimensionais, medir o custo real e definir a campanha seguinte. Permanecem pendentes as injeções tensoriais e mistas, os falsos positivos, a recuperação da potência escalar, as degenerescências e os efeitos de A/B/C. Estabilidade dinâmica, geração por fontes e alcance linear exigem estudos adicionais. C10 conserva uma base teórica e numérica parcial e a falha de interpolação que motivou o novo desenho.

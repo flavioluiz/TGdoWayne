@@ -119,3 +119,9 @@ afetada. Nenhum marco será marcado como concluído apenas porque seu prazo cheg
 Os resultados centrais devem ser reproduzíveis, as conclusões devem responder à pergunta de pesquisa
 e a dissertação deve estar integralmente revisada. O artigo é um produto planejado; sua submissão,
 aceitação e a defesa têm estados próprios. A tag `v1.0.0` não certifica aprovação institucional.
+
+## Versão intermediária e pausa
+
+O [commit C08.5](commits/C08_5_estado_parcial_e_pausa.md) publica v0.8.5 a pedido do usuário,
+com drafts C09–C11 e o ponto de retomada. O trabalho está pausado; o último marco
+concluído continua sendo C08. Os critérios dos marcos futuros permanecem vigentes.

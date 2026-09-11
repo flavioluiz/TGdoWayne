@@ -1,0 +1,112 @@
+{
+  "approved": true,
+  "scope": "NODAL_ORFS_ONLY",
+  "table_sha256": "0e2d5f8373ca89a556894f52e9d61f8728510340b50106d5475934ee4d314712",
+  "mass_payload_sha256": "b28b764c1470f1ab70a3f37d1029913288a032a993e9945d537acaaf91746ffa",
+  "geometry_fixture_sha256": "94a7a553fe52224525de30a78782afa45e64def0bd1c870f24121d563b1c8d0a",
+  "original_table_report_sha256": "181168007313f74ae2ed4ddf5d228ae6261f23641efc2fff5525d2bf2eb1a634",
+  "nodal_gates_pass": true,
+  "interpolation_approved": false,
+  "historical_interpolation_status": "COMPONENT_ORF_TABLE_FAIL",
+  "reconstructed_checks": {
+    "angular_nodes_only": {
+      "passed": true,
+      "maximum_absolute_error": 5.243028233792302e-13,
+      "maximum_tolerance_ratio": 1.6465301291081915e-08
+    },
+    "harmonic_cutoff_only": {
+      "passed": true,
+      "maximum_absolute_error": 7.888609052210118e-31,
+      "maximum_tolerance_ratio": 8.387390628662065e-27
+    },
+    "PSD": {
+      "passed": true,
+      "minimum_eigenvalue": -2.3992149150527893e-16,
+      "minimum_relative_eigenvalue": -1.6992817877924343e-16,
+      "maximum_hermitian_residual": 0.0,
+      "no_clipping": true
+    },
+    "mass_linear_129_to_257_new_nodes": {
+      "passed": false,
+      "maximum_absolute_error": 0.23918278545845623
+    },
+    "mass_linear_257_to_513_new_nodes": {
+      "passed": false,
+      "maximum_absolute_error": 0.10552692077736195
+    }
+  },
+  "case_order": [
+    "D1",
+    "D2",
+    "D3",
+    "CB2",
+    "CB3"
+  ],
+  "output_mapping": {
+    "dispersive": [
+      0,
+      1,
+      2
+    ],
+    "C_beta": [
+      0,
+      3,
+      4
+    ],
+    "C_full": [
+      0,
+      0,
+      0
+    ]
+  },
+  "harmonic_resolutions": [
+    {
+      "name": "H00",
+      "lmax": 460,
+      "nmu": 900
+    },
+    {
+      "name": "H01_nodes",
+      "lmax": 460,
+      "nmu": 1000
+    },
+    {
+      "name": "H11_nodes_and_lmax",
+      "lmax": 520,
+      "nmu": 1000
+    }
+  ],
+  "sector_order": [
+    "TT_sum_plus_cross",
+    "one_linked_FP_scalar"
+  ],
+  "old_probe_report_sha256": "303ba874a0c41c96dbf5445b2ad52a2e876f06a30411c544720eff94dab3c50c",
+  "source_bindings_verified": {
+    "tmp/c10_execution_design/c10_protocol_candidate_v1.json": "8bab32e3780c781530752e98ab6974dca0e23a1563ed49f696c4fe89583699b9",
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "results/C06/massive/fixture.npz": "94a7a553fe52224525de30a78782afa45e64def0bd1c870f24121d563b1c8d0a",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "tmp/c10_scalar_blas/src/inference/scalar_blas.py": "5cf0daf3a3972e96afd18cb5c001f5d43d16ad36c4243d4b163ac88b94acd2f7",
+    "tmp/c10_scalar/SUBSIDIO_C10.md": "5d73265e40ee810f562e4f6571b626cb6777189dfffd13e526125bdfd0920da6",
+    "tmp/c10_kernel_v2/c06_zero_scalar_validation.json": "c077251d8a2474c53f73c4030ab9ceee9043d61bf60815c2f1d622dad59e7bb3",
+    "tmp/c10_kernel_v2/check_c06_zero_scalar.py": "985a605bbdc4e87f61eb4b482398f5f748afa150f23e65732b68ff0fcb7bf4bd",
+    "tmp/c10_kernel_v2/conditional_kernel.py": "fe2b3244e6d38874e6baaced00d69e77385353ff4c282dca118f159a3b06de88",
+    "src/inference/likelihood_reference.py": "29a2c4137d566ff95766a1feccf68033358e354a5249cd89f869451b7f575498",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "tmp/c10_orf_preflight/scripts/run_orf_preflight.py": "6f1693e3b04105b83f8d0c01cb51b33700839d79a6e681ea96a8a3bdf01aa4d7",
+    "tmp/c10_orf_preflight/scripts/validate_light.py": "2e8d8423c3dbf250d58c4271fe071fba8c3a2baa5925d73f4f657e31500a0705",
+    "tmp/c10_orf_preflight/src/direct_sky.py": "0365a64b34e9f8b3565e09c151fca944436fb4c6d3394c6d7058cc385b1ae5fa",
+    "tmp/c10_orf_preflight/src/planning.py": "cad76d28165048d516160cb8e6f22de2925d7e4c60f475c5ae7973afe0efc964",
+    "tmp/c10_orf_preflight/tests/test_preflight.py": "86c6fa28dbaa51ed0886732a50cc2b15f953c0a063f013eed97c3c50ebd1e6ef"
+  },
+  "numerical_array_bytes": 24628104,
+  "new_ORF": 0,
+  "new_logL": 0,
+  "new_draws": 0,
+  "CPU_seconds_including_imports": 0.16724999999999998,
+  "peak_RSS_bytes": 149618688,
+  "reviewer_source_sha256": "8d7712a497e621a2f41c2c6e0a139ad4e339baee08f6c564107acd9d3f2d9c3c",
+  "scope_limit": "Authorizes only reuse of these stored exact-node matrices under the bound conventions. No pilot, production, interpolation or uniform physical-probability approval."
+}

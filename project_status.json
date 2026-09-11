@@ -11,11 +11,11 @@
     "C07",
     "C08"
   ],
-  "latest_version": "v0.8.0",
+  "latest_version": "v0.8.5",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.8.0/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.8.5/dissertacao.pdf",
   "updated_at": "2026-09-11",
-  "status_label": "Compressão e resposta comparadas; limites de massa permanecem inconclusivos na resolução avaliada",
+  "status_label": "Trabalho pausado a pedido do usuário; C09–C11 preservados como drafts",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -55,10 +55,17 @@
     "Síntese dos 32 dados compartilhados: 5760 quantis, 4480 diferenças de quantis e 1120 diferenças de larguras; 24 dados sorteados separados dos oito de fronteira.",
     "Todos os 224 contrastes primários individuais e as sete médias piloto permaneceram inconclusivos na escala de 0,01; 4300 quantis mantêm intervalos [0,1], sem alegar equivalência ou ausência de efeito.",
     "Divergências de forma posterior A_G para B_G avaliadas em quatro dados fixos, com MCSE e covariâncias auditadas; não tratadas como fatores de Bayes.",
-    "Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256."
+    "Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256.",
+    "Piloto parcial C09 e reparos D1/D1b preservados: 544316 avaliações acumuladas; 13/14 eventos resolvidos na representação tabulada, caso 10 pendente e todos os intervalos do evento físico [0,1].",
+    "Texto desenvolvido e resultados parciais de C09–C11 incorporados como drafts, com tarefas pendentes e arquivos de retomada. Nenhuma nova simulação física iniciada para v0.8.5."
   ],
-  "current_work": "C09 em preparação: robustez a prioris, ruído e covariâncias, com reparo e validação do diagnóstico de forma no piloto antes de ampliar a campanha. C08 está concluído como comparação executada com limitações explícitas; melhorar a resolução dos quantis permanece uma extensão metodológica, sem aprovação implícita nas próximas etapas.",
-  "in_progress_stages": [
-    "C09"
-  ]
+  "current_work": "Pausa solicitada pelo usuário após v0.8.5. C09 parcial: piloto e reparos executados; D2/D3 e calibração ampliada pendentes. C10 e C11 têm texto e preparações em draft, sem campanhas de inferência concluídas. C12–C13 permanecem planejados. Retomar somente após nova solicitação. Consulte o plano intermediário C08.5 e docs/pausa_v0.8.5/README.md.",
+  "in_progress_stages": [],
+  "execution_status": "paused_by_user",
+  "paused_stages": [
+    "C09",
+    "C10",
+    "C11"
+  ],
+  "resume_only_on_user_request": true
 }
