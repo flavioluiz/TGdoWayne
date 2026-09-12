@@ -10,6 +10,7 @@ a versão~0.8.6 acrescentou a execução limitada de D2 e sua auditoria.
 A versão~0.8.7 concluiu as referências das quarenta análises para
 normalização, CDF, quantis, momentos e KL, no alcance operacional descrito.
 A versão~0.8.8 acrescenta a referência própria da distância W1.
+A versão~0.8.9 inicia o piloto D3 com novos dados de engenharia.
 Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
@@ -500,6 +501,65 @@ mas não substituem uma distribuição de resultados sob cada cenário.
 A inclusão e a omissão de um contaminante devem ser confrontadas no mesmo
 dado quando a pergunta for sensibilidade à hipótese de análise.
 
+\subsubsection{Dados e controles do piloto D3}
+
+Foram gerados dezesseis casos de engenharia com namespace próprio de
+sementes, excluídos da futura amostra SBC. Três casos centrais sorteiam
+a massa das prioris uniforme, uniforme em massa ao quadrado e logarítmica
+com corte inferior \(0,001\). Dois casos reforçam o ruído vermelho
+ou branco. Quatro combinam índices espectrais \(3\) e \(5,5\) com
+massas fixas \(0,5\) e \(0,995\). Outros quatro incluem monopolo ou
+dipolo com razões de potência \(0,25\) ou \(1\), em \(u=0,5\).
+Completam o conjunto duas escalas de distância, \(0,9\) e \(1,1\),
+e um controle de massa nula. As escalas alteradas são controles fixos de
+estresse, não realizações sorteadas da mistura populacional de distâncias.
+
+O dipolo é representado por \(G_{ab}=\boldsymbol p_a\cdot\boldsymbol p_b\),
+uma matriz de Gram positiva semidefinida, de posto no máximo três e
+diagonal unitária. Correlações negativas entre direções são preservadas.
+O contaminante mantém índice espectral \(13/3\), com razão de potência
+definida no pivô, mesmo quando o índice do sinal tensorial é alterado.
+Os novos componentes passaram em quatro testes, incluindo geometria,
+normalização espectral, geração de controles gaussianos e ordem correta
+da marginalização da distância global.
+
+As massas sorteadas são contínuas e não foram escolhidas entre nós da
+tabela. Dez pares distintos de massa e escala de distância exigiram
+respostas novas, nas quatro frequências. Três resoluções separam os
+refinamentos angular e harmônico; os desvios máximos foram
+\(2,87\times10^{-12}\) e \(4,44\times10^{-15}\), respectivamente.
+Essas verificações validam os pontos de geração, sem certificar uma
+interpolação nas distâncias alteradas.
+
+A primeira tentativa atingiu o limite operacional de memória, com pico
+observado de \(1,81\) GB, após salvar dois canais. O limite foi testado
+depois da alocação; não se alega que o pico ficou abaixo do teto.
+A continuação usou um processo por resolução e reutilizou os dois
+canais salvos. O maior pico dos novos processos foi de \(739\) MB.
+O histórico, incluindo a tentativa interrompida, contabiliza
+\(132,02\) bilhões de produtos reais estimados e \(18,96\) segundos
+de CPU nos trechos instrumentados dos workers. O controlador acrescenta
+\(0,26\) segundo. Os recibos permanecem separados.
+
+Para os catorze dados com distâncias nominais, foram preparadas dez
+análises: \(A_0\), \(A_G\) e o fatorial de covariância completa/diagonal
+e fixa/variável sobre estatísticas CN e gaussianas. As \(140\) curvas
+passaram em controles finitos de resposta, em dezessete pontos por curva,
+e em três densidades SciPy independentes. A maior diferença de logL
+entre resposta tabulada e harmônica foi \(1,51\times10^{-7}\).
+Esses controles precedem as integrações posteriores e não constituem
+uma margem uniforme de probabilidade física.
+
+\input{tabelas/d3_piloto_estado}
+
+Os dados e as respostas dos dois casos de distâncias alteradas foram
+preservados, mas suas posteriores exigem validar as respostas ao longo
+do suporte e executar a mistura global. Os controles gaussianos próprios
+de cada variante de covariância têm componentes matemáticos testados;
+seus dados e posteriores piloto ainda faltam. Também faltam as análises
+com contaminante omitido sobre os mesmos dados. Os casos de engenharia
+não substituem as distribuições de limites ou os grupos SBC de produção.
+
 O tratamento prospectivo de distâncias usa uma hipótese discreta global,
 marginalizada na likelihood conforme a
 Eq.~\eqref{eq:c09-mistura-distancia}. Sua execução e suas referências
@@ -532,7 +592,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.8}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.9}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.

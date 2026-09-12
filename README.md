@@ -16,7 +16,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 **Próxima etapa:** C09 — Robustez a prioris, ruído e covariâncias.  
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.8.8](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.8/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.8) · [PDF versionado no repositório](output/pdf/v0.8.8/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.8.9](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.9/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.9) · [PDF versionado no repositório](output/pdf/v0.8.9/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -59,10 +59,11 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Referências D2 concluídas para 40 análises: normalização, CDF, quantis, momentos e KL passaram nos critérios operacionais, com controles físicos pontuais separados.
 - Continuações D2 contabilizaram 40875 avaliações e 223,28 s CPU; caches e painéis foram reutilizados, falhas preservadas e 37 contrastes pareados sintetizados.
 - W1 entre posterior e priori passou em todas as 40 análises D2, com referência independente, dois refinamentos, quatro testes analíticos e auditoria dos caches; 87987 avaliações adicionais e 53,53 s CPU.
+- Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.
 
 ### O que está em andamento e o que falta
 
-C09 em andamento: as 40 análises D2 passaram nos cinco controles primários e em W1, com 37 contrastes pareados e alcance condicional explícito. Permanecem pendentes eventos de log-likelihood e D3 com calibração SBC, ruído, espectros, contaminantes, distâncias e variabilidade. C10–C11 têm drafts e preparações; C12–C13 permanecem planejados. Consulte docs/w1_v0.8.8/README.md. Nenhuma simulação permanece em execução após o fechamento deste lote.
+C09 em andamento: D2 tem 40 análises com controles primários e W1; o piloto D3 acrescenta 16 dados e 140 inferências nominais com controles primários aprovados. Faltam posteriores da mistura de distâncias, controles próprios de covariância, contaminantes omitidos, W1/eventos dos novos dados e a campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_piloto_v0.8.9/README.md. Nenhuma simulação permanece em execução após este lote.
 
 ## Roadmap
 
