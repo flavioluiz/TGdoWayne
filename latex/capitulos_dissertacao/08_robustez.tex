@@ -7,8 +7,9 @@
 Este capítulo reúne a fundamentação, os diagnósticos já executados e as
 pendências de C09. As continuações D1 e D1b foram publicadas na versão~0.8.5;
 a versão~0.8.6 acrescentou a execução limitada de D2 e sua auditoria.
-A versão~0.8.7 conclui as referências das quarenta análises para
+A versão~0.8.7 concluiu as referências das quarenta análises para
 normalização, CDF, quantis, momentos e KL, no alcance operacional descrito.
+A versão~0.8.8 acrescenta a referência própria da distância W1.
 Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
@@ -395,7 +396,7 @@ análises, os maiores desvios foram \(3,40\times10^{-6}\) em log-evidência,
 quantil de ordem \(0,95\). Esses números descrevem concordância entre
 interpolantes que compartilham os mesmos dados de entrada; são reportados
 separadamente das referências independentes agora concluídas.
-A distância W1 e os eventos de log-likelihood continuam pendentes.
+Os eventos de log-likelihood continuam pendentes; W1 é avaliada a seguir.
 A aprovação operacional não constitui uma margem uniforme física ou
 uma calibração SBC.
 
@@ -434,6 +435,59 @@ controle: a aprovação de quantis não aprova automaticamente uma distância
 de Wasserstein, e uma falha do evento de logL não será apagada pela
 concordância de uma CDF de massa. As regras prospectivas não reclassificam
 os registros históricos do diagnóstico nominal ou de D1/D1b.
+
+\subsection{Distância W1: referência independente}
+
+A distância entre posterior e priori foi calculada nas quarenta análises,
+sem herdar aprovação dos controles de quantis. Para cada medida própria,
+uma referência integra conjuntamente a massa acumulada \(I_j\) e a
+distância acumulada \(W_j\), na coordenada \(\alpha=\arcsin u\):
+\begin{equation}
+ \frac{dI_j}{d\alpha}
+   =e^{\ell(\sin\alpha)-s}\pi_j(\sin\alpha)\cos\alpha,
+ \qquad
+ \frac{dW_j}{d\alpha}
+   =\left|\frac{I_j}{Z_j}-F_{\pi_j}(\sin\alpha)\right|\cos\alpha.
+\end{equation}
+Aqui, \(Z_j\) é a normalização independente da quadratura D2, com a
+mesma escala \(s\); as condições iniciais são nulas na borda inferior
+do suporte. A integração de cada medida termina em sua borda superior.
+O algoritmo DOP853 consulta a likelihood do backend congelado, sem usar
+o interpolante posterior. A tabela ORF permanece a mesma: independência
+da integração posterior não significa independência da resposta física.
+
+Dois refinamentos usam tolerâncias relativas \(10^{-8}\) e \(10^{-9}\),
+absolutas \(10^{-10}\) e \(10^{-11}\), e passos máximos em \(\alpha\)
+de \(0,01\) e \(0,005\). São confrontados com integrais W1 tabuladas em
+duas malhas e ordens de quadratura \(12\) e \(24\). A discrepância
+operacional retém o maior desvio entre representações, refinamentos e
+referência, acrescido da sensibilidade à incerteza de \(Z_j\).
+As CDFs nos cortes registrados e a massa total integrada também são
+conferidas contra a quadratura independente.
+
+Quatro testes analíticos precederam a aplicação: likelihood constante
+em dez medidas próprias; inclinação linear, cuja W1 é a mudança exata
+da média; cruzamentos múltiplos de CDFs; e sensibilidade à normalização.
+As quarenta análises passaram no critério W1 de \(0,001\), com maior
+discrepância de \(3,654\times10^{-6}\). Os desvios máximos de CDF e
+normalização relativa foram \(3,10\times10^{-7}\). Esses controles são
+operacionais, sem certificado uniforme de erro físico.
+
+No dado~2, W1 em \(u\) é \(0,14169\) para a priori uniforme em massa,
+\(0,07304\) para a uniforme em massa ao quadrado e \(0,16075\) para
+a logarítmica com corte inferior \(10^{-4}\), todas com corte superior
+unitário. Com priori uniforme em \([0;0,8]\), obtém-se \(0,11312\).
+Cada valor mede deslocamento em relação à sua própria priori; ordenar
+valores entre prioris diferentes não estabelece uma ordem universal de
+informatividade. As unidades físicas de massa são recuperadas pelo
+fator \(h/(c^2T)\).
+
+O lote contabilizou \(87\,987\) avaliações adicionais e \(53,53\) segundos
+de CPU. Os treze caches anteriores foram verificados bit a bit, com três
+avaliações de ligação por curva. Não houve novos dados ou tabelas ORF.
+O histórico C09 passa a \(848\,956\) avaliações e \(942,33\) segundos
+de CPU. Fontes, resultados e recibos estão preservados em
+\texttt{results/C09/W1/}. Não se realizou nova calibração SBC neste lote.
 
 \subsection{Ruído, espectros, distâncias e calibração: D3}
 
@@ -478,7 +532,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.7}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.8}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.
