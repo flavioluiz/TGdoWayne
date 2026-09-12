@@ -1,0 +1,1431 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "summaries": [
+      {
+        "id": 0,
+        "label": "A0_CN",
+        "fine": {
+          "logZ_H1": -27.454436623613425,
+          "logZ_H0": -27.1318816211383,
+          "logBF": -0.3225550024751236,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.12214704608426369,
+              0.591473073047123,
+              0.9020067508251498,
+              0.9473909368086978
+            ],
+            [
+              0.036672489900783416,
+              0.4167018956205335,
+              0.8629727538349193,
+              0.9297980404770738
+            ]
+          ],
+          "logL_CDF": 0.2842478750934038,
+          "contour_quadrature_error_estimate": 1.2728192070954688e-16,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -743.7784894875739,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": -27.45447324759655,
+          "logZ_H0": -27.13192790836126,
+          "logBF": -0.3225453392352904,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.12212682600431592,
+              0.5914798281509032,
+              0.9019876479012265,
+              0.9473537506553122
+            ],
+            [
+              0.03667275603897743,
+              0.41670438485064704,
+              0.8629751391875821,
+              0.9297994601895412
+            ]
+          ],
+          "logL_CDF": 0.28402521632135064,
+          "contour_quadrature_error_estimate": 2.3203767043024794e-16,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -743.7784528635907,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 3.722337676231118e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 0,
+        "label": "A_CN",
+        "fine": {
+          "logZ_H1": 39.6081597218005,
+          "logZ_H0": 40.000424947589664,
+          "logBF": -0.392265225789167,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.3742340451080448,
+              0.753994389193348,
+              0.9497610743036632,
+              0.9745493716517615
+            ],
+            [
+              0.034146686149721606,
+              0.3839214355542874,
+              0.829970107725454,
+              0.9092655385940699
+            ]
+          ],
+          "logL_CDF": 0.01322205647370682,
+          "contour_quadrature_error_estimate": 7.296146517360653e-18,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.4214907583588,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 39.608302496713435,
+          "logZ_H0": 40.00041361943814,
+          "logBF": -0.3921111227247067,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.3741718225958356,
+              0.754021998043244,
+              0.9498237362848647,
+              0.9746421538151119
+            ],
+            [
+              0.034151812731831925,
+              0.3839637321598524,
+              0.830002168871598,
+              0.909285364816075
+            ]
+          ],
+          "logL_CDF": 0.0132183263473763,
+          "contour_quadrature_error_estimate": 1.4551236046319195e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.4216335332717,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.287503838879103e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 0,
+        "label": "B_CN",
+        "fine": {
+          "logZ_H1": 17.60261314529026,
+          "logZ_H0": 18.040706930460047,
+          "logBF": -0.43809378516978725,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.08503980226226077,
+              0.5541200848011986,
+              0.8967381994189703,
+              0.9465301516504611
+            ],
+            [
+              0.03284351312140592,
+              0.3915792751795468,
+              0.8509047529257138,
+              0.9231115456645427
+            ]
+          ],
+          "logL_CDF": 0.9122292310124888,
+          "contour_quadrature_error_estimate": 5.831515846018012e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -743.730415166592,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 17.60260156381027,
+          "logZ_H0": 18.04068135980848,
+          "logBF": -0.4380797959982097,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.0850274814220289,
+              0.554101130259465,
+              0.8967250399064755,
+              0.9465237535260022
+            ],
+            [
+              0.03284316954361335,
+              0.39157725782499636,
+              0.8509045868314461,
+              0.9231115330995066
+            ]
+          ],
+          "logL_CDF": 0.9122401760317317,
+          "contour_quadrature_error_estimate": 1.1844903984277705e-16,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -743.7304751306423,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 1.897351524886675e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 0,
+        "label": "A_G",
+        "fine": {
+          "logZ_H1": 35.15973025669336,
+          "logZ_H0": 35.5131296179936,
+          "logBF": -0.35339936130024086,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.036175117470517444,
+              0.2788445721035549,
+              0.5519744023986259,
+              0.6325342695896402
+            ],
+            [
+              0.0349746176971786,
+              0.38950794956390683,
+              0.859985473980215,
+              0.9294772430998325
+            ]
+          ],
+          "logL_CDF": 0.993602483472272,
+          "contour_quadrature_error_estimate": 3.5810709341113695e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.8886555635191,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 35.159698729737,
+          "logZ_H0": 35.51317652766897,
+          "logBF": -0.35347779793196565,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.036170743968918985,
+              0.2788547486908837,
+              0.5520238766181189,
+              0.6326061634238698
+            ],
+            [
+              0.034977813478763144,
+              0.3895139524724373,
+              0.8599839804998947,
+              0.9294762537960845
+            ]
+          ],
+          "logL_CDF": 0.993706936980703,
+          "contour_quadrature_error_estimate": 8.215218760213773e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.8887134116629,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 7.196580002959346e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 0,
+        "label": "B_G",
+        "fine": {
+          "logZ_H1": 17.037847656238483,
+          "logZ_H0": 16.799172602936697,
+          "logBF": 0.23867505330178673,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.05218428452634411,
+              0.44137256118493684,
+              0.8370786102386666,
+              0.9104602839652784
+            ],
+            [
+              0.05994194723426187,
+              0.49865922143873226,
+              0.8917343320640475,
+              0.9451717872433091
+            ]
+          ],
+          "logL_CDF": 0.8826590040418153,
+          "contour_quadrature_error_estimate": 6.471713635841429e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -744.0364674550789,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 17.03779913329732,
+          "logZ_H0": 16.799172333902057,
+          "logBF": 0.23862679939526288,
+          "parameter_CDF": [
+            0.0,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.05218305852761548,
+              0.4413777661160432,
+              0.8370882656042412,
+              0.9104697609996547
+            ],
+            [
+              0.059945367537433986,
+              0.49866822447049064,
+              0.8917372880268948,
+              0.9451733664121927
+            ]
+          ],
+          "logL_CDF": 0.8828946092851244,
+          "contour_quadrature_error_estimate": 1.1987305559466352e-16,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -744.0365206835432,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.66503060522866e-06,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 3,
+        "label": "A0_CN",
+        "fine": {
+          "logZ_H1": -17.070339968334956,
+          "logZ_H0": -16.207477082056062,
+          "logBF": -0.8628628862788936,
+          "parameter_CDF": [
+            0.9727428589716216,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.41733351483411174,
+              0.8180487446086305,
+              0.9715122801338298,
+              0.987903637808686
+            ],
+            [
+              0.021569295811665452,
+              0.2769068734601525,
+              0.7442184979013116,
+              0.8551455000053048
+            ]
+          ],
+          "logL_CDF": 0.9880533156360602,
+          "contour_quadrature_error_estimate": 1.6859534186320953e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -741.6101905931813,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": -17.070400302947732,
+          "logZ_H0": -16.207559121752904,
+          "logBF": -0.8628411811948276,
+          "parameter_CDF": [
+            0.9730327581014352,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.4172467390825166,
+              0.8179860292598563,
+              0.9714638179806302,
+              0.9878315001047021
+            ],
+            [
+              0.02156843941867281,
+              0.2768937213128688,
+              0.7442057057280927,
+              0.8551377420431877
+            ]
+          ],
+          "logL_CDF": 0.9882823159831383,
+          "contour_quadrature_error_estimate": 3.4321923977338097e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -741.6101302585685,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.686261420936774e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 3,
+        "label": "A_CN",
+        "fine": {
+          "logZ_H1": 47.693010944609505,
+          "logZ_H0": 49.25019478798331,
+          "logBF": -1.5571838433738066,
+          "parameter_CDF": [
+            0.9614532839237978,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.6428693021231362,
+              0.9007017153118514,
+              0.9849843377710962,
+              0.9931436189713796
+            ],
+            [
+              0.010805504539102846,
+              0.1454991191915111,
+              0.47338483228058,
+              0.6040536447618579
+            ]
+          ],
+          "logL_CDF": 0.9938095292705221,
+          "contour_quadrature_error_estimate": 1.55371260411988e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -740.7924759366362,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 47.69370166971591,
+          "logZ_H0": 49.250425087364626,
+          "logBF": -1.556723417648719,
+          "parameter_CDF": [
+            0.9613600353330208,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.6427879764992113,
+              0.9006956747468307,
+              0.9850066885679216,
+              0.9931735170795234
+            ],
+            [
+              0.01080622449537525,
+              0.14551760119724252,
+              0.4734396940952717,
+              0.604116027920601
+            ]
+          ],
+          "logL_CDF": 0.9937478226200336,
+          "contour_quadrature_error_estimate": 3.2888430886288483e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -740.7931666617425,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.140703095588858e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 3,
+        "label": "B_CN",
+        "fine": {
+          "logZ_H1": 19.196156495184518,
+          "logZ_H0": 20.09128634523738,
+          "logBF": -0.8951298500528608,
+          "parameter_CDF": [
+            0.9862218048250153,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.27251191530915964,
+              0.7770480699675744,
+              0.9628001057231472,
+              0.9816924069813233
+            ],
+            [
+              0.020920387933519767,
+              0.2734101279688681,
+              0.7464597600586458,
+              0.8575763667889409
+            ]
+          ],
+          "logL_CDF": 0.9998227327197099,
+          "contour_quadrature_error_estimate": 3.566504802647527e-18,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.6497057190365,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 19.196277813252184,
+          "logZ_H0": 20.091310181298955,
+          "logBF": -0.8950323680467704,
+          "parameter_CDF": [
+            0.9862121155673539,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.27247993364608947,
+              0.7770307950686709,
+              0.9627982207852541,
+              0.9816953568939244
+            ],
+            [
+              0.020920723459922724,
+              0.2734122881934837,
+              0.7464626837588481,
+              0.8575784212516656
+            ]
+          ],
+          "logL_CDF": 0.9998397839688183,
+          "contour_quadrature_error_estimate": 8.077724511894435e-18,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.6498270371043,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 3.2013676746915505e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 3,
+        "label": "A_G",
+        "fine": {
+          "logZ_H1": 43.533578726646276,
+          "logZ_H0": 44.68911964948399,
+          "logBF": -1.1555409228377158,
+          "parameter_CDF": [
+            0.9786072000987028,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.5858611656675673,
+              0.8758184526905065,
+              0.9788279206761411,
+              0.9892659354919405
+            ],
+            [
+              0.016057773397246282,
+              0.20389248964277643,
+              0.5952816585159675,
+              0.7265332365611171
+            ]
+          ],
+          "logL_CDF": 0.9939039154110676,
+          "contour_quadrature_error_estimate": 3.2060547683494584e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -741.8260623269335,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 43.53366947410798,
+          "logZ_H0": 44.689073260678676,
+          "logBF": -1.1554037865706945,
+          "parameter_CDF": [
+            0.9786523923176331,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.5857693843455372,
+              0.8757741523021874,
+              0.9787979098046111,
+              0.9892420812396965
+            ],
+            [
+              0.01605939723656601,
+              0.20390980050986082,
+              0.5953157529429328,
+              0.7265654477571468
+            ]
+          ],
+          "logL_CDF": 0.9940762449196547,
+          "contour_quadrature_error_estimate": 6.496351359031994e-17,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -741.8261530743953,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.187319522536314e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      },
+      {
+        "id": 3,
+        "label": "B_G",
+        "fine": {
+          "logZ_H1": 15.636430573022741,
+          "logZ_H0": 16.495041393358505,
+          "logBF": -0.8586108203357643,
+          "parameter_CDF": [
+            0.9818838406663015,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.3513264859838639,
+              0.8194628552893544,
+              0.9710092393924428,
+              0.9858809179859392
+            ],
+            [
+              0.02164908848085481,
+              0.27708379976221587,
+              0.7451472384215551,
+              0.856039064724211
+            ]
+          ],
+          "logL_CDF": 0.9994671590651107,
+          "contour_quadrature_error_estimate": 2.3128467217850774e-18,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.2439165821287,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "coarse": {
+          "logZ_H1": 15.636582709804753,
+          "logZ_H0": 16.49511295737651,
+          "logBF": -0.8585302475717569,
+          "parameter_CDF": [
+            0.9818674196687888,
+            0.0
+          ],
+          "quantiles": [
+            [
+              0.35130492263840496,
+              0.8194571077794366,
+              0.9710257291673982,
+              0.9858838089105779
+            ],
+            [
+              0.021649758575469778,
+              0.2770892945545308,
+              0.7451533749400432,
+              0.8560432401437544
+            ]
+          ],
+          "logL_CDF": 0.9994482201152987,
+          "contour_quadrature_error_estimate": 5.749114605719035e-18,
+          "contour_small_interval_mass_bound": 0.0,
+          "finite_underflow_nodes": 0,
+          "log_upper_bound_omitted_scaled_nodal_probability": -742.2440687189107,
+          "underflow_scope": "Finite sampled nodal underflow only, not unsampled physical posterior mass",
+          "scope": "Exact properties of positive bilinear interpolant plus numerical contour quadrature"
+        },
+        "comparison": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 2.1584930389330782e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        }
+      }
+    ],
+    "aggregates": [
+      {
+        "key": [
+          0,
+          0
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.28392451309681344,
+            0.2845293493646711
+          ],
+          "candidate_interval": [
+            0.28392451309681344,
+            0.2845293493646711
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": -28.71346532279148,
+            "NAhigh": -28.71133732486633,
+            "Zlow": -27.454418455341326,
+            "Zhigh": -27.454418447684862,
+            "Zpoint": -27.454418451513096
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          0
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.28405681600027144,
+            0.28465214658730315
+          ],
+          "candidate_interval": [
+            0.28405681600027144,
+            0.28465214658730315
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": -28.7129816670021,
+            "NAhigh": -28.710888052635894,
+            "Zlow": -27.454400670168745,
+            "Zhigh": -27.454400662511553,
+            "Zpoint": -27.45440066634015
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          1
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.013176141873804467,
+            0.01327095162453758
+          ],
+          "candidate_interval": [
+            0.013176141873804467,
+            0.01327095162453758
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 35.27876137177444,
+            "NAhigh": 35.28593113776888,
+            "Zlow": 39.60810885850354,
+            "Zhigh": 39.60810889034628,
+            "Zpoint": 39.60810887442491
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          1
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.013174875656235829,
+            0.013268418896624333
+          ],
+          "candidate_interval": [
+            0.013174875656235829,
+            0.013268418896624333
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 35.27866196375953,
+            "NAhigh": 35.28573696792087,
+            "Zlow": 39.60810555436721,
+            "Zhigh": 39.60810558621564,
+            "Zpoint": 39.60810557029142
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          2
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9120456825804003,
+            0.9124389275474994
+          ],
+          "candidate_interval": [
+            0.9120456825804003,
+            0.9124389275474994
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 17.510551885010738,
+            "NAhigh": 17.51098295438874,
+            "Zlow": 17.602617078869127,
+            "Zhigh": 17.60261708462435,
+            "Zpoint": 17.602617081746736
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          2
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9120777936206798,
+            0.9124745012650772
+          ],
+          "candidate_interval": [
+            0.9120777936206798,
+            0.9124745012650772
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 17.510587007448247,
+            "NAhigh": 17.51102185648187,
+            "Zlow": 17.60261699421689,
+            "Zhigh": 17.602616999971218,
+            "Zpoint": 17.602616997094053
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          3
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9934818292704022,
+            0.9936365144337334
+          ],
+          "candidate_interval": [
+            0.9934818292704022,
+            0.9936365144337334
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 35.153201223705665,
+            "NAhigh": 35.15335681725452,
+            "Zlow": 35.15974063610132,
+            "Zhigh": 35.159740730475264,
+            "Zpoint": 35.15974068328829
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          3
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9935411211749764,
+            0.9936921269508604
+          ],
+          "candidate_interval": [
+            0.9935411211749764,
+            0.9936921269508604
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 35.153260663333384,
+            "NAhigh": 35.15341254485718,
+            "Zlow": 35.1597403965972,
+            "Zhigh": 35.15974049096885,
+            "Zpoint": 35.15974044378303
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          4
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.8823430610730106,
+            0.8826842302960968
+          ],
+          "candidate_interval": [
+            0.8823430610730106,
+            0.8826842302960968
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 16.9126893365596,
+            "NAhigh": 16.913075913253248,
+            "Zlow": 17.037863665672855,
+            "Zhigh": 17.037863677026884,
+            "Zpoint": 17.037863671349868
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          0,
+          4
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.8824796345191999,
+            0.8828172298684448
+          ],
+          "candidate_interval": [
+            0.8824796345191999,
+            0.8828172298684448
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 16.912843893571832,
+            "NAhigh": 16.913226362196045,
+            "Zlow": 17.037863449690587,
+            "Zhigh": 17.037863461044864,
+            "Zpoint": 17.037863455367727
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          0
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9880274001474799,
+            0.9880461839014749
+          ],
+          "candidate_interval": [
+            0.9880274001474799,
+            0.9880461839014749
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": -17.082381612929517,
+            "NAhigh": -17.082362621342423,
+            "Zlow": -17.070336783855197,
+            "Zhigh": -17.07033676425349,
+            "Zpoint": -17.070336774054343
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          0
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9876278321679439,
+            0.9876458275459494
+          ],
+          "candidate_interval": [
+            0.9876278321679439,
+            0.9876458275459494
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": -17.082845421714897,
+            "NAhigh": -17.08282722064,
+            "Zlow": -17.07039610099474,
+            "Zhigh": -17.070396081426722,
+            "Zpoint": -17.070396091210732
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          1
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9937960666508212,
+            0.9938286998301911
+          ],
+          "candidate_interval": [
+            0.9937960666508212,
+            0.9938286998301911
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 47.686556496806574,
+            "NAhigh": 47.68658902141101,
+            "Zlow": 47.69277944276267,
+            "Zhigh": 47.69277975451641,
+            "Zpoint": 47.692779598639554
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          1
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9938054827923615,
+            0.9938353349116438
+          ],
+          "candidate_interval": [
+            0.9938054827923615,
+            0.9938353349116438
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 47.68656731402966,
+            "NAhigh": 47.686597040018114,
+            "Zlow": 47.692780785109264,
+            "Zhigh": 47.69278109686105,
+            "Zpoint": 47.692780940985166
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          2
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.999811722559966,
+            0.9998259886713949
+          ],
+          "candidate_interval": [
+            0.999811722559966,
+            0.9998259886713949
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 19.195927549338663,
+            "NAhigh": 19.19594179506009,
+            "Zlow": 19.196115821530423,
+            "Zhigh": 19.19611584450512,
+            "Zpoint": 19.19611583301777
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          2
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9998340833829884,
+            0.999846185068749
+          ],
+          "candidate_interval": [
+            0.9998340833829884,
+            0.999846185068749
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 19.195949771824527,
+            "NAhigh": 19.1959618524713,
+            "Zlow": 19.19611567923328,
+            "Zhigh": 19.196115702207223,
+            "Zpoint": 19.19611569072025
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          3
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9937682148768419,
+            0.9938478322761024
+          ],
+          "candidate_interval": [
+            0.9937682148768419,
+            0.9938478322761024
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 43.52729853148676,
+            "NAhigh": 43.52737859764708,
+            "Zlow": 43.53354976793288,
+            "Zhigh": 43.53354981523252,
+            "Zpoint": 43.5335497915827
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          3
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9938817586975363,
+            0.9939528604432684
+          ],
+          "candidate_interval": [
+            0.9938817586975363,
+            0.9939528604432684
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 43.527412221670986,
+            "NAhigh": 43.527483711257375,
+            "Zlow": 43.533549208808836,
+            "Zhigh": 43.53354925610492,
+            "Zpoint": 43.53354923245688
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          4
+        ],
+        "nodes": 257,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9994681095318836,
+            0.9994784206348856
+          ],
+          "candidate_interval": [
+            0.9994681095318836,
+            0.9994784206348856
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 257,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 15.635847421110496,
+            "NAhigh": 15.635857734785992,
+            "Zlow": 15.63637945022094,
+            "Zhigh": 15.636379453082526,
+            "Zpoint": 15.636379451651733
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      },
+      {
+        "key": [
+          1,
+          4
+        ],
+        "nodes": 129,
+        "result": {
+          "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+          "interval": [
+            0.9994693878292095,
+            0.9994786251028959
+          ],
+          "candidate_interval": [
+            0.9994693878292095,
+            0.9994786251028959
+          ],
+          "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+          "node_count": 129,
+          "unknown_numerator_nodes": 0,
+          "missing_denominator_nodes": [],
+          "slice_controls_pass": true,
+          "rigorous_floatingpoint_certificate": false,
+          "uniform_physical_certificate": false,
+          "log_masses": {
+            "Nlow": 15.635848336016757,
+            "NAhigh": 15.635857575290592,
+            "Zlow": 15.636379086150848,
+            "Zhigh": 15.636379089012003,
+            "Zpoint": 15.636379087581425
+          },
+          "numerical_level_logweight_envelope": true,
+          "finite_controls_pass": true
+        }
+      }
+    ]
+  },
+  "unbounded_fields": [],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

@@ -1,8 +1,8 @@
 # Acervo de artigos
 
-Biblioteca local de apoio à pesquisa, com corte bibliográfico em **11/09/2026**: **37 PDFs**, **68.912.708 bytes** (68,91 MB decimais) e **839 páginas**. Todos os arquivos foram baixados e conferidos; o grau de leitura varia e está registrado por referência. O download de um PDF não equivale a sua leitura integral, reprodução ou validação científica.
+Biblioteca local de apoio à pesquisa, com corte bibliográfico em **11/09/2026** e suplemento metodológico em **12/09/2026**: **38 PDFs**, **69.513.382 bytes** (69,51 MB decimais) e **857 páginas**. Todos os arquivos foram baixados e conferidos; o grau de leitura varia e está registrado por referência. O download de um PDF não equivale a sua leitura integral, reprodução ou validação científica.
 
-O [catálogo](catalog.json) registra título, autores, revisão, datas, URL primária, licença identificada na fonte, caminho local, tamanho e SHA-256. Nos 35 registros arXiv, a revisão é fixada por identificador `vN`. Um relatório do site do autor e um PDF editorial JMLR têm mês documental e SHA-256 explícitos, pois seus URLs não identificam revisões numeradas. Novas cópias devem entrar em atualização explícita do catálogo. O TG original fornecido pelo usuário permanece em [TG_Wayne.pdf](../TG_Wayne.pdf), fora desta coleção de artigos baixados.
+O [catálogo](catalog.json) registra título, autores, revisão, datas, URL primária, licença identificada na fonte, caminho local, tamanho e SHA-256. Nos 35 registros arXiv, a revisão é fixada por identificador `vN`. Dois documentos dos sites dos autores e um PDF editorial JMLR têm mês documental e SHA-256 explícitos, pois seus URLs não identificam revisões numeradas. Novas cópias devem entrar em atualização explícita do catálogo. O TG original fornecido pelo usuário permanece em [TG_Wayne.pdf](../TG_Wayne.pdf), fora desta coleção de artigos baixados.
 
 ## Reconstituir ou verificar o acervo
 
@@ -104,3 +104,7 @@ acrescenta seis antecedentes sobre estimadores PTA por frequência, covariância
 priori de velocidade e informação de Fisher. A matriz passa de 17 para 23 entradas.
 Os seis PDFs foram copiados para esta biblioteca e conferidos localmente; os caminhos
 `tmp` no pacote de entrega preservam a proveniência anterior à integração.
+
+## Suplemento metodológico C10
+
+Em 12/09/2026 foi acrescentada a cópia pública de *Exactness of quadrature formulas*, de Lloyd N. Trefethen, para apoiar os testes de integração aninhada. A cópia `exactnessRev2.pdf` do autor está fixada por SHA-256; não é apresentada como idêntica à revisão arXiv v1.

@@ -1,0 +1,546 @@
+{
+  "protocol": "C10_CONDITIONAL_SCALAR_PRODUCTION_v1",
+  "date": "2026-09-12",
+  "execution_enabled": false,
+  "status": "SCIENTIFIC_PROTOCOL_FROZEN; TRUTH_ORF_GENERATION_STAGE_ALLOWED; POSTERIOR_EXECUTOR_PENDING",
+  "parameters": [
+    "u",
+    "epsilon_ratio"
+  ],
+  "prior": {
+    "u": [
+      0.001,
+      1.0
+    ],
+    "epsilon_ratio": [
+      0.0,
+      1.0
+    ],
+    "kind": "independent_uniform",
+    "H0": "epsilon=0, same proper mass prior and fixed nuisances",
+    "H1": "uniform epsilon on[0,1]",
+    "epsilon_definition": "S0/ST with ST per canonical TT polarization; not source fraction"
+  },
+  "nuisance": {
+    "log10_AT": -14.9,
+    "gamma": 4.1,
+    "log10_Ar": -15.3,
+    "red_gamma": 4.0,
+    "EFAC": 1.1
+  },
+  "geometry": {
+    "source": "exact C06 fixture arrays",
+    "N": 10,
+    "T_years": 15.0,
+    "K": [
+      1,
+      2,
+      3
+    ],
+    "periodic_samples": 392,
+    "fL_cycles_max": 60.0,
+    "y_radians_max": 376.99111843077515,
+    "f_ref": "1/T"
+  },
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "A_G",
+    "B_G"
+  ],
+  "C_models": [
+    "C_beta_CN",
+    "C_full_CN",
+    "C_beta_G",
+    "C_full_G"
+  ],
+  "populations": {
+    "null": {
+      "n": 500,
+      "truth": "u from common proper prior; epsilon0",
+      "seed_truth": 910100201,
+      "seed_data": 910100202
+    },
+    "prior2D": {
+      "n": 500,
+      "truth": "joint H1 prior",
+      "seed_truth": 910100301,
+      "seed_data": 910100302
+    },
+    "recovery": {
+      "n": 192,
+      "u": [
+        0.2,
+        0.8,
+        0.995
+      ],
+      "epsilon": [
+        0.1,
+        0.5
+      ],
+      "repetitions_per_cell": 32,
+      "cell_order": "u outer, epsilon inner",
+      "seed_data": 910100401
+    }
+  },
+  "C_subset": {
+    "null_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "prior2D_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "recovery_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      32,
+      33,
+      34,
+      35,
+      36,
+      64,
+      65,
+      66,
+      67,
+      68,
+      96,
+      97,
+      98,
+      99,
+      100,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      160,
+      161,
+      162,
+      163,
+      164,
+      165
+    ],
+    "pooled_mixed_recovery_CP_forbidden": true
+  },
+  "pilot": {
+    "seed": 910100101,
+    "data": [
+      {
+        "id": 0,
+        "kind": "fixed_engineering",
+        "u": 0.001,
+        "epsilon": 0
+      },
+      {
+        "id": 1,
+        "kind": "fixed_engineering",
+        "u": 0.2,
+        "epsilon": 0
+      },
+      {
+        "id": 2,
+        "kind": "fixed_engineering",
+        "u": 0.6,
+        "epsilon": 0
+      },
+      {
+        "id": 3,
+        "kind": "fixed_engineering",
+        "u": 0.995,
+        "epsilon": 0
+      },
+      {
+        "id": 4,
+        "kind": "fixed_engineering",
+        "u": 0.001,
+        "epsilon": 0.1
+      },
+      {
+        "id": 5,
+        "kind": "fixed_engineering",
+        "u": 0.2,
+        "epsilon": 0.1
+      },
+      {
+        "id": 6,
+        "kind": "fixed_engineering",
+        "u": 0.8,
+        "epsilon": 0.1
+      },
+      {
+        "id": 7,
+        "kind": "fixed_engineering",
+        "u": 0.995,
+        "epsilon": 0.1
+      },
+      {
+        "id": 8,
+        "kind": "fixed_engineering",
+        "u": 0.001,
+        "epsilon": 0.5
+      },
+      {
+        "id": 9,
+        "kind": "fixed_engineering",
+        "u": 0.2,
+        "epsilon": 0.5
+      },
+      {
+        "id": 10,
+        "kind": "fixed_engineering",
+        "u": 0.8,
+        "epsilon": 0.5
+      },
+      {
+        "id": 11,
+        "kind": "fixed_engineering",
+        "u": 0.995,
+        "epsilon": 0.5
+      },
+      {
+        "id": 12,
+        "kind": "fixed_engineering",
+        "u": 0.01,
+        "epsilon": 0.95
+      },
+      {
+        "id": 13,
+        "kind": "fixed_engineering",
+        "u": 0.5,
+        "epsilon": 0.95
+      },
+      {
+        "id": 14,
+        "kind": "fixed_engineering",
+        "u": 0.99,
+        "epsilon": 0.95
+      },
+      {
+        "id": 15,
+        "kind": "fixed_engineering",
+        "u": 1.0,
+        "epsilon": 0.5
+      }
+    ],
+    "methods": [
+      "A0_CN",
+      "A_CN",
+      "B_CN",
+      "A_G",
+      "B_G",
+      "C_beta_CN",
+      "C_full_CN",
+      "C_beta_G",
+      "C_full_G"
+    ],
+    "independent_reference_ids": [
+      0,
+      3,
+      8,
+      15
+    ],
+    "higher_reference_grid": [
+      513,
+      257
+    ],
+    "maximum_likelihood_equivalents": 15000000,
+    "independent_product_quadrature_reference": [
+      384,
+      96
+    ]
+  },
+  "mesh": {
+    "mass_nodes": "Chebyshev-Lobatto affine mapped to[.001,1]",
+    "epsilon_nodes": "uniform[0,1]",
+    "coarse": [
+      129,
+      65
+    ],
+    "fine": [
+      257,
+      129
+    ],
+    "integrand": "positive scaled likelihood, bilinear per rectangle",
+    "parameter_CDF": "analytic positive rectangle integrals; monotone quantile brackets",
+    "logL_CDF": "integrate clipped bilinear level-set cells; independent direct-likelihood contour reference mandatory",
+    "underflow_omitted_posterior_mass_max": 1e-08
+  },
+  "gates": {
+    "orf_scalar_and_tensor_independently_checked": true,
+    "orf_mass_probes": [
+      0.001,
+      0.1,
+      0.6,
+      0.9,
+      0.99,
+      0.995,
+      0.9999,
+      1.0
+    ],
+    "harmonic_coarse": {
+      "lmax": 460,
+      "nmu": 900
+    },
+    "harmonic_fine": {
+      "lmax": 520,
+      "nmu": 1000
+    },
+    "direct_coarse": [
+      500,
+      1000
+    ],
+    "direct_fine": [
+      600,
+      1200
+    ],
+    "orf_atol": 1e-05,
+    "orf_rtol": 0.001,
+    "relevant_same_covariance_kernel_logL_error_max": 1e-10,
+    "orf_interpolation_logL_error_max": 0.001,
+    "refinement_logZ_error_max": 0.001,
+    "refinement_logBF_error_max": 0.002,
+    "refinement_CDF_error_max": 0.002,
+    "quantile_bracket_prior_width_max": 0.001,
+    "metric_component_rms_max": 0.001,
+    "linear_amplitude_claim": "RMS only; no almost-sure Gaussian bound",
+    "truth_blind_final_resolution_selection": true
+  },
+  "detection": {
+    "BF10_threshold": 10.0,
+    "BF_spaces": "Within each method, identical observed data under H0/H1; no A0-A-B evidence comparison",
+    "epsilon_quantile_positive_is_detection": false,
+    "ambiguous_threshold": "Keep certain/possible declarations from logBF error intervals"
+  },
+  "sbc": {
+    "n": 500,
+    "statistics": [
+      "u",
+      "epsilon",
+      "logL_same_data"
+    ],
+    "correct_models": [
+      "A0_CN",
+      "A_G",
+      "B_G"
+    ],
+    "approximate_models": [
+      "A_CN",
+      "B_CN"
+    ],
+    "Holm_families": {
+      "correct": 39,
+      "approximate": 26,
+      "paired_central90": 6
+    },
+    "alpha": 0.05,
+    "undefined_integration": "preserve target and use[0,1] sensitivity for unresolved PIT",
+    "no_rejection_is_not_validation": true,
+    "quantile_probabilities": [
+      0.05,
+      0.5,
+      0.9,
+      0.95
+    ]
+  },
+  "fisher": {
+    "parameters": [
+      "u",
+      "epsilon",
+      "log10_AT",
+      "gamma",
+      "log10_Ar",
+      "log10_EFAC"
+    ],
+    "points": [
+      {
+        "u": 0.2,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.2,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.8,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.8,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.995,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.995,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.001,
+        "epsilon": 0.5
+      },
+      {
+        "u": 1.0,
+        "epsilon": 0.5
+      }
+    ],
+    "coordinate_scales": [
+      0.999,
+      1.0,
+      0.6,
+      2.5,
+      2.5,
+      0.6020599913279624
+    ],
+    "relative_steps": [
+      0.001,
+      0.0005,
+      0.00025
+    ],
+    "relative_matrix_change_max": 0.001,
+    "rank_relative_threshold": 1e-08,
+    "warning_correlation": 0.95,
+    "warning_min_generalized_schur_eigenvalue": 0.1,
+    "scope": "local6D information; not nuisance-free posterior, global identifiability, or misspecified physical normal Fisher"
+  },
+  "resources": {
+    "maximum_production_likelihood_equivalents": 300000000,
+    "maximum_pilot_likelihood_equivalents": 15000000,
+    "maximum_ORF_sky_equivalents": 70000000,
+    "maximum_ORF_construction_seconds": 600,
+    "maximum_estimated_main_seconds": 7200,
+    "maximum_memory_bytes": 4294967296,
+    "target_estimated_memory_bytes": 2147483648,
+    "data_batch": 64,
+    "node_batch": 1024,
+    "thread_count": 1,
+    "current_wallclock_cost_measured": true
+  },
+  "failure_policy": "Do not expand to high reference mesh for all targets or lower required500 counts automatically. Preserve failures and record C10 partial if gates/budget fail.",
+  "source_hashes": {
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "results/C06/massive/fixture.npz": "94a7a553fe52224525de30a78782afa45e64def0bd1c870f24121d563b1c8d0a",
+    "implementation_plan/commits/C10_helicidade_zero.md": "875f2748e061f10d786254a124ae3d3001e7a92c8868a8bed55a05810261354a",
+    "docs/contrato_comparacoes.md": "11cf8b686ad2f192b060aff80f093a85dd50a37c485d97b145268e73f695a5b3",
+    "tmp/c10_scalar/SUBSIDIO_C10.md": "5d73265e40ee810f562e4f6571b626cb6777189dfffd13e526125bdfd0920da6",
+    "tmp/c10_scalar/scalar_fp.py": "a6bdc5b823c58a0ab1f4a119a72f077758d132b7e91aa922f488d251e09dc8f5",
+    "tmp/c10_scalar/test_results.json": "c09643ff7850677985f37bb66dcc44e7a44249f6942f4b7793e476e93115b488",
+    "tmp/c10_scalar/benchmark_results.json": "90b26c8f9124303dee1b3d590376ae0a1682d3420f85144aa9807cdde49df67d"
+  },
+  "toy": {
+    "seed": 910100501,
+    "label": "ANALYTIC_TOY_NOT_PTA",
+    "required": [
+      "normalized_H0_H1_evidence",
+      "parameter_CDF_and_quantile_inversion",
+      "same_data_logL_CDF_contour",
+      "prior_return_negative_control_detected_by_data_dependent_statistic"
+    ]
+  },
+  "execution_stages": {
+    "truth_orf_generation": true,
+    "posterior": false,
+    "fisher": false
+  },
+  "prospective_resource_revision": {
+    "original_candidate_seconds": 3600,
+    "new_main_CPU_cap_seconds": 7200,
+    "basis": "Full-flow benchmark projected 4136.52 s before non-SBC harmonic bounds, production I/O and failure handling. Reserve up to two hours prospectively before population generation. No retroactive pilot cap change.",
+    "likelihood_cap_unchanged": 300000000,
+    "memory_cap_unchanged": 4294967296,
+    "ORF_combined_CPU_cap_unchanged": 600,
+    "original_protocol_sha256": "8bab32e3780c781530752e98ab6974dca0e23a1563ed49f696c4fe89583699b9"
+  },
+  "integration_revision": {
+    "mass": "Positive CC129/257 on exact frozen Chebyshev-Lobatto axes",
+    "epsilon": "Positive Simpson32/64 plus charged partial panels",
+    "event": "Batched Taylor intersected with original perturbation enclosure; prepared normalized polynomial densities",
+    "reference_audits": [
+      "results/C10/nested_integral_audit/audit.json",
+      "results/C10/prepared_event_audit/audit.json"
+    ],
+    "physical_logL_CDF_targets": "D models on 500 prior2D observations; C logL CDF remains descriptive/unresolved without direct reference",
+    "all_failed_targets_retained": true
+  },
+  "generation_rule": {
+    "algorithm": "numpy PCG64 via default_rng(SeedSequence([master,ensemble_id,id]))",
+    "ensemble_ids": {
+      "null": 1,
+      "prior2D": 2,
+      "recovery": 3
+    },
+    "prior2D_draw": "rng.uniform([0.001,0.0],[1.0,1.0])",
+    "null_draw": "rng.uniform(0.001,1.0), epsilon=0",
+    "recovery": "fixed cells from inventory",
+    "observations": "paired_physical_and_gaussian with independent per-record data seed; D H11 covariance",
+    "nuisances": "fixed as declared; no nuisance posterior or observational timing data"
+  }
+}

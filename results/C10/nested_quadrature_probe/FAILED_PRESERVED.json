@@ -1,0 +1,24 @@
+{
+  "status": "FAILED_DURING_REPORT_SERIALIZATION",
+  "cause": "NumPy scalar in Simpson roundoff term propagated numpy.bool_ into slice gates, rejected by strict JSON transport.",
+  "charged_completed_values": 51,
+  "cumulative_values": 14538034,
+  "first_slice_cache_not_persisted": true,
+  "CPU_measured": false,
+  "CPU_upper_allowance_seconds": 30,
+  "source_snapshots": {
+    "src/pta/nested_quadrature.py": {
+      "snapshot": "results/C10/nested_quadrature_probe/failed_source_snapshot/nested_quadrature.py",
+      "sha256": "b0544cddd79ee166e2361f075905be5ad84209e350b2407f4f89a75042900e3f"
+    },
+    "scripts/testar_quadratura_aninhada_c10.py": {
+      "snapshot": "results/C10/nested_quadrature_probe/failed_source_snapshot/testar_quadratura_aninhada_c10.py",
+      "sha256": "5570876d9c98646a4acc0509e39c91b48cff871fecab1955a7cebdb7c6167008"
+    },
+    "tmp/c10_nested_quadrature_v1/test_output.txt": {
+      "snapshot": "results/C10/nested_quadrature_probe/failed_source_snapshot/test_output.txt",
+      "sha256": "58d027c76df4589d3308fd5a79fc6027fa18721ceeb190a6e0947c73b739001e"
+    }
+  },
+  "restart_policy": "New frozen v2 directory; retain 51 historical evaluations and the failed plan. Do not overwrite the first ledger."
+}

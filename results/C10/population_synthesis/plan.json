@@ -1,0 +1,568 @@
+{
+  "schema": "C10_SCIENTIFIC_SYNTHESIS_v1",
+  "sources": {
+    "scripts/sintetizar_campanha_escalar_c10.py": "ced1ce702874f4b410633ef920c612dcaee1fa78a302b6420af276ca24d5e2e5",
+    "configs/scalar/c10_production_v1.json": "38e75534677b07c8a907ac2b0d213200491cf19ae69777fd7493dff53932db45",
+    "src/pta/scalar_campaign.py": "607361d9ecb0735c592201e20b82cd33e61bd4a5c62fb32280d5c13150405ad9",
+    "src/inference/diagnostics.py": "79eaef0d51e7276499a887e4d571d807756eb6dd89c01529548068b0cb5e18de",
+    "src/inference/sbc_sensitivity.py": "d14af4de7b5e200a70e7a58517b97388517d22275467ed308f3ccf044891dae8",
+    "tmp/c10_production_v1/plan.json": "b350682d55fb677c039a2c483fd22eaf01d52be2232fe534ba43a598f31737f5"
+  },
+  "hypotheses": {
+    "correct": [
+      {
+        "model": "A0_CN",
+        "kind": "KS_uniform",
+        "statistic": "u"
+      },
+      {
+        "model": "A0_CN",
+        "kind": "KS_uniform",
+        "statistic": "epsilon"
+      },
+      {
+        "model": "A0_CN",
+        "kind": "KS_uniform",
+        "statistic": "logL_same_data"
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A0_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "A_G",
+        "kind": "KS_uniform",
+        "statistic": "u"
+      },
+      {
+        "model": "A_G",
+        "kind": "KS_uniform",
+        "statistic": "epsilon"
+      },
+      {
+        "model": "A_G",
+        "kind": "KS_uniform",
+        "statistic": "logL_same_data"
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "B_G",
+        "kind": "KS_uniform",
+        "statistic": "u"
+      },
+      {
+        "model": "B_G",
+        "kind": "KS_uniform",
+        "statistic": "epsilon"
+      },
+      {
+        "model": "B_G",
+        "kind": "KS_uniform",
+        "statistic": "logL_same_data"
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "B_G",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      }
+    ],
+    "approximate": [
+      {
+        "model": "A_CN",
+        "kind": "KS_uniform",
+        "statistic": "u"
+      },
+      {
+        "model": "A_CN",
+        "kind": "KS_uniform",
+        "statistic": "epsilon"
+      },
+      {
+        "model": "A_CN",
+        "kind": "KS_uniform",
+        "statistic": "logL_same_data"
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "A_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "B_CN",
+        "kind": "KS_uniform",
+        "statistic": "u"
+      },
+      {
+        "model": "B_CN",
+        "kind": "KS_uniform",
+        "statistic": "epsilon"
+      },
+      {
+        "model": "B_CN",
+        "kind": "KS_uniform",
+        "statistic": "logL_same_data"
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "u",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.05
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.5
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.9
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "PIT_le_p",
+        "probability": 0.95
+      },
+      {
+        "model": "B_CN",
+        "kind": "binomial_two_sided",
+        "statistic": "epsilon",
+        "event": "central90",
+        "probability": 0.9,
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      }
+    ],
+    "paired_central90": [
+      {
+        "models": [
+          "A_CN",
+          "B_CN"
+        ],
+        "statistic": "u",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "models": [
+          "A_CN",
+          "B_CN"
+        ],
+        "statistic": "epsilon",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "models": [
+          "A_G",
+          "B_G"
+        ],
+        "statistic": "u",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "models": [
+          "A_G",
+          "B_G"
+        ],
+        "statistic": "epsilon",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "models": [
+          "A0_CN",
+          "A_CN"
+        ],
+        "statistic": "u",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      },
+      {
+        "models": [
+          "A0_CN",
+          "A_CN"
+        ],
+        "statistic": "epsilon",
+        "kind": "exact_McNemar_two_sided",
+        "PIT_interval": [
+          0.05,
+          0.95
+        ]
+      }
+    ]
+  },
+  "population_counts": {
+    "null": 500,
+    "prior2D": 500,
+    "recovery": 192
+  },
+  "expected_targets": 6344,
+  "alpha": 0.05,
+  "multiplicity": "Holm separately within 39/26/6; no across-family FWER claim",
+  "numerical_intervals": "Deterministic operational sensitivity, not MCSE or rigorous physical confidence bounds",
+  "unresolved": "Every unresolved PIT [0,1] retained; uncertain BF gives certain/possible counts",
+  "C_scope": "Descriptive only; N32 null/prior and N5/N6 per recovery cell",
+  "no_rejection_is_not_validation": true
+}

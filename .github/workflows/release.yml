@@ -23,6 +23,8 @@ jobs:
           .venv/bin/python scripts/validar_simulador.py --check
           .venv/bin/python scripts/validar_componentes_inferencia.py --check
           .venv/bin/python -m unittest discover -s tests -p 'test_c09*.py' -v
+          .venv/bin/python scripts/restaurar_preproducao_c10.py --destination .
+          .venv/bin/python -m unittest discover -s tests -p 'test_c10*.py' -v
       - name: Conferir checagens, fontes e PDF versionado
         env:
           RELEASE_VERSION: ${{ github.ref_name }}

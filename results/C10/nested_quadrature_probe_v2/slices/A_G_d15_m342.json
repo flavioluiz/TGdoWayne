@@ -1,0 +1,340 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "selection": {
+      "label": "A_G",
+      "model": "A_G",
+      "route": "D",
+      "id": 15,
+      "mass_index": 342,
+      "u": 0.7520174226709959
+    },
+    "identity": "b63ee4ec8d0a7012e64a4615193316597d73db6a05aadfa257cf71cc8050c39b:A_G:15:0x1.81086d78c9cc4p-1:H11",
+    "simpson": {
+      "status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+      "interval": [
+        0.9999999799830274,
+        1.0
+      ],
+      "candidate_interval": [
+        0.9999999799830274,
+        1.0
+      ],
+      "rigorous_floatingpoint_certificate": false,
+      "uniform_physical_certificate": false,
+      "epsilon_topology_from_root_count": false,
+      "controls": {
+        "roundoff_allowance_validated": true,
+        "same_node_covariance_reference_validated": true
+      },
+      "ambiguous_mass_upper": 0.0,
+      "quadrature_operational_error": 4.0033946159778474e-08,
+      "slice_gates": {
+        "ambiguity": true,
+        "observed_total_width": true,
+        "quadrature_difference": true,
+        "finite_controls": true
+      },
+      "partition": [
+        {
+          "left": 0.0,
+          "right": 0.125,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.89876095387179,
+          "logL_upper": 45.528297923023594,
+          "mass_lower": 0.17163155018794757,
+          "mass_upper": 0.32210803387737197
+        },
+        {
+          "left": 0.125,
+          "right": 0.25,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.81220290484537,
+          "logL_upper": 45.40537929758046,
+          "mass_lower": 0.15740025877341252,
+          "mass_upper": 0.2848516085069924
+        },
+        {
+          "left": 0.25,
+          "right": 0.375,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.65131695597289,
+          "logL_upper": 45.22294334374617,
+          "mass_lower": 0.13400887527580455,
+          "mass_upper": 0.23734918682487818
+        },
+        {
+          "left": 0.375,
+          "right": 0.5,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.43217035636625,
+          "logL_upper": 44.99088886145588,
+          "mass_lower": 0.10763645931511077,
+          "mass_upper": 0.18819486399625374
+        },
+        {
+          "left": 0.5,
+          "right": 0.75,
+          "depth": 2,
+          "classification": "inside",
+          "logL_lower": 43.3819819709205,
+          "logL_upper": 45.204691860861026,
+          "mass_lower": 0.07531793045158185,
+          "mass_upper": 0.4661130105373825
+        },
+        {
+          "left": 0.75,
+          "right": 1.0,
+          "depth": 2,
+          "classification": "inside",
+          "logL_lower": 42.82383991649936,
+          "logL_upper": 44.425118203515076,
+          "mass_lower": 0.043102291909289575,
+          "mass_upper": 0.21376012161086838
+        }
+      ],
+      "complete_epsilon_support": true,
+      "splits": 5,
+      "charged_values": 0,
+      "log_shift": 44.58172466211609,
+      "denominator": {
+        "value": 1.0533021186638036,
+        "lower": 1.0533021081218437,
+        "upper": 1.0533021292057636,
+        "coarse": 1.0533021082272347,
+        "fine": 1.0533021186638036,
+        "observed_difference": 1.0436568942395752e-08,
+        "additional_roundoff_allowance": 1.0539102068010977e-10,
+        "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+        "sampled_points_per_rule": [
+          65,
+          129
+        ],
+        "rigorous_error_bound": false
+      },
+      "numerator_references": {
+        "inside": {
+          "value": 1.0533021186638036,
+          "lower": 1.0533021081218437,
+          "upper": 1.0533021292057636,
+          "coarse": 1.0533021082272347,
+          "fine": 1.0533021186638036,
+          "observed_difference": 1.0436568942395752e-08,
+          "additional_roundoff_allowance": 1.0539102068010977e-10,
+          "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+          "sampled_points_per_rule": [
+            65,
+            129
+          ],
+          "rigorous_error_bound": false
+        },
+        "ambiguous": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "coarse": 0.0,
+          "fine": 0.0,
+          "observed_difference": 0.0,
+          "additional_roundoff_allowance": 0.0,
+          "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+          "sampled_points_per_rule": [
+            0,
+            0
+          ],
+          "rigorous_error_bound": false
+        }
+      },
+      "remaining_2D_gates": [
+        "nested CC integration difference and independent GL comparison",
+        "H00/H01/H11 propagation",
+        "bilinear-versus-direct comparison",
+        "underflow and finite precision checks"
+      ]
+    },
+    "gauss": {
+      "status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+      "interval": [
+        0.9999999997999584,
+        1.0
+      ],
+      "candidate_interval": [
+        0.9999999997999584,
+        1.0
+      ],
+      "rigorous_floatingpoint_certificate": false,
+      "uniform_physical_certificate": false,
+      "epsilon_topology_from_root_count": false,
+      "controls": {
+        "roundoff_allowance_validated": true,
+        "same_node_covariance_reference_validated": true
+      },
+      "ambiguous_mass_upper": 0.0,
+      "quadrature_operational_error": 4.0008339299955334e-10,
+      "slice_gates": {
+        "ambiguity": true,
+        "observed_total_width": true,
+        "quadrature_difference": true,
+        "finite_controls": true
+      },
+      "partition": [
+        {
+          "left": 0.0,
+          "right": 0.125,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.89876095387179,
+          "logL_upper": 45.528297923023594,
+          "mass_lower": 0.17163155018794757,
+          "mass_upper": 0.32210803387737197
+        },
+        {
+          "left": 0.125,
+          "right": 0.25,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.81220290484537,
+          "logL_upper": 45.40537929758046,
+          "mass_lower": 0.15740025877341252,
+          "mass_upper": 0.2848516085069924
+        },
+        {
+          "left": 0.25,
+          "right": 0.375,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.65131695597289,
+          "logL_upper": 45.22294334374617,
+          "mass_lower": 0.13400887527580455,
+          "mass_upper": 0.23734918682487818
+        },
+        {
+          "left": 0.375,
+          "right": 0.5,
+          "depth": 3,
+          "classification": "inside",
+          "logL_lower": 44.43217035636625,
+          "logL_upper": 44.99088886145588,
+          "mass_lower": 0.10763645931511077,
+          "mass_upper": 0.18819486399625374
+        },
+        {
+          "left": 0.5,
+          "right": 0.75,
+          "depth": 2,
+          "classification": "inside",
+          "logL_lower": 43.3819819709205,
+          "logL_upper": 45.204691860861026,
+          "mass_lower": 0.07531793045158185,
+          "mass_upper": 0.4661130105373825
+        },
+        {
+          "left": 0.75,
+          "right": 1.0,
+          "depth": 2,
+          "classification": "inside",
+          "logL_lower": 42.82383991649936,
+          "logL_upper": 44.425118203515076,
+          "mass_lower": 0.043102291909289575,
+          "mass_upper": 0.21376012161086838
+        }
+      ],
+      "complete_epsilon_support": true,
+      "splits": 5,
+      "charged_values": 48,
+      "log_shift": 44.58172466211609,
+      "denominator": {
+        "value": 1.0533021193589516,
+        "lower": 1.0533021192535994,
+        "upper": 1.0533021194643037,
+        "GL16": 1.0533021193589451,
+        "GL32": 1.0533021193589516,
+        "observed_difference": 6.439293542825908e-15,
+        "rigorous_error_bound": false,
+        "additional_roundoff_allowance": 1.0534564801939051e-10
+      },
+      "numerator_references": {
+        "inside": {
+          "value": 1.0533021193589516,
+          "lower": 1.0533021192535994,
+          "upper": 1.0533021194643037,
+          "GL16": 1.0533021193589451,
+          "GL32": 1.0533021193589516,
+          "observed_difference": 6.439293542825908e-15,
+          "rigorous_error_bound": false,
+          "additional_roundoff_allowance": 1.0534564801939051e-10
+        },
+        "ambiguous": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "GL16": 0.0,
+          "GL32": 0.0,
+          "observed_difference": 0.0,
+          "rigorous_error_bound": false
+        }
+      },
+      "remaining_2D_gates": [
+        "u192/u384 integration difference",
+        "H00/H01/H11 propagation",
+        "bilinear-versus-direct comparison",
+        "underflow and finite precision checks"
+      ],
+      "mass_roundoff_model": {
+        "relative_allowance": 1e-10,
+        "positive_dot_gamma": true,
+        "uniform_physical_certificate": false,
+        "rigorous_error_bound": false
+      },
+      "quadrature_roundoff_compatibility": true
+    },
+    "simpson_new_values": 0,
+    "gauss_additional_values": 48,
+    "total_new_values": 48,
+    "reused_values": 129,
+    "passed": true,
+    "CDF_hull": [
+      0.9999999799830274,
+      1.0
+    ],
+    "logZ_difference": 6.599701340981312e-10,
+    "delta_logL_node": 1.3968457595420553e-10,
+    "delta_logL_truth": 1.0009947598300642e-10,
+    "level_bounds": [
+      {
+        "status": "FINITE_NUMERICAL_LEVEL_BOUND_ORDINARY_FLOAT",
+        "delta_loglike": 1.3968457595420553e-10,
+        "maximum_eta": 1.1872277198196664e-12,
+        "anchor_negative_coefficient_correction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical_ORF_certificate": false,
+        "directed_rounding_certificate": false,
+        "density_evaluations": 0,
+        "scope": "all epsilon in[0,1] for these supplied polynomial numerical levels"
+      },
+      {
+        "status": "FINITE_NUMERICAL_LEVEL_BOUND_ORDINARY_FLOAT",
+        "delta_loglike": 1e-10,
+        "maximum_eta": 0.0,
+        "anchor_negative_coefficient_correction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical_ORF_certificate": false,
+        "directed_rounding_certificate": false,
+        "density_evaluations": 0,
+        "scope": "all epsilon in[0,1] for these supplied polynomial numerical levels"
+      }
+    ],
+    "checked_cached_points": 1086
+  },
+  "unbounded_fields": [],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

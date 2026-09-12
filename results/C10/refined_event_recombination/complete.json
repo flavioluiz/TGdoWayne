@@ -1,0 +1,3346 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "status": "CACHED_RECOMBINATION_COMPLETE_NOT_POPULATION_APPROVAL",
+    "events": {
+      "A0_CN:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.15669977201614232,
+              0.35651721052981905
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 1,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -29.307841832790672,
+              "NAhigh": -28.485791012675875,
+              "Zlow": -27.4544182487638,
+              "Zhigh": -27.454418248262893,
+              "Zpoint": -27.45441824851335
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.03601171960327481,
+              0.7567413407034335
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -30.778329302077733,
+              "NAhigh": -27.73315222749978,
+              "Zlow": -27.454418453609943,
+              "Zhigh": -27.454418453108993,
+              "Zpoint": -27.454418453359466
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.03601171960327481,
+          0.7567413407034335
+        ],
+        "observed_logZ_difference": 2.048461169579241e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 3.722337676231118e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_CN:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              7.80221789757593e-05,
+              0.0762255977989972
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 54,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 30.14959271606712,
+              "NAhigh": 37.034052197848844,
+              "Zlow": 39.608110141429236,
+              "Zhigh": 39.60811014191735,
+              "Zpoint": 39.60811014167329
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.00017563710476410744,
+              0.07463886557445402
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 108,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 30.96101806842217,
+              "NAhigh": 37.01301474307582,
+              "Zlow": 39.60810866426173,
+              "Zhigh": 39.608108664749835,
+              "Zpoint": 39.60810866450578
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          7.80221789757593e-05,
+          0.0762255977989972
+        ],
+        "observed_logZ_difference": 1.477167515417932e-06,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.287503838879103e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_CN:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7383801969869374,
+              0.9400450684276199
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 30,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.299320666151168,
+              "NAhigh": 17.540789620976174,
+              "Zlow": 17.602617080707827,
+              "Zhigh": 17.602617081119384,
+              "Zpoint": 17.602617080913607
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.2530035651349003,
+              0.9995923474413235
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 109,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.22826538299564,
+              "NAhigh": 17.602209345854334,
+              "Zlow": 17.602617081525903,
+              "Zhigh": 17.602617081907248,
+              "Zpoint": 17.602617081716573
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.2530035651349003,
+          0.9995923474413235
+        ],
+        "observed_logZ_difference": 8.029665821140952e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 1.897351524886675e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_G:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9120702872219998,
+              0.9946698375551483
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 35.067702467605756,
+              "NAhigh": 35.1543962711838,
+              "Zlow": 35.15974068962491,
+              "Zhigh": 35.15974069016088,
+              "Zpoint": 35.15974068989289
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6204502775538485,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 22,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 34.682430875698465,
+              "NAhigh": 35.15974068611726,
+              "Zlow": 35.159740685596596,
+              "Zhigh": 35.15974068611726,
+              "Zpoint": 35.15974068585693
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.6204502775538485,
+          1.0
+        ],
+        "observed_logZ_difference": 4.035960898818303e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 7.196580002959346e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_G:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.765807883453647,
+              0.9252307251038775
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 32,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.771039726715983,
+              "NAhigh": 16.9601515318519,
+              "Zlow": 17.037863671880004,
+              "Zhigh": 17.037863672305136,
+              "Zpoint": 17.03786367209257
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.16057068187626033,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 78,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 15.208842623572036,
+              "NAhigh": 17.037863671403475,
+              "Zlow": 17.037863670986148,
+              "Zhigh": 17.037863671403475,
+              "Zpoint": 17.03786367119481
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.16057068187626033,
+          1.0
+        ],
+        "observed_logZ_difference": 8.977600884918502e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.66503060522866e-06,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_CN:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8244068652933467,
+              0.9115736281482846
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 7,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.208808933719236,
+              "NAhigh": 17.309317124449787,
+              "Zlow": 17.40190003567117,
+              "Zhigh": 17.401900036095597,
+              "Zpoint": 17.401900035883383
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.622057089669217,
+              0.9644022440665191
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 28,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.927187711806262,
+              "NAhigh": 17.365664312040465,
+              "Zlow": 17.40191111781398,
+              "Zhigh": 17.401911118227005,
+              "Zpoint": 17.401911118020493
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.622057089669217,
+          0.9644022440665191
+        ],
+        "observed_logZ_difference": 1.1082137110207668e-05,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.0001735719901562604,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_G:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7417198569953604,
+              0.8411282574465293
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 24,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.26066424627654,
+              "NAhigh": 16.38643677942006,
+              "Zlow": 16.559447904175364,
+              "Zhigh": 16.559447904600894,
+              "Zpoint": 16.55944790438813
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.5984351500108923,
+              0.9009103498555788
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 53,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.046011478275474,
+              "NAhigh": 16.4550990648702,
+              "Zlow": 16.559448591909753,
+              "Zhigh": 16.559448592331005,
+              "Zpoint": 16.55944859212038
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.5984351500108923,
+          0.9009103498555788
+        ],
+        "observed_logZ_difference": 6.877322498155536e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 4.848745772579789e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_CN:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8278634806725682,
+              0.912772026194637
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 6,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.211585740690353,
+              "NAhigh": 17.309223629815616,
+              "Zlow": 17.4004927568691,
+              "Zhigh": 17.400492757295943,
+              "Zpoint": 17.40049275708252
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6372617356255648,
+              0.9610412546469999
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 21,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.949917959822237,
+              "NAhigh": 17.360754837190967,
+              "Zlow": 17.40049277925118,
+              "Zhigh": 17.40049277967133,
+              "Zpoint": 17.400492779461256
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.6372617356255648,
+          0.9610412546469999
+        ],
+        "observed_logZ_difference": 2.237873530930301e-08,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 3.0687387727253644e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_G:0": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7428048220456855,
+              0.8469931485359163
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 24,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.260381102958195,
+              "NAhigh": 16.391640386882422,
+              "Zlow": 16.557703060340952,
+              "Zhigh": 16.557703060768144,
+              "Zpoint": 16.557703060554548
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6203283410689018,
+              0.9068195594028409
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 52,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.08019668215603,
+              "NAhigh": 16.45989124960133,
+              "Zlow": 16.55770304048395,
+              "Zhigh": 16.557703040909086,
+              "Zpoint": 16.55770304069652
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.6203283410689018,
+          0.9068195594028409
+        ],
+        "observed_logZ_difference": 1.9858028110775194e-08,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 7.382833143630883e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A0_CN:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9585782313003796,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -17.11263787613698,
+              "NAhigh": -17.070333774776685,
+              "Zlow": -17.070333775261936,
+              "Zhigh": -17.070333774776685,
+              "Zpoint": -17.07033377501931
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7034628420645282,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 5,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -17.422077674538528,
+              "NAhigh": -17.070337452044278,
+              "Zlow": -17.070337452525564,
+              "Zhigh": -17.070337452044278,
+              "Zpoint": -17.07033745228492
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.7034628420645282,
+          1.0
+        ],
+        "observed_logZ_difference": 3.677265610235736e-06,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.686261420936774e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_CN:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9684108204472255,
+              0.9973934987567178
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 4,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 47.66068070954176,
+              "NAhigh": 47.6901696854501,
+              "Zlow": 47.69277958953204,
+              "Zhigh": 47.692779589991616,
+              "Zpoint": 47.69277958976183
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8763021290943288,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 21,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 47.56073523860253,
+              "NAhigh": 47.69277958988491,
+              "Zlow": 47.692779589435716,
+              "Zhigh": 47.69277958988491,
+              "Zpoint": 47.69277958966031
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.8763021290943288,
+          1.0
+        ],
+        "observed_logZ_difference": 1.0151524065804551e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.140703095588858e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_CN:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9839097299310968,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 19.179894708743156,
+              "NAhigh": 19.196115832756117,
+              "Zlow": 19.19611583233361,
+              "Zhigh": 19.196115832756117,
+              "Zpoint": 19.196115832544862
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9171086329866541,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 16,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 19.10958648424931,
+              "NAhigh": 19.19611583235718,
+              "Zlow": 19.196115831947687,
+              "Zhigh": 19.19611583235718,
+              "Zpoint": 19.196115832152433
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.9171086329866541,
+          1.0
+        ],
+        "observed_logZ_difference": 3.9242920024662453e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 3.2013676746915505e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_G:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9702856983711554,
+              0.9939356970174534
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 6,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.50338497439557,
+              "NAhigh": 43.527466924829604,
+              "Zlow": 43.53354969037705,
+              "Zhigh": 43.53354969084377,
+              "Zpoint": 43.533549690610414
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9052255103285464,
+              0.9980456303439138
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 28,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.43397861197004,
+              "NAhigh": 43.53159351322798,
+              "Zlow": 43.533549795156375,
+              "Zhigh": 43.53354979560962,
+              "Zpoint": 43.533549795382996
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.9052255103285464,
+          0.9980456303439138
+        ],
+        "observed_logZ_difference": 1.0477258172159054e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.187319522536314e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_G:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9483132833447053,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 10,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 15.583309090243489,
+              "NAhigh": 15.636379453899824,
+              "Zlow": 15.636379453474575,
+              "Zhigh": 15.636379453899824,
+              "Zpoint": 15.636379453687198
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8941161792348281,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 36,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 15.524459894150983,
+              "NAhigh": 15.636379452001574,
+              "Zlow": 15.636379451587365,
+              "Zhigh": 15.636379452001574,
+              "Zpoint": 15.636379451794468
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.8941161792348281,
+          1.0
+        ],
+        "observed_logZ_difference": 1.8927295286630397e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 2.1584930389330782e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_CN:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.28515838797285104,
+              0.4015861907083606
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 1,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 19.12471371792929,
+              "NAhigh": 19.467091126441247,
+              "Zlow": 20.37942422332342,
+              "Zhigh": 20.37942422373994,
+              "Zpoint": 20.37942422353168
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.21596339151271882,
+              0.6953345442047343
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 2,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 18.846808952931084,
+              "NAhigh": 20.016093131249853,
+              "Zlow": 20.379455321915106,
+              "Zhigh": 20.37945532233046,
+              "Zpoint": 20.379455322122784
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.21596339151271882,
+          0.6953345442047343
+        ],
+        "observed_logZ_difference": 3.1098591104949946e-05,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 4.4861607525744904e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_G:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9629518406987306,
+              0.9998950879143391
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 7,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.2549698468137,
+              "NAhigh": 17.292616806902906,
+              "Zlow": 17.292721724492225,
+              "Zhigh": 17.292721724906876,
+              "Zpoint": 17.29272172469955
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8792281273498194,
+              0.9996759783740163
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 38,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.163894577358725,
+              "NAhigh": 17.292281387252725,
+              "Zlow": 17.292605461385058,
+              "Zhigh": 17.292605461782042,
+              "Zpoint": 17.29260546158355
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.8792281273498194,
+          0.9998950879143391
+        ],
+        "observed_logZ_difference": 0.00011626311600210215,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00015692182849169622,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_CN:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.31932606130219293,
+              0.43004450155370016
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 19.236819172527554,
+              "NAhigh": 19.53449515092512,
+              "Zlow": 20.378361734589227,
+              "Zhigh": 20.378361735006344,
+              "Zpoint": 20.378361734797785
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.26373412239110966,
+              0.6875855090403158
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 2,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 19.04554794351532,
+              "NAhigh": 20.003792658178675,
+              "Zlow": 20.378361738568323,
+              "Zhigh": 20.37836173898423,
+              "Zpoint": 20.378361738776274
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.26373412239110966,
+          0.6875855090403158
+        ],
+        "observed_logZ_difference": 3.978488649636347e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 5.663994793701464e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_G:3": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9612955805202709,
+              0.9996225479826836
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 7,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.251930389017275,
+              "NAhigh": 17.291026206652152,
+              "Zlow": 17.29140372992241,
+              "Zhigh": 17.291403730337283,
+              "Zpoint": 17.291403730129847
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8869730734338928,
+              0.9999470024329905
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 34,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 17.171462946305127,
+              "NAhigh": 17.291350600962684,
+              "Zlow": 17.291403599934114,
+              "Zhigh": 17.291403600333737,
+              "Zpoint": 17.291403600133926
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.8869730734338928,
+          0.9999470024329905
+        ],
+        "observed_logZ_difference": 1.2999592158280393e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 4.416006554513657e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A0_CN:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.840541901990128,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -39.55418532521508,
+              "NAhigh": -39.38047685148575,
+              "Zlow": -39.38047685197504,
+              "Zhigh": -39.38047685148575,
+              "Zpoint": -39.38047685173039
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7182084855345984,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -39.71147296142031,
+              "NAhigh": -39.38047757916259,
+              "Zlow": -39.38047757965186,
+              "Zhigh": -39.38047757916259,
+              "Zpoint": -39.38047757940722
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.7182084855345984,
+          1.0
+        ],
+        "observed_logZ_difference": 7.276768272390655e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.0001411745590261636,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_CN:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.21076438819031829,
+              0.32829690636662195
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 6,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 30.9712058415847,
+              "NAhigh": 31.414383376392216,
+              "Zlow": 32.52822025410151,
+              "Zhigh": 32.52822025464957,
+              "Zpoint": 32.52822025437554
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.10990435754340319,
+              0.43454296554197275
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 11,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 30.320075486199794,
+              "NAhigh": 31.694759799790084,
+              "Zlow": 32.528220253933775,
+              "Zhigh": 32.52822025448194,
+              "Zpoint": 32.52822025420786
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.10990435754340319,
+          0.43454296554197275
+        ],
+        "observed_logZ_difference": 1.6768098021202604e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.337410240611487e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_CN:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.836646084555826,
+              0.8826121069936885
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.97222432997437,
+              "NAhigh": 14.025709000659852,
+              "Zlow": 14.150578465481988,
+              "Zhigh": 14.150578465933854,
+              "Zpoint": 14.15057846570792
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7565774100594592,
+              0.9489501792310744
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 6,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.871628041340525,
+              "NAhigh": 14.098179485374809,
+              "Zlow": 14.150578465300992,
+              "Zhigh": 14.150578465747026,
+              "Zpoint": 14.15057846552401
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.7565774100594592,
+          0.9489501792310744
+        ],
+        "observed_logZ_difference": 1.8390977629678673e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 5.13258843235529e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_G:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7127808258876608,
+              0.842165294057088
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 4,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 25.778874830332178,
+              "NAhigh": 25.945677159843697,
+              "Zlow": 26.11745613261834,
+              "Zhigh": 26.11745613322819,
+              "Zpoint": 26.117456132923266
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.5971564660010718,
+              0.8709589726333286
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 22,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 25.601880020399246,
+              "NAhigh": 25.979295725633133,
+              "Zlow": 26.117456132622667,
+              "Zhigh": 26.117456133223634,
+              "Zpoint": 26.117456132923152
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.5971564660010718,
+          0.8709589726333286
+        ],
+        "observed_logZ_difference": 1.1368683772161603e-13,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00010402120944752458,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_G:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.62995884704388,
+              0.6786001867208651
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.7668392341754,
+              "NAhigh": 11.841216866117241,
+              "Zlow": 12.228940017593281,
+              "Zhigh": 12.228940018058115,
+              "Zpoint": 12.228940017825698
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.39599115053760914,
+              0.7870364217246151
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 16,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.302576602930174,
+              "NAhigh": 11.98945926513866,
+              "Zlow": 12.228940017581593,
+              "Zhigh": 12.22894001803478,
+              "Zpoint": 12.228940017808187
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.39599115053760914,
+          0.7870364217246151
+        ],
+        "observed_logZ_difference": 1.751132572280767e-11,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 5.2679830695845364e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_CN:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8266172056555084,
+              0.8640036777484412
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.411404409647647,
+              "NAhigh": 13.455639717810321,
+              "Zlow": 13.601817971344174,
+              "Zhigh": 13.6018179717972,
+              "Zpoint": 13.601817971570686
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7997360204273062,
+              0.9007200788076541
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.37834439830456,
+              "NAhigh": 13.497257230091972,
+              "Zlow": 13.601817978085172,
+              "Zhigh": 13.60181797853819,
+              "Zpoint": 13.60181797831168
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.7997360204273062,
+          0.9007200788076541
+        ],
+        "observed_logZ_difference": 6.740993541143325e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00010051869841964856,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_G:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6312286134226831,
+              0.6572607239320347
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.114388134269522,
+              "NAhigh": 11.154800813356896,
+              "Zlow": 11.574475312495421,
+              "Zhigh": 11.574475312962463,
+              "Zpoint": 11.574475312728941
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.594617504350772,
+              0.6961287557495229
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.05463838081762,
+              "NAhigh": 11.2122546684703,
+              "Zlow": 11.574475310334284,
+              "Zhigh": 11.574475310801311,
+              "Zpoint": 11.574475310567799
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.594617504350772,
+          0.6961287557495229
+        ],
+        "observed_logZ_difference": 2.1611423761669357e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00010043471505411911,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_CN:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8184248212177484,
+              0.8546113748782198
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.423879005915389,
+              "NAhigh": 13.467144295627037,
+              "Zlow": 13.62425274130971,
+              "Zhigh": 13.62425274176383,
+              "Zpoint": 13.62425274153677
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.7795464208824735,
+              0.8918231049369738
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 13.375209701627128,
+              "NAhigh": 13.509765262384546,
+              "Zlow": 13.624252741304193,
+              "Zhigh": 13.624252741758262,
+              "Zpoint": 13.62425274153123
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.7795464208824735,
+          0.8918231049369738
+        ],
+        "observed_logZ_difference": 5.540456982089381e-12,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.8009140854445e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_G:8": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.61635510101674,
+              0.655068935072103
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.099835524203653,
+              "NAhigh": 11.160752738085435,
+              "Zlow": 11.583767542585232,
+              "Zhigh": 11.583767543053547,
+              "Zpoint": 11.58376754281939
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.5937645869425183,
+              0.6939518536789151
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 11.062495186597832,
+              "NAhigh": 11.218414846598183,
+              "Zlow": 11.583767542582507,
+              "Zhigh": 11.583767543050758,
+              "Zpoint": 11.583767542816632
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.5937645869425183,
+          0.6939518536789151
+        ],
+        "observed_logZ_difference": 2.7569058147491887e-12,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 9.215374144775243e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A0_CN:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9440335486421307,
+              0.9939678548015664
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 3,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -16.13762642145511,
+              "NAhigh": -16.086083259367577,
+              "Zlow": -16.080032847285253,
+              "Zhigh": -16.0800328468028,
+              "Zpoint": -16.080032847044027
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9276206554139773,
+              0.9979875955447821
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 12,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -16.155185959246065,
+              "NAhigh": -16.082067985525995,
+              "Zlow": -16.080053553464232,
+              "Zhigh": -16.080053552984683,
+              "Zpoint": -16.08005355322446
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.9276206554139773,
+          0.9979875955447821
+        ],
+        "observed_logZ_difference": 2.0706180432483734e-05,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00017954642841313474,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_CN:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9471824176635746,
+              0.9817160107893346
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 1,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.39102729505168,
+              "NAhigh": 43.42683766487311,
+              "Zlow": 43.445290872041184,
+              "Zhigh": 43.44529087250924,
+              "Zpoint": 43.44529087227521
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.8853605739727487,
+              0.9891010450569145
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 3,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.32353187167196,
+              "NAhigh": 43.43433337627376,
+              "Zlow": 43.4452921599371,
+              "Zhigh": 43.44529216040471,
+              "Zpoint": 43.44529216017091
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.8853605739727487,
+          0.9891010450569145
+        ],
+        "observed_logZ_difference": 1.2878956994200053e-06,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": false,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00013641101601100133,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_CN:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6205010878821876,
+              0.7650392413451755
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 8,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 15.94491733537908,
+              "NAhigh": 16.154317105460862,
+              "Zlow": 16.422145256056005,
+              "Zhigh": 16.4221452564833,
+              "Zpoint": 16.42214525626965
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.2420983545625574,
+              0.9909638593987029
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 38,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 15.003734043600911,
+              "NAhigh": 16.413068040629753,
+              "Zlow": 16.42214525476759,
+              "Zhigh": 16.422145255181928,
+              "Zpoint": 16.422145254974758
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.2420983545625574,
+          0.9909638593987029
+        ],
+        "observed_logZ_difference": 1.2948930816492066e-09,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 1.9778932487275353e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "A_G:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.9490163990373683,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 16,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.896055711711064,
+              "NAhigh": 43.94838491189815,
+              "Zlow": 43.94838491142778,
+              "Zhigh": 43.94838491189815,
+              "Zpoint": 43.94838491166297
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.6514791258424885,
+              1.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 82,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 43.51987481637421,
+              "NAhigh": 43.94838473945442,
+              "Zlow": 43.9483847390221,
+              "Zhigh": 43.94838473945442,
+              "Zpoint": 43.94838473923826
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.6514791258424885,
+          1.0
+        ],
+        "observed_logZ_difference": 1.7242471272993498e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 8.017313731436195e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "B_G:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.1770857644129286,
+              0.3695108783139091
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 16.34258825306877,
+              "NAhigh": 17.078134273299767,
+              "Zlow": 18.073709371693973,
+              "Zhigh": 18.073709372125144,
+              "Zpoint": 18.07370937190956
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.04586274638324759,
+              0.9172802776375073
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 24,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 14.991607255865596,
+              "NAhigh": 17.987367165402187,
+              "Zlow": 18.073709372549533,
+              "Zhigh": 18.073709372964952,
+              "Zpoint": 18.073709372757243
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.04586274638324759,
+          0.9172802776375073
+        ],
+        "observed_logZ_difference": 8.476845891891571e-10,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 1.6258452175934837e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_CN:15": {
+        "status": "RESOLVED_OPERATIONAL_FINITE_REFERENCE_ONLY",
+        "interval": [
+          0.0,
+          1.159370040046283e-09
+        ],
+        "rules": [
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              0.0,
+              0.0
+            ],
+            "candidate_interval": [
+              0.0,
+              0.0
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": null,
+              "NAhigh": null,
+              "Zlow": 16.365338993850962,
+              "Zhigh": 16.365338994280947,
+              "Zpoint": 16.365338994065954
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              9.871584046807994e-10,
+              1.159370040046283e-09
+            ],
+            "candidate_interval": [
+              9.871584046807994e-10,
+              1.159370040046283e-09
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -4.370815771674995,
+              "NAhigh": -4.210014222066322,
+              "Zlow": 16.365374826202775,
+              "Zhigh": 16.365374826632745,
+              "Zpoint": 16.36537482641776
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.0,
+          1.159370040046283e-09
+        ],
+        "observed_logZ_difference": 3.5832351805709095e-05,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": true,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.00015925225686612258,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_beta_G:15": {
+        "status": "RESOLVED_OPERATIONAL_FINITE_REFERENCE_ONLY",
+        "interval": [
+          0.0,
+          5.5242373894171845e-11
+        ],
+        "rules": [
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              0.0,
+              5.5242373894171845e-11
+            ],
+            "candidate_interval": [
+              0.0,
+              5.5242373894171845e-11
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": null,
+              "NAhigh": -5.704974090297104,
+              "Zlow": 17.914316723825234,
+              "Zhigh": 17.914316724254224,
+              "Zpoint": 17.91431672403973
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              2.703023787039168e-12,
+              3.377249164314996e-11
+            ],
+            "candidate_interval": [
+              2.703023787039168e-12,
+              3.377249164314996e-11
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": -8.722333805624478,
+              "NAhigh": -6.197058259129257,
+              "Zlow": 17.91431624238303,
+              "Zhigh": 17.914316242812014,
+              "Zpoint": 17.914316242597522
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.0,
+          5.5242373894171845e-11
+        ],
+        "observed_logZ_difference": 4.814422069898683e-07,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": true,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 0.0003526962143680874,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_CN:15": {
+        "status": "UNRESOLVED",
+        "interval": [
+          0.0,
+          1.0
+        ],
+        "rules": [
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.0016954675582354457,
+              0.06561210020549003
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 9.983412758665132,
+              "NAhigh": 13.63921434316548,
+              "Zlow": 16.363209488855205,
+              "Zhigh": 16.363209489286614,
+              "Zpoint": 16.36320948907091
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "UNRESOLVED",
+            "interval": [
+              0.0,
+              1.0
+            ],
+            "candidate_interval": [
+              0.0018975599033240636,
+              0.06516646487917652
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 10.096022988873575,
+              "NAhigh": 13.632399183317883,
+              "Zlow": 16.36320946803073,
+              "Zhigh": 16.363209468462124,
+              "Zpoint": 16.363209468246428
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          0.0016954675582354457,
+          0.06561210020549003
+        ],
+        "observed_logZ_difference": 2.082448347096033e-08,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": false,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "bilinear_event_comparison_failed": true,
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 4.313695203886428e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      },
+      "C_full_G:15": {
+        "status": "RESOLVED_OPERATIONAL_FINITE_REFERENCE_ONLY",
+        "interval": [
+          3.295713190089614e-05,
+          6.873646863256717e-05
+        ],
+        "rules": [
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              3.3109778085226936e-05,
+              6.873646863256717e-05
+            ],
+            "candidate_interval": [
+              3.3109778085226936e-05,
+              6.873646863256717e-05
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 192,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 7.59762531029528,
+              "NAhigh": 8.328076557962241,
+              "Zlow": 17.913307218641343,
+              "Zhigh": 17.91330721907179,
+              "Zpoint": 17.913307218856566
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          },
+          {
+            "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+            "interval": [
+              3.295713190089614e-05,
+              6.724292386432396e-05
+            ],
+            "candidate_interval": [
+              3.295713190089614e-05,
+              6.724292386432396e-05
+            ],
+            "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+            "node_count": 384,
+            "unknown_numerator_nodes": 0,
+            "missing_denominator_nodes": [],
+            "slice_controls_pass": true,
+            "rigorous_floatingpoint_certificate": false,
+            "uniform_physical_certificate": false,
+            "log_masses": {
+              "Nlow": 7.593004356283124,
+              "NAhigh": 8.30610846376502,
+              "Zlow": 17.913307230131842,
+              "Zhigh": 17.913307230562275,
+              "Zpoint": 17.91330723034706
+            },
+            "numerical_level_logweight_envelope": true,
+            "finite_controls_pass": true
+          }
+        ],
+        "observed_difference_is_not_rigorous_error_bound": true,
+        "candidate_interval": [
+          3.295713190089614e-05,
+          6.873646863256717e-05
+        ],
+        "observed_logZ_difference": 1.1490492113352957e-08,
+        "gates": {
+          "both_rule_controls": true,
+          "CDF_hull_width": true,
+          "logZ_change": true,
+          "other_original_gates": true
+        },
+        "original_coarse_gates": {
+          "logZ_H0": true,
+          "logZ_H1": true,
+          "logBF": true,
+          "parameter_CDF": true,
+          "quantiles": true,
+          "logL_CDF": true,
+          "observed_max_quantile_prior_width_difference": 5.387586674641196e-05,
+          "errors_are_observed_refinement_differences_not_uniform_certificates": true
+        },
+        "accepted_grid_level": "high",
+        "high_and_independent_controls_pass": true,
+        "relative_mass_roundoff_allowance": 1e-10,
+        "physical_global_certificate": false
+      }
+    },
+    "states": {
+      "UNRESOLVED": 33,
+      "RESOLVED_OPERATIONAL_FINITE_REFERENCE_ONLY": 3
+    },
+    "restored_numerator_references": 206,
+    "CPU": 4.730543,
+    "cumulative_likelihood_values": 13607708,
+    "new_likelihood_values": 0,
+    "new_ORFs": 0,
+    "plan_sha256": "bc9b02e78a515e8414cb9ec346a8c5886943a46ea8c09f61015a260193e71591",
+    "outputs": {
+      "results/C10/refined_event_recombination/rules/A0_CN_d0_u192.json": "5d1d140aaf184e7435c0b33b0caa98ae73a1ce1165ba0ea86190278b47fbc8a7",
+      "results/C10/refined_event_recombination/rules/A0_CN_d0_u384.json": "068e6923c4002f5f3cb423bf32c3f7f4ee716366da0ff616a89f8e0eceab9cc1",
+      "results/C10/refined_event_recombination/rules/A_CN_d0_u192.json": "98142708976b94246135742a9b349dc4624b74d83dff29ec77bd181fbc84c258",
+      "results/C10/refined_event_recombination/rules/A_CN_d0_u384.json": "e8b02a39af168f47971b601abe6680f1676543cb90a74b95f6b22b83ba83fb25",
+      "results/C10/refined_event_recombination/rules/B_CN_d0_u192.json": "0833799c397f23e2fb6941eaacaaf1b695b20ba1659a96bf36e183f1bc1b9d42",
+      "results/C10/refined_event_recombination/rules/B_CN_d0_u384.json": "bd351a22f9760f09e6c1020c8af67cbd55137fae387e738b0169a01f4c5efeb2",
+      "results/C10/refined_event_recombination/rules/A_G_d0_u192.json": "ec70af929b0e260d237990b13d672a2745a45d5d901b9d39dd055223399294f4",
+      "results/C10/refined_event_recombination/rules/A_G_d0_u384.json": "8c6529f4b1e6ad970eb18229835d273d33b5d13b7ffae0b1e11c5089116d13ce",
+      "results/C10/refined_event_recombination/rules/B_G_d0_u192.json": "f9d63ee89099404a54b0b65131287cc3bf42cd46ab72f81fe47c0a5826663ce9",
+      "results/C10/refined_event_recombination/rules/B_G_d0_u384.json": "b51b34a4690682732cef83e2f88199be849628d8f761a4c42b7e7ed36cd99d25",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d0_u192.json": "8bc68a1ce8921003e385e1e967f3d959439c3699115c67ccacd692f4fe297f0a",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d0_u384.json": "f1740a790225a80df6fa69b16a48478a1e3948f0e1f99b7c181e673f90853b41",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d0_u192.json": "d841f8263ee9f0e0e68e5af80b5e56cf422e4c6bf38967ce83283f746a10afc3",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d0_u384.json": "aef6a57811f700c494cc5c25782347ff5040336838ef80379f23f3d908f5290c",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d0_u192.json": "bd72d1f672089aa07408f11ac2cc46a49099d4667307e674cbc3cc9bad584aa5",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d0_u384.json": "27023c10fdf7965d49a4feeee2477637ee608b7cd6f8729fdea222c7fe85652d",
+      "results/C10/refined_event_recombination/rules/C_full_G_d0_u192.json": "4d4701c86b4dc0cfca1a622180749901ad77aba503f889bf947a2d33991ea208",
+      "results/C10/refined_event_recombination/rules/C_full_G_d0_u384.json": "6c88bf723831e7eb7b700604b74db1491fbde1e26400ebcde82a651f17a994f6",
+      "results/C10/refined_event_recombination/rules/A0_CN_d3_u192.json": "7da2974d6ef587b9ee3ea62b7023b3cee0095b9767ff0e2144169c19303c1561",
+      "results/C10/refined_event_recombination/rules/A0_CN_d3_u384.json": "d389acb26ad76b37fd4c389277b14a7db1ad4333d4d55e597aab33def857480b",
+      "results/C10/refined_event_recombination/rules/A_CN_d3_u192.json": "59d0f7e2cae342a2fb5cadf8cafb015aa4fc1b7a63f3a8138c8ce645ef1a44f2",
+      "results/C10/refined_event_recombination/rules/A_CN_d3_u384.json": "f2a0c2fa2f298268fd89b0e479387c0a9b36cc85c2050ceecb9e952cbea5b759",
+      "results/C10/refined_event_recombination/rules/B_CN_d3_u192.json": "a08ff09d18756a39a6f42b8dc53fd44830f4d667e2685a908f16a133a72cafb8",
+      "results/C10/refined_event_recombination/rules/B_CN_d3_u384.json": "8b4bc2207a55c0ef353bda522736bd11641d6eed3823d160b6f204a0b8009798",
+      "results/C10/refined_event_recombination/rules/A_G_d3_u192.json": "8d5cf7b4e4ada86bafbca385099d4d7d6ddfdd44306cc44ef40625420e66fdb9",
+      "results/C10/refined_event_recombination/rules/A_G_d3_u384.json": "aa9a8aa49136520d4361b4aebcf7ff589965c59616436d5268a7fc31aa8159a1",
+      "results/C10/refined_event_recombination/rules/B_G_d3_u192.json": "8df348a51fa01f01517b67a8a23f603983456e132cd8122e7144ce13e92c3cf2",
+      "results/C10/refined_event_recombination/rules/B_G_d3_u384.json": "f36e9e5ca8edee9a426fa68b5f9f4554f8805159389637715003fd1c1a163b2b",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d3_u192.json": "6186fec88e277556c83432498966062c65a24c5fef419fcac53c0cfdcb162b74",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d3_u384.json": "e2cc494fbf42fc19bd7efb5ec94b19642869709043e046ae91d4abac60b0319f",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d3_u192.json": "8b623b121e1b501cb21962e0fac45c644ffe0bc4569a0130811b51a9d0582a0b",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d3_u384.json": "d2fc301b8328748f4a071f36390425ddc1448cf7e1b00871895f707b370352b2",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d3_u192.json": "88a39a0d2229a569103116e587997432be0b83c87e7ed39e84da55cfa7370af1",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d3_u384.json": "7006b1c29aaadb1646b7b4b32f7732e48c0f3fb68541d3f44cf437545cb02e1c",
+      "results/C10/refined_event_recombination/rules/C_full_G_d3_u192.json": "67675fffb28b2f91f01ab06e71717834896d95be81176ab8c16da33708cc54d4",
+      "results/C10/refined_event_recombination/rules/C_full_G_d3_u384.json": "4d29c5f94a0daba8a76fe5b1a43601e2b3ee213880537bb7445a6dabec63ddaa",
+      "results/C10/refined_event_recombination/rules/A0_CN_d8_u192.json": "3d8966c29c57569c4b81a62c0266df98e66825178c5b18704a06c17ddb45154d",
+      "results/C10/refined_event_recombination/rules/A0_CN_d8_u384.json": "49d009bdb721fa16902ed962da34a7478bfa864e73987b33421e56f80b515e81",
+      "results/C10/refined_event_recombination/rules/A_CN_d8_u192.json": "6e6d747a19ed1e23d0e425ea514916904d89824dc3ab1106cc719a5be988a054",
+      "results/C10/refined_event_recombination/rules/A_CN_d8_u384.json": "da0e756ea41fc35ccadbd8514a65c5fd5d9bf55484e7d19d71270fdc83337eb6",
+      "results/C10/refined_event_recombination/rules/B_CN_d8_u192.json": "1a3dc0d9344a0b7eb1c9cb1527604a671c9402dcbdabad33912cc6e82938599a",
+      "results/C10/refined_event_recombination/rules/B_CN_d8_u384.json": "709ef38848968fafaf39bea15065c938b6352435780f289b2f0a14766e3573f8",
+      "results/C10/refined_event_recombination/rules/A_G_d8_u192.json": "43c4663b4cb42e776b67154181a82b119d53a13b2e2107631ad1106e3f0b35b2",
+      "results/C10/refined_event_recombination/rules/A_G_d8_u384.json": "5607cfc752105794ed459792dfb307e30e414270f980fa57456adf0af240a019",
+      "results/C10/refined_event_recombination/rules/B_G_d8_u192.json": "60a30067e1260e21cd056ce2a39a6955dc3b45e11ec3052d1dd84d4ee13b3cb8",
+      "results/C10/refined_event_recombination/rules/B_G_d8_u384.json": "2df4d034894df9846cf3c141ee583c8dc518e2088c3eca3dce2976459a98e688",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d8_u192.json": "222fd6b33fb27eafdf55b11aee5fa2228567e632f62369fb5042afdaf5337af8",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d8_u384.json": "822a8077e3a7921d697f9543ff31c688f676cfa8b96040ef2acb1c3eb650ebfa",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d8_u192.json": "4b7d5cda9b06a707561c8f1f464b32a169eef3e77f4a40f371c88346e716660e",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d8_u384.json": "bccffeac2390691540668adc9bb8065820487fac393ff9686849e22e660316ba",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d8_u192.json": "e2451b3d721b48392bb3e39306278d89bdb165d71ea7d29982c76ce77ebe3a21",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d8_u384.json": "77c505c6af258bee7f56aeb160a7d6d14a2f972c183227228e749ace55e6383e",
+      "results/C10/refined_event_recombination/rules/C_full_G_d8_u192.json": "51d9983867fca82d11ef68823909f2bc0878d8d8bc53d71541fb35f29a33fad9",
+      "results/C10/refined_event_recombination/rules/C_full_G_d8_u384.json": "90da8a5fc06e316aa334ccee943fed970e9783e6167e81aa08c982a3c364d7ea",
+      "results/C10/refined_event_recombination/rules/A0_CN_d15_u192.json": "497618befbbddc254414549ad1ce561d7d39ae5724cc1250c793a2960f11a0ce",
+      "results/C10/refined_event_recombination/rules/A0_CN_d15_u384.json": "465676d2642f40c54cc4cc7744d38def2503d59eef6b9a65e34bf310f84ea300",
+      "results/C10/refined_event_recombination/rules/A_CN_d15_u192.json": "650eac877dfc19e6a5df097f20d32751aa3e76c89ed1608f39822705f23551d2",
+      "results/C10/refined_event_recombination/rules/A_CN_d15_u384.json": "62afd054f472b41fd08ebc50c4a49a29c7d3ecac2f9130bc6fac30c21e131080",
+      "results/C10/refined_event_recombination/rules/B_CN_d15_u192.json": "abed732c02eb9e8b840ee44c1be57e669c4bd3e22af75aeacd90a1ec4eaa243d",
+      "results/C10/refined_event_recombination/rules/B_CN_d15_u384.json": "c4cb0e68cb4ee4c4c32d8522f71f35c2817956ecfd555237d7cc8a742e6a8f89",
+      "results/C10/refined_event_recombination/rules/A_G_d15_u192.json": "42694ce7e58364957c74e7b22df66b22c4dc64e4b83da63630ea79da80cac97a",
+      "results/C10/refined_event_recombination/rules/A_G_d15_u384.json": "4fcbb246099af5d2c98e4f684512bcf6e69dee5c4d54b82d2fec472b953eb440",
+      "results/C10/refined_event_recombination/rules/B_G_d15_u192.json": "28cf1802a25983d32d143bf0e5f84da0ae8e6e3c763a0bdbe1b8bafc8d557917",
+      "results/C10/refined_event_recombination/rules/B_G_d15_u384.json": "ff94b9ed0b14309a2a5d747fab0840d6582d644e805a279b8330984cc4cb3864",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d15_u192.json": "84311f076102e45375702aa84384d1b0278730f54f8673cbaeedc3fa69ca446f",
+      "results/C10/refined_event_recombination/rules/C_beta_CN_d15_u384.json": "0d3cf2a42eee998db9487f24c7b678f3383d24dae3820a91d5a43287222539a7",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d15_u192.json": "70ac89172c2f93add2cf759f1933db15b6e5029d7895f3dba1f5b8afb12d1d3b",
+      "results/C10/refined_event_recombination/rules/C_beta_G_d15_u384.json": "f601fdf06dcaa559f0ce417b6b00265734215731051d6b5cfb74a63fc1c5ebbc",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d15_u192.json": "a8b954a900fc53e4556bfdb696e85fad17defd8a322db722c7ea78f5be12960c",
+      "results/C10/refined_event_recombination/rules/C_full_CN_d15_u384.json": "33066afc1838f9ea7d3217e860d21b571a3d0bf011b102d61924a256a905db9d",
+      "results/C10/refined_event_recombination/rules/C_full_G_d15_u192.json": "35eb6a27a4462c961e72896b4d87d12328404577c49b872ebb308c3685cc1cc5",
+      "results/C10/refined_event_recombination/rules/C_full_G_d15_u384.json": "c060655f5a8ab91e2d072f91797cdac7a1265af081a8de270e4e2092e7c6c646"
+    },
+    "C10_complete": false,
+    "production_authorized": false
+  },
+  "unbounded_fields": [
+    {
+      "path": "/events/C_beta_CN:15/rules/0/log_masses/Nlow",
+      "kind": "negative_infinity"
+    },
+    {
+      "path": "/events/C_beta_CN:15/rules/0/log_masses/NAhigh",
+      "kind": "negative_infinity"
+    },
+    {
+      "path": "/events/C_beta_G:15/rules/0/log_masses/Nlow",
+      "kind": "negative_infinity"
+    }
+  ],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

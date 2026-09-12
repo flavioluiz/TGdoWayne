@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] A relação escalar é satisfeita no modelo e na resposta derivada; não se ajustam duas deformações do mesmo modo como independentes.
-- [ ] Recuperação e falsos positivos são avaliados em injeções tensoriais e mistas.
-- [ ] A interpretação não assume que o modelo completo se torne RG apenas com massa nula.
+- [x] A relação escalar é satisfeita no modelo e na resposta derivada; não se ajustam duas deformações do mesmo modo como independentes.
+- [x] Recuperação e falsos positivos são avaliados em injeções tensoriais e mistas.
+- [x] A interpretação não assume que o modelo completo se torne RG apenas com massa nula.
 
 ## Validação exigida
 
@@ -67,3 +67,15 @@ Se a extensão não puder ser validada no prazo, documentar o resultado parcial 
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência de conclusão C10
+
+Campanha: 1192 observações, 6344 análises, sem descarte; auditoria em
+`results/C10/production_audit/audit.json`, síntese em
+`results/C10/population_synthesis/results.json`, Fisher em
+`results/C10/fisher_audit/audit.json`. Treze testes de componentes passaram
+no workspace e com referências restauradas. O capítulo 9 apresenta os
+resultados e as limitações; a conclusão do marco é condicional e não afirma
+validação uniforme do contínuo, boa recuperação em todas as células ou
+reanálise observacional. A restauração completa e a distribuição dos ZIPs
+são descritas em `docs/c10_restauracao_producao.md`.

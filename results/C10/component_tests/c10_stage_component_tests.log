@@ -1,0 +1,19 @@
+.venv/bin/python -m unittest discover -s tests -p 'test_c10*.py' -v
+test_boundary_stencils_and_rejections (test_c10_fisher_information.FisherTests.test_boundary_stencils_and_rejections) ... ok
+test_complex_experiment_equals_doubled_real_experiment (test_c10_fisher_information.FisherTests.test_complex_experiment_equals_doubled_real_experiment) ... ok
+test_real_mean_and_variance_have_known_information (test_c10_fisher_information.FisherTests.test_real_mean_and_variance_have_known_information) ... ok
+test_schur_matches_inverse_and_detects_exact_degeneracy (test_c10_fisher_information.FisherTests.test_schur_matches_inverse_and_detects_exact_degeneracy) ... ok
+test_changed_covariance_and_bounded_eviction (test_c10_moment_cache.MomentCacheChecks.test_changed_covariance_and_bounded_eviction) ... ok
+test_geometry_mutation_rejected_and_metadata_not_aliased (test_c10_moment_cache.MomentCacheChecks.test_geometry_mutation_rejected_and_metadata_not_aliased) ... ok
+test_same_densities_distinct_observations_and_unchanged_counts (test_c10_moment_cache.MomentCacheChecks.test_same_densities_distinct_observations_and_unchanged_counts) ... ok
+test_batched_inequalities_match_original_channels (test_c10_prepared_and_batched.PreparedAndBatchedTests.test_batched_inequalities_match_original_channels) ... ok
+test_domain_budget_and_failed_charges_preserved (test_c10_prepared_and_batched.PreparedAndBatchedTests.test_domain_budget_and_failed_charges_preserved) ... ok
+test_normalized_laws_against_independent_scipy (test_c10_prepared_and_batched.PreparedAndBatchedTests.test_normalized_laws_against_independent_scipy) ... ok
+test_counts_and_disjoint_namespaces (test_c10_scalar_campaign.CampaignTests.test_counts_and_disjoint_namespaces) ... ok
+test_hypothesis_membership_and_sensitivity_to_protocol (test_c10_scalar_campaign.CampaignTests.test_hypothesis_membership_and_sensitivity_to_protocol) ... ok
+test_malformed_subset_and_excess_budget_rejected (test_c10_scalar_campaign.CampaignTests.test_malformed_subset_and_excess_budget_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.025s
+
+OK

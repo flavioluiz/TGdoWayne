@@ -1,0 +1,50 @@
+{
+  "status": "NORMALIZATION_EXACT_REUSE_AND_RESOURCE_AUDIT_PASS",
+  "checks": [
+    {
+      "target": "A_CN_d9",
+      "grid": "high",
+      "normalization_difference": 3.552713678800501e-15
+    },
+    {
+      "target": "A_CN_d9",
+      "grid": "product",
+      "normalization_difference": 0.0
+    },
+    {
+      "target": "C_full_G_d14",
+      "grid": "high",
+      "normalization_difference": 3.552713678800501e-15
+    },
+    {
+      "target": "C_full_G_d14",
+      "grid": "product",
+      "normalization_difference": 0.0
+    }
+  ],
+  "inputs": {
+    "tmp/c10_primary_grid_refinement_v1/plan.json": "a56bacbb8f0f3c7eba15423342f7f863407dba658a7e4a6bfee17963aa4b77a6",
+    "tmp/c10_primary_grid_refinement_v1/complete.json": "87617267dfbbce439b2107d497d5cf9d66106c61b7d36ad4e2e5ddeb2b879de8",
+    "tmp/c10_primary_grid_refinement_v1/ledger.json": "8359413328e5d804e2adc92ace4b245d42fe30f7454f48c3dee15514b92f7b27",
+    "tmp/c10_exact_lifecycle_v1/axes.json": "12996cbf4539a7125bfc23bddd52163367e002e9c8c40823324879e13788f3f7",
+    "tmp/c10_physical_pilot_v1/D_fine.state.json": "23bb721d7eed603d536ea6aa303d84b66ba5b8c0e905883c3e640cd759ac701f",
+    "tmp/c10_physical_pilot_v1/D_fine.npy": "359686a0320b284836e8a493eb8a332192e5b73102fea502fc7f799872a13f92",
+    "tmp/c10_primary_grid_refinement_v1/A_CN_d9_summary.json": "21e5a6b0dcdbe434995471eb906a20a0d249064c951917dbeb3d8b163f64196f",
+    "tmp/c10_primary_grid_refinement_v1/A_CN_d9_high.npy": "279cafa0ddd208f8750d43523fd22c4cd5dc2ddcc59ff522434850e5842ed6ef",
+    "tmp/c10_primary_grid_refinement_v1/A_CN_d9_product.npy": "17bc64d049530f2fb51d2baf60a9e3a018b0a16793e463b6c299279d01b60418",
+    "tmp/c10_physical_pilot_v1/C_full_fine.state.json": "db3a684acc55f3a94960955424def8349fe71e026a6b2b07ec3c0cec27073235",
+    "tmp/c10_physical_pilot_v1/C_full_fine.npy": "e73f143e9170809deda02f034bd69d1192822269d1f071ec1cf788a06ded7769",
+    "tmp/c10_primary_grid_refinement_v1/C_full_G_d14_summary.json": "d4cdb49710d09e8249c8755a46ada4f6f6ef4bdddb748d147d50ddaf6057ea51",
+    "tmp/c10_primary_grid_refinement_v1/C_full_G_d14_high.npy": "a7395dd2c8eceff500c737197746bce54ca4a13417fe0eb29d621ec2e6b8b248",
+    "tmp/c10_primary_grid_refinement_v1/C_full_G_d14_product.npy": "eddc67b1eb0d289cb32836949aa9f5aef2a8a1c894d49c52a72aa2d24c7ff291",
+    "scripts/auditar_malhas_primarias_c10.py": "a2215462cc40faf693478cf3400fd07bb6d01a5317623a34f0818951f3dc01f9"
+  },
+  "reused_values": 66306,
+  "charged_values": 273038,
+  "cumulative_values": 13880746,
+  "output_bytes": 2760520,
+  "maximum_normalization_difference": 3.552713678800501e-15,
+  "new_likelihood_values": 0,
+  "new_ORFs": 0,
+  "scope": "Finite grids for A_CN/d9 and C_full_G/d14. Continuous events and population validation remain separate."
+}

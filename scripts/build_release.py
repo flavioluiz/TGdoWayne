@@ -69,6 +69,15 @@ def main():
         raise SystemExit("latest_pdf deve estar em output/pdf/<versão>/ e terminar em .pdf")
     dest.parent.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(pdf, dest)
+    external_assets = []
+    distribution = ROOT / "results/C10/production_reproducibility/distribution.json"
+    if distribution.exists():
+        external_assets = json.loads(distribution.read_text())["assets"]
+        for entry in external_assets:
+            path = ROOT / entry["path"]
+            if path.exists() and (path.stat().st_size != entry["bytes"] or digest(path) != entry["sha256"]):
+                raise ValueError("External archive differs from its catalog: " + str(path))
+    external_paths = {entry["path"] for entry in external_assets}
     files = [ROOT / p for p in ("README.md", "Makefile", ".gitignore", "project_status.json", "TG_Wayne.pdf")]
     files.extend(ROOT.glob("Template*.zip"))
     files.extend(p for p in (ROOT / "pyproject.toml", ROOT / "uv.lock", ROOT / "requirements.txt") if p.exists())
@@ -76,7 +85,8 @@ def main():
                       "src", "tests", "configs", "results", "figures"):
         files.extend(p for p in (ROOT / directory).rglob("*") if p.is_file()
                      and "__pycache__" not in p.parts and p.name != ".DS_Store"
-                     and not p.is_relative_to(ROOT / "literature/papers"))
+                     and not p.is_relative_to(ROOT / "literature/papers")
+                     and str(p.relative_to(ROOT)) not in external_paths)
     files.append(release_dir / "RELEASE_NOTES.md")
     manifest = {
         "schema_version": 1, "version": args.version, "stage": status["current_stage"],
@@ -85,6 +95,7 @@ def main():
         "date": status["updated_at"],
         "toolchain": {binary: subprocess.check_output([binary, "--version"], env=env, text=True).splitlines()[0]
                       for binary in ("pdflatex", "latexmk", "biber")},
+        "external_assets": external_assets,
         "inputs_sha256": {str(p.relative_to(ROOT)): digest(p) for p in sorted(set(files))}
     }
     (release_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n")

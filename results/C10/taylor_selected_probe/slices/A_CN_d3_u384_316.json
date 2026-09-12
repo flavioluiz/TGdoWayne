@@ -1,0 +1,144 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+    "interval": [
+      0.9999999997999675,
+      1.0
+    ],
+    "candidate_interval": [
+      0.9999999997999675,
+      1.0
+    ],
+    "rigorous_floatingpoint_certificate": false,
+    "uniform_physical_certificate": false,
+    "epsilon_topology_from_root_count": false,
+    "controls": {
+      "roundoff_allowance_validated": true,
+      "same_node_covariance_reference_validated": true
+    },
+    "ambiguous_mass_upper": 0.0,
+    "quadrature_operational_error": 4.000649813389575e-10,
+    "slice_gates": {
+      "ambiguity": true,
+      "observed_total_width": true,
+      "quadrature_difference": true,
+      "finite_controls": true
+    },
+    "partition": [
+      {
+        "left": 0.0,
+        "right": 0.125,
+        "depth": 3,
+        "classification": "inside",
+        "logL_lower": 49.949440342340125,
+        "logL_upper": 50.82300337830941,
+        "mass_lower": 0.5479653274765391,
+        "mass_upper": 1.3126129526008865
+      },
+      {
+        "left": 0.125,
+        "right": 0.25,
+        "depth": 3,
+        "classification": "inside",
+        "logL_lower": 49.437044875604336,
+        "logL_upper": 50.270496469089316,
+        "mass_lower": 0.3282634696866625,
+        "mass_upper": 0.7554156598981234
+      },
+      {
+        "left": 0.25,
+        "right": 0.5,
+        "depth": 2,
+        "classification": "inside",
+        "logL_lower": 47.896859333723434,
+        "logL_upper": 50.164810047729155,
+        "mass_lower": 0.14072085634460502,
+        "mass_upper": 1.3593051103331364
+      },
+      {
+        "left": 0.5,
+        "right": 1.0,
+        "depth": 1,
+        "classification": "inside",
+        "logL_lower": 43.96320829903943,
+        "logL_upper": 50.71610512688493,
+        "mass_lower": 0.005508400726373279,
+        "mass_upper": 2.018435033271168
+      }
+    ],
+    "complete_epsilon_support": true,
+    "splits": 3,
+    "charged_values": 0,
+    "log_shift": 48.47154206572432,
+    "denominator": {
+      "value": 2.0184350332711647,
+      "lower": 2.0184350330692884,
+      "upper": 2.018435033473041,
+      "GL16": 2.0184350332711616,
+      "GL32": 2.0184350332711647,
+      "observed_difference": 3.1086244689504383e-15,
+      "rigorous_error_bound": false,
+      "additional_roundoff_allowance": 2.0187308337934542e-10
+    },
+    "numerator_references": {
+      "inside": {
+        "value": 2.0184350332711647,
+        "lower": 2.0184350330692884,
+        "upper": 2.018435033473041,
+        "GL16": 2.0184350332711616,
+        "GL32": 2.0184350332711647,
+        "observed_difference": 3.1086244689504383e-15,
+        "rigorous_error_bound": false,
+        "additional_roundoff_allowance": 2.0187308337934542e-10
+      },
+      "ambiguous": {
+        "value": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "GL16": 0.0,
+        "GL32": 0.0,
+        "observed_difference": 0.0,
+        "rigorous_error_bound": false
+      }
+    },
+    "remaining_2D_gates": [
+      "u192/u384 integration difference",
+      "H00/H01/H11 propagation",
+      "bilinear-versus-direct comparison",
+      "underflow and finite precision checks"
+    ],
+    "mass_roundoff_model": {
+      "relative_allowance": 1e-10,
+      "positive_dot_gamma": true,
+      "uniform_physical_certificate": false,
+      "rigorous_error_bound": false
+    },
+    "quadrature_roundoff_compatibility": true,
+    "selection": {
+      "id": 3,
+      "route": "D",
+      "model": "A_CN",
+      "label": "A_CN",
+      "node_index": 316,
+      "path": "results/C10/slice_refinement_probe_v2/slices/A_CN_d3_u384_316.json",
+      "weighted_uncertainty": 0.009445002967494233
+    },
+    "identity": "b63ee4ec8d0a7012e64a4615193316597d73db6a05aadfa257cf71cc8050c39b:A_CN:3:0x1.d9ce918381243p-1:H11",
+    "reused_values": 215,
+    "bridge_max_delta": 0.0,
+    "checked_cached_points": 724,
+    "total_cells": 7,
+    "taylor_available_cells": 7,
+    "original_status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+    "original_candidate_interval": [
+      0.9999999999999969,
+      1.0
+    ],
+    "node_u": 0.9254041169193176,
+    "delta_logL_node": 1.3561986082386655e-10,
+    "delta_logL_truth": 1.0051159076974728e-10
+  },
+  "unbounded_fields": [],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

@@ -1,0 +1,339 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "selection": {
+      "label": "A0_CN",
+      "model": "A0_CN",
+      "route": "D",
+      "id": 0,
+      "mass_index": 315,
+      "u": 0.677404680947535
+    },
+    "identity": "b63ee4ec8d0a7012e64a4615193316597d73db6a05aadfa257cf71cc8050c39b:A0_CN:0:0x1.5ad4c94da7699p-1:H11",
+    "simpson": {
+      "status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "candidate_interval": [
+        0.0,
+        0.0
+      ],
+      "rigorous_floatingpoint_certificate": false,
+      "uniform_physical_certificate": false,
+      "epsilon_topology_from_root_count": false,
+      "controls": {
+        "roundoff_allowance_validated": true,
+        "same_node_covariance_reference_validated": true
+      },
+      "ambiguous_mass_upper": 0.0,
+      "quadrature_operational_error": 6.254430435226185e-10,
+      "slice_gates": {
+        "ambiguity": true,
+        "observed_total_width": true,
+        "quadrature_difference": true,
+        "finite_controls": true
+      },
+      "partition": [
+        {
+          "left": 0.0,
+          "right": 0.125,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.198716861203454,
+          "logL_upper": -26.88104417585617,
+          "mass_lower": 0.10610420956191695,
+          "mass_upper": 0.14577938330011428
+        },
+        {
+          "left": 0.125,
+          "right": 0.25,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.125136217484116,
+          "logL_upper": -26.892136101318297,
+          "mass_lower": 0.11420583197163883,
+          "mass_upper": 0.1441713438599393
+        },
+        {
+          "left": 0.25,
+          "right": 0.5,
+          "depth": 2,
+          "classification": "outside",
+          "logL_lower": -27.384853997229158,
+          "logL_upper": -26.633811914537958,
+          "mass_lower": 0.1761668865480978,
+          "mass_upper": 0.3733341441604282
+        },
+        {
+          "left": 0.5,
+          "right": 0.75,
+          "depth": 2,
+          "classification": "outside",
+          "logL_lower": -27.375333568504544,
+          "logL_upper": -26.77778838677675,
+          "mass_lower": 0.17785207998852764,
+          "mass_upper": 0.3232730671627393
+        },
+        {
+          "left": 0.75,
+          "right": 0.875,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.24344440492631,
+          "logL_upper": -27.085598863538156,
+          "mass_lower": 0.10146299761810285,
+          "mass_upper": 0.11881167991952998
+        },
+        {
+          "left": 0.875,
+          "right": 1.0,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.315697800322155,
+          "logL_upper": -27.159162910742694,
+          "mass_lower": 0.09439053290818575,
+          "mass_upper": 0.11038515626835899
+        }
+      ],
+      "complete_epsilon_support": true,
+      "splits": 5,
+      "charged_values": 0,
+      "log_shift": -27.034824844152674,
+      "denominator": {
+        "value": 0.9591798140947546,
+        "lower": 0.9591798137947984,
+        "upper": 0.9591798143947108,
+        "coarse": 0.9591798138907718,
+        "fine": 0.9591798140947546,
+        "observed_difference": 2.0398283062661449e-10,
+        "additional_roundoff_allowance": 9.597335639222237e-11,
+        "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+        "sampled_points_per_rule": [
+          65,
+          129
+        ],
+        "rigorous_error_bound": false
+      },
+      "numerator_references": {
+        "inside": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "coarse": 0.0,
+          "fine": 0.0,
+          "observed_difference": 0.0,
+          "additional_roundoff_allowance": 0.0,
+          "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+          "sampled_points_per_rule": [
+            0,
+            0
+          ],
+          "rigorous_error_bound": false
+        },
+        "ambiguous": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "coarse": 0.0,
+          "fine": 0.0,
+          "observed_difference": 0.0,
+          "additional_roundoff_allowance": 0.0,
+          "rule": "POSITIVE_COMPOSITE_SIMPSON_32_64",
+          "sampled_points_per_rule": [
+            0,
+            0
+          ],
+          "rigorous_error_bound": false
+        }
+      },
+      "remaining_2D_gates": [
+        "nested CC integration difference and independent GL comparison",
+        "H00/H01/H11 propagation",
+        "bilinear-versus-direct comparison",
+        "underflow and finite precision checks"
+      ]
+    },
+    "gauss": {
+      "status": "SLICE_OPERATIONAL_CONTROLS_PASS_NOT_2D_CDF_APPROVAL",
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "candidate_interval": [
+        0.0,
+        0.0
+      ],
+      "rigorous_floatingpoint_certificate": false,
+      "uniform_physical_certificate": false,
+      "epsilon_topology_from_root_count": false,
+      "controls": {
+        "roundoff_allowance_validated": true,
+        "same_node_covariance_reference_validated": true
+      },
+      "ambiguous_mass_upper": 0.0,
+      "quadrature_operational_error": 2.0003579581739695e-10,
+      "slice_gates": {
+        "ambiguity": true,
+        "observed_total_width": true,
+        "quadrature_difference": true,
+        "finite_controls": true
+      },
+      "partition": [
+        {
+          "left": 0.0,
+          "right": 0.125,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.198716861203454,
+          "logL_upper": -26.88104417585617,
+          "mass_lower": 0.10610420956191695,
+          "mass_upper": 0.14577938330011428
+        },
+        {
+          "left": 0.125,
+          "right": 0.25,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.125136217484116,
+          "logL_upper": -26.892136101318297,
+          "mass_lower": 0.11420583197163883,
+          "mass_upper": 0.1441713438599393
+        },
+        {
+          "left": 0.25,
+          "right": 0.5,
+          "depth": 2,
+          "classification": "outside",
+          "logL_lower": -27.384853997229158,
+          "logL_upper": -26.633811914537958,
+          "mass_lower": 0.1761668865480978,
+          "mass_upper": 0.3733341441604282
+        },
+        {
+          "left": 0.5,
+          "right": 0.75,
+          "depth": 2,
+          "classification": "outside",
+          "logL_lower": -27.375333568504544,
+          "logL_upper": -26.77778838677675,
+          "mass_lower": 0.17785207998852764,
+          "mass_upper": 0.3232730671627393
+        },
+        {
+          "left": 0.75,
+          "right": 0.875,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.24344440492631,
+          "logL_upper": -27.085598863538156,
+          "mass_lower": 0.10146299761810285,
+          "mass_upper": 0.11881167991952998
+        },
+        {
+          "left": 0.875,
+          "right": 1.0,
+          "depth": 3,
+          "classification": "outside",
+          "logL_lower": -27.315697800322155,
+          "logL_upper": -27.159162910742694,
+          "mass_lower": 0.09439053290818575,
+          "mass_upper": 0.11038515626835899
+        }
+      ],
+      "complete_epsilon_support": true,
+      "splits": 5,
+      "charged_values": 48,
+      "log_shift": -27.034824844152674,
+      "denominator": {
+        "value": 0.9591798141083392,
+        "lower": 0.959179814012404,
+        "upper": 0.9591798142042743,
+        "GL16": 0.9591798141083423,
+        "GL32": 0.9591798141083392,
+        "observed_difference": 3.1086244689504383e-15,
+        "rigorous_error_bound": false,
+        "additional_roundoff_allowance": 9.593203813722372e-11
+      },
+      "numerator_references": {
+        "inside": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "GL16": 0.0,
+          "GL32": 0.0,
+          "observed_difference": 0.0,
+          "rigorous_error_bound": false
+        },
+        "ambiguous": {
+          "value": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "GL16": 0.0,
+          "GL32": 0.0,
+          "observed_difference": 0.0,
+          "rigorous_error_bound": false
+        }
+      },
+      "remaining_2D_gates": [
+        "u192/u384 integration difference",
+        "H00/H01/H11 propagation",
+        "bilinear-versus-direct comparison",
+        "underflow and finite precision checks"
+      ],
+      "mass_roundoff_model": {
+        "relative_allowance": 1e-10,
+        "positive_dot_gamma": true,
+        "uniform_physical_certificate": false,
+        "rigorous_error_bound": false
+      },
+      "quadrature_roundoff_compatibility": true
+    },
+    "simpson_new_values": 0,
+    "gauss_additional_values": 48,
+    "total_new_values": 48,
+    "reused_values": 129,
+    "passed": true,
+    "CDF_hull": [
+      0.0,
+      0.0
+    ],
+    "logZ_difference": 1.4162705730402791e-11,
+    "delta_logL_node": 1.4887639434562453e-10,
+    "delta_logL_truth": 1.0044408920985007e-10,
+    "level_bounds": [
+      {
+        "status": "FINITE_NUMERICAL_LEVEL_BOUND_ORDINARY_FLOAT",
+        "delta_loglike": 1.4887639434562453e-10,
+        "maximum_eta": 7.540374058849882e-13,
+        "anchor_negative_coefficient_correction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical_ORF_certificate": false,
+        "directed_rounding_certificate": false,
+        "density_evaluations": 0,
+        "scope": "all epsilon in[0,1] for these supplied polynomial numerical levels"
+      },
+      {
+        "status": "FINITE_NUMERICAL_LEVEL_BOUND_ORDINARY_FLOAT",
+        "delta_loglike": 1e-10,
+        "maximum_eta": 0.0,
+        "anchor_negative_coefficient_correction": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "physical_ORF_certificate": false,
+        "directed_rounding_certificate": false,
+        "density_evaluations": 0,
+        "scope": "all epsilon in[0,1] for these supplied polynomial numerical levels"
+      }
+    ],
+    "checked_cached_points": 1094
+  },
+  "unbounded_fields": [],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

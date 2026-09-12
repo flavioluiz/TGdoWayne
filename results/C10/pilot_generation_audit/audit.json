@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "reconstructed_datasets": 16,
+  "checks": [
+    {
+      "id": 0,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 1,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 2,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 3,
+      "errors": {
+        "q": 0.0,
+        "x": 2.7755575615628914e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 4,
+      "errors": {
+        "q": 0.0,
+        "x": 2.7755575615628914e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 5,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 2.220446049250313e-16
+      }
+    },
+    {
+      "id": 6,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 7,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 8,
+      "errors": {
+        "q": 0.0,
+        "x": 1.1102230246251565e-16,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 9,
+      "errors": {
+        "q": 0.0,
+        "x": 7.687801491342035e-17,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 10,
+      "errors": {
+        "q": 0.0,
+        "x": 1.1102230246251565e-16,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 11,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 1.3877787807814457e-16
+      }
+    },
+    {
+      "id": 12,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": 13,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 14,
+      "errors": {
+        "q": 0.0,
+        "x": 2.7755575615628914e-17,
+        "g": 5.551115123125783e-17
+      }
+    },
+    {
+      "id": 15,
+      "errors": {
+        "q": 0.0,
+        "x": 5.551115123125783e-17,
+        "g": 2.7755575615628914e-17
+      }
+    }
+  ],
+  "maximum_scaled_error": 2.220446049250313e-16,
+  "CPU": 0.307203,
+  "inputs": {
+    "tmp/c10_exact_lifecycle_v1/execution_spec.json": "4cc4f9a71b80b79ab730665f585461373e8bb4c535bf0b90aef45b19fb43693c",
+    "tmp/c10_exact_lifecycle_v1/axes.json": "12996cbf4539a7125bfc23bddd52163367e002e9c8c40823324879e13788f3f7",
+    "tmp/c10_execution_design/c10_protocol_candidate_v1.json": "8bab32e3780c781530752e98ab6974dca0e23a1563ed49f696c4fe89583699b9",
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "results/C06/massive/fixture.npz": "94a7a553fe52224525de30a78782afa45e64def0bd1c870f24121d563b1c8d0a",
+    "tmp/c10_physical_pilot_v1/nodal_component.npz": "36f6db2a40b9b874775fe520b98a46fb598b65104ccbb7e4fcd62788a330a2f9",
+    "tmp/c10_physical_pilot_v1/generation.npz": "b63ee4ec8d0a7012e64a4615193316597d73db6a05aadfa257cf71cc8050c39b",
+    "scripts/auditar_geracao_piloto_c10.py": "08654f399d68788c80972bfd81a98442fc27926ca6bf3b4fc4ce30c2e4f10883",
+    "tmp/c10_exact_lifecycle_v1/physical.py": "3532123eb71949d92e87b7e77f690c1aa02137e629bbf30da0951e097d64d553",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7"
+  },
+  "new_likelihood_values": 0,
+  "new_ORFs": 0,
+  "scope": "Seeded draws and independent direct trace/quadratic contractions. Same response covariance provider; no independent ORF proof or population calibration."
+}

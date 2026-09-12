@@ -36,6 +36,17 @@ def verify(version):
             raise ValueError(f"Arquivo ausente ou fora do projeto: {relative}")
         if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
             raise ValueError(f"Hash divergente: {relative}")
+    external = manifest.get("external_assets", [])
+    if external:
+        distribution = json.loads((ROOT / "results/C10/production_reproducibility/distribution.json").read_text())
+        if external != distribution["assets"]:
+            raise ValueError("External release assets differ from their versioned catalog")
+        for entry in external:
+            path = (ROOT / entry["path"]).resolve()
+            if not path.is_relative_to(ROOT):
+                raise ValueError("External archive path outside project")
+            if path.exists() and (path.stat().st_size != entry["bytes"] or hashlib.sha256(path.read_bytes()).hexdigest() != entry["sha256"]):
+                raise ValueError("External archive hash differs: " + entry["path"])
     pdf = ROOT / manifest["pdf"]
     if not pdf.read_bytes().startswith(b"%PDF-"):
         raise ValueError("Arquivo não é PDF")

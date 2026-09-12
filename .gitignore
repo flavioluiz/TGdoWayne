@@ -26,3 +26,8 @@ literature/papers/*.part
 # Registros científicos C07 preservados para auditoria e reprodução.
 !results/C07/**/*.log
 !results/C08/**/*.log
+
+# C10 production payloads are distributed as GitHub Release assets.
+results/C10/production_reproducibility/production_*.zip
+results/C10/production_reproducibility/production_*.zip.part
+!results/C10/**/*.log

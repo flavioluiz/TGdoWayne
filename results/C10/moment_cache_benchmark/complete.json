@@ -1,0 +1,30 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "status": "PAIRED_ANALYTIC_REPLAY_EXACT_MATCH",
+    "cases": 2580,
+    "replay_checks": 5160,
+    "ordinary_CPU": 13.530993999999984,
+    "memo_CPU": 12.168851999999971,
+    "CPU": 27.422484,
+    "speed_ratio_ordinary_over_memo": 1.1119367710281969,
+    "cache": {
+      "hits": 10061,
+      "misses": 259,
+      "entries": 259,
+      "numeric_bytes": 4475520,
+      "maximum_numeric_bytes": 134217728,
+      "maximum_entries": 4096,
+      "key_and_metadata_overhead_not_in_numeric_bytes": true,
+      "new_density_values": 0
+    },
+    "cumulative_likelihood_values": 14622522,
+    "new_likelihood_values": 0,
+    "new_ORFs": 0,
+    "new_observations": 0,
+    "production_authorized": false,
+    "plan_sha256": "db5d756a175f2aafde897470a27bbb2e56f5310b3e85250f8212bbc88d59fa1c"
+  },
+  "unbounded_fields": [],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}

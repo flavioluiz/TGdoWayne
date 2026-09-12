@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_stage": "C09",
+  "current_stage": "C10",
   "completed_stages": [
     "C01",
     "C02",
@@ -10,13 +10,14 @@
     "C06",
     "C07",
     "C08",
-    "C09"
+    "C09",
+    "C10"
   ],
-  "latest_version": "v0.9.0",
+  "latest_version": "v0.10.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.9.0/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.10.0/dissertacao.pdf",
   "updated_at": "2026-09-12",
-  "status_label": "C09: robustez condicional e limitações numéricas documentadas; próximo marco C10",
+  "status_label": "C10: extensão escalar condicional concluída; próximo marco C11",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -25,6 +26,7 @@
     "advisor_status": "Identificação provisória"
   },
   "completed_work": [
+    "C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.",
     "C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.",
     "Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.",
     "Busca bibliográfica dirigida com corte em 10/09/2026 e proposta de investigação sobre compressão em frequência em PTAs.",
@@ -68,11 +70,14 @@
     "Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.",
     "Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.",
     "Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente.",
-    "Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados."
+    "Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados.",
+    "Suplemento metodológico C10: acervo com 38 PDFs locais, 857 páginas, incluindo Trefethen sobre quadratura; corte da revisão PTA mantido em 11/09/2026.",
+    "C10: preparação, piloto, refinamentos e geração empacotados; 104184 arquivos lógicos restaurados e verificados, em 14 ZIPs novos e dois anteriores. A produção de posteriores permanece em execução e fora desse pacote.",
+    "C10: 110257 arquivos lógicos da produção restaurados e conferidos; 74 ZIPs distribuídos no release, com URLs e SHA-256 versionados. Treze testes C10 aprovados também com referências restauradas."
   ],
-  "current_work": "C09 entrega 25956 posteriores de base, painel de 1600 integrações de prioris, 90 grupos descritivos e 39 contrastes pareados. PIT de massa: 25122 resolvidos operacionalmente; 834 falhas preservadas. Eventos com limiar físico: 23669 critérios operacionais aprovados, 2287 indeterminados, sem certificado físico uniforme dos domínios. SBC dos 18 grupos/126 testes: 116 não rejeições condicionais e 10 indeterminados; isso não demonstra aprendizado da massa. Acumulado C09: 67072009 avaliações; D3: 7920 nós e 85695910009872 produtos. C10–C13 permanecem abertos: extensão escalar, aplicação, discussão, conclusões e auditoria final. As limitações C09 são resultados relatados, não aprovações numéricas implícitas. Próximo release planejado: v0.10.0.",
+  "current_work": "Próximo marco C11/v0.11.0: formalizar o ramo com a auditoria de produtos públicos, validar o benchmark ampliado e executar a comparação prevista. C10 concluído no alcance condicional, com casos indeterminados preservados. C12–C13 abertos; sem releases intermediários.",
   "in_progress_stages": [
-    "C10"
+    "C11"
   ],
   "execution_status": "resumed",
   "paused_stages": [],

@@ -1,0 +1,182 @@
+{
+  "sources": {
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "src/inference/__init__.py": "21d80a76b7cb264c5b8f60bac29cbb80c90ab7f6604e5137de1c9411d2b0f812",
+    "src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3",
+    "src/pta/__init__.py": "f7d3c458100657f5228608d47803412fa9e29f88191b33aab467fc48f09ca3fb",
+    "src/pta/_domain.py": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+    "src/pta/orf.py": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+    "src/pta/response.py": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "src/pta/validation.py": "0c66ebab9ff619ca6fa1efa4cecf2b3d672e0359ee8aac3230163afcdae7a887",
+    "tmp/c10_ROOT_component/nodal_guard_v2_review.json": "cc18cd11d408b08d0fadd3555b9b44ecd75dc1f1f9dc7c3f02971eadfde00087",
+    "tmp/c10_ROOT_component/nodal_reuse_review_v1.json": "21aba0d56ed8a972012186f7ef696ed858ea48c18085bde811953c5fe2376252",
+    "tmp/c10_ROOT_component/review_nodal_reuse.py": "8d7712a497e621a2f41c2c6e0a139ad4e339baee08f6c564107acd9d3f2d9c3c",
+    "tmp/c10_bilinear_v3/validation.json": "2090021e3199b5d1aa6bcc032a4a3740d455271802dd267c651baffdcfb40037",
+    "tmp/c10_exact_lifecycle_v1/aggregate.py": "5b86bac34cd53f018990bd9d0333aa056db99d67666be3d1fbe08893a9a03a09",
+    "tmp/c10_exact_lifecycle_v1/bilinear_reference.py": "eb8322935f44f3bac750571479cd6b1dd143c2757a2160020d024d59d8a479f6",
+    "tmp/c10_exact_lifecycle_v1/epsilon_event.py": "4c4510db86384d7c821840037d1937188d65abf8b8feff8cda9d8f9aa663db88",
+    "tmp/c10_exact_lifecycle_v1/harmonic_margin.py": "f65756a04db6b439bcf57cdce3f47d819e09d02c0fa22d20dba9555176b6ee7a",
+    "tmp/c10_exact_lifecycle_v1/ledger.py": "44fdc20cc373fdecfa62fca5d29bf218788dbd351773a5fcdf240af203bdf129",
+    "tmp/c10_exact_lifecycle_v1/lifecycle.py": "24f1173f52ab351be28fe5db09e64a06713ef3d28ce85e45305d4c31814ac163",
+    "tmp/c10_exact_lifecycle_v1/nodal_runner.py": "ee8a5743afde3f061df9616495066b400e9b4d440b7f879a04fae3886b365901",
+    "tmp/c10_exact_lifecycle_v1/orf_child.py": "076b8c3251c5e29ca1d018b485845ad5d5d3bd87480118f94c186338c9d62ef9",
+    "tmp/c10_exact_lifecycle_v1/persistent_grid.py": "ee9c076e633615c974b7128fc3b8e3a73852dedd67604222670ee9b627baf1af",
+    "tmp/c10_exact_lifecycle_v1/physical.py": "3532123eb71949d92e87b7e77f690c1aa02137e629bbf30da0951e097d64d553",
+    "tmp/c10_exact_lifecycle_v1/prepare.py": "a483b10f58676b953e7da9d60ce41039f909d625973501b11f3b923bc99f31bc",
+    "tmp/c10_exact_lifecycle_v1/references.py": "c2e0892e401914d0af10f39d92ab68799d6a823f3d18248e3147d431abc8c4e7",
+    "tmp/c10_exact_lifecycle_v1/report_io.py": "682fcb323c88c5f71c5dafd7e10824cbe9a6a5ff2ffac150aadc881bff4b3113",
+    "tmp/c10_exact_lifecycle_v1/run.py": "bf51c72e2fc2a9c32bfe00119cd4f684cfecd466cd558f3ae05541313a30e411",
+    "tmp/c10_exact_lifecycle_v1/selected_kernel.py": "828aa8b98f8a2f909de79673ef1a8c9813d20346f0c6dac081a8ad46adddf6b8",
+    "tmp/c10_exact_lifecycle_v1/test_integration.py": "6258b9722d7db6d4b713ce3ca29a0dd16091c27d52cd881a9282f9e827d25bd4",
+    "tmp/c10_exact_lifecycle_v1/validate_and_time.py": "62df4c7555fbee60608928420c8cd690ea948745971a91d59ea49ab1443ff37c",
+    "tmp/c10_exact_lifecycle_v1/vendor_d1/__init__.py": "fc0a4e0fc761e0f0f26c995faea3d6e91d874a47e35711371da69d9ddf68a4a1",
+    "tmp/c10_exact_lifecycle_v1/vendor_d1/envelope.py": "11f3eca6c7044cb995c9e4dae1363f73d01fb9f5db0bc5fb58490f2ecfb2b9f6",
+    "tmp/c10_exact_lifecycle_v1/vendor_d1/polynomial.py": "55045fd2e954eedf7f3a0590af7da9b5c809d5c4e752bff90cb7eab7c2332c70",
+    "tmp/c10_exact_selected_preflight_v1/preflight_ready.json": "907b67e1abca9306285609f467ac1bbd1724c7ada01effd5f909ed8129c33547",
+    "tmp/c10_exact_selected_preflight_v1/validation.json": "c2a972a9f2d9346173994ac8eeeddc60b03d7fbc65fece20dee7e37bc56d729b",
+    "tmp/c10_execution_design/PROTOCOLO_CANDIDATO_REVISADO.md": "0ac155293c32c96c18e05bbf0306859e9b3b65725d0f8c2309ab41062bd6b7f7",
+    "tmp/c10_execution_design/c10_protocol_candidate_v1.json": "8bab32e3780c781530752e98ab6974dca0e23a1563ed49f696c4fe89583699b9",
+    "tmp/c10_nodal_guard_v2/manifest.json": "dd9b6e55155d3053f176177acf115a40c28fd1b2d8a765d3cecd816e729d5991",
+    "tmp/c10_orf_preflight/results/ROOT_approval_probes_v1.json": "67cb7241da2454b9204960b15cf144b1bb625bd5287a8347bf5e44b589db7796",
+    "tmp/c10_orf_preflight/results/ROOT_approval_table_v1.json": "a022a06a61a8c880a7d9be84d97dc9c3987bc368b6651727aa3a5c1d1aa74da4",
+    "tmp/c10_orf_preflight/results/probes.json": "303ba874a0c41c96dbf5445b2ad52a2e876f06a30411c544720eff94dab3c50c",
+    "tmp/c10_orf_preflight/results/table.json": "181168007313f74ae2ed4ddf5d228ae6261f23641efc2fff5525d2bf2eb1a634",
+    "tmp/c10_scalar_blas/src/inference/scalar_blas.py": "5cf0daf3a3972e96afd18cb5c001f5d43d16ad36c4243d4b163ac88b94acd2f7",
+    "tmp/c10_selected_kernel_candidate/manifest.json": "099e78c42d971ca4cf35fe2d6058ef2b6bfcb72c92789fc26c96277c168eb826",
+    "scripts/concluir_fisher_escalar_c10.py": "8473022da720ce8ec9809c1b07a77e4cd459caa3f1fbb66747bd0c881f6cbb9a",
+    "configs/scalar/c10_production_v1.json": "38e75534677b07c8a907ac2b0d213200491cf19ae69777fd7493dff53932db45",
+    "tmp/c10_exact_lifecycle_v1/execution_spec.json": "4cc4f9a71b80b79ab730665f585461373e8bb4c535bf0b90aef45b19fb43693c",
+    "tmp/c10_population_v1/nodal_component.npz": "fadaf37d69981474e383f16e54b85ad6e865e2338ad168a8b4779c9dae7b6648",
+    "tmp/c10_population_v1/complete.json": "6272f7d40fa091e21a31b036413d982ac78abf75f6a8b0949f67759c2c3f5612",
+    "src/pta/fisher_information.py": "80c6e435eaa50dceeb212350c4cadb3328b169fc732b50458714bbf5d4732c31",
+    "tests/test_c10_fisher_information.py": "8d3e45cc70a4621ad638634e06f6efcf992c89ed43537e7b1da6936ede05183f",
+    "tmp/c10_fisher_tests.txt": "08e83c5258e9c6f7d51c365ff06c4f7cd1807bdf91d9de22e6b797c44cada27a",
+    "results/C10/fisher_v1/new_orf.npz": "ba8aed920afac482318f61febd35218e1871660f816d3c8fee54cdfa209d8e7e",
+    "results/C10/fisher_v1/FAILED_PRESERVED.json": "ae3cf20dc3fbd90c9c7b791c131a07dda83affe49e2d93de87c239ba70f3c8de",
+    "scripts/calcular_fisher_escalar_c10.py": "953ad1912b5cf0964af94671f5d9d639df982c8366110816174e73d7d2021623"
+  },
+  "fisher": {
+    "parameters": [
+      "u",
+      "epsilon",
+      "log10_AT",
+      "gamma",
+      "log10_Ar",
+      "log10_EFAC"
+    ],
+    "points": [
+      {
+        "u": 0.2,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.2,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.8,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.8,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.995,
+        "epsilon": 0.1
+      },
+      {
+        "u": 0.995,
+        "epsilon": 0.5
+      },
+      {
+        "u": 0.001,
+        "epsilon": 0.5
+      },
+      {
+        "u": 1.0,
+        "epsilon": 0.5
+      }
+    ],
+    "coordinate_scales": [
+      0.999,
+      1.0,
+      0.6,
+      2.5,
+      2.5,
+      0.6020599913279624
+    ],
+    "relative_steps": [
+      0.001,
+      0.0005,
+      0.00025
+    ],
+    "relative_matrix_change_max": 0.001,
+    "rank_relative_threshold": 1e-08,
+    "warning_correlation": 0.95,
+    "warning_min_generalized_schur_eigenvalue": 0.1,
+    "scope": "local6D information; not nuisance-free posterior, global identifiability, or misspecified physical normal Fisher"
+  },
+  "mass_nodes": [
+    0.001,
+    0.00124975,
+    0.0014995,
+    0.001999,
+    0.0029980000000000002,
+    0.199001,
+    0.1995005,
+    0.19975025000000002,
+    0.2,
+    0.20024975,
+    0.20049950000000002,
+    0.200999,
+    0.7990010000000001,
+    0.7995005000000001,
+    0.79975025,
+    0.8,
+    0.8002497500000001,
+    0.8004995,
+    0.800999,
+    0.994001,
+    0.9945005,
+    0.99475025,
+    0.995,
+    0.99524975,
+    0.9954995,
+    0.995999,
+    0.998002,
+    0.999001,
+    0.9995005,
+    0.99975025,
+    1.0
+  ],
+  "harmonic_resolutions": [
+    {
+      "lmax": 460,
+      "nmu": 900
+    },
+    {
+      "lmax": 460,
+      "nmu": 1000
+    },
+    {
+      "lmax": 520,
+      "nmu": 1000
+    }
+  ],
+  "historical_ORF_CPU": 207.287417,
+  "combined_ORF_CPU_cap": 600,
+  "CPU_cap": 60,
+  "output_cap": 33554432,
+  "RSS_cap": 4294967296,
+  "models": [
+    "A0_CN",
+    "A_G",
+    "B_G"
+  ],
+  "new_likelihood_values": 0,
+  "new_observations": 0,
+  "scope": "Local correctly specified CN and G experiments; no misspecified-normal physical Fisher or global identifiability claim"
+}

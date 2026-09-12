@@ -10,20 +10,21 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**C09: robustez condicional e limitações numéricas documentadas; próximo marco C10**
+**C10: extensão escalar condicional concluída; próximo marco C11**
 
-**Última etapa concluída:** C09 — Robustez a prioris, ruído e covariâncias.
+**Última etapa concluída:** C10 — Extensão com helicidade zero vinculada.
 
-**Progresso:** 9 de 13 marcos concluídos.
+**Progresso:** 10 de 13 marcos concluídos.
 
-**Próxima etapa:** C10 — Extensão com helicidade zero vinculada.
+**Próxima etapa:** C11 — Aplicação pública ou extensão simulada.
 
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.9.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.9.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.9.0) · [PDF versionado no repositório](output/pdf/v0.9.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.10.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.10.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.10.0) · [PDF versionado no repositório](output/pdf/v0.10.0/dissertacao.pdf)
 
 ### O que já foi executado
 
+- C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.
 - C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.
 - Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.
 - Busca bibliográfica dirigida com corte em 10/09/2026 e proposta de investigação sobre compressão em frequência em PTAs.
@@ -68,10 +69,13 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.
 - Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente.
 - Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados.
+- Suplemento metodológico C10: acervo com 38 PDFs locais, 857 páginas, incluindo Trefethen sobre quadratura; corte da revisão PTA mantido em 11/09/2026.
+- C10: preparação, piloto, refinamentos e geração empacotados; 104184 arquivos lógicos restaurados e verificados, em 14 ZIPs novos e dois anteriores. A produção de posteriores permanece em execução e fora desse pacote.
+- C10: 110257 arquivos lógicos da produção restaurados e conferidos; 74 ZIPs distribuídos no release, com URLs e SHA-256 versionados. Treze testes C10 aprovados também com referências restauradas.
 
 ### O que está em andamento e o que falta
 
-C09 entrega 25956 posteriores de base, painel de 1600 integrações de prioris, 90 grupos descritivos e 39 contrastes pareados. PIT de massa: 25122 resolvidos operacionalmente; 834 falhas preservadas. Eventos com limiar físico: 23669 critérios operacionais aprovados, 2287 indeterminados, sem certificado físico uniforme dos domínios. SBC dos 18 grupos/126 testes: 116 não rejeições condicionais e 10 indeterminados; isso não demonstra aprendizado da massa. Acumulado C09: 67072009 avaliações; D3: 7920 nós e 85695910009872 produtos. C10–C13 permanecem abertos: extensão escalar, aplicação, discussão, conclusões e auditoria final. As limitações C09 são resultados relatados, não aprovações numéricas implícitas. Próximo release planejado: v0.10.0.
+Próximo marco C11/v0.11.0: formalizar o ramo com a auditoria de produtos públicos, validar o benchmark ampliado e executar a comparação prevista. C10 concluído no alcance condicional, com casos indeterminados preservados. C12–C13 abertos; sem releases intermediários.
 
 ## Roadmap
 
@@ -88,8 +92,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C07 | Inferência de referência e calibração | `v0.7.1` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
 | C08 | Resultados sobre compressão em frequência | `v0.8.0` | Concluída | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
 | C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Concluída | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
-| C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Em andamento | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
-| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Planejada | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
+| C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Concluída | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
+| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Em andamento | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
 | C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Planejada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
 | C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Planejada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
 

@@ -1,0 +1,37 @@
+{
+  "schema": "C10_OPERATIONAL_REPORT_JSON_v1",
+  "payload": {
+    "status": "ONE_U_RULE_OPERATIONAL_NOT_FINAL_2D_APPROVAL",
+    "interval": [
+      0.0,
+      5.5242373894171845e-11
+    ],
+    "candidate_interval": [
+      0.0,
+      5.5242373894171845e-11
+    ],
+    "normalization": "sum du-weighted unnormalized masses; not mean conditional CDF",
+    "node_count": 192,
+    "unknown_numerator_nodes": 0,
+    "missing_denominator_nodes": [],
+    "slice_controls_pass": true,
+    "rigorous_floatingpoint_certificate": false,
+    "uniform_physical_certificate": false,
+    "log_masses": {
+      "Nlow": null,
+      "NAhigh": -5.704974090297104,
+      "Zlow": 17.914316723825234,
+      "Zhigh": 17.914316724254224,
+      "Zpoint": 17.91431672403973
+    },
+    "numerical_level_logweight_envelope": true,
+    "finite_controls_pass": true
+  },
+  "unbounded_fields": [
+    {
+      "path": "/log_masses/Nlow",
+      "kind": "negative_infinity"
+    }
+  ],
+  "unbounded_values_not_replaced_by_finite_limits": true
+}
