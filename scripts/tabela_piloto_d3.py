@@ -9,9 +9,9 @@ names={0:'Central, uniforme',1:'Central, massa ao quadrado',2:'Central, logarít
  5:r'\(\gamma=3\)',6:r'\(\gamma=3\)',7:r'\(\gamma=5,5\)',8:r'\(\gamma=5,5\)',
  9:r'Monopolo, \(\rho=0,25\)',10:r'Monopolo, \(\rho=1\)',11:r'Dipolo, \(\rho=0,25\)',12:r'Dipolo, \(\rho=1\)',15:'Massa nula'}
 lines=[r'% Generated from results/C09/D3_piloto/audit.json.',
- f"As integrações das {a['nominal_distance_posterior_analyses']} análises nominais foram registradas;",
+ f"Na versão~0.8.9, as integrações das {a['nominal_distance_posterior_analyses']} análises nominais foram registradas;",
  f"{a['primary_passed']} passaram nos cinco controles primários de normalização, CDF,",
- r'quantis, momentos e KL. W1 e eventos de logL dos novos dados permanecem pendentes.',
+ r'quantis, momentos e KL. W1 e eventos de logL desses dados ainda estavam pendentes naquele checkpoint.',
  f"O lote de posteriores contabilizou \\({a['posterior_values']:,}\\) avaliações e".replace(',','\\,'),
  f"\\({f(a['posterior_CPU'],2)}\\) segundos de CPU. As verificações finitas acrescentaram",
  f"\\({a['finite_checks_values']:,}\\) avaliações. Não se realizou SBC neste lote.".replace(',','\\,'),

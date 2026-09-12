@@ -16,7 +16,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 **Próxima etapa:** C09 — Robustez a prioris, ruído e covariâncias.  
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.8.9](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.9/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.9) · [PDF versionado no repositório](output/pdf/v0.8.9/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.8.10](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.10/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.10) · [PDF versionado no repositório](output/pdf/v0.8.10/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -60,10 +60,11 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Continuações D2 contabilizaram 40875 avaliações e 223,28 s CPU; caches e painéis foram reutilizados, falhas preservadas e 37 contrastes pareados sintetizados.
 - W1 entre posterior e priori passou em todas as 40 análises D2, com referência independente, dois refinamentos, quatro testes analíticos e auditoria dos caches; 87987 avaliações adicionais e 53,53 s CPU.
 - Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.
+- Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.
 
 ### O que está em andamento e o que falta
 
-C09 em andamento: D2 tem 40 análises com controles primários e W1; o piloto D3 acrescenta 16 dados e 140 inferências nominais com controles primários aprovados. Faltam posteriores da mistura de distâncias, controles próprios de covariância, contaminantes omitidos, W1/eventos dos novos dados e a campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_piloto_v0.8.9/README.md. Nenhuma simulação permanece em execução após este lote.
+C09 em andamento: D2 tem 40 análises com controles primários e W1; o piloto D3 tem 161 inferências com controles primários e W1, incluindo controles próprios e omissões pareadas. Faltam posteriores da mistura de distâncias, eventos de log-likelihood e a campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_complementos_v0.8.10/README.md. Nenhuma simulação permanece em execução após este lote.
 
 ## Roadmap
 

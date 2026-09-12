@@ -11,6 +11,7 @@ A versão~0.8.7 concluiu as referências das quarenta análises para
 normalização, CDF, quantis, momentos e KL, no alcance operacional descrito.
 A versão~0.8.8 acrescenta a referência própria da distância W1.
 A versão~0.8.9 inicia o piloto D3 com novos dados de engenharia.
+A versão~0.8.10 acrescenta controles próprios, omissões e W1 do piloto.
 Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
@@ -555,10 +556,56 @@ uma margem uniforme de probabilidade física.
 Os dados e as respostas dos dois casos de distâncias alteradas foram
 preservados, mas suas posteriores exigem validar as respostas ao longo
 do suporte e executar a mistura global. Os controles gaussianos próprios
-de cada variante de covariância têm componentes matemáticos testados;
-seus dados e posteriores piloto ainda faltam. Também faltam as análises
-com contaminante omitido sobre os mesmos dados. Os casos de engenharia
+e as análises com contaminante omitido foram executados na continuação
+descrita a seguir. Os casos de engenharia
 não substituem as distribuições de limites ou os grupos SBC de produção.
+
+\subsubsection{Controles próprios e omissão de contaminantes}
+
+Nove observações gaussianas comprimidas foram geradas para as três
+prioris centrais e as três variantes adicionais de covariância:
+diagonal variável, completa fixa e diagonal fixa. A família geradora
+coincide com a família analisada; a média continua dependente da massa
+e a âncora da covariância fixa é \(u=0,5\). Os vetores comprimidos são
+gerados diretamente, sem fabricar canais de frequência. Uma reconstrução
+independente com momentos por traços e os mesmos streams de números
+aleatórios recuperou os dados com erro máximo \(4,44\times10^{-16}\).
+Essas observações são controles de engenharia, não grupos SBC de produção.
+
+Os quatro dados contaminados foram reanalisados com o contaminante
+omitido, mantendo as observações originais, em \(A_0\), \(A_G\) e
+\(B_{\rm CN}\). As \(21\) análises adicionais passaram nos cinco
+controles primários e acrescentaram \(454\,608\) avaliações e
+\(38,85\) segundos de CPU. Não houve novas respostas ORF neste lote.
+
+\input{tabelas/d3_complementos}
+
+Nos doze contrastes, omitir o contaminante reduz \(Q_{95}\), no alcance
+dos dados fixos avaliados. Não se estima a frequência populacional desse
+efeito nem se estabelece direção universal. O controle gaussiano do
+dado~10 oferece um exemplo: o intervalo numérico de \(Q_{95}\) cai de
+\([0,9677;0,9687]\) para \([0,1075;0,1085]\), excluindo a massa
+injetada \(u=0,5\) sob omissão do monopolo. A divergência KL cresce de
+\(0,0833\) para \(2,2281\) nat. Uma posterior mais distante da priori
+não comprova a adequação do modelo; o estreitamento, isoladamente, não
+justifica escolher a análise. Não se trata de uma restrição observacional.
+
+A referência W1 passou a integrar várias curvas em uma malha adaptativa
+comum, preservando likelihood, priori, escala e normalização próprias
+para cada coluna. As fatorizações compartilhadas reduzem trabalho
+matricial, mas todas as avaliações de likelihood continuam contabilizadas.
+Os testes analíticos verificam curvas distintas e mudanças independentes
+de escala. Dois refinamentos e integrais tabuladas sustentam um gate W1
+próprio, sem herdar aprovação dos quantis.
+
+A primeira execução dessa extensão concluiu as referências, mas falhou
+ao gravar flags NumPy em JSON. Referências e caches foram recuperados
+sem repetir avaliações físicas. O tempo do worker não foi gravado:
+debitou-se sua reserva integral de \(60\) segundos, identificada como
+reserva, não medição. A recuperação não teve tempo instrumentado.
+A serialização foi corrigida e recebeu teste de regressão; o histórico
+de falha permanece preservado. A auditoria registra separadamente os
+tempos medidos e a reserva debitada.
 
 O tratamento prospectivo de distâncias usa uma hipótese discreta global,
 marginalizada na likelihood conforme a
@@ -592,7 +639,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.9}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.10}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.
