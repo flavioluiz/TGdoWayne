@@ -12,6 +12,8 @@ normalização, CDF, quantis, momentos e KL, no alcance operacional descrito.
 A versão~0.8.8 acrescenta a referência própria da distância W1.
 A versão~0.8.9 inicia o piloto D3 com novos dados de engenharia.
 A versão~0.8.10 acrescenta controles próprios, omissões e W1 do piloto.
+A versão~0.8.11 inicia as integrações de distância, e a versão~0.8.12
+acrescenta sua referência adaptativa parcial.
 Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
@@ -660,13 +662,59 @@ As maiores diferenças foram \(2,56\times10^{-4}\) em log-normalização,
 nas fronteiras dos painéis. Foram contabilizadas \(17\,334\) avaliações
 de likelihood e \(1,76\) segundo de CPU nessa integração.
 
-\textbf{Esses doze resultados permanecem preliminares.} Falta confrontá-los
-com uma referência adaptativa independente; quantis, W1 e eventos de logL
+\textbf{Esses doze resultados permanecem preliminares.} Falta concluir seu
+confronto com uma referência adaptativa independente; quantis, W1 e eventos de logL
 da mistura ainda não estão validados. Não se extraem limites de massa de
 somas cumulativas discretas dos pesos de quadratura. O total acumulado de
 C09 passa a \(5\,783\,577\) avaliações de likelihood. Fontes, respostas nas
 três resoluções, caches e recibos estão arquivados em
 \texttt{results/C09/D3\_distancias\_iniciais/}.
+
+\subsubsection{Referência independente de distância: resultado parcial}
+
+A referência foi executada diretamente em \(u\), com Gauss--Kronrod de
+21 pontos e respostas físicas próprias, sem interpolar as ORFs nas escalas
+alteradas. A primeira onda usa os dez painéis originais; duas continuações
+subdividem, cada uma, os quatro painéis de maior erro estimado da malha
+anterior. Os refinamentos preservam os dados, as famílias e os pesos da
+mistura. Foram calculados \(1092\) novos pares de massa e escala, deixando
+\(60\) dos \(1152\) nós reservados. Cada resposta recebeu os mesmos
+refinamentos angular e harmônico separados, todos aprovados nos nós testados.
+
+As doze comparações com GL64 satisfazem as tolerâncias funcionais. Na última
+onda, os maiores desvios são \(1,30\times10^{-4}\) em log-normalização,
+\(4,21\times10^{-5}\) na média, \(5,34\times10^{-5}\) no segundo momento,
+\(4,28\times10^{-5}\) em KL e \(9,93\times10^{-5}\) na CDF das fronteiras
+originais. Entretanto, o diagnóstico interno de parada não foi satisfeito
+por todas as curvas. Exigiu-se também concordância entre ondas e soma dos
+estimadores embutidos GK, dividida pela normalização própria, até \(0,001\).
+Essa é uma regra operacional; não constitui uma cota rigorosa de erro físico.
+
+O maior estimador normalizado caiu de \(0,0879\) para \(0,0419\) e
+\(0,0200\). Na última onda, somente cinco referências passaram no conjunto
+dos critérios: as quatro misturas \(B_{\rm CN}\) e \(B_G\), nos dados
+13 e 14, e \(B_{\rm CN}\) nominal no dado 14. As outras sete permanecem
+pendentes. Sete curvas haviam passado na onda intermediária; a redução
+para cinco mostra que o estimador não é monotônico. Não se seleciona a
+onda mais favorável para declarar aprovação. A concordância com GL64 não
+elimina esse diagnóstico pendente.
+
+O lote acrescentou \(11,81\) trilhões de produtos reais estimados e
+\(172,61\) segundos de CPU das respostas. As densidades e a recuperação
+de controles somaram \(4,84\) segundos de CPU e \(10\,152\) avaliações,
+levando C09 a \(5\,793\,729\). Os primeiros controles SciPy passaram em
+execução, mas seus valores não foram serializados. A auditoria detectou
+a ausência; foram refeitos apenas \(162\) controles, contabilizados como
+trabalho adicional, com máximo desvio \(4,27\times10^{-14}\). Nenhuma ORF
+foi repetida nessa recuperação. Dois testes analíticos verificam a reprodução
+dos nós, colunas distintas, normalizações próprias e CDFs em cortes fixos.
+
+Fontes, três ondas, caches, recibos e recuperação estão preservados em
+\path{results/C09/D3_distancias_referencia/}. O saldo de \(60\) nós
+não comporta outra subdivisão GK21 pareada, que exige \(84\) pares de massa
+e escala. Uma continuação requer novo planejamento de recursos, mantendo
+as tolerâncias. Quantis, W1 e eventos das distâncias não foram validados
+por este lote, inclusive nas cinco referências aprovadas neste alcance.
 
 O desenho de calibração prevê grupos de \(500\) novas realizações,
 com verdades sorteadas da priori e observações geradas da família
@@ -692,7 +740,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.11}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.12}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.

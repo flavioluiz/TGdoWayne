@@ -16,7 +16,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 **Próxima etapa:** C09 — Robustez a prioris, ruído e covariâncias.  
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.8.11](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.11/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.11) · [PDF versionado no repositório](output/pdf/v0.8.11/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.8.12](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.8.12/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.8.12) · [PDF versionado no repositório](output/pdf/v0.8.12/dissertacao.pdf)
 
 ### O que já foi executado
 
@@ -62,10 +62,11 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 - Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.
 - Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.
 - Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente.
+- Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados.
 
 ### O que está em andamento e o que falta
 
-C09 em andamento: 40 análises D2 e 165 do piloto D3 com controles primários e W1. Doze integrações iniciais de distância em draft; faltam referência independente, quantis, W1 e eventos da mistura, eventos físicos pendentes e campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_distancias_v0.8.11/README.md. Nenhuma simulação deste lote permanece em execução.
+C09 em andamento: 40 análises D2 e 165 D3 com controles primários e W1. Distâncias têm referência adaptativa parcial: cinco de doze referências aprovadas no alcance de normalização/momentos/KL/CDF nas fronteiras; sete pendentes. Faltam quantis/W1/eventos das distâncias, eventos físicos e produção D3/SBC. Refazer orçamento antes de outra onda. C10–C11 em draft; C12–C13 planejados. Consulte docs/d3_referencia_v0.8.12/README.md. Nenhuma simulação deste lote permanece em execução.
 
 ## Roadmap
 
