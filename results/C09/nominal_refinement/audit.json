@@ -1,0 +1,22 @@
+{
+  "schema": "C09_NOMINAL_PRODUCTION_INVENTORY_AUDIT_v1",
+  "inventory_and_accounting_passed": true,
+  "posteriors": 1,
+  "mesh_passed": 1,
+  "finite_backend_passed": 1,
+  "failed_gates": [],
+  "new_likelihood_values": 16710,
+  "cumulative_likelihood_values": 51600104,
+  "inputs_sha256": {
+    "tmp/c09_nominal_refinement_v1/plan.json": "93307aefd0be98527cd896a405e60d30c088ee626ef18e224f173e4d03e398a0",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/receipt.json": "8719566a4aa34fdc4a478cbce1344ac735c05b67acb0e526efeee1470f1f062f",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/activation.json": "940566c918e9404ee079da8a1b1493efc376cdd4b1d568fd5b09576d2d54df6e",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/worker_source.py": "8bdca03940529e23f21ae507c6639205ee36b2fd4906a283aa7bfa1bbdcaf371",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/posteriors.json": "77e5afad0c6b825afe533ab79e4ad046e253abf8fece74c692a9b382099ab629",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/likelihoods.npz": "51e9564fca7c889b07cab64f83f42a1cfd696a480d41386a5ab45131c9f89e1e",
+    "tmp/c09_nominal_refinement_v1/execution/refined_omission_49/backend_checks/s5_p0_c1_d49__A0_CN__omitted.json": "0102c171c15dbf500d0358cf74341580691f14291459415d9208349dfed341d7"
+  },
+  "calibration_complete": false,
+  "C09_complete": false,
+  "scope": "Inventory, recorded arithmetic gates and counts; no independent posterior integration or SBC assertion"
+}

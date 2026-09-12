@@ -1,0 +1,26 @@
+{
+  "status": "DIRECT_THRESHOLD_INTERPOLATED_DOMAIN",
+  "count": 3000,
+  "finite_operational_gates_passed": 2160,
+  "threshold_gate_failures": 4,
+  "maximum_threshold_delta": 0.0028477219155433886,
+  "maximum_event_shift": 0.02198654840554537,
+  "CPU": 4.746391,
+  "RSS_bytes": 682311680,
+  "new_likelihood_values": 0,
+  "records_sha256": "329abaf0e5f904b32debc92cbd45e3db309de3057975733de0f1c91abae3b625",
+  "inputs": {
+    "results/C09/physical_truth_thresholds_distance/receipt.json": "8e8e3fe71ddd821071e89aa82c7dbbd8c3be39c4b59a12ebb4d371aa25cdcf23",
+    "results/C09/physical_truth_thresholds_distance/records.json": "a5a68c77086751176eebaf41c77ddecf74962283116e3988d025532ee7f3c7e6",
+    "results/C09/production_mass_PIT/records.json": "60d109cd30bf7dc4c409bad91e80b330b3623afc48294bdeea8a5651b10a6485",
+    "results/C09/production_event_diagnostics/records.json": "e6a738c97466b485eebec27c94ada66a04fae150a2d9a0801580f95923b73228",
+    "scripts/eventos_distancias_limiar_fisico_c09.py": "b04253e8eb44f8512e5bbb30ef1c9f3302bd39722732b7990926e0017d718507",
+    "src/inference/mass_batch.py": "c32f3be0b22d964cccc43d070d7d8ac66fb44c8e32315c1753286cb6d56465a8",
+    "src/inference/likelihood_events.py": "e1abab4abbcbbcf3b0a0fad8a26047b26c7951946f73c2bb10f57100f4f0762a",
+    "tmp/c09_distance_production_v1/prepared/response_atlas.npz": "e7fab2288f651e364f103fcd9c7e76f96703f352230cdf429e2d6dc4a83adb7d",
+    "tmp/c09_distance_production_v1/execution/component_0.npz": "b6c1018c0ddc084777b3e4e4bec622f6330959db7999fdec6c913810adb43ee4",
+    "tmp/c09_distance_production_v1/execution/component_1.npz": "11924b0bbf1a46d58da99ad86c2bfe1be97db777ca715742b939782d7f772761",
+    "tmp/c09_distance_production_v1/execution/component_2.npz": "0d1c7b17a0e41220f2638d29bd1dd06b10711dbb15d3f4ae7b7f97ed919aa785"
+  },
+  "scope": "Finite operational diagnostics only; parent failures retained, no uniform physical bound"
+}

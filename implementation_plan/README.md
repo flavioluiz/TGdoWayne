@@ -19,6 +19,12 @@ validada; ao fechar o marco, o README explica o que foi concluído e o próximo 
 publicar um estado parcial, criar um marco explícito de acompanhamento com novo commit e PDF, sem
 marcar o capítulo como concluído.
 
+Orientação do usuário em 12/09/2026: evitar novos releases intermediários.
+As próximas publicações previstas são os marcos originais v0.9.0, v0.10.0
+e seguintes. Manter checkpoints locais durante a execução; um release parcial
+somente se houver necessidade concreta, registrada com sua justificativa.
+Os releases históricos até v0.8.12 permanecem preservados.
+
 Entregas intermediárias: [C08.5 — estado parcial e pausa](commits/C08_5_estado_parcial_e_pausa.md)
 e [C08.6 — retomada e diagnóstico D2](commits/C08_6_retomada_d2.md), seguidas de
 [C08.7 — referências funcionais D2](commits/C08_7_referencias_d2.md).

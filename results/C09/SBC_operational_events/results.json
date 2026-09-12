@@ -1,0 +1,4534 @@
+{
+  "schema": "C09_MATCHED_INTERVAL_SBC_v1",
+  "scope": "conditional_known_nuisance_prior_predictive",
+  "family_size": 126,
+  "groups": 18,
+  "independent_IDs_per_group": 500,
+  "tests": [
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.043655310474647435,
+        "statistic_upper_bound": 0.04365738935322605,
+        "pvalue_lower": 0.2879735409089048,
+        "pvalue_upper": 0.2880257622609772,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 494,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.021099334829220162,
+        "statistic_upper_bound": 0.033171029028002064,
+        "pvalue_lower": 0.6287924961680675,
+        "pvalue_upper": 0.9758267783941792,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 19,
+        "possibly_covered": 19,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.038,
+          0.038
+        ],
+        "pvalue_lower": 0.25808682180444514,
+        "pvalue_upper": 0.25808682180444514,
+        "binomial_interval_union": [
+          0.023030770806247606,
+          0.05870729046322855
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.014645660063279158,
+          0.07791914723261709
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 238,
+        "possibly_covered": 238,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.476,
+          0.476
+        ],
+        "pvalue_lower": 0.3036673129940777,
+        "pvalue_upper": 0.3036673129940777,
+        "binomial_interval_union": [
+          0.4314785029700201,
+          0.5208068360624456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.39685651631610497,
+          0.5559863999334858
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 456,
+        "possibly_covered": 456,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.912,
+          0.912
+        ],
+        "pvalue_lower": 0.41219133649369605,
+        "pvalue_upper": 0.41219133649369605,
+        "binomial_interval_union": [
+          0.8836648293368344,
+          0.9353315424589416
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8588235245854063,
+          0.9505496529434899
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 476,
+        "possibly_covered": 476,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.952,
+          0.952
+        ],
+        "pvalue_lower": 0.9184118889878681,
+        "pvalue_upper": 0.9184118889878681,
+        "binomial_interval_union": [
+          0.9294192037426702,
+          0.9690068312064947
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.908815315312997,
+          0.9790263547250724
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 457,
+        "possibly_covered": 457,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.914,
+          0.914
+        ],
+        "pvalue_lower": 0.33231423210016087,
+        "pvalue_upper": 0.33231423210016087,
+        "binomial_interval_union": [
+          0.8859063306539441,
+          0.9370632334338127
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8612412176690694,
+          0.9520574532393346
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.05468397687356821,
+        "statistic_upper_bound": 0.05470822251340182,
+        "pvalue_lower": 0.0966062375265272,
+        "pvalue_upper": 0.09686451584221878,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 497,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.04458117918685833,
+        "statistic_upper_bound": 0.050611248866363145,
+        "pvalue_lower": 0.14914441321683236,
+        "pvalue_upper": 0.26543218639816735,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 20,
+        "possibly_covered": 20,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.04,
+          0.04
+        ],
+        "pvalue_lower": 0.3553214591024082,
+        "pvalue_upper": 0.3553214591024082,
+        "binomial_interval_union": [
+          0.0246013120855454,
+          0.06110260938824469
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.015873724365298835,
+          0.08060848118980563
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 238,
+        "possibly_covered": 238,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.476,
+          0.476
+        ],
+        "pvalue_lower": 0.3036673129940777,
+        "pvalue_upper": 0.3036673129940777,
+        "binomial_interval_union": [
+          0.4314785029700201,
+          0.5208068360624456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.39685651631610497,
+          0.5559863999334858
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 451,
+        "possibly_covered": 451,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.902,
+          0.902
+        ],
+        "pvalue_lower": 0.9406293297295497,
+        "pvalue_upper": 0.9406293297295497,
+        "binomial_interval_union": [
+          0.8725114573141097,
+          0.9266174143922598
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.846831260075934,
+          0.9429124545303907
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 478,
+        "possibly_covered": 478,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.956,
+          0.956
+        ],
+        "pvalue_lower": 0.6082266872159319,
+        "pvalue_upper": 0.6082266872159319,
+        "binomial_interval_union": [
+          0.9341389996764051,
+          0.9722232327144282
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.914069479099174,
+          0.9816114457704389
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 458,
+        "possibly_covered": 458,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.916,
+          0.916
+        ],
+        "pvalue_lower": 0.26313834687317617,
+        "pvalue_upper": 0.26313834687317617,
+        "binomial_interval_union": [
+          0.8881516987545879,
+          0.9387909413916523
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8636657784330422,
+          0.9535582368820308
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03311091683530132,
+        "statistic_upper_bound": 0.03311102140295852,
+        "pvalue_lower": 0.6310532572329233,
+        "pvalue_upper": 0.6310571974056167,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 499,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.028160963178766166,
+        "statistic_upper_bound": 0.030170095620569784,
+        "pvalue_lower": 0.7411106911426377,
+        "pvalue_upper": 0.8119042455369434,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 20,
+        "possibly_covered": 20,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.04,
+          0.04
+        ],
+        "pvalue_lower": 0.3553214591024082,
+        "pvalue_upper": 0.3553214591024082,
+        "binomial_interval_union": [
+          0.0246013120855454,
+          0.06110260938824469
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.015873724365298835,
+          0.08060848118980563
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 240,
+        "possibly_covered": 240,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.48,
+          0.48
+        ],
+        "pvalue_lower": 0.3955107714348581,
+        "pvalue_upper": 0.3955107714348581,
+        "binomial_interval_union": [
+          0.43543935889970187,
+          0.5247984212320485
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4007587312699458,
+          0.5599436951538315
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 452,
+        "possibly_covered": 452,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.904,
+          0.904
+        ],
+        "pvalue_lower": 0.823183762262675,
+        "pvalue_upper": 0.823183762262675,
+        "binomial_interval_union": [
+          0.874735253436669,
+          0.9283673060246591
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8492174850285321,
+          0.944452367795154
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 481,
+        "possibly_covered": 481,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.962,
+          0.962
+        ],
+        "pvalue_lower": 0.25808682180444764,
+        "pvalue_upper": 0.25808682180444764,
+        "binomial_interval_union": [
+          0.9412927095367715,
+          0.9769692291937524
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9220808527673829,
+          0.9853543399367208
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 461,
+        "possibly_covered": 461,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.922,
+          0.922
+        ],
+        "pvalue_lower": 0.11684097647683475,
+        "pvalue_upper": 0.11684097647683475,
+        "binomial_interval_union": [
+          0.8949122735699343,
+          0.9439488262244397
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8709829021407112,
+          0.9580161713414108
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.04166328847699585,
+        "statistic_upper_bound": 0.041663430511963084,
+        "pvalue_lower": 0.3411641194137969,
+        "pvalue_upper": 0.34116812932332485,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03831154820921545,
+        "statistic_upper_bound": 0.0384567286948051,
+        "pvalue_lower": 0.43946063218498654,
+        "pvalue_upper": 0.44426172147861964,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 25,
+        "possibly_covered": 25,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.05,
+          0.05
+        ],
+        "pvalue_lower": 1.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.03261518014933006,
+          0.07292762165047895
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.022289987401254045,
+          0.09378874537243802
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 250,
+        "possibly_covered": 250,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.5,
+          0.5
+        ],
+        "pvalue_lower": 1.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.4552855693242275,
+          0.5447144306757725
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4203449626981842,
+          0.5796550373018159
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 461,
+        "possibly_covered": 461,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.922,
+          0.922
+        ],
+        "pvalue_lower": 0.11684097647683503,
+        "pvalue_upper": 0.11684097647683503,
+        "binomial_interval_union": [
+          0.8949122735699343,
+          0.9439488262244397
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8709829021407112,
+          0.9580161713414108
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 482,
+        "possibly_covered": 482,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.964,
+          0.964
+        ],
+        "pvalue_lower": 0.18090714159399382,
+        "pvalue_upper": 0.18090714159399382,
+        "binomial_interval_union": [
+          0.9436998237982089,
+          0.9785271434139067
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9247908727986811,
+          0.9865609364842323
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 457,
+        "possibly_covered": 457,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.914,
+          0.914
+        ],
+        "pvalue_lower": 0.33231423210016087,
+        "pvalue_upper": 0.33231423210016087,
+        "binomial_interval_union": [
+          0.8859063306539441,
+          0.9370632334338127
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8612412176690694,
+          0.9520574532393346
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03323763119397727,
+        "statistic_upper_bound": 0.03323765398891432,
+        "pvalue_lower": 0.6262833385092252,
+        "pvalue_upper": 0.6262841968133024,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.021541201753699224,
+        "statistic_upper_bound": 0.02169965297538845,
+        "pvalue_lower": 0.96859510759968,
+        "pvalue_upper": 0.9706256206944117,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 32,
+        "possibly_covered": 32,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.064,
+          0.064
+        ],
+        "pvalue_lower": 0.1503660433797934,
+        "pvalue_upper": 0.1503660433797934,
+        "binomial_interval_union": [
+          0.044184210946713244,
+          0.08915062755086343
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.03187699219121735,
+          0.11165580839351236
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 251,
+        "possibly_covered": 251,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.502,
+          0.502
+        ],
+        "pvalue_lower": 0.9643353544466507,
+        "pvalue_upper": 0.9643353544466507,
+        "binomial_interval_union": [
+          0.4572740294438494,
+          0.546702193081004
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4223104671094287,
+          0.581619291098268
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 461,
+        "possibly_covered": 461,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.922,
+          0.922
+        ],
+        "pvalue_lower": 0.11684097647683503,
+        "pvalue_upper": 0.11684097647683503,
+        "binomial_interval_union": [
+          0.8949122735699343,
+          0.9439488262244397
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8709829021407112,
+          0.9580161713414108
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 485,
+        "possibly_covered": 485,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.97,
+          0.97
+        ],
+        "pvalue_lower": 0.039501264484038054,
+        "pvalue_upper": 0.039501264484038054,
+        "binomial_interval_union": [
+          0.951001774291181,
+          0.9831140157961268
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9330620135411896,
+          0.9900341087673924
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 453,
+        "possibly_covered": 453,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.906,
+          0.906
+        ],
+        "pvalue_lower": 0.7095429385610901,
+        "pvalue_upper": 0.7095429385610901,
+        "binomial_interval_union": [
+          0.8769623921104394,
+          0.9301137660812189
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8516096536008013,
+          0.9459862203693057
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.028510423839708865,
+        "statistic_upper_bound": 0.028511001967722438,
+        "pvalue_lower": 0.8000352981524828,
+        "pvalue_upper": 0.800055090366291,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.02585961311227261,
+        "statistic_upper_bound": 0.025868642550481658,
+        "pvalue_lower": 0.882659912282435,
+        "pvalue_upper": 0.8829104322717105,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 26,
+        "possibly_covered": 26,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.052,
+          0.052
+        ],
+        "pvalue_lower": 0.8369951815702925,
+        "pvalue_upper": 0.8369951815702925,
+        "binomial_interval_union": [
+          0.034245698082767936,
+          0.07526637103062216
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.02362102878366159,
+          0.0963785703011063
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 248,
+        "possibly_covered": 248,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.496,
+          0.496
+        ],
+        "pvalue_lower": 0.8932902437826091,
+        "pvalue_upper": 0.8932902437826091,
+        "binomial_interval_union": [
+          0.4513107422611456,
+          0.5407368127217207
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.41641770577562837,
+          0.5757227778604463
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 460,
+        "possibly_covered": 460,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.92,
+          0.92
+        ],
+        "pvalue_lower": 0.15607645188607588,
+        "pvalue_upper": 0.15607645188607588,
+        "binomial_interval_union": [
+          0.8926545356436476,
+          0.9422338800711657
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8685363838775699,
+          0.9565378414592675
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 485,
+        "possibly_covered": 485,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.97,
+          0.97
+        ],
+        "pvalue_lower": 0.039501264484038054,
+        "pvalue_upper": 0.039501264484038054,
+        "binomial_interval_union": [
+          0.951001774291181,
+          0.9831140157961268
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9330620135411896,
+          0.9900341087673924
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 459,
+        "possibly_covered": 459,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.918,
+          0.918
+        ],
+        "pvalue_lower": 0.20456397700682488,
+        "pvalue_upper": 0.20456397700682488,
+        "binomial_interval_union": [
+          0.8904010568890371,
+          0.9405145362644117
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8660974238909227,
+          0.9550517790371982
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.02925919111935006,
+        "statistic_upper_bound": 0.029264947036678132,
+        "pvalue_lower": 0.7737427473336334,
+        "pvalue_upper": 0.77394685286496,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 362,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.016661741985221634,
+        "statistic_upper_bound": 0.292715386498018,
+        "pvalue_lower": 1.8926482951315038e-38,
+        "pvalue_upper": 0.9987329564579889,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        2.2143985053038595e-36,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 31,
+        "possibly_covered": 31,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.062,
+          0.062
+        ],
+        "pvalue_lower": 0.21730895659878363,
+        "pvalue_upper": 0.21730895659878363,
+        "binomial_interval_union": [
+          0.04251106129638552,
+          0.08685259747910139
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.030471873566466155,
+          0.10913790303299596
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 240,
+        "possibly_covered": 240,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.48,
+          0.48
+        ],
+        "pvalue_lower": 0.3955107714348581,
+        "pvalue_upper": 0.3955107714348581,
+        "binomial_interval_union": [
+          0.43543935889970187,
+          0.5247984212320485
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4007587312699458,
+          0.5599436951538315
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 449,
+        "possibly_covered": 449,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.898,
+          0.898
+        ],
+        "pvalue_lower": 0.8813903017435116,
+        "pvalue_upper": 0.8813903017435116,
+        "binomial_interval_union": [
+          0.8680735394352804,
+          0.9231077067733116
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8420760175734936,
+          0.939815089888629
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 469,
+        "possibly_covered": 469,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.938,
+          0.938
+        ],
+        "pvalue_lower": 0.21730895659878552,
+        "pvalue_upper": 0.21730895659878552,
+        "binomial_interval_union": [
+          0.9131474025208987,
+          0.9574889387036145
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.890862096967004,
+          0.9695281264335338
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 438,
+        "possibly_covered": 438,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.876,
+          0.876
+        ],
+        "pvalue_lower": 0.08580786116131178,
+        "pvalue_upper": 0.08580786116131178,
+        "binomial_interval_union": [
+          0.8438707543486275,
+          0.9035937168491701
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8162884671787005,
+          0.9224067938239069
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03724055908622234,
+        "statistic_upper_bound": 0.03724497648315167,
+        "pvalue_lower": 0.4803752589300895,
+        "pvalue_upper": 0.4805277871891255,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 358,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.011888912513609129,
+        "statistic_upper_bound": 0.29588905342131533,
+        "pvalue_lower": 2.70153827232751e-39,
+        "pvalue_upper": 0.9999994189727466,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        3.1878151613464618e-37,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 32,
+        "possibly_covered": 32,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.064,
+          0.064
+        ],
+        "pvalue_lower": 0.1503660433797934,
+        "pvalue_upper": 0.1503660433797934,
+        "binomial_interval_union": [
+          0.044184210946713244,
+          0.08915062755086343
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.03187699219121735,
+          0.11165580839351236
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 255,
+        "possibly_covered": 255,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.51,
+          0.51
+        ],
+        "pvalue_lower": 0.6873633080803816,
+        "pvalue_upper": 0.6873633080803816,
+        "binomial_interval_union": [
+          0.4652348475757158,
+          0.5546462643969764
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4301849918788146,
+          0.5894637981301484
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 442,
+        "possibly_covered": 442,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.884,
+          0.884
+        ],
+        "pvalue_lower": 0.2327517729886996,
+        "pvalue_upper": 0.2327517729886996,
+        "binomial_interval_union": [
+          0.8526342618752077,
+          0.9107280447461416
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8255989599842584,
+          0.9288050063985163
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 468,
+        "possibly_covered": 468,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.936,
+          0.936
+        ],
+        "pvalue_lower": 0.1503660433797946,
+        "pvalue_upper": 0.1503660433797946,
+        "binomial_interval_union": [
+          0.9108493724491366,
+          0.9558157890532868
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8883441916064877,
+          0.9681230078087827
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 436,
+        "possibly_covered": 436,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.872,
+          0.872
+        ],
+        "pvalue_lower": 0.04368569910884816,
+        "pvalue_upper": 0.04368569910884816,
+        "binomial_interval_union": [
+          0.8395036090483408,
+          0.9000116496324111
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8116592560590723,
+          0.9191812451211592
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.029386535833959337,
+        "statistic_upper_bound": 0.029387638556743312,
+        "pvalue_lower": 0.7693808622940852,
+        "pvalue_upper": 0.7694201600427807,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 357,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.017867277300984474,
+        "statistic_upper_bound": 0.3038673251644033,
+        "pvalue_lower": 1.8298753388340711e-41,
+        "pvalue_upper": 0.9964532380077858,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        2.1775516532125446e-39,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 31,
+        "possibly_covered": 31,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.062,
+          0.062
+        ],
+        "pvalue_lower": 0.21730895659878363,
+        "pvalue_upper": 0.21730895659878363,
+        "binomial_interval_union": [
+          0.04251106129638552,
+          0.08685259747910139
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.030471873566466155,
+          0.10913790303299596
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 249,
+        "possibly_covered": 249,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.498,
+          0.498
+        ],
+        "pvalue_lower": 0.9643353544466507,
+        "pvalue_upper": 0.9643353544466507,
+        "binomial_interval_union": [
+          0.45329780691899596,
+          0.5427259705561507
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.41838070890173196,
+          0.5776895328905713
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 443,
+        "possibly_covered": 443,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.886,
+          0.886
+        ],
+        "pvalue_lower": 0.29635286042292464,
+        "pvalue_upper": 0.29635286042292464,
+        "binomial_interval_union": [
+          0.8548315334010387,
+          0.9125050971200304
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8279379760219241,
+          0.9303929816407788
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 473,
+        "possibly_covered": 473,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.946,
+          0.946
+        ],
+        "pvalue_lower": 0.6807127507557252,
+        "pvalue_upper": 0.6807127507557252,
+        "binomial_interval_union": [
+          0.9224025315050628,
+          0.9641157402780663
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9010451017718326,
+          0.975034004224188
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "stratum": "core",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 442,
+        "possibly_covered": 442,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.884,
+          0.884
+        ],
+        "pvalue_lower": 0.2327517729887006,
+        "pvalue_upper": 0.2327517729887006,
+        "binomial_interval_union": [
+          0.8526342618752077,
+          0.9107280447461416
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8255989599842584,
+          0.9288050063985163
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.031230258632925334,
+        "statistic_upper_bound": 0.031230881775753006,
+        "pvalue_lower": 0.7018373386667537,
+        "pvalue_upper": 0.7018606366390475,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.032282241958547675,
+        "statistic_upper_bound": 0.032282944882303544,
+        "pvalue_lower": 0.6622889500405063,
+        "pvalue_upper": 0.662315464000714,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 21,
+        "possibly_covered": 21,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.042,
+          0.042
+        ],
+        "pvalue_lower": 0.4726231618771342,
+        "pvalue_upper": 0.4726231618771342,
+        "binomial_interval_union": [
+          0.02618357677614713,
+          0.06348694053291891
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.017121789961829968,
+          0.08327852552012695
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 238,
+        "possibly_covered": 238,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.476,
+          0.476
+        ],
+        "pvalue_lower": 0.3036673129940777,
+        "pvalue_upper": 0.3036673129940777,
+        "binomial_interval_union": [
+          0.4314785029700201,
+          0.5208068360624456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.39685651631610497,
+          0.5559863999334858
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 451,
+        "possibly_covered": 451,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.902,
+          0.902
+        ],
+        "pvalue_lower": 0.9406293297295497,
+        "pvalue_upper": 0.9406293297295497,
+        "binomial_interval_union": [
+          0.8725114573141097,
+          0.9266174143922598
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.846831260075934,
+          0.9429124545303907
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 481,
+        "possibly_covered": 481,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.962,
+          0.962
+        ],
+        "pvalue_lower": 0.25808682180444764,
+        "pvalue_upper": 0.25808682180444764,
+        "binomial_interval_union": [
+          0.9412927095367715,
+          0.9769692291937524
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9220808527673829,
+          0.9853543399367208
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 460,
+        "possibly_covered": 460,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.92,
+          0.92
+        ],
+        "pvalue_lower": 0.15607645188607563,
+        "pvalue_upper": 0.15607645188607563,
+        "binomial_interval_union": [
+          0.8926545356436476,
+          0.9422338800711657
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8685363838775699,
+          0.9565378414592675
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.031292741442437585,
+        "statistic_upper_bound": 0.031293567264449415,
+        "pvalue_lower": 0.6994926229299594,
+        "pvalue_upper": 0.6995235255003244,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.035385796788185764,
+        "statistic_upper_bound": 0.035396295656701326,
+        "pvalue_lower": 0.5460741115204227,
+        "pvalue_upper": 0.5464567547288619,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 21,
+        "possibly_covered": 21,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.042,
+          0.042
+        ],
+        "pvalue_lower": 0.4726231618771342,
+        "pvalue_upper": 0.4726231618771342,
+        "binomial_interval_union": [
+          0.02618357677614713,
+          0.06348694053291891
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.017121789961829968,
+          0.08327852552012695
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 246,
+        "possibly_covered": 246,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.492,
+          0.492
+        ],
+        "pvalue_lower": 0.7542789113554096,
+        "pvalue_upper": 0.7542789113554096,
+        "binomial_interval_union": [
+          0.44733870648660085,
+          0.5367564037397377
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.41249545205493793,
+          0.571785515628983
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 457,
+        "possibly_covered": 457,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.914,
+          0.914
+        ],
+        "pvalue_lower": 0.3323142321001606,
+        "pvalue_upper": 0.3323142321001606,
+        "binomial_interval_union": [
+          0.8859063306539441,
+          0.9370632334338127
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8612412176690694,
+          0.9520574532393346
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 475,
+        "possibly_covered": 475,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.95,
+          0.95
+        ],
+        "pvalue_lower": 1.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.927072378349521,
+          0.9673848198506699
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.906211254627562,
+          0.977710012598746
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_full_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 454,
+        "possibly_covered": 454,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.908,
+          0.908
+        ],
+        "pvalue_lower": 0.6019765578038838,
+        "pvalue_upper": 0.6019765578038838,
+        "binomial_interval_union": [
+          0.8791929673892575,
+          0.9318566958433456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8540079317049919,
+          0.947513840787425
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.032727041190763084,
+        "statistic_upper_bound": 0.032728449434018425,
+        "pvalue_lower": 0.6454797765338947,
+        "pvalue_upper": 0.6455329088006831,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.039867409631309525,
+        "statistic_upper_bound": 0.0398678517829234,
+        "pvalue_lower": 0.3943298250879399,
+        "pvalue_upper": 0.3943435161689077,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 18,
+        "possibly_covered": 18,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.036,
+          0.036
+        ],
+        "pvalue_lower": 0.18090714159399215,
+        "pvalue_upper": 0.18090714159399215,
+        "binomial_interval_union": [
+          0.021472856586093284,
+          0.05630017620179107
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.013439063515767761,
+          0.07520912720131885
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 240,
+        "possibly_covered": 240,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.48,
+          0.48
+        ],
+        "pvalue_lower": 0.3955107714348581,
+        "pvalue_upper": 0.3955107714348581,
+        "binomial_interval_union": [
+          0.43543935889970187,
+          0.5247984212320485
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4007587312699458,
+          0.5599436951538315
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 457,
+        "possibly_covered": 457,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.914,
+          0.914
+        ],
+        "pvalue_lower": 0.3323142321001606,
+        "pvalue_upper": 0.3323142321001606,
+        "binomial_interval_union": [
+          0.8859063306539441,
+          0.9370632334338127
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8612412176690694,
+          0.9520574532393346
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 480,
+        "possibly_covered": 480,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.96,
+          0.96
+        ],
+        "pvalue_lower": 0.35532145910241153,
+        "pvalue_upper": 0.35532145910241153,
+        "binomial_interval_union": [
+          0.9388973906117553,
+          0.9753986879144546
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9193915188101944,
+          0.9841262756347011
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "stratum": "covariance_self",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 462,
+        "possibly_covered": 462,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.924,
+          0.924
+        ],
+        "pvalue_lower": 0.07372570761288293,
+        "pvalue_upper": 0.07372570761288293,
+        "binomial_interval_union": [
+          0.8971744178850064,
+          0.9456592187560884
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8734372375555336,
+          0.9594865000353007
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.02577125935696256,
+        "statistic_upper_bound": 0.025772179230155512,
+        "pvalue_lower": 0.8853233780616783,
+        "pvalue_upper": 0.8853486394193979,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 497,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.027010805213564693,
+        "statistic_upper_bound": 0.03337885153381995,
+        "pvalue_lower": 0.6209693092252434,
+        "pvalue_upper": 0.8490739479519038,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 20,
+        "possibly_covered": 20,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.04,
+          0.04
+        ],
+        "pvalue_lower": 0.3553214591024082,
+        "pvalue_upper": 0.3553214591024082,
+        "binomial_interval_union": [
+          0.0246013120855454,
+          0.06110260938824469
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.015873724365298835,
+          0.08060848118980563
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 239,
+        "possibly_covered": 239,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.478,
+          0.478
+        ],
+        "pvalue_lower": 0.3476641793130149,
+        "pvalue_upper": 0.3476641793130149,
+        "binomial_interval_union": [
+          0.4334585809747478,
+          0.5228029784273687
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.3988069965350433,
+          0.557965674517308
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 458,
+        "possibly_covered": 458,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.916,
+          0.916
+        ],
+        "pvalue_lower": 0.26313834687317583,
+        "pvalue_upper": 0.26313834687317583,
+        "binomial_interval_union": [
+          0.8881516987545879,
+          0.9387909413916523
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8636657784330422,
+          0.9535582368820308
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 484,
+        "possibly_covered": 484,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.968,
+          0.968
+        ],
+        "pvalue_lower": 0.06455050004401297,
+        "pvalue_upper": 0.06455050004401297,
+        "binomial_interval_union": [
+          0.9485532317083544,
+          0.9816008146763601
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9302795171461522,
+          0.9889028526660595
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 464,
+        "possibly_covered": 464,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.928,
+          0.928
+        ],
+        "pvalue_lower": 0.03660470299721481,
+        "pvalue_upper": 0.03660470299721481,
+        "binomial_interval_union": [
+          0.901712562663143,
+          0.949065666874867
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8783704792689454,
+          0.9624019913140204
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03767908088990435,
+        "statistic_upper_bound": 0.03767918875202314,
+        "pvalue_lower": 0.4654986451884633,
+        "pvalue_upper": 0.46550231158562894,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.053729430837822334,
+        "statistic_upper_bound": 0.05373962570626392,
+        "pvalue_lower": 0.10738088601771478,
+        "pvalue_upper": 0.10749937754646788,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 21,
+        "possibly_covered": 21,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.042,
+          0.042
+        ],
+        "pvalue_lower": 0.4726231618771342,
+        "pvalue_upper": 0.4726231618771342,
+        "binomial_interval_union": [
+          0.02618357677614713,
+          0.06348694053291891
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.017121789961829968,
+          0.08327852552012695
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 240,
+        "possibly_covered": 240,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.48,
+          0.48
+        ],
+        "pvalue_lower": 0.3955107714348581,
+        "pvalue_upper": 0.3955107714348581,
+        "binomial_interval_union": [
+          0.43543935889970187,
+          0.5247984212320485
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.4007587312699458,
+          0.5599436951538315
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 455,
+        "possibly_covered": 455,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.91,
+          0.91
+        ],
+        "pvalue_lower": 0.5023825613389068,
+        "pvalue_upper": 0.5023825613389068,
+        "binomial_interval_union": [
+          0.881427078322658,
+          0.9335959912454309
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8564124940061845,
+          0.9490350484533979
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 480,
+        "possibly_covered": 480,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.96,
+          0.96
+        ],
+        "pvalue_lower": 0.35532145910241153,
+        "pvalue_upper": 0.35532145910241153,
+        "binomial_interval_union": [
+          0.9388973906117553,
+          0.9753986879144546
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9193915188101944,
+          0.9841262756347011
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 459,
+        "possibly_covered": 459,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.918,
+          0.918
+        ],
+        "pvalue_lower": 0.20456397700682488,
+        "pvalue_upper": 0.20456397700682488,
+        "binomial_interval_union": [
+          0.8904010568890371,
+          0.9405145362644117
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8660974238909227,
+          0.9550517790371982
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.04020456130112493,
+        "statistic_upper_bound": 0.0402053384277109,
+        "pvalue_lower": 0.3839643281787457,
+        "pvalue_upper": 0.38398800154711443,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 498,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.04290723633329696,
+        "statistic_upper_bound": 0.04696914014252895,
+        "pvalue_lower": 0.21318745912123527,
+        "pvalue_upper": 0.3072553655799364,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 20,
+        "possibly_covered": 20,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.04,
+          0.04
+        ],
+        "pvalue_lower": 0.3553214591024082,
+        "pvalue_upper": 0.3553214591024082,
+        "binomial_interval_union": [
+          0.0246013120855454,
+          0.06110260938824469
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.015873724365298835,
+          0.08060848118980563
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 235,
+        "possibly_covered": 235,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.47,
+          0.47
+        ],
+        "pvalue_lower": 0.1946083086078805,
+        "pvalue_upper": 0.1946083086078805,
+        "binomial_interval_union": [
+          0.42554247267474343,
+          0.514814207739987
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.3910126102148423,
+          0.5500410455615201
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 456,
+        "possibly_covered": 456,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.912,
+          0.912
+        ],
+        "pvalue_lower": 0.41219133649369605,
+        "pvalue_upper": 0.41219133649369605,
+        "binomial_interval_union": [
+          0.8836648293368344,
+          0.9353315424589416
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8588235245854063,
+          0.9505496529434899
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 480,
+        "possibly_covered": 480,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.96,
+          0.96
+        ],
+        "pvalue_lower": 0.35532145910241153,
+        "pvalue_upper": 0.35532145910241153,
+        "binomial_interval_union": [
+          0.9388973906117553,
+          0.9753986879144546
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9193915188101944,
+          0.9841262756347011
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 460,
+        "possibly_covered": 460,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.92,
+          0.92
+        ],
+        "pvalue_lower": 0.15607645188607563,
+        "pvalue_upper": 0.15607645188607563,
+        "binomial_interval_union": [
+          0.8926545356436476,
+          0.9422338800711657
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8685363838775699,
+          0.9565378414592675
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03736110968464901,
+        "statistic_upper_bound": 0.03736121567695505,
+        "pvalue_lower": 0.47637009164968347,
+        "pvalue_upper": 0.47637373629005164,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03978918832424949,
+        "statistic_upper_bound": 0.039804876867495675,
+        "pvalue_lower": 0.3962827299245837,
+        "pvalue_upper": 0.3967701547586481,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 20,
+        "possibly_covered": 20,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.04,
+          0.04
+        ],
+        "pvalue_lower": 0.3553214591024082,
+        "pvalue_upper": 0.3553214591024082,
+        "binomial_interval_union": [
+          0.0246013120855454,
+          0.06110260938824469
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.015873724365298835,
+          0.08060848118980563
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 237,
+        "possibly_covered": 237,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.474,
+          0.474
+        ],
+        "pvalue_lower": 0.2635327670008485,
+        "pvalue_upper": 0.2635327670008485,
+        "binomial_interval_union": [
+          0.42949912528824696,
+          0.5188099937676349
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.39490729132871816,
+          0.5540058707390116
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 454,
+        "possibly_covered": 454,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.908,
+          0.908
+        ],
+        "pvalue_lower": 0.6019765578038838,
+        "pvalue_upper": 0.6019765578038838,
+        "binomial_interval_union": [
+          0.8791929673892575,
+          0.9318566958433456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8540079317049919,
+          0.947513840787425
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 476,
+        "possibly_covered": 476,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.952,
+          0.952
+        ],
+        "pvalue_lower": 0.9184118889878681,
+        "pvalue_upper": 0.9184118889878681,
+        "binomial_interval_union": [
+          0.9294192037426702,
+          0.9690068312064947
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.908815315312997,
+          0.9790263547250724
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "stratum": "noise",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 456,
+        "possibly_covered": 456,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.912,
+          0.912
+        ],
+        "pvalue_lower": 0.41219133649369666,
+        "pvalue_upper": 0.41219133649369666,
+        "binomial_interval_union": [
+          0.8836648293368344,
+          0.9353315424589416
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8588235245854063,
+          0.9505496529434899
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.0,
+        "statistic_upper_bound": 0.758,
+        "pvalue_lower": 2.2659080995191176e-299,
+        "pvalue_upper": 1.0,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        2.7870669624085147e-297,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 117,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.0,
+        "statistic_upper_bound": 0.766,
+        "pvalue_lower": 1.5634496443886776e-307,
+        "pvalue_upper": 1.0,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.9386775590419602e-305,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 7,
+        "possibly_covered": 386,
+        "ambiguous_count": 379,
+        "fraction_bounds": [
+          0.014,
+          0.772
+        ],
+        "pvalue_lower": 0.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.0056467610703244304,
+          0.8080734750942906
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.002318692660950723,
+          0.8342951301372079
+        ]
+      },
+      "holm_pvalue_interval": [
+        0.0,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 57,
+        "possibly_covered": 436,
+        "ambiguous_count": 379,
+        "fraction_bounds": [
+          0.114,
+          0.872
+        ],
+        "pvalue_lower": 4.339260089510342e-75,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.08749490287996968,
+          0.9000116496324111
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.06960701835922127,
+          0.9191812451211592
+        ]
+      },
+      "holm_pvalue_interval": [
+        5.20711210741241e-73,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 108,
+        "possibly_covered": 487,
+        "ambiguous_count": 379,
+        "fraction_bounds": [
+          0.216,
+          0.974
+        ],
+        "pvalue_lower": 1.0361841425220029e-285,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.1806991360236612,
+          0.9860850699371403
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.1551711085686426,
+          0.9922045833685054
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.2537828124516235e-283,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 114,
+        "possibly_covered": 493,
+        "ambiguous_count": 379,
+        "fraction_bounds": [
+          0.228,
+          0.986
+        ],
+        "pvalue_lower": 0.0,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.19192652490570938,
+          0.9943532389296755
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.16570486986279212,
+          0.9976813073390493
+        ]
+      },
+      "holm_pvalue_interval": [
+        0.0,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 121,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 107,
+        "possibly_covered": 486,
+        "ambiguous_count": 379,
+        "fraction_bounds": [
+          0.214,
+          0.972
+        ],
+        "pvalue_lower": 3.1627488520604875e-287,
+        "pvalue_upper": 1.0,
+        "binomial_interval_union": [
+          0.17883222665000903,
+          0.9846093993261619
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.15342320178959307,
+          0.9911356620097411
+        ]
+      },
+      "holm_pvalue_interval": [
+        3.858553599513795e-285,
+        1.0
+      ],
+      "decision": "NUMERICALLY_INDETERMINATE",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_mass",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.03751029163037212,
+        "statistic_upper_bound": 0.03751033794463032,
+        "pvalue_lower": 0.47125601604597434,
+        "pvalue_upper": 0.47125760011808837,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "KS_logL",
+      "quantity": "logL",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "statistic_lower_bound": 0.0518721181450212,
+        "statistic_upper_bound": 0.0518722634365751,
+        "pvalue_lower": 0.13095822792314216,
+        "pvalue_upper": 0.13096021444011186,
+        "bounds_conditional_on_valid_input_intervals": true,
+        "lower_statistic_bound_not_asserted_attainable": true
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.05",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.05,
+        "certainly_covered": 18,
+        "possibly_covered": 18,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.036,
+          0.036
+        ],
+        "pvalue_lower": 0.18090714159399215,
+        "pvalue_upper": 0.18090714159399215,
+        "binomial_interval_union": [
+          0.021472856586093284,
+          0.05630017620179107
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.013439063515767761,
+          0.07520912720131885
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.50",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.5,
+        "certainly_covered": 246,
+        "possibly_covered": 246,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.492,
+          0.492
+        ],
+        "pvalue_lower": 0.7542789113554096,
+        "pvalue_upper": 0.7542789113554096,
+        "binomial_interval_union": [
+          0.44733870648660085,
+          0.5367564037397377
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.41249545205493793,
+          0.571785515628983
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.9,
+        "certainly_covered": 454,
+        "possibly_covered": 454,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.908,
+          0.908
+        ],
+        "pvalue_lower": 0.6019765578038838,
+        "pvalue_upper": 0.6019765578038838,
+        "binomial_interval_union": [
+          0.8791929673892575,
+          0.9318566958433456
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8540079317049919,
+          0.947513840787425
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_below_q0.95",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.95,
+        "certainly_covered": 482,
+        "possibly_covered": 482,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.964,
+          0.964
+        ],
+        "pvalue_lower": 0.18090714159399382,
+        "pvalue_upper": 0.18090714159399382,
+        "binomial_interval_union": [
+          0.9436998237982089,
+          0.9785271434139067
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.9247908727986811,
+          0.9865609364842323
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "stratum": "distance_mixture",
+      "n": 500,
+      "family_size": 126,
+      "test": "coverage_central90",
+      "quantity": "mass",
+      "numerically_resolved_ids": 500,
+      "evaluation_status": "CONDITIONAL_ON_INPUT_INTERVALS",
+      "sensitivity": {
+        "n": 500,
+        "nominal": 0.8999999999999999,
+        "certainly_covered": 464,
+        "possibly_covered": 464,
+        "ambiguous_count": 0,
+        "fraction_bounds": [
+          0.928,
+          0.928
+        ],
+        "pvalue_lower": 0.03660470299721481,
+        "pvalue_upper": 0.03660470299721481,
+        "binomial_interval_union": [
+          0.901712562663143,
+          0.949065666874867
+        ],
+        "simultaneous_binomial_interval_union": [
+          0.8783704792689454,
+          0.9624019913140204
+        ]
+      },
+      "holm_pvalue_interval": [
+        1.0,
+        1.0
+      ],
+      "decision": "NONREJECTION_FOR_ALL_ADMISSIBLE_INPUTS",
+      "is_integrator_approval": false,
+      "is_posterior_learning_claim": false
+    }
+  ],
+  "group_summary": [
+    {
+      "group_id": "core_p0_A0_CN",
+      "resolved_mass": 500,
+      "resolved_logL": 494,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p0_A_G",
+      "resolved_mass": 500,
+      "resolved_logL": 497,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p0_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 499,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p1_A0_CN",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p1_A_G",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p1_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p2_A0_CN",
+      "resolved_mass": 500,
+      "resolved_logL": 362,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p2_A_G",
+      "resolved_mass": 500,
+      "resolved_logL": 358,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "core_p2_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 357,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "self_diagonal_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "self_full_fixed",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "self_diagonal_fixed",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "strong_red_A0_CN",
+      "resolved_mass": 500,
+      "resolved_logL": 497,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "strong_red_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "strong_white_A0_CN",
+      "resolved_mass": 500,
+      "resolved_logL": 498,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "strong_white_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "distance_A0_CN",
+      "resolved_mass": 121,
+      "resolved_logL": 117,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    },
+    {
+      "group_id": "distance_B_G_full_variable",
+      "resolved_mass": 500,
+      "resolved_logL": 500,
+      "all500_retained": true,
+      "interval_evidence_binding": "01298a55fc01721d05b05a234d8856921153c732e97198f3f038b27c59130d7c",
+      "logL_null_definition": "continuous_statistic"
+    }
+  ],
+  "all_registered_IDs_retained": true,
+  "approximate_models_not_in_this_family": true,
+  "multiple_test_dependence_allowed_by_Holm": true,
+  "supplied_intervals_have_operational_not_rigorous_error_status": true,
+  "registry_and_numerical_provenance_must_be_validated_by_caller": true,
+  "nonrejection_does_not_prove_learning_or_global_calibration": true,
+  "physical_work_performed": 0,
+  "status": "FULL_FAMILY_CONDITIONAL_OPERATIONAL_SBC",
+  "inputs": {
+    "results/C09/SBC_mass_preliminary/registry.json": "2aaf8fd659d304a8110af76638d1ca73bda6fd355d5015b8eaf22355eb45f9b1",
+    "results/C09/production_mass_PIT/records.json": "60d109cd30bf7dc4c409bad91e80b330b3623afc48294bdeea8a5651b10a6485",
+    "results/C09/events_direct_threshold/audit.json": "7cd143771e91b34755d029432c2033dd1d6ad863ce0899797ad4d257c060cc2b",
+    "results/C09/events_direct_threshold/records.json": "2a30855fe052f55b1d13bf95bc9c8f51df7735d4591ec02603ac0caac131b13c",
+    "results/C09/events_distance_direct_threshold/audit.json": "dca63b20bfb508c90e6e06574486bd7a44cf5808ff200bcfbf2e2ec330e24e7b",
+    "results/C09/events_distance_direct_threshold/records.json": "329abaf0e5f904b32debc92cbd45e3db309de3057975733de0f1c91abae3b625",
+    "scripts/sintetizar_sbc_eventos_c09.py": "6632d145e6b0e8c364d06a4e5eeee3ae535b3392d372cc008083b9c5079853e5",
+    "tmp/c09_sbc_synthesis_v1/synthesis.py": "23d5881addfea5f2b2ba1aa02de8aa16266625b2976afcae5c684669983ab967",
+    "src/inference/sbc_sensitivity.py": "d14af4de7b5e200a70e7a58517b97388517d22275467ed308f3ccf044891dae8"
+  },
+  "C09_complete": false,
+  "new_likelihood_values": 0,
+  "new_ORFs": 0,
+  "interpretation": "All126 tests retained; unresolved IDs use[0,1]. Decisions depend on observed numerical envelopes, not uniform physical bounds. Continuous nonconstant physical logL assumed; no atoms found in the interpolants. Nonrejection does not establish learning."
+}

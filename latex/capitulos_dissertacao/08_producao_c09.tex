@@ -1,0 +1,189 @@
+\section{Produção: robustez, informação e calibração condicional}
+\label{sec:c09-producao}
+
+A produção usa o experimento periódico de Fourier definido anteriormente,
+com parâmetros auxiliares conhecidos. Foram geradas e verificadas
+\(5\,396\) observações, analisadas em \(25\,956\) posteriores de base.
+O painel pareado de prioris contém \(1\,600\) integrações sobre os mesmos
+\(32\) dados centrais, dez análises e cinco medidas: \(320\) integrações
+reavaliam a priori uniforme já existente e \(1\,280\) são contrastes
+adicionais. Não são novas observações nem uma calibração SBC das prioris
+reponderadas. As sementes, os identificadores, as configurações e os
+resultados preservam também os casos numericamente indeterminados.
+
+As tabelas positivas interpolam log-verossimilhança em
+\(\alpha=\arcsin u\), por PCHIP, e integram dentro de cada intervalo por
+quadratura positiva. Malhas aninhadas, ordens 32 e 16 e referências
+independentes selecionadas verificam os funcionais. A concordância nesses
+testes tem alcance finito: não constitui limite uniforme de erro da
+resposta física. Na síntese dos quantis, uma análise sem aprovação dos
+critérios de malha e resposta recebe \([0,1]\); nenhum ID é eliminado.
+Os intervalos descritivos deste capítulo propagam a incerteza numérica,
+não a incerteza amostral de uma média populacional.
+
+\subsection{Sensibilidade à medida e ao suporte}
+
+No painel de mesmos dados, a mediana de \(Q_{0,95}\) de A0 é
+\([0,9355;0,9360]\) para a priori uniforme em \(u\),
+\([0,9670;0,9675]\) para a uniforme em \(u^2\) e
+\([0,6856;0,6861]\) para a logarítmica com corte \(10^{-3}\).
+Alterar apenas esse corte para \(10^{-4}\) ou \(10^{-2}\) fornece,
+respectivamente, \([0,6184;0,6189]\) e \([0,7663;0,7668]\).
+As medianas de KL correspondentes ficam entre \(0,0261\) e
+\(0,0489\) nat. A proximidade de alguns quantis aos quantis prévios
+é acompanhada por medidas de informação; não é tomada isoladamente como
+prova de ausência de aprendizado.
+
+Para B construído das observações CN, com covariância completa e variável,
+a priori uniforme produz mediana de \(Q_{0,95}\) em
+\([0,9473;0,9478]\) e KL mediana de \(0,00230\) nat. Com corte
+logarítmico \(10^{-4}\), os valores são \([0,6165;0,6170]\) e
+\(0,00166\) nat. Assim, neste experimento condicional e neste painel,
+a escolha de medida e suporte altera o limite muito mais que a pequena
+distância informacional típica da posterior comprimida à sua própria
+priori. Isso não estabelece um teorema de ausência de informação em PTAs.
+W1, diferenças de CDF e razões de odds para \(u\leq0,2\) estão também
+registrados por dado; a interpretação não depende de um único quantil.
+
+\subsection{Fatorial da covariância}
+
+O desenho separa covariância completa/diagonal de fixa/variável e conserva
+o termo log-determinante da densidade normalizada. São \(24\) contrastes
+de \(500\) pares, cobrindo três prioris e as duas origens de observações B.
+Para B de origem CN e priori uniforme, diagonal menos completa, ambas
+variáveis, tem diferença média de \(Q_{0,95}\) em
+\([-0,00047;0,00051]\). Há \(17\) pares com diferença negativa,
+\(14\) positiva e \(469\) com sinal não resolvido numericamente.
+Com priori logarítmica, esses números são \(175\), \(174\) e \(151\).
+A diagonalização pode produzir efeitos de ambos os sinais; não é
+universalmente conservadora. Médias compatíveis com zero na resolução
+usada não demonstram equivalência entre os procedimentos.
+
+A escolha fixa/variável é um eixo distinto. No mesmo B de origem CN,
+com priori uniforme e matriz completa, fixa menos variável apresenta
+média em \([0,00020;0,00118]\). Em B de origem gaussiana com priori
+logarítmica, a média correspondente é negativa,
+\([-0,00133;-0,00036]\). São descrições das realizações registradas,
+sem intervalo de confiança populacional ou extrapolação a outros sinais.
+
+\subsection{Contaminantes: limites mais baixos podem ser incorretos}
+
+Quatro cenários usam \(64\) realizações em \(u_*=0,5\), com
+contaminante monopolar ou dipolar de amplitude relativa \(0,25\) ou \(1\).
+A comparação pareada conserva a observação e omite ou inclui o componente
+conhecido na covariância. A Tabela~\ref{tab:c09-contaminantes-producao}
+apresenta os contrastes de A0; os \(12\) contrastes completos abrangem
+também as duas análises B.
+
+\begin{table}[htbp]
+\centering
+\caption{Média descritiva de \(\Delta Q_{0,95}\), omissão menos inclusão,
+em A0. Intervalos numéricos; \(64\) pares por linha.}
+\label{tab:c09-contaminantes-producao}
+\begin{tabular}{lcc}
+\hline
+Componente & Amplitude relativa & Intervalo da média\\
+\hline
+Monopolar & \(0,25\) & \([-0,06715;-0,06617]\)\\
+Monopolar & \(1\) & \([-0,18319;-0,18221]\)\\
+Dipolar & \(0,25\) & \([-0,04852;-0,04754]\)\\
+Dipolar & \(1\) & \([-0,30819;-0,30721]\)\\
+\hline
+\end{tabular}
+\end{table}
+
+No cenário dipolar de amplitude relativa unitária, A0 apresenta mediana
+de quantil \([0,9504;0,9509]\) com inclusão e
+\([0,6655;0,6660]\) com omissão. Em \(61\) dos \(64\) pares o
+quantil diminui com sinal resolvido. Um limite aparentemente mais forte
+pode, portanto, decorrer de especificação incorreta. Em B de origem CN,
+a diferença média nesse cenário é \([-0,01264;-0,01167]\): a resposta
+menor à omissão também não demonstra robustez observacional, especialmente
+quando a compressão já retém pouca informação sobre a massa.
+
+\subsection{Ruído, espectro e variabilidade entre realizações}
+
+Os dois cenários de ruído contêm \(500\) realizações cada. Em A0, as
+medianas de KL são \(0,01121\) nat sob ruído vermelho forte e
+\(0,01920\) nat sob ruído branco forte. Em B de origem CN são
+\(0,00284\) e \(0,00042\) nat. As medianas dos quantis ficam próximas
+de \(0,95\), mas os percentis entre realizações e as KL distinguem
+as distribuições. As realizações de cenários diferentes têm sementes
+próprias; diferenças entre essas medianas não são contrastes pareados.
+
+Nos cenários espectrais, com \(64\) realizações por combinação de inclinação
+e massa fixa, o expoente \(3\) fornece KL mediana de A0 de
+\(0,00752\) nat em \(u_*=0,5\). Com expoente \(5,5\), ela passa a
+\(0,09961\) nat; a mediana de \(Q_{0,95}\) passa de aproximadamente
+\(0,9502\) a \(0,9141\). Perto do corte, \(u_*=0,995\), o espectro
+\(5,5\) fornece KL mediana \(0,26076\) nat e quantil mediano
+\([0,9751;0,9756]\). Não se aplica a hipótese uniforme de SBC a esses
+cenários de massa fixa. Os \(128\) dados por massa do painel de fronteiras
+completam a descrição da variabilidade condicional.
+
+\subsection{Distâncias e indeterminação numérica}
+
+O cenário de distâncias sorteia uma escala global entre \(0,9\), \(1\)
+e \(1,1\), com pesos \(0,25\), \(0,50\) e \(0,25\). A inferência
+correta soma as densidades completas, após todos os canais; não mistura
+covariâncias nem sorteia uma escala independente por frequência. Compara-se
+essa mistura à análise com escala nominal sobre os mesmos \(500\) dados.
+
+As \(3\,000\) posteriores foram integradas, mas \(834\) análises A0
+falharam no controle pontual de interpolação da resposta em logL.
+Preservando esses casos como quantis \([0,1]\), o contraste médio
+nominal menos mistura em A0 fica em \([-0,90362;0,76454]\), inconclusivo.
+Nas duas análises B, os \(500\) contrastes têm sinal não resolvido e
+média em cerca de \([-0,00049;0,00049]\). A resolução adotada não permite
+afirmar equivalência, nem que incertezas de distância sejam irrelevantes.
+
+\subsection{Calibração da massa e dos eventos de likelihood}
+
+A família prospectiva contém \(18\) grupos de \(500\) observações e
+\(126\) testes. Foram conservados todos os IDs, inclusive os intervalos
+indeterminados \([0,1]\). No conjunto de \(9\,000\) análises SBC,
+\(8\,621\) PIT de massa e \(8\,179\) PIT de logL têm resolução
+operacional. Os eventos usam o limiar avaliado diretamente na resposta
+física da massa verdadeira. As regiões desconectadas são integradas na
+tabela positiva; patamares seriam tratados separadamente como átomos.
+Nenhum átomo foi encontrado nos interpolantes desta produção.
+
+A troca do limiar interpolado pelo físico é relevante: uma diferença de
+logL de apenas \(1,2091\times10^{-5}\) alterou uma probabilidade de evento
+em \(0,139777\). Assim, uma tolerância pontual de logL não é, sozinha,
+um limite de erro para a probabilidade do evento. Após os controles de
+discretização, de resposta e de limiar, a família completa com correção de
+Holm a \(0,05\) apresenta \(116\) não rejeições para todos os valores
+admissíveis dos intervalos fornecidos e \(10\) testes numericamente
+indeterminados. Não há rejeição robusta nesta síntese condicional.
+Os envelopes observados não possuem certificado físico uniforme:
+não rejeitar não prova calibração física completa, aprendizado da massa
+ou equivalência entre modelos. Os registros da síntese preliminar sem
+eventos permanecem preservados como histórico.
+
+\subsection{Escala física e alcance das conclusões}
+
+Como \(m_gc^2=(h/T)u\), todo quantil relatado neste experimento é
+\(Q_{0,95}(m_gc^2)=(h/T)Q_{0,95}(u)\). Sob priori uniforme e likelihood
+constante, ele já vale \(0,95h/T\). Portanto, proximidade de um limite
+à escala \(h/T\), como no benchmark MeerKAT discutido na revisão, precisa
+ser interpretada com a medida, o suporte, as frequências e o modelo
+probabilístico completos. Os resultados do painel de prioris ilustram
+quantitativamente esse problema, sem reanalisar as observações MeerKAT.
+
+Os dados sintéticos periódicos não incorporam automaticamente cadência
+irregular, ajuste do modelo de temporização, acoplamento entre frequências
+ou possível impropriedade complexa dos coeficientes obtidos de TOAs reais.
+Também não marginalizam os parâmetros auxiliares aqui conhecidos.
+Comparações de evidência entre espaços de observação diferentes não são
+interpretadas como fatores de Bayes. A extensão escalar e a aproximação
+observacional permanecem tarefas próprias de C10 e C11.
+
+A consolidação está em \path{results/C09/robustness_synthesis/}, com
+\(90\) grupos descritivos, \(39\) contrastes e \(14\,268\) diferenças
+pareadas. O acumulado C09 é de \(67\,072\,009\) avaliações de likelihood;
+o acumulado físico D3 é de \(7\,920\) nós e aproximadamente
+\(85,696\) trilhões de produtos reais estimados. Falhas e tentativas
+interrompidas permanecem contabilizadas. Foram restaurados e conferidos
+\(24\,238\) arquivos lógicos a partir dos pacotes da produção e de suas
+dependências. O manifesto da versão vincula fontes, resultados e PDF.

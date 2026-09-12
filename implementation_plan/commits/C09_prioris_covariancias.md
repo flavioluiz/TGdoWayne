@@ -33,9 +33,17 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Conclusões distinguem mudança de parametrização, suporte e informação efetiva.
-- [ ] Não se declara que diagonalizar covariância é sempre conservador; a direção do efeito é medida.
-- [ ] Limites e comparação de modelos são apresentados com hipóteses suficientes para reprodução.
+- [x] Conclusões distinguem mudança de parametrização, suporte e informação efetiva.
+- [x] Não se declara que diagonalizar covariância é sempre conservador; a direção do efeito é medida.
+- [x] Limites e comparação de modelos são apresentados com hipóteses suficientes para reprodução.
+
+Evidências da entrega: `results/C09/paired_prior_panel/`,
+`results/C09/robustness_synthesis/`, `results/C09/SBC_operational_events/`
+e `results/C09/production_reproducibility/restore_validation.json`.
+O capítulo 8 incorpora 90 grupos e 39 contrastes, com hipóteses condicionais
+e resultados indeterminados explícitos. A família SBC conserva os 126 testes:
+116 não rejeições condicionais e 10 indeterminados. Encerrar esta entrega
+não transforma falhas ou envelopes operacionais em validação física uniforme.
 
 ## Validação exigida
 

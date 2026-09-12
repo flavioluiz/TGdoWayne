@@ -1,0 +1,1221 @@
+{
+  "schema": "C09_DISTANCE_LOCAL_REFINEMENTS_ARCHIVE_v1",
+  "archive_and_accounting_passed": true,
+  "stages": [
+    {
+      "stage": "c09_distance_endpoints_v1",
+      "new_nodes": 38,
+      "products": 412656821568,
+      "LL": 396,
+      "mesh_passed": 6,
+      "heldout_passed": 4,
+      "response_CPU": 17.135438999999998,
+      "density_CPU": 1.2201089999999999,
+      "comparisons": [
+        {
+          "curve": "d13_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.4634658313639193e-05,
+            "mean": 6.730043263347696e-06,
+            "second": 9.57127552791981e-06,
+            "KL": 4.273764939999314e-06,
+            "CDF": 1.8570100922765675e-05,
+            "W1": 0.0004948411988488916
+          },
+          "heldout_control_logL_delta": 0.0011209265682197156,
+          "heldout_wave9_logL_delta": 0.00642675645201507,
+          "heldout_gate": false,
+          "quantile_lower": [
+            0.08544921875,
+            0.603515625,
+            0.92578125,
+            0.962890625
+          ],
+          "quantile_upper": [
+            0.0859375,
+            0.60400390625,
+            0.92626953125,
+            0.96337890625
+          ],
+          "W1": [
+            0.07306644743849329,
+            0.07355455616742197
+          ],
+          "summary": {
+            "logZ": -98.30267813921547,
+            "mean": 0.5733103870382776,
+            "second": 0.40490395178493,
+            "KL": 0.033922639174305325
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 3.285351634352285e-07,
+            "mean": 1.4518139501706884e-07,
+            "second": 1.925910552147414e-07,
+            "KL": 1.13351038416587e-08,
+            "CDF": 3.4058449116525225e-07,
+            "W1": 0.0004869092707237132
+          },
+          "heldout_control_logL_delta": 0.00021307833233991103,
+          "heldout_wave9_logL_delta": 0.0002564296389016285,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.0517578125,
+            0.5107421875,
+            0.9033203125,
+            0.95166015625
+          ],
+          "quantile_upper": [
+            0.05224609375,
+            0.51123046875,
+            0.90380859375,
+            0.9521484375
+          ],
+          "W1": [
+            0.006928840592140855,
+            0.007415605035163159
+          ],
+          "summary": {
+            "logZ": 0.15961618702375124,
+            "mean": 0.5071709640011411,
+            "second": 0.3404216459075948,
+            "KL": 0.00031029542609266325
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.990134634866081e-07,
+            "mean": 4.432780092988864e-08,
+            "second": 7.312468763842617e-08,
+            "KL": 2.2258612702996672e-08,
+            "CDF": 2.0154061219912478e-07,
+            "W1": 0.000488082606902307
+          },
+          "heldout_control_logL_delta": 0.0009233613152286324,
+          "heldout_wave9_logL_delta": 0.0002943201199192558,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.03857421875,
+            0.4287109375,
+            0.87158203125,
+            0.9345703125
+          ],
+          "quantile_upper": [
+            0.0390625,
+            0.42919921875,
+            0.8720703125,
+            0.93505859375
+          ],
+          "W1": [
+            0.04684335608247755,
+            0.047331394346821
+          ],
+          "summary": {
+            "logZ": 5.437767286410721,
+            "mean": 0.45291280592381816,
+            "second": 0.28737945915990526,
+            "KL": 0.013363892173566955
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.6746059802462696e-06,
+            "mean": 1.4244612498437448e-06,
+            "second": 1.774420283637279e-06,
+            "KL": 5.769274893374643e-06,
+            "CDF": 3.001234074706538e-06,
+            "W1": 0.0004895863349680951
+          },
+          "heldout_control_logL_delta": 0.0360253900627896,
+          "heldout_wave9_logL_delta": 0.014448271225361964,
+          "heldout_gate": false,
+          "quantile_lower": [
+            0.01806640625,
+            0.208984375,
+            0.568359375,
+            0.693359375
+          ],
+          "quantile_upper": [
+            0.0185546875,
+            0.20947265625,
+            0.56884765625,
+            0.69384765625
+          ],
+          "W1": [
+            0.23821328447821544,
+            0.23870144619190053
+          ],
+          "summary": {
+            "logZ": -89.98634475058756,
+            "mean": 0.2615426415621646,
+            "second": 0.11289293775810358,
+            "KL": 0.3759218541415915
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.7420769715670303e-07,
+            "mean": 5.756842202941925e-08,
+            "second": 7.954527525555477e-08,
+            "KL": 1.2963841306001811e-08,
+            "CDF": 1.3110891405876401e-07,
+            "W1": 0.0004878818577441109
+          },
+          "heldout_control_logL_delta": 0.00029353143619381683,
+          "heldout_wave9_logL_delta": 0.00012214201347049425,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.05810546875,
+            0.53515625,
+            0.91015625,
+            0.955078125
+          ],
+          "quantile_upper": [
+            0.05859375,
+            0.53564453125,
+            0.91064453125,
+            0.95556640625
+          ],
+          "W1": [
+            0.023705910422654665,
+            0.024193734714737597
+          ],
+          "summary": {
+            "logZ": 9.595390317904174,
+            "mean": 0.5239494525079904,
+            "second": 0.3565845827082586,
+            "KL": 0.0035250586564143788
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 5.193394336799884e-07,
+            "mean": 1.9203587786620346e-07,
+            "second": 2.678134732869708e-07,
+            "KL": 7.79222571190008e-08,
+            "CDF": 4.327635582113132e-07,
+            "W1": 0.00048819873582976736
+          },
+          "heldout_control_logL_delta": 2.8065209215277775e-05,
+          "heldout_wave9_logL_delta": 0.00015458195135398256,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.064453125,
+            0.56005859375,
+            0.9169921875,
+            0.95849609375
+          ],
+          "quantile_upper": [
+            0.06494140625,
+            0.560546875,
+            0.91748046875,
+            0.958984375
+          ],
+          "W1": [
+            0.040646193436916216,
+            0.0411342000996274
+          ],
+          "summary": {
+            "logZ": 4.69640394431443,
+            "mean": 0.540889985839213,
+            "second": 0.3736892676200755,
+            "KL": 0.010194977775368874
+          },
+          "independent_full_functional_reference": false
+        }
+      ]
+    },
+    {
+      "stage": "c09_distance_interpolation_refinement_v1",
+      "new_nodes": 96,
+      "products": 1039703778624,
+      "LL": 918,
+      "mesh_passed": 6,
+      "heldout_passed": 4,
+      "response_CPU": 21.378561,
+      "density_CPU": 1.228211,
+      "comparisons": [
+        {
+          "curve": "d13_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.1150084759492529e-05,
+            "mean": 4.603393411906076e-06,
+            "second": 6.336808297813246e-06,
+            "KL": 2.989157603217052e-06,
+            "CDF": 1.1623997005494324e-05,
+            "W1": 0.0004927126032247819
+          },
+          "heldout_control_logL_delta": 0.0033956887024828575,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": false,
+          "quantile_lower": [
+            0.08544921875,
+            0.603515625,
+            0.92578125,
+            0.962890625
+          ],
+          "quantile_upper": [
+            0.0859375,
+            0.60400390625,
+            0.92626953125,
+            0.96337890625
+          ],
+          "W1": [
+            0.07306184356419719,
+            0.07354995239502266
+          ],
+          "summary": {
+            "logZ": -98.30268928930023,
+            "mean": 0.5733057836448657,
+            "second": 0.4048976149766322,
+            "KL": 0.03391965001670211
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 4.498482331083409e-08,
+            "mean": 2.6906206707089098e-08,
+            "second": 3.912953366880245e-08,
+            "KL": 1.818340339410085e-09,
+            "CDF": 2.9897158593250595e-07,
+            "W1": 0.00048679160731244543
+          },
+          "heldout_control_logL_delta": 9.40161460328548e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.0517578125,
+            0.5107421875,
+            0.9033203125,
+            0.95166015625
+          ],
+          "quantile_upper": [
+            0.05224609375,
+            0.51123046875,
+            0.90380859375,
+            0.9521484375
+          ],
+          "W1": [
+            0.006928813427850714,
+            0.007415578056758986
+          ],
+          "summary": {
+            "logZ": 0.15961614203892793,
+            "mean": 0.5071709370949344,
+            "second": 0.34042160677806116,
+            "KL": 0.00031029360775232384
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 3.2321055165596135e-08,
+            "mean": 1.5972980049738794e-08,
+            "second": 1.8297788451082653e-08,
+            "KL": 8.857112460125549e-09,
+            "CDF": 1.2415134298393582e-07,
+            "W1": 0.00048805423601143427
+          },
+          "heldout_control_logL_delta": 6.82297369651863e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.03857421875,
+            0.4287109375,
+            0.87158203125,
+            0.9345703125
+          ],
+          "quantile_upper": [
+            0.0390625,
+            0.42919921875,
+            0.8720703125,
+            0.93505859375
+          ],
+          "W1": [
+            0.04684337206123143,
+            0.04733141031848898
+          ],
+          "summary": {
+            "logZ": 5.437767254089666,
+            "mean": 0.4529127899508381,
+            "second": 0.2873794408621168,
+            "KL": 0.013363901030679415
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.8424163645013323e-07,
+            "mean": 2.0965345876033936e-07,
+            "second": 2.4030475283265407e-07,
+            "KL": 8.49133028335558e-07,
+            "CDF": 6.567678388913478e-07,
+            "W1": 0.0004883713857142813
+          },
+          "heldout_control_logL_delta": 0.005302238975232854,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": false,
+          "quantile_lower": [
+            0.01806640625,
+            0.208984375,
+            0.568359375,
+            0.693359375
+          ],
+          "quantile_upper": [
+            0.0185546875,
+            0.20947265625,
+            0.56884765625,
+            0.69384765625
+          ],
+          "W1": [
+            0.23821349415047396,
+            0.23870165586392972
+          ],
+          "summary": {
+            "logZ": -89.9863450348292,
+            "mean": 0.26154243190870585,
+            "second": 0.11289269745335075,
+            "KL": 0.37592270327461985
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 9.427377101189904e-08,
+            "mean": 4.4140418320459673e-08,
+            "second": 6.100643823447882e-08,
+            "KL": 9.897333036468225e-09,
+            "CDF": 1.9111360760604157e-07,
+            "W1": 0.0004878684238061176
+          },
+          "heldout_control_logL_delta": 6.485057647687142e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.05810546875,
+            0.53515625,
+            0.91015625,
+            0.955078125
+          ],
+          "quantile_upper": [
+            0.05859375,
+            0.53564453125,
+            0.91064453125,
+            0.95556640625
+          ],
+          "W1": [
+            0.02370586629093148,
+            0.024193690579808285
+          ],
+          "summary": {
+            "logZ": 9.595390223630403,
+            "mean": 0.5239494083675721,
+            "second": 0.35658452170182037,
+            "KL": 0.0035250487590813423
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.2492671874753114e-07,
+            "mean": 6.331043744811637e-08,
+            "second": 8.864310663270203e-08,
+            "KL": 2.549868319268178e-08,
+            "CDF": 2.8975404298137164e-07,
+            "W1": 0.0004880699482044462
+          },
+          "heldout_control_logL_delta": 0.00010402009597498818,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.064453125,
+            0.56005859375,
+            0.9169921875,
+            0.95849609375
+          ],
+          "quantile_upper": [
+            0.06494140625,
+            0.560546875,
+            0.91748046875,
+            0.958984375
+          ],
+          "W1": [
+            0.04064613015142295,
+            0.041134136790382046
+          ],
+          "summary": {
+            "logZ": 4.696403819387712,
+            "mean": 0.5408899225287755,
+            "second": 0.37368917897696885,
+            "KL": 0.010194952276685681
+          },
+          "independent_full_functional_reference": false
+        }
+      ]
+    },
+    {
+      "stage": "c09_distance_interpolation_refinement_v2",
+      "new_nodes": 48,
+      "products": 520768365888,
+      "LL": 486,
+      "mesh_passed": 6,
+      "heldout_passed": 5,
+      "response_CPU": 17.389276000000002,
+      "density_CPU": 1.2266430000000001,
+      "comparisons": [
+        {
+          "curve": "d13_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.5035560920750868e-06,
+            "mean": 6.181007855543541e-07,
+            "second": 8.481983474473154e-07,
+            "KL": 4.075651898749477e-07,
+            "CDF": 1.7739638847880101e-06,
+            "W1": 0.000488726938818615
+          },
+          "heldout_control_logL_delta": 0.0004964022362941023,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.08544921875,
+            0.603515625,
+            0.92578125,
+            0.962890625
+          ],
+          "quantile_upper": [
+            0.0859375,
+            0.60400390625,
+            0.92626953125,
+            0.96337890625
+          ],
+          "W1": [
+            0.07306122545620404,
+            0.07354933428655551
+          ],
+          "summary": {
+            "logZ": -98.30269079285632,
+            "mean": 0.5733051655440802,
+            "second": 0.40489676677828473,
+            "KL": 0.03391924245151223
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.745054589719075e-08,
+            "mean": 8.425044439874796e-09,
+            "second": 1.1160040946922578e-08,
+            "KL": 6.379658190613924e-10,
+            "CDF": 2.8156907916354612e-08,
+            "W1": 0.0004867730534010087
+          },
+          "heldout_control_logL_delta": 2.1256242052847263e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.0517578125,
+            0.5107421875,
+            0.9033203125,
+            0.95166015625
+          ],
+          "quantile_upper": [
+            0.05224609375,
+            0.51123046875,
+            0.90380859375,
+            0.9521484375
+          ],
+          "W1": [
+            0.006928805003357978,
+            0.0074155696307221675
+          ],
+          "summary": {
+            "logZ": 0.15961612458838204,
+            "mean": 0.50717092866989,
+            "second": 0.3404215956180202,
+            "KL": 0.0003102929697865048
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.7372903943501115e-09,
+            "mean": 1.3734895443207051e-09,
+            "second": 1.707058328026534e-09,
+            "KL": 7.399634238680619e-10,
+            "CDF": 8.992960265352679e-09,
+            "W1": 0.00048803962968325953
+          },
+          "heldout_control_logL_delta": 3.85148634585164e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.03857421875,
+            0.4287109375,
+            0.87158203125,
+            0.9345703125
+          ],
+          "quantile_upper": [
+            0.0390625,
+            0.42919921875,
+            0.8720703125,
+            0.93505859375
+          ],
+          "W1": [
+            0.04684337068880572,
+            0.047331408945772764
+          ],
+          "summary": {
+            "logZ": 5.437767256826956,
+            "mean": 0.45291279132432766,
+            "second": 0.28737944256917514,
+            "KL": 0.013363900290715991
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.410743604741583e-08,
+            "mean": 1.735051324835979e-08,
+            "second": 2.0491745425510466e-08,
+            "KL": 6.800596996647812e-08,
+            "CDF": 4.7114476209308975e-08,
+            "W1": 0.0004881790627002114
+          },
+          "heldout_control_logL_delta": 0.002238168930020379,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": false,
+          "quantile_lower": [
+            0.01806640625,
+            0.208984375,
+            0.568359375,
+            0.693359375
+          ],
+          "quantile_upper": [
+            0.0185546875,
+            0.20947265625,
+            0.56884765625,
+            0.69384765625
+          ],
+          "W1": [
+            0.2382134768012295,
+            0.23870163851469825
+          ],
+          "summary": {
+            "logZ": -89.98634501072176,
+            "mean": 0.2615424492592191,
+            "second": 0.11289271794509617,
+            "KL": 0.3759226352686499
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 1.3753147953821099e-08,
+            "mean": 6.379669237333019e-09,
+            "second": 8.515698368682934e-09,
+            "KL": 1.485504289022721e-09,
+            "CDF": 2.329468751227637e-08,
+            "W1": 0.00048783066755085994
+          },
+          "heldout_control_logL_delta": 2.622851174116647e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.05810546875,
+            0.53515625,
+            0.91015625,
+            0.955078125
+          ],
+          "quantile_upper": [
+            0.05859375,
+            0.53564453125,
+            0.91064453125,
+            0.95556640625
+          ],
+          "W1": [
+            0.023705859912257425,
+            0.024193684200857872
+          ],
+          "summary": {
+            "logZ": 9.595390209877255,
+            "mean": 0.5239494019879029,
+            "second": 0.356584513186122,
+            "KL": 0.0035250472735770533
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 4.2826874491197486e-08,
+            "mean": 1.8916373023536437e-08,
+            "second": 2.5345144150090704e-08,
+            "KL": 7.91161378077554e-09,
+            "CDF": 3.394749714669132e-08,
+            "W1": 0.0004880255543515885
+          },
+          "heldout_control_logL_delta": 2.304695541077706e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.064453125,
+            0.56005859375,
+            0.9169921875,
+            0.95849609375
+          ],
+          "quantile_upper": [
+            0.06494140625,
+            0.560546875,
+            0.91748046875,
+            0.958984375
+          ],
+          "W1": [
+            0.04064611123603046,
+            0.04113411787487567
+          ],
+          "summary": {
+            "logZ": 4.696403776560837,
+            "mean": 0.5408899036124025,
+            "second": 0.3736891536318247,
+            "KL": 0.0101949443650719
+          },
+          "independent_full_functional_reference": false
+        }
+      ]
+    },
+    {
+      "stage": "c09_distance_interpolation_refinement_v3",
+      "new_nodes": 6,
+      "products": 66699879744,
+      "LL": 108,
+      "mesh_passed": 6,
+      "heldout_passed": 6,
+      "response_CPU": 13.945113,
+      "density_CPU": 1.217613,
+      "comparisons": [
+        {
+          "curve": "d13_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.2244867636800336e-07,
+            "mean": 9.125118782815633e-08,
+            "second": 1.2510771080220806e-07,
+            "KL": 6.04747350529955e-08,
+            "CDF": 2.3137158855490725e-10,
+            "W1": 0.00048820008221021893
+          },
+          "heldout_control_logL_delta": 4.4144635737097815e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.08544921875,
+            0.603515625,
+            0.92578125,
+            0.962890625
+          ],
+          "quantile_upper": [
+            0.0859375,
+            0.60400390625,
+            0.92626953125,
+            0.96337890625
+          ],
+          "W1": [
+            0.07306113420434529,
+            0.0735492430346117
+          ],
+          "summary": {
+            "logZ": -98.302691015305,
+            "mean": 0.5733050742928923,
+            "second": 0.40489664167057393,
+            "KL": 0.03391918197677718
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 3.0305995490920168e-09,
+            "mean": 1.441579522420966e-09,
+            "second": 1.8958022929282947e-09,
+            "KL": 1.1018246037775015e-10,
+            "CDF": 6.390066253914028e-11,
+            "W1": 0.00048676606929689507
+          },
+          "heldout_control_logL_delta": 1.1399694990726905e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.0517578125,
+            0.5107421875,
+            0.9033203125,
+            0.95166015625
+          ],
+          "quantile_upper": [
+            0.05224609375,
+            0.51123046875,
+            0.90380859375,
+            0.9521484375
+          ],
+          "W1": [
+            0.0069288035614252725,
+            0.007415568188945325
+          ],
+          "summary": {
+            "logZ": 0.1596161215577825,
+            "mean": 0.5071709272283105,
+            "second": 0.3404215937222179,
+            "KL": 0.0003102928596040444
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d13_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 2.553685263251282e-09,
+            "mean": 1.3668099985153503e-09,
+            "second": 1.7596847867729082e-09,
+            "KL": 7.318748107554285e-10,
+            "CDF": 3.8903869015172177e-10,
+            "W1": 0.00048803962298585996
+          },
+          "heldout_control_logL_delta": 2.2880213830234197e-06,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.03857421875,
+            0.4287109375,
+            0.87158203125,
+            0.9345703125
+          ],
+          "quantile_upper": [
+            0.0390625,
+            0.42919921875,
+            0.8720703125,
+            0.93505859375
+          ],
+          "W1": [
+            0.046843369322786904,
+            0.047331407579577815
+          ],
+          "summary": {
+            "logZ": 5.437767259380641,
+            "mean": 0.45291279269113766,
+            "second": 0.2873794443288599,
+            "KL": 0.01336389955884118
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_A0_CN",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 4.782876317221962e-09,
+            "mean": 3.408298143714461e-09,
+            "second": 3.998297776197646e-09,
+            "KL": 1.3754502647955746e-08,
+            "CDF": 1.1729085480638446e-09,
+            "W1": 0.00048816512177676796
+          },
+          "heldout_control_logL_delta": 0.0008659812641980125,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.01806640625,
+            0.208984375,
+            0.568359375,
+            0.693359375
+          ],
+          "quantile_upper": [
+            0.0185546875,
+            0.20947265625,
+            0.56884765625,
+            0.69384765625
+          ],
+          "W1": [
+            0.2382134802095526,
+            0.23870164192300627
+          ],
+          "summary": {
+            "logZ": -89.98634501550464,
+            "mean": 0.26154244585092096,
+            "second": 0.1128927139467984,
+            "KL": 0.37592264902315253
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_CN_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 6.781242234410456e-10,
+            "mean": 3.1381208742686795e-10,
+            "second": 4.1841557996136203e-10,
+            "KL": 7.290766601553145e-11,
+            "CDF": 8.526912509410067e-11,
+            "W1": 0.0004878246022579878
+          },
+          "heldout_control_logL_delta": 1.237869045311868e-05,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.05810546875,
+            0.53515625,
+            0.91015625,
+            0.955078125
+          ],
+          "quantile_upper": [
+            0.05859375,
+            0.53564453125,
+            0.91064453125,
+            0.95556640625
+          ],
+          "W1": [
+            0.023705859598599884,
+            0.024193683887136004
+          ],
+          "summary": {
+            "logZ": 9.595390209199131,
+            "mean": 0.5239494016740908,
+            "second": 0.3565845127677064,
+            "KL": 0.0035250472006693873
+          },
+          "independent_full_functional_reference": false
+        },
+        {
+          "curve": "d14_B_G_full_variable",
+          "mesh_passed": true,
+          "delta": {
+            "logZ": 3.1959839219553032e-09,
+            "mean": 1.4214531773859562e-09,
+            "second": 1.910670732740982e-09,
+            "KL": 5.93255500280776e-10,
+            "CDF": 2.1739821054467257e-10,
+            "W1": 0.0004880080598927833
+          },
+          "heldout_control_logL_delta": 2.6111097941594608e-06,
+          "heldout_wave9_logL_delta": null,
+          "heldout_gate": true,
+          "quantile_lower": [
+            0.064453125,
+            0.56005859375,
+            0.9169921875,
+            0.95849609375
+          ],
+          "quantile_upper": [
+            0.06494140625,
+            0.560546875,
+            0.91748046875,
+            0.958984375
+          ],
+          "W1": [
+            0.040646109814982886,
+            0.04113411645371794
+          ],
+          "summary": {
+            "logZ": 4.696403773364853,
+            "mean": 0.5408899021909493,
+            "second": 0.37368915172115397,
+            "KL": 0.0101949437718164
+          },
+          "independent_full_functional_reference": false
+        }
+      ]
+    }
+  ],
+  "archives": [
+    {
+      "file": "stage_0.zip",
+      "bytes": 784137,
+      "sha256": "bb222cc7f3bd0ffd35342359bea814e512bf150119d0a66d12593570db7046b7",
+      "members_sha256": {
+        "tmp/c09_distance_endpoints_v1/backend_execution/activation.json": "ea103dcf0cb3fd26c3174e15f0a30e9a9932c0fb1c72e91deded11c150d78c4f",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_0/matrices.npz": "24c476f4c81a499455fe7ca75bad9977fe60d4b6f173d457f77e4710e5c1808e",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_0/receipt.json": "88e94d3e4ae4f5dfd1bca3407c6d551191a78fe7f431cd46956ff0374facdbc7",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_0.json": "883e99432ab209ff7f0ee05c09a5746e76f0c370b714b9803f9522903386d27f",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_1/matrices.npz": "1c486dddff4fb32ac3bb65256844f413789f8f5665fba39d60ae9fb26429a554",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_1/receipt.json": "02663435c99c8df4cde1f766d49c397175779f40e4c1d1567381a10ce18f4717",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_1.json": "e33656ec21234e32de140ee5da2a87304d29fca5b6001bd911a0f7c14f810b5f",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_2/matrices.npz": "1c486dddff4fb32ac3bb65256844f413789f8f5665fba39d60ae9fb26429a554",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_2/receipt.json": "faa880728f625cb40e2b61f886ff1020e5febd727f529326842f3c691c0fdf08",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_1_level_2.json": "10f31861972b7ed2d63e554bfc5d6ff50f9aad898dc81c3c634b79ca201be301",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_0/matrices.npz": "7d48af5925e7d5b736c8963edf792514b981a15aaf12d167c8cac0d3d5248a0f",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_0/receipt.json": "e5fee9ae23b738363e02369520be9caeb8c52acbe9daddedd22191707f3b96f9",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_0.json": "8a6670832ed5124baba71d7b9e0ccc57987ad9cf8679eab7e956fc6bb2268e68",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_1/matrices.npz": "696382488aa9f60eff2b8309401456491e42610b39b8e5d7a9ad56db36c4427c",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_1/receipt.json": "cd80c877b5a690fa6d07c6d0d5f20963705d6f019637ce1e4a5c0f842625780f",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_1.json": "f6abc2f1f4d5308d0574484ea2e507a80e83d9c6c168a82b04383a7823082c1b",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_2/matrices.npz": "696382488aa9f60eff2b8309401456491e42610b39b8e5d7a9ad56db36c4427c",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_2/receipt.json": "f85aea5427c91440480bdfa041fc0c487b46e6e5011283480aec3cc26ef19ba4",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_2_level_2.json": "c3008994e927f46b35827fc0f13ac75a27e5d55492105e34eb2861533e61f53a",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_0/matrices.npz": "d94ecc1686144bebc7b8c93b1e6caa6fb8b80a351fa7218fa34fa685102e90a4",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_0/receipt.json": "7c24c1cc37c6b86b053a2f287c499aa1f1d01c66fba3ef5162ed4eabb9d4cfe3",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_0.json": "c2831daaa85d3c81ee164de222f0d438d1b0e097594a0d685add13f51d1fc3dc",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_1/matrices.npz": "f2197b18e3e8bbba15ceedf7417f829d56b8a0b4bba9d21faf7165da93f71c47",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_1/receipt.json": "1d2984263192ada7c211081eab5deabb9b5bb28b97ac68a2e8aedef2c56baed1",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_1.json": "b2c0ca4d58fcf0bd5854531390505006c245cac86c46371c532ae275fcc72bf8",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_2/matrices.npz": "97f38c303396d789d507dd24b5fcf3ed00a05a99e9c008a5619f1dee1b4ecc72",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_2/receipt.json": "3222efc62f54bcea6ba573c71f9bd5dc5969407330a9d608f87e4f3db77842c6",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_3_level_2.json": "e89d628d16897e9fdbc1d7229cd42c3e834c8ce6ba84b6caa60e551bc9adb40a",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_0/matrices.npz": "e986af7afd1d9962bbe64e34a4c35b89d0663ac966493d8e8ff5fea71256e09d",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_0/receipt.json": "dc1e5cff4cbf9bee9decbca35c5c0ac5ddf8fb2b4aa8a202fc903cbbe5e276bc",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_0.json": "824a502a93c3b3bc6381811c22fdfff3ba8f3d5c59b57aacb69dbd8b548f5442",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_1/matrices.npz": "61e3b34f6475e9417a048c694879a77d5c14fadb598ea9e582b84821a46f1456",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_1/receipt.json": "023775b9a5c1c37035d216b5f15fc3b59f4ba1e0d7c235f950b676277393b6d9",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_1.json": "56975329a160aa46e47bba170ea3321f85365e47045ab73859035a43c8c99698",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_2/matrices.npz": "ba5a0b336e118bda1c9bb90e037952a9a0c46a8bd56eb7231d23e108f0859118",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_2/receipt.json": "521d3dee0f2987e0dabbb5f51946f3ef00d1cbb70ace51b9c586e38937025c0b",
+        "tmp/c09_distance_endpoints_v1/backend_execution/channel_4_level_2.json": "92689528f973ab78edebbed55452e3b6da1d35fb170f0447af7b0ad7a31d95f8",
+        "tmp/c09_distance_endpoints_v1/backend_execution/summary.json": "48a447919095553dcada93ef5fde274d001ece6eaa71631570915e609bedc077",
+        "tmp/c09_distance_endpoints_v1/pilot.log": "a1363c392aefbfd8667d1c762ac7df81799dc6e59a9476642a642a9f90116f33",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/activation.json": "c626c30d6885e6fae838850f6dfd8701ce11a36589829d6eb67cb7ff775830eb",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/comparisons.json": "666b41a24086067fda9c7e13fe4ecf1c8b3bde8c0118a3fb894a5653bbc1e2b2",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/likelihoods.npz": "3e866d2475f17d5653ed1e6248f75b86c299128fa104b0e27b6b0eb8f1bbf1e8",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/receipt.json": "ddba7cc9b082ebfbcb1642223d6df8c33aec2a9204fe2a0139c89addcbfb4c29",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/response_audit.json": "506eeed421c05955eb7c362591495cb795994d992f4c3375935a64587cc67104",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/responses.npz": "875e348e3b7030e7e3ad30b5550c3209658421c009a65e1a1fa549136cbb621c",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/scipy_checks.json": "3916c5e7f29ddda634ff49f86dca388f6893c6338cc98f296290018cf0f78328",
+        "tmp/c09_distance_endpoints_v1/pilot_validation/source.py": "3dd8311e0fe2f3d8e09a8907cdd2b109ab2d267cc718066df88dde09bf00c4f9",
+        "tmp/c09_distance_endpoints_v1/prepared/plan.json": "6e5c28bbc9ec2f265840b9cecb6fcfa27d11d47400b5f337d9008f04dc5ffe3f",
+        "tmp/c09_distance_endpoints_v1/prepared/rules.npz": "8f5c8e71aa3c712c42cc48570eca07fbefd9ab27d53838c030cd37f29f5dea51",
+        "tmp/c09_distance_endpoints_v1/run.log": "f0a2c329899a15d6477a4fe94da9301039d50505727b2d807c32c4b2fffca61c",
+        "tmp/c09_distance_endpoints_v1/run_backend.py": "bd90bcde93f6f5b04e4becb460c6cecbe7b01cef1a6e62ec12395b044954fa25",
+        "tmp/c09_distance_endpoints_v1/worker.py": "2ce9849f52388a95ea617f46b6986c7faa557e70dd9c03122289bfde66a41303"
+      }
+    },
+    {
+      "file": "stage_1.zip",
+      "bytes": 2108683,
+      "sha256": "dabfaddc49ad57f9d69ad1781319998a7cdb9dd18e84e14e91d319ebdaf254cb",
+      "members_sha256": {
+        "tmp/c09_distance_interpolation_refinement_v1/backend.log": "4b67ed64f8a7f20ce16dba2ddb0ad565f1991df9ad309533ac44eabd3c8c784b",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/activation.json": "394cac2c114172f7a13ddd0b3a0df2f5ea8ddbebac2f578287f7c85535f33109",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_0/matrices.npz": "2cf85d5fbcdd7c370965d802c99130ad6b232a38d79daee73f40c8d575872d9f",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_0/receipt.json": "3562a0cc49a00866cda05b36f58c77b1d5f65b9acc468295ec6d5aea9cab7c78",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_0.json": "c17f2b85c925aca42f0afe3e7c69192e4eba3c60b8e3814d264bde976293440b",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_1/matrices.npz": "6c400e09ab424ce8a9ca2a1cce7ecbf64c802ffc5d34c0b93f14a6c842a7be76",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_1/receipt.json": "06dae0de04dda459446a52c8b2292bda4e17fc2496a155b70bc9eace7bbd5041",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_1.json": "b308542736cf23f5fc8916fa7311654f3a5b3f779297992f41fc83911c483e23",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_2/matrices.npz": "6c400e09ab424ce8a9ca2a1cce7ecbf64c802ffc5d34c0b93f14a6c842a7be76",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_2/receipt.json": "e972925f51706c861af0e7299a7ae7f5d46cb905bc6d5c2df0c9168f61a48ee0",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_1_level_2.json": "67d230c71def886ea26dedeb7ed6e627d88198dbe8b44b4b88d00d94de9ef051",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_0/matrices.npz": "3e510c0919af451c5f538f153fac83e05b6a54c959d7b0a029781ed860ab690e",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_0/receipt.json": "9a9a6666a1b48f376bd249c125b136476104c3ce1f76a333ac1cd89eef21cbb5",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_0.json": "76e692cba7af89af8ded3e80a99a673ea95d10c53f445293e66f337b2eca0235",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_1/matrices.npz": "54702d636f2d491be0fa05b6909768e8d21c252aa65f66f04684f2f35b13e18e",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_1/receipt.json": "8f953e911f3cc51b392b1d30f56227bbd740f15b3a582c182bc6ad5c5b7c032a",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_1.json": "d2b45e861659fdb7bbd3d0a439ab4da13a56510a7ea48fe31c68f3cfbfde6c30",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_2/matrices.npz": "54702d636f2d491be0fa05b6909768e8d21c252aa65f66f04684f2f35b13e18e",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_2/receipt.json": "2f1d47ca428bbe3442292a52181e09075cb35d9f7edd537fd73ec1920d8de158",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_2_level_2.json": "a904807047d478eacd9bfd5672f4433eb8015e2dea5fd9a69cd0055a29097435",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_0/matrices.npz": "1d833eb31e5cb2a2fff9063da96aa5ec26d431fb833e7f52574f90ec4e5054cd",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_0/receipt.json": "751d89556ca3fce58305465c759471e7df53fa011d0dc45344ee73916ceeca11",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_0.json": "3b7a1c383180ca4fd2a04f446063e9463c0435173f32fe3bdae3f0b680bd2abf",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_1/matrices.npz": "bfc7fb2ceaeee46f238ff84ed808f4c3f191b6a2fa6f6c172c7b32cfb7fc8dba",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_1/receipt.json": "3f2c1855cb0a94c0c909a0b582705de408551111941f5ad17c5133a02eff7978",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_1.json": "5836e541a30ea43a4c52211f19bd0dd62e6efbd3f9c62a53cf94e20e53235388",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_2/matrices.npz": "bfc7fb2ceaeee46f238ff84ed808f4c3f191b6a2fa6f6c172c7b32cfb7fc8dba",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_2/receipt.json": "52606838a64bc27e00868fbc3aa588ef0b060047d3fe7b97754bec7341996914",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_3_level_2.json": "95becb51015be5b42f68ab87f2d76ac5c8bb44e035a4984713dd99cd89becf92",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_0/matrices.npz": "661edc903d113f4272067622b810cb3f7d18016a4eb9e4b9bf179ea7af7e74b6",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_0/receipt.json": "8d0f27e263fb4887e8ba295523d8ba579be891c4e1195cbbe13eee4d91a7cfb1",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_0.json": "c5016959defb51eb23c8a07955c4434e7cf00469d9e17d37d1556e88ee161468",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_1/matrices.npz": "e6cadf14a973c89a8f33bea604eb0f44a2dd3121144e9a2b9ea583664f18777a",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_1/receipt.json": "e7fa8aed074f7ac3b3e3a531190976c6af365560bcf8889d89921230c9eb720e",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_1.json": "a782de88aa2fb77927b49e012f8dd0c6ebe489996c0451123b137ef0d005f6de",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_2/matrices.npz": "e6cadf14a973c89a8f33bea604eb0f44a2dd3121144e9a2b9ea583664f18777a",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_2/receipt.json": "b1662915f62dfc1b0148dc332dc9b801d51527ab846ade29cba8596ab66a4f18",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/channel_4_level_2.json": "b8c76a905a4869fe42a63fa313895d55716121cf44066ad700bf2acddd6e49e7",
+        "tmp/c09_distance_interpolation_refinement_v1/backend_execution/summary.json": "ad88e4367ec9ee38f463931b36282835be96f1d49d45a57d2fd05db84af07839",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot.log": "785bb2724b0a2039aa562be1912e628bb1e2521892b8c21c91b7f07b3bf91898",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/activation.json": "0eec08e81fda524d07c52b30c96598d9a4bcccff3b596eb98903ce1806840c0d",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/comparisons.json": "9c128587c3ee9771028fa241e30de3c83c6de91f9013771afd28b42e7b359f27",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/heldout_errors.npz": "9719dfca7909c1679ab613e984647f96e199816c83f77623f9ea6c2740eeeaea",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/likelihoods.npz": "2eb58002e413e7a034631ced9b26be5d4e5488df66c69e438b2405066dc3c047",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/receipt.json": "c9f2d5f7972f38e82abd339fa29dca98a64b37f7efa319771268825ef322fa60",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/response_audit.json": "12bcc9c0f9400e6c620cb4a752b22ff576b653924e66007a36a69eb8842aaaff",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/responses.npz": "67fb6c2d296bc40eee2af54d70f9919a8bef0ec0d999189c5d59d1726586430c",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/scipy_checks.json": "c6319ade1788abd127f36b4808aee8754c312276daf77a6bbed5c29acf7ef898",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/source.py": "9475b53595b5ff5a2d86223a919f3ad399152e6c51842b53c474845c6d1ddc1c",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/training_0.npz": "8d090f46c5328c5eb3a739f47143e0365642c491e6de8e4e0b16cd50cb4ab34b",
+        "tmp/c09_distance_interpolation_refinement_v1/pilot_validation/training_64.npz": "eaded905e7d02289f4c8da9737e43ac0a29a8a74ff4f5852a37bff7d6d551cc7",
+        "tmp/c09_distance_interpolation_refinement_v1/prepared/plan.json": "0a9a333129b8e2bead9b016d3a7a8ffc2b28c7b88ab88b97ae5838840194bff9",
+        "tmp/c09_distance_interpolation_refinement_v1/prepared/rules.npz": "d5585d9337e63e9476fb39cfb820ce94afdd1cf770655041635d3f83a58dd28a",
+        "tmp/c09_distance_interpolation_refinement_v1/run_backend.py": "4363f4c9ee123fe5e2b728a6561850b7acedf6e31db6e234e54f727a080ad440",
+        "tmp/c09_distance_interpolation_refinement_v1/worker.py": "2ce9849f52388a95ea617f46b6986c7faa557e70dd9c03122289bfde66a41303"
+      }
+    },
+    {
+      "file": "stage_2.zip",
+      "bytes": 1199150,
+      "sha256": "c5fb12b92f348842093cdb3811dfbad2b11774258ad5a8f6f5be2edcb967bd40",
+      "members_sha256": {
+        "tmp/c09_distance_interpolation_refinement_v2/backend.log": "41b6b94517d509bf4cdb4a1f9a6cf642a7ff67544d7336c19dcd135173dbe0ed",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/activation.json": "373c90f8728e0ede8f7fe4f1e736279093b4e80a3fa58d00b191055c48a9ab80",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_0/matrices.npz": "0c42a16864e8e2b005dfc590b0cbce9068c8585c22dde5e671fc0675f996d345",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_0/receipt.json": "8877b7b27e63f0afa5eb7f5cbc1644ce3fd0cef2572a62bd39a0057a9a0a73de",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_0.json": "1537fb19e6756b13e44b5de3f2cf8667607a1d5f300a2131914ae248f3f341e9",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_1/matrices.npz": "9f0e2370ed4ea8adf4c7e270054a58d3582dff06fde9f598b47961a00e81571f",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_1/receipt.json": "014aed268660fb77538c4f030929bccfaae1501c2b2e640df26ebccee436c743",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_1.json": "6312da3d217bac7e426690d65baf6465a371046ebc2ae1778be3c26d61ae76ce",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_2/matrices.npz": "9f0e2370ed4ea8adf4c7e270054a58d3582dff06fde9f598b47961a00e81571f",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_2/receipt.json": "321edfed359ee333336800523f7c13f430c35554e8426d1fe7c697beb38fae6b",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_1_level_2.json": "8ab97b46fd4c669ea14f5a593b1f4dc68076bf0e051db2c2ab9e57875ac6dd51",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_0/matrices.npz": "5606489a78795e349b9a9c26b9d481f442aac9846ce5397a2934fbfdc63acea5",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_0/receipt.json": "b61c3cd80d2bece99c639ca8d16f7117b1aefed135fa663808da11f2939c5cc5",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_0.json": "15238b08c1985c217634eefd4a84173a89f0fc13c36ac078cb675ec7ecc8d433",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_1/matrices.npz": "03068aca8434d41370e7f2224208969bd72ac1404dc1fdd3710e6f6df23aa0f0",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_1/receipt.json": "16fdaa31c009e8e26ad268f92237a4b960fdd03f005d2679e376dee5162858db",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_1.json": "1d5271c2328e438c7a450098be8b45feb4efa4affd52264539c4ba0fa094747f",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_2/matrices.npz": "03068aca8434d41370e7f2224208969bd72ac1404dc1fdd3710e6f6df23aa0f0",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_2/receipt.json": "6448a59b13420a0cd24968231d17331aafec43592026c8550f49e361057479cc",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_2_level_2.json": "c3eae7783cde7e49ea47c94755144b5f8d7a51add6c4cd2e861c3b46852ef917",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_0/matrices.npz": "7cc1ed1b9cd57d5e62cf085297b5421cf1d4becf529af3c352bedc533876a582",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_0/receipt.json": "475a18f7d7dc0117ccc4aa73e35267923963a555eefe2cca57788fd1638facaf",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_0.json": "0e667f064801d759124c6f3953325495fd1983cce05ca95315d6783fe3b39dda",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_1/matrices.npz": "296fb1b1ee0c3b07774f1a69c56a1815cebaa1f2b974b865a3d2722b1f7c82e0",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_1/receipt.json": "462a959a027b13eb026e365c6e6a01a9b62afda80a22f5552726318a819392cf",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_1.json": "b5335126350dc76915419b469da03deec7506da5a2dc139444057e36bac8ea82",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_2/matrices.npz": "296fb1b1ee0c3b07774f1a69c56a1815cebaa1f2b974b865a3d2722b1f7c82e0",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_2/receipt.json": "7edcfaf69cef04de7ce44039a6616ec6542be462643c6ccd04a1c205d49fbf4d",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_3_level_2.json": "5118c7ae8eaf6c4b0eccf4dc060020c53f1dbe70a14f3bc8fa5697eecfeaf91b",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_0/matrices.npz": "5eb7219d4969b0cb4d16b84424b2f019fe3675ed0983b61b127885f23dc78323",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_0/receipt.json": "04a897e8352098ed5c6660cb086fbe332e4fb4def8175369bd532987200312d0",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_0.json": "75dea6e0bceebb25838e23938c0a4c8644d8919eb78020f6f1f6648d74108800",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_1/matrices.npz": "5e2f9a8f066fa005754cf253517a4cd777bb6d246537bf19ac3902ed2cf101b6",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_1/receipt.json": "9cd8dad134ab0098dbd9db4e0d05b457d84916f3c195330995a8ab753249c3cf",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_1.json": "d6a640e699f74a8904a3eeda5f8d630569bbed4e621e281ddd45ffb41da3c298",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_2/matrices.npz": "5e2f9a8f066fa005754cf253517a4cd777bb6d246537bf19ac3902ed2cf101b6",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_2/receipt.json": "0627b049912f8d40a7f092ebb574c44cbc76ae45f50043e82991da64a7c912fa",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/channel_4_level_2.json": "27bf32d24b304ea3b1aa508d6cf2e36639fe64d64a44e83df49ccb919026bf44",
+        "tmp/c09_distance_interpolation_refinement_v2/backend_execution/summary.json": "6b5f035dc964642f106b14d9dc2f75c1a59597cce884142d9a0dfb3cc726f3c6",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot.log": "5aa85f8de5bc5f8a35ee8d8636d304cf8e254c300fe9084bcabb6372b720bf4a",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/activation.json": "971ae5246112442964f9ced906a0ac352887b476ce8cfab5835957fb79c0514a",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/comparisons.json": "8684a66d2357268fddac9c26fff8fd470ef6bfb4d7468b6756cc2c777b48eba1",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/heldout_errors.npz": "8a7da11f67e9f27d22ca971762f8673b832166e4992e702e1509f8e5da945bbb",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/likelihoods.npz": "3e3404e520cb83374fa5bd4916eb452931f00621b6f5bfa5469d9ded1cbf7aab",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/receipt.json": "1e968ffa8573f346fba6325b27325bfb775763849fd09e8ccd19c6efcd13843f",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/response_audit.json": "77de71253fc57f58ee8e56dd6fdcbfe16df159a0af4e3efd850cdedd77673d48",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/responses.npz": "e0ed41df6104265e367b71ed79a8a909ca0bce71093fb371667c900f422425be",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/scipy_checks.json": "e21edca7d617fb3f8ad7c1bd2b85bd54b09223c356edc5b6e1c5b496e4aac759",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/source.py": "583652cf81b265e8137594974ea58be7651c244b69b245c3cc3874ff5789eae5",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/training_0.npz": "16e18900254d487b7ee2912ba76e9ddb672912cef6a6e6bb615aab2e601a8a7b",
+        "tmp/c09_distance_interpolation_refinement_v2/pilot_validation/training_64.npz": "8d090f46c5328c5eb3a739f47143e0365642c491e6de8e4e0b16cd50cb4ab34b",
+        "tmp/c09_distance_interpolation_refinement_v2/prepared/plan.json": "dfd07c838a9db4c83eeca0c46bcdf38bba929a553449be2c7abe7e3c52ddfb88",
+        "tmp/c09_distance_interpolation_refinement_v2/prepared/rules.npz": "00010908f55379ffc56874e78797b7e4e63b0f64e7182ebcbe344861389dd725",
+        "tmp/c09_distance_interpolation_refinement_v2/run_backend.py": "06016b79cf30fb7e471db518fd3e1250cfc0cf1ac99f7a71174a5b6ba8fdc1c1",
+        "tmp/c09_distance_interpolation_refinement_v2/worker.py": "2ce9849f52388a95ea617f46b6986c7faa557e70dd9c03122289bfde66a41303"
+      }
+    },
+    {
+      "file": "stage_3.zip",
+      "bytes": 384188,
+      "sha256": "04cd3adebd2a7442deb06abaa86051823ec16dad1fe84276708239e4c86a668c",
+      "members_sha256": {
+        "tmp/c09_distance_interpolation_refinement_v3/backend.log": "a5a07c1941b2f420bed9fc25a77c1f2f33b94f91dfe23cc42d75102954a3fc49",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/activation.json": "d1a7bf8de7fbc02cf2f9cc928aea27b904e6735a3a108902dc520eb688399b20",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_0/matrices.npz": "22940ef6e43660487950e2f904dc339f84459bd4ecfbe795eb941754154ec20e",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_0/receipt.json": "480dfa6111c923e89b549589e4c6a8bc7e03797c2340470f7a9530fd8b1da09e",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_0.json": "b2cb78dd9cbb6a1624636a5ca76ba3e76738a52a847d42946b479bd88a3317c2",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_1/matrices.npz": "c7ae0cf473b75a6318c8ca8475e2001ce52e9a3b989a44581b77749621b5d5c3",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_1/receipt.json": "5652c170b14a53304aea9d3b092f2ccec7b00c5a255061f1c6c54f9f5dbe4993",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_1.json": "0bb12a6c3084264e82419a805bcf6c27b562ca81b5d1feb2b7b24ed8d7dccd94",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_2/matrices.npz": "c7ae0cf473b75a6318c8ca8475e2001ce52e9a3b989a44581b77749621b5d5c3",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_2/receipt.json": "ef7f4212e1c8bd24c0d05eed525d903ea2f33bde4a73339fca68c752211383f1",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_1_level_2.json": "0c5846c512970ac945fdae834d2a61aeeb8d7d034611c73c67b535d53517d92f",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_0/matrices.npz": "e9c83793db70d9b2919f241552b2f437d52800ee90bfcc57686d07d2cf411a26",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_0/receipt.json": "02af84053d784f40d1e39fb37c659e8c139ac2afa04b5a68d1feee4a9af34ddf",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_0.json": "36881fba67f0f22baa66b8069d74e8305351ca98d5f12ab0325a3f444109957e",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_1/matrices.npz": "ca0090a2e14f20d43577a065ecb1e93855621d91ba0781155cb80550de9fa343",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_1/receipt.json": "a290bc0da64ab46d1255c4dddc4686c4aecc4991220c906c32aecfd6222caaad",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_1.json": "ad3798781d3b3a8d9c6651538b01e09027fb8e22bd7325e5c98d5332c4c0d3c6",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_2/matrices.npz": "ca0090a2e14f20d43577a065ecb1e93855621d91ba0781155cb80550de9fa343",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_2/receipt.json": "8f21838093c16718e31291a9a06827e98ca9bbeb31d64c07645c14ae18fd7f3f",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_2_level_2.json": "0adb265ceb164b3f18f287a32c87aec9c5a0f046021c7c38ae5dbb49fdc82804",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_0/matrices.npz": "82f88cc4da32196593197ad1d760c8adc22b3f9bb19afa30344856e754946b41",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_0/receipt.json": "aff023afe278d7d979347c53115fe53a237978595a2ee83aff0e2a59aa7e7d7c",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_0.json": "9d1fe0998d5d797da67a72ac6ee56f91ed6c98ccabdaec8dad2579795639fcc5",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_1/matrices.npz": "143719d5e4b0487ed191e3a5e24384beda649aa4261c4e01c63ca103c60fb7a3",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_1/receipt.json": "21337ff37834eefa7fcda32666de31f418a82ade63f23e69bf4c60a8e7d7d361",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_1.json": "20d54c872465c9362ca35657067d508053ebf205a559bc092392b396c6ebb02b",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_2/matrices.npz": "143719d5e4b0487ed191e3a5e24384beda649aa4261c4e01c63ca103c60fb7a3",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_2/receipt.json": "ef197a7978842054ea45c9f65024672ede40bd929429db7519e015c87d003b4e",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_3_level_2.json": "0a2aa186c254a59ae5fac837cc72cb4d2b9a80b85f6d90b4ee71212b0af257de",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_0/matrices.npz": "14beac7577407abe8a704501af1eed43da29ff2f789161f540db85bf378b7fb8",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_0/receipt.json": "dd7071f055bd710bc2b1924f4642977c3574b8e4b1939e3fcadb54e67e66286a",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_0.json": "b754d6e212373c592ea7084be64117813a88c2d21c536450e1d4e6ce048477c1",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_1/matrices.npz": "dd37089a37eb2c8d01f7296c20f2c41c73d281bc2c4aa4fbd09c90c61d479d9a",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_1/receipt.json": "6aa511215094496c447d5fd95b0d0ed140209a1d5d9f860800c4ba937b2911ba",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_1.json": "0293707e66331796b301fc4301408c44737eb7e5ed2cfe4ce2424db99124212d",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_2/matrices.npz": "dd37089a37eb2c8d01f7296c20f2c41c73d281bc2c4aa4fbd09c90c61d479d9a",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_2/receipt.json": "b40f1011774aac0810d957dda99501363b902ba4216c0e067650d02d69127e65",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/channel_4_level_2.json": "04b56c2aa165f9129b9ff3b3026f78d1981392d168af3df7fbc38100c15091c2",
+        "tmp/c09_distance_interpolation_refinement_v3/backend_execution/summary.json": "e0855891f726b6bdb6d05e876e436fe69d12b3460aea52f349b370cdc276b489",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot.log": "4bdf337d9c82b66fdff9309de3cbba278b3e896cf6ccf34eb3525f9559c0807e",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/activation.json": "26aa0d22c38b4b693fde090e685c5a165c5b9b310fe3153044edf563a37aedbe",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/comparisons.json": "5f77d87bddbcd19cddd7903cbef0a424b284f40f1608fb27fa76bdef99c2dd6b",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/heldout_errors.npz": "0ede09b49c3cdb61b3682a994105081dfc4f0ba2bbea7e9bc8e3d408a939e281",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/likelihoods.npz": "b313793f41f0cb35a97a0e8ca8ea5120e255dcfb78f09f37b5721abb9fead848",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/receipt.json": "f9b9056832ed5d752ad9c674b1bc39a9f3166ded4aefe3399fe3ae9a8f4ae077",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/response_audit.json": "351b39fca03fb3f0eb587c101ca791c2e615579f1c4257236230f507655f6792",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/responses.npz": "cfda4eedb8e14434963c2e65c6a00409503a7a5f13a6b5a428b8e6b22a749967",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/scipy_checks.json": "40f5f91788de57085dc7b5b917d50a8f61971c0230290a434bddb7e0ee2c8d7d",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/source.py": "583652cf81b265e8137594974ea58be7651c244b69b245c3cc3874ff5789eae5",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/training_0.npz": "6282861fd645a6d7812484299bf8ef81e59cd1691aa133ca57f8a7058e298996",
+        "tmp/c09_distance_interpolation_refinement_v3/pilot_validation/training_64.npz": "16e18900254d487b7ee2912ba76e9ddb672912cef6a6e6bb615aab2e601a8a7b",
+        "tmp/c09_distance_interpolation_refinement_v3/prepared/plan.json": "a6f65e49e77d442f8cc5a7a39c34530e3ce863cf2b5b42ae15453ab19c2c9c9c",
+        "tmp/c09_distance_interpolation_refinement_v3/prepared/rules.npz": "e060f38b14f12fe4d348ee1d42f74c3ff25ed5d2516717f1625ff3612123b02c",
+        "tmp/c09_distance_interpolation_refinement_v3/run_backend.py": "ed78813c6ca8e44f865a1985818c40fefd554a2d3dfec88230b8b35a492ec120",
+        "tmp/c09_distance_interpolation_refinement_v3/worker.py": "2ce9849f52388a95ea617f46b6986c7faa557e70dd9c03122289bfde66a41303"
+      }
+    }
+  ],
+  "new_nodes": 188,
+  "new_products": 2039828845824,
+  "new_likelihood_values": 1908,
+  "cumulative_C09_likelihood_values": 54869635,
+  "cumulative_D3_nodes": 6991,
+  "cumulative_D3_products": 75643182776784,
+  "scope": "Final six local gates pass at two new masses per scale in the last failing interval. Prior held-out controls entered later training. Broader new independent controls and functional references remain required; production not activated.",
+  "C09_complete": false
+}

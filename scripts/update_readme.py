@@ -22,10 +22,10 @@ def status_block():
     base = "https://github.com/flavioluiz/TGdoWayne/releases"
     pdf_name = Path(status["latest_pdf"]).name
     lines = [START, "## Estado atual", "",
-        f'**{status["status_label"]}**  ',
-        f'**Última etapa concluída:** {current["id"]} — {current["title"]}.  ',
-        f'**Progresso:** {len(completed)} de {len(stages)} marcos concluídos.  ',
-        f'**Próxima etapa:** {next_stage["id"] + " — " + next_stage["title"] if next_stage else "Todos os marcos planejados concluídos"}.  ',
+        f'**{status["status_label"]}**', "",
+        f'**Última etapa concluída:** {current["id"]} — {current["title"]}.', "",
+        f'**Progresso:** {len(completed)} de {len(stages)} marcos concluídos.', "",
+        f'**Próxima etapa:** {next_stage["id"] + " — " + next_stage["title"] if next_stage else "Todos os marcos planejados concluídos"}.', "",
         f'**Atualização:** {status["updated_at"]}.', "",
         f'**[Baixar o PDF mais recente — {version}]({base}/download/{version}/{pdf_name})** · '
         f'[Notas do release]({base}/tag/{version}) · '

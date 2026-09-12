@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "nodes": 321,
+      "columns": 500,
+      "max_deltas": {
+        "logZ": 3.790937626035884e-07,
+        "mean": 7.893410675086088e-09,
+        "second": 4.572960961291006e-09,
+        "KL": 3.7475459402358524e-07,
+        "CDF": 2.3023660356558118e-06
+      },
+      "max_quantile_bracket": 0.00048828125,
+      "max_W1_envelope_width": 0.00048816204071056024,
+      "all_analytic_W1_inside": true
+    },
+    {
+      "nodes": 641,
+      "columns": 500,
+      "max_deltas": {
+        "logZ": 2.4460860004182905e-08,
+        "mean": 4.676544151926976e-10,
+        "second": 2.821699939675737e-10,
+        "KL": 2.4432272649477227e-08,
+        "CDF": 2.6722418083879873e-07
+      },
+      "max_quantile_bracket": 0.00048828125,
+      "max_W1_envelope_width": 0.00048816204071050473,
+      "all_analytic_W1_inside": true
+    }
+  ],
+  "CPU": 16.987893,
+  "RSS": 572915712,
+  "RSS_limit": 1610612736,
+  "reference_column_batch": 16,
+  "prior_attempt": "history/attempt_1_audit.json: numerical criteria passed, but unbatched analytic reference reached 2917793792 bytes RSS; not a resource pass",
+  "source_sha256": {
+    "scripts/validar_integracao_massa_c09.py": "5a9c09b53ed744433896995d9df50ec06300cd66af68966de6a25756ed893f73",
+    "src/inference/mass_batch.py": "c32f3be0b22d964cccc43d070d7d8ac66fb44c8e32315c1753286cb6d56465a8"
+  },
+  "PTA_observations": 0,
+  "physical_likelihood_evaluations": 0,
+  "scope": "Analytic algorithm/array benchmark; not calibration of the physical PTA posterior"
+}

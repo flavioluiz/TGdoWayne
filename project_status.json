@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_stage": "C08",
+  "current_stage": "C09",
   "completed_stages": [
     "C01",
     "C02",
@@ -9,13 +9,14 @@
     "C05",
     "C06",
     "C07",
-    "C08"
+    "C08",
+    "C09"
   ],
-  "latest_version": "v0.8.12",
+  "latest_version": "v0.9.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.8.12/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.9.0/dissertacao.pdf",
   "updated_at": "2026-09-12",
-  "status_label": "Trabalho retomado; C09 em andamento, C09–C11 ainda em draft",
+  "status_label": "C09: robustez condicional e limitações numéricas documentadas; próximo marco C10",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -24,6 +25,7 @@
     "advisor_status": "Identificação provisória"
   },
   "completed_work": [
+    "C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.",
     "Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.",
     "Busca bibliográfica dirigida com corte em 10/09/2026 e proposta de investigação sobre compressão em frequência em PTAs.",
     "Checagens cinemáticas reproduzíveis: vínculos, curvatura, relação escalar e escalas de massa/frequência.",
@@ -68,9 +70,9 @@
     "Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente.",
     "Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados."
   ],
-  "current_work": "C09 em andamento: 40 análises D2 e 165 D3 com controles primários e W1. Distâncias têm referência adaptativa parcial: cinco de doze referências aprovadas no alcance de normalização/momentos/KL/CDF nas fronteiras; sete pendentes. Faltam quantis/W1/eventos das distâncias, eventos físicos e produção D3/SBC. Refazer orçamento antes de outra onda. C10–C11 em draft; C12–C13 planejados. Consulte docs/d3_referencia_v0.8.12/README.md. Nenhuma simulação deste lote permanece em execução.",
+  "current_work": "C09 entrega 25956 posteriores de base, painel de 1600 integrações de prioris, 90 grupos descritivos e 39 contrastes pareados. PIT de massa: 25122 resolvidos operacionalmente; 834 falhas preservadas. Eventos com limiar físico: 23669 critérios operacionais aprovados, 2287 indeterminados, sem certificado físico uniforme dos domínios. SBC dos 18 grupos/126 testes: 116 não rejeições condicionais e 10 indeterminados; isso não demonstra aprendizado da massa. Acumulado C09: 67072009 avaliações; D3: 7920 nós e 85695910009872 produtos. C10–C13 permanecem abertos: extensão escalar, aplicação, discussão, conclusões e auditoria final. As limitações C09 são resultados relatados, não aprovações numéricas implícitas. Próximo release planejado: v0.10.0.",
   "in_progress_stages": [
-    "C09"
+    "C10"
   ],
   "execution_status": "resumed",
   "paused_stages": [],

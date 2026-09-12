@@ -1,0 +1,182 @@
+[
+  {
+    "group_id": "core_p0_A0_CN",
+    "stratum": "core",
+    "prior_id": "uniform_u",
+    "generative_model": "A0_CN",
+    "analysis_model": "A0_CN",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p0_A_G",
+    "stratum": "core",
+    "prior_id": "uniform_u",
+    "generative_model": "A_G",
+    "analysis_model": "A_G",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p0_B_G_full_variable",
+    "stratum": "core",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_full_variable",
+    "analysis_model": "B_G_full_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p1_A0_CN",
+    "stratum": "core",
+    "prior_id": "uniform_u_squared",
+    "generative_model": "A0_CN",
+    "analysis_model": "A0_CN",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p1_A_G",
+    "stratum": "core",
+    "prior_id": "uniform_u_squared",
+    "generative_model": "A_G",
+    "analysis_model": "A_G",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p1_B_G_full_variable",
+    "stratum": "core",
+    "prior_id": "uniform_u_squared",
+    "generative_model": "B_G_full_variable",
+    "analysis_model": "B_G_full_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p2_A0_CN",
+    "stratum": "core",
+    "prior_id": "log_uniform_u",
+    "generative_model": "A0_CN",
+    "analysis_model": "A0_CN",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p2_A_G",
+    "stratum": "core",
+    "prior_id": "log_uniform_u",
+    "generative_model": "A_G",
+    "analysis_model": "A_G",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "core_p2_B_G_full_variable",
+    "stratum": "core",
+    "prior_id": "log_uniform_u",
+    "generative_model": "B_G_full_variable",
+    "analysis_model": "B_G_full_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "self_diagonal_variable",
+    "stratum": "covariance_self",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_diagonal_variable",
+    "analysis_model": "B_G_diagonal_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "self_full_fixed",
+    "stratum": "covariance_self",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_full_fixed",
+    "analysis_model": "B_G_full_fixed",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "self_diagonal_fixed",
+    "stratum": "covariance_self",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_diagonal_fixed",
+    "analysis_model": "B_G_diagonal_fixed",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "strong_red_A0_CN",
+    "stratum": "noise",
+    "prior_id": "uniform_u",
+    "generative_model": "A0_CN",
+    "analysis_model": "A0_CN",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "strong_red_B_G_full_variable",
+    "stratum": "noise",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_full_variable",
+    "analysis_model": "B_G_full_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "strong_white_A0_CN",
+    "stratum": "noise",
+    "prior_id": "uniform_u",
+    "generative_model": "A0_CN",
+    "analysis_model": "A0_CN",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "strong_white_B_G_full_variable",
+    "stratum": "noise",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_full_variable",
+    "analysis_model": "B_G_full_variable",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "distance_A0_CN",
+    "stratum": "distance_mixture",
+    "prior_id": "uniform_u",
+    "generative_model": "A0_CN__global_distance_mixture",
+    "analysis_model": "A0_CN__correct_mixture",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  },
+  {
+    "group_id": "distance_B_G_full_variable",
+    "stratum": "distance_mixture",
+    "prior_id": "uniform_u",
+    "generative_model": "B_G_full_variable__global_distance_mixture",
+    "analysis_model": "B_G_full_variable__correct_mixture",
+    "generation_binding": "91ede7a6d9da42a2921cc0c857f0e8f930b07ab2740cf0d291e067b8a3910648",
+    "truth_design": "continuous_prior_predictive",
+    "fixed_nuisance_known": true
+  }
+]

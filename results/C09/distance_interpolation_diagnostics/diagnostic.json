@@ -1,0 +1,149 @@
+{
+  "schema": "C09_DISTANCE_HELDOUT_DIAGNOSTIC_v1",
+  "reports": [
+    {
+      "controls": "interior_controls",
+      "curve": "d13_A0_CN",
+      "maximum_delta": 0.0011209265682197156,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 1
+    },
+    {
+      "controls": "interior_controls",
+      "curve": "d13_B_CN_full_variable",
+      "maximum_delta": 0.00021307833233991103,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "interior_controls",
+      "curve": "d13_B_G_full_variable",
+      "maximum_delta": 0.0009233613152286324,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "interior_controls",
+      "curve": "d14_A0_CN",
+      "maximum_delta": 0.0360253900627896,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 2
+    },
+    {
+      "controls": "interior_controls",
+      "curve": "d14_B_CN_full_variable",
+      "maximum_delta": 0.00029353143619381683,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "interior_controls",
+      "curve": "d14_B_G_full_variable",
+      "maximum_delta": 2.8065209215277775e-05,
+      "u_at_maximum": 0.9999,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "wave9",
+      "curve": "d13_A0_CN",
+      "maximum_delta": 0.00642675645201507,
+      "u_at_maximum": 0.9860309598526957,
+      "failed_nodes": 13
+    },
+    {
+      "controls": "wave9",
+      "curve": "d13_B_CN_full_variable",
+      "maximum_delta": 0.0002564296389016285,
+      "u_at_maximum": 0.9747809598526957,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "wave9",
+      "curve": "d13_B_G_full_variable",
+      "maximum_delta": 0.0002943201199192558,
+      "u_at_maximum": 0.9762905088825109,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "wave9",
+      "curve": "d14_A0_CN",
+      "maximum_delta": 0.014448271225361964,
+      "u_at_maximum": 0.973125,
+      "failed_nodes": 16
+    },
+    {
+      "controls": "wave9",
+      "curve": "d14_B_CN_full_variable",
+      "maximum_delta": 0.00012214201347049425,
+      "u_at_maximum": 0.9812094911174891,
+      "failed_nodes": 0
+    },
+    {
+      "controls": "wave9",
+      "curve": "d14_B_G_full_variable",
+      "maximum_delta": 0.00015458195135398256,
+      "u_at_maximum": 0.9779909814376255,
+      "failed_nodes": 0
+    }
+  ],
+  "failed_training_intervals": 16,
+  "proposed_training_u": [
+    0.9686529348801199,
+    0.9717665702053416,
+    0.9733094923221326,
+    0.9748714669784638,
+    0.9764305140636005,
+    0.9778750167478567,
+    0.979240471709786,
+    0.9806534318653818,
+    0.9814229768159518,
+    0.9832931153049218,
+    0.9843325068460165,
+    0.9852967876110234,
+    0.9858678900384126,
+    0.9881789265210544,
+    0.9998984463582978,
+    0.9999999881272896
+  ],
+  "proposed_heldout_u": [
+    0.9684695945530865,
+    0.9688357491037713,
+    0.9714375454407344,
+    0.9720937160142735,
+    0.9730248532518958,
+    0.9735926419879456,
+    0.974585768303627,
+    0.9751555711303536,
+    0.9761048774349551,
+    0.9767539430578503,
+    0.9775642776467555,
+    0.9781836129902759,
+    0.978995944079346,
+    0.979483582537528,
+    0.9805393002656111,
+    0.9807672310741707,
+    0.9811528032246364,
+    0.9816912180954108,
+    0.983125580567877,
+    0.9834598212237862,
+    0.9841308189212062,
+    0.9845329150132152,
+    0.9851890976849451,
+    0.9854040875006267,
+    0.9856899959743785,
+    0.9860446793040277,
+    0.9880656951988466,
+    0.9882916213106454,
+    0.999890926189128,
+    0.9999056979574892,
+    0.9999999786680878,
+    0.999999994834782
+  ],
+  "proposed_new_full_nodes": 96,
+  "execution_enabled": false,
+  "new_likelihood_values": 0,
+  "new_ORFs": 0,
+  "policy": "The observed held-out points may enter a revised fit only if relabeled training; proposed quarter-points must remain held out. Full resource preflight and a new activation are required.",
+  "source_sha256": "9c6671d1d8523a346a1f2918b89d87f64cf8a5c73b32e4e488fa7b37a46deab3",
+  "C09_complete": false
+}
