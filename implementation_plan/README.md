@@ -19,6 +19,10 @@ validada; ao fechar o marco, o README explica o que foi concluído e o próximo 
 publicar um estado parcial, criar um marco explícito de acompanhamento com novo commit e PDF, sem
 marcar o capítulo como concluído.
 
+Entregas intermediárias: [C08.5 — estado parcial e pausa](commits/C08_5_estado_parcial_e_pausa.md)
+e [C08.6 — retomada e diagnóstico D2](commits/C08_6_retomada_d2.md).
+Elas preservam o trabalho parcial e não substituem o marco C09.
+
 ## Sequência de marcos
 
 | Commit | Entrega cumulativa | Tag | Janela | Descrição detalhada |

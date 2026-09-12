@@ -1,0 +1,37 @@
+{
+  "C09_complete": false,
+  "RSS_sum_peak_bytes": 835960832,
+  "authorization_sha256": "6e5d07160f067fe5fcc46e29b881d9a419b020aac27dc89e529f1be6cb868bd1",
+  "cumulative_CPU_seconds": 665.518992,
+  "errors": [
+    "final receipt: ValueError: worker reported resource/source problems",
+    "final stage resources exceeded",
+    "worker exit code 1"
+  ],
+  "historical_CPU_seconds": 484.422282,
+  "measured_stage_CPU_seconds": 181.09671,
+  "no_automatic_retry": true,
+  "observed_value_counts": null,
+  "old_D1_caps_not_changed": true,
+  "plan_sha256": "974ccbfc9ff8eca3506da320f26cbe060dab2eafe0886bd0e1388be46a24f21d",
+  "returncode": 1,
+  "schema": "C09_D2_SUPERVISOR_END_v1",
+  "status": "FAILED_NO_AUTOMATIC_RETRY",
+  "unresolved_reservation_by_curve": {
+    "baseline_d13": 3000,
+    "baseline_d2": 10000,
+    "baseline_d3": 10000,
+    "baseline_d6": 10000,
+    "baseline_d7": 3000,
+    "new_d13_BCN_monopole_included": 20500,
+    "new_d6_BCN_diagonal_fixed": 20500,
+    "new_d6_BCN_diagonal_variable": 20500,
+    "new_d6_BCN_full_fixed": 20500,
+    "new_d7_AG": 20500,
+    "new_d7_BG_diagonal_fixed": 20500,
+    "new_d7_BG_full_fixed": 20500,
+    "new_d7_BG_full_variable": 20500
+  },
+  "unresolved_reservation_upper_values": 200000,
+  "wall_seconds": 178.79268225003034
+}

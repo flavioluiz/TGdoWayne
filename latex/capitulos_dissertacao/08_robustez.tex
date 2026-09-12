@@ -1,13 +1,13 @@
-% Registro cumulativo para v0.8.5: fundamentos e diagnóstico completos de C09.
+% Registro cumulativo: fundamentos, diagnóstico e retomada D2 parcial.
 \chapter[Robustez estatística]{Robustez estatística: fundamentos e resultados parciais}
 \label{chap:robustez}
 
-\noindent\textbf{Estado: draft parcial; trabalho pausado.}
+\noindent\textbf{Estado: draft parcial; trabalho retomado em C09.}
 
 Este capítulo reúne a fundamentação, os diagnósticos já executados e as
-pendências de C09 na versão~0.8.5. As continuações D1 e D1b foram calculadas
-e auditadas antes deste fechamento. A publicação não executa novas
-simulações e conserva os estados inconclusivos. C09 permanece parcial;
+pendências de C09. As continuações D1 e D1b foram publicadas na versão~0.8.5;
+a versão~0.8.6 acrescenta a execução limitada de D2 e sua auditoria.
+Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
 
@@ -318,24 +318,63 @@ Falhas numéricas permanecem na população de avaliação por meio de seus
 intervalos não resolvidos, sem exclusão de realizações.
 
 
-\section{Trabalho pendente no fechamento da versão}
+\section{Retomada D2 e trabalho pendente}
 \label{sec:c09-pendencias-v085}
 
 \subsection{Comparações pareadas de priori e covariância: D2}
 
-A etapa D2 permanece prospectiva. Seu desenho e componentes matemáticos
-foram preparados e revisados, mas não há resultado de execução física D2
-incorporado nesta versão. O objetivo é aplicar medidas e suportes distintos
-à \emph{mesma observação}, separando uma mudança de análise de uma mudança
-do dado. Faltam os contrastes pareados entre prioris uniformes em massa,
-em massa ao quadrado e logarítmicas com cortes explícitos, assim como sua
-comparação quantitativa por evidência, CDF, quantis, momentos, informação
-relativa à priori e distância entre distribuições.
+D2 foi iniciada após autorização de retomada. O lote usa as mesmas
+observações do piloto nominal: oito curvas de likelihood adicionais e
+cinco funções históricas, em quarenta análises previstas. Dez medidas e
+suportes são aplicados separadamente aos dados de IDs~2, 3 e~6; os demais
+contrastes usam priori uniforme em \([0,1]\). Não houve novos sorteios ou
+integrações de resposta angular. A comparação separa uma mudança da
+análise de uma mudança do dado.
 
-O fatorial de covariância completa ou diagonal e fixa ou variável também
-precisa ser executado sobre dados compartilhados. A âncora da covariância
-fixa deve ser declarada; a média continua variável e o determinante
-permanece na densidade. A direção do efeito sobre os limites será um
+As treze curvas passaram nos controles pontuais contra as dezesseis
+respostas harmônicas salvas e nas três verificações por densidades SciPy
+independentes. Os maiores desvios absolutos de log-likelihood foram,
+respectivamente, \(1,26\times10^{-8}\) e \(5,69\times10^{-14}\).
+Esses controles não são uma margem uniforme de erro de probabilidade.
+
+A execução chegou às cotas de nove curvas durante as referências
+funcionais e, posteriormente, ao limite de CPU. Foram contabilizadas
+\(175\,778\) avaliações novas, incluindo uma avaliação interrompida
+que não produziu valor reutilizável. Os treze caches foram salvos; os
+valores importados dos cinco caches históricos foram conferidos bit a
+bit. A auditoria reconstruiu a contagem a partir dos valores salvos,
+controles e reserva interrompida. O supervisor manteve o estado de falha
+e a reserva conservadora de \(200\,000\) avaliações; a contagem
+reconstruída não reclassifica esse recibo como execução aceita.
+
+O consumo medido, incluindo controlador e encerramento, foi de
+\(181,10\) segundos de CPU, excedendo o teto prospectivo de \(180\)
+segundos em \(1,10\) segundo. O pico somado de memória foi de
+\(835\,960\,832\) bytes. O histórico deste diagnóstico e suas
+continuações passa a \(720\,094\) avaliações contabilizadas e
+\(665,52\) segundos de CPU; não se trata do custo total do projeto.
+Não houve repetição automática nem exclusão dos casos incompletos.
+
+\input{tabelas/d2_retoma_draft}
+
+As estimativas tabuladas acima são \textbf{drafts sem referência
+funcional concluída}. A concordância entre resoluções é apenas um
+diagnóstico interno. Entre as três representações usadas nas quarenta
+análises, os maiores desvios foram \(3,40\times10^{-6}\) em log-evidência,
+\(2,69\times10^{-6}\) em divergência KL e \(4,11\times10^{-7}\) no
+quantil de ordem \(0,95\). Esses números descrevem concordância entre
+interpolantes que compartilham os mesmos dados de entrada; não suprem
+as integrações independentes interrompidas.
+Faltam contrastes validados por evidência, CDF,
+quantis, momentos, informação relativa à priori e distância entre
+distribuições. Nenhuma das quarenta análises recebe aprovação funcional
+completa nesta versão.
+
+O fatorial de covariância completa ou diagonal e fixa ou variável já
+teve suas curvas calculadas sobre dados compartilhados, mas a validação
+dos contrastes permanece aberta. A âncora da covariância fixa é \(u=0,5\);
+a média continua variável e o determinante permanece na densidade.
+A direção do efeito sobre os limites será um
 resultado a medir, não uma premissa. Cada quantidade terá seu próprio
 controle: a aprovação de quantis não aprova automaticamente uma distância
 de Wasserstein, e uma falha do evento de logL não será apagada pela
@@ -385,7 +424,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.5}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.6}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.

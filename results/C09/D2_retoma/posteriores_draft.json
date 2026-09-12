@@ -1,0 +1,1932 @@
+{
+  "status": "DRAFT_NOT_VALIDATED",
+  "analyses": [
+    {
+      "curve_id": "new_d7_BG_full_variable",
+      "data_id": 7,
+      "analysis": "B_G_full_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 5.23700963573364,
+          "mean": 0.5690196795593343,
+          "second": 0.4024470141495127,
+          "kl_to_prior": 0.029077491809425038,
+          "prefix_summation_delta": 5.150606128741276e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.237009708705669,
+          "mean": 0.5690196389736747,
+          "second": 0.4024469847963169,
+          "kl_to_prior": 0.029077455575708344,
+          "prefix_summation_delta": 3.862954314668332e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.237009708705669,
+          "mean": 0.5690196389736747,
+          "second": 0.4024469847963169,
+          "kl_to_prior": 0.029077455575708344,
+          "prefix_summation_delta": 4.02391074444618e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9640364875085652,
+        0.9640364847145975,
+        0.9640364847145975
+      ],
+      "delta_quantile_95_tables": 2.7939677238464355e-09,
+      "delta_logZ_tables": 7.297202841982653e-08,
+      "delta_KL_tables": 3.623371669370101e-08
+    },
+    {
+      "curve_id": "new_d7_BG_full_fixed",
+      "data_id": 7,
+      "analysis": "B_G_full_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 5.2347371489337,
+          "mean": 0.5758343157091855,
+          "second": 0.4091404550487893,
+          "kl_to_prior": 0.03528460694844304,
+          "prefix_summation_delta": 9.90836461731867e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.2347372301866475,
+          "mean": 0.5758342699645067,
+          "second": 0.40914042182077315,
+          "kl_to_prior": 0.03528456080820147,
+          "prefix_summation_delta": 6.605575874823253e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.2347372301866475,
+          "mean": 0.5758342699645067,
+          "second": 0.4091404218207731,
+          "kl_to_prior": 0.03528456080820147,
+          "prefix_summation_delta": 8.256969843529067e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9649240463040769,
+        0.9649240435101092,
+        0.9649240435101092
+      ],
+      "delta_quantile_95_tables": 2.7939677238464355e-09,
+      "delta_logZ_tables": 8.125294748140277e-08,
+      "delta_KL_tables": 4.614024157190144e-08
+    },
+    {
+      "curve_id": "new_d7_BG_diagonal_fixed",
+      "data_id": 7,
+      "analysis": "B_G_diagonal_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 5.163706290519916,
+          "mean": 0.576802651993226,
+          "second": 0.41015452162823285,
+          "kl_to_prior": 0.03619153033438949,
+          "prefix_summation_delta": 8.307651142099259e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.163706371991513,
+          "mean": 0.576802606046585,
+          "second": 0.4101544882282061,
+          "kl_to_prior": 0.03619148342019701,
+          "prefix_summation_delta": 1.0135333567619269e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.163706371991513,
+          "mean": 0.576802606046585,
+          "second": 0.4101544882282061,
+          "kl_to_prior": 0.03619148342019701,
+          "prefix_summation_delta": 1.0301486576924504e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9650867148302495,
+        0.9650867120362818,
+        0.9650867120362818
+      ],
+      "delta_quantile_95_tables": 2.7939677238464355e-09,
+      "delta_logZ_tables": 8.147159658022929e-08,
+      "delta_KL_tables": 4.691419247526696e-08
+    },
+    {
+      "curve_id": "new_d6_BCN_diagonal_variable",
+      "data_id": 6,
+      "analysis": "B_CN_diagonal_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.835162306221452,
+          "mean": 0.5158616370324328,
+          "second": 0.34813158990263626,
+          "kl_to_prior": 0.0016345419691970037,
+          "prefix_summation_delta": 8.313832570416915e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.835162346671694,
+          "mean": 0.5158616166845476,
+          "second": 0.3481315758277342,
+          "kl_to_prior": 0.0016345369492689749,
+          "prefix_summation_delta": 6.4135391117042305e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.835162346671694,
+          "mean": 0.5158616166845476,
+          "second": 0.3481315758277342,
+          "kl_to_prior": 0.0016345369492689749,
+          "prefix_summation_delta": 6.532308354513568e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.953048090916127,
+        0.9530480890534818,
+        0.9530480890534818
+      ],
+      "delta_quantile_95_tables": 1.862645149230957e-09,
+      "delta_logZ_tables": 4.0450242266842906e-08,
+      "delta_KL_tables": 5.019928028815457e-09
+    },
+    {
+      "curve_id": "new_d6_BCN_full_fixed",
+      "data_id": 6,
+      "analysis": "B_CN_full_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.822605642175317,
+          "mean": 0.506848305340261,
+          "second": 0.3392452874859425,
+          "kl_to_prior": 0.0003657074469579531,
+          "prefix_summation_delta": 4.5401557489157505e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.822605672616435,
+          "mean": 0.5068482903019972,
+          "second": 0.33924527716433367,
+          "kl_to_prior": 0.0003657054235462129,
+          "prefix_summation_delta": 7.491256757668751e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.822605672616435,
+          "mean": 0.5068482903019972,
+          "second": 0.33924527716433367,
+          "kl_to_prior": 0.0003657054235463239,
+          "prefix_summation_delta": 7.491256757668751e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9509033006615937,
+        0.9509032987989485,
+        0.9509032987989485
+      ],
+      "delta_quantile_95_tables": 1.862645149230957e-09,
+      "delta_logZ_tables": 3.0441118070712037e-08,
+      "delta_KL_tables": 2.023411629220595e-09
+    },
+    {
+      "curve_id": "new_d6_BCN_diagonal_fixed",
+      "data_id": 6,
+      "analysis": "B_CN_diagonal_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.83789295988359,
+          "mean": 0.5062142032085576,
+          "second": 0.33862362752165964,
+          "kl_to_prior": 0.0003133129601639584,
+          "prefix_summation_delta": 1.0191509076202932e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.837892989445326,
+          "mean": 0.5062141886237478,
+          "second": 0.33862361751680337,
+          "kl_to_prior": 0.00031331111493689695,
+          "prefix_summation_delta": 3.623647565055217e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.837892989445326,
+          "mean": 0.5062141886237478,
+          "second": 0.33862361751680337,
+          "kl_to_prior": 0.00031331111493689695,
+          "prefix_summation_delta": 3.736886551463193e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9507476887665689,
+        0.9507476878352463,
+        0.9507476878352463
+      ],
+      "delta_quantile_95_tables": 9.313225746154785e-10,
+      "delta_logZ_tables": 2.956173617008062e-08,
+      "delta_KL_tables": 1.8452270614255362e-09
+    },
+    {
+      "curve_id": "new_d13_BCN_monopole_included",
+      "data_id": 13,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 8.19754405603336,
+          "mean": 0.5187116073379326,
+          "second": 0.35130701833770245,
+          "kl_to_prior": 0.002173115176368867,
+          "prefix_summation_delta": 1.3449669860636568e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 8.19754409057711,
+          "mean": 0.5187115898621183,
+          "second": 0.3513070062080247,
+          "kl_to_prior": 0.0021731106429204172,
+          "prefix_summation_delta": 7.091643863363658e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 8.19754409057711,
+          "mean": 0.5187115898621183,
+          "second": 0.3513070062080247,
+          "kl_to_prior": 0.0021731106429204172,
+          "prefix_summation_delta": 7.336183306927923e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.95401954324916,
+        0.9540195413865149,
+        0.9540195413865149
+      ],
+      "delta_quantile_95_tables": 1.862645149230957e-09,
+      "delta_logZ_tables": 3.454375097078355e-08,
+      "delta_KL_tables": 4.53344844997261e-09
+    },
+    {
+      "curve_id": "new_d7_AG",
+      "data_id": 7,
+      "analysis": "A_G",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.983066549073424,
+          "mean": 0.6423794483118489,
+          "second": 0.47511646480058833,
+          "kl_to_prior": 0.1334230028358645,
+          "prefix_summation_delta": 0.0,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.983066648575814,
+          "mean": 0.6423793856934887,
+          "second": 0.4751164175618561,
+          "kl_to_prior": 0.13342285555528122,
+          "prefix_summation_delta": 4.428344989400481e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.983066648575814,
+          "mean": 0.6423793856934887,
+          "second": 0.4751164175618561,
+          "kl_to_prior": 0.13342285555528122,
+          "prefix_summation_delta": 4.428344989400481e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9708990170620382,
+        0.9708990142680705,
+        0.9708990142680705
+      ],
+      "delta_quantile_95_tables": 2.7939677238464355e-09,
+      "delta_logZ_tables": 9.950239032718855e-08,
+      "delta_KL_tables": 1.472805832847257e-07
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -88.41452336730869,
+          "mean": 0.6416876382672534,
+          "second": 0.4746587486185426,
+          "kl_to_prior": 0.13157539819860475,
+          "prefix_summation_delta": 1.5996700017479533e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.41452327145197,
+          "mean": 0.641687577988328,
+          "second": 0.47465870314904357,
+          "kl_to_prior": 0.13157525932443237,
+          "prefix_summation_delta": 4.061100485924994e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.41452327145197,
+          "mean": 0.641687577988328,
+          "second": 0.4746587031490435,
+          "kl_to_prior": 0.13157525932443237,
+          "prefix_summation_delta": 3.814973183747722e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9709433377720416,
+        0.9709433349780738,
+        0.9709433349780738
+      ],
+      "delta_quantile_95_tables": 2.7939677238464355e-09,
+      "delta_logZ_tables": 9.585671989498223e-08,
+      "delta_KL_tables": 1.38874172384007e-07
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "prior": {
+        "id": "uniform_u_squared_a0_b1",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -88.16502982519728,
+          "mean": 0.7397037441772476,
+          "second": 0.5861056480169183,
+          "kl_to_prior": 0.05596381933909822,
+          "prefix_summation_delta": 3.835247284123222e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.16502982327869,
+          "mean": 0.7397037428043798,
+          "second": 0.5861056469224628,
+          "kl_to_prior": 0.05596381628285657,
+          "prefix_summation_delta": 2.684937615033971e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.16502982327869,
+          "mean": 0.7397037428043797,
+          "second": 0.5861056469224628,
+          "kl_to_prior": 0.05596381628285657,
+          "prefix_summation_delta": 3.0685001314673953e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.9746794344808963,
+      "table_quantiles_95": [
+        0.9812045893631876,
+        0.9812045893631876,
+        0.9812045893631876
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 1.9185932842447073e-09,
+      "delta_KL_tables": 3.056241648646818e-09
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.32300654776643,
+          "mean": 0.26931589323252914,
+          "second": 0.17282128269806532,
+          "kl_to_prior": 0.2106401872368764,
+          "prefix_summation_delta": 4.7311637396132076e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.32300434400345,
+          "mean": 0.2693153255411594,
+          "second": 0.17282090217291574,
+          "kl_to_prior": 0.21063881982980304,
+          "prefix_summation_delta": 9.157973176655577e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.3230043436423,
+          "mean": 0.2693153254438942,
+          "second": 0.17282090211050022,
+          "kl_to_prior": 0.2106388192429305,
+          "prefix_summation_delta": 1.526328862224685e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6309573444801939,
+      "table_quantiles_95": [
+        0.896331559798913,
+        0.8963313400287645,
+        0.8963313400287645
+      ],
+      "delta_quantile_95_tables": 2.1977014852403443e-07,
+      "delta_logZ_tables": 2.2041241294346037e-06,
+      "delta_KL_tables": 1.3679939458999257e-06
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.21587879265297,
+          "mean": 0.3225310962173902,
+          "second": 0.2070193204460185,
+          "kl_to_prior": 0.2271859259413569,
+          "prefix_summation_delta": 3.1536183063908313e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.21587615280735,
+          "mean": 0.32253027571114057,
+          "second": 0.2070187743448789,
+          "kl_to_prior": 0.22718396147178965,
+          "prefix_summation_delta": 3.702428656121546e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.21587615259101,
+          "mean": 0.3225302756413659,
+          "second": 0.20701877430009344,
+          "kl_to_prior": 0.2271839610934976,
+          "prefix_summation_delta": 3.291047693618294e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7079457843841375,
+      "table_quantiles_95": [
+        0.9129876539274118,
+        0.9129874306335113,
+        0.9129874306335113
+      ],
+      "delta_quantile_95_tables": 2.2329390048092534e-07,
+      "delta_logZ_tables": 2.640061964598317e-06,
+      "delta_KL_tables": 1.964847859303731e-06
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.0310856306257,
+          "mean": 0.4012030529636618,
+          "second": 0.2581300397775743,
+          "kl_to_prior": 0.22707459103107697,
+          "prefix_summation_delta": 6.154891496242397e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.03108274125229,
+          "mean": 0.4012019299854378,
+          "second": 0.25812929442501603,
+          "kl_to_prior": 0.2270719085771813,
+          "prefix_summation_delta": 2.735768956998469e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.03108274125229,
+          "mean": 0.4012019299854377,
+          "second": 0.258129294425016,
+          "kl_to_prior": 0.22707190857718107,
+          "prefix_summation_delta": 2.5077882105819293e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.794328234724282,
+      "table_quantiles_95": [
+        0.9298282993352042,
+        0.929828101103194,
+        0.929828101103194
+      ],
+      "delta_quantile_95_tables": 1.9823201014013137e-07,
+      "delta_logZ_tables": 2.889373405423612e-06,
+      "delta_KL_tables": 2.6824538958969413e-06
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_a0_b0.8",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -88.59305160202412,
+          "mean": 0.5131165796778354,
+          "second": 0.30566336441195496,
+          "kl_to_prior": 0.12615714779230264,
+          "prefix_summation_delta": 4.1158642260643474e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.59305145881764,
+          "mean": 0.5131165079982815,
+          "second": 0.3056633206430842,
+          "kl_to_prior": 0.12615696656069603,
+          "prefix_summation_delta": 2.0579318183230109e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.59305145881765,
+          "mean": 0.5131165079982816,
+          "second": 0.3056633206430842,
+          "kl_to_prior": 0.12615696656069614,
+          "prefix_summation_delta": 8.231727273292045e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.76,
+      "table_quantiles_95": [
+        0.7782171357423067,
+        0.7782171327620745,
+        0.7782171327620745
+      ],
+      "delta_quantile_95_tables": 2.9802321721561498e-09,
+      "delta_logZ_tables": 1.4320646357646183e-07,
+      "delta_KL_tables": 1.8123160649974324e-07
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_squared_a0_b0.8",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -88.3440130789449,
+          "mean": 0.5956996451057347,
+          "second": 0.3801633272976386,
+          "kl_to_prior": 0.06101564492298184,
+          "prefix_summation_delta": 1.4438347736819088e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.34401307543293,
+          "mean": 0.5956996430216349,
+          "second": 0.3801633259361139,
+          "kl_to_prior": 0.06101563973479962,
+          "prefix_summation_delta": 4.812782562037322e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -88.34401307543293,
+          "mean": 0.5956996430216349,
+          "second": 0.3801633259361139,
+          "kl_to_prior": 0.061015639734799565,
+          "prefix_summation_delta": 9.625565124074645e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7797435475847172,
+      "table_quantiles_95": [
+        0.785950556024909,
+        0.785950556024909,
+        0.785950556024909
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 3.5119711583320168e-09,
+      "delta_KL_tables": 5.188182272686248e-09
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.40295534169476,
+          "mean": 0.20007147387451207,
+          "second": 0.10266407655550924,
+          "kl_to_prior": 0.15848703337498748,
+          "prefix_summation_delta": 3.1222778062670415e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.40295289524379,
+          "mean": 0.20007101306265795,
+          "second": 0.10266382575373831,
+          "kl_to_prior": 0.15848583854466258,
+          "prefix_summation_delta": 1.040756722592259e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.40295289484285,
+          "mean": 0.20007101298244345,
+          "second": 0.10266382571257726,
+          "kl_to_prior": 0.15848583794612248,
+          "prefix_summation_delta": 1.1563963579722093e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5104291725436731,
+      "table_quantiles_95": [
+        0.7149761355822439,
+        0.7149759299719238,
+        0.7149759299719238
+      ],
+      "delta_quantile_95_tables": 2.056103201031334e-07,
+      "delta_logZ_tables": 2.446851908644021e-06,
+      "delta_KL_tables": 1.1954288650084521e-06
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.30954985527207,
+          "mean": 0.24491316406344882,
+          "second": 0.12571899984679233,
+          "kl_to_prior": 0.1757676716024703,
+          "prefix_summation_delta": 1.685241996135342e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.30954685942956,
+          "mean": 0.24491246543029344,
+          "second": 0.12571862365455383,
+          "kl_to_prior": 0.17576587685487266,
+          "prefix_summation_delta": 4.21309236855825e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.30954685918405,
+          "mean": 0.24491246537016503,
+          "second": 0.12571862362368869,
+          "kl_to_prior": 0.17576587646118602,
+          "prefix_summation_delta": 3.791783130771506e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5727109512080819,
+      "table_quantiles_95": [
+        0.7304056112780236,
+        0.7304054051549175,
+        0.7304054051549175
+      ],
+      "delta_quantile_95_tables": 2.06123106138989e-07,
+      "delta_logZ_tables": 2.9960880141288726e-06,
+      "delta_KL_tables": 1.7951412842887038e-06
+    },
+    {
+      "curve_id": "baseline_d2",
+      "data_id": 2,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -89.1417904154878,
+          "mean": 0.3147713090900681,
+          "second": 0.1621542692425636,
+          "kl_to_prior": 0.18275895862187252,
+          "prefix_summation_delta": 7.124842666574226e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.14178702352169,
+          "mean": 0.3147702839378264,
+          "second": 0.1621537197738118,
+          "kl_to_prior": 0.18275633536121882,
+          "prefix_summation_delta": 2.6718069372713377e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -89.14178702352169,
+          "mean": 0.3147702839378263,
+          "second": 0.16215371977381174,
+          "kl_to_prior": 0.1827563353612187,
+          "prefix_summation_delta": 3.38428878721036e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6425922562362995,
+      "table_quantiles_95": [
+        0.745914268256165,
+        0.7459140857914464,
+        0.7459140857914464
+      ],
+      "delta_quantile_95_tables": 1.8246471866767422e-07,
+      "delta_logZ_tables": 3.391966117760603e-06,
+      "delta_KL_tables": 2.6232606538112435e-06
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -82.94857529897028,
+          "mean": 0.5450303867799647,
+          "second": 0.37028893911526145,
+          "kl_to_prior": 0.01966063019248504,
+          "prefix_summation_delta": 3.945760202907877e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.94857516097899,
+          "mean": 0.5450303132690831,
+          "second": 0.3702888880122658,
+          "kl_to_prior": 0.019660554200507496,
+          "prefix_summation_delta": 6.070399474503618e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.94857516097899,
+          "mean": 0.5450303132690831,
+          "second": 0.3702888880122658,
+          "kl_to_prior": 0.019660554200507552,
+          "prefix_summation_delta": 4.552799605877714e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9517160612158477,
+        0.9517160546965897,
+        0.9517160546965897
+      ],
+      "delta_quantile_95_tables": 6.51925802230835e-09,
+      "delta_logZ_tables": 1.3799129305880342e-07,
+      "delta_KL_tables": 7.599197748842101e-08
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "prior": {
+        "id": "uniform_u_squared_a0_b1",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -82.86234184872394,
+          "mean": 0.679391366237258,
+          "second": 0.5102145357318666,
+          "kl_to_prior": 0.005786748461733965,
+          "prefix_summation_delta": 3.619761667069058e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.86234184560749,
+          "mean": 0.679391364108317,
+          "second": 0.5102145341227609,
+          "kl_to_prior": 0.00578674648399935,
+          "prefix_summation_delta": 4.872756075099545e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.86234184560749,
+          "mean": 0.679391364108317,
+          "second": 0.5102145341227609,
+          "kl_to_prior": 0.005786746483999378,
+          "prefix_summation_delta": 4.872756075099545e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.9746794344808963,
+      "table_quantiles_95": [
+        0.9730972847901285,
+        0.9730972847901285,
+        0.9730972847901285
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 3.1164546498985146e-09,
+      "delta_KL_tables": 1.9777345872107333e-09
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.33342702902925,
+          "mean": 0.15952834056734339,
+          "second": 0.08695288906456677,
+          "kl_to_prior": 0.02979534792164129,
+          "prefix_summation_delta": 3.567929838288644e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.33342513830691,
+          "mean": 0.15952806095860428,
+          "second": 0.08695272493193687,
+          "kl_to_prior": 0.02979501463944889,
+          "prefix_summation_delta": 6.578358201484137e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.33342513783619,
+          "mean": 0.15952806088351137,
+          "second": 0.08695272489100654,
+          "kl_to_prior": 0.029795014084382787,
+          "prefix_summation_delta": 6.578358198387577e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6309573444801939,
+      "table_quantiles_95": [
+        0.7536850711415986,
+        0.7536846902687568,
+        0.7536846902687568
+      ],
+      "delta_quantile_95_tables": 3.8087284170984503e-07,
+      "delta_logZ_tables": 1.8911930652620867e-06,
+      "delta_KL_tables": 3.3383725850377743e-07
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.28820752647775,
+          "mean": 0.20319304536736502,
+          "second": 0.1108112722859461,
+          "kl_to_prior": 0.03374315381135462,
+          "prefix_summation_delta": 6.394093714992723e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.28820511697293,
+          "mean": 0.2031925838285832,
+          "second": 0.11081100563131137,
+          "kl_to_prior": 0.03374261061288353,
+          "prefix_summation_delta": 1.470638010934689e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.28820511667296,
+          "mean": 0.2031925837676317,
+          "second": 0.11081100559807147,
+          "kl_to_prior": 0.03374261024441749,
+          "prefix_summation_delta": 1.470638010493543e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7079457843841375,
+      "table_quantiles_95": [
+        0.7986669862396085,
+        0.7986665759370661,
+        0.7986665759370661
+      ],
+      "delta_quantile_95_tables": 4.1030254238627606e-07,
+      "delta_logZ_tables": 2.4098047930465327e-06,
+      "delta_KL_tables": 5.435669371278706e-07
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.20365022848256,
+          "mean": 0.27859749022819885,
+          "second": 0.15273173638068815,
+          "kl_to_prior": 0.035417859316157374,
+          "prefix_summation_delta": 2.7419719660897154e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.20364733093633,
+          "mean": 0.2785967192129863,
+          "second": 0.15273129429446453,
+          "kl_to_prior": 0.03541695712973747,
+          "prefix_summation_delta": 1.0576146938569928e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.20364733093633,
+          "mean": 0.2785967192129863,
+          "second": 0.15273129429446453,
+          "kl_to_prior": 0.03541695712973747,
+          "prefix_summation_delta": 1.0380292365633448e-14,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.794328234724282,
+      "table_quantiles_95": [
+        0.8473031002050265,
+        0.8473027120390905,
+        0.8473027120390905
+      ],
+      "delta_quantile_95_tables": 3.8816593606050276e-07,
+      "delta_logZ_tables": 2.8975462242897265e-06,
+      "delta_KL_tables": 9.021864199043605e-07
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_a0_b0.8",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -82.97156580324051,
+          "mean": 0.4465633978772719,
+          "second": 0.2477207591693281,
+          "kl_to_prior": 0.02365777495883728,
+          "prefix_summation_delta": 2.16477737858022e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.97156562676659,
+          "mean": 0.44656332121127734,
+          "second": 0.24772071540922508,
+          "kl_to_prior": 0.023657681084481602,
+          "prefix_summation_delta": 2.841271759945678e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.97156562676659,
+          "mean": 0.44656332121127734,
+          "second": 0.24772071540922508,
+          "kl_to_prior": 0.023657681084481602,
+          "prefix_summation_delta": 2.841271759945678e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.76,
+      "table_quantiles_95": [
+        0.7663332108408211,
+        0.7663332048803566,
+        0.7663332048803566
+      ],
+      "delta_quantile_95_tables": 5.960464455334602e-09,
+      "delta_logZ_tables": 1.7647391814534785e-07,
+      "delta_KL_tables": 9.387435567775881e-08
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_squared_a0_b0.8",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -82.86144897158444,
+          "mean": 0.55472696675738,
+          "second": 0.3385573042968351,
+          "kl_to_prior": 0.008633063852104425,
+          "prefix_summation_delta": 2.302627711347274e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.8614489667905,
+          "mean": 0.5547269639998575,
+          "second": 0.3385573025572017,
+          "kl_to_prior": 0.008633060691168828,
+          "prefix_summation_delta": 1.0907191336867238e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -82.8614489667905,
+          "mean": 0.5547269639998575,
+          "second": 0.3385573025572017,
+          "kl_to_prior": 0.008633060691168856,
+          "prefix_summation_delta": 8.483371039785629e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7797435475847172,
+      "table_quantiles_95": [
+        0.7809284646064044,
+        0.7809284646064044,
+        0.7809284646064044
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 4.7939323621903895e-09,
+      "delta_KL_tables": 3.160935568846668e-09
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.34860735695702,
+          "mean": 0.1297717739076854,
+          "second": 0.057955668595848726,
+          "kl_to_prior": 0.02694572467918721,
+          "prefix_summation_delta": 3.1561694169057892e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.34860538965374,
+          "mean": 0.12977154151050785,
+          "second": 0.05795555485741872,
+          "kl_to_prior": 0.026945413363227977,
+          "prefix_summation_delta": 5.52328940812651e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.34860538916395,
+          "mean": 0.12977154144694764,
+          "second": 0.057955554829032925,
+          "kl_to_prior": 0.026945412794509682,
+          "prefix_summation_delta": 5.5232894054212825e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5104291725436731,
+      "table_quantiles_95": [
+        0.6197156652611215,
+        0.6197153553557115,
+        0.6197153553557115
+      ],
+      "delta_quantile_95_tables": 3.099054100008658e-07,
+      "delta_logZ_tables": 1.9677930680472855e-06,
+      "delta_KL_tables": 3.118846775285178e-07
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.30625318428159,
+          "mean": 0.16712483063042965,
+          "second": 0.07468776134962676,
+          "kl_to_prior": 0.031119988175401292,
+          "prefix_summation_delta": 4.537925720415326e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.30625064900657,
+          "mean": 0.16712443643878913,
+          "second": 0.07468757235389907,
+          "kl_to_prior": 0.031119469017902635,
+          "prefix_summation_delta": 1.7017189999178298e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.30625064869095,
+          "mean": 0.1671244363860401,
+          "second": 0.07468757233032565,
+          "kl_to_prior": 0.031119468636726766,
+          "prefix_summation_delta": 1.323559221740561e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5727109512080819,
+      "table_quantiles_95": [
+        0.6559604757814671,
+        0.6559601483657028,
+        0.6559601483657028
+      ],
+      "delta_quantile_95_tables": 3.274157642785269e-07,
+      "delta_logZ_tables": 2.535590638785834e-06,
+      "delta_KL_tables": 5.195386745260322e-07
+    },
+    {
+      "curve_id": "baseline_d3",
+      "data_id": 3,
+      "analysis": "A0_CN",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": -83.22481282465117,
+          "mean": 0.2334147843453885,
+          "second": 0.1050135614798355,
+          "kl_to_prior": 0.0338463643676265,
+          "prefix_summation_delta": 1.7429183499423763e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.22480971443103,
+          "mean": 0.23341409726105014,
+          "second": 0.10501323535176714,
+          "kl_to_prior": 0.033845466661315216,
+          "prefix_summation_delta": 2.440079777075602e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": -83.22480971443103,
+          "mean": 0.23341409726105014,
+          "second": 0.10501323535176714,
+          "kl_to_prior": 0.033845466661315216,
+          "prefix_summation_delta": 2.265788364427345e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6425922562362995,
+      "table_quantiles_95": [
+        0.6943286522710697,
+        0.6943283498799426,
+        0.6943283498799426
+      ],
+      "delta_quantile_95_tables": 3.0239112702723503e-07,
+      "delta_logZ_tables": 3.1102201347721348e-06,
+      "delta_KL_tables": 8.977063112869388e-07
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.819621390464812,
+          "mean": 0.5171727821588511,
+          "second": 0.3494175067471485,
+          "kl_to_prior": 0.0019039176975109567,
+          "prefix_summation_delta": 3.8268800723778125e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.819621432393957,
+          "mean": 0.5171727610120559,
+          "second": 0.34941749210382106,
+          "kl_to_prior": 0.0019039121209088739,
+          "prefix_summation_delta": 4.6640233100109594e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.819621432393957,
+          "mean": 0.5171727610120559,
+          "second": 0.34941749210382106,
+          "kl_to_prior": 0.0019039121209088739,
+          "prefix_summation_delta": 4.903203992575624e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9533381848596036,
+        0.9533381829969585,
+        0.9533381829969585
+      ],
+      "delta_quantile_95_tables": 1.862645149230957e-09,
+      "delta_logZ_tables": 4.1929144600771906e-08,
+      "delta_KL_tables": 5.57660208289068e-09
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "prior": {
+        "id": "uniform_u_squared_a0_b1",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.853390312185976,
+          "mean": 0.675630115893887,
+          "second": 0.5101156393106929,
+          "kl_to_prior": 0.0008021424673372093,
+          "prefix_summation_delta": 5.202855107065883e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.853390313225892,
+          "mean": 0.6756301152056919,
+          "second": 0.5101156387796735,
+          "kl_to_prior": 0.0008021422951988294,
+          "prefix_summation_delta": 2.8904833717534214e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.853390313225892,
+          "mean": 0.6756301152056919,
+          "second": 0.5101156387796735,
+          "kl_to_prior": 0.0008021422951988294,
+          "prefix_summation_delta": 2.8904833717534214e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.9746794344808963,
+      "table_quantiles_95": [
+        0.9755830788053572,
+        0.9755830788053572,
+        0.9755830788053572
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 1.039916597278534e-09,
+      "delta_KL_tables": 1.7213837993912406e-10
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.718152901209843,
+          "mean": 0.12015821227633194,
+          "second": 0.06214800356275607,
+          "kl_to_prior": 0.0015652626498652567,
+          "prefix_summation_delta": 1.9854243234735674e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.718153331128056,
+          "mean": 0.1201581656567099,
+          "second": 0.06214797690883201,
+          "kl_to_prior": 0.0015652491779831745,
+          "prefix_summation_delta": 6.7504592172433285e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.71815333165827,
+          "mean": 0.12015816559300029,
+          "second": 0.06214797687588023,
+          "kl_to_prior": 0.0015652486308350422,
+          "prefix_summation_delta": 6.750459213664136e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6309573444801939,
+      "table_quantiles_95": [
+        0.6754776652019936,
+        0.6754775487983133,
+        0.6754775487983133
+      ],
+      "delta_quantile_95_tables": 1.164036802503432e-07,
+      "delta_logZ_tables": 4.304484271244746e-07,
+      "delta_KL_tables": 1.4019030214473815e-08
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.72807536923144,
+          "mean": 0.15850397959870524,
+          "second": 0.08204578622911862,
+          "kl_to_prior": 0.001868165901980301,
+          "prefix_summation_delta": 6.68379286027568e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.72807593679601,
+          "mean": 0.15850389628925066,
+          "second": 0.08204573974817135,
+          "kl_to_prior": 0.0018681423132284602,
+          "prefix_summation_delta": 4.849037390217179e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.72807593714603,
+          "mean": 0.15850389623377106,
+          "second": 0.08204573971945368,
+          "kl_to_prior": 0.001868141948451224,
+          "prefix_summation_delta": 4.849037388519918e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7079457843841375,
+      "table_quantiles_95": [
+        0.7436199849531986,
+        0.7436198593503796,
+        0.7436198593503796
+      ],
+      "delta_quantile_95_tables": 1.256028190343983e-07,
+      "delta_logZ_tables": 5.679145900217009e-07,
+      "delta_KL_tables": 2.3953529076914393e-08
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b1",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.747585509445726,
+          "mean": 0.2313211048838059,
+          "second": 0.1206807363291918,
+          "kl_to_prior": 0.002173253919606627,
+          "prefix_summation_delta": 3.855679394041589e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.747586243240878,
+          "mean": 0.23132094434469133,
+          "second": 0.12068064789607026,
+          "kl_to_prior": 0.0021732089260117216,
+          "prefix_summation_delta": 2.698981359704148e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.747586243240878,
+          "mean": 0.23132094434469133,
+          "second": 0.12068064789607026,
+          "kl_to_prior": 0.002173208926011694,
+          "prefix_summation_delta": 2.313412594032127e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.794328234724282,
+      "table_quantiles_95": [
+        0.8180912707047537,
+        0.818091149921529,
+        0.818091149921529
+      ],
+      "delta_quantile_95_tables": 1.2078322475517211e-07,
+      "delta_logZ_tables": 7.33795152640937e-07,
+      "delta_KL_tables": 4.499359493315147e-08
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_a0_b0.8",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.802819426234457,
+          "mean": 0.41330071354583425,
+          "second": 0.22351043974301396,
+          "kl_to_prior": 0.0017239799567374814,
+          "prefix_summation_delta": 1.6742584034232317e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.80281947953455,
+          "mean": 0.41330069220106813,
+          "second": 0.22351042783983804,
+          "kl_to_prior": 0.001723973773039525,
+          "prefix_summation_delta": 2.152617832523706e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.80281947953455,
+          "mean": 0.41330069220106813,
+          "second": 0.22351042783983804,
+          "kl_to_prior": 0.001723973773039525,
+          "prefix_summation_delta": 2.152617832523706e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.76,
+      "table_quantiles_95": [
+        0.7628054764121771,
+        0.7628054741770028,
+        0.7628054741770028
+      ],
+      "delta_quantile_95_tables": 2.2351742678949904e-09,
+      "delta_logZ_tables": 5.3300093227903744e-08,
+      "delta_KL_tables": 6.183697956463341e-09
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "prior": {
+        "id": "uniform_u_squared_a0_b0.8",
+        "kind": "uniform_u_squared",
+        "lower": 0.0,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.835530327102468,
+          "mean": 0.5407937427096339,
+          "second": 0.32685877802205743,
+          "kl_to_prior": 0.0008309804081775701,
+          "prefix_summation_delta": 1.6203779461779806e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.83553032875792,
+          "mean": 0.5407937418384522,
+          "second": 0.326858777481151,
+          "kl_to_prior": 0.0008309801639030528,
+          "prefix_summation_delta": 8.101889717477602e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.83553032875792,
+          "mean": 0.5407937418384522,
+          "second": 0.326858777481151,
+          "kl_to_prior": 0.0008309801639030528,
+          "prefix_summation_delta": 9.259302534260117e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.7797435475847172,
+      "table_quantiles_95": [
+        0.7805634792894125,
+        0.7805634792894125,
+        0.7805634792894125
+      ],
+      "delta_quantile_95_tables": 0.0,
+      "delta_logZ_tables": 1.6554526638401512e-09,
+      "delta_KL_tables": 2.4427451728037397e-10
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.0001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.0001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.713666647790204,
+          "mean": 0.09730516728549649,
+          "second": 0.04022077578088156,
+          "kl_to_prior": 0.001218134032314716,
+          "prefix_summation_delta": 1.0459309117621556e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.713667090363993,
+          "mean": 0.09730512940773978,
+          "second": 0.04022075804680798,
+          "kl_to_prior": 0.0012181223029959498,
+          "prefix_summation_delta": 6.537065305379076e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.713667090909814,
+          "mean": 0.09730512935462841,
+          "second": 0.04022075802485458,
+          "kl_to_prior": 0.0012181217423793134,
+          "prefix_summation_delta": 7.844478362173196e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5104291725436731,
+      "table_quantiles_95": [
+        0.5430787109794559,
+        0.5430786163689101,
+        0.5430786163689101
+      ],
+      "delta_quantile_95_tables": 9.461054584214423e-08,
+      "delta_logZ_tables": 4.4311961033827174e-07,
+      "delta_KL_tables": 1.2289935402698404e-08
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.001_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.001,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.722430394617351,
+          "mean": 0.1295514170599797,
+          "second": 0.05360334391742022,
+          "kl_to_prior": 0.0014727071002813008,
+          "prefix_summation_delta": 5.184023432135955e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.722430984448463,
+          "mean": 0.12955134755934664,
+          "second": 0.053603312389247516,
+          "kl_to_prior": 0.0014726861489465781,
+          "prefix_summation_delta": 9.072035655267467e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.722430984812215,
+          "mean": 0.12955134751222208,
+          "second": 0.05360331236974921,
+          "kl_to_prior": 0.0014726857720558095,
+          "prefix_summation_delta": 9.072035651967496e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.5727109512080819,
+      "table_quantiles_95": [
+        0.5989393781353719,
+        0.5989392747017555,
+        0.5989392747017555
+      ],
+      "delta_quantile_95_tables": 1.034336164495997e-07,
+      "delta_logZ_tables": 5.901948636477528e-07,
+      "delta_KL_tables": 2.132822549127944e-08
+    },
+    {
+      "curve_id": "baseline_d6",
+      "data_id": 6,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "prior": {
+        "id": "log_uniform_u_a0.01_b0.8",
+        "kind": "log_uniform_u",
+        "lower": 0.01,
+        "upper": 0.8
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 9.740120569135517,
+          "mean": 0.1922109475624211,
+          "second": 0.08032529741308231,
+          "kl_to_prior": 0.0017503927442619749,
+          "prefix_summation_delta": 3.8198426556806235e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.740121346075655,
+          "mean": 0.1922108079704406,
+          "second": 0.08032523513420935,
+          "kl_to_prior": 0.0017503512335330096,
+          "prefix_summation_delta": 3.692511698296272e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 9.740121346075655,
+          "mean": 0.1922108079704406,
+          "second": 0.08032523513420933,
+          "kl_to_prior": 0.0017503512335330096,
+          "prefix_summation_delta": 3.5651837086998486e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.6425922562362995,
+      "table_quantiles_95": [
+        0.6599924135254696,
+        0.6599923141999171,
+        0.6599923141999171
+      ],
+      "delta_quantile_95_tables": 9.932555244951402e-08,
+      "delta_logZ_tables": 7.769401388912911e-07,
+      "delta_KL_tables": 4.151072896529939e-08
+    },
+    {
+      "curve_id": "baseline_d7",
+      "data_id": 7,
+      "analysis": "B_G_diagonal_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 5.167572773752578,
+          "mean": 0.5719676171364341,
+          "second": 0.40554519371112946,
+          "kl_to_prior": 0.031610729733304144,
+          "prefix_summation_delta": 2.306078053899884e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.167572847234705,
+          "mean": 0.5719675760506104,
+          "second": 0.40554516392521645,
+          "kl_to_prior": 0.03161069159612773,
+          "prefix_summation_delta": 0.0,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 5.167572847234705,
+          "mean": 0.5719675760506105,
+          "second": 0.4055451639252165,
+          "kl_to_prior": 0.03161069159612784,
+          "prefix_summation_delta": 1.6471984888888362e-16,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9645595592446625,
+        0.9645595573820174,
+        0.9645595573820174
+      ],
+      "delta_quantile_95_tables": 1.862645149230957e-09,
+      "delta_logZ_tables": 7.34821270498287e-08,
+      "delta_KL_tables": 3.813717630585245e-08
+    },
+    {
+      "curve_id": "baseline_d13",
+      "data_id": 13,
+      "analysis": "B_CN_full_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "prior": {
+        "id": "uniform_u_a0_b1",
+        "kind": "uniform_u",
+        "lower": 0.0,
+        "upper": 1.0
+      },
+      "status": "DRAFT_TABLE_ONLY_REFERENCE_INCOMPLETE",
+      "table_summaries": [
+        {
+          "logZ": 1.6652904624739924,
+          "mean": 0.4491268494256522,
+          "second": 0.28414549858090055,
+          "kl_to_prior": 0.01563169930248054,
+          "prefix_summation_delta": 3.825828333025707e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 1.6652903679027686,
+          "mean": 0.44912689068986494,
+          "second": 0.2841455254348651,
+          "kl_to_prior": 0.015631674245168647,
+          "prefix_summation_delta": 3.2372396648637623e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        },
+        {
+          "logZ": 1.6652903679027684,
+          "mean": 0.449126890689865,
+          "second": 0.28414552543486515,
+          "kl_to_prior": 0.015631674245168814,
+          "prefix_summation_delta": 3.38438692235757e-15,
+          "scope": "supplied_log_likelihood_interpolant_only"
+        }
+      ],
+      "prior_quantile_95": 0.95,
+      "table_quantiles_95": [
+        0.9339614161290228,
+        0.9339614217169583,
+        0.9339614217169583
+      ],
+      "delta_quantile_95_tables": 5.587935447692871e-09,
+      "delta_logZ_tables": 9.457122396305806e-08,
+      "delta_KL_tables": 2.5057311725529274e-08
+    }
+  ],
+  "analysis_count": 40,
+  "new_likelihood_values": 0,
+  "new_ORF": 0,
+  "new_draws": 0,
+  "CPU_seconds": 1.470929,
+  "RSS_bytes": 98992128,
+  "interpretation": "Cached table estimates only. No independent reference completion, no SBC or uniform physical certificate."
+}

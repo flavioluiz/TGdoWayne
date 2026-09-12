@@ -11,11 +11,11 @@
     "C07",
     "C08"
   ],
-  "latest_version": "v0.8.5",
+  "latest_version": "v0.8.6",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.8.5/dissertacao.pdf",
-  "updated_at": "2026-09-11",
-  "status_label": "Trabalho pausado a pedido do usuário; C09–C11 preservados como drafts",
+  "latest_pdf": "output/pdf/v0.8.6/dissertacao.pdf",
+  "updated_at": "2026-09-12",
+  "status_label": "Trabalho retomado; C09 em andamento, C09–C11 ainda em draft",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -57,15 +57,13 @@
     "Divergências de forma posterior A_G para B_G avaliadas em quatro dados fixos, com MCSE e covariâncias auditadas; não tratadas como fatores de Bayes.",
     "Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256.",
     "Piloto parcial C09 e reparos D1/D1b preservados: 544316 avaliações acumuladas; 13/14 eventos resolvidos na representação tabulada, caso 10 pendente e todos os intervalos do evento físico [0,1].",
-    "Texto desenvolvido e resultados parciais de C09–C11 incorporados como drafts, com tarefas pendentes e arquivos de retomada. Nenhuma nova simulação física iniciada para v0.8.5."
+    "Texto desenvolvido e resultados parciais de C09–C11 incorporados como drafts, com tarefas pendentes e arquivos de retomada. Nenhuma nova simulação física iniciada para v0.8.5.",
+    "Retomada D2 executada: 13 curvas, 40 análises previstas, 175778 avaliações contabilizadas e caches preservados após limites de recursos; controles pontuais aprovados, referências funcionais incompletas.",
+    "Auditoria reconstruiu as contagens e verificou os cinco caches históricos bit a bit; 40 estimativas tabuladas foram recuperadas como drafts, sem novas likelihoods."
   ],
-  "current_work": "Pausa solicitada pelo usuário após v0.8.5. C09 parcial: piloto e reparos executados; D2/D3 e calibração ampliada pendentes. C10 e C11 têm texto e preparações em draft, sem campanhas de inferência concluídas. C12–C13 permanecem planejados. Retomar somente após nova solicitação. Consulte o plano intermediário C08.5 e docs/pausa_v0.8.5/README.md.",
-  "in_progress_stages": [],
-  "execution_status": "paused_by_user",
-  "paused_stages": [
-    "C09",
-    "C10",
-    "C11"
-  ],
-  "resume_only_on_user_request": true
+  "current_work": "Retomada autorizada pelo usuário. C09 em andamento: D2 executada parcialmente, com referências interrompidas por cotas/CPU e estimativas tabuladas em draft. Próximo passo: corrigir a reserva de encerramento e planejar a continuação das referências usando os caches salvos; depois executar D3 e a calibração ampliada. C10–C11 têm drafts e preparações, C12–C13 permanecem planejados. Consulte docs/retomada_v0.8.6/README.md. Nenhuma simulação permanece em execução após o fechamento deste lote.",
+  "in_progress_stages": ["C09"],
+  "execution_status": "resumed",
+  "paused_stages": [],
+  "resume_only_on_user_request": false
 }
