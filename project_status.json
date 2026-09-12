@@ -11,9 +11,9 @@
     "C07",
     "C08"
   ],
-  "latest_version": "v0.8.10",
+  "latest_version": "v0.8.11",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.8.10/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.8.11/dissertacao.pdf",
   "updated_at": "2026-09-12",
   "status_label": "Trabalho retomado; C09 em andamento, C09–C11 ainda em draft",
   "academic_metadata": {
@@ -64,10 +64,13 @@
     "Continuações D2 contabilizaram 40875 avaliações e 223,28 s CPU; caches e painéis foram reutilizados, falhas preservadas e 37 contrastes pareados sintetizados.",
     "W1 entre posterior e priori passou em todas as 40 análises D2, com referência independente, dois refinamentos, quatro testes analíticos e auditoria dos caches; 87987 avaliações adicionais e 53,53 s CPU.",
     "Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.",
-    "Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas."
+    "Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.",
+    "Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente."
   ],
-  "current_work": "C09 em andamento: D2 tem 40 análises com controles primários e W1; o piloto D3 tem 161 inferências com controles primários e W1, incluindo controles próprios e omissões pareadas. Faltam posteriores da mistura de distâncias, eventos de log-likelihood e a campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_complementos_v0.8.10/README.md. Nenhuma simulação permanece em execução após este lote.",
-  "in_progress_stages": ["C09"],
+  "current_work": "C09 em andamento: 40 análises D2 e 165 do piloto D3 com controles primários e W1. Doze integrações iniciais de distância em draft; faltam referência independente, quantis, W1 e eventos da mistura, eventos físicos pendentes e campanha representativa D3/SBC. C10–C11 têm drafts; C12–C13 permanecem planejados. Consulte docs/d3_distancias_v0.8.11/README.md. Nenhuma simulação deste lote permanece em execução.",
+  "in_progress_stages": [
+    "C09"
+  ],
   "execution_status": "resumed",
   "paused_stages": [],
   "resume_only_on_user_request": false

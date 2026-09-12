@@ -607,13 +607,66 @@ A serialização foi corrigida e recebeu teste de regressão; o histórico
 de falha permanece preservado. A auditoria registra separadamente os
 tempos medidos e a reserva debitada.
 
-O tratamento prospectivo de distâncias usa uma hipótese discreta global,
-marginalizada na likelihood conforme a
-Eq.~\eqref{eq:c09-mistura-distancia}. Sua execução e suas referências
-numéricas próprias continuam pendentes. Essa hipótese não equivale à
-marginalização de doze medidas astrométricas independentes; distâncias
-alteradas também não herdam automaticamente a precisão de uma tabela
-construída nas distâncias nominais.
+Quatro análises adicionais completaram as omissões em \(B_G\), com
+covariância completa e variável. Assim, o trio prospectivo das extensões,
+\(A_0,B_{\rm CN},B_G\), está representado nos quatro dados; \(A_G\)
+permanece um controle suplementar. As quatro curvas passaram nos controles
+primários e W1, totalizando \(165\) análises do piloto. Foram acrescentadas
+\(110\,665\) avaliações e \(11,16\) segundos de CPU. Os quatro intervalos
+numéricos de diferença de \(Q_{95}\), omissão menos inclusão, são negativos:
+aproximadamente \([-0,00339;-0,00143]\), \([-0,01747;-0,01551]\),
+\([-0,00260;-0,00064]\) e \([-0,00629;-0,00433]\), nos dados 9 a 12.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{../figures/robustez/omissoes_piloto.pdf}
+\caption{Quantis superiores nos quatro casos fixos com contaminantes.
+Cada comparação inclusão/omissão usa a mesma observação dentro da família
+analisada; os controles gaussianos não são a mesma observação das estatísticas
+CN. As barras representam intervalos numéricos, frequentemente menores que
+os símbolos, e não intervalos populacionais. As linhas indicam a massa
+injetada e o quantil da priori uniforme. Não se estima cobertura com esses
+quatro casos de engenharia.}
+\label{fig:c09-omissoes}
+\end{figure}
+
+\subsubsection{Integração inicial da mistura de distâncias: draft}
+
+O tratamento de distâncias usa uma hipótese discreta global, marginalizada
+na likelihood conforme a Eq.~\eqref{eq:c09-mistura-distancia}. As escalas
+\(0,9;1;1,1\) têm pesos \(0,25;0,5;0,25\). A soma ponderada ocorre depois
+de formar a densidade conjunta de todas as frequências, ou de todo o vetor
+comprimido. Não se faz média das covariâncias nem se sorteia uma escala
+independente em cada frequência. Essa hipótese não equivale à marginalização
+de doze medidas astrométricas independentes.
+
+As duas escalas alteradas receberam respostas diretas em \(1920\) pares
+de massa e escala, nas quatro frequências. Regras de Gauss--Legendre com
+32 e 64 pontos em dez painéis de \(\alpha=\arcsin u\) usam o jacobiano
+\(\cos\alpha\). Os refinamentos angular e harmônico das respostas têm
+desvios máximos \(2,90\times10^{-12}\) e \(9,66\times10^{-15}\).
+O menor autovalor é \(9,42\times10^{-7}\). Esses controles se aplicam aos
+nós calculados; não são um certificado uniforme de interpolação.
+A escala nominal reutiliza a tabela de C07. O lote consumiu
+\(20,76\) trilhões de produtos reais estimados e \(262,85\) segundos de CPU
+nos workers, com pico máximo de memória de \(854\) MB.
+
+Nos dados 13 e 14, as três famílias \(A_0,B_{\rm CN},B_G\) foram avaliadas
+com distância nominal e com mistura, sob priori uniforme em \(u\).
+As doze integrações iniciais concordaram entre as regras de 32 e 64 pontos.
+As maiores diferenças foram \(2,56\times10^{-4}\) em log-normalização,
+\(6,23\times10^{-5}\) na média, \(6,95\times10^{-5}\) no segundo momento,
+\(5,33\times10^{-5}\) em KL e \(1,19\times10^{-4}\) na CDF avaliada
+nas fronteiras dos painéis. Foram contabilizadas \(17\,334\) avaliações
+de likelihood e \(1,76\) segundo de CPU nessa integração.
+
+\textbf{Esses doze resultados permanecem preliminares.} Falta confrontá-los
+com uma referência adaptativa independente; quantis, W1 e eventos de logL
+da mistura ainda não estão validados. Não se extraem limites de massa de
+somas cumulativas discretas dos pesos de quadratura. O total acumulado de
+C09 passa a \(5\,783\,577\) avaliações de likelihood. Fontes, respostas nas
+três resoluções, caches e recibos estão arquivados em
+\texttt{results/C09/D3\_distancias\_iniciais/}.
 
 O desenho de calibração prevê grupos de \(500\) novas realizações,
 com verdades sorteadas da priori e observações geradas da família
@@ -639,7 +692,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.10}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.11}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.
