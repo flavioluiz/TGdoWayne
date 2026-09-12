@@ -20,7 +20,8 @@ publicar um estado parcial, criar um marco explícito de acompanhamento com novo
 marcar o capítulo como concluído.
 
 Entregas intermediárias: [C08.5 — estado parcial e pausa](commits/C08_5_estado_parcial_e_pausa.md)
-e [C08.6 — retomada e diagnóstico D2](commits/C08_6_retomada_d2.md).
+e [C08.6 — retomada e diagnóstico D2](commits/C08_6_retomada_d2.md), seguidas de
+[C08.7 — referências funcionais D2](commits/C08_7_referencias_d2.md).
 Elas preservam o trabalho parcial e não substituem o marco C09.
 
 ## Sequência de marcos

@@ -6,7 +6,9 @@
 
 Este capítulo reúne a fundamentação, os diagnósticos já executados e as
 pendências de C09. As continuações D1 e D1b foram publicadas na versão~0.8.5;
-a versão~0.8.6 acrescenta a execução limitada de D2 e sua auditoria.
+a versão~0.8.6 acrescentou a execução limitada de D2 e sua auditoria.
+A versão~0.8.7 conclui as referências das quarenta análises para
+normalização, CDF, quantis, momentos e KL, no alcance operacional descrito.
 Os estados inconclusivos são conservados. C09 permanece parcial;
 os componentes e desenhos posteriores não representam resultados de uma
 campanha concluída.
@@ -355,27 +357,79 @@ continuações passa a \(720\,094\) avaliações contabilizadas e
 \(665,52\) segundos de CPU; não se trata do custo total do projeto.
 Não houve repetição automática nem exclusão dos casos incompletos.
 
-\input{tabelas/d2_retoma_draft}
+\subsubsection{Conclusão das referências funcionais}
 
-As estimativas tabuladas acima são \textbf{drafts sem referência
-funcional concluída}. A concordância entre resoluções é apenas um
+Após a publicação da tentativa inicial, a integração foi adaptada para
+retomar prefixos de painéis concluídos, preservando suas contribuições,
+erros, cortes e escala. Foram separadas as reservas de CPU do cálculo,
+do encerramento e do controlador. Um erro de serialização de booleanos
+NumPy interrompeu a primeira continuação após \(1\,411\) avaliações;
+os valores e o painel concluído foram preservados. A correção foi
+verificada com o resultado real, sem fornecer novas likelihoods.
+
+A segunda continuação completou \(38\) análises, deixando duas referências
+no limite por curva. Parte da reserva global não consumida foi realocada
+prospectivamente para essas duas caudas. A última continuação aproveitou
+\(504\) painéis completos e encerrou as quarenta análises. Todas passaram
+nos controles próprios de normalização, CDF, quatro quantis, momentos
+e KL. Os maiores desvios operacionais foram \(1,32\times10^{-5}\) em
+log-evidência, \(8,83\times10^{-6}\) em CDF e \(8,64\times10^{-6}\) em KL.
+Os intervalos numéricos de quantis têm largura de até \(0,00098\).
+
+As três continuações contabilizaram \(40\,875\) avaliações adicionais e
+\(223,28\) segundos de CPU, dentro da reserva global de \(100\,000\)
+avaliações e \(480\) segundos. A contagem histórica passa a
+\(760\,969\) avaliações e \(888,80\) segundos de CPU.
+As falhas anteriores e seus recibos permanecem inalterados. A auditoria
+reconstruiu as contagens, verificou os valores importados bit a bit e
+recalculou os intervalos das razões entre numerador e normalização.
+
+\input{tabelas/d2_continuacao_prioris}
+
+As estimativas acima foram publicadas como drafts na versão~0.8.6.
+Nesta versão, suas cinco quantidades primárias contam com referência
+funcional concluída. A concordância entre resoluções é apenas um
 diagnóstico interno. Entre as três representações usadas nas quarenta
 análises, os maiores desvios foram \(3,40\times10^{-6}\) em log-evidência,
 \(2,69\times10^{-6}\) em divergência KL e \(4,11\times10^{-7}\) no
 quantil de ordem \(0,95\). Esses números descrevem concordância entre
-interpolantes que compartilham os mesmos dados de entrada; não suprem
-as integrações independentes interrompidas.
-Faltam contrastes validados por evidência, CDF,
-quantis, momentos, informação relativa à priori e distância entre
-distribuições. Nenhuma das quarenta análises recebe aprovação funcional
-completa nesta versão.
+interpolantes que compartilham os mesmos dados de entrada; são reportados
+separadamente das referências independentes agora concluídas.
+A distância W1 e os eventos de log-likelihood continuam pendentes.
+A aprovação operacional não constitui uma margem uniforme física ou
+uma calibração SBC.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Contrastes pareados selecionados de quantis de ordem \(0,95\).
+Os intervalos propagam os limites numéricos das duas análises; não são
+intervalos de confiança de um efeito populacional.}
+\label{tab:d2-contrastes}
+\begin{tabular}{@{}llr@{}}\toprule
+Dado & Primeira análise menos segunda & Intervalo para \(\Delta Q_{0,95}\) \\
+\midrule
+6 & Completa fixa menos completa variável & \([-0,003415;-0,001454]\) \\
+6 & Diagonal fixa menos diagonal variável & \([-0,003281;-0,001320]\) \\
+7 & Diagonal variável menos completa variável & \([-0,000457;0,001504]\) \\
+13 & Monopolo incluído menos omitido & \([0,019078;0,021039]\) \\
+7 & Compressão \(B_G\) menos \(A_G\) & \([-0,007843;-0,005882]\) \\
+\bottomrule\end{tabular}
+\end{table}
+
+No dado~6, fixar a covariância reduz o quantil superior nas duas estruturas
+avaliadas. No dado~7, o sinal do efeito da diagonalização variável permanece
+inconclusivo na resolução adotada. Incluir o monopolo no dado~13 aumenta
+o quantil, enquanto a compressão no dado~7 o reduz em relação a \(A_G\).
+Essas afirmações dizem respeito a observações fixas com parâmetros auxiliares
+conhecidos. Não estabelecem uma direção universal do efeito ou sua frequência
+entre realizações. O arquivo de síntese contém \(37\) contrastes pareados,
+incluindo \(27\) mudanças de medida ou suporte de priori.
 
 O fatorial de covariância completa ou diagonal e fixa ou variável já
-teve suas curvas calculadas sobre dados compartilhados, mas a validação
-dos contrastes permanece aberta. A âncora da covariância fixa é \(u=0,5\);
+teve suas curvas e quantis comparados sobre dados compartilhados. A âncora da covariância fixa é \(u=0,5\);
 a média continua variável e o determinante permanece na densidade.
-A direção do efeito sobre os limites será um
-resultado a medir, não uma premissa. Cada quantidade terá seu próprio
+A direção do efeito sobre os limites é avaliada por contraste.
+Cada quantidade tem seu próprio
 controle: a aprovação de quantis não aprova automaticamente uma distância
 de Wasserstein, e uma falha do evento de logL não será apagada pela
 concordância de uma CDF de massa. As regras prospectivas não reclassificam
@@ -424,7 +478,7 @@ das posteriores de cinco parâmetros ou uma reanálise observacional.
 No estado publicado, treze dos catorze eventos da tabela passaram, o
 ID~10 permanece não resolvido e os catorze intervalos físicos de evento
 continuam \([0,1]\). Não há nova calibração SBC em C09. Assim,
-\textbf{C09 não é declarado concluído na versão~0.8.6}; C10 e C11 também
+\textbf{C09 não é declarado concluído na versão~0.8.7}; C10 e C11 também
 permanecem abertos. A fundamentação, os cálculos realizados, os resultados
 inconclusivos e as tarefas restantes são preservados para permitir uma
 retomada sem alterar retroativamente os critérios.

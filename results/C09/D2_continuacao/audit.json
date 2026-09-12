@@ -1,0 +1,1299 @@
+{
+  "status": "AUDITED_WITH_ORIGINAL_EXECUTION_STATUS_PRESERVED",
+  "execution_status": "COMPLETED",
+  "measured_stage_CPU_seconds": 12.800408,
+  "cumulative_CPU_seconds": 888.798588,
+  "additional_charged_values": 4171,
+  "cumulative_values": 760969,
+  "original_values_verified_bitwise": true,
+  "reused_complete_reference_panels": 504,
+  "completed_analyses": 40,
+  "primary_passed": 40,
+  "missing_or_incomplete_curves": [],
+  "analyses": [
+    {
+      "curve_id": "new_d7_BG_full_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9635464847145975,
+        0.9645264847145975
+      ],
+      "mean": 0.5690196389736747,
+      "KL": 0.029077455575708344,
+      "logZ": 5.237009708705669,
+      "delta_logZ": 1.7191694560541055e-07,
+      "delta_CDF": 1.6654481158062673e-07,
+      "delta_KL": 8.678005149123962e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d7_BG_full_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9644340435101092,
+        0.9654140435101092
+      ],
+      "mean": 0.5758342699645067,
+      "KL": 0.03528456080820147,
+      "logZ": 5.2347372301866475,
+      "delta_logZ": 1.912529557295818e-07,
+      "delta_CDF": 1.8564112795951826e-07,
+      "delta_KL": 1.0998698163116701e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d7_BG_diagonal_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9645967120362818,
+        0.9655767120362818
+      ],
+      "mean": 0.576802606046585,
+      "KL": 0.03619148342019701,
+      "logZ": 5.163706371991513,
+      "delta_logZ": 1.9174185567827635e-07,
+      "delta_CDF": 1.8615325325307963e-07,
+      "delta_KL": 1.1175644672335223e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d6_BCN_diagonal_variable",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9525580890534818,
+        0.9535380890534818
+      ],
+      "mean": 0.5158616166845476,
+      "KL": 0.0016345369492689749,
+      "logZ": 9.835162346671694,
+      "delta_logZ": 9.580640716737428e-08,
+      "delta_CDF": 9.163587016275399e-08,
+      "delta_KL": 1.3568314004716968e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d6_BCN_full_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9504132987989485,
+        0.9513932987989485
+      ],
+      "mean": 0.5068482903019972,
+      "KL": 0.0003657054235463239,
+      "logZ": 9.822605672616435,
+      "delta_logZ": 7.225768482572987e-08,
+      "delta_CDF": 6.894687654829257e-08,
+      "delta_KL": 6.395089442654297e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d6_BCN_diagonal_fixed",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9502576878352463,
+        0.9512376878352463
+      ],
+      "mean": 0.5062141886237478,
+      "KL": 0.00031331111493689695,
+      "logZ": 9.837892989445326,
+      "delta_logZ": 7.019580812671443e-08,
+      "delta_CDF": 6.696949424872534e-08,
+      "delta_KL": 5.982585670900265e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d13_BCN_monopole_included",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9535295413865149,
+        0.9545095413865149
+      ],
+      "mean": 0.5187115898621183,
+      "KL": 0.0021731106429204172,
+      "logZ": 8.19754409057711,
+      "delta_logZ": 8.168899199071606e-08,
+      "delta_CDF": 7.814423456931063e-08,
+      "delta_KL": 1.1895521520753145e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "new_d7_AG",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9704090142680705,
+        0.9713890142680704
+      ],
+      "mean": 0.6423793856934887,
+      "KL": 0.13342285555528122,
+      "logZ": 9.983066648575814,
+      "delta_logZ": 2.3331529749812855e-07,
+      "delta_CDF": 2.302451922921861e-07,
+      "delta_KL": 3.4700923322777526e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9704533349780738,
+        0.9714333349780738
+      ],
+      "mean": 0.641687577988328,
+      "KL": 0.13157525932443237,
+      "logZ": -88.41452327145197,
+      "delta_logZ": 2.2498934734524813e-07,
+      "delta_CDF": 2.2193637504337727e-07,
+      "delta_KL": 3.2762832337671725e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9807145893631876,
+        0.9816945893631875
+      ],
+      "mean": 0.7397037428043797,
+      "KL": 0.05596381628285657,
+      "logZ": -88.16502982327869,
+      "delta_logZ": 2.9310527736752543e-09,
+      "delta_CDF": 2.9022394782557415e-09,
+      "delta_KL": 5.191521599662632e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.8958413400287645,
+        0.8968213400287645
+      ],
+      "mean": 0.2693153254438942,
+      "KL": 0.2106388192429305,
+      "logZ": -89.3230043436423,
+      "delta_logZ": 9.71702567509599e-06,
+      "delta_CDF": 6.2012998369165295e-06,
+      "delta_KL": 6.064336715078093e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9124974306335113,
+        0.9134774306335113
+      ],
+      "mean": 0.3225302756413659,
+      "KL": 0.2271839610934976,
+      "logZ": -89.21587615259101,
+      "delta_logZ": 1.1550110458647972e-05,
+      "delta_CDF": 8.108763832503918e-06,
+      "delta_KL": 8.63499859995944e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.929338101103194,
+        0.930318101103194
+      ],
+      "mean": 0.4012019299854377,
+      "KL": 0.22707190857718107,
+      "logZ": -89.03108274125229,
+      "delta_logZ": 2.889373405423612e-06,
+      "delta_CDF": 2.7710426208291117e-06,
+      "delta_KL": 2.6824538958969413e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "uniform_u_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7777271327620745,
+        0.7787071327620745
+      ],
+      "mean": 0.5131165079982816,
+      "KL": 0.12615696656069614,
+      "logZ": -88.59305145881765,
+      "delta_logZ": 3.3553202634838024e-07,
+      "delta_CDF": 3.301627623172876e-07,
+      "delta_KL": 4.2618296658819607e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.785460556024909,
+        0.786440556024909
+      ],
+      "mean": 0.5956996430216349,
+      "KL": 0.061015639734799565,
+      "logZ": -88.34401307543293,
+      "delta_logZ": 4.760743925824127e-09,
+      "delta_CDF": 4.685397757275833e-09,
+      "delta_KL": 7.183996195747217e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7144859299719238,
+        0.7154659299719238
+      ],
+      "mean": 0.20007101298244345,
+      "KL": 0.15848583794612248,
+      "logZ": -89.40295289484285,
+      "delta_logZ": 1.0786019273846562e-05,
+      "delta_CDF": 6.0732384138395545e-06,
+      "delta_KL": 5.303595277340746e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7299154051549175,
+        0.7308954051549175
+      ],
+      "mean": 0.24491246537016503,
+      "KL": 0.17576587646118602,
+      "logZ": -89.30954685918405,
+      "delta_logZ": 1.310671008225254e-05,
+      "delta_CDF": 8.82031410165407e-06,
+      "delta_KL": 7.894547504273813e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d2",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7454240857914464,
+        0.7464040857914463
+      ],
+      "mean": 0.3147702839378263,
+      "KL": 0.1827563353612187,
+      "logZ": -89.14178702352169,
+      "delta_logZ": 3.391966117760603e-06,
+      "delta_CDF": 3.2268144216363037e-06,
+      "delta_KL": 2.6232606538112435e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9512260546965897,
+        0.9522060546965897
+      ],
+      "mean": 0.5450303132690831,
+      "KL": 0.019660554200507552,
+      "logZ": -82.94857516097899,
+      "delta_logZ": 3.251041297122664e-07,
+      "delta_CDF": 3.1545099962726475e-07,
+      "delta_KL": 1.8045586169933183e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9726072847901285,
+        0.9735872847901285
+      ],
+      "mean": 0.679391364108317,
+      "KL": 0.005786746483999378,
+      "logZ": -82.86234184560749,
+      "delta_logZ": 4.534330118488745e-09,
+      "delta_CDF": 4.498850536029109e-09,
+      "delta_KL": 3.443503456114758e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7531946902687569,
+        0.7541746902687568
+      ],
+      "mean": 0.15952806088351137,
+      "KL": 0.029795014084382787,
+      "logZ": -83.33342513783619,
+      "delta_logZ": 8.32684862291335e-06,
+      "delta_CDF": 4.476527759922355e-06,
+      "delta_KL": 1.4861830352463678e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7981765759370661,
+        0.7991565759370661
+      ],
+      "mean": 0.2031925837676317,
+      "KL": 0.03374261024441749,
+      "logZ": -83.28820511667296,
+      "delta_logZ": 1.0530419889080683e-05,
+      "delta_CDF": 6.185394198832128e-06,
+      "delta_KL": 2.396620961052218e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.8468127120390905,
+        0.8477927120390905
+      ],
+      "mean": 0.2785967192129863,
+      "KL": 0.03541695712973747,
+      "logZ": -83.20364733093633,
+      "delta_logZ": 2.8975462242897265e-06,
+      "delta_CDF": 2.5695548436996396e-06,
+      "delta_KL": 9.021864199043605e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "uniform_u_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7658432048803566,
+        0.7668232048803566
+      ],
+      "mean": 0.44656332121127734,
+      "KL": 0.023657681084481602,
+      "logZ": -82.97156562676659,
+      "delta_logZ": 4.155059527846037e-07,
+      "delta_CDF": 4.0298293187829293e-07,
+      "delta_KL": 2.2217278121008578e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7804384646064044,
+        0.7814184646064044
+      ],
+      "mean": 0.5547269639998575,
+      "KL": 0.008633060691168856,
+      "logZ": -82.8614489667905,
+      "delta_logZ": 6.6752502102544924e-09,
+      "delta_CDF": 6.583853399966255e-09,
+      "delta_KL": 4.47058232110483e-09,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.6192253553557115,
+        0.6202053553557115
+      ],
+      "mean": 0.12977154144694764,
+      "KL": 0.026945412794509682,
+      "logZ": -83.34860538916395,
+      "delta_logZ": 8.663788805081952e-06,
+      "delta_CDF": 4.403442119882417e-06,
+      "delta_KL": 1.3892762087231218e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.6554701483657028,
+        0.6564501483657028
+      ],
+      "mean": 0.1671244363860401,
+      "KL": 0.031119468636726766,
+      "logZ": -83.30625064869095,
+      "delta_logZ": 1.1079768650875281e-05,
+      "delta_CDF": 6.426617357224718e-06,
+      "delta_KL": 2.2918598702196673e-06,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d3",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.6938383498799426,
+        0.6948183498799426
+      ],
+      "mean": 0.23341409726105014,
+      "KL": 0.033845466661315216,
+      "logZ": -83.22480971443103,
+      "delta_logZ": 3.1102201347721348e-06,
+      "delta_CDF": 2.636869474700876e-06,
+      "delta_KL": 8.977063112869388e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9528481829969585,
+        0.9538281829969585
+      ],
+      "mean": 0.5171727610120559,
+      "KL": 0.0019039121209088739,
+      "logZ": 9.819621432393957,
+      "delta_logZ": 9.873741599825522e-08,
+      "delta_CDF": 9.4425158206346e-08,
+      "delta_KL": 1.3757687974157105e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "uniform_u_squared_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9750930788053572,
+        0.9760730788053572
+      ],
+      "mean": 0.6756301152056919,
+      "KL": 0.0008021422951988294,
+      "logZ": 9.853390313225892,
+      "delta_logZ": 1.6058598426632753e-09,
+      "delta_CDF": 1.5693373545122569e-09,
+      "delta_KL": 8.027145690227304e-10,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.0001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.6749875487983134,
+        0.6759675487983133
+      ],
+      "mean": 0.12015816559300029,
+      "KL": 0.0015652486308350422,
+      "logZ": 9.71815333165827,
+      "delta_logZ": 1.9031211233071362e-06,
+      "delta_CDF": 9.20851880414908e-07,
+      "delta_KL": 6.113471311918895e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.001_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7431298593503796,
+        0.7441098593503795
+      ],
+      "mean": 0.15850389623377106,
+      "KL": 0.001868141948451224,
+      "logZ": 9.72807593714603,
+      "delta_logZ": 2.4930185795876167e-06,
+      "delta_CDF": 1.2955674319470312e-06,
+      "delta_KL": 1.0534138080185448e-07,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.01_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.817601149921529,
+        0.818581149921529
+      ],
+      "mean": 0.23132094434469133,
+      "KL": 0.002173208926011694,
+      "logZ": 9.747586243240878,
+      "delta_logZ": 7.33795152640937e-07,
+      "delta_CDF": 5.484285432802438e-07,
+      "delta_KL": 4.499359493315147e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "uniform_u_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7623154741770028,
+        0.7632954741770028
+      ],
+      "mean": 0.41330069220106813,
+      "KL": 0.001723973773039525,
+      "logZ": 9.80281947953455,
+      "delta_logZ": 1.2524199316193124e-07,
+      "delta_CDF": 1.196776367728969e-07,
+      "delta_KL": 1.4803735486019933e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": true
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "uniform_u_squared_a0_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.7800734792894125,
+        0.7810534792894125
+      ],
+      "mean": 0.5407937418384522,
+      "KL": 0.0008309801639030528,
+      "logZ": 9.83553032875792,
+      "delta_logZ": 2.2009747434835824e-09,
+      "delta_CDF": 2.111896262035895e-09,
+      "delta_KL": 5.207785755928257e-10,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": true
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.0001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.5425886163689101,
+        0.5435686163689101
+      ],
+      "mean": 0.09730512935462841,
+      "KL": 0.0012181217423793134,
+      "logZ": 9.713667090909814,
+      "delta_logZ": 1.958921222410062e-06,
+      "delta_CDF": 9.126669416326116e-07,
+      "delta_KL": 5.29842222290661e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": true
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.001_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.5984492747017555,
+        0.5994292747017554
+      ],
+      "mean": 0.12955134751222208,
+      "KL": 0.0014726857720558095,
+      "logZ": 9.722430984812215,
+      "delta_logZ": 2.5906007219545297e-06,
+      "delta_CDF": 1.339114030551869e-06,
+      "delta_KL": 9.334449521165692e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": true
+    },
+    {
+      "curve_id": "baseline_d6",
+      "prior_id": "log_uniform_u_a0.01_b0.8",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.6595023141999171,
+        0.6604823141999171
+      ],
+      "mean": 0.1922108079704406,
+      "KL": 0.0017503512335330096,
+      "logZ": 9.740121346075655,
+      "delta_logZ": 7.769401388912911e-07,
+      "delta_CDF": 5.488677635515082e-07,
+      "delta_KL": 4.151072896529939e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": true
+    },
+    {
+      "curve_id": "baseline_d7",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9640695573820174,
+        0.9650495573820174
+      ],
+      "mean": 0.5719675760506105,
+      "KL": 0.03161069159612784,
+      "logZ": 5.167572847234705,
+      "delta_logZ": 1.731594478200541e-07,
+      "delta_CDF": 1.6785753659265268e-07,
+      "delta_KL": 9.139362197455175e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    },
+    {
+      "curve_id": "baseline_d13",
+      "prior_id": "uniform_u_a0_b1",
+      "primary_gates": {
+        "normalization": true,
+        "CDF": true,
+        "quantiles": true,
+        "moments": true,
+        "KL": true
+      },
+      "all_primary_passed": true,
+      "quantile_95_bracket": [
+        0.9334714217169583,
+        0.9344514217169583
+      ],
+      "mean": 0.449126890689865,
+      "KL": 0.015631674245168814,
+      "logZ": 1.6652903679027684,
+      "delta_logZ": 2.230943978216398e-07,
+      "delta_CDF": 2.1215556534476265e-07,
+      "delta_KL": 6.020687229069668e-08,
+      "functional_status": {
+        "CDF": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "KL": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "W1_direct_functional": "UNRESOLVED",
+        "W1_table_integral": "UNRESOLVED",
+        "moments": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "normalization": "PASS_FINITE_DOMAIN_OPERATIONAL",
+        "quantiles": "PASS_FINITE_DOMAIN_OPERATIONAL"
+      },
+      "truth_outside_support": false
+    }
+  ],
+  "W1_direct_pending": true,
+  "logL_event_not_evaluated": true,
+  "SBC_executed": false,
+  "C09_complete": false
+}
