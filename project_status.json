@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_stage": "C10",
+  "current_stage": "C11",
   "completed_stages": [
     "C01",
     "C02",
@@ -11,13 +11,14 @@
     "C07",
     "C08",
     "C09",
-    "C10"
+    "C10",
+    "C11"
   ],
-  "latest_version": "v0.10.0",
+  "latest_version": "v0.11.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.10.0/dissertacao.pdf",
+  "latest_pdf": "output/pdf/v0.11.0/dissertacao.pdf",
   "updated_at": "2026-09-12",
-  "status_label": "C10: extensão escalar condicional concluída; próximo marco C11",
+  "status_label": "C11 concluído — próximo marco: C12",
   "academic_metadata": {
     "author": "Gráviton de Souza",
     "author_status": "Pseudônimo provisório escolhido para esta versão",
@@ -26,6 +27,7 @@
     "advisor_status": "Identificação provisória"
   },
   "completed_work": [
+    "C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.",
     "C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.",
     "C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.",
     "Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.",
@@ -75,10 +77,8 @@
     "C10: preparação, piloto, refinamentos e geração empacotados; 104184 arquivos lógicos restaurados e verificados, em 14 ZIPs novos e dois anteriores. A produção de posteriores permanece em execução e fora desse pacote.",
     "C10: 110257 arquivos lógicos da produção restaurados e conferidos; 74 ZIPs distribuídos no release, com URLs e SHA-256 versionados. Treze testes C10 aprovados também com referências restauradas."
   ],
-  "current_work": "Próximo marco C11/v0.11.0: formalizar o ramo com a auditoria de produtos públicos, validar o benchmark ampliado e executar a comparação prevista. C10 concluído no alcance condicional, com casos indeterminados preservados. C12–C13 abertos; sem releases intermediários.",
-  "in_progress_stages": [
-    "C11"
-  ],
+  "current_work": "C11 concluído no alcance simulado e condicional. Próximo marco: C12/v0.12.0, discussão, conclusões e manuscrito de artigo; depois C13/v0.13.0, auditoria final de reprodução e do documento.",
+  "in_progress_stages": [],
   "execution_status": "resumed",
   "paused_stages": [],
   "resume_only_on_user_request": false

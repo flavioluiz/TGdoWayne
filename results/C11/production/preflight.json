@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_FOR_APPROVED_PRODUCTION",
+  "population": 596,
+  "posterior_targets": 10728,
+  "grid_nodes": 971,
+  "maximum_base_likelihood_values": 20855232,
+  "maximum_new_truth_mass_nodes": 500,
+  "maximum_new_Gamma_matrices": 15000,
+  "maximum_new_response_real_multiplications": 13498156032000,
+  "cpu_seconds_candidate": 7200,
+  "RSS_bytes_candidate": 2147483648,
+  "output_bytes_candidate": 4294967296,
+  "source_sha256": {
+    "tmp/c11_production_v1/run.py": "1da90f3cf0f69b2b5edaf54cd8e7d6a5873d1254fd860fceda3a865842b5dfdf",
+    "tmp/c11_production_v1/generation.py": "3f45ca8ed2e321a70e37d695233f34011ed94056cd9480a9322d948ca217f43c",
+    "tmp/c11_production_v1/check_pilot_roots.py": "d08c8997712e2fd40b636262ffc9767ad1b33f0a9f4cade2ca7aab060f84d03a",
+    "tmp/c11_production_v1/check_pilot.py": "e06d7902b54dd55ca7dc2287589cd5cc956cae0d896c5aac3a157030bad2e857",
+    "tmp/c11_production_v1/test_functional.py": "3354ef90c3e82ed6bf9ddc3a5af0849f3d05f319a6d0af3d1c8b70ce5f904855",
+    "tmp/c11_production_v1/population.py": "ca902a7c5e3675256c2f1cc2c794919182f5ffc024785171a650e453ff106307",
+    "tmp/c11_production_v1/review_references.py": "a42b992c3b6f9dce6607f779a4d71e9ab4e47d10ec6eec2ab747bbc6e6325090",
+    "tmp/c11_production_v1/synthesize.py": "952fdad22258fb990d24f053156fb4a1280efb0ea1590f00082bafc41b7aff6c",
+    "tmp/c11_production_v1/functional.py": "22c7ae26b0aa6849725ce2deca5dc24c5480a5a63f76d756a169db8a8e979a14",
+    "tmp/c11_production_v1/launch.py": "725c27c130373763216a87a50ba4fa76e03d93b39c28c0804b33ad4821f60111",
+    "tmp/c11_production_v1/test_generation.py": "110c5ca3fd767e7ea549be27226e923e779ee05eb3761aff7b918e48c6097b19"
+  },
+  "validation": "Production generator matched the validated pilot bit for bit on synthetic test inputs; last ID/support tests passed. Complete production controller compiled but not executed. Functional reference approval pending.",
+  "config_sha256": "3a4291d51754ccbdd79261596cab03d5638a41a7921985ce301df0a610e15baf",
+  "functional_analysis_CPU_seconds": 3600,
+  "environment": {
+    "python": "3.14.3",
+    "numpy": "2.4.3",
+    "scipy": "1.17.1"
+  }
+}

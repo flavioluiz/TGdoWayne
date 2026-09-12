@@ -1,0 +1,108 @@
+{
+  "status": "preparatory_feasibility_audit_only_no_observational_analysis",
+  "accessed_date": "2026-09-10",
+  "written_utc": "2026-09-10T23:00:08.980030+00:00",
+  "budget_bytes": 20000000,
+  "transferred_content_bytes": 8448463,
+  "budget_scope": "Direct downloaded bodies, including HTTP ranges. HEAD headers and browser rendering are not payload datasets.",
+  "observations_processed": false,
+  "retrieved_external_code_executed": false,
+  "downloaded_full_dataset": "MeerKAT partim only; inventory and parameter keyword schema inspected",
+  "source_hashes": {
+    "docs/contrato_comparacoes.md": "11cf8b686ad2f192b060aff80f093a85dd50a37c485d97b145268e73f695a5b3",
+    "implementation_plan/commits/C11_aplicacao.md": "7f5d2dec827f71ee01aeb1d8bce7d423d7391686a1cb1008e0c8c4221eb2e0b4",
+    "configs/experiments/c06_moments.json": "f6acd7e737be094a7b13888bbbb751a86accfef2501e052e631b1fbcb992019a",
+    "tmp/c06_design/orf_table_cost.json": "c68221924ba0dca03a49c960ca25b736d4f91620615811c41a0ed008c578157f"
+  },
+  "products": [
+    {
+      "product": "NANOGrav15 timing",
+      "record_id": 16051178,
+      "version": "2.1.0",
+      "doi": "10.5281/zenodo.16051178",
+      "publication_date": "2025-07-17",
+      "created": "2025-07-17T20:59:29.837699+00:00",
+      "updated": "2025-07-17T20:59:29.972033+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "name": "NANOGrav15yr_PulsarTiming_v2.1.0.tar.gz",
+          "bytes": 638719668,
+          "checksum": "md5:557d42dd8486a5f8272d90dec9b228a8"
+        }
+      ],
+      "source": "ng15_latest.json"
+    },
+    {
+      "product": "NANOGrav15 KDE",
+      "record_id": 21844115,
+      "version": "2.0.0",
+      "doi": "10.5281/zenodo.21844115",
+      "publication_date": "2026-08-07",
+      "created": "2026-08-07T22:11:07.947340+00:00",
+      "updated": "2026-08-07T22:11:08.128205+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "name": "ceffyl_data.zip",
+          "bytes": 2975291,
+          "checksum": "md5:b18bfd6fcfa310b7b9f9f0b4293eaefe"
+        }
+      ],
+      "source": "ng_kde_latest.json"
+    },
+    {
+      "product": "EPTA DR2",
+      "record_id": 8300645,
+      "version": "2.1",
+      "doi": "10.5281/zenodo.8300645",
+      "publication_date": "2023-06-29",
+      "created": "2023-08-30T08:43:28.481821+00:00",
+      "updated": "2024-05-20T07:20:23.858713+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "name": "EPTA-DR2.zip",
+          "bytes": 39275794,
+          "checksum": "md5:307b2b99cd352876b07409899448af8b"
+        }
+      ],
+      "source": "epta_latest.json"
+    },
+    {
+      "product": "EPTA GWB chains",
+      "record_id": 8091568,
+      "version": "2.0",
+      "doi": "10.5281/zenodo.8091568",
+      "publication_date": "2023-06-29",
+      "created": "2023-07-20T05:57:49.519864+00:00",
+      "updated": "2024-05-17T10:19:02.856978+00:00",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "name": "chains.zip",
+          "bytes": 649471499,
+          "checksum": "md5:b3180fb1e8560a875fa3de5be001c4aa"
+        }
+      ],
+      "source": "epta_gwb_zenodo.json"
+    }
+  ],
+  "decision_recommendation": "Simulation extension with current contract; observational branch conditional on timing/window/noise implementation, benchmark reproduction and calibration.",
+  "known_limitations": [
+    "NG large timing tarball not inspected internally; current README explicitly identifies parameter correlation matrices.",
+    "IPTA license not established in examined API/README/root tree.",
+    "EPTA archive inventory and five small readme/noise configurations inspected; not entire member contents.",
+    "MeerKAT partim contains 83 par+83 tim only; stochastic noise recipe not provided by this archive.",
+    "Public coefficient posterior chains are not observed Fourier coefficients with a joint sampling covariance.",
+    "12 pulsars/4 channels/fL<=888.889 is a temporary cost pilot; integrated C06 has 10 pulsars/3 channels/fL<=60."
+  ]
+}

@@ -1,0 +1,5 @@
+# Controle de invariância geométrica C11
+
+O primeiro benchmark numérico encontrou diferença de 4,5751e-10 exclusivamente na diagonal após rotação; a maior diferença fora da diagonal foi 4,1819e-16. Os quatro controles do subconjunto de 12 pulsares concordaram exatamente. A causa identificada é a propagação de arredondamento do produto escalar próprio na recorrência de Legendre de ordem elevada. Para direções unitárias aceitas pela validação original, o ângulo próprio é zero e P_l(1)=1 exatamente. O candidato corrigido utiliza essa identidade somente na diagonal da geometria harmônica; não altera covariâncias por correção de autovalores, não renormaliza direções inválidas e preserva exatamente os termos fora da diagonal. A tolerância de 1e-10 foi mantida.
+
+O código original e as tentativas permanecem preservados. O novo candidato está em `tmp/c11_pilot16_candidate_v2`; sua validação determinística tem oito testes. A comparação entre resoluções e a integração direta no céu são necessárias para aceitar o benchmark; esse aceite não aprova por si só a inferência ou a campanha estatística.

@@ -1,0 +1,64 @@
+{
+  "schema": "C11_DIRECT_FUNCTIONAL_REVIEW_v1",
+  "completed": 1,
+  "expected": 1,
+  "all_complete": true,
+  "numerical_failures": 0,
+  "quantile_failures": 0,
+  "event_unresolved": 0,
+  "rows": [
+    {
+      "id": 15,
+      "target": {
+        "population": "P16K8",
+        "model": "B_G",
+        "datum_id": 13
+      },
+      "execution_passed": true,
+      "numerical_controls_passed": true,
+      "quantiles_confirmed": true,
+      "event_finite_controls_passed": true,
+      "event_operational_interval": [
+        0.000866321710542196,
+        0.0009576239007898508
+      ],
+      "event_outside_band_mismatches": [],
+      "band_endpoint_checks": [
+        {
+          "lo": 0.9970726750918965,
+          "hi": 0.9970926750918964,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9973265010814256,
+          "hi": 0.9973465010814255,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9985436198617169,
+          "hi": 0.9985636198617168,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9989899999999988,
+          "hi": 0.99901,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9996833467848814,
+          "hi": 0.9997033467848813,
+          "opposite_or_zero_both_levels": true
+        }
+      ],
+      "event_interpretation": "Finite direct-node checks and quadrature sensitivity; does not prove absence of all unsampled crossings.",
+      "bindings": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_15/run_15/end.json": "64fca503c99c8db626ac83ab24e6fac9ce7beba7d8568291cbe8c485867bf66e",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_15/run_15/level_0.npz": "1eeb1d2c96556216b273db08589de232b6e28a90b3c1761c6ed83ec01738162f",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_15/run_15/level_1.npz": "2f613c1f9f83c5d0848b1014479cc3f3c1edbb08f2fa598bb1b288835958717a"
+      }
+    }
+  ],
+  "source_sha256": "4066e3caebd2341039782f8aa0e8d2b420be160070aa39a9c6ece4842cdf5463",
+  "plan_sha256": "3204baba1f0d5c63fd14d37445cbb658972c44389b2a9bb65e0101d96b732391",
+  "production_approved": false
+}

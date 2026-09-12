@@ -1,0 +1,70 @@
+{
+  "CPU_scope": "process start imports plus all waited child exits; ROOT must append controller-exit receipt",
+  "authorization_sha256": "f97928e131a7012d70c34ae35cb2415f7e9c86107d8e7cfc0f99129f98bc2d04",
+  "counts": {
+    "LL": 0,
+    "real": 10561408768,
+    "sky": 0
+  },
+  "counts_complete": false,
+  "failure": {
+    "message": "[Errno 1] Operation not permitted: '/bin/ps'",
+    "type": "PermissionError"
+  },
+  "functional_validation_complete": false,
+  "historical_cpu_seconds": 0.0,
+  "historical_output_upper_bytes": 0,
+  "manifest_sha256": "77c9fbf23791195b51b53b775edad8ed9f94fc4801f14d05e0de5ffc30f4689e",
+  "no_automatic_next_stage": true,
+  "output_bytes_before_final_receipt": 563016,
+  "passed": false,
+  "plan_sha256": "e16dc2f26f5b6875772cee1bd0867d348d979ce2331c35df59377f5c55403e4b",
+  "probe_receipts": [],
+  "production500_approved": false,
+  "resources": {
+    "cpu_seconds": 2.1239850000000002,
+    "rss_child_max_bytes": 143458304,
+    "rss_parent_bytes": 26525696,
+    "rss_sum_of_maxima_bytes": 169984000
+  },
+  "schema": "C11_PHASE_END_v1",
+  "sky_receipts": [],
+  "stage": "benchmark",
+  "uncertain_child_state": false,
+  "unresolved_worker_upper_reservation": {
+    "operation": "harmonic",
+    "request_sha256": "371377cbaa356b03cea36b0cda6b67d01317a38ac3328c3aa0efce614b739ae8",
+    "upper": {
+      "LL": 0,
+      "real": 412979118224,
+      "sky": 3157467488
+    }
+  },
+  "wall_seconds": 2.2306475000004866,
+  "worker_receipts": [
+    {
+      "exit_code": 0,
+      "operation": "harmonic",
+      "receipt": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_benchmark_v1/job_00_end.json",
+      "sha256": "1eb4fe929cc5e183f7818311d84c1fd8b275b7fcfcc4feecefcbe639680896ae"
+    },
+    {
+      "exit_code": 0,
+      "operation": "harmonic",
+      "receipt": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_benchmark_v1/job_01_end.json",
+      "sha256": "8686faac56a301ca260d975e43e0515d96e2bce02f2265916ac9dd256f4a9423"
+    },
+    {
+      "exit_code": 0,
+      "operation": "harmonic",
+      "receipt": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_benchmark_v1/job_02_end.json",
+      "sha256": "2743f0c9a4fb515a76692ae3d6f68516ad44093f4cf8b4e5e79d3b65e1e6dfec"
+    },
+    {
+      "exit_code": 0,
+      "operation": "harmonic",
+      "receipt": "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_benchmark_v1/job_03_end.json",
+      "sha256": "4caa23b3a62ee2f9b339c3b9c967c27b9fdcb7bd5b1cf2db41b9f8039e32cf14"
+    }
+  ]
+}

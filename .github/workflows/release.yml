@@ -25,6 +25,8 @@ jobs:
           .venv/bin/python -m unittest discover -s tests -p 'test_c09*.py' -v
           .venv/bin/python scripts/restaurar_preproducao_c10.py --destination .
           .venv/bin/python -m unittest discover -s tests -p 'test_c10*.py' -v
+          .venv/bin/python scripts/restaurar_c11.py --destination .
+          .venv/bin/python -m unittest discover -s tests -p 'test_c11*.py' -v
       - name: Conferir checagens, fontes e PDF versionado
         env:
           RELEASE_VERSION: ${{ github.ref_name }}

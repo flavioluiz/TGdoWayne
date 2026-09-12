@@ -1,0 +1,144 @@
+{
+  "schema": "C11_DIRECT_FUNCTIONAL_REVIEW_v1",
+  "completed": 3,
+  "expected": 3,
+  "all_complete": true,
+  "numerical_failures": 0,
+  "quantile_failures": 0,
+  "event_unresolved": 0,
+  "rows": [
+    {
+      "id": 5,
+      "target": {
+        "population": "P12K4",
+        "model": "A_G",
+        "datum_id": 10
+      },
+      "execution_passed": true,
+      "numerical_controls_passed": true,
+      "quantiles_confirmed": true,
+      "event_finite_controls_passed": true,
+      "event_operational_interval": [
+        0.9122037634553231,
+        0.912283665476663
+      ],
+      "event_outside_band_mismatches": [],
+      "band_endpoint_checks": [
+        {
+          "lo": 0.94999,
+          "hi": 0.9500099999999999,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9999646446002227,
+          "hi": 0.9999846446002226,
+          "opposite_or_zero_both_levels": true
+        }
+      ],
+      "event_interpretation": "Finite direct-node checks and quadrature sensitivity; does not prove absence of all unsampled crossings.",
+      "bindings": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_05/end.json": "7d7aa2e6f832a58e777c37a111c5e43196e755b62e52ff706735f1523e89f50b",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_05/level_0.npz": "a03be8988aca22481872ab9dfa719f7c7324e27b7ce3cc24126a5fa11f04cfa7",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_05/level_1.npz": "ce0e2d729c3fa6a1c7d33c319a5fc508b0483f4d6d504e569589f92c57b85c85"
+      }
+    },
+    {
+      "id": 6,
+      "target": {
+        "population": "P12K4",
+        "model": "B_G",
+        "datum_id": 12
+      },
+      "execution_passed": true,
+      "numerical_controls_passed": true,
+      "quantiles_confirmed": true,
+      "event_finite_controls_passed": true,
+      "event_operational_interval": [
+        0.003750861679356417,
+        0.0038505738151124826
+      ],
+      "event_outside_band_mismatches": [],
+      "band_endpoint_checks": [
+        {
+          "lo": 0.99499,
+          "hi": 0.99501,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9967685092711268,
+          "hi": 0.9967885092711267,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9970158488901714,
+          "hi": 0.9970358488901713,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9989081294019642,
+          "hi": 0.9989281294019641,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9991554068741751,
+          "hi": 0.999175406874175,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9999822945781135,
+          "hi": 1.0,
+          "opposite_or_zero_both_levels": true
+        }
+      ],
+      "event_interpretation": "Finite direct-node checks and quadrature sensitivity; does not prove absence of all unsampled crossings.",
+      "bindings": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_06/end.json": "5f1a81880801223e2fab664eaee63e13ca318fc91075a41049799654c466c423",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_06/level_0.npz": "5a688188a0812a1a28cbb71a11bdc719916ebfdf58c3bddb63833dd111d0c871",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_06/level_1.npz": "16f686204c83ea9fe376c95c37e858aabb0edcb0abe99b3df0c0c70bfa46a363"
+      }
+    },
+    {
+      "id": 7,
+      "target": {
+        "population": "P12K4",
+        "model": "C_beta_G",
+        "datum_id": 14
+      },
+      "execution_passed": true,
+      "numerical_controls_passed": true,
+      "quantiles_confirmed": true,
+      "event_finite_controls_passed": true,
+      "event_operational_interval": [
+        0.9371184476643919,
+        0.937187605297143
+      ],
+      "event_outside_band_mismatches": [],
+      "band_endpoint_checks": [
+        {
+          "lo": 0.941990448795595,
+          "hi": 0.9420104487955949,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9996132327725402,
+          "hi": 0.9996332327725401,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9998900000000001,
+          "hi": 0.99991,
+          "opposite_or_zero_both_levels": true
+        }
+      ],
+      "event_interpretation": "Finite direct-node checks and quadrature sensitivity; does not prove absence of all unsampled crossings.",
+      "bindings": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_07/end.json": "84e159e7d5de9fc65aacb5790cf213561c2a10ee79ec84bc1c9bc4fefb9aa3ad",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_07/level_0.npz": "3276eda53e1b8e16df128b52201104c678e702486ce95bc14a519e363f613c2a",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_v1/run_07/level_1.npz": "a251bdd4ce5bb8badbd7453cd1ea5874f5316616b40fee65ed2e63a26cbd7da7"
+      }
+    }
+  ],
+  "source_sha256": "905776bc81b3acfc32a937d1f937c50177586e62729e1697e6a4a76d2b63d147",
+  "plan_sha256": "22a00cc09ddd1886424a390744de8ad41de46201973305832bdff0425352de89",
+  "production_approved": false
+}

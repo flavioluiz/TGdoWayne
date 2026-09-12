@@ -10,20 +10,21 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**C10: extensão escalar condicional concluída; próximo marco C11**
+**C11 concluído — próximo marco: C12**
 
-**Última etapa concluída:** C10 — Extensão com helicidade zero vinculada.
+**Última etapa concluída:** C11 — Aplicação pública ou extensão simulada.
 
-**Progresso:** 10 de 13 marcos concluídos.
+**Progresso:** 11 de 13 marcos concluídos.
 
-**Próxima etapa:** C11 — Aplicação pública ou extensão simulada.
+**Próxima etapa:** C12 — Discussão, conclusões e manuscrito.
 
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.10.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.10.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.10.0) · [PDF versionado no repositório](output/pdf/v0.10.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.11.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.11.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.11.0) · [PDF versionado no repositório](output/pdf/v0.11.0/dissertacao.pdf)
 
 ### O que já foi executado
 
+- C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.
 - C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.
 - C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.
 - Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.
@@ -75,7 +76,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 
 ### O que está em andamento e o que falta
 
-Próximo marco C11/v0.11.0: formalizar o ramo com a auditoria de produtos públicos, validar o benchmark ampliado e executar a comparação prevista. C10 concluído no alcance condicional, com casos indeterminados preservados. C12–C13 abertos; sem releases intermediários.
+C11 concluído no alcance simulado e condicional. Próximo marco: C12/v0.12.0, discussão, conclusões e manuscrito de artigo; depois C13/v0.13.0, auditoria final de reprodução e do documento.
 
 ## Roadmap
 
@@ -93,8 +94,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C08 | Resultados sobre compressão em frequência | `v0.8.0` | Concluída | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
 | C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Concluída | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Concluída | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
-| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Em andamento | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
-| C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Planejada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
+| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Concluída | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
+| C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Próxima — não iniciada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
 | C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Planejada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
 
 [Plano geral de execução](implementation_plan/README.md). O cronograma científico é de 24 meses; os marcos são liberados por critérios de conclusão, não só por data.

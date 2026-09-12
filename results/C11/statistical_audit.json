@@ -1,0 +1,285 @@
+{
+  "schema": "C11_AGGREGATION_AUDIT_v1",
+  "passed": true,
+  "checks": 396,
+  "observations": 596,
+  "posterior_targets": 10728,
+  "SBC_per_product": 500,
+  "decisions": {
+    "correct": {
+      "tests": 42,
+      "persistent": 0,
+      "indeterminate": 3,
+      "flagged": [
+        {
+          "population": "P12K4",
+          "model": "A0_CN",
+          "test": "KS_logL_PIT",
+          "holm_lower": 1.326257457277184e-29,
+          "holm_upper": 1.0,
+          "persistent_rejection": false
+        },
+        {
+          "population": "P12K4",
+          "model": "A_G",
+          "test": "KS_logL_PIT",
+          "holm_lower": 0.0017672846528641274,
+          "holm_upper": 1.0,
+          "persistent_rejection": false
+        },
+        {
+          "population": "P16K8",
+          "model": "A0_CN",
+          "test": "KS_logL_PIT",
+          "holm_lower": 3.848580119702656e-48,
+          "holm_upper": 1.0,
+          "persistent_rejection": false
+        }
+      ]
+    },
+    "approximate": {
+      "tests": 84,
+      "persistent": 1,
+      "indeterminate": 1,
+      "flagged": [
+        {
+          "population": "P12K4",
+          "model": "A_CN",
+          "test": "KS_logL_PIT",
+          "holm_lower": 4.630813018520632e-12,
+          "holm_upper": 0.004956181633620029,
+          "persistent_rejection": true
+        },
+        {
+          "population": "P16K8",
+          "model": "A_CN",
+          "test": "KS_logL_PIT",
+          "holm_lower": 0.0001794864459417308,
+          "holm_upper": 1.0,
+          "persistent_rejection": false
+        }
+      ]
+    }
+  },
+  "prior_information": [
+    {
+      "population": "P12K4",
+      "model": "A0_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.06922679906904355,
+      "median_KL_nats": 0.03943812593178109,
+      "MCSE_mean_KL": 0.004119961435981765,
+      "event_unresolved_prior": 130,
+      "event_unresolved_all": 148
+    },
+    {
+      "population": "P12K4",
+      "model": "A_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0990722658078329,
+      "median_KL_nats": 0.05581669662955058,
+      "MCSE_mean_KL": 0.00669836892992069,
+      "event_unresolved_prior": 35,
+      "event_unresolved_all": 41
+    },
+    {
+      "population": "P12K4",
+      "model": "B_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.004593432747393661,
+      "median_KL_nats": 0.00178334025546234,
+      "MCSE_mean_KL": 0.00039636831852386275,
+      "event_unresolved_prior": 16,
+      "event_unresolved_all": 17
+    },
+    {
+      "population": "P12K4",
+      "model": "C_beta_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0055935124734541345,
+      "median_KL_nats": 0.002104315281583169,
+      "MCSE_mean_KL": 0.0004914077836586111,
+      "event_unresolved_prior": 15,
+      "event_unresolved_all": 17
+    },
+    {
+      "population": "P12K4",
+      "model": "C_full_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0055950119269775065,
+      "median_KL_nats": 0.002104743934477682,
+      "MCSE_mean_KL": 0.0004915650713573547,
+      "event_unresolved_prior": 14,
+      "event_unresolved_all": 16
+    },
+    {
+      "population": "P12K4",
+      "model": "A_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.06565077709034778,
+      "median_KL_nats": 0.0313853596047009,
+      "MCSE_mean_KL": 0.004790873749290886,
+      "event_unresolved_prior": 43,
+      "event_unresolved_all": 47
+    },
+    {
+      "population": "P12K4",
+      "model": "B_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0035369165698999902,
+      "median_KL_nats": 0.0016991699363749918,
+      "MCSE_mean_KL": 0.00025375354246646206,
+      "event_unresolved_prior": 21,
+      "event_unresolved_all": 24
+    },
+    {
+      "population": "P12K4",
+      "model": "C_beta_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0042439996061731195,
+      "median_KL_nats": 0.002064216372525851,
+      "MCSE_mean_KL": 0.000310799412201062,
+      "event_unresolved_prior": 18,
+      "event_unresolved_all": 22
+    },
+    {
+      "population": "P12K4",
+      "model": "C_full_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.004245011002324451,
+      "median_KL_nats": 0.002064408927506367,
+      "MCSE_mean_KL": 0.0003108849769277776,
+      "event_unresolved_prior": 22,
+      "event_unresolved_all": 26
+    },
+    {
+      "population": "P16K8",
+      "model": "A0_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.11365567658717657,
+      "median_KL_nats": 0.054912926081669866,
+      "MCSE_mean_KL": 0.0064310241269661,
+      "event_unresolved_prior": 164,
+      "event_unresolved_all": 184
+    },
+    {
+      "population": "P16K8",
+      "model": "A_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.14628014479198187,
+      "median_KL_nats": 0.07855025194531384,
+      "MCSE_mean_KL": 0.009421967407390019,
+      "event_unresolved_prior": 26,
+      "event_unresolved_all": 31
+    },
+    {
+      "population": "P16K8",
+      "model": "B_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0050550651977307685,
+      "median_KL_nats": 0.0021254699514425823,
+      "MCSE_mean_KL": 0.0003779976186852237,
+      "event_unresolved_prior": 13,
+      "event_unresolved_all": 16
+    },
+    {
+      "population": "P16K8",
+      "model": "C_beta_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.006110640280694344,
+      "median_KL_nats": 0.0025441211550316645,
+      "MCSE_mean_KL": 0.0004625328741454504,
+      "event_unresolved_prior": 10,
+      "event_unresolved_all": 13
+    },
+    {
+      "population": "P16K8",
+      "model": "C_full_CN",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.006112591258805292,
+      "median_KL_nats": 0.0025449094074905254,
+      "MCSE_mean_KL": 0.00046269212887147004,
+      "event_unresolved_prior": 14,
+      "event_unresolved_all": 17
+    },
+    {
+      "population": "P16K8",
+      "model": "A_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.11055064117672483,
+      "median_KL_nats": 0.05823336902120957,
+      "MCSE_mean_KL": 0.006932692596822451,
+      "event_unresolved_prior": 28,
+      "event_unresolved_all": 35
+    },
+    {
+      "population": "P16K8",
+      "model": "B_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.0042383378369226215,
+      "median_KL_nats": 0.0019461080962719368,
+      "MCSE_mean_KL": 0.0002916742670138368,
+      "event_unresolved_prior": 12,
+      "event_unresolved_all": 14
+    },
+    {
+      "population": "P16K8",
+      "model": "C_beta_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.005082799287001878,
+      "median_KL_nats": 0.0023261664652878267,
+      "MCSE_mean_KL": 0.0003542998658551979,
+      "event_unresolved_prior": 10,
+      "event_unresolved_all": 12
+    },
+    {
+      "population": "P16K8",
+      "model": "C_full_G",
+      "prior_replicates": 500,
+      "mean_KL_nats": 0.005084373362794924,
+      "median_KL_nats": 0.0023269380473083245,
+      "MCSE_mean_KL": 0.000354415147050884,
+      "event_unresolved_prior": 12,
+      "event_unresolved_all": 13
+    }
+  ],
+  "paired_information": [
+    {
+      "population": "P12K4",
+      "contrast": "A_G minus B_G",
+      "mean_KL_difference_nats": 0.06211386052044778,
+      "MCSE": 0.004772419318448173,
+      "replicates": 500
+    },
+    {
+      "population": "P16K8",
+      "contrast": "A_G minus B_G",
+      "mean_KL_difference_nats": 0.10631230333980221,
+      "MCSE": 0.006947356478105086,
+      "replicates": 500
+    }
+  ],
+  "input_sha256": {
+    "results/C11/production_synthesis/synthesis.json": "fdba87e85dd2e8b8f91421f4ed31791ed7f4ac8326d989b5ced6edd5e1e39853",
+    "tmp/c11_synthesis_v1/P12K4_A0_CN.json": "93e6e661372265868a2150a2b8ac8b3bd8f883dfe16c9f734d2f7a86014b2a96",
+    "tmp/c11_synthesis_v1/P12K4_A_CN.json": "aa8632544d946ed5d9d3e39da543799f80a09d55fc2a6b329b4d9492651912ba",
+    "tmp/c11_synthesis_v1/P12K4_B_CN.json": "3ed87d0cde184ee3df9771d44285a8231caa123c84e9124c407e1fe8b31999f6",
+    "tmp/c11_synthesis_v1/P12K4_C_beta_CN.json": "05406c28e2e396c2046966b8a11585efbceb4cfef74490174304c96514065e0c",
+    "tmp/c11_synthesis_v1/P12K4_C_full_CN.json": "2c5f8fc85c60aeb9d0c6c8824159e5993fcb082c7c59e8b2e04e3596d375e737",
+    "tmp/c11_synthesis_v1/P12K4_A_G.json": "8d2f21276179fe7b497f5134ef1175e6e0977faf9926e5e9ba2e6e64dbd0608f",
+    "tmp/c11_synthesis_v1/P12K4_B_G.json": "112f894dfcf4236e2746bb9b18418dfbab39d20fb1efeb8d7cae91c34b2820a0",
+    "tmp/c11_synthesis_v1/P12K4_C_beta_G.json": "8ff2f8c337e122052c78e91bd3925a64929d85ce9a9b99b6e9b30abbf3a6491d",
+    "tmp/c11_synthesis_v1/P12K4_C_full_G.json": "d4f206b77abcb8c3f8aea709273f854121657ad0dd1fc6335bcc5c37a9f93264",
+    "tmp/c11_synthesis_v1/P16K8_A0_CN.json": "a522ad8856ff29a5d132a3b4fa041b1556aef5f62f9619eaae7c564f11404410",
+    "tmp/c11_synthesis_v1/P16K8_A_CN.json": "9ef4582eb32c7a1b4b8e713b11ead6a1a02abeeb6c4806af39c1abdc7df54d61",
+    "tmp/c11_synthesis_v1/P16K8_B_CN.json": "68b726cce1c97dc468a61850ae1c36428eac7696b038e1fedb2fb7d747feda15",
+    "tmp/c11_synthesis_v1/P16K8_C_beta_CN.json": "49e8aac3ce0f421d25f754c897f786ffc313574c6757af9fe7e215c1d68ec1e8",
+    "tmp/c11_synthesis_v1/P16K8_C_full_CN.json": "06256669ecc84f20f01fa474ecb9c272ab1f07ff3533be104b9b6db6b3d9d564",
+    "tmp/c11_synthesis_v1/P16K8_A_G.json": "5a1c8acf80a3dcf1c3bf9f937378c59c4b1376753de46315ba53aa6eaae4b292",
+    "tmp/c11_synthesis_v1/P16K8_B_G.json": "b7376258d0062fa3b22899b5b60767bf8b5285d548c3a2093d91a79011c44671",
+    "tmp/c11_synthesis_v1/P16K8_C_beta_G.json": "043dc2be5c0df9e0cdc36f25e8d33d450042c43d80919e152bf4d3c8fc7e7be4",
+    "tmp/c11_synthesis_v1/P16K8_C_full_G.json": "e63af8296bd60f04e1c5b33caa6e48965852389017192b90edfb2532f286f33a"
+  },
+  "script_sha256": "a02142380d00ac903af54b028ed087a3e6f85bb4486ee02179d256daceb31eb1",
+  "scope": "Independent aggregation from retained functional outputs; finite functional validation is separate. KS survival function uses SciPy in both implementations. MCSE describes simulation variation, not numerical systematic error; KL under approximate models is descriptive, not mutual information."
+}

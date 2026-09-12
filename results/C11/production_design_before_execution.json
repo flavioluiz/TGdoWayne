@@ -1,0 +1,146 @@
+{
+  "schema": "C11_PRODUCTION_DESIGN_v1",
+  "status": "DESIGN_PENDING_FUNCTIONAL_REFERENCE_REVIEW",
+  "execution_enabled": false,
+  "observational_analysis": false,
+  "geometry_path": "configs/application/c11_geometry.json",
+  "geometry_sha256": "aa0c82276e7baf858d39f22fe0bbbbce212c5784ec547ca3e142987124ead10c",
+  "populations": [
+    "P12K4",
+    "P16K8"
+  ],
+  "models": [
+    "A0_CN",
+    "A_CN",
+    "B_CN",
+    "C_beta_CN",
+    "C_full_CN",
+    "A_G",
+    "B_G",
+    "C_beta_G",
+    "C_full_G"
+  ],
+  "master_seed": 20260912011,
+  "truth_rng_recipe": [
+    20260912011,
+    11,
+    0,
+    0
+  ],
+  "data_rng_recipe": [
+    20260912011,
+    11,
+    "datum_id",
+    "bank",
+    "physical_channel"
+  ],
+  "prior": {
+    "variable": "u=f_g*T",
+    "distribution": "uniform",
+    "support": [
+      0.0,
+      1.0
+    ],
+    "replicates": 500
+  },
+  "central_eta": [
+    -15.0,
+    4.333333333333333,
+    -15.5,
+    0.0
+  ],
+  "fixed_cells": [
+    {
+      "u": 0.0,
+      "eta": [
+        -15.0,
+        4.333333333333333,
+        -15.5,
+        0.0
+      ],
+      "replicates": 32
+    },
+    {
+      "u": 0.995,
+      "eta": [
+        -15.0,
+        4.333333333333333,
+        -15.5,
+        0.0
+      ],
+      "replicates": 32
+    },
+    {
+      "u": 0.5,
+      "eta": [
+        -15.0,
+        4.333333333333333,
+        -14.7,
+        0.0
+      ],
+      "replicates": 32
+    }
+  ],
+  "observations": 596,
+  "posterior_targets": 10728,
+  "paired_populations": true,
+  "CN_and_G_independent_latent_banks": true,
+  "correct_SBC_family": {
+    "groups": [
+      "A0_CN",
+      "A_G",
+      "B_G"
+    ],
+    "populations": 2,
+    "tests_per_group": 7,
+    "total_tests": 42,
+    "adjustment": "Holm",
+    "alpha": 0.05
+  },
+  "approximate_SBC_family": {
+    "groups": [
+      "A_CN",
+      "B_CN",
+      "C_beta_CN",
+      "C_full_CN",
+      "C_beta_G",
+      "C_full_G"
+    ],
+    "populations": 2,
+    "tests_per_group": 7,
+    "total_tests": 84,
+    "adjustment": "Holm",
+    "alpha": 0.05
+  },
+  "SBC_tests": [
+    "KS_mass_PIT",
+    "KS_logL_PIT",
+    "coverage_05",
+    "coverage_50",
+    "coverage_90",
+    "coverage_95",
+    "central_05_95"
+  ],
+  "fixed_cells_excluded_from_SBC": true,
+  "unresolved_PIT_interval": [
+    0.0,
+    1.0
+  ],
+  "discard_failed_ids": false,
+  "gates": {
+    "logZ": 0.001,
+    "moments_KL_W1": 0.001,
+    "CDF": 0.002,
+    "quantile_width": 0.001,
+    "logL_harmonic": 0.001
+  },
+  "cpu_seconds_candidate": 7200,
+  "RSS_bytes_candidate": 2147483648,
+  "output_bytes_candidate": 4294967296,
+  "prerequisites": [
+    "C11 direct functional references reviewed",
+    "Production source and resource plan frozen",
+    "No simulation started by preparing this design"
+  ],
+  "scope": "Conditional periodic simulation. More pulsars and modes vary together. No observational mass bound or nuisance marginalization."
+}

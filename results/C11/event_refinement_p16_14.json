@@ -1,0 +1,74 @@
+{
+  "schema": "C11_DIRECT_FUNCTIONAL_REVIEW_v1",
+  "completed": 1,
+  "expected": 1,
+  "all_complete": true,
+  "numerical_failures": 0,
+  "quantile_failures": 0,
+  "event_unresolved": 0,
+  "rows": [
+    {
+      "id": 14,
+      "target": {
+        "population": "P16K8",
+        "model": "A_G",
+        "datum_id": 11
+      },
+      "execution_passed": true,
+      "numerical_controls_passed": true,
+      "quantiles_confirmed": true,
+      "event_finite_controls_passed": true,
+      "event_operational_interval": [
+        0.9857618492800221,
+        0.9860035345973905
+      ],
+      "event_outside_band_mismatches": [],
+      "band_endpoint_checks": [
+        {
+          "lo": 0.9899899999999991,
+          "hi": 0.99001,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9926692645708906,
+          "hi": 0.9926892645708905,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9936999416079195,
+          "hi": 0.9937199416079194,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9948304840638381,
+          "hi": 0.994850484063838,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9952693326086803,
+          "hi": 0.9952893326086802,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9976925025854563,
+          "hi": 0.9977125025854562,
+          "opposite_or_zero_both_levels": true
+        },
+        {
+          "lo": 0.9980518827180243,
+          "hi": 0.9980718827180242,
+          "opposite_or_zero_both_levels": true
+        }
+      ],
+      "event_interpretation": "Finite direct-node checks and quadrature sensitivity; does not prove absence of all unsampled crossings.",
+      "bindings": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_14/run_14/end.json": "be9cb3d7a60124a2625d7e7bac6723e47a375261828e5dbdc06fbebd80f8bf78",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_14/run_14/level_0.npz": "dd78956c641f91fc7ab1c55e0ea05b19017eca74556d1915f94a52ef02e523b7",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/c11_event_refinement_p16_14/run_14/level_1.npz": "dd1270ce333a5b7d23d0feac08b8dfd79ade344da9b8275b7f43a9ce340c1c69"
+      }
+    }
+  ],
+  "source_sha256": "06fe80d1e2c65e7d566e1efd748c11a4b40b76f14e1e5936929c83db3bb3d558",
+  "plan_sha256": "b44c251281e79b650e6f137bf3c697c70ee28e40f473cf161d9f886611379efd",
+  "production_approved": false
+}

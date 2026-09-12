@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] A decisão de ramo é registrada antes de executar a análise e sustentada pela auditoria dos produtos.
-- [ ] Não se reconstrói artificialmente informação em frequência a partir de correlações já comprimidas.
-- [ ] Resultados simulados permanecem rotulados como simulação; uma nova restrição observacional exige dados e validação adequados.
+- [x] A decisão de ramo é registrada antes de executar a análise e sustentada pela auditoria dos produtos.
+- [x] Não se reconstrói artificialmente informação em frequência a partir de correlações já comprimidas.
+- [x] Resultados simulados permanecem rotulados como simulação; uma nova restrição observacional exige dados e validação adequados.
 
 ## Validação exigida
 
@@ -57,3 +57,7 @@ A ausência de dados completos não bloqueia o artigo metodológico; restringe a
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência de execução
+
+Campanha: 596 realizações, 10728 posteriores. Auditoria de geração e 396 verificações de agregação aprovadas. Referências diretas: 18. Restauração: 106941 arquivos; 13 casos de componentes aprovados. Consulte `results/C11/statistical_audit.json`, `results/C11/reference_consolidation.json` e `docs/c11_reproducibilidade.md`. A conclusão científica não implica publicação: commit, tag e download do PDF ainda devem ser verificados no fechamento.
