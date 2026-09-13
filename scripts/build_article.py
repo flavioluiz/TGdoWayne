@@ -8,4 +8,6 @@ log=(R/'tmp/article_c12/manuscript.log').read_text(errors='replace')
 issues=[line for line in log.splitlines() if 'Overfull \\' in line or re.search(r'(Citation|Reference).*undefined|There were undefined|Please.*rerun Biber',line)]
 if issues:raise RuntimeError('\n'.join(issues))
 shutil.copyfile(R/'tmp/article_c12/manuscript.pdf',R/'article/manuscript.pdf')
+(R/'output/pdf/article').mkdir(parents=True,exist_ok=True)
+shutil.copyfile(R/'article/manuscript.pdf',R/'output/pdf/article/manuscript.pdf')
 print('Manuscript compiled with resolved references and no overfull boxes.')

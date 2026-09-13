@@ -7,6 +7,10 @@ trabalho de graduação de Wayne Leonardo Silva de Paula (ITA, 2003). O objetivo
 uma pesquisa de mestrado de 24 meses sobre a confiabilidade da inferência da massa do gráviton
 com redes de temporização de pulsares, com potencial para um artigo metodológico.
 
+## Artigo — manuscrito revisado
+
+[PDF atual](article/manuscript.pdf) · [Fonte LaTeX](article/manuscript.tex) · [Notas da revisão de 13/09/2026](article/REVISION_NOTES.md). A revisão destaca as três operações, acrescenta o fluxograma e amplia a discussão de calibração e aprendizado sobre a massa. Ainda não submetido; o release v1.0.0 contém a redação anterior.
+
 ## Relatório do experimento com IA
 
 [Relatório em PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [Fonte LaTeX](output/pdf/relatorio_experimento/relatorio.tex) · [Evidências e métricas](output/pdf/relatorio_experimento/evidencias.json).

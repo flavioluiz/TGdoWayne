@@ -1,24 +1,21 @@
 # Artigo metodológico para revisão
 
-O manuscrito em inglês compara compressão, aproximação normal e resposta
-dispersiva, usando a população ampliada como resultado central. A autoria
-**Gráviton de Souza** é definitiva, conforme escolha do usuário. O artigo não
-foi submetido; não há periódico escolhido, aceitação ou publicação editorial.
+**Revisão atual: 13 de setembro de 2026 — 9 páginas, 2 figuras e 10 referências.**
 
-- Fonte: `manuscript.tex`.
-- PDF atual: `manuscript.pdf`, com sete páginas.
-- Figura atual: `figures/information_academic.pdf`, gerada por `scripts/figura_artigo_c13.py`.
-- Revisão atual: `results/C13/article_review.json`; a conferência C12 documenta a redação anterior.
+- [PDF atual](manuscript.pdf)
+- [Fonte LaTeX](manuscript.tex)
+- [Notas da revisão científica e editorial](REVISION_NOTES.md)
 
-A revisão acrescenta o exemplo de limite imposto pela priori e os contrastes
-condicionais B/C em 50 realizações, distinguindo sua sensibilidade numérica da
-incerteza populacional e da comparação com marginalização. Também simplifica
-a redação e amplia a figura, preservando seus resultados.
+O manuscrito em inglês apresenta um desenho controlado para distinguir aproximação normal de estimadores quadráticos, compressão em frequência e substituição da resposta dispersiva. A população ampliada permanece como resultado central. A discussão relaciona calibração, informação e sensibilidade à priori, incluindo a degenerescência escalar como motivação para extensões.
 
-Na raiz, `make article` compila com pdfLaTeX/Biber, exige referências resolvidas
-e ausência de caixas excedentes e atualiza o PDF. A figura usa somente as 500
-realizações da priori por grupo; os 96 casos de recuperação são separados.
-A reprodução da figura em diretório isolado produziu pixels idênticos.
+A autoria **Gráviton de Souza** é definitiva, conforme escolha do usuário. O artigo não foi submetido; não há periódico escolhido ou aceitação editorial. O release v1.0.0 conserva a redação anterior. Esta revisão é identificada pela data e pelo commit, sem alterar aquele release.
 
-A dissertação contém as derivações e experimentos complementares. As instruções
-de reprodução estão em `docs/reproducao.md`, com seu alcance e suas pendências.
+## Compilação e figuras
+
+Na raiz, `make article` compila com pdfLaTeX/Biber, exige referências resolvidas e ausência de caixas excedentes, e atualiza `article/manuscript.pdf` e `output/pdf/article/manuscript.pdf`.
+
+A Figura 1 é um fluxograma vetorial em TikZ no próprio LaTeX. A Figura 2 usa `figures/information_academic.pdf`, gerada por `scripts/figura_artigo_c13.py`, sem mudança dos resultados. São usadas somente as 500 realizações da priori por configuração; os 96 casos de recuperação são separados.
+
+As referências compartilhadas estão em `latex/referencias/referencias.bib`; `references.bib` acrescenta a dissertação como fonte dos resultados complementares. Os relatórios C12/C13 documentam as redações históricas, não esta revisão.
+
+O PDF revisado foi conferido visualmente nas nove páginas. Não foram executadas novas simulações nesta revisão. As instruções de reprodução científica permanecem em `docs/reproducao.md`.
