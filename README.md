@@ -11,7 +11,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 
 [Relatório em PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [Fonte LaTeX](output/pdf/relatorio_experimento/relatorio.tex) · [Evidências e métricas](output/pdf/relatorio_experimento/evidencias.json).
 
-Relatório de 10 páginas para discussão na pós-graduação do ITA sobre o desenvolvimento da pesquisa pelo Codex, com revisão final pelo Gemini. Reconstitui os pedidos do usuário, as decisões do agente, as correções de rota, o volume de código e simulações, os modelos utilizados e o tempo registrado pelo goal, em linguagem acessível a não especialistas.
+Relatório de 12 páginas para discussão na pós-graduação do ITA sobre o desenvolvimento da pesquisa pelo Codex, com revisão final pelo Gemini. Reconstitui os pedidos do usuário, as decisões do agente, as correções de rota, o volume de código e simulações, os modelos utilizados e o tempo registrado pelo goal, em linguagem acessível a não especialistas. Discute também formação, divisão do trabalho científico, relevância das contribuições e custo de verificação com IA.
 
 ## Apresentação de defesa
 
