@@ -1,0 +1,42 @@
+{
+  "purpose": "Comparação da apresentação dos mesmos resultados: versão final do Codex e revisão direta pelo agy/Gemini. Cópias binárias exatas, sem reedição dos produtos científicos.",
+  "context": "A redação final do Codex já incorporava pareceres do Gemini; o agy recebeu depois um pedido explícito de revisão afirmativa. Contraste deste caso, sob instruções distintas.",
+  "files": [
+    {
+      "document": "manuscrito",
+      "version": "codex",
+      "path": "output/pdf/comparacao_llms/manuscrito_codex.pdf",
+      "source_commit": "26ae3acd6016fcff9f8505980c90b3f908b2beb2",
+      "source_path": "article/manuscript.pdf",
+      "pages": 9,
+      "sha256": "12b6b7cb484ad20e5601b05993356e5b8fedb2357f72fe4416e7377734961a2c"
+    },
+    {
+      "document": "manuscrito",
+      "version": "gemini",
+      "path": "output/pdf/comparacao_llms/manuscrito_gemini.pdf",
+      "source_commit": "09b3584b5eea40251f84fb594da9551cba2b925d",
+      "source_path": "article/manuscript.pdf",
+      "pages": 9,
+      "sha256": "95bd153b9c034bc7c76ab0ac9abe49e877a6451228d4abd6c56236da519a1f9b"
+    },
+    {
+      "document": "dissertacao",
+      "version": "codex",
+      "path": "output/pdf/v1.0.0/dissertacao.pdf",
+      "source_commit": "39dd682ce49fb513cb06c65cb6515fb1c64effb4",
+      "source_path": "output/pdf/v1.0.0/dissertacao.pdf",
+      "pages": 167,
+      "sha256": "86b0dbdf8c272744a7d838d36e9816af5983944b18c1cbf3dc7fd9a8ff1a6566"
+    },
+    {
+      "document": "dissertacao",
+      "version": "gemini",
+      "path": "output/pdf/v1.1.0/dissertacao.pdf",
+      "source_commit": "09b3584b5eea40251f84fb594da9551cba2b925d",
+      "source_path": "output/pdf/v1.1.0/dissertacao.pdf",
+      "pages": 170,
+      "sha256": "2178d61d30ffa9319873e019331feed1d9841a3373669c5ed7d76cc1798643b7"
+    }
+  ]
+}

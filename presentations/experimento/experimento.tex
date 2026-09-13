@@ -18,7 +18,7 @@
 \setbeamertemplate{footline}{}
 \setbeameroption{hide notes}
 \graphicspath{{presentations/experimento/assets/}}
-\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 5: agy / Gemini},colorlinks=true,urlcolor=Green}
+\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 6: comparação Codex / Gemini},colorlinks=true,urlcolor=Green}
 \setbeamercolor{normal text}{fg=Ink,bg=Paper}
 \newenvironment{Canvas}{\begin{tikzpicture}[remember picture,overlay]\coordinate (O) at (current page.north west);}{\end{tikzpicture}}
 % Texto em posições relativas à página, em centímetros. O texto continua editável.
@@ -137,8 +137,8 @@
 \Bold{8.2}{2.40}{6.9}{10}{Mist}{AGY / GEMINI REESCREVE}
 \Display{.94}{3.17}{6.5}{19}{white}{Testar as críticas.\\Explicitar os limites.}
 \Display{8.2}{3.17}{6.9}{19}{white}{Valorizar os achados.\\Propor continuidade.}
-\Body{.94}{5.23}{6.5}{11}{Mist}{Críticas aceitas e recusadas.}
-\Body{8.2}{5.23}{6.9}{11}{Mist}{Gemini 3.8 Flash / 21 min.\\Mesmos dados; mais ênfase.}
+\Body{.94}{5.23}{6.5}{11}{Mist}{Narrativa mais defensiva.}
+\Body{8.2}{5.23}{6.9}{11}{Mist}{Narrativa mais afirmativa.\\Gemini 3.8 Flash / 21 min.}
 \Display{.94}{6.80}{14.1}{21}{white}{Mudou a evidência ou a nossa\\percepção do valor da pesquisa?}
 \Page[Mist]
 \end{Canvas}
@@ -260,14 +260,18 @@ Saída, com raciocínio & 5,23 & 261,46\\\bottomrule
 
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{EVIDÊNCIAS E FONTES}{Documentos para examinar o caso}
-\CoverImage{.94}{2.55}{3.7}{4.82}{dissertacao-v1.1.0.png}
-\CoverImage{5.0}{2.55}{3.7}{4.82}{artigo-v1.1.0.png}
-\Bold{.94}{7.67}{3.7}{11}{Ink}{Dissertação v1.1.0}
-\Bold{5.0}{7.67}{3.7}{11}{Ink}{Manuscrito v1.1.0}
-\Display{9.55}{2.66}{5.55}{21}{Ink}{Um caso aberto\\ao exame.}
-\Body{9.55}{4.85}{5.55}{12}{Ink}{Relatório e apêndices\\Código e resultados\\Registros de revisão}
-\Bold{9.55}{6.93}{5.55}{12}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Abrir o repositório\\e os materiais}}
+\Header{COMPARE OS DOCUMENTOS}{A mesma pesquisa, duas narrativas}
+\Bold{.94}{2.50}{6.5}{11}{Green}{VERSÃO FINAL DO CODEX}
+\Bold{8.2}{2.50}{6.9}{11}{Green}{REVISÃO DO AGY / GEMINI}
+\Display{.94}{3.28}{6.5}{23}{Ink}{Mais defensiva.}
+\Display{8.2}{3.28}{6.9}{23}{Ink}{Mais afirmativa.}
+\Bold{.94}{4.80}{6.5}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/39dd682ce49fb513cb06c65cb6515fb1c64effb4/output/pdf/v1.0.0/dissertacao.pdf}{Dissertação / 167 páginas}}
+\Bold{8.2}{4.80}{6.9}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/09b3584b5eea40251f84fb594da9551cba2b925d/output/pdf/v1.1.0/dissertacao.pdf}{Dissertação / 170 páginas}}
+\Bold{.94}{5.54}{6.5}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/26ae3acd6016fcff9f8505980c90b3f908b2beb2/article/manuscript.pdf}{Artigo / 9 páginas}}
+\Bold{8.2}{5.54}{6.9}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/09b3584b5eea40251f84fb594da9551cba2b925d/article/manuscript.pdf}{Artigo / 9 páginas}}
+\Body{.94}{6.73}{14.1}{12}{Ink}{Abra os PDFs. Compare resumos, introduções e conclusões.}
+\Body{.94}{7.41}{14.1}{10}{Muted}{Contraste deste caso, sob pedidos diferentes. Dados e código preservados.}
+\Bold{.94}{8.05}{12.8}{10}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Comparação e demais materiais no README}}
 \Backup
 \end{Canvas}
 \SpeakerNote{15}

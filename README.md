@@ -9,8 +9,21 @@ O estudo de ondas gravitacionais foi o problema científico escolhido para o exp
 | Material | Acesso | Conteúdo |
 |---|---|---|
 | **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
-| **Apresentação do experimento, 20–30 min** | [PDF — revisão 5](output/pdf/experimento/experimento_codex_5.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
+| **Apresentação do experimento, 20–30 min** | [PDF — revisão 6](output/pdf/experimento/experimento_codex_6.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
 | Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) · [Revisão pelo agy](output/pdf/relatorio_experimento/revisao_agy.json) | Contagens, eventos do goal, revisão do artigo e reescrita pelo Gemini |
+
+## Compare as versões do Codex e do Gemini
+
+**A mesma pesquisa, duas maneiras de apresentar os resultados.** Neste experimento, o texto final do **Codex é mais defensivo**, enfatizando limites e ressalvas; a revisão do **agy / Gemini 3.8 Flash (High) é mais afirmativa**, colocando as contribuições e os caminhos futuros em primeiro plano. Os PDFs abaixo permitem examinar esse contraste diretamente.
+
+| Documento | Versão final do Codex | Versão revisada pelo Gemini |
+|---|---|---|
+| **Dissertação** | [PDF — 167 páginas, v1.0.0](output/pdf/v1.0.0/dissertacao.pdf) | [PDF — 170 páginas, v1.1.0](output/pdf/v1.1.0/dissertacao.pdf) |
+| **Artigo / manuscrito** | [PDF — 9 páginas, commit `26ae3ac`](output/pdf/comparacao_llms/manuscrito_codex.pdf) | [PDF — 9 páginas, commit `09b3584`](output/pdf/comparacao_llms/manuscrito_gemini.pdf) |
+
+**Sugestão de leitura:** abra os pares lado a lado e compare resumos, introduções e conclusões. O que ficou mais claro? O que passou a parecer mais relevante? Onde a afirmação ficou mais forte sem novos resultados? Esse contraste ajuda a discutir como a escrita influencia a avaliação do mérito científico.
+
+A versão final do Codex já incorporava pareceres do Gemini; na rodada seguinte, o agy recebeu um pedido explícito de revisão afirmativa. Portanto, o contraste documenta estes textos e suas instruções, não uma característica universal dos modelos. Os dados e o código científico permaneceram os mesmos nessa revisão. As cópias de comparação foram preservadas sem reedição; [origem e hashes dos quatro PDFs](output/pdf/comparacao_llms/manifesto.json).
 
 ## Produtos científicos gerados no experimento
 

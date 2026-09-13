@@ -57,7 +57,7 @@
       "title": "Trocar o agente mudou a narrativa",
       "seconds": 140,
       "backup": false,
-      "note": "Começar pelo papel anterior do Gemini: dois pareceres encaminhados pelo usuário. O Codex conferiu as críticas, acrescentou estudos pontuais e melhorou o artigo; também recusou originalidade absoluta e generalizações para dados reais. Depois, o usuário considerou o texto pessimista e pediu uma revisão afirmativa diretamente ao agy, com Gemini 3.8 Flash (High), confirmado no log local. Foram dois pedidos e cerca de 21 minutos de calendário, incluindo leitura, edição, compilação, correção de referências e publicação. O agy colocou os achados em primeiro plano e ampliou as conclusões e os trabalhos futuros. Não houve nova campanha numérica ou busca bibliográfica registrada. Algumas mudanças melhoram a exposição; outras aumentam a força das alegações, como pela primeira vez. A comparação ampla continua aberta na discussão do artigo. Perguntar quanto da impressão de qualidade muda apenas com a narrativa. Oportunidade: combinar verificação crítica e comunicação afirmativa. Avaliar clareza e suporte das alegações separadamente, sem concluir que todo Codex é defensivo ou todo Gemini é afirmativo: os pedidos também foram diferentes.",
+      "note": "Começar pelo papel anterior do Gemini: dois pareceres encaminhados pelo usuário. O Codex conferiu as críticas, acrescentou estudos pontuais e melhorou o artigo; também recusou originalidade absoluta e generalizações para dados reais. Depois, o usuário considerou o texto pessimista e pediu uma revisão afirmativa diretamente ao agy, com Gemini 3.8 Flash (High), confirmado no log local. Foram dois pedidos e cerca de 21 minutos de calendário, incluindo leitura, edição, compilação, correção de referências e publicação. O agy colocou os achados em primeiro plano e ampliou as conclusões e os trabalhos futuros. Não houve nova campanha numérica ou busca bibliográfica registrada. Algumas mudanças melhoram a exposição; outras aumentam a força das alegações, como pela primeira vez. A comparação ampla continua aberta na discussão do artigo. Perguntar quanto da impressão de qualidade muda apenas com a narrativa. Oportunidade: combinar verificação crítica e comunicação afirmativa. Avaliar clareza e suporte das alegações separadamente, sem concluir que todo Codex é defensivo ou todo Gemini é afirmativo: os pedidos também foram diferentes. O README reúne os dois pares de PDFs: dissertação e artigo finais do Codex e versões do Gemini. O apoio 15 contém quatro links clicáveis para a comparação direta. Neste caso, a primeira narrativa é mais defensiva e a segunda, mais afirmativa.",
       "source": "Relatório, seções 2 e 2.1, apêndices A.2 e A.3; revisao_agy.json; commit 09b3584."
     },
     {
@@ -118,11 +118,11 @@
     },
     {
       "slide": 15,
-      "title": "Documentos para examinar o caso",
+      "title": "A mesma pesquisa, duas narrativas",
       "seconds": 0,
       "backup": true,
-      "note": "O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas. As imagens reproduzem as capas originais da dissertação e do manuscrito, com suas atribuições preservadas. As capas apresentadas agora correspondem aos PDFs da revisão v1.1.0, commit 09b3584. revisao_agy.json documenta a rodada adicional sem publicar a conversa privada.",
-      "source": "https://github.com/flavioluiz/TGdoWayne"
+      "note": "Abrir os quatro links: dissertação final do Codex v1.0.0 (167 páginas), revisão Gemini v1.1.0 (170 páginas), artigo final do Codex no commit 26ae3ac (9 páginas) e revisão Gemini no commit 09b3584 (9 páginas). Comparar resumos, introduções e conclusões. A narrativa do Codex é mais defensiva e a do Gemini, mais afirmativa neste caso. Perguntar o que ganhou clareza e quais alegações ficaram mais fortes com os mesmos dados. A versão Codex já incorporava pareceres do Gemini; o agy recebeu um pedido específico de revisão afirmativa. Não se trata de uma comparação controlada entre modelos. O README também oferece cópias preservadas, links para o relatório, fontes e demais produtos.",
+      "source": "README, seção Compare as versões do Codex e do Gemini; relatório, seção 2.1; output/pdf/comparacao_llms/manifesto.json."
     }
   ]
 }
