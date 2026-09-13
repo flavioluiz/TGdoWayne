@@ -11,6 +11,10 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 
 [Slides em PDF — 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) · [Roteiro de fala](presentations/defesa/roteiro_50min.md) · [Fonte Beamer e compilação](presentations/defesa/README.md). São 32 slides principais e 7 de apoio, com gráficos dos resultados da dissertação.
 
+## Apresentação para não especialistas
+
+[TG do Wayne for dummies — PDF](output/pdf/didatica/tg_wayne_para_nao_especialistas.pdf) · [Roteiro didático](presentations/didatica/roteiro.md) · [Fonte e compilação](presentations/didatica/README.md). Introdução por analogias de engenharia, com 28 slides principais e 2 de apoio.
+
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
