@@ -33,16 +33,16 @@
       "title": "O percurso da pesquisa delegada",
       "seconds": 110,
       "backup": false,
-      "note": "O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado. As três caixas escuras destacam as etapas conduzidas pelos agentes. Isso não significa ausência completa de participação humana nem permite atribuir uma porcentagem de autonomia.",
-      "source": "Relatório, seções 1 e 2 e apêndices A a D."
+      "note": "O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado. As três caixas escuras destacam as etapas conduzidas pelos agentes. Isso não significa ausência completa de participação humana nem permite atribuir uma porcentagem de autonomia. Depois dos pareceres, o proponente mudou também o executor: pediu ao agy/Gemini uma revisão direta para valorizar os resultados na escrita.",
+      "source": "Relatório, seções 1 e 2 e apêndices A a D. Relatório, seção 2.1 e apêndice A.3."
     },
     {
       "slide": 5,
       "title": "O que o agente entregou",
       "seconds": 110,
       "backup": false,
-      "note": "Os quatro destaques são 167 páginas de dissertação, nove páginas de artigo revisado, 31 horas no contador do goal e US$ 50 como rateio de assinatura estimado pelo proponente. O contador foi de 30h51min26s, com 54h56min42s no calendário, e não mede tempo de CPU. O artigo revisado é posterior ao goal. US$ 50 não é uma fatura específica da execução. O equivalente em API Standard é cerca de US$ 1.300, com os complementos científicos, conforme hipóteses e exclusões no apoio. As 26.069 linhas incluem comentários e vazios, e as 45.528 análises principais compartilham dados. Esses totais não medem qualidade nem equivalência a anos de trabalho humano. As capas aparecem no apoio.",
-      "source": "PDFs da dissertação e do manuscrito; relatório, apêndices C a E."
+      "note": "A dissertação tinha 167 páginas ao concluir o goal e passou a 170 na revisão do agy, v1.1.0. O artigo foi de sete a nove páginas na revisão anterior pelo Codex e manteve nove com o agy. Os 26.069 incluem comentários e linhas vazias; 45.528 são análises principais de quatro campanhas, com reutilização de dados. Código e campanhas são contagens históricas, sem novas campanhas nessa revisão. O contador do goal marca 30 h 51 min, em cerca de 55 h de calendário; não mede CPU nem tempo de formação. Os US$ 50 são o rateio aproximado da assinatura informado pelo usuário; cerca de US$ 1.300 é a equivalência de API Standard dos registros do Codex, incluindo complementos científicos. Ambos excluem o custo do Gemini e do agy. A rodada do agy levou 20 min 47 s de calendário e não se soma ao contador histórico do goal.",
+      "source": "Relatório, apêndices A.3 e C–E; revisao_agy.json."
     },
     {
       "slide": 6,
@@ -54,11 +54,11 @@
     },
     {
       "slide": 7,
-      "title": "O Gemini criticou. O Codex conferiu.",
+      "title": "Trocar o agente mudou a narrativa",
       "seconds": 140,
       "backup": false,
-      "note": "O Gemini elaborou dois pareceres, encaminhados pelo usuário. No primeiro ciclo, o Codex verificou críticas e acrescentou estudos pontuais, incluindo 300 análises em 50 casos. No segundo, revisou o manuscrito com os resultados já existentes. Aceitou melhorias de exposição e contexto, mas recusou alegações de originalidade absoluta e de falha inevitável em dados reais. As frases do slide são sínteses desses movimentos, não citações. Não houve revisão cega, certificação científica nem avaliação formal por pares humanos. Perguntar que trabalho de verificação permanece para orientador e revisores humanos.",
-      "source": "Relatório, seção 2 e apêndice A.2; notas de revisão do artigo."
+      "note": "Começar pelo papel anterior do Gemini: dois pareceres encaminhados pelo usuário. O Codex conferiu as críticas, acrescentou estudos pontuais e melhorou o artigo; também recusou originalidade absoluta e generalizações para dados reais. Depois, o usuário considerou o texto pessimista e pediu uma revisão afirmativa diretamente ao agy, com Gemini 3.8 Flash (High), confirmado no log local. Foram dois pedidos e cerca de 21 minutos de calendário, incluindo leitura, edição, compilação, correção de referências e publicação. O agy colocou os achados em primeiro plano e ampliou as conclusões e os trabalhos futuros. Não houve nova campanha numérica ou busca bibliográfica registrada. Algumas mudanças melhoram a exposição; outras aumentam a força das alegações, como pela primeira vez. A comparação ampla continua aberta na discussão do artigo. Perguntar quanto da impressão de qualidade muda apenas com a narrativa. Oportunidade: combinar verificação crítica e comunicação afirmativa. Avaliar clareza e suporte das alegações separadamente, sem concluir que todo Codex é defensivo ou todo Gemini é afirmativo: os pedidos também foram diferentes.",
+      "source": "Relatório, seções 2 e 2.1, apêndices A.2 e A.3; revisao_agy.json; commit 09b3584."
     },
     {
       "slide": 8,
@@ -105,7 +105,7 @@
       "title": "Definições das métricas",
       "seconds": 0,
       "backup": true,
-      "note": "Números históricos da v1.0.0. O manuscrito de nove páginas é posterior. O total de código arquivado não é deduplicado. O tempo do goal não é CPU. As análises compartilham dados.",
+      "note": "Números históricos da v1.0.0. O manuscrito de nove páginas é posterior. O total de código arquivado não é deduplicado. O tempo do goal não é CPU. As análises compartilham dados. A revisão v1.1.0 pelo agy acrescentou páginas à dissertação (167 para 170), mas não mudou essas contagens históricas. Seus 20 min 47 s são calendário de outra conversa, sem goal.",
       "source": "Relatório, apêndices C e D."
     },
     {
@@ -113,7 +113,7 @@
       "title": "Hipóteses da estimativa de custo",
       "seconds": 0,
       "backup": true,
-      "note": "Aplicação dos preços oficiais Astra Standard de 13/09/2026 aos registros únicos por resposta. Até o goal são 6.510 respostas, com agente principal e três subagentes, totalizando US$ 1.289,34. Os complementos científicos acrescentam US$ 14,29. 97,56% da entrada veio de cache. Gravações de cache zero no registro; cobrar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Fast dobra o preço. Não incluir o contador do goal nem somar raciocínio duas vezes. Exclui Gemini, computação local, ferramentas adicionais e estudo de caso. US$ 50 é estimativa do usuário sobre rateio, não tarifa de API.",
+      "note": "Aplicação dos preços oficiais Astra Standard de 13/09/2026 aos registros únicos por resposta. Até o goal são 6.510 respostas, com agente principal e três subagentes, totalizando US$ 1.289,34. Os complementos científicos acrescentam US$ 14,29. 97,56% da entrada veio de cache. Gravações de cache zero no registro; cobrar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Fast dobra o preço. Não incluir o contador do goal nem somar raciocínio duas vezes. Exclui Gemini, computação local, ferramentas adicionais e estudo de caso. US$ 50 é estimativa do usuário sobre rateio, não tarifa de API. A revisão direta pelo agy/Gemini 3.8 Flash também está excluída: não foi obtido consumo faturável verificado para essa rodada.",
       "source": "Relatório, apêndice E; estimativa_custo_api.json; developers.openai.com/api/docs/models/gpt-6-astra."
     },
     {
@@ -121,7 +121,7 @@
       "title": "Documentos para examinar o caso",
       "seconds": 0,
       "backup": true,
-      "note": "O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas. As imagens reproduzem as capas originais da dissertação e do manuscrito, com suas atribuições preservadas.",
+      "note": "O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas. As imagens reproduzem as capas originais da dissertação e do manuscrito, com suas atribuições preservadas. As capas apresentadas agora correspondem aos PDFs da revisão v1.1.0, commit 09b3584. revisao_agy.json documenta a rodada adicional sem publicar a conversa privada.",
       "source": "https://github.com/flavioluiz/TGdoWayne"
     }
   ]

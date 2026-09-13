@@ -2,23 +2,25 @@
   "slides": 15,
   "main_slides": 12,
   "suggested_seconds": 1500,
-  "visual_review": "15 slides previamente inspecionados. Na revisão 4, os slides 1, 2, 5, 6, 8 e 10 foram renderizados e reinspecionados. A capa ocupa duas linhas. Os textos alterados foram comparados com o PDF do commit anterior.",
-  "validation": "PDF compilado diretamente pelo XeLaTeX, sem caixas transbordantes no log. Contagem de páginas, limites do texto, metadados, hiperlink e links locais verificados. Diagrama TikZ e tabelas LaTeX editáveis.",
+  "visual_review": "15 slides renderizados para revisão visual do conjunto. Slides 5 e 7 inspecionados ampliados; novas linhas do slide 7 ajustadas para evitar hifenização. Capas atualizadas a partir dos PDFs v1.1.0.",
+  "validation": "PDF compilado por XeLaTeX. 12 slides principais e três de apoio, com roteiro de 1.500 segundos. Sem transbordamentos no log; limites de texto, metadados, hashes e links locais verificados. PDF diferente da revisão 4.",
   "files": {
-    "experimento.tex": "927456fb9f911f94d2a428249ebc9c16da9454b281db521859bb80f267d0e144",
-    "notas.tex": "4b08ab68c120c1a705a03d5d41d24079a2d005ba87427a5048f29d73601299ad",
+    "experimento.tex": "ab0757c43a9f2c7e1240f4b9f811d3a74303a2a4d2dcf585ac16d7ad01081e93",
+    "notas.tex": "e3e13c3435cd30c87a13af8186087e106777a618f01df777b8b4d5839bcee575",
     "gerar_roteiro.py": "e033bb79422f6fad85f91af17dab650f9b2849f0cb9c7144d3e8947c1fcdaeda",
-    "roteiro.md": "b0c9bca224022aa12b796c9c5dead3925d738f4b1f48ed1f3faaff958d8b9e7e",
-    "timing.json": "2527ad682b76d8240e110c38b834b5bb0b2f1f978322c66d6350a03b8e9a6c25",
-    "README.md": "f5d3fbe605657cb57fbb869a7900f831a81f48553d87e0490edba1890da043cc",
-    "build.sh": "9c53f2118ca32d19087690e1f43c4a3ee6b10b0a6554420097d7bb912dcea22f",
+    "roteiro.md": "793ba7494698bc02d61769e330b1e87ba3661d6c03300adb2269bb7ad1a29e72",
+    "timing.json": "470fbb5132710dd268a07937be9b75a59ba87a32fa788620117ffc72f4e8bc5b",
+    "README.md": "5d3624d2a4ba49b7b5e062480effb791dcb8750a51399a6bff93a438d4ac61b4",
+    "build.sh": "7599969333a0da00a28e5e9688f871ca20c1e1793ccf1743d5fe67026899c522",
     "assets/tg-01.png": "86169d094cd18919ba0780d0da9c3a5e1ab511d8d56bfe7e3a4313da5134940a",
     "assets/dissertacao-001.png": "0c6090ab00460d403d9ab4d61ccaeb06b911a8861e59e544b531d51f1d55c1b8",
-    "assets/artigo-1.png": "b089adb9222dfd091e63b5ad9c2b3c2e91052b0232b6d5642ae8b9bf7d734db5"
+    "assets/artigo-1.png": "b089adb9222dfd091e63b5ad9c2b3c2e91052b0232b6d5642ae8b9bf7d734db5",
+    "assets/dissertacao-v1.1.0.png": "4a4ac771ccdc4d9d1f59725fde95156ca972ea2541f3d332a00c0a8eeb3406b3",
+    "assets/artigo-v1.1.0.png": "5a8fe8fd2c02866878f08ce3e8f2c6e6e60eae7ce105beb3e13a74d6276f7c4f"
   },
   "pdf": {
     "path": "../../output/pdf/experimento/experimento_codex.pdf",
-    "sha256": "5a8d638056fe03aa43137851c4cc791f1d3098220e0778fb731c83a258f1940a"
+    "sha256": "4bae4f03db27095870fb959b80b75e92b5c73d9c5f37dd22617d425d55b1ba63"
   },
   "documentary_assets": {
     "assets/tg-01.png": {
@@ -34,13 +36,26 @@
     "assets/artigo-1.png": {
       "source": "article/manuscript.pdf",
       "page": 1,
-      "source_sha256": "12b6b7cb484ad20e5601b05993356e5b8fedb2357f72fe4416e7377734961a2c"
+      "source_sha256": "12b6b7cb484ad20e5601b05993356e5b8fedb2357f72fe4416e7377734961a2c",
+      "source_commit": "26ae3ac"
+    },
+    "assets/dissertacao-v1.1.0.png": {
+      "source": "output/pdf/v1.1.0/dissertacao.pdf",
+      "page": 1,
+      "source_sha256": "2178d61d30ffa9319873e019331feed1d9841a3373669c5ed7d76cc1798643b7",
+      "source_commit": "09b3584b5eea40251f84fb594da9551cba2b925d"
+    },
+    "assets/artigo-v1.1.0.png": {
+      "source": "article/manuscript.pdf",
+      "page": 1,
+      "source_sha256": "95bd153b9c034bc7c76ab0ac9abe49e877a6451228d4abd6c56236da519a1f9b",
+      "source_commit": "09b3584b5eea40251f84fb594da9551cba2b925d"
     }
   },
   "format": "Beamer / XeLaTeX",
-  "revision": 4,
+  "revision": 5,
   "versioned_pdf": {
-    "path": "../../output/pdf/experimento/experimento_codex_4.pdf",
-    "sha256": "5a8d638056fe03aa43137851c4cc791f1d3098220e0778fb731c83a258f1940a"
+    "path": "../../output/pdf/experimento/experimento_codex_5.pdf",
+    "sha256": "4bae4f03db27095870fb959b80b75e92b5c73d9c5f37dd22617d425d55b1ba63"
   }
 }

@@ -36,18 +36,18 @@
 
 \textbf{O desafio institucional.} Uma dissertação reúne sinais de trabalho intelectual: uma pergunta, antecedentes, métodos, resultados e argumentos. Quando um agente consegue produzir esse conjunto, sua presença no documento passa a exigir outra pergunta: \textbf{o que a pessoa que o apresenta compreende e consegue decidir?} O produto continua relevante para avaliar a pesquisa, mas, isoladamente, não demonstra a formação de quem o assina. Este experimento oferece um caso concreto para discutir essa separação.
 
-\textbf{O experimento.} O proponente forneceu um trabalho de graduação de 2003 e pediu uma continuação de mestrado implementável, com potencial de publicação. Declarou não dominar o assunto e não ter contribuído com hipóteses, equações ou código. O Codex escolheu o recorte, procurou antecedentes, executou cálculos e redigiu os documentos. O usuário dirigiu o processo e encaminhou dois pareceres elaborados pelo Gemini. Houve ampla delegação científica, acompanhada de intervenção humana na organização e na mediação da revisão. \fonte{1, 4, 10, 11}
+\textbf{O experimento.} O proponente forneceu um trabalho de graduação de 2003 e pediu uma continuação de mestrado implementável, com potencial de publicação. Declarou não dominar o assunto e não ter contribuído com hipóteses, equações ou código. O Codex escolheu o recorte, procurou antecedentes, executou cálculos e redigiu os documentos. O usuário dirigiu o processo e encaminhou dois pareceres do Gemini. Depois, pediu ao agy, com Gemini 3.8 Flash, uma revisão direta para valorizar os resultados na escrita. Houve ampla delegação científica, com direção humana também sobre a narrativa. \fonte{1, 4, 10--12}
 
 \begin{destaque}
 \textbf{O que foi produzido em poucos dias}\par
 \begin{tabularx}{\linewidth}{@{}Y Y@{}}
-\textbf{167 páginas} de dissertação & \textbf{26.069 linhas} em código e testes\\
+\textbf{170 páginas} na dissertação atual & \textbf{26.069 linhas} em código e testes\\
 \textbf{45.528 análises} principais & \textbf{Artigo de 9 páginas}, após revisão\\
 \textbf{Cerca de 55 horas} de calendário do goal & \textbf{Cerca de 31 horas} no contador do goal\\
 \end{tabularx}
 \smallskip
 \textbf{Custos para comparação:} cerca de US\$ 50 no rateio informado da assinatura; equivalente estimado de US\$ 1.300 em API Standard, com complementos científicos.\par
-{\footnotesize O artigo tinha sete páginas ao encerrar o goal e foi revisado depois. O relógio parte da criação do goal; desde o primeiro pedido, foram cerca de 57 horas. Linhas incluem comentários e espaços; análises compartilham dados. Tempos não medem CPU nem aprendizagem. Definições nos apêndices C--E.}
+{\footnotesize Ao encerrar o goal: dissertação com 167 páginas e artigo com sete. As revisões posteriores chegaram a 170 e nove. Código, análises e tempos referem-se à execução original; tempos não medem CPU nem aprendizagem. Custos excluem Gemini, inclusive agy. Definições nos apêndices C--E.}
 \end{destaque}
 
 \textbf{A consequência para o debate.} A produção extensa, com controles e correções documentados, mostra por que a avaliação precisa alcançar as decisões e a compreensão do pesquisador. Ela permite discutir novas formas de orientação, maior capacidade de explorar ideias e o esforço de verificar o que a IA produz. Não permite equiparar horas de execução a dois anos de formação ou declarar que o manuscrito já atende aos critérios de uma revista. Uma comparação central permaneceu inconclusiva; não houve submissão, defesa ou aprovação institucional.
@@ -93,6 +93,32 @@ TG e publicação anterior $\rightarrow$ busca de extensões $\rightarrow$ exclu
 
 \newpage
 
+\titulo{2.1}{Os mesmos resultados, outra maneira de apresentá-los}
+\textbf{O usuário mudou o objetivo da revisão.} Após os dois pareceres, o proponente avaliou que a redação do Codex era pessimista e desvalorizava as próprias contribuições. Em 13/09, pediu ao \textbf{agy, cliente Antigravity CLI com Gemini 3.8 Flash (High)}, que relesse a dissertação e o artigo, propusesse melhorias e depois as implementasse, incluindo trabalhos futuros. Desta vez, o Gemini atuou como editor e executor no repositório. A conversa e o commit \nolinkurl{09b3584} permitem acompanhar a intervenção. \fonte{12}
+
+\textbf{Como o agente respondeu.} O agy acolheu o diagnóstico do usuário, leu os textos locais e propôs organizar a exposição em torno do que a pesquisa havia demonstrado. Reescreveu resumos, introdução, interpretação dos resultados e conclusões. A dissertação passou de \textbf{167 para 170 páginas}; o artigo manteve \textbf{nove}. Não há nova busca bibliográfica nem campanha numérica registrada nessa rodada. O código científico e os resultados arquivados não mudaram no commit.
+
+\textbf{O ganho de exposição é concreto.} A conclusão passou a reunir cinco achados, diretrizes de uso e cinco direções de trabalho futuro em quatro seções. Resultados antes dispersos ficaram apresentados como contribuições identificáveis. Esse trabalho mostra uma oportunidade de divisão de tarefas entre agentes: além de conferir limites, melhorar a capacidade do texto de comunicar por que os resultados importam. As propostas de continuidade são uma agenda sugerida, ainda não executada.
+
+\begin{tabularx}{\textwidth}{@{}Y Y@{}}
+\toprule
+\textbf{No texto anterior} & \textbf{Na revisão do agy}\\
+\midrule
+Abertura centrada em ressalvas e em uma lacuna candidata. & Contribuições em primeiro plano; a lacuna passa a ser chamada de essencial.\\
+Conclusão breve, com resultados e limites em poucos parágrafos. & Síntese organizada, recomendações e caminhos de continuidade.\\
+Prioridade absoluta não estabelecida pela busca; pequenas diferenças descritas com restrições. & Expressões como ``pela primeira vez'' e explicações mais categóricas para as diferenças observadas.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Valorizar o achado e ampliar a alegação são operações distintas.} Algumas mudanças apenas tornam a contribuição mais visível; outras elevam o grau de originalidade ou o alcance atribuído aos mesmos dados. Uma afirmação de prioridade, por exemplo, exige confronto com a literatura, além de uma redação convincente. A discussão do artigo ainda registra a comparação ampla como problema aberto de precisão: a revisão não eliminou todas as limitações. \fonte{11, 12}
+
+\begin{destaque}
+\textbf{Uma nova questão para a avaliação: quanto da impressão de qualidade vem da narrativa?} A escolha do modelo e a instrução editorial passaram a integrar o experimento. É possível testar isso comparando as versões, sem identificar o redator, e pedindo a leitores que avaliem clareza, relevância percebida e suporte das conclusões separadamente.
+\end{destaque}
+
+O contraste de tom foi observado \textbf{neste episódio, sob pedidos diferentes}. Ele não mede uma personalidade fixa dos modelos. Combinar rigor e comunicação afirmativa é uma possibilidade de trabalho; a comparação entre versões oferece material para investigar quando a revisão esclarece o mérito e quando aumenta apenas a confiança do leitor.
+\newpage
+
 \titulo{3}{O documento e o domínio de quem o apresenta}
 \textbf{Três dimensões que precisam ser avaliadas separadamente.} Um estudo pode ter valor científico, seu autor pode ou não compreender o que foi feito, e o uso de ferramentas pode ser transparente ou inadequadamente declarado. Qualidade do resultado, formação da pessoa e responsabilidade pelo uso são questões relacionadas, mas nenhuma resolve automaticamente as outras. Mesmo com uso autorizado e declarado de IA, permanece a pergunta sobre quais competências a pós-graduação deve desenvolver.
 
@@ -117,7 +143,7 @@ Antes de executar uma alteração, prever e justificar seu efeito. Depois, inter
 
 \textbf{O trabalho pode se deslocar para a verificação.} Quando o sistema produz mais equações, programas e resultados do que o pesquisador consegue examinar, a leitura crítica pode se tornar a etapa limitante. No caso analisado, foi necessário corrigir uma descrição incompatível com a implementação, enfrentar comparações inconclusivas e melhorar explicações e figuras. A clareza do texto integra a verificação: um argumento difícil de inspecionar limita a capacidade de detectar erro e julgar relevância. \fonte{6, 7}
 
-\textbf{Revisão com IA amplia capacidade, mas precisa ser testada.} O primeiro parecer do Gemini levou o Codex a conferir críticas e acrescentar estudos. O segundo motivou a revisão do artigo e a recusa de generalizações sem suporte. Esse fluxo permite discutir revisão entre modelos como auxílio ao pesquisador. Não há, porém, medição de sua taxa de acerto: sistemas diferentes podem compartilhar lacunas ou aceitar hipóteses inadequadas. A concordância entre agentes deve ser confrontada com evidência externa, métodos de referência e julgamento especializado. \fonte{7, 10}
+\textbf{Revisão com IA amplia capacidade e muda a exposição.} O primeiro parecer do Gemini levou o Codex a acrescentar estudos; o segundo motivou a revisão do artigo e a recusa de generalizações. Na terceira rodada, o agy reescreveu os textos para valorizar as contribuições. O conjunto permite investigar tanto o ganho de qualidade quanto a mudança de percepção sobre a mesma pesquisa. Não foi medida a taxa de acerto das revisões: concordância e fluência precisam ser confrontadas com evidência, métodos de referência e julgamento especializado. \fonte{7, 10--12}
 
 \textbf{Relevância deve ser julgada pelo conteúdo.} A origem humana ou automatizada de um texto não resolve se a pergunta importa, se os resultados estão corretos ou se a contribuição é útil. Uma extensão incremental pode ter grande valor quando elimina uma incerteza importante, reproduz criticamente um resultado ou delimita um método. O problema é a contribuição pequena e pouco informativa apresentada como avanço substancial. Neste caso, relatar limites de uma aproximação pode ser mais útil do que acumular análises sem resolver a pergunta central.
 
@@ -139,7 +165,7 @@ O caso fornece material concreto para examinar capacidades e limites, mas não d
 \midrule
 O agente formulou um recorte e procurou antecedentes. Quão original e relevante foi a escolha? & Submeter pergunta e resultados a especialistas, com critérios explícitos, e fazer uma nova busca de antecedentes antes de atribuir originalidade.\\
 Foram produzidos código e muitos resultados. Quanto desse material está correto? & Selecionar conclusões centrais, verificar seus argumentos e reproduzi-las com métodos ou ambientes independentes. Não avaliar apenas a contagem de testes.\\
-Houve revisão pelo Gemini e alterações pelo Codex. Qual foi o ganho da revisão? & Comparar versões anterior e posterior, classificar críticas corretas, incorretas e omitidas, e medir o esforço humano para conferir as mudanças.\\
+Houve pareceres do Gemini e, depois, reescrita direta pelo agy. Quanto mudou a qualidade e quanto mudou sua percepção? & Comparar versões sem identificar o redator; avaliar clareza e suporte das alegações separadamente, além do esforço para conferir as mudanças.\\
 O goal registrou cerca de 31 horas. Qual foi a economia de trabalho? & Comparar tarefas equivalentes com e sem assistência, incluindo preparação, custo computacional, revisão, correção e qualidade final.\\
 O proponente delegou trabalho sem dominar a área. O que isso ensina sobre formação? & Estudar separadamente o que estudantes conseguem explicar, prever e transferir para problemas novos antes e depois de usar os agentes.\\
 A comparação ampla permaneceu inconclusiva. A execução soube reconhecer seus limites? & Examinar decisões de parada, alternativas rejeitadas e redução de escopo; avaliar se o resultado final responde a uma pergunta útil, ainda que menor.\\
@@ -239,6 +265,36 @@ Uma referência também exigiu correção de interpretação: a escolha de frequ
 O manuscrito permanece \textbf{não submetido}. O novo ciclo demonstra revisão e refinamento de um produto; não comprova aceitação editorial ou qualidade equivalente à de um pesquisador especialista. A versão do Gemini e seus tempos de processamento não foram fornecidos.
 \newpage
 
+\titulo{A.3}{Revisão direta pelo agy / Gemini 3.8 Flash}
+\textbf{Fonte e modelo.} Foi localizada a conversa do Antigravity CLI intitulada ``Revisão de Dissertação e Artigo'', com duas mensagens do usuário. O log local registra \textbf{Gemini 3.8 Flash (High)}, corroborando a identificação do proponente. É a configuração desta rodada; as versões dos dois pareceres anteriores continuam desconhecidas. A tabela usa horários de Brasília. \fonte{12}
+
+\begin{tabularx}{\textwidth}{@{}p{2.1cm}Y@{}}
+\toprule
+\textbf{13/09} & \textbf{Interação ou resultado documentado}\\
+\midrule
+13:53:10 & Usuário pede releitura e propostas para valorizar as contribuições, sobretudo na introdução, nos resultados e nas conclusões.\\
+13:55:45 & Agente conclui a proposta: reorganizar a narrativa e ampliar a síntese e as implicações dos achados.\\
+13:58:13 & Usuário autoriza as alterações, solicita trabalhos futuros, PDFs, atualização do README, commit e push.\\
+14:07--14:08 & Compilação revela referências internas indefinidas. O agente corrige o identificador do capítulo e recompila.\\
+14:11--14:12 & Confere o pacote v1.1.0 e executa três conjuntos de testes existentes, todos aprovados.\\
+14:12:53 & Commit \nolinkurl{09b3584}: revisão de texto e pacote v1.1.0. A seguir, cria a tag e envia o commit e a tag ao remoto.\\
+14:13:57 & Resposta final informa conclusão da revisão, compilação e publicação dos arquivos.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Quantidade de trabalho.} A conversa contém 220 eventos: duas mensagens do usuário, 110 eventos do assistente, 107 chamadas de ferramentas e um evento adicional. As ferramentas registram 47 leituras de arquivo, nove listagens, seis buscas locais, 13 substituições de texto, quatro escritas de arquivo e 28 comandos. São contagens de ações registradas, não de respostas faturadas, arquivos distintos ou texto produzido. Não foi encontrada chamada de busca na web.
+
+\textbf{O que o commit mudou.} São 15 arquivos. Sete fontes LaTeX somam \textbf{144 linhas inseridas e 70 removidas}, inclusive uma alteração de versão nos metadados. O restante inclui PDFs e documentação de estado/publicação. Das 8.080 linhas inseridas no commit completo, 7.913 pertencem ao manifesto gerado da versão. Nenhum arquivo de código, testes, resultados ou bibliografia científica foi alterado. Contar todo esse diff como nova implementação de pesquisa seria enganoso.
+
+\textbf{Cumprimento e correção de rota.} O agente implementou a revisão autorizada, acrescentou trabalhos futuros, gerou os PDFs e fez commit e push. Corrigiu uma referência LaTeX inexistente antes do fechamento. O registro mostra 25 testes aprovados (9+13+3) e a verificação do PDF e de 7.376 entradas do pacote. Essas verificações sustentam a integridade operacional da entrega; não avaliam o mérito de cada nova formulação científica.
+
+\begin{destaque}
+\textbf{Tempo e alcance.} Do primeiro pedido ao fim da resposta: \textbf{20 min 47 s}. Da autorização de implementação ao fim: \textbf{15 min 44 s}. São intervalos de calendário da conversa, incluindo comandos e espera, não tempo de CPU. Não houve ferramenta goal nessa rodada; o contador original permanece em 30 h 51 min 26 s. O custo adicional do agy não foi estimado.
+\end{destaque}
+
+\textbf{Leitura da mudança.} A expressão ``15 linhas'', usada na revisão para descrever a conclusão antiga, conta linhas físicas do arquivo LaTeX, que continham parágrafos longos; não significa 15 linhas no PDF. A avaliação do tom como pessimista veio do usuário e foi acolhida pelo agente. O contraste documentado envolve também instruções distintas, sem comparação controlada entre modelos.
+\newpage
+
 \titulo{B}{Implementação e cumprimento do plano}
 O roteiro C01--C13 foi concluído no sentido operacional: os marcos têm commits, versões e artefatos. Houve ajustes de método, versões extras e redução de algumas pretensões científicas. A tabela resume a passagem do plano ao que efetivamente ficou documentado. \fonte{3, 6}
 
@@ -318,10 +374,10 @@ C13 & 300 análises condicionais; 40.000 séries temporais. & Complementos de re
 \end{tabularx}
 \fonte{3, 6, 7, 8}
 
-A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. Na v1.0.0, a dissertação tem 167 páginas e 47 referências, com 41 cópias locais conferidas; o artigo tem sete páginas. A revisão posterior do artigo passou a nove páginas. \fonte{6}
+A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. Na v1.0.0, a dissertação tem 167 páginas e 47 referências, com 41 cópias locais conferidas; o artigo tem sete páginas. Após as revisões, a dissertação v1.1.0 tem 170 páginas e o artigo, nove. As contagens de código e campanhas acima permanecem históricas. \fonte{6, 12}
 \newpage
 
-\titulo{D}{Modelo, duração e ferramenta goal}
+\titulo{D}{Modelo, duração e ferramenta goal original}
 \textbf{Modelo efetivamente registrado.} O principal foi \nolinkurl{gpt-6-astra}, com níveis de esforço variáveis. Antes do encerramento, os registros de contexto da conversa principal contêm 149 ocorrências desse modelo: 118 em \nolinkurl{medium}, 22 em \nolinkurl{ultra}, sete em \nolinkurl{xhigh} e duas em \nolinkurl{high}. Há uma ocorrência de \nolinkurl{gpt-5.6-luna}, em \nolinkurl{medium}, durante a sequência de pausa/retomada de 12/09, às 06:19. Esses números contam contextos registrados, não chamadas de geração, tokens ou proporções de tempo. \fonte{1, 9}
 
 Os três registros de subagentes ligados à conversa identificam \nolinkurl{gpt-6-astra}, em \nolinkurl{ultra} e \nolinkurl{xhigh}. Assim, a formulação mais fiel é: \textbf{execução predominantemente com GPT-6 Astra, apoiada por três subagentes Astra e com passagem pontual de Luna na conversa principal}. O registro inicial identifica o cliente \nolinkurl{codex-tui}, versão 0.153.4; isso descreve o início da sessão, não certifica a versão do aplicativo ao longo de todos os dias.
@@ -379,15 +435,15 @@ Saída, incluindo raciocínio & 5.229.122 & 50 & 261,46\\
 
 \textbf{Limites da estimativa.} Trata-se de equivalência de preços, não de fatura ou garantia para uma nova execução. O campo de gravação de cache é zero nos registros; na API atual, gravar cache tem tarifa própria. Se toda a entrada nova fosse gravada, mantendo a reutilização observada, o acréscimo seria de aproximadamente US\$ 53. Outra execução pode reutilizar menos contexto e custar mais. Nenhuma resposta medida excedeu o limiar de entrada para tarifa de contexto longo.
 
-\textbf{Custos fora deste recorte.} Não foram incluídos Gemini, computador e energia das simulações, tarifas adicionais de ferramentas ou a elaboração deste relatório e da apresentação sobre o experimento. O tempo humano para compreender e avaliar a pesquisa também não foi monetizado. Consumir uma semana da cota não estabelece uma conversão contratual entre assinatura e créditos de API.
+\textbf{Custos fora deste recorte.} Não foram incluídos os pareceres do Gemini, a revisão direta pelo agy, computador e energia das simulações, ferramentas adicionais ou a elaboração do estudo de caso. Para o agy, não se obteve uma base de consumo faturável verificada; seus eventos e minutos não permitem calcular créditos de API. O tempo humano não foi monetizado. Uma semana da cota não estabelece conversão contratual entre assinatura e API.
 
 {\small\textbf{Fontes e memória de cálculo.} \href{https://developers.openai.com/api/docs/models/gpt-6-astra}{Preços oficiais do Astra}, \href{https://developers.openai.com/api/docs/guides/prompt-caching}{regras de cache} e \href{https://developers.openai.com/api/docs/pricing}{preços de ferramentas}, consultados em 13/09/2026. Agregados e método em \nolinkurl{estimativa_custo_api.json} e \nolinkurl{estimativa_custo_api.md}, na pasta deste relatório. Os totais por resposta foram conferidos com os acumulados próprios dos registros de consumo.}
 \newpage
 
 \titulo{F}{Fontes, rastreabilidade e método de leitura}
-\textbf{Como o relatório foi elaborado.} Localizou-se a conversa pelo aplicativo e leu-se seu registro local completo por eventos, extraindo pedidos, mudanças do goal e metadados de modelo. Esses eventos foram confrontados com o histórico Git, planos, documentos de revisão e recibos de execução. As métricas de código foram recalculadas diretamente na tag final. As quantidades das campanhas foram conferidas nos registros existentes; não se repetiram simulações nesta análise.
+\textbf{Como o relatório foi elaborado.} Pedidos, eventos do goal e metadados da conversa local do Codex foram confrontados com Git, planos, revisões e recibos. As métricas de código foram recalculadas na tag v1.0.0; as campanhas foram conferidas nos registros, sem repetir simulações. A conversa posterior do agy foi confrontada com o commit e suas saídas de ferramentas. Registram-se ações e justificativas visíveis, sem reconstruir raciocínio interno.
 
-\textbf{Critério para contradições.} Há parágrafos antigos no README e em guias que ainda dizem ``em andamento'' ou ``pausado''. Para estabelecer o encerramento foram priorizados os recibos terminais, a auditoria final, o estado v1.0.0 e a resposta da ferramenta goal, preservando textos antigos apenas como história. Copiar isoladamente uma dessas notas antigas produziria um retrato incorreto.
+\textbf{Critério para contradições.} Notas antigas de pausa ou execução não prevalecem sobre recibos terminais, auditoria final e resposta do goal. Cada medida permanece vinculada à sua fase: v1.0.0, complementos do Codex ou revisão v1.1.0 pelo agy.
 
 {\footnotesize
 \begin{enumerate}[label={\textbf{[\arabic*]}},leftmargin=2em,itemsep=5pt]
@@ -402,7 +458,9 @@ Saída, incluindo raciocínio & 5.229.122 & 50 & 261,46\\
 \item \textbf{Evidências deste relatório.} \nolinkurl{evidencias.json} contém métricas, inventário de código, hashes, mensagens selecionadas e retornos do goal; \nolinkurl{coletar_evidencias.py} documenta sua extração. Os registros locais de subagentes associados à conversa foram consultados para confirmar modelos. Esses materiais acompanham o fonte LaTeX nesta pasta.
 \item \textbf{Esclarecimento posterior do proponente, em 13/09/2026.} Nesta conversa de elaboração do relatório, informou que o parecer técnico foi feito pelo Gemini. A atribuição apoia-se nesse relato; não foram examinados a conversa original com o Gemini nem seus metadados de versão. Registro em \nolinkurl{esclarecimento_gemini.json}.
 \item \textbf{Complementos após o goal.} Registro da conversa de execução retomada em 13/09/2026, arquivo \nolinkurl{rollout-2026-09-13T11-08-06-01a08ca4-18ea-7160-95a0-e1e805620720_01a09b18-c470-70b2-bcf2-4fc8c99719dd.jsonl}, linhas 7, 142 e 153. \nolinkurl{article/REVISION_NOTES.md}, \nolinkurl{article/README.md} e commit \nolinkurl{26ae3ac} documentam a revisão. Síntese e metadados em \nolinkurl{complementos_pos_goal.json}. A atribuição do novo parecer ao Gemini foi confirmada pelo usuário ao solicitar esta atualização.
+\item \textbf{Revisão direta pelo agy.} Conversa local \nolinkurl{5283aed3-4781-476e-badf-4e935b203406}, de 13/09/2026: pedidos nos eventos 0 e 58; proposta no 57; resposta final no 219. Banco local lido em modo somente leitura, com extração das mensagens visíveis, horários e chamadas de ferramentas; saídas de compilação, testes e Git conferidas. Seleção do modelo no log \nolinkurl{cli-20260913_134939.log}, linhas 150, 159 e 162. Confronto com o \href{https://github.com/flavioluiz/TGdoWayne/commit/09b3584b5eea40251f84fb594da9551cba2b925d}{commit 09b3584} e os PDFs v1.1.0. Agregados, localizadores e hashes em \nolinkurl{revisao_agy.json}, sem transcrição da conversa privada.
 \end{enumerate}}
 
-\textbf{Reprodução do documento.} Na pasta do relatório, executar \texttt{latexmk -pdf relatorio.tex}. Para recalcular as evidências, executar \texttt{python3 coletar\_evidencias.py} no ambiente original, com acesso ao repositório e ao registro local da conversa. O JSON de evidências contém mensagens do usuário; não é necessário torná-lo público para discutir o PDF.
+\textbf{Compilação:} \texttt{latexmk -pdf relatorio.tex}, na pasta do relatório.\par
+Extração original: \nolinkurl{coletar_evidencias.py}, com acesso ao registro local do Codex. Complemento agy: \nolinkurl{revisao_agy.json}, sem transcrição do chat.
 \end{document}

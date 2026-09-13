@@ -9,8 +9,8 @@ O estudo de ondas gravitacionais foi o problema científico escolhido para o exp
 | Material | Acesso | Conteúdo |
 |---|---|---|
 | **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
-| **Apresentação do experimento, 20–30 min** | [PDF — revisão 4](output/pdf/experimento/experimento_codex_4.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
-| Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) | Definições das contagens, eventos do goal e revisão posterior do artigo |
+| **Apresentação do experimento, 20–30 min** | [PDF — revisão 5](output/pdf/experimento/experimento_codex_5.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
+| Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) · [Revisão pelo agy](output/pdf/relatorio_experimento/revisao_agy.json) | Contagens, eventos do goal, revisão do artigo e reescrita pelo Gemini |
 
 ## Produtos científicos gerados no experimento
 
@@ -25,15 +25,17 @@ Esses materiais permitem examinar o resultado da automação. Sua existência n�
 | Proposta inicial de pesquisa | [Proposta v0.1.0](output/pdf/v0.1.0/proposta_pesquisa.pdf) | [Plano de execução](implementation_plan/README.md) |
 | Trabalho de graduação de partida | [TG original](TG_Wayne.pdf) | Documento anterior ao experimento, preservado com sua atribuição |
 
-**Versões:** a dissertação e o manuscrito foram atualizados para a **v1.1.0**, incorporando uma revisão editorial e científica profunda realizada pelo Gemini. Essa revisão substitui a redação hiperdefensiva e pessimista anterior por uma narrativa afirmativa e madura, valorizando plenamente as contribuições originais da pesquisa. O Capítulo 12 (Conclusões) da dissertação foi substancialmente expandido de 15 linhas para um capítulo completo de quatro seções, incluindo a síntese dos cinco achados centrais, diretrizes práticas para consórcios de PTAs e cinco direções concretas para trabalhos futuros (*further work*). A introdução, o resumo e o abstract foram aprimorados, e o manuscrito em inglês (9 páginas) recebeu abstract assertivo e conclusões ampliadas com roteiro observacional. Os releases anteriores (como o v1.0.0) permanecem preservados no histórico do repositório.
+**Versões:** a dissertação e o manuscrito foram revisados diretamente pelo **agy / Gemini 3.8 Flash (High)** no commit `09b3584`, tag **v1.1.0**. A pedido do proponente, a revisão valorizou a exposição das contribuições, reorganizou as conclusões em quatro seções e acrescentou cinco direções de trabalhos futuros. A dissertação passou de 167 para 170 páginas; o artigo manteve nove. Não houve nova campanha numérica registrada, e o código e os resultados científicos não mudaram no commit. O relatório examina tanto os ganhos de clareza quanto o fortalecimento de algumas alegações com a mesma evidência. As versões anteriores permanecem no histórico.
 
 ## Como o experimento foi conduzido
 
 O proponente declarou não dominar a área científica e pediu ao Codex que lesse o TG e procurasse uma continuação implementável, com potencial de publicação. O agente selecionou o recorte, buscou antecedentes, criou um plano de 13 marcos e executou a pesquisa com três subagentes. O usuário acompanhou recursos, pediu pausas e retomadas, definiu entregas e orientou a apresentação dos resultados.
 
-O **Gemini elaborou dois pareceres**, encaminhados pelo usuário ao Codex. O primeiro contribuiu para a revisão da dissertação e novos estudos pontuais. O segundo motivou melhorias do manuscrito com os resultados existentes. O Codex incorporou sugestões e também limitou alegações sem suporte. A versão do Gemini não foi informada.
+O **Gemini elaborou dois pareceres**, encaminhados pelo usuário ao Codex. O primeiro contribuiu para a revisão da dissertação e novos estudos pontuais. O segundo motivou melhorias do manuscrito com os resultados existentes. O Codex incorporou sugestões e também limitou alegações sem suporte. A versão do Gemini nesses dois pareceres não foi informada.
 
-A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantemente com **GPT-6 Astra**. O goal original foi marcado como concluído em 13/09, às 01:04 de Brasília. As apresentações e a última revisão do artigo ocorreram depois desse encerramento.
+Em uma terceira rodada, o usuário pediu ao **agy / Gemini 3.8 Flash (High)** uma revisão direta por considerar a redação pessimista. A conversa local confirma dois pedidos: propor melhorias e depois implementá-las com trabalhos futuros, PDFs e publicação. O modelo passou de parecerista a executor editorial; o relatório e o slide 7 discutem como essa mudança afeta a apresentação e a percepção do valor científico.
+
+A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantemente com **GPT-6 Astra**. O goal original foi marcado como concluído em 13/09, às 01:04 de Brasília. As apresentações, a revisão posterior do artigo pelo Codex e a reescrita pelo agy ocorreram depois desse encerramento.
 
 ## O que os registros mostram
 
@@ -44,9 +46,10 @@ A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantem
 | Código principal na v1.0.0 | **26.069 linhas** em módulos, scripts e testes, incluindo comentários e linhas vazias |
 | Campanhas principais | **45.528 análises** em quatro campanhas; incluem análises diferentes dos mesmos dados |
 | Plano científico | **13 marcos concluídos**, com resultados, limitações e histórico de falhas |
-| Revisão posterior do artigo | Cerca de **6 min 37 s** no turno do Codex; exclui o trabalho no Gemini e não altera o contador do goal |
+| Revisão posterior do artigo pelo Codex | Cerca de **6 min 37 s** no turno do Codex; exclui o trabalho no Gemini e não altera o contador do goal |
+| Revisão direta pelo agy | **20 min 47 s** de calendário; **15 min 44 s** após autorização; sem goal e sem nova campanha numérica |
 
-**Estimativa de custo:** cerca de US$ 1.300 em API Standard, aplicando os preços de 13/09/2026 ao consumo registrado, incluindo os complementos científicos; aproximadamente US$ 2.600 em Fast. O proponente atribui cerca de US$ 50 ao rateio de uma semana da assinatura. São medidas diferentes. A conta exclui Gemini, computação local, tarifas adicionais de ferramentas e elaboração do estudo de caso. Veja a [memória de cálculo](output/pdf/relatorio_experimento/estimativa_custo_api.md).
+**Estimativa de custo:** cerca de US$ 1.300 em API Standard, aplicando os preços de 13/09/2026 ao consumo registrado, incluindo os complementos científicos; aproximadamente US$ 2.600 em Fast. O proponente atribui cerca de US$ 50 ao rateio de uma semana da assinatura. São medidas diferentes. A conta exclui Gemini (pareceres e revisão pelo agy), computação local, tarifas adicionais de ferramentas e elaboração do estudo de caso. Veja a [memória de cálculo](output/pdf/relatorio_experimento/estimativa_custo_api.md).
 
 Os números são registros deste caso, não fatores gerais de produtividade. Quantidade de código, simulações ou páginas não comprova qualidade científica. O relatório distingue os produtos da v1.0.0 dos complementos posteriores para evitar dupla contagem.
 
@@ -58,6 +61,7 @@ Os números são registros deste caso, não fatores gerais de produtividade. Qua
 - **Relevância:** como valorizar perguntas, controles e sínteses úteis, além da quantidade de artigos?
 - **Avaliação:** como combinar acompanhamento durante o curso, defesa e atribuição transparente das decisões?
 - **Revisão entre modelos:** quais críticas ajudam, quais exageram conclusões e o que ainda requer avaliação especializada?
+- **Narrativa e mérito:** quanto uma revisão afirmativa melhora a clareza e quanto muda a percepção de valor dos mesmos resultados?
 
 O repositório contém um estudo de caso, sem grupo de comparação ou medida de aprendizagem. Há evidências de execução e correção de rota, mas a contribuição científica continua sujeita a avaliação externa. Uma comparação central permaneceu inconclusiva em seu escopo mais amplo. O artigo não foi submetido e não houve defesa ou aprovação institucional. Os nomes fictícios usados nos produtos acadêmicos fazem parte do experimento.
 

@@ -18,7 +18,7 @@
 \setbeamertemplate{footline}{}
 \setbeameroption{hide notes}
 \graphicspath{{presentations/experimento/assets/}}
-\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 4},colorlinks=true,urlcolor=Green}
+\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 5: agy / Gemini},colorlinks=true,urlcolor=Green}
 \setbeamercolor{normal text}{fg=Ink,bg=Paper}
 \newenvironment{Canvas}{\begin{tikzpicture}[remember picture,overlay]\coordinate (O) at (current page.north west);}{\end{tikzpicture}}
 % Texto em posições relativas à página, em centímetros. O texto continua editável.
@@ -83,7 +83,7 @@
 \node[etapa,fill=Ink,text=white] (b) at ([xshift=8cm,yshift=-3.3cm]O) {Busca e recorte};
 \node[etapa,fill=Ink,text=white] (c) at ([xshift=13.2cm,yshift=-3.3cm]O) {Execução};
 \node[etapa,fill=Ink,text=white] (d) at ([xshift=13.2cm,yshift=-5.6cm]O) {Testes e correções};
-\node[etapa] (e) at ([xshift=8cm,yshift=-5.6cm]O) {Revisão pelo Gemini};
+\node[etapa] (e) at ([xshift=8cm,yshift=-5.6cm]O) {Revisões com Gemini};
 \node[etapa] (f) at ([xshift=2.8cm,yshift=-5.6cm]O) {Dissertação e artigo};
 \draw[fluxo] (a)--(b);\draw[fluxo] (b)--(c);\draw[fluxo] (c)--(d);\draw[fluxo] (d)--(e);\draw[fluxo] (e)--(f);
 \Bold{.94}{7.22}{14.1}{12}{Green}{Codex Astra conduziu recorte, execução e testes.\\O usuário definiu a direção e encaminhou os pareceres.}
@@ -96,9 +96,10 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{O EXPERIMENTO}{O que o agente entregou}
-\Display{.94}{2.40}{6.5}{40}{Green}{167}
+\Display{.94}{2.40}{6.5}{40}{Green}{170}
 \Display{8.2}{2.40}{6.9}{40}{Green}{9}
 \Bold{.94}{3.93}{6.5}{12}{Ink}{páginas de dissertação}
+\Body{.94}{4.48}{6.5}{9}{Muted}{167 no goal / 170 após agy}
 \Bold{8.2}{3.93}{6.9}{12}{Ink}{páginas de artigo revisado}
 \Display{.94}{4.92}{6.5}{36}{Green}{31 horas}
 \Display{8.2}{4.92}{6.9}{36}{Green}{US\$ 50}
@@ -127,16 +128,18 @@
 \SpeakerNote{6}
 \end{frame}
 
-% 07 — Exemplos de aceitação e recusa de sugestões de outro modelo.
+% 07 — Gemini muda de papel: pareceres e edição direta pelo agy.
 \setbeamercolor{background canvas}{bg=Ink}
 \begin{frame}[plain]
 \begin{Canvas}
-\DarkHeader{O EXPERIMENTO}{O Gemini criticou. O Codex conferiu.}
-\Bold{.94}{2.56}{6.5}{10}{Mist}{CRÍTICAS INCORPORADAS}
-\Bold{8.6}{2.56}{6.5}{10}{Mist}{CONCLUSÕES RECUSADAS}
-\Display{.94}{3.55}{6.5}{17}{white}{Novos testes.\\Mais contexto\\para o artigo.}
-\Display{8.6}{3.55}{6.5}{17}{white}{Originalidade absoluta.\\Falha inevitável\\em dados reais.}
-\Display{.94}{6.62}{14.1}{22}{Mist}{O que orientadores e revisores\\precisam verificar?}
+\DarkHeader{O EXPERIMENTO}{Trocar o agente mudou a narrativa}
+\Bold{.94}{2.40}{6.5}{10}{Mist}{GEMINI AVALIA / CODEX REVISA}
+\Bold{8.2}{2.40}{6.9}{10}{Mist}{AGY / GEMINI REESCREVE}
+\Display{.94}{3.17}{6.5}{19}{white}{Testar as críticas.\\Explicitar os limites.}
+\Display{8.2}{3.17}{6.9}{19}{white}{Valorizar os achados.\\Propor continuidade.}
+\Body{.94}{5.23}{6.5}{11}{Mist}{Críticas aceitas e recusadas.}
+\Body{8.2}{5.23}{6.9}{11}{Mist}{Gemini 3.8 Flash / 21 min.\\Mesmos dados; mais ênfase.}
+\Display{.94}{6.80}{14.1}{21}{white}{Mudou a evidência ou a nossa\\percepção do valor da pesquisa?}
 \Page[Mist]
 \end{Canvas}
 \SpeakerNote{7}
@@ -249,7 +252,7 @@ Saída, com raciocínio & 5,23 & 261,46\\\bottomrule
 \end{tabular}};
 \Bold{.94}{6.25}{14.1}{16}{Green}{\textasciitilde US\$ 1.300 Standard / \textasciitilde US\$ 2.600 Fast}
 \Body{.94}{7.04}{14.1}{11.5}{Muted}{\textasciitilde US\$ 50 no rateio da assinatura informado pelo proponente.}
-\Body{.94}{7.73}{14.1}{10}{Muted}{API com complementos científicos. Estimativas, não faturas.}
+\Body{.94}{7.73}{14.1}{10}{Muted}{Inclui complementos do Codex; exclui Gemini e agy. Estimativas, não faturas.}
 \Backup
 \end{Canvas}
 \SpeakerNote{14}
@@ -258,10 +261,10 @@ Saída, com raciocínio & 5,23 & 261,46\\\bottomrule
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{EVIDÊNCIAS E FONTES}{Documentos para examinar o caso}
-\CoverImage{.94}{2.55}{3.7}{4.82}{dissertacao-001.png}
-\CoverImage{5.0}{2.55}{3.7}{4.82}{artigo-1.png}
-\Bold{.94}{7.67}{3.7}{11}{Ink}{Dissertação}
-\Bold{5.0}{7.67}{3.7}{11}{Ink}{Manuscrito}
+\CoverImage{.94}{2.55}{3.7}{4.82}{dissertacao-v1.1.0.png}
+\CoverImage{5.0}{2.55}{3.7}{4.82}{artigo-v1.1.0.png}
+\Bold{.94}{7.67}{3.7}{11}{Ink}{Dissertação v1.1.0}
+\Bold{5.0}{7.67}{3.7}{11}{Ink}{Manuscrito v1.1.0}
 \Display{9.55}{2.66}{5.55}{21}{Ink}{Um caso aberto\\ao exame.}
 \Body{9.55}{4.85}{5.55}{12}{Ink}{Relatório e apêndices\\Código e resultados\\Registros de revisão}
 \Bold{9.55}{6.93}{5.55}{12}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Abrir o repositório\\e os materiais}}
