@@ -8038,5 +8038,53 @@
     "model_version": null,
     "review_conversation_inspected": false,
     "effect": "Atribuição do parecer final ao Gemini; métricas históricas do Codex preservadas."
+  },
+  "post_goal_complements": {
+    "scope": "Complementos posteriores ao goal original, encerrado em 2026-09-13T04:04:06Z.",
+    "article_revision_commit": "26ae3ac",
+    "article_revision_session": "rollout-2026-09-13T11-08-06-01a08ca4-18ea-7160-95a0-e1e805620720_01a09b18-c470-70b2-bcf2-4fc8c99719dd.jsonl",
+    "article_revision_session_sha256": "cdcedf5f7eab4901357fe4d86195796fe301b0b80ef97b0dbb3e037195303159",
+    "model": "gpt-6-astra",
+    "effort": "medium",
+    "review_origin": "Gemini, conforme esclarecimento do usuário na solicitação de atualização do relatório",
+    "gemini_version": null,
+    "new_simulations": false,
+    "article_pages_before": 7,
+    "article_pages_after": 9,
+    "figures_after": 2,
+    "references_after": 10,
+    "article_turn": {
+      "start_utc": "2026-09-13T14:08:07.538Z",
+      "end_utc": "2026-09-13T14:14:44.969Z",
+      "duration_ms": 397426
+    },
+    "relevant_user_messages_after_goal": [
+      {
+        "time_brasilia": "13/09/2026 08:48",
+        "summary": "Solicitou apresentação Beamer para defesa de 50 minutos."
+      },
+      {
+        "time_brasilia": "13/09/2026 09:12",
+        "summary": "Solicitou apresentação didática para público leigo."
+      },
+      {
+        "time_brasilia": "13/09/2026 10:02",
+        "summary": "Perguntou qual era a versão mais recente do artigo."
+      },
+      {
+        "time_brasilia": "13/09/2026 11:08",
+        "summary": "Encaminhou parecer do Gemini com propostas para reposicionar a contribuição e melhorar estrutura, referências e figuras do artigo.",
+        "line": 7
+      },
+      {
+        "time_brasilia": "13/09/2026 11:14",
+        "summary": "Solicitou link para o artigo revisado no README.",
+        "line": 142
+      }
+    ],
+    "count_note": "25 mensagens relevantes antes do fechamento do goal, mais cinco depois, nesta conversa de execução. Exclui mensagens alheias ao experimento e a conversa de elaboração do estudo de caso.",
+    "original_goal_unchanged": true,
+    "article_source_sha256": "3382532d55c704c404d3bbeba88bc8856758cb8bd68209ed17270cf79e5f4231",
+    "article_pdf_sha256": "12b6b7cb484ad20e5601b05993356e5b8fedb2357f72fe4416e7377734961a2c"
   }
 }

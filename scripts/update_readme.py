@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Atualiza somente o painel de estado e roadmap do README, a partir dos JSONs."""
+"""Atualiza o painel científico em PESQUISA.md, a partir dos JSONs."""
 import argparse
 import json
 from pathlib import Path
@@ -48,7 +48,7 @@ def status_block():
 
 
 def render_readme():
-    path = ROOT / "README.md"
+    path = ROOT / "PESQUISA.md"
     text = path.read_text()
     before, rest = text.split(START, 1)
     _, after = rest.split(END, 1)
@@ -60,14 +60,14 @@ def main():
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     expected = render_readme()
-    path = ROOT / "README.md"
+    path = ROOT / "PESQUISA.md"
     if args.check:
         if path.read_text() != expected:
-            raise SystemExit("README desatualizado: execute python3 scripts/update_readme.py")
-        print("README consistente com o estado e o roadmap.")
+            raise SystemExit("PESQUISA.md desatualizado: execute python3 scripts/update_readme.py")
+        print("PESQUISA.md consistente com o estado e o roadmap.")
     else:
         path.write_text(expected)
-        print("Painel do README atualizado.")
+        print("Painel científico de PESQUISA.md atualizado.")
 
 
 if __name__ == "__main__":

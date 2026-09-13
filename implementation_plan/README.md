@@ -8,7 +8,7 @@ a sequência de marcos, sem transformar etapas futuras em resultados já produzi
 
 ## Regra de acompanhamento
 
-O [README da raiz](../README.md) é o painel público do estado atual. Deve mostrar: última etapa concluída,
+O [painel científico](../PESQUISA.md) registra o estado dos marcos da pesquisa. O [README principal](../README.md) descreve o experimento com IA. O painel científico deve mostrar: última etapa concluída,
 trabalho em andamento, próxima etapa, entregas efetivamente executadas, roadmap e link direto para
 o PDF mais recente. `project_status.json` alimenta esse painel; `roadmap.json` contém os marcos e versões.
 O script `update_readme.py` gera o painel e `verify_release.py` bloqueia inconsistências na publicação.
@@ -90,7 +90,7 @@ honestamente o que tiver sido obtido.
 Exemplo para C02, somente depois de cumprir os passos anteriores:
 
 ```bash
-git add README.md project_status.json implementation_plan latex scripts tests configs results figures releases output/pdf
+git add README.md PESQUISA.md project_status.json implementation_plan latex scripts tests configs results figures releases output/pdf
 # Incluir apenas os caminhos existentes e pertinentes ao marco; rever git diff --cached.
 git commit -m "docs: conclui introducao da dissertacao"
 git tag -a v0.2.0 -m "C02: introducao da dissertacao"

@@ -97,5 +97,8 @@ evidence = dict(revision=git('rev-parse','v1.0.0^{commit}').decode().strip(),
 clarification = OUT/'esclarecimento_gemini.json'
 if clarification.exists():
     evidence['subsequent_user_clarification'] = json.loads(clarification.read_text())
+post_goal = OUT/'complementos_pos_goal.json'
+if post_goal.exists():
+    evidence['post_goal_complements'] = json.loads(post_goal.read_text())
 (OUT/'evidencias.json').write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({k:v for k,v in evidence.items() if k in ['code_groups','tracked_files','goal_final','goal_calendar_seconds','model_contexts']},ensure_ascii=False,indent=2))

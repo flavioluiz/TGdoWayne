@@ -1,0 +1,184 @@
+{
+  "main_slides": 20,
+  "backup_slides": 2,
+  "suggested_seconds": 1520,
+  "basis": "Tempos sugeridos, sem ensaio cronometrado.",
+  "slides": [
+    {
+      "slide": 1,
+      "title": "Pesquisa acadêmica com agentes de IA",
+      "seconds": 35,
+      "backup": false,
+      "note": "Apresentar o experimento como estudo de caso. O tema de ondas gravitacionais forneceu a tarefa científica, mas a pergunta desta apresentação é sobre automação, formação e avaliação. Não pressupor conhecimento de física.",
+      "source": "Relatório do estudo de caso, introdução."
+    },
+    {
+      "slide": 2,
+      "title": "A pergunta do experimento",
+      "seconds": 65,
+      "backup": false,
+      "note": "Distinguir qualidade do produto, aprendizagem e responsabilidade. A proposta era observar até onde o agente iria com orientação científica inicial mínima. O objetivo não é detectar uso de IA em textos.",
+      "source": "Relatório, seções 8 a 10."
+    },
+    {
+      "slide": 3,
+      "title": "O ponto de partida",
+      "seconds": 80,
+      "backup": false,
+      "note": "O proponente forneceu um trabalho de graduação e pediu extensões implementáveis com potencial de artigo. Declarou não dominar a área. O agente precisou procurar antecedentes e formular o recorte. A imagem é a página real do TG e não uma representação gerada.",
+      "source": "TG_Wayne.pdf, página 1. Relatório, seções 1 e 3."
+    },
+    {
+      "slide": 4,
+      "title": "Quem tomou quais decisões",
+      "seconds": 70,
+      "backup": false,
+      "note": "A participação humana foi de direção, recursos, formato e mediação dos pareceres. O Codex coordenou três subagentes e executou o trabalho científico. O Gemini elaborou dois pareceres, conforme esclarecido pelo usuário. Não se conhece sua versão.",
+      "source": "Conversa de execução. Relatório, seções 2, 2.1 e 4."
+    },
+    {
+      "slide": 5,
+      "title": "Cronologia do experimento",
+      "seconds": 85,
+      "backup": false,
+      "note": "Todos os horários são de Brasília. A primeira fase incluiu pausas e mudanças de estado. A revisão do artigo ocorreu depois do goal original e não está incluída em seu contador.",
+      "source": "Relatório, seções 1, 2, 2.1 e 7."
+    },
+    {
+      "slide": 6,
+      "title": "Como o agente procurou novidade",
+      "seconds": 85,
+      "backup": false,
+      "note": "Os resultados centrais do TG já tinham publicação derivada. O agente considerou caminhos alternativos e encontrou antecedentes próximos. A decisão foi reduzir a reivindicação de novidade a uma comparação controlada, e não inventar as técnicas empregadas. Não houve revisão sistemática exaustiva.",
+      "source": "output/pesquisa/proposta_mestrado.md e docs/literatura/decisao_recorte.md."
+    },
+    {
+      "slide": 7,
+      "title": "Execução orientada por etapas",
+      "seconds": 70,
+      "backup": false,
+      "note": "O plano tinha 13 marcos. Não se esperou o cronograma convencional de 24 meses. Cada marco previa entregas verificáveis e PDF. Houve versões intermediárias, dificuldades de recursos e mudanças de método. A etapa concluída não garante que sua pergunta tenha resposta definitiva.",
+      "source": "implementation_plan/roadmap.json. Relatório, seção 4."
+    },
+    {
+      "slide": 8,
+      "title": "Os produtos do estudo",
+      "seconds": 70,
+      "backup": false,
+      "note": "As imagens mostram páginas reais dos documentos. A dissertação final tem 167 páginas. O manuscrito tinha sete na v1.0.0 e passou a nove. Também existem duas apresentações científicas. O produto atual continua sem defesa institucional ou submissão editorial.",
+      "source": "output/pdf/v1.0.0/dissertacao.pdf, página 1. article/manuscript.pdf, página 1."
+    },
+    {
+      "slide": 9,
+      "title": "Escala do trabalho executado",
+      "seconds": 75,
+      "backup": false,
+      "note": "O gráfico mede linhas físicas na tag v1.0.0, incluindo comentários e linhas vazias. As 45.528 análises somam C07, C09, C10 e C11 e compartilham dados, portanto não são observações independentes. Não somar reproduções como novos experimentos.",
+      "source": "evidencias.json, code_groups. Relatório, seção 6."
+    },
+    {
+      "slide": 10,
+      "title": "Tempo de execução e tempo de formação",
+      "seconds": 75,
+      "backup": false,
+      "note": "O goal retornou 111086 segundos. O calendário entre criação e encerramento foi 197802 segundos, com pausas. A revisão adicional do artigo levou cerca de 6min37s no Codex, sem incluir o Gemini. Não é uma comparação de produtividade com um estudante.",
+      "source": "Eventos do goal e complementos_pos_goal.json. Relatório, seção 7."
+    },
+    {
+      "slide": 11,
+      "title": "Um controle expôs confiança excessiva",
+      "seconds": 85,
+      "backup": false,
+      "note": "Explicar cobertura como a frequência com que uma faixa estimada contém o valor usado para gerar os dados. Em um parâmetro de ruído, uma análise nominal de 90% atingiu 313 de 500 casos, 62,6%. Não generalizar esse número para todos os parâmetros ou todos os métodos. A incerteza numérica levava a contagens de 299 a 325, ainda longe de 450.",
+      "source": "docs/revisao_cientifica_1.md e results/C13/review_efac_coverage.json."
+    },
+    {
+      "slide": 12,
+      "title": "Correções e perguntas ainda abertas",
+      "seconds": 80,
+      "backup": false,
+      "note": "Separar erro editorial, problema de execução e limitação científica. A descrição das aproximações em uma versão estava incorreta, mas o cálculo usava a semântica correta. A comparação ampla continuou inconclusiva. Um estudo com 50 casos e parâmetros fixados respondeu a uma pergunta menor com precisão.",
+      "source": "docs/c12_errata_v0110.md, docs/revisao_cientifica_1.md."
+    },
+    {
+      "slide": 13,
+      "title": "Dois ciclos de revisão com Gemini",
+      "seconds": 75,
+      "backup": false,
+      "note": "O primeiro parecer motivou novos estudos, como as 300 análises condicionais e o teste de ajuste temporal. O segundo foi uma revisão do manuscrito e não iniciou novas simulações. Não se dispõe da conversa original do Gemini ou de sua versão.",
+      "source": "Relatório, seções 2 e 2.1. article/REVISION_NOTES.md."
+    },
+    {
+      "slide": 14,
+      "title": "O Codex filtrou o segundo parecer",
+      "seconds": 80,
+      "backup": false,
+      "note": "Mostrar o valor e o risco do feedback automatizado. O agente aceitou melhorias de exposição, mas as notas de revisão recusam novidade absoluta, certeza de falha em dados reais e amplificações extremas não demonstradas. O ponto é o contraste entre persuasão retórica e suporte científico.",
+      "source": "article/REVISION_NOTES.md, commit 26ae3ac."
+    },
+    {
+      "slide": 15,
+      "title": "O que o caso demonstra",
+      "seconds": 80,
+      "backup": false,
+      "note": "Evitar extrapolar o estudo de caso. Os produtos existem e há rastros de execução. Não houve avaliação científica independente completa, teste de aprendizagem ou aceitação editorial. Uma revisão entre modelos é observável, mas seu ganho de qualidade não foi medido por avaliadores externos.",
+      "source": "Relatório, seções 8 a 10."
+    },
+    {
+      "slide": 16,
+      "title": "A divisão do trabalho pode mudar",
+      "seconds": 80,
+      "backup": false,
+      "note": "Oportunidades: explorar ideias que não chegariam à implementação e testar mais alternativas. Dificuldade: produzir pode se tornar mais rápido que compreender e validar. Não apresentar esse deslocamento como medição de todo o campo, mas como hipótese sustentada pela experiência do caso.",
+      "source": "Relatório, seções 8 e 9."
+    },
+    {
+      "slide": 17,
+      "title": "Formação precisa aparecer no processo",
+      "seconds": 75,
+      "backup": false,
+      "note": "Destacar responsabilidades compartilhadas pelo programa, orientador e estudante. Propor avaliações distribuídas e distinguir exercício para aprender de tarefa de produção. A defesa deve complementar esse percurso. O caso não testa a eficácia destas propostas.",
+      "source": "Relatório, seção 8."
+    },
+    {
+      "slide": 18,
+      "title": "Relevância e capacidade de revisão",
+      "seconds": 70,
+      "backup": false,
+      "note": "Discutir possíveis consequências de aumento da produção sem afirmar colapso observado de periódicos. Origem humana ou de IA não decide relevância. Contribuições incrementais podem ser valiosas se resolvem incerteza importante. Oportunidade de usar a capacidade extra para profundidade, controle e síntese.",
+      "source": "Relatório, seção 9."
+    },
+    {
+      "slide": 19,
+      "title": "Próximas avaliações do experimento",
+      "seconds": 75,
+      "backup": false,
+      "note": "Estas são propostas ainda não executadas. Especialistas poderiam comparar artigo antes e depois do Gemini, checar argumentos e reproduzir resultados centrais. Para aprendizagem seria necessário outro desenho com estudantes e medidas antes e depois.",
+      "source": "Relatório, seção 10."
+    },
+    {
+      "slide": 20,
+      "title": "Questões para discussão",
+      "seconds": 110,
+      "backup": false,
+      "note": "Reservar cerca de dois minutos para encerrar ou abrir uma conversa. Na versão de 20 minutos, selecionar apenas uma questão. Na de 30 minutos, usar o tempo restante para ouvir respostas. Não tratar os produtos como títulos acadêmicos aprovados.",
+      "source": "Relatório do estudo de caso, discussão."
+    },
+    {
+      "slide": 21,
+      "title": "Apoio: leitura correta das métricas",
+      "seconds": 0,
+      "backup": true,
+      "note": "Abrir apenas se perguntarem pelas contagens. Todas são do fechamento v1.0.0, exceto o manuscrito revisado. Os arquivos de evidências documentam regras e exclusões.",
+      "source": "evidencias.json, complementos_pos_goal.json."
+    },
+    {
+      "slide": 22,
+      "title": "Apoio: documentos e fontes",
+      "seconds": 0,
+      "backup": true,
+      "note": "Links completos também estão nas notas e no README. A apresentação usa a conversa de execução e artefatos do próprio projeto. Discussões privadas não foram transcritas.",
+      "source": "https://github.com/flavioluiz/TGdoWayne"
+    }
+  ]
+}

@@ -1,256 +1,77 @@
-# TG do Wayne — proposta e dissertação em desenvolvimento
+# Pesquisa acadêmica com agentes de IA: um experimento
 
-**Massa do gráviton e polarizações de ondas gravitacionais em PTAs: efeitos da compressão em frequência e validação estatística.**
+Este repositório documenta um experimento de **automação de pesquisa científica com o Codex**, partindo de um trabalho de graduação para produzir uma proposta, uma dissertação e um manuscrito de artigo. O objetivo é investigar o que um agente consegue formular, implementar, validar e escrever com orientação inicial ampla, e usar essa experiência para discutir **formação, avaliação e organização da pesquisa na pós-graduação**.
 
-Projeto baseado em *Estados de polarização de ondas gravitacionais com gráviton massivo*,
-trabalho de graduação de Wayne Leonardo Silva de Paula (ITA, 2003). O objetivo é desenvolver
-uma pesquisa de mestrado de 24 meses sobre a confiabilidade da inferência da massa do gráviton
-com redes de temporização de pulsares, com potencial para um artigo metodológico.
+O estudo de ondas gravitacionais foi o problema científico escolhido para o experimento. A questão central deste repositório é o processo de pesquisa com IA e suas implicações para mestrado, doutorado e trabalho dos pesquisadores.
 
-## Artigo — manuscrito revisado
+## Materiais sobre o experimento
 
-[PDF atual](article/manuscript.pdf) · [Fonte LaTeX](article/manuscript.tex) · [Notas da revisão de 13/09/2026](article/REVISION_NOTES.md). A revisão destaca as três operações, acrescenta o fluxograma e amplia a discussão de calibração e aprendizado sobre a massa. Ainda não submetido; o release v1.0.0 contém a redação anterior.
+| Material | Acesso | Conteúdo |
+|---|---|---|
+| **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
+| **Apresentação do experimento, 20–30 min** | [PDF](output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](presentations/experimento/experimento_codex.pptx) · [Roteiro](presentations/experimento/roteiro.md) | 20 slides principais e dois de apoio, com duração sugerida de aproximadamente 25 minutos |
+| Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) | Definições das contagens, eventos do goal e revisão posterior do artigo |
 
-## Relatório do experimento com IA
+## Produtos científicos gerados no experimento
 
-[Relatório em PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [Fonte LaTeX](output/pdf/relatorio_experimento/relatorio.tex) · [Evidências e métricas](output/pdf/relatorio_experimento/evidencias.json).
+Esses materiais permitem examinar o resultado da automação. Sua existência não significa defesa, aprovação institucional, submissão ou aceitação de artigo.
 
-Relatório de 12 páginas para discussão na pós-graduação do ITA sobre o desenvolvimento da pesquisa pelo Codex, com revisão final pelo Gemini. Reconstitui os pedidos do usuário, as decisões do agente, as correções de rota, o volume de código e simulações, os modelos utilizados e o tempo registrado pelo goal, em linguagem acessível a não especialistas. Discute também formação, divisão do trabalho científico, relevância das contribuições e custo de verificação com IA.
+| Produto | PDF | Fontes e contexto |
+|---|---|---|
+| **Dissertação consolidada** | [Dissertação v1.0.0, 167 páginas](output/pdf/v1.0.0/dissertacao.pdf) | [LaTeX](latex/dissertacao.tex) · [Release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) |
+| **Artigo / manuscrito revisado** | [Versão atual, 9 páginas](article/manuscript.pdf) | [LaTeX](article/manuscript.tex) · [Notas da revisão](article/REVISION_NOTES.md) |
+| **Apresentação de defesa** | [Slides para 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) | [Roteiro](presentations/defesa/roteiro_50min.md) · [Beamer](presentations/defesa/README.md) |
+| **Apresentação do estudo para público leigo** | [Apresentação didática](output/pdf/didatica/tg_wayne_para_nao_especialistas.pdf) | [Roteiro](presentations/didatica/roteiro.md) · [Beamer](presentations/didatica/README.md) |
+| Proposta inicial de pesquisa | [Proposta v0.1.0](output/pdf/v0.1.0/proposta_pesquisa.pdf) | [Plano de execução](implementation_plan/README.md) |
+| Trabalho de graduação de partida | [TG original](TG_Wayne.pdf) | Documento anterior ao experimento, preservado com sua atribuição |
 
-## Apresentação de defesa
+**Versões:** a dissertação permanece na v1.0.0. O artigo recebeu uma revisão posterior, em 13/09/2026, registrada no commit `26ae3ac`, com base em novo parecer do Gemini. O manuscrito passou de sete para nove páginas, com duas figuras e dez referências, sem novas simulações. O release v1.0.0 conserva a redação anterior do artigo.
 
-[Slides em PDF — 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) · [Roteiro de fala](presentations/defesa/roteiro_50min.md) · [Fonte Beamer e compilação](presentations/defesa/README.md). São 32 slides principais e 7 de apoio, com gráficos dos resultados da dissertação.
+## Como o experimento foi conduzido
 
-## Apresentação para não especialistas
+O proponente declarou não dominar a área científica e pediu ao Codex que lesse o TG e procurasse uma continuação implementável, com potencial de publicação. O agente selecionou o recorte, buscou antecedentes, criou um plano de 13 marcos e executou a pesquisa com três subagentes. O usuário acompanhou recursos, pediu pausas e retomadas, definiu entregas e orientou a apresentação dos resultados.
 
-[TG do Wayne for dummies — PDF](output/pdf/didatica/tg_wayne_para_nao_especialistas.pdf) · [Roteiro didático](presentations/didatica/roteiro.md) · [Fonte e compilação](presentations/didatica/README.md). Introdução por analogias de engenharia, com 28 slides principais e 2 de apoio.
+O **Gemini elaborou dois pareceres**, encaminhados pelo usuário ao Codex. O primeiro contribuiu para a revisão da dissertação e novos estudos pontuais. O segundo motivou melhorias do manuscrito com os resultados existentes. O Codex incorporou sugestões e também limitou alegações sem suporte. A versão do Gemini não foi informada.
 
-<!-- PROJECT_STATUS:START -->
-## Estado atual
+A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantemente com **GPT-6 Astra**. O goal original foi marcado como concluído em 13/09, às 01:04 de Brasília. As apresentações e a última revisão do artigo ocorreram depois desse encerramento.
 
-**C13 concluído — dissertação consolidada**
+## O que os registros mostram
 
-**Última etapa concluída:** C13 — Auditoria final e dissertação consolidada.
-
-**Progresso:** 13 de 13 marcos concluídos.
-
-**Próxima etapa:** Todos os marcos planejados concluídos.
-
-**Atualização:** 2026-09-13.
-
-**[Baixar o PDF mais recente — v1.0.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v1.0.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) · [PDF versionado no repositório](output/pdf/v1.0.0/dissertacao.pdf)
-
-### O que já foi executado
-
-- C13: consolidação acadêmica, template ITA, revisão teórica e estatística, figuras legíveis e inspeção das 167 páginas. Reprodução tensorial integral: 2.500 alvos, 20.000 réplicas e 175.000 arrays iguais; nova síntese com 155 testes e 15 contrastes idênticos. Reprodução escalar e de robustez concluída, com limitações de ambiente e insumos documentadas.
-- C12: discussão e conclusões integradas, resumo/introdução/revisão atualizados e manuscrito em inglês com figura reproduzível. Auditoria de 23 alegações; corrigida a descrição de C_beta/C_full, preservando os resultados executados.
-- C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.
-- C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.
-- C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.
-- Leitura do TG de Wayne (ITA, 2003) e identificação de seus resultados já publicados em 2004.
-- Busca bibliográfica dirigida com corte em 10/09/2026 e proposta de investigação sobre compressão em frequência em PTAs.
-- Checagens cinemáticas reproduzíveis: vínculos, curvatura, relação escalar e escalas de massa/frequência.
-- Proposta em LaTeX/PDF com o template ITA, cronograma de 24 meses e separação entre resultados preliminares e experimentos futuros.
-- Plano de 13 commits com critérios de conclusão, PDFs cumulativos, manifesto de integridade e publicação por tag.
-- Introdução da dissertação concluída: motivação, continuidade com o TG, pergunta, hipótese, objetivos, escopo e critérios de avaliação.
-- Documento cumulativo da dissertação criado, com quadro explícito do estado dos capítulos e metadados vinculados à versão.
-- Revisão bibliográfica detalhada, matriz com 17 entradas, inspeção de códigos públicos e segunda leitura independente dos antecedentes metodológicos.
-- Acervo inicial de 22 artigos (452 páginas), com versões, URLs, licenças indicadas e SHA-256; script para baixar e verificar as cópias.
-- Recorte refinado diante de trabalhos de 2025–2026; planos C05–C10 atualizados para separar compressão, distribuição probabilística, resposta e suporte.
-- Derivação simbólica geral da curvatura, vínculos e postos de Visser/FP; relação escalar, limites e reprodução das projeções do TG confrontados com Hyun.
-- Auditoria independente de Einstein linear, sinais, unidades e normalização histórica da massa; 19 testes simbólicos aprovados e registro reproduzível com dependências fixadas.
-- Resposta tensorial com termos da Terra e dos pulsars, fases complexas e normalização espectral explícita; limites de Liang–Trodden/Cordes e Hellings–Downs reproduzidos.
-- 23 testes de resposta, geometria e interface aprovados; campanha de 58 casos aceita com métodos independentes, refinamento separado e orçamento numérico explícito.
-- Experimento Fourier periódico com sinal tensorial, ruídos branco/vermelho, estimadores complexos e compressão fixa; contrato A0/A/B/C e desenho prospectivo registrados.
-- Onze testes do simulador aprovados; três campanhas com 131072 realizações físicas e controles cada recuperaram momentos e cumulantes, com 605 avaliações auditadas de pares ORF.
-- Acervo ampliado para 26 PDFs locais (600 páginas), incluindo quatro referências metodológicas de calibração, com versões publicadas até 2026.
-- Acervo atualizado até 11/09/2026: 37 PDFs locais, 839 páginas; catálogo com URLs, versões e SHA-256 e revisão dirigida dos antecedentes recentes.
-- Inferência com treino separado da produção IID, quatro réplicas, proposta defensiva e backend nativo; 164 testes de componentes e referências independentes preservadas.
-- Campanha de 500 realizações e cinco análises concluída; 2500 inferências, 81 alvos com algum diagnóstico pendente e 243 PITs não resolvidos, sem descarte de dados.
-- Síntese SBC auditada independentemente: 6202 verificações e reconstrução exata de 15000 flags por função. Controles sem rejeição nominal; dez rejeições persistentes nas aproximações normais.
-- Noventa e seis controles A0 concluídos, com 32 observações por cenário, 416 PITs numéricos e 32 estruturais; parâmetros sem verdade definida mascarados. Cobertura condicional reportada separadamente.
-- Arquivos compactos restauráveis das campanhas, com verificações de SHA-256, propostas, sementes, diagnósticos e recibos preservados; capítulo 6 incorporado ao PDF cumulativo.
-- Correção de portabilidade dos testes entre macOS e Linux: fixtures com geometria preservada, identidade dos caches mantida e tolerância explícita ao arredondamento BLAS.
-- Mapas de compressão e resposta concluídos em massa, espectro, amplitudes, duração e janela; expansão de dispersão fraca e necessidade de covariâncias entre frequências na janela Hann projetada documentadas.
-- Descrição pareada das 500 realizações de C07 preservada, com 2500 posteriores e todos os casos numericamente pendentes mantidos.
-- Dezesseis alvos de engenharia e 128 alvos C_beta/C_full concluídos; 160 alvos HIGH de C07 reproduzidos com 640 réplicas de SHA e estados RNG originais idênticos.
-- Controles da resposta concluídos em 288 nuvens e 324 vinculações; interrupção por CPU e continuação exclusivamente estatística registradas separadamente, sem repetir avaliações físicas.
-- Síntese dos 32 dados compartilhados: 5760 quantis, 4480 diferenças de quantis e 1120 diferenças de larguras; 24 dados sorteados separados dos oito de fronteira.
-- Todos os 224 contrastes primários individuais e as sete médias piloto permaneceram inconclusivos na escala de 0,01; 4300 quantis mantêm intervalos [0,1], sem alegar equivalência ou ausência de efeito.
-- Divergências de forma posterior A_G para B_G avaliadas em quatro dados fixos, com MCSE e covariâncias auditadas; não tratadas como fatores de Bayes.
-- Capítulo 7 incorporado ao PDF; tabelas, arquivos restauráveis, fontes, protocolos e histórico de falhas preservados com verificação de SHA-256.
-- Piloto parcial C09 e reparos D1/D1b preservados: 544316 avaliações acumuladas; 13/14 eventos resolvidos na representação tabulada, caso 10 pendente e todos os intervalos do evento físico [0,1].
-- Texto desenvolvido e resultados parciais de C09–C11 incorporados como drafts, com tarefas pendentes e arquivos de retomada. Nenhuma nova simulação física iniciada para v0.8.5.
-- Retomada D2 executada: 13 curvas, 40 análises previstas, 175778 avaliações contabilizadas e caches preservados após limites de recursos; controles pontuais aprovados, referências funcionais incompletas.
-- Auditoria reconstruiu as contagens e verificou os cinco caches históricos bit a bit; 40 estimativas tabuladas foram recuperadas como drafts, sem novas likelihoods.
-- Referências D2 concluídas para 40 análises: normalização, CDF, quantis, momentos e KL passaram nos critérios operacionais, com controles físicos pontuais separados.
-- Continuações D2 contabilizaram 40875 avaliações e 223,28 s CPU; caches e painéis foram reutilizados, falhas preservadas e 37 contrastes pareados sintetizados.
-- W1 entre posterior e priori passou em todas as 40 análises D2, com referência independente, dois refinamentos, quatro testes analíticos e auditoria dos caches; 87987 avaliações adicionais e 53,53 s CPU.
-- Piloto D3: 16 dados de engenharia gerados com respostas refinadas; 140 inferências nos 14 casos com distâncias nominais passaram nos cinco controles primários. Componentes de dipolo, controles de covariância e mistura global testados; falha de memória e continuação preservadas.
-- Complementos D3: nove controles gaussianos próprios e doze análises com contaminante omitido passaram nos controles primários; doze contrastes pareados documentados. W1 validada operacionalmente nas 161 análises do piloto, com falha de gravação e recuperação preservadas.
-- Quatro omissões B_G completaram o trio prospectivo do piloto: 165 análises com controles primários e W1. Respostas de distância em 1920 pares massa/escala passaram nos refinamentos; doze integrações GL32/64 concordam, ainda em draft sem referência independente.
-- Referência de distância: três ondas GK21 e 1092 novos pares massa/escala refinados; doze comparações funcionais concordam com GL64, mas apenas cinco referências passam também na parada adaptativa, com sete pendentes. Recuperação de 162 controles SciPy contabilizada; fontes e recibos preservados.
-- Suplemento metodológico C10: acervo com 38 PDFs locais, 857 páginas, incluindo Trefethen sobre quadratura; corte da revisão PTA mantido em 11/09/2026.
-- C10: preparação, piloto, refinamentos e geração empacotados; 104184 arquivos lógicos restaurados e verificados, em 14 ZIPs novos e dois anteriores. A produção de posteriores permanece em execução e fora desse pacote.
-- C10: 110257 arquivos lógicos da produção restaurados e conferidos; 74 ZIPs distribuídos no release, com URLs e SHA-256 versionados. Treze testes C10 aprovados também com referências restauradas.
-
-### O que está em andamento e o que falta
-
-Plano C01–C13 concluído. Dissertação consolidada (167 páginas) e manuscrito (sete páginas), com revisão acadêmica e reprodução científica documentadas. Campanhas tensorial, escalar, de robustez e de ampliação reproduzidas no escopo registrado em docs/reproducao.md. Estudo de timing e 300 posteriores condicionais B/C incluídos. Artigo não submetido; não houve defesa nem aprovação institucional. A comparação B/C com marginalização do ruído permanece cientificamente inconclusiva; o estudo condicional resolve a precisão na subamostra de 50 realizações.
-
-## Roadmap
-
-Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira versão contém a proposta; de C02 em diante, a dissertação em desenvolvimento.
-
-| Etapa | Entrega | Versão do PDF | Estado | Plano do commit |
-|---|---|---|---|---|
-| C01 | Proposta de pesquisa, plano e repositório | `v0.1.0` | Concluída | [Detalhes](implementation_plan/commits/C01_proposta_e_repositorio.md) |
-| C02 | Introdução da dissertação | `v0.2.0` | Concluída | [Detalhes](implementation_plan/commits/C02_introducao.md) |
-| C03 | Revisão bibliográfica e originalidade | `v0.3.0` | Concluída | [Detalhes](implementation_plan/commits/C03_revisao_bibliografica.md) |
-| C04 | Fundamentos teóricos e reprodução do TG | `v0.4.0` | Concluída | [Detalhes](implementation_plan/commits/C04_fundamentos_e_tg.md) |
-| C05 | Resposta de PTA e correlações validadas | `v0.5.0` | Concluída | [Detalhes](implementation_plan/commits/C05_resposta_pta.md) |
-| C06 | Metodologia de simulação e dados sintéticos | `v0.6.0` | Concluída | [Detalhes](implementation_plan/commits/C06_simulacoes.md) |
-| C07 | Inferência de referência e calibração | `v0.7.1` | Concluída | [Detalhes](implementation_plan/commits/C07_inferencia_validada.md) |
-| C08 | Resultados sobre compressão em frequência | `v0.8.0` | Concluída | [Detalhes](implementation_plan/commits/C08_compressao_frequencia.md) |
-| C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Concluída | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
-| C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Concluída | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
-| C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Concluída | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
-| C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Concluída | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
-| C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Concluída | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
-
-[Plano geral de execução](implementation_plan/README.md). O cronograma científico é de 24 meses; os marcos são liberados por critérios de conclusão, não só por data.
-
-<!-- PROJECT_STATUS:END -->
-
-## Pergunta de pesquisa
-
-Em quais condições substituir a resposta dependente da frequência por uma resposta avaliada em
-uma frequência de referência preserva a inferência da massa do gráviton, e quando isso altera
-limites, evidências entre modelos ou a identificação de uma componente escalar?
-
-Serão comparadas três análises das mesmas simulações: frequência explícita, compressão consistente
-e aproximação por frequência de referência, com uma referência adicional em coeficientes Fourier.
-A revisão C03 identificou antecedentes próximos e delimitou a contribuição candidata ao mapa de
-validade dessa substituição dispersiva. Consulte a [decisão de recorte](docs/literatura/decisao_recorte.md).
-Os resultados centrais do TG já foram publicados; sua reprodução é uma base de validação.
-
-## Identificação acadêmica
-
-- **Autor:** Gráviton de Souza.
-- **Programa:** Programa de Pós-Graduação em Física.
-- **Área de concentração:** Física Nuclear (FIS-N).
-- **Linha de pesquisa:** Astrofísica, Cosmologia e Gravitação ([enquadramento oficial](https://pgfis.ita.br/pt/post/fisica-nuclear)).
-- **Orientação:** Prof. Dr. Schrödinger GPT de Gotham.
-- **Banca:** Emmy Noether de Barros (presidente), Schrödinger GPT de Gotham (orientador), Heisenberg da Silva, Planck de Oliveira e Autor do TG do Wayne.
-- **Modelo:** template de mestrado do ITA fornecido no projeto, com folha de rosto, ficha catalográfica, cessão de direitos, banca, resumos, listas e folha de registro.
-
-## Organização
-
-| Caminho | Conteúdo |
+| Medida | Valor e alcance |
 |---|---|
-| `TG_Wayne.pdf` | TG original, preservado |
-| `Template_Instituto_Tecnológico_de_Aeronáutica__ITA_.zip` | Arquivo do template fornecido |
-| `templates/ita/` | Template extraído, com licença e exemplos originais |
-| `latex/proposta.tex` | Proposta inaugural |
-| `latex/dissertacao.tex` | Documento principal da dissertação cumulativa |
-| `latex/chapters.json` | Estado editorial e arquivos dos capítulos |
-| `latex/capitulos_proposta/` | Texto da proposta em LaTeX |
-| `latex/referencias/` | Bibliografia em BibLaTeX |
-| `literature/` | Catálogo e acervo local de 37 artigos e relatórios, com script de download |
-| `docs/literatura/` | Protocolo, matriz de originalidade e auditoria de métodos/códigos |
-| `implementation_plan/` | Plano geral, roadmap e um Markdown por commit |
-| `project_status.json` | Fonte do painel de estado do README |
-| `scripts/` | Checagens, compilação, atualização do README e integridade |
-| `src/polarizacoes/` | Curvatura e vínculos simbólicos gerais |
-| `src/pta/` | Resposta tensorial, ORFs, simulador e estatísticas quadráticas |
-| `src/inference/`, `results/C07/` | Inferência, referências, sínteses500/96, arquivos restauráveis e auditorias |
-| `tests/`, `results/C04/`, `results/C05/`, `results/C06/` | 19 testes simbólicos, 23 de resposta, 11 do simulador e campanhas |
-| `configs/`, `figures/` | Configurações de validação, desenho experimental e figuras científicas |
-| `output/pesquisa/` | Análise inicial e resultados das checagens |
-| `output/pdf/<versão>/` | PDF imutável de cada marco |
-| `releases/<versão>/` | Notas da versão e manifesto de integridade |
+| Tempo registrado pelo goal | **30 h 51 min 26 s**; não é tempo de CPU ou de formação |
+| Intervalo no calendário do goal | **54 h 56 min 42 s**, com pausas e retomadas |
+| Código principal na v1.0.0 | **26.069 linhas** em módulos, scripts e testes, incluindo comentários e linhas vazias |
+| Campanhas principais | **45.528 análises** em quatro campanhas; incluem análises diferentes dos mesmos dados |
+| Plano científico | **13 marcos concluídos**, com resultados, limitações e histórico de falhas |
+| Revisão posterior do artigo | Cerca de **6 min 37 s** no turno do Codex; exclui o trabalho no Gemini e não altera o contador do goal |
 
-`latex/dissertacao.tex` é o documento cumulativo, iniciado em C02. O quadro de capítulos informa as entregas concluídas e planejadas. A proposta inaugural permanece disponível em sua tag e em `latex/proposta.tex`.
-O Markdown em `output/pesquisa/` preserva a análise inicial; a fonte editorial do PDF passa a ser o LaTeX.
+Os números são registros deste caso, não fatores gerais de produtividade. Quantidade de código, simulações ou páginas não comprova qualidade científica. O relatório distingue os produtos da v1.0.0 dos complementos posteriores para evitar dupla contagem.
 
-## Artigos da revisão
+## Questões que o caso ajuda a discutir
 
-Os **37 PDFs** foram baixados em `literature/papers/` (68,91 MB; 839 páginas), com versões e
-SHA-256 conferidos. O [catálogo do acervo](literature/README.md) apresenta arquivos e fontes.
-Para reconstituir o acervo em outro checkout, execute `python3 scripts/download_papers.py`;
-para conferir as cópias locais, use `python3 scripts/download_papers.py --verify`.
-O Git versiona catálogo e receita; os PDFs de terceiros permanecem no acervo local.
+- **Formação e domínio individual:** que competências precisam ser demonstradas pessoalmente quando a execução pode ser delegada?
+- **Divisão do trabalho:** como agentes podem viabilizar novas ideias e mudar a participação de orientadores e estudantes?
+- **Verificação:** quanto esforço é necessário para compreender, reproduzir e julgar o material produzido?
+- **Relevância:** como valorizar perguntas, controles e sínteses úteis, além da quantidade de artigos?
+- **Avaliação:** como combinar acompanhamento durante o curso, defesa e atribuição transparente das decisões?
+- **Revisão entre modelos:** quais críticas ajudam, quais exageram conclusões e o que ainda requer avaliação especializada?
 
-## Reproduzir a versão atual
+O repositório contém um estudo de caso, sem grupo de comparação ou medida de aprendizagem. Há evidências de execução e correção de rota, mas a contribuição científica continua sujeita a avaliação externa. Uma comparação central permaneceu inconclusiva em seu escopo mais amplo. O artigo não foi submetido e não houve defesa ou aprovação institucional. Os nomes fictícios usados nos produtos acadêmicos fazem parte do experimento.
 
-O ambiente científico atual exige Python 3.11 ou superior. SymPy 1.14.0, mpmath 1.3.0,
-NumPy 2.4.3, SciPy 1.17.1 e Matplotlib 3.11.1, com suas dependências, estão fixados em `requirements.txt`.
-Para o PDF: TeX Live completo ou MacTeX, `latexmk`, pdfLaTeX e Biber. A classe ITA fornecida carrega
-BibLaTeX, glossaries, babel em português, geometria e outros pacotes; a configuração local usa também
-Latin Modern, microtype, xurl, bookmark e booktabs. A versão inaugural foi compilada com TeX Live 2026.
+## Navegação técnica e reprodução
 
-```bash
-python3 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-python3 scripts/checagens_preliminares.py
-.venv/bin/python scripts/reproduzir_tg.py --check
-.venv/bin/python scripts/validar_orf.py --check
-.venv/bin/python scripts/validar_simulador.py --check
-make pdf
-make check
-```
+O histórico detalhado do estudo de ondas gravitacionais, seu roadmap, os comandos científicos e as instruções de compilação estão em **[PESQUISA.md](PESQUISA.md)**. A [auditoria final](docs/auditoria_final.md), o [guia de reprodução](docs/reproducao.md) e as [notas do artigo](article/REVISION_NOTES.md) distinguem cálculos refeitos, insumos reutilizados e revisões de texto.
 
-`make pdf` confere os metadados e o quadro de capítulos e compila uma cópia de conferência em `tmp/latex/<documento>/<documento>.pdf`, sem substituir o
-PDF publicado. `make check` reexecuta os 19 testes simbólicos, os 23 testes de resposta, os 11 do simulador e os 164 de inferência e confere os registros,
-além das checagens preliminares, do estado do README e dos hashes do release atual.
-Também confere a procedência da campanha de 58 ORFs e das três campanhas de momentos, regenerando as amostras pequenas. Não repete todas as integrais e sorteios nesse comando.
-As receitas completas do simulador estão em [dados sintéticos](docs/dados_sinteticos.md).
-Os componentes inferenciais também têm uma checagem própria:
-`make check-inference-components`. Ela reexecuta 164 testes e confere as evidências
-de integração condicional e controles analíticos; não aprova a produção de
-posteriores nem a calibração de PTA. Os protocolos estão em
-[diagnósticos contínuos](docs/protocolo_diagnosticos_c07_v1.md) e
-[diagnósticos de cadeias](docs/protocolo_diagnosticos_mcmc_c07_v2.md).
-Para reexecutar a campanha angular C05, use `.venv/bin/python scripts/benchmark_orf.py`
-(64,82 s na execução registrada).
-As campanhas inferenciais e seus resultados estão descritos em [resultados C07](docs/inferencia/resultados_c07.md).
-Os arquivos [500×5](results/C07/posterior500_compact/README.md) e [96 controles](results/C07/fixed96_compact/README.md) permitem restaurar diagnósticos e propostas; regenerar a produção bruta exige repetir o custo científico documentado.
-A reprodução de conteúdo requer as mesmas fontes; equivalência binária entre diferentes versões
-do TeX não é pressuposta. O manifesto registra a ferramenta utilizada e o SHA-256 do PDF publicado.
-Para conferir uma versão anterior, faça checkout de sua tag e use o número correspondente em `VERSION`.
+| Diretório | Finalidade |
+|---|---|
+| `output/pdf/relatorio_experimento/` | Relatório, LaTeX e evidências do estudo de caso |
+| `presentations/experimento/` | Apresentação sobre automação da pesquisa, fonte editável e roteiro |
+| `src/`, `scripts/`, `tests/`, `results/` | Implementação, verificações e resultados científicos |
+| `latex/`, `article/` | Dissertação e manuscrito |
+| `literature/`, `docs/`, `implementation_plan/` | Bibliografia, decisões, documentação e plano histórico |
+| `releases/`, `output/pdf/v*/` | Manifestos e PDFs das versões da pesquisa |
 
-## Como manter o README e publicar os próximos PDFs
+O comando `make readme` atualiza o painel científico de `PESQUISA.md`; este README é a apresentação do experimento. Para verificar integralmente uma versão histórica, use o checkout da tag correspondente: os manifestos congelam também a documentação daquela versão. A revisão atual do artigo compila com `make article`. A apresentação do experimento tem [instruções próprias](presentations/experimento/README.md).
 
-O quadro de capítulos e os metadados do PDF são gerados por `scripts/update_document_state.py`, usando `project_status.json` e `latex/chapters.json`.
-
-O painel acima é gerado por `scripts/update_readme.py` a partir de `project_status.json` e
-`implementation_plan/roadmap.json`. Em cada marco, atualizar etapa, trabalhos concluídos, próxima
-atividade e versão no JSON; executar o gerador. A verificação do release falha se o README estiver
-inconsistente. As demais seções do README podem ser editadas diretamente.
-
-```bash
-python3 scripts/update_readme.py
-python3 scripts/update_document_state.py
-make release VERSION=v0.8.0 DOCUMENT=dissertacao
-```
-
-O exemplo pressupõe que C08 foi concluído e que seus fontes, estado e notas de release já existem.
-O [procedimento completo](implementation_plan/README.md#procedimento-de-fechamento-de-cada-marco)
-inclui a inspeção visual, o commit, a tag e a conferência do download. O workflow do GitHub anexa o
-**mesmo PDF que está no commit**, sem recompilá-lo. Versões `v0.*` são publicadas como pré-releases;
-por isso o link “PDF mais recente” usa a tag explícita atual e não `/releases/latest`.
-
-## Limites e procedência
-
-Esta versão não demonstra ineditismo definitivo, detectabilidade, estabilidade não linear ou uma
-nova restrição observacional. As verificações abrangem geometria, consistência linear, resposta tensorial, momentos e calibração no experimento sintético. A campanha conserva falhas numéricas e identifica desvios da aproximação normal e limitações de cobertura condicional. As comparações das respostas de frequência de referência e a extensão escalar seguem no roadmap. A submissão e a aceitação de um artigo não estão realizadas nem garantidas.
-
-O TG e os materiais de terceiros preservam seus direitos e atribuições. O template mantém sua licença
-Apache 2.0 no próprio diretório; ela não é aplicada automaticamente ao TG ou ao texto da proposta.
-Consulte [a procedência do template](templates/README.md) e as referências da proposta.
-
-## Pausa e versão intermediária v0.8.5
-
-[Plano do commit C08.5](implementation_plan/commits/C08_5_estado_parcial_e_pausa.md) ·
-[Resultados preservados e ponto de retomada](docs/pausa_v0.8.5/README.md).
-Nenhuma campanha será retomada sem nova solicitação do usuário.
+O TG, o template e os artigos de terceiros mantêm suas atribuições e licenças. A discussão do estudo de caso apresenta temas gerais e não reproduz conversas privadas de terceiros.

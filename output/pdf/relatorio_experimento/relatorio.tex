@@ -36,7 +36,7 @@
 {\large Repositório \nolinkurl{TGdoWayne} · 10 a 13 de setembro de 2026\par}
 \vspace{.5cm}
 \begin{destaque}
-\textbf{Resultado observado.} A partir de um trabalho de graduação e de instruções amplas, o agente formulou uma proposta de pesquisa, organizou 13 etapas, escreveu e executou código científico, produziu uma dissertação de 167 páginas e um manuscrito de sete páginas. O goal foi marcado como concluído. A pesquisa permaneceu baseada em simulações, com uma comparação central ainda inconclusiva em sua formulação mais ampla. Não houve submissão de artigo, defesa ou aprovação institucional. \fonte{1--3, 6}
+\textbf{Resultado observado.} A partir de um trabalho de graduação e de instruções amplas, o agente formulou uma proposta de pesquisa, organizou 13 etapas, escreveu e executou código científico, produziu uma dissertação de 167 páginas e um manuscrito inicial de sete páginas, depois revisado para nove com novo parecer do Gemini. O goal foi marcado como concluído. A pesquisa permaneceu baseada em simulações, com uma comparação central ainda inconclusiva em sua formulação mais ampla. Não houve submissão de artigo, defesa ou aprovação institucional. \fonte{1--3, 6}
 \end{destaque}
 
 \textbf{Finalidade deste relatório.} Reconstruir o que foi pedido, quais escolhas foram documentadas e quanto trabalho foi executado, para subsidiar uma discussão sobre dissertações e teses em tempos de IA. O leitor não precisa conhecer ondas gravitacionais. O objeto principal é o processo de pesquisa conduzido pelo agente.
@@ -49,10 +49,10 @@
 Contador final de tempo do goal & Código em módulos, scripts e testes & Soma de quatro campanhas principais\\
 \bottomrule
 \end{tabularx}
-{\footnotesize O tempo do goal não é tempo de CPU; linhas incluem comentários e espaços; análises não são observações independentes. Definições e limites nas páginas 7 e 8.}
+{\footnotesize O tempo do goal não é tempo de CPU; linhas incluem comentários e espaços; análises não são observações independentes. Definições e limites nas seções 6 e 7.}
 
 \vfill
-\textbf{Base documental:} conversa original, eventos locais do Codex, histórico Git e arquivos de resultados. Corte científico: tag \nolinkurl{v1.0.0}, commit \nolinkurl{39dd682}. O pedido posterior de slides é identificado separadamente. Este relatório não reexecuta as campanhas nem constitui parecer científico especializado.
+\textbf{Base documental:} conversa original, eventos locais do Codex, histórico Git e arquivos de resultados. Base quantitativa: tag \nolinkurl{v1.0.0}, commit \nolinkurl{39dd682}. Complementos posteriores incluem apresentações e revisão do manuscrito no commit \nolinkurl{26ae3ac}. Este relatório não reexecuta as campanhas nem constitui parecer científico especializado.
 \newpage
 
 \titulo{1}{Interações: da exploração à primeira pausa}
@@ -106,6 +106,38 @@ Todos os horários deste relatório são de Brasília (UTC$-$3). Foram identific
 O agente não apenas acatou o parecer: registrou pontos já atendidos, corrigiu algumas interpretações e limitou o alcance das novas conclusões. Acrescentou um estudo em 50 casos, com 300 análises condicionais, e um experimento de ajuste temporal com 20.000 séries por tipo de amostragem. Reescreveu trechos e redesenhou 11 figuras. São mudanças de conteúdo, além de revisão editorial. \fonte{7}
 
 \textbf{Depois do goal.} Em 13/09, às 08:48, o usuário pediu slides Beamer para uma defesa de 50 minutos. O repositório passou a conter 32 slides principais e sete de apoio. Esse produto foi acrescentado depois do encerramento e não integra as métricas de código ou duração do goal apresentadas aqui. A existência de slides não significa que a defesa ocorreu. \fonte{1, 3}
+\newpage
+
+\titulo{2.1}{Revisão do manuscrito após o goal}
+\textbf{O encerramento do goal foi seguido de complementos.} Depois da dissertação, o usuário solicitou apresentações de defesa e para público leigo, consultou a versão do artigo e encaminhou um novo parecer do Gemini para aprimorar o manuscrito. A revisão do artigo foi publicada no commit \nolinkurl{26ae3ac}, em 13/09/2026. Ela conserva os resultados científicos e a dissertação v1.0.0, mas substitui a redação corrente do artigo. \fonte{11}
+
+\begin{tabularx}{\textwidth}{@{}p{2.4cm}Y@{}}
+\toprule
+\textbf{13/09, Brasília} & \textbf{Interação ou resultado}\\
+\midrule
+09:12 & Pedido de apresentação didática para público leigo. Resultado: 28 slides principais e dois de apoio.\\
+10:02 & Consulta sobre o artigo mais recente. Até então, a redação de sete páginas da v1.0.0 ainda era a atual.\\
+11:08 & Encaminhamento de parecer do Gemini propondo uma narrativa mais clara, valorização do desenho de comparação, contexto bibliográfico e fluxograma.\\
+11:14 & Pedido de link no README e encerramento da revisão. Manuscrito atualizado: nove páginas, duas figuras e dez referências.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Como o Codex aproveitou o parecer.} O resumo passou a apresentar primeiro o problema e as conclusões. A introdução ganhou contexto e contribuições explícitas; um fluxograma passou a explicar as comparações; resultados antes dispersos foram reunidos. A discussão passou a enfatizar quanto se aprende com os dados e quando uma aparente restrição pode refletir apenas as suposições iniciais. São melhorias de exposição e interpretação dos resultados existentes, sem novas simulações. \fonte{11}
+
+\textbf{O agente também limitou recomendações exageradas.} As notas de revisão registram decisões importantes para avaliar a revisão entre modelos:
+\begin{itemize}
+\item Não afirmar que o método é absolutamente inédito ou que toda a literatura confunde as operações estudadas.
+\item Não deduzir que uma aproximação que falhou em simulações necessariamente falhará em qualquer observação real.
+\item Tratar a medição de informação como recomendação acompanhada de outros controles, sem impor um critério universal suficiente.
+\item Não atribuir automaticamente pequenas diferenças à perda de informação, nem alegar amplificação extrema de erros sem demonstração.
+\end{itemize}
+Uma referência também exigiu correção de interpretação: a escolha de frequência e a simplificação das correlações tinham justificativas distintas no trabalho citado. O Codex preservou essa distinção. Isso fornece um exemplo de filtragem crítica do parecer, além de melhoria de estilo. \fonte{11}
+
+\begin{destaque}
+\textbf{Contabilidade da fase adicional.} O turno da revisão registra GPT-6 Astra, esforço \nolinkurl{medium}, e duração de 397.426 ms, aproximadamente 6 min 37 s. Esse tempo inclui a interação de publicação no README. Ele não inclui a elaboração do parecer no Gemini e não altera as 30 h 51 min 26 s do goal original. Até esse fechamento há 30 mensagens relevantes do usuário na conversa de execução: 25 antes do goal terminar e cinco depois, além da instrução do goal.
+\end{destaque}
+
+O manuscrito permanece \textbf{não submetido}. O novo ciclo demonstra revisão e refinamento de um produto; não comprova aceitação editorial ou qualidade equivalente à de um pesquisador especialista. A versão do Gemini e seus tempos de processamento não foram fornecidos.
 \newpage
 
 \titulo{3}{Como o agente procurou uma contribuição nova}
@@ -210,7 +242,7 @@ C13 & 300 análises condicionais; 40.000 séries temporais. & Complementos de re
 \end{tabularx}
 \fonte{3, 6, 7, 8}
 
-A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. O produto editorial final tem 167 páginas, artigo de sete páginas e 47 referências, com 41 cópias locais conferidas. \fonte{6}
+A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. Na v1.0.0, a dissertação tem 167 páginas e 47 referências, com 41 cópias locais conferidas; o artigo tem sete páginas. A revisão posterior do artigo passou a nove páginas. \fonte{6}
 \newpage
 
 \titulo{7}{Modelo, duração e ferramenta goal}
@@ -269,7 +301,7 @@ Explicar uma hipótese e seu limite; antecipar o efeito de uma alteração; reco
 
 \textbf{O trabalho pode se deslocar para a verificação.} Quando o sistema produz mais equações, programas e resultados do que o pesquisador consegue examinar, a leitura crítica pode se tornar a etapa limitante. No caso analisado, foi necessário corrigir uma descrição incompatível com a implementação, enfrentar comparações inconclusivas e melhorar explicações e figuras. A clareza do texto integra a verificação: um argumento difícil de inspecionar limita a capacidade de detectar erro e julgar relevância. \fonte{6, 7}
 
-\textbf{Revisão com IA amplia capacidade, mas precisa ser testada.} O parecer do Gemini levou o Codex a conferir críticas e acrescentar estudos. Esse fluxo permite discutir revisão entre modelos como auxílio ao pesquisador. Não há, porém, medição de sua taxa de acerto: sistemas diferentes podem compartilhar lacunas ou aceitar hipóteses inadequadas. A concordância entre agentes deve ser confrontada com evidência externa, métodos de referência e julgamento especializado. \fonte{7, 10}
+\textbf{Revisão com IA amplia capacidade, mas precisa ser testada.} O primeiro parecer do Gemini levou o Codex a conferir críticas e acrescentar estudos. O segundo motivou a revisão do artigo e a recusa de generalizações sem suporte. Esse fluxo permite discutir revisão entre modelos como auxílio ao pesquisador. Não há, porém, medição de sua taxa de acerto: sistemas diferentes podem compartilhar lacunas ou aceitar hipóteses inadequadas. A concordância entre agentes deve ser confrontada com evidência externa, métodos de referência e julgamento especializado. \fonte{7, 10}
 
 \textbf{Relevância deve ser julgada pelo conteúdo.} A origem humana ou automatizada de um texto não resolve se a pergunta importa, se os resultados estão corretos ou se a contribuição é útil. Uma extensão incremental pode ter grande valor quando elimina uma incerteza importante, reproduz criticamente um resultado ou delimita um método. O problema é a contribuição pequena e pouco informativa apresentada como avanço substancial. Neste caso, relatar limites de uma aproximação pode ser mais útil do que acumular análises sem resolver a pergunta central.
 
@@ -312,8 +344,8 @@ A comparação ampla permaneceu inconclusiva. A execução soube reconhecer seus
 
 \textbf{Critério para contradições.} Há parágrafos antigos no README e em guias que ainda dizem ``em andamento'' ou ``pausado''. Para estabelecer o encerramento foram priorizados os recibos terminais, a auditoria final, o estado v1.0.0 e a resposta da ferramenta goal, preservando textos antigos apenas como história. Copiar isoladamente uma dessas notas antigas produziria um retrato incorreto.
 
-{\small
-\begin{enumerate}[label={\textbf{[\arabic*]}},leftmargin=2em,itemsep=7pt]
+{\footnotesize
+\begin{enumerate}[label={\textbf{[\arabic*]}},leftmargin=2em,itemsep=5pt]
 \item \textbf{Conversa original: ``Analise TG\_Wayne.pdf e proponha''.} Identificador \nolinkurl{01a08ca4-18ea-7160-95a0-e1e805620720}. Registro local: \nolinkurl{rollout-2026-09-10T15-45-59-}\allowbreak\nolinkurl{01a08ca4-18ea-7160-95a0-e1e805620720.jsonl}. Pedidos: linhas 10--29295; parecer: 29295; slides: 31700. O arquivo de evidências reproduz as 25 mensagens do recorte com seus localizadores.
 \item \textbf{Eventos do goal no mesmo registro.} Criação: linha 786; primeiro bloqueio: resposta na linha 15489; encerramento: chamada na linha 31682 e resposta na 31684. Campos usados: \nolinkurl{status}, \nolinkurl{createdAt}, \nolinkurl{updatedAt}, \nolinkurl{timeUsedSeconds}, \nolinkurl{tokensUsed}.
 \item \textbf{Estado e história do projeto.} \href{https://github.com/flavioluiz/TGdoWayne/tree/v1.0.0}{Repositório na tag v1.0.0}: \nolinkurl{project_status.json}, \nolinkurl{implementation_plan/roadmap.json}, planos por marco e histórico Git. PDF final em \nolinkurl{output/pdf/v1.0.0/dissertacao.pdf}; manuscrito em \nolinkurl{article/manuscript.pdf}. Commit científico: \nolinkurl{39dd682}; slides posteriores: \nolinkurl{293d12a}.
@@ -324,6 +356,7 @@ A comparação ampla permaneceu inconclusiva. A execução soube reconhecer seus
 \item \textbf{Campanhas e decisão de aplicação.} \nolinkurl{docs/dados_sinteticos.md}, \nolinkurl{docs/dados_publicos.md}, \nolinkurl{docs/matriz_objetivos_resultados.md}, registros C07--C11 e resumos consolidados de C13.
 \item \textbf{Evidências deste relatório.} \nolinkurl{evidencias.json} contém métricas, inventário de código, hashes, mensagens selecionadas e retornos do goal; \nolinkurl{coletar_evidencias.py} documenta sua extração. Os registros locais de subagentes associados à conversa foram consultados para confirmar modelos. Esses materiais acompanham o fonte LaTeX nesta pasta.
 \item \textbf{Esclarecimento posterior do proponente, em 13/09/2026.} Nesta conversa de elaboração do relatório, informou que o parecer técnico foi feito pelo Gemini. A atribuição apoia-se nesse relato; não foram examinados a conversa original com o Gemini nem seus metadados de versão. Registro em \nolinkurl{esclarecimento_gemini.json}.
+\item \textbf{Complementos após o goal.} Registro da conversa de execução retomada em 13/09/2026, arquivo \nolinkurl{rollout-2026-09-13T11-08-06-01a08ca4-18ea-7160-95a0-e1e805620720_01a09b18-c470-70b2-bcf2-4fc8c99719dd.jsonl}, linhas 7, 142 e 153. \nolinkurl{article/REVISION_NOTES.md}, \nolinkurl{article/README.md} e commit \nolinkurl{26ae3ac} documentam a revisão. Síntese e metadados em \nolinkurl{complementos_pos_goal.json}. A atribuição do novo parecer ao Gemini foi confirmada pelo usuário ao solicitar esta atualização.
 \end{enumerate}}
 
 \textbf{Reprodução do documento.} Na pasta do relatório, executar \texttt{latexmk -pdf relatorio.tex}. Para recalcular as evidências, executar \texttt{python3 coletar\_evidencias.py} no ambiente original, com acesso ao repositório e ao registro local da conversa. O JSON de evidências contém mensagens do usuário; não é necessário torná-lo público para discutir o PDF.
