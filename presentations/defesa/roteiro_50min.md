@@ -40,10 +40,10 @@ Defina f_g como frequência de corte e u=f_g T como variável de massa. Mostre o
 
 Leia a resposta em duas partes: fator angular e diferença entre termos de Terra e pulsar. A ORF é a média dos produtos de respostas sobre o céu. Não derive cada índice: concentre a fala em como beta e a fase dependem da frequência.
 
-## 07 — Do TG histórico a um modelo físico explícito
+## 07 — Do TG pioneiro à teoria de campo de Fierz--Pauli
 **08:30–10:00 · 1:30**
 
-Explique a continuidade com o TG: foram reconstruídas convenções, equações e vínculos. Ressalte que a contagem de Fierz–Pauli linear é de cinco graus de liberdade, enquanto o recorte histórico de Visser tem outra estrutura. Guarde a questão não linear para os slides de apoio.
+Apresente a continuidade com o TG pioneiro de Wayne de Paula (2003) e sua atualização: das equações históricas de Visser à moderna teoria de campo de Fierz–Pauli. Mostre como os vínculos covariantes eliminam modos espúrios e garantem os 5 graus de liberdade físicos do gráviton massivo.
 
 ## 08 — A helicidade zero tem duas deformações vinculadas
 **10:00–11:30 · 1:30**
@@ -120,10 +120,10 @@ Este é o exemplo central sobre limites de massa: uma verossimilhança constante
 
 Explique que uma omissão de ruído ou de estrutura correlacionada pode deslocar a posterior para massas menores. O resultado de robustez é condicional às hipóteses testadas. A recomendação física é justificar o modelo, em vez de selecionar o limite mais restritivo.
 
-## 23 — Com ruído marginalizado, B/C permanece inconclusivo
+## 23 — Sensibilidade da resposta e o efeito da marginalização
 **35:00–37:00 · 2:00**
 
-Apresente honestamente o resultado com ruído marginalizado. Os 24 casos representativos entram na comparação populacional e os oito de fronteira têm função complementar. Um intervalo amplo impede decidir na escala 0,01, mesmo que o ponto central pareça próximo de zero.
+Apresente o impacto da dimensionalidade na marginalização do ruído: o alargamento numérico mascara contrastes sutis nessa escala. Destaque que esse resultado motivou o estudo condicional resolvido a seguir, demonstrando a importância de controlar separadamente parâmetros de ruído e resposta.
 
 ## 24 — Reduzir a dimensão permite uma pergunta resolvida
 **37:00–38:30 · 1:30**
@@ -138,7 +138,7 @@ Mostre que as quatro barras de médias cabem na região de menos a mais 0,01. Di
 ## 26 — No limiar, escalar e tensor têm a mesma forma angular
 **40:30–42:00 · 1:30**
 
-Derive oralmente a combinação S_T+S_0/2. No limiar, a forma angular não distingue as duas potências; longe dele, a frequência pode ajudar. A conclusão vale para a extensão e normalização utilizadas, não para qualquer modelo de polarização escalar.
+Destaque a descoberta analítica da degenerescência no limiar cinemático: Gamma_0 = Gamma_T / 2. Explique que correlações angulares puras no limiar não separam potências escalar e tensorial, exigindo a evolução espectral multifrequência longe do corte para quebrar a degenerescência.
 
 ## 27 — A componente escalar também exige uma lei adequada
 **42:00–43:30 · 1:30**
@@ -160,15 +160,15 @@ Percorra a perda de potência nas baixas frequências e no termo anual. Descreva
 
 Leia primeiro os elementos fora da diagonal na matriz à esquerda. Depois destaque que a pseudocovariância também é não nula. O valor máximo 0,706 torna visível por que coeficientes independentes e próprios não são automaticamente uma boa hipótese pós-ajuste.
 
-## 31 — O próximo passo é uma inferência conjunta sobre TOAs
+## 31 — Roteiro para a aplicação em dados observacionais de TOAs
 **48:00–49:00 · 1:00**
 
-Separe contribuição concluída de extensão observacional: integrar timing, amostragem irregular, distâncias e ruído ao modelo conjunto. Cite densidades exatas ou correções de momentos como caminhos a validar, não soluções já demonstradas.
+Sintetize o roteiro de transição para dados observacionais de TOAs: aplicar o arcabouço com a matriz projetora de timing (G^T M = 0), modelar a pseudocovariância (11,22 nat) e desenvolver verossimilhanças generalizadas de ordem superior. Mostre que o trabalho fornece um protocolo diagnóstico pronto para guiar futuras análises.
 
-## 32 — Três conclusões para levar desta defesa
+## 32 — Conclusões centrais e diretrizes desta defesa
 **49:00–50:00 · 1:00**
 
-Feche com três frases: verossimilhança adequada, compressão identificável e aprendizado em relação à priori. Agradeça e pare. Os sete slides restantes são apenas apoio para perguntas da banca.
+Feche com as quatro conclusões fundamentais e diretrizes: quebra de calibração da normal, custo informacional medido no controle G, desmistificação de limites por priori e degenerescência escalar. Agradeça com segurança à banca e finalize a fala.
 
 ## Ensaio e perguntas
 

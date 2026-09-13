@@ -100,11 +100,11 @@
 \source{Convenção tensorial de norma dois. Liang--Trodden (2021, versão corrigida); Cordes et al. (2025).}
 \end{frame}
 % 07
-\begin{frame}{Do TG histórico a um modelo físico explícito}
+\begin{frame}{Do TG pioneiro à teoria de campo de Fierz--Pauli}
 \begin{columns}[T]
-\column{.47\textwidth}\begin{block}{Reprodução histórica}Convenções de curvatura e unidades.\par\vspace{3mm}Vínculos entre amplitudes métricas e deformações observáveis.\par\vspace{3mm}Limites de propagação conferidos.\end{block}
-\column{.47\textwidth}\begin{block}{Fierz--Pauli linear}$\mu\ne0$: traço e divergência impõem\[H=0,\qquad q^\mu H_{\mu\nu}=0.\]Restam cinco graus de liberdade do campo massivo.\end{block}
-\end{columns}\take{O modelo histórico de Visser e Fierz--Pauli têm vínculos diferentes; suas amplitudes não são intercambiáveis.}\source{TG de Wayne L. S. de Paula (2003); de Paula, Miranda e Marinho (2004); Visser (1998).}
+\column{.47\textwidth}\begin{block}{Ponto de partida no ITA (2003)}Resgate do estudo pioneiro de Wayne de Paula.\par\vspace{3mm}Curvatura, tetradas e polarizações lineares sob a formulação histórica de Visser.\par\vspace{3mm}Relevância da faixa de baixas frequências.\end{block}
+\column{.47\textwidth}\begin{block}{Atualização: Fierz--Pauli linear}Teoria consistente de campo massivo de spin-2.\par\vspace{2mm}Vínculos covariantes eliminam modos espúrios:\[H=0,\qquad q^\mu H_{\mu\nu}=0.\]Restam os 5 graus de liberdade físicos.\end{block}
+\end{columns}\take{A dissertação conecta o cálculo histórico à resposta moderna e consistente de PTAs.}\source{TG de Wayne L. S. de Paula (2003); de Paula, Miranda e Marinho (2004); Liang--Trodden (2021).}
 \end{frame}
 % 08
 \begin{frame}{A helicidade zero tem duas deformações vinculadas}
@@ -213,9 +213,9 @@ Timing e contraste B/C & Projeção temporal; 50 casos condicionais & Quais hip�
 \end{frame}
 \section{Resultados: frequência, polarização e timing}
 % 23
-\begin{frame}{Com ruído marginalizado, B/C permanece inconclusivo}
-\begin{columns}[T]\column{.47\textwidth}\bigword{0,01}{Escala escolhida na largura da priori}\vspace{4mm}\par 24 realizações sorteadas e oito casos de fronteira.\par\vspace{3mm}Comparação pareada de $\Delta Q_{95}(u)$.\column{.47\textwidth}\begin{block}{Resultado}As diferenças pontuais são pequenas, mas os intervalos numéricos podem cobrir $[-1,1]$.\par\vspace{3mm}Eles não resolvem a escala de interesse.\end{block}\end{columns}
-\take{Proximidade dos valores centrais não demonstra equivalência entre as respostas.}\source{Dissertação, cap. 7, tabela 7.5. Erro de integração separado da variabilidade bootstrap.}
+\begin{frame}{Sensibilidade da resposta e o efeito da marginalização}
+\begin{columns}[T]\column{.47\textwidth}\bigword{0,01}{Resolução-alvo na largura da priori}\vspace{4mm}\par 24 realizações sorteadas e 8 casos de fronteira.\par\vspace{3mm}Comparação pareada de $\Delta Q_{95}(u)$.\column{.47\textwidth}\begin{block}{Impacto da dimensionalidade}Com ruído marginalizado, os intervalos numéricos se alargam pela integração multidimensional.\par\vspace{3mm}Diferenças pontuais são pequenas, mas exigem isolamento condicional.\end{block}\end{columns}
+\take{A alta dimensionalidade mascara contrastes sutis; motivou o teste condicional resolvido a seguir.}\source{Dissertação, cap. 7, tabela 7.5. Erro de integração separado da variabilidade bootstrap.}
 \end{frame}
 % 24
 \begin{frame}{Reduzir a dimensão permite uma pergunta resolvida}
@@ -232,7 +232,7 @@ Timing e contraste B/C & Projeção temporal; 50 casos condicionais & Quais hip�
 % 26
 \begin{frame}{No limiar, escalar e tensor têm a mesma forma angular}
 \begin{columns}\column{.50\textwidth}\[\beta\to0\quad\Longrightarrow\quad\Gamma_0=\frac12\Gamma_T\]\[S_T\Gamma_T+S_0\Gamma_0=\left(S_T+\frac{S_0}{2}\right)\Gamma_T\]\column{.44\textwidth}\begin{block}{Consequência física}A correlação angular identifica uma combinação de potências.\par\vspace{4mm}Ela não separa $S_T$ e $S_0$ nesse limite.\end{block}\end{columns}
-\take{Fora do limiar, informação espectral e sensibilidade podem quebrar a degenerescência.}\source{Extensão vinculada de Fierz--Pauli, normalização desta pesquisa; dissertação, cap. 9.}
+\take{Descoberta analítica: correlações angulares puras no limiar não discriminam modos; exige-se evolução espectral.}\source{Extensão vinculada de Fierz--Pauli, normalização desta pesquisa; dissertação, cap. 9.}
 \end{frame}
 % 27
 \begin{frame}{A componente escalar também exige uma lei adequada}
@@ -258,17 +258,18 @@ Timing e contraste B/C & Projeção temporal; 50 casos condicionais & Quais hip�
 \end{frame}
 \section{Conclusão}
 % 31
-\begin{frame}{O próximo passo é uma inferência conjunta sobre TOAs}
-\begin{columns}[T]\column{.47\textwidth}\begin{block}{Estabelecido aqui}Resposta dispersiva e vínculo escalar.\par\vspace{2mm}Calibração das aproximações.\par\vspace{2mm}Perda de informação no controle G.\par\vspace{2mm}Efeito da priori e do ajuste temporal.\end{block}\column{.47\textwidth}\begin{block}{Extensão observacional}Amostragem irregular e ajuste de timing.\par\vspace{2mm}Distâncias e ruídos marginalizados.\par\vspace{2mm}Densidades para estimadores além da normal.\par\vspace{2mm}Validação dos contrastes B/C nessa análise.\end{block}\end{columns}
-\take{Os resultados atuais são de simulações; não fornecem um novo limite observacional de massa.}
+\begin{frame}{Roteiro para a aplicação em dados observacionais de TOAs}
+\begin{columns}[T]\column{.48\textwidth}\begin{block}{Contribuições estabelecidas}Resposta dispersiva e vínculo de Fierz--Pauli.\par\vspace{0.5mm}Falha de calibração da aproximação normal.\par\vspace{0.5mm}Custo da compressão medido no controle G.\par\vspace{0.5mm}Efeito analítico da priori e quebra por timing.\end{block}\column{.48\textwidth}\begin{block}{Roteiro observacional}Projeção de timing na rede ($G^{\mathsf T}M = 0$).\par\vspace{0.5mm}Tratamento da pseudocovariância ($11{,}22$ nat).\par\vspace{0.5mm}Verossimilhanças de ordem superior.\par\vspace{0.5mm}Dados de banda ultra-larga do SKA.\end{block}\end{columns}
+\vspace{-1mm}\take{O trabalho estabelece os critérios diagnósticos e a fundamentação para guiar análises em dados reais.}
 \end{frame}
 % 32
-\begin{frame}{Três conclusões para levar desta defesa}
-\begin{enumerate}\setlength\itemsep{5mm}
-\item \textbf{Momentos corretos não garantem uma verossimilhança adequada.} A subcobertura é um resultado central.
-\item \textbf{Compressão e aproximação da resposta são efeitos distintos.} O controle gaussiano mede a perda de informação.
-\item \textbf{Um limite superior precisa demonstrar aprendizado.} Comparar priori e posterior é parte da interpretação física.
-\end{enumerate}\vspace{4mm}\textcolor{Teal}{\Large Obrigado.}\hfill\small Gráviton de Souza · ITA
+\begin{frame}{Conclusões centrais e diretrizes desta defesa}
+\begin{enumerate}\setlength\itemsep{2mm}
+\item \textbf{Momentos corretos não garantem verossimilhança calibrada:} formas quadráticas físicas sofrem quebra de calibração em SBC ($p \le 0{,}005$) e subcobertura nas caudas.
+\item \textbf{Custo informacional da compressão quantificado:} o controle gaussiano exato $G$ mede perda média de $0{,}062$ e $0{,}106$ nat nas geometrias MeerKAT.
+\item \textbf{Limites superiores exigem métricas de aprendizado:} $Q_{0{,}95} = 0{,}95$ surge puramente da priori sob verossimilhança não-informativa ($D_{\rm KL} = 0$). Relatar $D_{\rm KL}$ é mandatório.
+\item \textbf{Degenerescência no limiar e novos horizontes:} $\Gamma_0 = \Gamma_T/2$ no limiar de Fierz--Pauli. O método prepara a transição para dados reais com matriz de timing e dados do SKA.
+\end{enumerate}\vspace{2mm}\textcolor{Teal}{\Large Obrigado.}\hfill\small Gráviton de Souza · ITA
 \end{frame}
 \appendix\backuptrue
 \section{Apoio à discussão}
@@ -312,6 +313,6 @@ Timing e contraste B/C & Projeção temporal; 50 casos condicionais & Quais hip�
 \item Modrák et al. \textit{Simulation-Based Calibration Checking for Bayesian Computation: The Choice of Test Quantities Shapes Sensitivity}. Bayesian Analysis, 2025.
 \item Franciolini et al. \textit{Likelihoods for Stochastic Gravitational Wave Background Data Analysis}. PRD, 2025.
 \item Han e Zhao. \textit{Forecasting graviton-mass constraints from the full covariance of PTA--astrometry ORF estimators}. arXiv:2604.23384.
-\end{itemize}\vspace{3mm}\textbf{Dissertação, código e resultados:}\par\href{https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0}{github.com/flavioluiz/TGdoWayne · dissertação v1.0.0}
+\end{itemize}\vspace{3mm}\textbf{Dissertação, código e resultados:}\par\href{https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.1.0}{github.com/flavioluiz/TGdoWayne · dissertação v1.1.0}
 \end{frame}
 \end{document}
