@@ -2,7 +2,7 @@
 
 [PDF](../../output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](experimento_codex.pptx) · [Roteiro de fala e fontes](roteiro.md)
 
-São 20 slides principais e dois de apoio, em formato 16:9. O roteiro sugere 25 minutos e 20 segundos e explica adaptações para 20 ou 30 minutos. A apresentação aborda a delegação da pesquisa, busca de novidade, execução, correções, os dois pareceres do Gemini e questões de formação e avaliação. Não exige conhecimento de ondas gravitacionais.
+São 21 slides principais e dois de apoio, em formato 16:9. O roteiro sugere 26 minutos e 35 segundos e explica adaptações para 20 ou 30 minutos. A apresentação aborda a delegação da pesquisa, busca de novidade, execução, correções, os dois pareceres do Gemini estimativas de custo e questões de formação e avaliação. Não exige conhecimento de ondas gravitacionais.
 
 ## Fontes e versões
 
@@ -27,4 +27,4 @@ Os arquivos temporários, renders e recibos de validação ficam em `tmp/present
 
 ## Verificação desta entrega
 
-O pacote PowerPoint passou nas verificações de integridade, geometria, fontes e estrutura editável de gráfico e tabelas, além da reimportação pelo artifact-tool. Os 22 slides do PDF exportado pelo LibreOffice foram renderizados e inspecionados individualmente. Não foi feito teste de abertura no Microsoft PowerPoint. O manifesto registra os hashes desta entrega e das páginas documentais de origem.
+O pacote PowerPoint passou nas verificações de integridade, geometria, fontes e estrutura editável de gráfico e tabelas, além da reimportação pelo artifact-tool. Os 23 slides do PDF exportado pelo LibreOffice foram renderizados e inspecionados individualmente. Não foi feito teste de abertura no Microsoft PowerPoint. O manifesto registra os hashes desta entrega e das páginas documentais de origem.

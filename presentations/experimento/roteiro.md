@@ -1,14 +1,14 @@
 # Roteiro da apresentação do experimento
 
-20 slides principais e dois de apoio. Duração sugerida: **25:20**, incluindo a abertura da discussão. Público: pós-graduação, sem pressupor conhecimento de ondas gravitacionais.
+21 slides principais e dois de apoio. Duração sugerida: **26:35**, incluindo a abertura da discussão. Público: pós-graduação, sem pressupor conhecimento de ondas gravitacionais.
 
 O roteiro é um guia de fala, não um texto para leitura literal. Os tempos são estimativas de apresentação, não medições de ensaio. As notas também estão incorporadas ao PowerPoint.
 
 ## Ajustes de duração
 
-- **Cerca de 20 minutos:** omitir os slides 6, 7, 12 e 19 (total restante: 20:10), resumindo essas informações nas transições.
-- **Cerca de 25 minutos:** apresentar os 20 slides principais na sequência.
-- **Cerca de 30 minutos:** acrescentar aproximadamente cinco minutos de discussão no slide 20. Usar os slides 21 e 22 apenas para responder a questões.
+- **Cerca de 20 minutos:** omitir os slides 6, 7, 13, 19 e 20 (total restante: 20:15), resumindo essas informações nas transições.
+- **Cerca de 27 minutos:** apresentar os 21 slides principais na sequência.
+- **Cerca de 30 minutos:** acrescentar aproximadamente três minutos de discussão no slide 21. Usar os slides 22 e 23 apenas para responder a questões.
 
 ## Sequência e fala sugerida
 
@@ -92,87 +92,95 @@ O goal retornou 111086 segundos. O calendário entre criação e encerramento fo
 
 **Fontes:** Eventos do goal e complementos_pos_goal.json. Relatório, seção 7.
 
-### 11. Um controle expôs confiança excessiva
+### 11. Custos: uma ordem de grandeza
 
-11:50–13:15 (85 s)
+11:50–13:05 (75 s)
+
+O usuário estima ter gasto uma semana de sua cota, à qual atribui cerca de US$ 50. É um rateio da assinatura, sem equivalência contratual com créditos. A conta da API Standard aplica preços de 13/09/2026 aos registros individuais do agente principal e três subagentes: US$ 1.289,34 até o goal e US$ 14,29 de complementos científicos, total de US$ 1.303,63. Entrada sem cache: 20.583.691 tokens; em cache: 822.046.336; saída: 5.229.122. 97,56% da entrada foi cache. Não somar o contador do goal. Fast dobra o preço. Gravações de cache não aparecem nos registros; considerar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Exclui Gemini, ferramentas, computação local e elaboração do estudo de caso. Uma nova execução pode custar diferente.
+
+**Fontes:** Relatório, seção 7.1; estimativa_custo_api.json. Preços em developers.openai.com/api/docs/models/gpt-6-astra, consultados em 13/09/2026.
+
+### 12. Um controle expôs confiança excessiva
+
+13:05–14:30 (85 s)
 
 Explicar cobertura como a frequência com que uma faixa estimada contém o valor usado para gerar os dados. Em um parâmetro de ruído, uma análise nominal de 90% atingiu 313 de 500 casos, 62,6%. Não generalizar esse número para todos os parâmetros ou todos os métodos. A incerteza numérica levava a contagens de 299 a 325, ainda longe de 450.
 
 **Fontes:** docs/revisao_cientifica_1.md e results/C13/review_efac_coverage.json.
 
-### 12. Correções e perguntas ainda abertas
+### 13. Correções e perguntas ainda abertas
 
-13:15–14:35 (80 s)
+14:30–15:50 (80 s)
 
 Separar erro editorial, problema de execução e limitação científica. A descrição das aproximações em uma versão estava incorreta, mas o cálculo usava a semântica correta. A comparação ampla continuou inconclusiva. Um estudo com 50 casos e parâmetros fixados respondeu a uma pergunta menor com precisão.
 
 **Fontes:** docs/c12_errata_v0110.md, docs/revisao_cientifica_1.md.
 
-### 13. Dois ciclos de revisão com Gemini
+### 14. Dois ciclos de revisão com Gemini
 
-14:35–15:50 (75 s)
+15:50–17:05 (75 s)
 
 O primeiro parecer motivou novos estudos, como as 300 análises condicionais e o teste de ajuste temporal. O segundo foi uma revisão do manuscrito e não iniciou novas simulações. Não se dispõe da conversa original do Gemini ou de sua versão.
 
 **Fontes:** Relatório, seções 2 e 2.1. article/REVISION_NOTES.md.
 
-### 14. O Codex filtrou o segundo parecer
+### 15. O Codex filtrou o segundo parecer
 
-15:50–17:10 (80 s)
+17:05–18:25 (80 s)
 
 Mostrar o valor e o risco do feedback automatizado. O agente aceitou melhorias de exposição, mas as notas de revisão recusam novidade absoluta, certeza de falha em dados reais e amplificações extremas não demonstradas. O ponto é o contraste entre persuasão retórica e suporte científico.
 
 **Fontes:** article/REVISION_NOTES.md, commit 26ae3ac.
 
-### 15. O que o caso demonstra
+### 16. O que o caso demonstra
 
-17:10–18:30 (80 s)
+18:25–19:45 (80 s)
 
 Evitar extrapolar o estudo de caso. Os produtos existem e há rastros de execução. Não houve avaliação científica independente completa, teste de aprendizagem ou aceitação editorial. Uma revisão entre modelos é observável, mas seu ganho de qualidade não foi medido por avaliadores externos.
 
 **Fontes:** Relatório, seções 8 a 10.
 
-### 16. A divisão do trabalho pode mudar
+### 17. A divisão do trabalho pode mudar
 
-18:30–19:50 (80 s)
+19:45–21:05 (80 s)
 
 Oportunidades: explorar ideias que não chegariam à implementação e testar mais alternativas. Dificuldade: produzir pode se tornar mais rápido que compreender e validar. Não apresentar esse deslocamento como medição de todo o campo, mas como hipótese sustentada pela experiência do caso.
 
 **Fontes:** Relatório, seções 8 e 9.
 
-### 17. Formação precisa aparecer no processo
+### 18. Formação precisa aparecer no processo
 
-19:50–21:05 (75 s)
+21:05–22:20 (75 s)
 
 Destacar responsabilidades compartilhadas pelo programa, orientador e estudante. Propor avaliações distribuídas e distinguir exercício para aprender de tarefa de produção. A defesa deve complementar esse percurso. O caso não testa a eficácia destas propostas.
 
 **Fontes:** Relatório, seção 8.
 
-### 18. Relevância e capacidade de revisão
+### 19. Relevância e capacidade de revisão
 
-21:05–22:15 (70 s)
+22:20–23:30 (70 s)
 
 Discutir possíveis consequências de aumento da produção sem afirmar colapso observado de periódicos. Origem humana ou de IA não decide relevância. Contribuições incrementais podem ser valiosas se resolvem incerteza importante. Oportunidade de usar a capacidade extra para profundidade, controle e síntese.
 
 **Fontes:** Relatório, seção 9.
 
-### 19. Próximas avaliações do experimento
+### 20. Próximas avaliações do experimento
 
-22:15–23:30 (75 s)
+23:30–24:45 (75 s)
 
 Estas são propostas ainda não executadas. Especialistas poderiam comparar artigo antes e depois do Gemini, checar argumentos e reproduzir resultados centrais. Para aprendizagem seria necessário outro desenho com estudantes e medidas antes e depois.
 
 **Fontes:** Relatório, seção 10.
 
-### 20. Questões para discussão
+### 21. Questões para discussão
 
-23:30–25:20 (110 s)
+24:45–26:35 (110 s)
 
 Reservar cerca de dois minutos para encerrar ou abrir uma conversa. Na versão de 20 minutos, selecionar apenas uma questão. Na de 30 minutos, usar o tempo restante para ouvir respostas. Não tratar os produtos como títulos acadêmicos aprovados.
 
 **Fontes:** Relatório do estudo de caso, discussão.
 
-### 21. Apoio: leitura correta das métricas
+### 22. Apoio: leitura correta das métricas
 
 Apoio opcional
 
@@ -180,7 +188,7 @@ Abrir apenas se perguntarem pelas contagens. Todas são do fechamento v1.0.0, ex
 
 **Fontes:** evidencias.json, complementos_pos_goal.json.
 
-### 22. Apoio: documentos e fontes
+### 23. Apoio: documentos e fontes
 
 Apoio opcional
 

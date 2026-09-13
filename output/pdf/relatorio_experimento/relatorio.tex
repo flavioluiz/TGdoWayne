@@ -270,11 +270,42 @@ Primeiro pedido até conclusão, no calendário & Aproximadamente 57 h 17 min\\
 
 \textbf{Como interpretar o contador.} O valor de 30 h 51 min 26 s é o campo \nolinkurl{timeUsedSeconds} devolvido pela ferramenta. O intervalo de quase 55 horas inclui períodos sem execução contabilizada pelo goal. A diferença é aproximadamente 24 horas; não é possível atribuí-la integralmente a uma única pausa. Há mudanças de estado e trabalho feito quando o objetivo estava bloqueado. O contador não deve ser chamado de tempo de CPU ou soma do trabalho paralelo.
 
-\textbf{Como interpretar os tokens.} O número é o total informado pelo campo \nolinkurl{tokensUsed}, não a extensão do texto produzido. O histórico contém entradas, contexto reutilizado e saídas; não há aqui conciliação de faturamento, cache e atribuição dos subagentes. Não se converte esse número em custo monetário, nem se soma a outros contadores sem verificar sobreposição.
+\textbf{Como interpretar os tokens.} O número é o total informado pelo campo \nolinkurl{tokensUsed}, não a extensão do texto produzido. Esse contador não é uma fatura de API. A estimativa da seção 7.1 usa registros individuais de consumo, separando entrada, cache e saída, inclusive dos subagentes. O contador do goal não é somado a esses registros.
 
 \begin{destaque}
 \textbf{O que foi atingido.} O texto do goal era implementar o plano e publicar as etapas. Ele foi concluído depois do fechamento de C13. Não era um critério externo de aprovação científica. Portanto, ``atingiu o goal'' e ``produziu uma dissertação aprovada'' são afirmações diferentes; só a primeira está demonstrada pelo registro.
 \end{destaque}
+\newpage
+
+\titulo{7.1}{Uma estimativa de custo do experimento}
+\begin{destaque}
+\textbf{Ordem de grandeza.} O proponente estima ter consumido aproximadamente uma semana de sua cota de assinatura, à qual atribui cerca de \textbf{US\$ 50}. Aplicar preços de API padrão ao consumo registrado resulta em aproximadamente \textbf{US\$ 1.300}. O primeiro valor é um rateio informado pelo usuário; o segundo é uma estimativa de quanto custariam os tokens em outra modalidade de contratação. Nenhum deles mede o custo interno do provedor.
+\end{destaque}
+
+\textbf{Base da conta.} Foram somados \textbf{6.510 registros individuais de resposta} do primeiro pedido ao encerramento do goal, incluindo o agente principal e três subagentes. Todos os registros de consumo desse recorte foram associados ao GPT-6 Astra. Não se somaram acumulados repetidos nem o contador de tokens do goal. Os preços são os de API Standard consultados em 13/09/2026.
+
+\begin{tabularx}{\textwidth}{@{}Y r r r@{}}
+\toprule
+\textbf{Categoria} & \textbf{Tokens} & \textbf{US\$/milhão} & \textbf{Custo (US\$)}\\
+\midrule
+Entrada sem cache & 20.583.691 & 10 & 205,84\\
+Entrada reutilizada de cache & 822.046.336 & 1 & 822,05\\
+Saída, incluindo raciocínio & 5.229.122 & 50 & 261,46\\
+\midrule
+\textbf{Total até o goal} & \textbf{847.859.149} & & \textbf{1.289,34}\\
+\bottomrule
+\end{tabularx}
+{\footnotesize Valores arredondados por linha; o total usa valores sem arredondamento.}
+
+\textbf{O que explica o volume.} O histórico e os resultados das ferramentas podem voltar à entrada do modelo a cada etapa. \textbf{97,56\% da entrada foi reutilizada de cache}, mecanismo que cobra menos pelo contexto já processado. Esse volume não representa texto novo escrito pelo agente. Os tokens de raciocínio já estão incluídos na saída e não foram cobrados duas vezes.
+
+\textbf{Complementos e cenários.} As apresentações científicas e a revisão posterior do artigo acrescentam US\$ 14,29: o equivalente completo fica em \textbf{US\$ 1.303,63}, ou cerca de 26 vezes o rateio de US\$ 50. Na modalidade Fast, os mesmos tokens custariam aproximadamente \textbf{US\$ 2.600}, pois a tarifa é dobrada. Não foi possível identificar a modalidade de faturamento a partir dos registros locais.
+
+\textbf{Limites da estimativa.} Trata-se de equivalência de preços, não de fatura ou garantia para uma nova execução. O campo de gravação de cache é zero nos registros; na API atual, gravar cache tem tarifa própria. Se toda a entrada nova fosse gravada, mantendo a reutilização observada, o acréscimo seria de aproximadamente US\$ 53. Outra execução pode reutilizar menos contexto e custar mais. Nenhuma resposta medida excedeu o limiar de entrada para tarifa de contexto longo.
+
+\textbf{Custos fora deste recorte.} Não foram incluídos Gemini, computador e energia das simulações, tarifas adicionais de ferramentas ou a elaboração deste relatório e da apresentação sobre o experimento. O tempo humano para compreender e avaliar a pesquisa também não foi monetizado. Consumir uma semana da cota não estabelece uma conversão contratual entre assinatura e créditos de API.
+
+{\small\textbf{Fontes e memória de cálculo.} \href{https://developers.openai.com/api/docs/models/gpt-6-astra}{Preços oficiais do Astra}, \href{https://developers.openai.com/api/docs/guides/prompt-caching}{regras de cache} e \href{https://developers.openai.com/api/docs/pricing}{preços de ferramentas}, consultados em 13/09/2026. Agregados e método em \nolinkurl{estimativa_custo_api.json} e \nolinkurl{estimativa_custo_api.md}, na pasta deste relatório. Os totais por resposta foram conferidos com os acumulados próprios dos registros de consumo.}
 \newpage
 
 \titulo{8}{Formação e organização da pesquisa com IA}

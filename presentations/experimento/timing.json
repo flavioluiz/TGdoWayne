@@ -1,7 +1,7 @@
 {
-  "main_slides": 20,
+  "main_slides": 21,
   "backup_slides": 2,
-  "suggested_seconds": 1520,
+  "suggested_seconds": 1595,
   "basis": "Tempos sugeridos, sem ensaio cronometrado.",
   "slides": [
     {
@@ -86,6 +86,14 @@
     },
     {
       "slide": 11,
+      "title": "Custos: uma ordem de grandeza",
+      "seconds": 75,
+      "backup": false,
+      "note": "O usuário estima ter gasto uma semana de sua cota, à qual atribui cerca de US$ 50. É um rateio da assinatura, sem equivalência contratual com créditos. A conta da API Standard aplica preços de 13/09/2026 aos registros individuais do agente principal e três subagentes: US$ 1.289,34 até o goal e US$ 14,29 de complementos científicos, total de US$ 1.303,63. Entrada sem cache: 20.583.691 tokens; em cache: 822.046.336; saída: 5.229.122. 97,56% da entrada foi cache. Não somar o contador do goal. Fast dobra o preço. Gravações de cache não aparecem nos registros; considerar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Exclui Gemini, ferramentas, computação local e elaboração do estudo de caso. Uma nova execução pode custar diferente.",
+      "source": "Relatório, seção 7.1; estimativa_custo_api.json. Preços em developers.openai.com/api/docs/models/gpt-6-astra, consultados em 13/09/2026."
+    },
+    {
+      "slide": 12,
       "title": "Um controle expôs confiança excessiva",
       "seconds": 85,
       "backup": false,
@@ -93,7 +101,7 @@
       "source": "docs/revisao_cientifica_1.md e results/C13/review_efac_coverage.json."
     },
     {
-      "slide": 12,
+      "slide": 13,
       "title": "Correções e perguntas ainda abertas",
       "seconds": 80,
       "backup": false,
@@ -101,7 +109,7 @@
       "source": "docs/c12_errata_v0110.md, docs/revisao_cientifica_1.md."
     },
     {
-      "slide": 13,
+      "slide": 14,
       "title": "Dois ciclos de revisão com Gemini",
       "seconds": 75,
       "backup": false,
@@ -109,7 +117,7 @@
       "source": "Relatório, seções 2 e 2.1. article/REVISION_NOTES.md."
     },
     {
-      "slide": 14,
+      "slide": 15,
       "title": "O Codex filtrou o segundo parecer",
       "seconds": 80,
       "backup": false,
@@ -117,7 +125,7 @@
       "source": "article/REVISION_NOTES.md, commit 26ae3ac."
     },
     {
-      "slide": 15,
+      "slide": 16,
       "title": "O que o caso demonstra",
       "seconds": 80,
       "backup": false,
@@ -125,7 +133,7 @@
       "source": "Relatório, seções 8 a 10."
     },
     {
-      "slide": 16,
+      "slide": 17,
       "title": "A divisão do trabalho pode mudar",
       "seconds": 80,
       "backup": false,
@@ -133,7 +141,7 @@
       "source": "Relatório, seções 8 e 9."
     },
     {
-      "slide": 17,
+      "slide": 18,
       "title": "Formação precisa aparecer no processo",
       "seconds": 75,
       "backup": false,
@@ -141,7 +149,7 @@
       "source": "Relatório, seção 8."
     },
     {
-      "slide": 18,
+      "slide": 19,
       "title": "Relevância e capacidade de revisão",
       "seconds": 70,
       "backup": false,
@@ -149,7 +157,7 @@
       "source": "Relatório, seção 9."
     },
     {
-      "slide": 19,
+      "slide": 20,
       "title": "Próximas avaliações do experimento",
       "seconds": 75,
       "backup": false,
@@ -157,7 +165,7 @@
       "source": "Relatório, seção 10."
     },
     {
-      "slide": 20,
+      "slide": 21,
       "title": "Questões para discussão",
       "seconds": 110,
       "backup": false,
@@ -165,7 +173,7 @@
       "source": "Relatório do estudo de caso, discussão."
     },
     {
-      "slide": 21,
+      "slide": 22,
       "title": "Apoio: leitura correta das métricas",
       "seconds": 0,
       "backup": true,
@@ -173,7 +181,7 @@
       "source": "evidencias.json, complementos_pos_goal.json."
     },
     {
-      "slide": 22,
+      "slide": 23,
       "title": "Apoio: documentos e fontes",
       "seconds": 0,
       "backup": true,

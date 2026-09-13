@@ -9,7 +9,7 @@ O estudo de ondas gravitacionais foi o problema científico escolhido para o exp
 | Material | Acesso | Conteúdo |
 |---|---|---|
 | **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
-| **Apresentação do experimento, 20–30 min** | [PDF](output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](presentations/experimento/experimento_codex.pptx) · [Roteiro](presentations/experimento/roteiro.md) | 20 slides principais e dois de apoio, com duração sugerida de aproximadamente 25 minutos |
+| **Apresentação do experimento, 20–30 min** | [PDF](output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](presentations/experimento/experimento_codex.pptx) · [Roteiro](presentations/experimento/roteiro.md) | 21 slides principais e dois de apoio, com duração sugerida de aproximadamente 27 minutos |
 | Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) | Definições das contagens, eventos do goal e revisão posterior do artigo |
 
 ## Produtos científicos gerados no experimento
@@ -45,6 +45,8 @@ A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantem
 | Campanhas principais | **45.528 análises** em quatro campanhas; incluem análises diferentes dos mesmos dados |
 | Plano científico | **13 marcos concluídos**, com resultados, limitações e histórico de falhas |
 | Revisão posterior do artigo | Cerca de **6 min 37 s** no turno do Codex; exclui o trabalho no Gemini e não altera o contador do goal |
+
+**Estimativa de custo:** cerca de US$ 1.300 em API Standard, aplicando os preços de 13/09/2026 ao consumo registrado, incluindo os complementos científicos; aproximadamente US$ 2.600 em Fast. O proponente atribui cerca de US$ 50 ao rateio de uma semana da assinatura. São medidas diferentes. A conta exclui Gemini, computação local, tarifas adicionais de ferramentas e elaboração do estudo de caso. Veja a [memória de cálculo](output/pdf/relatorio_experimento/estimativa_custo_api.md).
 
 Os números são registros deste caso, não fatores gerais de produtividade. Quantidade de código, simulações ou páginas não comprova qualidade científica. O relatório distingue os produtos da v1.0.0 dos complementos posteriores para evitar dupla contagem.
 
