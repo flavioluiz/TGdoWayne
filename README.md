@@ -7,6 +7,12 @@ trabalho de graduação de Wayne Leonardo Silva de Paula (ITA, 2003). O objetivo
 uma pesquisa de mestrado de 24 meses sobre a confiabilidade da inferência da massa do gráviton
 com redes de temporização de pulsares, com potencial para um artigo metodológico.
 
+## Relatório do experimento com IA
+
+[Relatório em PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [Fonte LaTeX](output/pdf/relatorio_experimento/relatorio.tex) · [Evidências e métricas](output/pdf/relatorio_experimento/evidencias.json).
+
+Relatório de 10 páginas para discussão na pós-graduação do ITA sobre o desenvolvimento da pesquisa pelo Codex, com revisão final pelo Gemini. Reconstitui os pedidos do usuário, as decisões do agente, as correções de rota, o volume de código e simulações, os modelos utilizados e o tempo registrado pelo goal, em linguagem acessível a não especialistas.
+
 ## Apresentação de defesa
 
 [Slides em PDF — 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) · [Roteiro de fala](presentations/defesa/roteiro_50min.md) · [Fonte Beamer e compilação](presentations/defesa/README.md). São 32 slides principais e 7 de apoio, com gráficos dos resultados da dissertação.

@@ -1,0 +1,291 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[margin=2.2cm,headheight=15pt]{geometry}
+\usepackage{booktabs,tabularx,array,enumitem,xcolor,fancyhdr,lastpage}
+\usepackage[most]{tcolorbox}
+\usepackage{xurl}
+\usepackage{hyperref}
+\definecolor{navy}{HTML}{17324D}
+\definecolor{teal}{HTML}{087F8C}
+\definecolor{pale}{HTML}{EFF5F8}
+\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=teal,pdftitle={Do TG à dissertação: um experimento com Codex},pdfauthor={Relatório documental preparado com Codex}}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{navy}IA e formação na pós-graduação}
+\fancyhead[R]{\small Relatório do experimento}
+\fancyfoot[L]{\footnotesize TGdoWayne \textbar\ 13 de setembro de 2026}
+\fancyfoot[R]{\footnotesize\thepage\,/\,\pageref{LastPage}}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=4pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=1.5em,itemsep=5pt,topsep=3pt}
+\renewcommand{\arraystretch}{1.12}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\fonte}[1]{{\small\color{navy}[#1]}}
+\newcommand{\titulo}[2]{\section*{\color{navy}#1\quad #2}}
+\newtcolorbox{destaque}{colback=pale,colframe=teal,boxrule=.6pt,arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=2mm}
+\begin{document}
+\thispagestyle{empty}
+{\small\color{teal}\textbf{ESTUDO DE CASO DOCUMENTAL · DISCUSSÃO NA PÓS-GRADUAÇÃO DO ITA}\par}
+\vspace{1cm}
+{\Huge\color{navy}\bfseries Do TG à dissertação:\\um experimento com Codex\par}
+\vspace{.4cm}
+{\Large Autonomia, decisões, execução e limites de um agente de IA\par}
+\vspace{.5cm}
+{\large Repositório \nolinkurl{TGdoWayne} · 10 a 13 de setembro de 2026\par}
+\vspace{.5cm}
+\begin{destaque}
+\textbf{Resultado observado.} A partir de um trabalho de graduação e de instruções amplas, o agente formulou uma proposta de pesquisa, organizou 13 etapas, escreveu e executou código científico, produziu uma dissertação de 167 páginas e um manuscrito de sete páginas. O goal foi marcado como concluído. A pesquisa permaneceu baseada em simulações, com uma comparação central ainda inconclusiva em sua formulação mais ampla. Não houve submissão de artigo, defesa ou aprovação institucional. \fonte{1--3, 6}
+\end{destaque}
+
+\textbf{Finalidade deste relatório.} Reconstruir o que foi pedido, quais escolhas foram documentadas e quanto trabalho foi executado, para subsidiar uma discussão sobre dissertações e teses em tempos de IA. O leitor não precisa conhecer ondas gravitacionais. O objeto principal é o processo de pesquisa conduzido pelo agente.
+
+\textbf{Desenho do experimento.} Segundo o proponente, ele não dominava o assunto e não forneceu contribuição científica própria. Sua intenção era observar até onde o Codex avançaria. A conversa confirma ampla delegação da formulação e execução, acompanhada de intervenções sobre organização, recursos e apresentação. No final, foi encaminhado um parecer técnico elaborado pelo Gemini, conforme esclarecimento posterior do proponente. Assim, a fase final incluiu revisão por outra IA, transmitida pelo usuário ao Codex. Esse evento distingue-se da formulação inicial conduzida pelo Codex. \fonte{1, 10}
+
+\begin{tabularx}{\textwidth}{@{}YYY@{}}
+\toprule
+\textbf{30 h 51 min 26 s} & \textbf{26.069 linhas} & \textbf{45.528 análises}\\
+Contador final de tempo do goal & Código em módulos, scripts e testes & Soma de quatro campanhas principais\\
+\bottomrule
+\end{tabularx}
+{\footnotesize O tempo do goal não é tempo de CPU; linhas incluem comentários e espaços; análises não são observações independentes. Definições e limites nas páginas 7 e 8.}
+
+\vfill
+\textbf{Base documental:} conversa original, eventos locais do Codex, histórico Git e arquivos de resultados. Corte científico: tag \nolinkurl{v1.0.0}, commit \nolinkurl{39dd682}. O pedido posterior de slides é identificado separadamente. Este relatório não reexecuta as campanhas nem constitui parecer científico especializado.
+\newpage
+
+\titulo{1}{Interações: da exploração à primeira pausa}
+Todos os horários deste relatório são de Brasília (UTC$-$3). Foram identificadas \textbf{25 mensagens do usuário antes do encerramento}, além da instrução registrada como goal. Mensagens curtas de continuação e pedidos enviados durante a execução estão incluídos. A contagem não inclui avisos automáticos, mensagens dos subagentes ou o pedido posterior de slides. \fonte{1, 2, 9}
+
+\begin{tabularx}{\textwidth}{@{}p{2.5cm}Y@{}}
+\toprule
+\textbf{Data e hora} & \textbf{O que o usuário solicitou e seu efeito no trabalho}\\
+\midrule
+10/09, 15:47 & Ler o TG e procurar estudos complementares, teóricos ou numéricos, que pudessem ser implementados, validados e gerar artigo. Foi o pedido de exploração científica.\\
+10/09, 15:49 & Transformar a exploração em proposta de mestrado, usando a literatura mais recente. O agente passou a selecionar um recorte executável.\\
+10/09, 15:53 & ``go on'': autorização para continuar.\\
+10/09, 16:33 & Criar plano em etapas, um commit e um PDF por etapa; escrever planos gerais e específicos; usar o template LaTeX do ITA; salvar proposta; criar e publicar o repositório no GitHub.\\
+10/09, 16:39 & Manter no README o roteiro, o estado atual, o trabalho executado e o link para o PDF mais recente.\\
+10/09, 16:49 & ``qual a pergunta?'': mensagem curta preservada no registro. Isoladamente, ela não fornece uma hipótese científica ao agente.\\
+10/09, 16:50 & Definir programa de Física e identificação bem-humorada de autor/orientação, incluindo ``Autor do TG do Wayne''.\\
+10/09, 17:53 & Novo ``go on''.\\
+10/09, 18:07 & Goal: ``implemente o plano de implementacao. nao esqueca de dar commit e push a cada etapa concluida.'' O objetivo passou a ser a execução do plano inteiro.\\
+10/09, 18:08 & Baixar os artigos em pasta própria durante a revisão bibliográfica.\\
+11/09, 07:52--07:54 & Créditos próximos de acabar: concluir simulações em andamento, publicar v0.8.5 e pausar. Duas mensagens complementares pediram texto completo até o estado atual, pendências e resultados parciais como rascunhos, inclusive nos capítulos futuros.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{O que essa fase revela.} O usuário determinou o propósito e o modo de entrega, mas o tema específico, as hipóteses, as comparações e os procedimentos científicos foram propostos pelo agente. A versão inicial continha um cronograma convencional de 24 meses; a execução automatizada avançou por critérios de entrega, sem esperar esse calendário. \fonte{3, 4}
+
+\textbf{A pausa não significou conclusão.} A v0.8.5 conservou resultados parciais e tarefas abertas. Às 08:14 de 11/09, o agente marcou o goal como \nolinkurl{blocked}. O registro posterior contém alternâncias entre ativo, pausado e bloqueado; portanto, seria incorreto descrever o experimento como uma execução contínua sem supervisão. \fonte{2}
+\newpage
+
+\titulo{2}{Interações: retomada e revisão final}
+\begin{tabularx}{\textwidth}{@{}p{2.5cm}Y@{}}
+\toprule
+\textbf{Data e hora} & \textbf{Pedido e consequência observável}\\
+\midrule
+12/09, 07:12 & ``sim, retomar o trabalho'': autorização explícita de retomada após a pausa.\\
+12/09, 10:33 & Evitar versões intermediárias e voltar aos marcos v0.9.0, v0.10.0 etc., salvo necessidade. O fluxo havia acumulado entregas de pilotos e reparos.\\
+12/09, 13:06 e 13:11 & Duas mensagens ``go on'', em período com novas mudanças de estado do goal.\\
+12/09, 16:58 & Parar de otimizar excessivamente: o usuário comparou os nove minutos de discussão da otimização ao custo adicional de simplesmente executar. Intervenção sobre eficiência do processo.\\
+12/09, 18:52 & Informou ter feito login no GitHub pelo terminal, dando suporte operacional à publicação.\\
+12/09, 19:36 e 19:41 & Pediu o plano e a previsão de duração de C11; depois perguntou o significado de ``geometria pública''.\\
+12/09, 21:21 & Exigiu dissertação acadêmica limpa, para leitores humanos, sem referências a commits, etapas ou versões.\\
+12/09, 21:34 e 21:52 & Pediu adequação ao template ITA e páginas pré-textuais; depois alterou orientação e banca, mantendo nomes fictícios bem-humorados.\\
+12/09, 22:22 & Indicou o programa de Física e sugeriu verificar o enquadramento na área de Física Nuclear.\\
+12/09, 23:06 & Considerou a formatação suficiente e encaminhou parecer técnico do Gemini, pedindo conferência independente das críticas e revisão científica, textual e gráfica.\\
+\bottomrule
+\end{tabularx}
+
+\begin{destaque}
+\textbf{Uma distinção essencial para interpretar a autonomia.} O parecer encaminhado às 23:06 contém recomendações científicas concretas, como resolver uma comparação em uma amostra menor e estudar o efeito do ajuste dos tempos de observação. O proponente esclareceu que esse parecer foi produzido pelo Gemini. O usuário o encaminhou e pediu ao Codex que verificasse as críticas. Portanto, o fechamento teve uma revisão entre modelos: Gemini como revisor e Codex como executor das correções. A versão do Gemini e a conversa de revisão não foram fornecidas. \fonte{1, linha 29295; 10}
+\end{destaque}
+
+O agente não apenas acatou o parecer: registrou pontos já atendidos, corrigiu algumas interpretações e limitou o alcance das novas conclusões. Acrescentou um estudo em 50 casos, com 300 análises condicionais, e um experimento de ajuste temporal com 20.000 séries por tipo de amostragem. Reescreveu trechos e redesenhou 11 figuras. São mudanças de conteúdo, além de revisão editorial. \fonte{7}
+
+\textbf{Depois do goal.} Em 13/09, às 08:48, o usuário pediu slides Beamer para uma defesa de 50 minutos. O repositório passou a conter 32 slides principais e sete de apoio. Esse produto foi acrescentado depois do encerramento e não integra as métricas de código ou duração do goal apresentadas aqui. A existência de slides não significa que a defesa ocorreu. \fonte{1, 3}
+\newpage
+
+\titulo{3}{Como o agente procurou uma contribuição nova}
+\textbf{A pergunta em linguagem comum.} O estudo compara maneiras de analisar sinais extremamente fracos: guardar suas diferentes frequências, resumir essas informações de forma consistente ou usar uma única frequência como aproximação. A questão é saber quando essas simplificações alteram a resposta ou produzem confiança excessiva. As observações são simuladas, de modo que o agente conhece a resposta usada para produzi-las.
+
+\textbf{1. Separou continuidade de novidade.} O agente identificou que resultados centrais do TG de 2003 já haviam originado uma publicação em 2004. Também encontrou desenvolvimentos posteriores que cobriam parte das extensões teóricas mais óbvias. Reproduzir o TG foi tratado como base de validação, e não como descoberta nova. Esta é a reconstrução da decisão registrada, não uma nova auditoria da prioridade científica. \fonte{4}
+
+\textbf{2. Comparou caminhos possíveis.} A proposta examinou quatro linhas: confiabilidade das análises com redes de pulsares; revisão teórica das polarizações; aplicação a observatórios espaciais; e estatísticas mais exploratórias de sinais. Escolheu a primeira por permitir um problema delimitado, implementação numérica e resultado útil mesmo sem detectar um fenômeno novo. Extensões cosmológicas também foram consideradas, mas reconhecidas como tendo antecedentes e riscos maiores. \fonte{4}
+
+\textbf{3. Procurou hipóteses simplificadoras na literatura recente.} Um trabalho de 2026 chamou atenção por analisar informações já resumidas usando uma frequência de referência. O agente transformou essa escolha metodológica em pergunta testável: qual parcela da diferença vem de resumir os dados, qual vem de aproximar o modelo e qual vem das suposições estatísticas? \fonte{4, 5}
+
+\textbf{4. Fez busca dirigida e verificou antecedentes.} O protocolo documenta consultas por título, identificador e combinações de termos, expansão pelas referências dos artigos, leitura dirigida de métodos e inspeção estática de código público. Consultou fontes primárias, registrou versões, baixou PDFs e guardou identificadores digitais de integridade. Na atualização de 11/09, foram triadas seis listagens, com 217 entradas e 195 identificadores distintos. A matriz de comparação chegou a 23 entradas. \fonte{5}
+
+\textbf{5. Estreitou a alegação de originalidade.} A revisão mostrou que conservar frequências, tratar correlações e usar métodos de compressão já tinha antecedentes. O recorte passou a ser uma comparação controlada dessas escolhas no mesmo problema e nos mesmos dados simulados. O documento de decisão diz que não foi localizado estudo equivalente nas fontes consultadas; ele não declara prioridade absoluta. \fonte{5}
+
+\begin{destaque}
+\textbf{Lógica de trabalho reconstruída:}\par
+TG e publicação anterior $\rightarrow$ busca de extensões $\rightarrow$ exclusão de novidades aparentes $\rightarrow$ pergunta delimitada $\rightarrow$ comparação controlada $\rightarrow$ testes de confiabilidade $\rightarrow$ conclusão com domínio e limites explícitos.
+\end{destaque}
+
+\textbf{Limite dessa reconstrução.} Trata-se das decisões e justificativas documentadas. Não é acesso a um processo mental interno. Baixar 41 PDFs ou resolver 47 referências não demonstra leitura integral nem garante que cada afirmação está correta. O próprio protocolo exclui a pretensão de revisão sistemática exaustiva. \fonte{5, 6}
+\newpage
+
+\titulo{4}{Implementação e cumprimento do plano}
+O roteiro C01--C13 foi concluído no sentido operacional: os marcos têm commits, versões e artefatos. Houve ajustes de método, versões extras e redução de algumas pretensões científicas. A tabela resume a passagem do plano ao que efetivamente ficou documentado. \fonte{3, 6}
+
+\begin{tabularx}{\textwidth}{@{}p{1.6cm}Y Y@{}}
+\toprule
+\textbf{Etapas} & \textbf{Intenção} & \textbf{Execução e alcance}\\
+\midrule
+C01--C03 & Proposta, introdução e busca de originalidade. & Proposta e dissertação cumulativa; acervo e matriz bibliográfica; recorte científico mais estreito.\\
+C04--C05 & Reproduzir a base teórica e construir o modelo de resposta. & Cálculo simbólico e numérico, comparação com casos conhecidos e métodos de referência.\\
+C06 & Gerar dados artificiais com resposta conhecida. & Três grandes campanhas de teste do simulador, incluindo controles para distinguir propriedades dos dados e das aproximações.\\
+C07 & Verificar se as análises recuperam respostas e incertezas. & 500 realizações e cinco análises por realização; controles adicionais. Foram encontradas falhas de calibração e incertezas numéricas.\\
+C08 & Medir efeito da compressão e da frequência de referência. & Mapas e comparações pareadas concluídos; parte importante dos contrastes permaneceu inconclusiva na precisão exigida.\\
+C09 & Avaliar sensibilidade a suposições, ruído e distâncias. & Pilotos, reparos, retomadas e 25.956 análises finais. Escopo condicional e casos indeterminados preservados.\\
+C10 & Acrescentar uma forma de deformação ligada à teoria adotada. & 1.192 observações sintéticas e 6.344 análises; testes de recuperação, falsos positivos e limites de separação entre componentes.\\
+C11 & Aplicar a dados públicos ou ampliar simulações. & Escolhida a alternativa simulada com posições públicas de pulsares; 596 realizações pareadas e 10.728 análises.\\
+C12--C13 & Discussão, artigo e revisão final. & Manuscrito, revisão científica e editorial, reprodução de campanhas e dissertação final publicada no repositório.\\
+\bottomrule
+\end{tabularx}
+
+\textbf{Organização em equipe de agentes.} O registro mostra um agente principal e três subagentes, inicialmente destinados à introdução, revisão bibliográfica e fundamentos. Eles foram reutilizados ao longo da execução, inclusive em implementação e conferência. A conversa principal registra 86 chamadas de tarefas de continuação e 257 mensagens a agentes antes do encerramento. Isso caracteriza trabalho coordenado de múltiplos agentes, não uma única resposta longa. \fonte{1, 9}
+
+\textbf{Concluiu o plano, mas não resolveu tudo.} O marco C11 permitia explicitamente a alternativa simulada. Ela foi escolhida porque faltava um adaptador local validado para analisar os tempos de observação reais. Não faltavam dados públicos em geral. Da mesma forma, concluir C08 incluiu relatar uma comparação inconclusiva; o fechamento administrativo da etapa não transforma essa comparação em demonstração de equivalência. \fonte{5, 6, 8}
+\newpage
+
+\titulo{5}{Erros encontrados e correções de rota}
+\textbf{As correções tiveram naturezas diferentes.} Algumas corrigiram código ou execução; outras corrigiram a interpretação do resultado; outras modificaram a pergunta que era possível responder. Confundir essas categorias superestima a eficácia de uma simples bateria de testes.
+
+\begin{tabularx}{\textwidth}{@{}Y Y@{}}
+\toprule
+\textbf{Problema observado} & \textbf{Resposta documentada e limite restante}\\
+\midrule
+Novidade inicialmente ampla demais. & A literatura mostrou antecedentes próximos. O agente restringiu a contribuição à comparação calibrada e evitou reivindicar invenção das técnicas usadas.\\
+Uma aproximação estatística deu confiança excessiva. & Simulações com resposta conhecida expuseram a falha. Em um parâmetro de ruído, intervalos apresentados como de 90\% cobriram a verdade em 313 de 500 casos (62,6\%) numa análise. O achado tornou-se resultado central após a revisão.\\
+Precisão insuficiente na comparação principal. & Tentativas e limites foram preservados. O complemento final fixou parâmetros auxiliares em 50 casos e obteve 200 contrastes com erro numérico abaixo de 0,01. Isso respondeu uma pergunta mais restrita; a comparação ampla continuou inconclusiva.\\
+Falhas de interpolação, memória e orçamento de cálculo. & O histórico contém duas interpolações escalares rejeitadas, paradas por CPU/memória e falhas ao salvar arquivos. Houve reaproveitamento de resultados intermediários, refinamentos e separação do cálculo em blocos.\\
+Descrição errada de duas aproximações em v0.11.0. & A revisão C12 comparou texto e implementação e corrigiu a narrativa. As aproximações ainda dependiam da massa; não eram os limites físicos descritos no texto anterior. Os dados e números não precisaram ser alterados.\\
+Dificuldades de reprodução e portabilidade. & Foram corrigidos testes sensíveis ao ambiente, recuperados insumos ausentes e adaptados caminhos. A reprodução usou o ambiente científico existente; uma campanha reutilizou o binário original e outra um atlas de respostas.\\
+Texto e figuras pouco adequados a leitores. & O usuário apontou linguagem excessiva de auditoria, páginas institucionais ausentes e gráficos densos. Houve limpeza editorial, adequação do template e redesenho de figuras.\\
+\bottomrule
+\end{tabularx}
+\fonte{3, 5--8}
+
+\textbf{Como o agente tratou a revisão recebida.} O registro de resposta ao parecer identificou que uma definição matemática já estava presente; corrigiu a interpretação sobre convenções de normalização; e não tomou uma sugestão de correção estatística como solução já demonstrada. Também acrescentou um estudo temporal específico em vez de apresentar a simulação antiga como observação real. Há evidência de avaliação crítica do parecer, além de cumprimento de pedidos. \fonte{7}
+
+
+\newpage
+
+\titulo{6}{Quantidade de trabalho executada}
+\textbf{Código no fechamento da dissertação.} Contagem direta dos arquivos da tag v1.0.0, sem o relatório atual nem os slides posteriores. ``Linhas'' significa linhas físicas, incluindo comentários e linhas vazias. A medição considera Python, C/C++, cabeçalhos e shell; não conta LaTeX, dados, notebooks, dependências instaladas nem código contido dentro de ZIPs. \fonte{9}
+
+\begin{tabularx}{\textwidth}{@{}Yrrr@{}}
+\toprule
+\textbf{Grupo} & \textbf{Arquivos} & \textbf{Linhas} & \textbf{Não vazias}\\
+\midrule
+Módulos em \nolinkurl{src/} &72&7.138&6.474\\
+Scripts em \nolinkurl{scripts/} &185&15.320&14.371\\
+Testes em \nolinkurl{tests/} &37&3.611&3.258\\
+\textbf{Subtotal principal} &\textbf{294}&\textbf{26.069}&\textbf{24.103}\\
+Código arquivado em \nolinkurl{results/} &780&65.212&59.463\\
+Código em \nolinkurl{docs/} &1&66&63\\
+\textbf{Total dessas extensões} &\textbf{1.075}&\textbf{91.347}&\textbf{83.629}\\
+\bottomrule
+\end{tabularx}
+O total inclui cópias históricas, código auxiliar e referências preservadas. \textbf{Não é uma contagem de código original único}, nem de linhas escritas cumulativamente durante todas as tentativas. A árvore completa contém 7.440 arquivos versionados. Até v1.0.0 há 22 commits e 22 tags; o plano de 13 marcos ganhou versões de reparo e retomada.
+
+\textbf{Simulações e análises.} Uma realização é um conjunto de dados artificiais. Uma análise tenta inferir algo desse conjunto. Uma avaliação numérica é apenas um cálculo interno dessa análise. Esses três números não são intercambiáveis.
+
+\begin{tabularx}{\textwidth}{@{}p{1.3cm}Y Y@{}}
+\toprule
+\textbf{Etapa} & \textbf{Volume documentado} & \textbf{Como interpretar}\\
+\midrule
+C06 & 3 $\times$ 131.072 realizações físicas e igual número de controles. & 393.216 realizações físicas e 393.216 controles; testes do simulador, não 786 mil descobertas ou análises de massa.\\
+C07 & 500 realizações; 2.500 análises; 96 controles adicionais. & Os mesmos dados são analisados de cinco formas.\\
+C09 & 25.956 análises finais. & Estudo de robustez; inclui configurações e comparações sobre dados relacionados.\\
+C10 & 1.192 observações; 6.344 análises; 214.227.550 avaliações. & Extensão do modelo; avaliações são cálculos internos, não novas observações.\\
+C11 & 596 realizações pareadas; 10.728 análises. & Ampliação com posições de catálogo e sinais artificiais.\\
+C13 & 300 análises condicionais; 40.000 séries temporais. & Complementos de revisão; 20.000 séries por amostragem regular/irregular, com três ajustes pareados.\\
+\bottomrule
+\end{tabularx}
+\fonte{3, 6, 7, 8}
+
+A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. O produto editorial final tem 167 páginas, artigo de sete páginas e 47 referências, com 41 cópias locais conferidas. \fonte{6}
+\newpage
+
+\titulo{7}{Modelo, duração e ferramenta goal}
+\textbf{Modelo efetivamente registrado.} O principal foi \nolinkurl{gpt-6-astra}, com níveis de esforço variáveis. Antes do encerramento, os registros de contexto da conversa principal contêm 149 ocorrências desse modelo: 118 em \nolinkurl{medium}, 22 em \nolinkurl{ultra}, sete em \nolinkurl{xhigh} e duas em \nolinkurl{high}. Há uma ocorrência de \nolinkurl{gpt-5.6-luna}, em \nolinkurl{medium}, durante a sequência de pausa/retomada de 12/09, às 06:19. Esses números contam contextos registrados, não chamadas de geração, tokens ou proporções de tempo. \fonte{1, 9}
+
+Os três registros de subagentes ligados à conversa identificam \nolinkurl{gpt-6-astra}, em \nolinkurl{ultra} e \nolinkurl{xhigh}. Assim, a formulação mais fiel é: \textbf{execução predominantemente com GPT-6 Astra, apoiada por três subagentes Astra e com passagem pontual de Luna na conversa principal}. O registro inicial identifica o cliente \nolinkurl{codex-tui}, versão 0.153.4; isso descreve o início da sessão, não certifica a versão do aplicativo ao longo de todos os dias.
+
+\begin{tabularx}{\textwidth}{@{}Y p{6.1cm}@{}}
+\toprule
+\textbf{Marco ou medida} & \textbf{Valor confirmado}\\
+\midrule
+Primeiro pedido científico & 10/09/2026, 15:47:05\\
+Criação do goal de implementação & 10/09/2026, 18:07:24\\
+Primeiro encerramento por pausa/bloqueio & 11/09/2026, 08:14:47\\
+Retomada explicitamente pedida em mensagem & 12/09/2026, 07:12:47\\
+Commit da dissertação v1.0.0 & 13/09/2026, 00:58:22\\
+Goal marcado como \nolinkurl{complete} & 13/09/2026, 01:04:06\\
+\textbf{Tempo final informado pelo goal} & \textbf{111.086 s = 30 h 51 min 26 s}\\
+Criação do goal até conclusão, no calendário & 197.802 s = 54 h 56 min 42 s\\
+Primeiro pedido até conclusão, no calendário & Aproximadamente 57 h 17 min\\
+\nolinkurl{tokensUsed} no encerramento & 25.719.766\\
+\bottomrule
+\end{tabularx}
+\fonte{1--3, 9}
+
+\textbf{Como interpretar o contador.} O valor de 30 h 51 min 26 s é o campo \nolinkurl{timeUsedSeconds} devolvido pela ferramenta. O intervalo de quase 55 horas inclui períodos sem execução contabilizada pelo goal. A diferença é aproximadamente 24 horas; não é possível atribuí-la integralmente a uma única pausa. Há mudanças de estado e trabalho feito quando o objetivo estava bloqueado. O contador não deve ser chamado de tempo de CPU ou soma do trabalho paralelo.
+
+\textbf{Como interpretar os tokens.} O número é o total informado pelo campo \nolinkurl{tokensUsed}, não a extensão do texto produzido. O histórico contém entradas, contexto reutilizado e saídas; não há aqui conciliação de faturamento, cache e atribuição dos subagentes. Não se converte esse número em custo monetário, nem se soma a outros contadores sem verificar sobreposição.
+
+\begin{destaque}
+\textbf{O que foi atingido.} O texto do goal era implementar o plano e publicar as etapas. Ele foi concluído depois do fechamento de C13. Não era um critério externo de aprovação científica. Portanto, ``atingiu o goal'' e ``produziu uma dissertação aprovada'' são afirmações diferentes; só a primeira está demonstrada pelo registro.
+\end{destaque}
+\newpage
+
+\titulo{8}{O que este caso permite discutir no ITA}
+\textbf{O resultado mais forte do experimento é processual.} Sob instruções amplas, o sistema passou de um documento antigo a uma pergunta delimitada, um programa computacional, experimentos, revisões e artefatos acadêmicos. O usuário não precisou escrever as equações ou o código para que esse conjunto fosse produzido. Isso desloca a discussão sobre avaliação: a presença de texto longo, grande quantidade de simulações e boa apresentação deixa de ser evidência suficiente de domínio pessoal do candidato.
+
+\textbf{Há sinais de comportamento de pesquisa.} O agente procurou antecedentes, abandonou alegações amplas de novidade, construiu controles, registrou falhas e distinguiu um resultado inconclusivo de uma aproximação validada. Também encontrou uma divergência entre implementação e narrativa e corrigiu o texto. Esses comportamentos são mais relevantes para a discussão do que a quantidade bruta de páginas ou linhas.
+
+\textbf{Há limites claros à conclusão sobre autonomia.} Este é um estudo de caso, sem grupo de comparação, repetição integral por diferentes modelos ou avaliação cega. Houve supervisão de recursos, retomadas, autenticação, direção editorial e encaminhamento de parecer do Gemini. Os subagentes do Codex pertenciam à mesma família principal; o parecer final veio de outra IA. Essa diversidade não equivale a revisão por especialista humano. \fonte{10} O repositório documenta reprodução no ambiente disponível, não validação independente por uma equipe externa. A novidade científica continua sendo uma contribuição candidata, sujeita a julgamento especializado.
+
+\begin{destaque}
+\textbf{Uma leitura proporcional da evidência.} O caso mostra que um agente consegue produzir um pacote extenso de trabalho com forma de dissertação e evidências de execução verificáveis. Não demonstra que um estudante adquiriu a formação correspondente, que a contribuição é inédita em sentido definitivo, ou que o material satisfaria uma banca de mestrado ou doutorado.
+\end{destaque}
+
+\textbf{Questões para uma discussão de pós-graduação}
+\begin{enumerate}
+\item \textbf{Qual competência a defesa deve tornar visível?} Explicar por que a pergunta importa, defender hipóteses, interpretar um controle que falha e propor uma mudança de experimento são evidências diferentes de entregar um PDF.
+\item \textbf{Como atribuir as decisões?} Um registro pode distinguir ideias propostas pelo candidato, pelo agente, por uma revisão externa e por um orientador. Neste caso, separar a formulação pelo Codex das sugestões finais do Gemini permite examinar a contribuição de cada sistema e a mediação do usuário.
+\item \textbf{O que conta como contribuição científica?} O resultado útil pode ser um limite de validade ou uma falha de método, sem nova descoberta física. A banca precisaria avaliar relevância e suporte, além de volume.
+\item \textbf{Como avaliar domínio individual com IA permitida?} Uma possibilidade de discussão é pedir ao candidato que modifique uma hipótese, antecipe o efeito e interprete um resultado novo durante a defesa. Isso examina compreensão, não apenas autoria textual.
+\item \textbf{Como distinguir mestrado e doutorado?} Este experimento não decide os requisitos de cada título. Ele permite perguntar quais exigências de independência intelectual, profundidade e originalidade devem ser verificadas diretamente, além de publicações.
+\end{enumerate}
+
+Esses pontos são interpretações para debate, não conclusões experimentais sobre aprendizagem humana. A publicação em periódico seria outra forma de avaliação do produto científico; ainda assim, não mediria sozinha a formação ou o domínio individual de quem o apresenta.
+\newpage
+
+\titulo{9}{Fontes, rastreabilidade e método de leitura}
+\textbf{Como o relatório foi elaborado.} Localizou-se a conversa pelo aplicativo e leu-se seu registro local completo por eventos, extraindo pedidos, mudanças do goal e metadados de modelo. Esses eventos foram confrontados com o histórico Git, planos, documentos de revisão e recibos de execução. As métricas de código foram recalculadas diretamente na tag final. As quantidades das campanhas foram conferidas nos registros existentes; não se repetiram simulações nesta análise.
+
+\textbf{Critério para contradições.} Há parágrafos antigos no README e em guias que ainda dizem ``em andamento'' ou ``pausado''. Para estabelecer o encerramento foram priorizados os recibos terminais, a auditoria final, o estado v1.0.0 e a resposta da ferramenta goal, preservando textos antigos apenas como história. Copiar isoladamente uma dessas notas antigas produziria um retrato incorreto.
+
+{\small
+\begin{enumerate}[label={\textbf{[\arabic*]}},leftmargin=2em,itemsep=7pt]
+\item \textbf{Conversa original: ``Analise TG\_Wayne.pdf e proponha''.} Identificador \nolinkurl{01a08ca4-18ea-7160-95a0-e1e805620720}. Registro local: \nolinkurl{rollout-2026-09-10T15-45-59-}\allowbreak\nolinkurl{01a08ca4-18ea-7160-95a0-e1e805620720.jsonl}. Pedidos: linhas 10--29295; parecer: 29295; slides: 31700. O arquivo de evidências reproduz as 25 mensagens do recorte com seus localizadores.
+\item \textbf{Eventos do goal no mesmo registro.} Criação: linha 786; primeiro bloqueio: resposta na linha 15489; encerramento: chamada na linha 31682 e resposta na 31684. Campos usados: \nolinkurl{status}, \nolinkurl{createdAt}, \nolinkurl{updatedAt}, \nolinkurl{timeUsedSeconds}, \nolinkurl{tokensUsed}.
+\item \textbf{Estado e história do projeto.} \href{https://github.com/flavioluiz/TGdoWayne/tree/v1.0.0}{Repositório na tag v1.0.0}: \nolinkurl{project_status.json}, \nolinkurl{implementation_plan/roadmap.json}, planos por marco e histórico Git. PDF final em \nolinkurl{output/pdf/v1.0.0/dissertacao.pdf}; manuscrito em \nolinkurl{article/manuscript.pdf}. Commit científico: \nolinkurl{39dd682}; slides posteriores: \nolinkurl{293d12a}.
+\item \textbf{Seleção inicial da pesquisa.} \href{https://github.com/flavioluiz/TGdoWayne/blob/v1.0.0/output/pesquisa/proposta_mestrado.md}{Proposta de mestrado}: \nolinkurl{output/pesquisa/proposta_mestrado.md}; comparação de linhas, antecedentes e justificativa do recorte.
+\item \textbf{Busca e novidade.} \nolinkurl{docs/literatura/protocolo_busca.md}, \nolinkurl{decisao_recorte.md}, \nolinkurl{matriz_originalidade.csv} e \nolinkurl{atualizacao_20260911/REPORT.md}, no mesmo diretório; \nolinkurl{literature/catalog.json}. São registros da busca histórica, não verificação bibliográfica nova feita para este relatório.
+\item \textbf{Fechamento e reprodução.} \href{https://github.com/flavioluiz/TGdoWayne/blob/v1.0.0/docs/auditoria_final.md}{Auditoria final} e \nolinkurl{docs/reproducao.md}; recibos em \nolinkurl{results/C13/}, especialmente \nolinkurl{c07_current_execution.json}, \nolinkurl{c07_inference_full_comparison.json}, \nolinkurl{c07_fresh_synthesis_comparison.json} e \nolinkurl{bibliography_audit.json}.
+\item \textbf{Revisão e correções.} \nolinkurl{docs/revisao_cientifica_1.md}, \nolinkurl{docs/c12_errata_v0110.md}; resultados em \nolinkurl{results/C13/conditional_contrasts/}, \nolinkurl{timing_projection/} e \nolinkurl{review_efac_coverage.json}.
+\item \textbf{Campanhas e decisão de aplicação.} \nolinkurl{docs/dados_sinteticos.md}, \nolinkurl{docs/dados_publicos.md}, \nolinkurl{docs/matriz_objetivos_resultados.md}, registros C07--C11 e resumos consolidados de C13.
+\item \textbf{Evidências deste relatório.} \nolinkurl{evidencias.json} contém métricas, inventário de código, hashes, mensagens selecionadas e retornos do goal; \nolinkurl{coletar_evidencias.py} documenta sua extração. Os registros locais de subagentes associados à conversa foram consultados para confirmar modelos. Esses materiais acompanham o fonte LaTeX nesta pasta.
+\item \textbf{Esclarecimento posterior do proponente, em 13/09/2026.} Nesta conversa de elaboração do relatório, informou: ``O parecer técnico foi feito pelo Gemini. A atribuição apoia-se nesse relato; não foram examinados a conversa original com o Gemini nem seus metadados de versão. Registro em \nolinkurl{esclarecimento_gemini.json}.
+\end{enumerate}}
+
+\textbf{Reprodução do documento.} Na pasta do relatório, executar \texttt{latexmk -pdf relatorio.tex}. Para recalcular as evidências, executar \texttt{python3 coletar\_evidencias.py} no ambiente original, com acesso ao repositório e ao registro local da conversa. O JSON de evidências contém mensagens do usuário; não é necessário torná-lo público para discutir o PDF.
+\end{document}
