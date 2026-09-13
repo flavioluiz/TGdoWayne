@@ -2,7 +2,7 @@
 
 [PDF](../../output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](experimento_codex.pptx) · [Roteiro de fala e fontes](roteiro.md)
 
-São 21 slides principais e dois de apoio, em formato 16:9. O roteiro sugere 26 minutos e 35 segundos e explica adaptações para 20 ou 30 minutos. A apresentação aborda a delegação da pesquisa, busca de novidade, execução, correções, os dois pareceres do Gemini estimativas de custo e questões de formação e avaliação. Não exige conhecimento de ondas gravitacionais.
+São 15 slides principais e três de apoio, em formato 16:9. O roteiro sugere 25 minutos e 50 segundos e explica adaptações para 20 ou 30 minutos. A apresentação aborda a delegação da pesquisa, busca de novidade, execução, correções, os dois pareceres do Gemini, estimativas de custo e questões de formação e avaliação. Não exige conhecimento de ondas gravitacionais. A abertura mostra os documentos produzidos e a pergunta sobre formação. Os slides principais usam capas reais, números em destaque, um diagrama e exemplos concretos; as tabelas ficam no apoio.
 
 ## Fontes e versões
 
@@ -10,7 +10,7 @@ As métricas se referem à pesquisa na tag v1.0.0. A revisão posterior do artig
 
 ## Compilação
 
-`build.mjs` cria os objetos editáveis com `@oai/artifact-tool`. A apresentação contém um gráfico nativo com planilha incorporada e duas tabelas nativas. O PDF é exportado pelo LibreOffice.
+`build.mjs` cria os objetos editáveis com `@oai/artifact-tool`. A apresentação contém um diagrama editável dos papéis e duas tabelas nativas nos slides de apoio. O PDF é exportado pelo LibreOffice.
 
 No ambiente de criação, indicar os caminhos de Node.js, Python, LibreOffice, do pacote `@oai/artifact-tool` e da skill de apresentações do Codex:
 
@@ -27,4 +27,4 @@ Os arquivos temporários, renders e recibos de validação ficam em `tmp/present
 
 ## Verificação desta entrega
 
-O pacote PowerPoint passou nas verificações de integridade, geometria, fontes e estrutura editável de gráfico e tabelas, além da reimportação pelo artifact-tool. Os 23 slides do PDF exportado pelo LibreOffice foram renderizados e inspecionados individualmente. Não foi feito teste de abertura no Microsoft PowerPoint. O manifesto registra os hashes desta entrega e das páginas documentais de origem.
+O pacote PowerPoint passou nas verificações de integridade, geometria, fontes e estrutura editável das tabelas, além da reimportação pelo artifact-tool. Os 18 slides do PDF exportado pelo LibreOffice foram renderizados e inspecionados individualmente. Não foi feito teste de abertura no Microsoft PowerPoint. O manifesto registra os hashes desta entrega e das páginas documentais de origem.

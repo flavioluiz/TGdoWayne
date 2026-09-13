@@ -9,7 +9,7 @@ O estudo de ondas gravitacionais foi o problema científico escolhido para o exp
 | Material | Acesso | Conteúdo |
 |---|---|---|
 | **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
-| **Apresentação do experimento, 20–30 min** | [PDF](output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](presentations/experimento/experimento_codex.pptx) · [Roteiro](presentations/experimento/roteiro.md) | 21 slides principais e dois de apoio, com duração sugerida de aproximadamente 27 minutos |
+| **Apresentação do experimento, 20–30 min** | [PDF](output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](presentations/experimento/experimento_codex.pptx) · [Roteiro](presentations/experimento/roteiro.md) | 15 slides principais e três de apoio, com duração sugerida de aproximadamente 26 minutos |
 | Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) | Definições das contagens, eventos do goal e revisão posterior do artigo |
 
 ## Produtos científicos gerados no experimento

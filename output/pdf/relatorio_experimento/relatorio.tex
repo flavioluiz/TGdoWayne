@@ -11,7 +11,7 @@
 \definecolor{navy}{HTML}{17324D}
 \definecolor{teal}{HTML}{087F8C}
 \definecolor{pale}{HTML}{EFF5F8}
-\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=teal,pdftitle={Do TG à dissertação: um experimento com Codex},pdfauthor={Relatório documental preparado com Codex}}
+\hypersetup{colorlinks=true,linkcolor=navy,urlcolor=teal,pdftitle={Quando o agente faz a pesquisa: um experimento com Codex},pdfauthor={Relatório documental preparado com Codex}}
 \pagestyle{fancy}\fancyhf{}
 \fancyhead[L]{\small\color{navy}IA e formação na pós-graduação}
 \fancyhead[R]{\small Relatório do experimento}
@@ -27,35 +27,134 @@
 \newtcolorbox{destaque}{colback=pale,colframe=teal,boxrule=.6pt,arc=1.5mm,left=3mm,right=3mm,top=2mm,bottom=2mm}
 \begin{document}
 \thispagestyle{empty}
-{\small\color{teal}\textbf{ESTUDO DE CASO DOCUMENTAL · DISCUSSÃO NA PÓS-GRADUAÇÃO DO ITA}\par}
-\vspace{1cm}
-{\Huge\color{navy}\bfseries Do TG à dissertação:\\um experimento com Codex\par}
+{\small\color{teal}\textbf{PESQUISA COM IA · FORMAÇÃO E AVALIAÇÃO NA PÓS-GRADUAÇÃO}\par}
+\vspace{.9cm}
+{\Huge\color{navy}\bfseries Quando o agente faz a pesquisa,\\o que avaliamos?\par}
+\vspace{.35cm}
+{\Large Do trabalho de graduação à dissertação: um experimento com Codex\par}
 \vspace{.4cm}
-{\Large Autonomia, decisões, execução e limites de um agente de IA\par}
-\vspace{.5cm}
-{\large Repositório \nolinkurl{TGdoWayne} · 10 a 13 de setembro de 2026\par}
-\vspace{.5cm}
+
+\textbf{O desafio institucional.} Uma dissertação reúne sinais de trabalho intelectual: uma pergunta, antecedentes, métodos, resultados e argumentos. Quando um agente consegue produzir esse conjunto, sua presença no documento passa a exigir outra pergunta: \textbf{o que a pessoa que o apresenta compreende e consegue decidir?} O produto continua relevante para avaliar a pesquisa, mas, isoladamente, não demonstra a formação de quem o assina. Este experimento oferece um caso concreto para discutir essa separação.
+
+\textbf{O experimento.} O proponente forneceu um trabalho de graduação de 2003 e pediu uma continuação de mestrado implementável, com potencial de publicação. Declarou não dominar o assunto e não ter contribuído com hipóteses, equações ou código. O Codex escolheu o recorte, procurou antecedentes, executou cálculos e redigiu os documentos. O usuário dirigiu o processo e encaminhou dois pareceres elaborados pelo Gemini. Houve ampla delegação científica, acompanhada de intervenção humana na organização e na mediação da revisão. \fonte{1, 4, 10, 11}
+
 \begin{destaque}
-\textbf{Resultado observado.} A partir de um trabalho de graduação e de instruções amplas, o agente formulou uma proposta de pesquisa, organizou 13 etapas, escreveu e executou código científico, produziu uma dissertação de 167 páginas e um manuscrito inicial de sete páginas, depois revisado para nove com novo parecer do Gemini. O goal foi marcado como concluído. A pesquisa permaneceu baseada em simulações, com uma comparação central ainda inconclusiva em sua formulação mais ampla. Não houve submissão de artigo, defesa ou aprovação institucional. \fonte{1--3, 6}
+\textbf{O que foi produzido em poucos dias}\par
+\begin{tabularx}{\linewidth}{@{}Y Y@{}}
+\textbf{167 páginas} de dissertação & \textbf{26.069 linhas} em código e testes\\
+\textbf{45.528 análises} principais & \textbf{Artigo de 9 páginas}, após revisão\\
+\textbf{Cerca de 55 horas} de calendário do goal & \textbf{Cerca de 31 horas} no contador do goal\\
+\end{tabularx}
+\smallskip
+\textbf{Custos para comparação:} cerca de US\$ 50 no rateio informado da assinatura; equivalente estimado de US\$ 1.300 em API Standard, com complementos científicos.\par
+{\footnotesize O artigo tinha sete páginas ao encerrar o goal e foi revisado depois. O relógio parte da criação do goal; desde o primeiro pedido, foram cerca de 57 horas. Linhas incluem comentários e espaços; análises compartilham dados. Tempos não medem CPU nem aprendizagem. Definições nos apêndices C--E.}
 \end{destaque}
 
-\textbf{Finalidade deste relatório.} Reconstruir o que foi pedido, quais escolhas foram documentadas e quanto trabalho foi executado, para subsidiar uma discussão sobre dissertações e teses em tempos de IA. O leitor não precisa conhecer ondas gravitacionais. O objeto principal é o processo de pesquisa conduzido pelo agente.
-
-\textbf{Desenho do experimento.} Segundo o proponente, ele não dominava o assunto e não forneceu contribuição científica própria. Sua intenção era observar até onde o Codex avançaria. A conversa confirma ampla delegação da formulação e execução, acompanhada de intervenções sobre organização, recursos e apresentação. No final, foi encaminhado um parecer técnico elaborado pelo Gemini, conforme esclarecimento posterior do proponente. Assim, a fase final incluiu revisão por outra IA, transmitida pelo usuário ao Codex. Esse evento distingue-se da formulação inicial conduzida pelo Codex. \fonte{1, 10}
-
-\begin{tabularx}{\textwidth}{@{}YYY@{}}
-\toprule
-\textbf{30 h 51 min 26 s} & \textbf{26.069 linhas} & \textbf{45.528 análises}\\
-Contador final de tempo do goal & Código em módulos, scripts e testes & Soma de quatro campanhas principais\\
-\bottomrule
-\end{tabularx}
-{\footnotesize O tempo do goal não é tempo de CPU; linhas incluem comentários e espaços; análises não são observações independentes. Definições e limites nas seções 6 e 7.}
+\textbf{A consequência para o debate.} A produção extensa, com controles e correções documentados, mostra por que a avaliação precisa alcançar as decisões e a compreensão do pesquisador. Ela permite discutir novas formas de orientação, maior capacidade de explorar ideias e o esforço de verificar o que a IA produz. Não permite equiparar horas de execução a dois anos de formação ou declarar que o manuscrito já atende aos critérios de uma revista. Uma comparação central permaneceu inconclusiva; não houve submissão, defesa ou aprovação institucional.
 
 \vfill
-\textbf{Base documental:} conversa original, eventos locais do Codex, histórico Git e arquivos de resultados. Base quantitativa: tag \nolinkurl{v1.0.0}, commit \nolinkurl{39dd682}. Complementos posteriores incluem apresentações e revisão do manuscrito no commit \nolinkurl{26ae3ac}. Este relatório não reexecuta as campanhas nem constitui parecer científico especializado.
+\textbf{Como ler.} As seções 1--5 apresentam decisões e implicações para a pós-graduação, sem exigir conhecimento de ondas gravitacionais. Os apêndices preservam as interações, o plano, as métricas, os modelos, os custos e as fontes para quem quiser conferir a execução. Base: registros de 10 a 13 de setembro de 2026 e artefatos do repositório TGdoWayne.
+\newpage
+\titulo{1}{Onde o agente fez escolhas científicas}
+\textbf{A pergunta em linguagem comum.} O estudo compara maneiras de analisar sinais extremamente fracos: guardar suas diferentes frequências, resumir essas informações de forma consistente ou usar uma única frequência como aproximação. A questão é saber quando essas simplificações alteram a resposta ou produzem confiança excessiva. As observações são simuladas, de modo que o agente conhece a resposta usada para produzi-las.
+
+\textbf{1. Separou continuidade de novidade.} O agente identificou que resultados centrais do TG de 2003 já haviam originado uma publicação em 2004. Também encontrou desenvolvimentos posteriores que cobriam parte das extensões teóricas mais óbvias. Reproduzir o TG foi tratado como base de validação, e não como descoberta nova. Esta é a reconstrução da decisão registrada, não uma nova auditoria da prioridade científica. \fonte{4}
+
+\textbf{2. Comparou caminhos possíveis.} A proposta examinou quatro linhas: confiabilidade das análises com redes de pulsares; revisão teórica das polarizações; aplicação a observatórios espaciais; e estatísticas mais exploratórias de sinais. Escolheu a primeira por permitir um problema delimitado, implementação numérica e resultado útil mesmo sem detectar um fenômeno novo. Extensões cosmológicas também foram consideradas, mas reconhecidas como tendo antecedentes e riscos maiores. \fonte{4}
+
+\textbf{3. Procurou hipóteses simplificadoras na literatura recente.} Um trabalho de 2026 chamou atenção por analisar informações já resumidas usando uma frequência de referência. O agente transformou essa escolha metodológica em pergunta testável: qual parcela da diferença vem de resumir os dados, qual vem de aproximar o modelo e qual vem das suposições estatísticas? \fonte{4, 5}
+
+\textbf{4. Fez busca dirigida e verificou antecedentes.} O protocolo documenta consultas por título, identificador e combinações de termos, expansão pelas referências dos artigos, leitura dirigida de métodos e inspeção estática de código público. Consultou fontes primárias, registrou versões, baixou PDFs e guardou identificadores digitais de integridade. A busca alimentou uma matriz que comparava o recorte proposto com estudos anteriores. \fonte{5}
+
+\textbf{5. Estreitou a alegação de originalidade.} A revisão mostrou que conservar frequências, tratar correlações e usar métodos de compressão já tinha antecedentes. O recorte passou a ser uma comparação controlada dessas escolhas no mesmo problema e nos mesmos dados simulados. O documento de decisão diz que não foi localizado estudo equivalente nas fontes consultadas; ele não declara prioridade absoluta. \fonte{5}
+
+\begin{destaque}
+\textbf{Lógica de trabalho reconstruída:}\par
+TG e publicação anterior $\rightarrow$ busca de extensões $\rightarrow$ exclusão de novidades aparentes $\rightarrow$ pergunta delimitada $\rightarrow$ comparação controlada $\rightarrow$ testes de confiabilidade $\rightarrow$ conclusão com domínio e limites explícitos.
+\end{destaque}
+
+\textbf{Limite dessa reconstrução.} Trata-se das decisões e justificativas documentadas. Não é acesso a um processo mental interno. Baixar artigos ou organizar referências não demonstra leitura integral nem garante que cada afirmação está correta. O próprio protocolo exclui a pretensão de revisão sistemática exaustiva. \fonte{5, 6}
 \newpage
 
-\titulo{1}{Interações: da exploração à primeira pausa}
+\titulo{2}{A crítica virou parte da pesquisa}
+\textbf{O teste que contrariou uma expectativa.} O agente trabalhou com dados artificiais cuja resposta era conhecida. Isso permitiu perguntar se as faixas de incerteza produzidas pelo método eram confiáveis. Em um parâmetro, faixas apresentadas como de 90\% incluíam a resposta verdadeira em apenas 313 de 500 casos: \textbf{62,6\%}. O resultado não era uma descoberta sobre o Universo; era um alerta de que uma aproximação podia transmitir confiança excessiva. Esse limite passou a integrar a interpretação do trabalho. \fonte{7}
+
+\textbf{Primeiro parecer: responder com mais evidência.} O Gemini formulou críticas à dissertação e o usuário pediu ao Codex que as conferisse. O agente não se limitou a melhorar a redação. Acrescentou um estudo de 50 casos, com 300 análises sob hipóteses mais restritas, e um teste do ajuste dos tempos de observação. Também identificou pontos já atendidos e corrigiu interpretações do parecer. Assim, uma crítica produzida por IA levou outra IA a reexaminar o argumento e produzir evidência adicional. \fonte{7, 10}
+
+\textbf{Segundo parecer: limitar uma conclusão persuasiva.} Na revisão posterior do artigo, o Codex aceitou sugestões de estrutura, contexto e figuras. Ao mesmo tempo, recusou afirmar ineditismo absoluto ou concluir que uma falha em dados simulados ocorreria inevitavelmente em dados reais. Corrigiu ainda a interpretação de uma referência. Esse ciclo usou os resultados existentes; não acrescentou simulações. A distinção entre melhorar a exposição e ampliar o que os dados sustentam é um exemplo concreto de julgamento a ser examinado no experimento. \fonte{11}
+
+\begin{destaque}
+\textbf{Revisão entre modelos, mediada por uma pessoa.} O usuário encaminhou os pareceres; o Codex avaliou recomendações e executou revisões. Não houve protocolo de revisão cega, nem uma banca especializada aferiu a qualidade final. A experiência mostra um processo de crítica e resposta que pode ser inspecionado, sem transformar concordância entre modelos em certificação científica.
+\end{destaque}
+
+\textbf{Onde o agente não resolveu a pergunta.} A comparação ampla continuou inconclusiva na precisão exigida. Fixar algumas condições permitiu responder a uma pergunta menor, mas não encerrou a original. A aplicação também permaneceu em dados simulados: o plano permitia essa alternativa, e faltava um adaptador local validado para as séries de observações reais. Não faltavam dados públicos em geral. \fonte{6--8}
+
+\textbf{O que isso exige de quem orienta e avalia.} Uma tarefa pode ser concluída operacionalmente enquanto uma pergunta científica permanece aberta. Reduzir o escopo pode ser uma decisão legítima, desde que a restrição e seu efeito sobre a conclusão sejam explícitos. Cabe examinar se o resultado menor ainda é útil e se vale a pena continuar. O apêndice B.1 preserva os erros de implementação, texto e reprodução e as respostas documentadas.
+
+\newpage
+
+\titulo{3}{O documento e o domínio de quem o apresenta}
+\textbf{Três dimensões que precisam ser avaliadas separadamente.} Um estudo pode ter valor científico, seu autor pode ou não compreender o que foi feito, e o uso de ferramentas pode ser transparente ou inadequadamente declarado. Qualidade do resultado, formação da pessoa e responsabilidade pelo uso são questões relacionadas, mas nenhuma resolve automaticamente as outras. Mesmo com uso autorizado e declarado de IA, permanece a pergunta sobre quais competências a pós-graduação deve desenvolver.
+
+\textbf{O que o caso torna visível.} Sob instruções amplas, o Codex formulou um recorte, implementou métodos, executou testes e produziu documentos extensos. O proponente não precisou escrever pessoalmente as equações e o código. Isso mostra por que um produto bem apresentado, isoladamente, é uma evidência insuficiente de domínio individual. Não demonstra que qualquer pessoa produzirá ciência original e publicável, nem que a IA supera um pesquisador: faltam comparações controladas e avaliação científica externa. \fonte{1--7}
+
+\textbf{O que pode mudar na divisão do trabalho.} Se parte da formulação e implementação puder ser delegada a agentes, uma ideia poderá ser explorada antes de mobilizar um projeto completo de orientação. Isso abre espaço para testar alternativas e abandonar cedo caminhos pouco promissores. Também exige repensar a participação do estudante: escolher perguntas relevantes, explicitar hipóteses, confrontar resultados e construir explicações passam a merecer avaliação direta. A formação não pode ser reduzida a acompanhar a produção de um sistema que o estudante não compreende.
+
+\textbf{Aprender continua exigindo participação intelectual.} É útil distinguir uma atividade destinada a aprender um método de outra destinada a obter um resultado de pesquisa. Na primeira, pode-se pedir uma derivação, implementação pequena ou previsão individual antes de consultar a IA. Na segunda, pode-se permitir delegação mais ampla, exigindo justificativa, verificação e interpretação. São possibilidades pedagógicas para experimentar; este caso não mediu sua eficácia nem a aprendizagem de estudantes.
+
+\textbf{Responsabilidade distribuída ao longo do curso.} O desenho da formação envolve programa, disciplinas, orientadores, estudantes e banca. Critérios claros de uso e atribuição podem ser acompanhados por discussões periódicas de decisões, exercícios de interpretação e demonstrações de reprodução. A defesa torna-se uma etapa de um acompanhamento contínuo. Identificar ou declarar o uso de IA não mede, por si só, a competência do estudante. Regras de integridade precisam acompanhar oportunidades de demonstrar domínio, não substituir o desenho pedagógico.
+
+\begin{destaque}
+\textbf{Possíveis evidências de domínio pessoal}\par
+Antes de executar uma alteração, prever e justificar seu efeito. Depois, interpretar o resultado e explicar por que ele confirma ou contraria a previsão. Em outro momento, reconstruir um argumento central sem auxílio do agente. A banca pode retomar essas evidências acumuladas durante a orientação, em vez de depender apenas do texto final.
+\end{destaque}
+
+\textbf{Mestrado e doutorado.} O tempo gasto em tarefas e o volume do texto não bastam para distinguir os títulos. Uma discussão institucional pode explicitar níveis esperados de profundidade, autonomia intelectual e originalidade, e como demonstrá-los com IA disponível. Automatizar uma entrega não torna automaticamente dispensável a formação que antes ocorria durante sua elaboração: exige tornar essa formação intencional e observável.
+\newpage
+
+\titulo{4}{Mais produção: quais contribuições merecem atenção?}
+\textbf{Mais capacidade de explorar.} O experimento sugere possibilidades de usar agentes para transformar ideias preliminares em métodos testáveis, comparar alternativas, gerar controles, preparar código reutilizável e organizar a reprodução. Isso pode viabilizar perguntas que ficariam sem execução e permitir projetos mais abrangentes. A oportunidade é ampliar o conhecimento obtido por projeto; aumentar apenas o número de documentos é uma escolha distinta.
+
+\textbf{O trabalho pode se deslocar para a verificação.} Quando o sistema produz mais equações, programas e resultados do que o pesquisador consegue examinar, a leitura crítica pode se tornar a etapa limitante. No caso analisado, foi necessário corrigir uma descrição incompatível com a implementação, enfrentar comparações inconclusivas e melhorar explicações e figuras. A clareza do texto integra a verificação: um argumento difícil de inspecionar limita a capacidade de detectar erro e julgar relevância. \fonte{6, 7}
+
+\textbf{Revisão com IA amplia capacidade, mas precisa ser testada.} O primeiro parecer do Gemini levou o Codex a conferir críticas e acrescentar estudos. O segundo motivou a revisão do artigo e a recusa de generalizações sem suporte. Esse fluxo permite discutir revisão entre modelos como auxílio ao pesquisador. Não há, porém, medição de sua taxa de acerto: sistemas diferentes podem compartilhar lacunas ou aceitar hipóteses inadequadas. A concordância entre agentes deve ser confrontada com evidência externa, métodos de referência e julgamento especializado. \fonte{7, 10}
+
+\textbf{Relevância deve ser julgada pelo conteúdo.} A origem humana ou automatizada de um texto não resolve se a pergunta importa, se os resultados estão corretos ou se a contribuição é útil. Uma extensão incremental pode ter grande valor quando elimina uma incerteza importante, reproduz criticamente um resultado ou delimita um método. O problema é a contribuição pequena e pouco informativa apresentada como avanço substancial. Neste caso, relatar limites de uma aproximação pode ser mais útil do que acumular análises sem resolver a pergunta central.
+
+\textbf{Publicações e atenção científica.} Se a produção de manuscritos crescer mais rapidamente que a capacidade de leitura e revisão, a comunidade terá de decidir como priorizar contribuições. Esse é um cenário para debate, não uma tendência medida neste experimento. Avaliar síntese, transparência dos testes, utilidade dos dados e códigos e relevância da pergunta pode ser mais informativo do que contar artigos. Automatizar também a revisão não elimina a necessidade de responsabilidade humana pelas decisões editoriais.
+
+\textbf{Teoria, computação e experimentação.} Este caso aborda principalmente pesquisa teórica e computacional com dados simulados. Não compara essas atividades com trabalho de laboratório ou de campo. Medições novas, calibração instrumental e confronto com fenômenos reais podem fornecer evidências complementares, mas não se pode concluir que uma modalidade de pesquisa será necessariamente superior. Em todas elas, importa conectar hipóteses, procedimentos e observações de maneira verificável.
+
+\begin{destaque}
+\textbf{Uma possível mudança de critério.} Se executar certas tarefas se tornar mais barato, pode fazer sentido exigir perguntas mais relevantes, controles melhores e sínteses mais esclarecedoras. Isso não significa exigir automaticamente mais páginas, mais simulações ou mais artigos. O benefício pode aparecer também em conclusões negativas confiáveis e em decisões fundamentadas de não continuar um estudo.
+\end{destaque}
+\newpage
+
+\titulo{5}{O que mudar na orientação e na avaliação?}
+O caso fornece material concreto para examinar capacidades e limites, mas não determina sozinho como reorganizar a pós-graduação. A tabela conecta o que ficou documentado a questões gerais e a verificações que poderiam ser feitas em estudos posteriores. São propostas de investigação, não atividades já realizadas.
+
+\begin{tabularx}{\textwidth}{@{}Y Y@{}}
+\toprule
+\textbf{Evidência e questão aberta} & \textbf{Como aprofundar a avaliação}\\
+\midrule
+O agente formulou um recorte e procurou antecedentes. Quão original e relevante foi a escolha? & Submeter pergunta e resultados a especialistas, com critérios explícitos, e fazer uma nova busca de antecedentes antes de atribuir originalidade.\\
+Foram produzidos código e muitos resultados. Quanto desse material está correto? & Selecionar conclusões centrais, verificar seus argumentos e reproduzi-las com métodos ou ambientes independentes. Não avaliar apenas a contagem de testes.\\
+Houve revisão pelo Gemini e alterações pelo Codex. Qual foi o ganho da revisão? & Comparar versões anterior e posterior, classificar críticas corretas, incorretas e omitidas, e medir o esforço humano para conferir as mudanças.\\
+O goal registrou cerca de 31 horas. Qual foi a economia de trabalho? & Comparar tarefas equivalentes com e sem assistência, incluindo preparação, custo computacional, revisão, correção e qualidade final.\\
+O proponente delegou trabalho sem dominar a área. O que isso ensina sobre formação? & Estudar separadamente o que estudantes conseguem explicar, prever e transferir para problemas novos antes e depois de usar os agentes.\\
+A comparação ampla permaneceu inconclusiva. A execução soube reconhecer seus limites? & Examinar decisões de parada, alternativas rejeitadas e redução de escopo; avaliar se o resultado final responde a uma pergunta útil, ainda que menor.\\
+\bottomrule
+\end{tabularx}
+\fonte{1--7, 10}
+
+\textbf{Evitar uma equivalência indevida de tempos.} O cronograma de 24 meses da proposta e as horas registradas pelo goal medem coisas distintas. O primeiro prevê um percurso acadêmico; o segundo registra parte da execução automatizada. Este estudo não permite afirmar que anos de formação foram substituídos por horas de IA, nem calcular um fator geral de produtividade. O custo de compreender e validar os produtos precisa entrar em qualquer comparação.
+
+\textbf{Ler quantidade junto com qualidade.} As 45.528 análises das campanhas principais evidenciam execução extensa. O complemento de 300 análises, feito sob hipóteses mais restritas, ilustra outro aspecto: formular uma pergunta tratável pode trazer uma resposta mais clara do que aumentar indiscriminadamente o volume de cálculo. A utilidade dessa resposta e o alcance da restrição precisam ser avaliados juntos. \fonte{6, 7}
+
+\textbf{Manter o alcance do estudo de caso.} Não houve grupo de comparação, repetição integral por diferentes sistemas, avaliação cega ou medida de aprendizagem. Houve mediação humana e revisão por outra IA. Os artefatos permitem inspecionar decisões, falhas e resultados; a publicação de um artigo e a aprovação acadêmica continuam sem demonstração.
+\newpage
+
+\titulo{A}{Interações: exploração e primeira pausa}
 Todos os horários deste relatório são de Brasília (UTC$-$3). Foram identificadas \textbf{25 mensagens do usuário antes do encerramento}, além da instrução registrada como goal. Mensagens curtas de continuação e pedidos enviados durante a execução estão incluídos. A contagem não inclui avisos automáticos, mensagens dos subagentes ou o pedido posterior de slides. \fonte{1, 2, 9}
 
 \begin{tabularx}{\textwidth}{@{}p{2.5cm}Y@{}}
@@ -81,7 +180,7 @@ Todos os horários deste relatório são de Brasília (UTC$-$3). Foram identific
 \textbf{A pausa não significou conclusão.} A v0.8.5 conservou resultados parciais e tarefas abertas. Às 08:14 de 11/09, o agente marcou o goal como \nolinkurl{blocked}. O registro posterior contém alternâncias entre ativo, pausado e bloqueado; portanto, seria incorreto descrever o experimento como uma execução contínua sem supervisão. \fonte{2}
 \newpage
 
-\titulo{2}{Interações: retomada e revisão final}
+\titulo{A.1}{Interações: retomada e revisão}
 \begin{tabularx}{\textwidth}{@{}p{2.5cm}Y@{}}
 \toprule
 \textbf{Data e hora} & \textbf{Pedido e consequência observável}\\
@@ -108,7 +207,7 @@ O agente não apenas acatou o parecer: registrou pontos já atendidos, corrigiu 
 \textbf{Depois do goal.} Em 13/09, às 08:48, o usuário pediu slides Beamer para uma defesa de 50 minutos. O repositório passou a conter 32 slides principais e sete de apoio. Esse produto foi acrescentado depois do encerramento e não integra as métricas de código ou duração do goal apresentadas aqui. A existência de slides não significa que a defesa ocorreu. \fonte{1, 3}
 \newpage
 
-\titulo{2.1}{Revisão do manuscrito após o goal}
+\titulo{A.2}{Revisão do manuscrito após o goal}
 \textbf{O encerramento do goal foi seguido de complementos.} Depois da dissertação, o usuário solicitou apresentações de defesa e para público leigo, consultou a versão do artigo e encaminhou um novo parecer do Gemini para aprimorar o manuscrito. A revisão do artigo foi publicada no commit \nolinkurl{26ae3ac}, em 13/09/2026. Ela conserva os resultados científicos e a dissertação v1.0.0, mas substitui a redação corrente do artigo. \fonte{11}
 
 \begin{tabularx}{\textwidth}{@{}p{2.4cm}Y@{}}
@@ -140,28 +239,7 @@ Uma referência também exigiu correção de interpretação: a escolha de frequ
 O manuscrito permanece \textbf{não submetido}. O novo ciclo demonstra revisão e refinamento de um produto; não comprova aceitação editorial ou qualidade equivalente à de um pesquisador especialista. A versão do Gemini e seus tempos de processamento não foram fornecidos.
 \newpage
 
-\titulo{3}{Como o agente procurou uma contribuição nova}
-\textbf{A pergunta em linguagem comum.} O estudo compara maneiras de analisar sinais extremamente fracos: guardar suas diferentes frequências, resumir essas informações de forma consistente ou usar uma única frequência como aproximação. A questão é saber quando essas simplificações alteram a resposta ou produzem confiança excessiva. As observações são simuladas, de modo que o agente conhece a resposta usada para produzi-las.
-
-\textbf{1. Separou continuidade de novidade.} O agente identificou que resultados centrais do TG de 2003 já haviam originado uma publicação em 2004. Também encontrou desenvolvimentos posteriores que cobriam parte das extensões teóricas mais óbvias. Reproduzir o TG foi tratado como base de validação, e não como descoberta nova. Esta é a reconstrução da decisão registrada, não uma nova auditoria da prioridade científica. \fonte{4}
-
-\textbf{2. Comparou caminhos possíveis.} A proposta examinou quatro linhas: confiabilidade das análises com redes de pulsares; revisão teórica das polarizações; aplicação a observatórios espaciais; e estatísticas mais exploratórias de sinais. Escolheu a primeira por permitir um problema delimitado, implementação numérica e resultado útil mesmo sem detectar um fenômeno novo. Extensões cosmológicas também foram consideradas, mas reconhecidas como tendo antecedentes e riscos maiores. \fonte{4}
-
-\textbf{3. Procurou hipóteses simplificadoras na literatura recente.} Um trabalho de 2026 chamou atenção por analisar informações já resumidas usando uma frequência de referência. O agente transformou essa escolha metodológica em pergunta testável: qual parcela da diferença vem de resumir os dados, qual vem de aproximar o modelo e qual vem das suposições estatísticas? \fonte{4, 5}
-
-\textbf{4. Fez busca dirigida e verificou antecedentes.} O protocolo documenta consultas por título, identificador e combinações de termos, expansão pelas referências dos artigos, leitura dirigida de métodos e inspeção estática de código público. Consultou fontes primárias, registrou versões, baixou PDFs e guardou identificadores digitais de integridade. Na atualização de 11/09, foram triadas seis listagens, com 217 entradas e 195 identificadores distintos. A matriz de comparação chegou a 23 entradas. \fonte{5}
-
-\textbf{5. Estreitou a alegação de originalidade.} A revisão mostrou que conservar frequências, tratar correlações e usar métodos de compressão já tinha antecedentes. O recorte passou a ser uma comparação controlada dessas escolhas no mesmo problema e nos mesmos dados simulados. O documento de decisão diz que não foi localizado estudo equivalente nas fontes consultadas; ele não declara prioridade absoluta. \fonte{5}
-
-\begin{destaque}
-\textbf{Lógica de trabalho reconstruída:}\par
-TG e publicação anterior $\rightarrow$ busca de extensões $\rightarrow$ exclusão de novidades aparentes $\rightarrow$ pergunta delimitada $\rightarrow$ comparação controlada $\rightarrow$ testes de confiabilidade $\rightarrow$ conclusão com domínio e limites explícitos.
-\end{destaque}
-
-\textbf{Limite dessa reconstrução.} Trata-se das decisões e justificativas documentadas. Não é acesso a um processo mental interno. Baixar 41 PDFs ou resolver 47 referências não demonstra leitura integral nem garante que cada afirmação está correta. O próprio protocolo exclui a pretensão de revisão sistemática exaustiva. \fonte{5, 6}
-\newpage
-
-\titulo{4}{Implementação e cumprimento do plano}
+\titulo{B}{Implementação e cumprimento do plano}
 O roteiro C01--C13 foi concluído no sentido operacional: os marcos têm commits, versões e artefatos. Houve ajustes de método, versões extras e redução de algumas pretensões científicas. A tabela resume a passagem do plano ao que efetivamente ficou documentado. \fonte{3, 6}
 
 \begin{tabularx}{\textwidth}{@{}p{1.6cm}Y Y@{}}
@@ -185,7 +263,7 @@ C12--C13 & Discussão, artigo e revisão final. & Manuscrito, revisão científi
 \textbf{Concluiu o plano, mas não resolveu tudo.} O marco C11 permitia explicitamente a alternativa simulada. Ela foi escolhida porque faltava um adaptador local validado para analisar os tempos de observação reais. Não faltavam dados públicos em geral. Da mesma forma, concluir C08 incluiu relatar uma comparação inconclusiva; o fechamento administrativo da etapa não transforma essa comparação em demonstração de equivalência. \fonte{5, 6, 8}
 \newpage
 
-\titulo{5}{Erros encontrados e correções de rota}
+\titulo{B.1}{Erros e correções: registro detalhado}
 \textbf{As correções tiveram naturezas diferentes.} Algumas corrigiram código ou execução; outras corrigiram a interpretação do resultado; outras modificaram a pergunta que era possível responder. Confundir essas categorias superestima a eficácia de uma simples bateria de testes.
 
 \begin{tabularx}{\textwidth}{@{}Y Y@{}}
@@ -204,11 +282,9 @@ Texto e figuras pouco adequados a leitores. & O usuário apontou linguagem exces
 \fonte{3, 5--8}
 
 \textbf{Como o agente tratou a revisão recebida.} O registro de resposta ao parecer identificou que uma definição matemática já estava presente; corrigiu a interpretação sobre convenções de normalização; e não tomou uma sugestão de correção estatística como solução já demonstrada. Também acrescentou um estudo temporal específico em vez de apresentar a simulação antiga como observação real. Há evidência de avaliação crítica do parecer, além de cumprimento de pedidos. \fonte{7}
-
-
 \newpage
 
-\titulo{6}{Quantidade de trabalho executada}
+\titulo{C}{Quantidade de trabalho executada}
 \textbf{Código no fechamento da dissertação.} Contagem direta dos arquivos da tag v1.0.0, sem o relatório atual nem os slides posteriores. ``Linhas'' significa linhas físicas, incluindo comentários e linhas vazias. A medição considera Python, C/C++, cabeçalhos e shell; não conta LaTeX, dados, notebooks, dependências instaladas nem código contido dentro de ZIPs. \fonte{9}
 
 \begin{tabularx}{\textwidth}{@{}Yrrr@{}}
@@ -245,7 +321,7 @@ C13 & 300 análises condicionais; 40.000 séries temporais. & Complementos de re
 A soma \textbf{45.528} refere-se apenas às análises principais C07+C09+C10+C11, sem pilotos, controles extras e repetições. A reprodução integral de C07 executou \textbf{901.130.000 avaliações} e comparou 20.000 réplicas e 175.000 arrays, obtendo igualdade dos resultados científicos. As verificações básicas somam 217 testes de fundamentos, resposta, simulador e inferência (19+23+11+164), além de auditorias específicas. Na v1.0.0, a dissertação tem 167 páginas e 47 referências, com 41 cópias locais conferidas; o artigo tem sete páginas. A revisão posterior do artigo passou a nove páginas. \fonte{6}
 \newpage
 
-\titulo{7}{Modelo, duração e ferramenta goal}
+\titulo{D}{Modelo, duração e ferramenta goal}
 \textbf{Modelo efetivamente registrado.} O principal foi \nolinkurl{gpt-6-astra}, com níveis de esforço variáveis. Antes do encerramento, os registros de contexto da conversa principal contêm 149 ocorrências desse modelo: 118 em \nolinkurl{medium}, 22 em \nolinkurl{ultra}, sete em \nolinkurl{xhigh} e duas em \nolinkurl{high}. Há uma ocorrência de \nolinkurl{gpt-5.6-luna}, em \nolinkurl{medium}, durante a sequência de pausa/retomada de 12/09, às 06:19. Esses números contam contextos registrados, não chamadas de geração, tokens ou proporções de tempo. \fonte{1, 9}
 
 Os três registros de subagentes ligados à conversa identificam \nolinkurl{gpt-6-astra}, em \nolinkurl{ultra} e \nolinkurl{xhigh}. Assim, a formulação mais fiel é: \textbf{execução predominantemente com GPT-6 Astra, apoiada por três subagentes Astra e com passagem pontual de Luna na conversa principal}. O registro inicial identifica o cliente \nolinkurl{codex-tui}, versão 0.153.4; isso descreve o início da sessão, não certifica a versão do aplicativo ao longo de todos os dias.
@@ -270,14 +346,14 @@ Primeiro pedido até conclusão, no calendário & Aproximadamente 57 h 17 min\\
 
 \textbf{Como interpretar o contador.} O valor de 30 h 51 min 26 s é o campo \nolinkurl{timeUsedSeconds} devolvido pela ferramenta. O intervalo de quase 55 horas inclui períodos sem execução contabilizada pelo goal. A diferença é aproximadamente 24 horas; não é possível atribuí-la integralmente a uma única pausa. Há mudanças de estado e trabalho feito quando o objetivo estava bloqueado. O contador não deve ser chamado de tempo de CPU ou soma do trabalho paralelo.
 
-\textbf{Como interpretar os tokens.} O número é o total informado pelo campo \nolinkurl{tokensUsed}, não a extensão do texto produzido. Esse contador não é uma fatura de API. A estimativa da seção 7.1 usa registros individuais de consumo, separando entrada, cache e saída, inclusive dos subagentes. O contador do goal não é somado a esses registros.
+\textbf{Como interpretar os tokens.} O número é o total informado pelo campo \nolinkurl{tokensUsed}, não a extensão do texto produzido. Esse contador não é uma fatura de API. A estimativa do apêndice E usa registros individuais de consumo, separando entrada, cache e saída, inclusive dos subagentes. O contador do goal não é somado a esses registros.
 
 \begin{destaque}
 \textbf{O que foi atingido.} O texto do goal era implementar o plano e publicar as etapas. Ele foi concluído depois do fechamento de C13. Não era um critério externo de aprovação científica. Portanto, ``atingiu o goal'' e ``produziu uma dissertação aprovada'' são afirmações diferentes; só a primeira está demonstrada pelo registro.
 \end{destaque}
 \newpage
 
-\titulo{7.1}{Uma estimativa de custo do experimento}
+\titulo{E}{Estimativa de custo do experimento}
 \begin{destaque}
 \textbf{Ordem de grandeza.} O proponente estima ter consumido aproximadamente uma semana de sua cota de assinatura, à qual atribui cerca de \textbf{US\$ 50}. Aplicar preços de API padrão ao consumo registrado resulta em aproximadamente \textbf{US\$ 1.300}. O primeiro valor é um rateio informado pelo usuário; o segundo é uma estimativa de quanto custariam os tokens em outra modalidade de contratação. Nenhum deles mede o custo interno do provedor.
 \end{destaque}
@@ -308,69 +384,7 @@ Saída, incluindo raciocínio & 5.229.122 & 50 & 261,46\\
 {\small\textbf{Fontes e memória de cálculo.} \href{https://developers.openai.com/api/docs/models/gpt-6-astra}{Preços oficiais do Astra}, \href{https://developers.openai.com/api/docs/guides/prompt-caching}{regras de cache} e \href{https://developers.openai.com/api/docs/pricing}{preços de ferramentas}, consultados em 13/09/2026. Agregados e método em \nolinkurl{estimativa_custo_api.json} e \nolinkurl{estimativa_custo_api.md}, na pasta deste relatório. Os totais por resposta foram conferidos com os acumulados próprios dos registros de consumo.}
 \newpage
 
-\titulo{8}{Formação e organização da pesquisa com IA}
-\textbf{Três dimensões que precisam ser avaliadas separadamente.} Um estudo pode ter valor científico, seu autor pode ou não compreender o que foi feito, e o uso de ferramentas pode ser transparente ou inadequadamente declarado. Qualidade do resultado, formação da pessoa e responsabilidade pelo uso são questões relacionadas, mas nenhuma resolve automaticamente as outras. Mesmo com uso autorizado e declarado de IA, permanece a pergunta sobre quais competências a pós-graduação deve desenvolver.
-
-\textbf{O que o caso torna visível.} Sob instruções amplas, o Codex formulou um recorte, implementou métodos, executou testes e produziu documentos extensos. O proponente não precisou escrever pessoalmente as equações e o código. Isso mostra por que um produto bem apresentado, isoladamente, é uma evidência insuficiente de domínio individual. Não demonstra que qualquer pessoa produzirá ciência original e publicável, nem que a IA supera um pesquisador: faltam comparações controladas e avaliação científica externa. \fonte{1--7}
-
-\textbf{O que pode mudar na divisão do trabalho.} Se parte da formulação e implementação puder ser delegada a agentes, uma ideia poderá ser explorada antes de mobilizar um projeto completo de orientação. Isso abre espaço para testar alternativas e abandonar cedo caminhos pouco promissores. Também exige repensar a participação do estudante: escolher perguntas relevantes, explicitar hipóteses, confrontar resultados e construir explicações passam a merecer avaliação direta. A formação não pode ser reduzida a acompanhar a produção de um sistema que o estudante não compreende.
-
-\textbf{Aprender continua exigindo participação intelectual.} É útil distinguir uma atividade destinada a aprender um método de outra destinada a obter um resultado de pesquisa. Na primeira, pode-se pedir uma derivação, implementação pequena ou previsão individual antes de consultar a IA. Na segunda, pode-se permitir delegação mais ampla, exigindo justificativa, verificação e interpretação. São possibilidades pedagógicas para experimentar; este caso não mediu sua eficácia nem a aprendizagem de estudantes.
-
-\textbf{Responsabilidade distribuída ao longo do curso.} O desenho da formação envolve programa, disciplinas, orientadores, estudantes e banca. Critérios claros de uso e atribuição podem ser acompanhados por discussões periódicas de decisões, exercícios de interpretação e demonstrações de reprodução. A defesa torna-se uma etapa de um acompanhamento contínuo. Regras de integridade são necessárias, mas não substituem esse desenho pedagógico; tampouco a seleção de candidatos demonstra como eles aprenderão durante o curso.
-
-\begin{destaque}
-\textbf{Possíveis evidências de domínio pessoal}\par
-Explicar uma hipótese e seu limite; antecipar o efeito de uma alteração; reconhecer um resultado incompatível com um controle; reconstruir um argumento central; e decidir que evidência adicional seria necessária para sustentar uma conclusão. Essas atividades podem coexistir com o uso de IA e ser avaliadas ao longo da orientação.
-\end{destaque}
-
-\textbf{Mestrado e doutorado.} O tempo gasto em tarefas e o volume do texto não bastam para distinguir os títulos. Uma discussão institucional pode explicitar níveis esperados de profundidade, autonomia intelectual e originalidade, e como demonstrá-los com IA disponível. Automatizar uma entrega não torna automaticamente dispensável a formação que antes ocorria durante sua elaboração: exige tornar essa formação intencional e observável.
-\newpage
-
-\titulo{9}{Oportunidades, relevância e custo de verificar}
-\textbf{Mais capacidade de explorar.} O experimento sugere possibilidades de usar agentes para transformar ideias preliminares em métodos testáveis, comparar alternativas, gerar controles, preparar código reutilizável e organizar a reprodução. Isso pode viabilizar perguntas que ficariam sem execução e permitir projetos mais abrangentes. A oportunidade é ampliar o conhecimento obtido por projeto; aumentar apenas o número de documentos é uma escolha distinta.
-
-\textbf{O trabalho pode se deslocar para a verificação.} Quando o sistema produz mais equações, programas e resultados do que o pesquisador consegue examinar, a leitura crítica pode se tornar a etapa limitante. No caso analisado, foi necessário corrigir uma descrição incompatível com a implementação, enfrentar comparações inconclusivas e melhorar explicações e figuras. A clareza do texto integra a verificação: um argumento difícil de inspecionar limita a capacidade de detectar erro e julgar relevância. \fonte{6, 7}
-
-\textbf{Revisão com IA amplia capacidade, mas precisa ser testada.} O primeiro parecer do Gemini levou o Codex a conferir críticas e acrescentar estudos. O segundo motivou a revisão do artigo e a recusa de generalizações sem suporte. Esse fluxo permite discutir revisão entre modelos como auxílio ao pesquisador. Não há, porém, medição de sua taxa de acerto: sistemas diferentes podem compartilhar lacunas ou aceitar hipóteses inadequadas. A concordância entre agentes deve ser confrontada com evidência externa, métodos de referência e julgamento especializado. \fonte{7, 10}
-
-\textbf{Relevância deve ser julgada pelo conteúdo.} A origem humana ou automatizada de um texto não resolve se a pergunta importa, se os resultados estão corretos ou se a contribuição é útil. Uma extensão incremental pode ter grande valor quando elimina uma incerteza importante, reproduz criticamente um resultado ou delimita um método. O problema é a contribuição pequena e pouco informativa apresentada como avanço substancial. Neste caso, relatar limites de uma aproximação pode ser mais útil do que acumular análises sem resolver a pergunta central.
-
-\textbf{Publicações e atenção científica.} Se a produção de manuscritos crescer mais rapidamente que a capacidade de leitura e revisão, a comunidade terá de decidir como priorizar contribuições. Esse é um cenário para debate, não uma tendência medida neste experimento. Avaliar síntese, transparência dos testes, utilidade dos dados e códigos e relevância da pergunta pode ser mais informativo do que contar artigos. Automatizar também a revisão não elimina a necessidade de responsabilidade humana pelas decisões editoriais.
-
-\textbf{Teoria, computação e experimentação.} Este caso aborda principalmente pesquisa teórica e computacional com dados simulados. Não compara essas atividades com trabalho de laboratório ou de campo. Medições novas, calibração instrumental e confronto com fenômenos reais podem fornecer evidências complementares, mas não se pode concluir que uma modalidade de pesquisa será necessariamente superior. Em todas elas, importa conectar hipóteses, procedimentos e observações de maneira verificável.
-
-\begin{destaque}
-\textbf{Uma possível mudança de critério.} Se executar certas tarefas se tornar mais barato, pode fazer sentido exigir perguntas mais relevantes, controles melhores e sínteses mais esclarecedoras. Isso não significa exigir automaticamente mais páginas, mais simulações ou mais artigos. O benefício pode aparecer também em conclusões negativas confiáveis e em decisões fundamentadas de não continuar um estudo.
-\end{destaque}
-\newpage
-
-\titulo{10}{Como usar o experimento para aprender mais}
-O caso fornece material concreto para examinar capacidades e limites, mas não determina sozinho como reorganizar a pós-graduação. A tabela conecta o que ficou documentado a questões gerais e a verificações que poderiam ser feitas em estudos posteriores. São propostas de investigação, não atividades já realizadas.
-
-\begin{tabularx}{\textwidth}{@{}Y Y@{}}
-\toprule
-\textbf{Evidência e questão aberta} & \textbf{Como aprofundar a avaliação}\\
-\midrule
-O agente formulou um recorte e procurou antecedentes. Quão original e relevante foi a escolha? & Submeter pergunta e resultados a especialistas, com critérios explícitos, e fazer uma nova busca de antecedentes antes de atribuir originalidade.\\
-Foram produzidos código e muitos resultados. Quanto desse material está correto? & Selecionar conclusões centrais, verificar seus argumentos e reproduzi-las com métodos ou ambientes independentes. Não avaliar apenas a contagem de testes.\\
-Houve revisão pelo Gemini e alterações pelo Codex. Qual foi o ganho da revisão? & Comparar versões anterior e posterior, classificar críticas corretas, incorretas e omitidas, e medir o esforço humano para conferir as mudanças.\\
-O goal registrou cerca de 31 horas. Qual foi a economia de trabalho? & Comparar tarefas equivalentes com e sem assistência, incluindo preparação, custo computacional, revisão, correção e qualidade final.\\
-O proponente delegou trabalho sem dominar a área. O que isso ensina sobre formação? & Estudar separadamente o que estudantes conseguem explicar, prever e transferir para problemas novos antes e depois de usar os agentes.\\
-A comparação ampla permaneceu inconclusiva. A execução soube reconhecer seus limites? & Examinar decisões de parada, alternativas rejeitadas e redução de escopo; avaliar se o resultado final responde a uma pergunta útil, ainda que menor.\\
-\bottomrule
-\end{tabularx}
-\fonte{1--7, 10}
-
-\textbf{Evitar uma equivalência indevida de tempos.} O cronograma de 24 meses da proposta e as horas registradas pelo goal medem coisas distintas. O primeiro prevê um percurso acadêmico; o segundo registra parte da execução automatizada. Este estudo não permite afirmar que anos de formação foram substituídos por horas de IA, nem calcular um fator geral de produtividade. O custo de compreender e validar os produtos precisa entrar em qualquer comparação.
-
-\textbf{Ler quantidade junto com qualidade.} As 45.528 análises das campanhas principais evidenciam execução extensa. O complemento de 300 análises, feito sob hipóteses mais restritas, ilustra outro aspecto: formular uma pergunta tratável pode trazer uma resposta mais clara do que aumentar indiscriminadamente o volume de cálculo. A utilidade dessa resposta e o alcance da restrição precisam ser avaliados juntos. \fonte{6, 7}
-
-\textbf{Manter o alcance do estudo de caso.} Não houve grupo de comparação, repetição integral por diferentes sistemas, avaliação cega ou medida de aprendizagem. Houve mediação humana e revisão por outra IA. Os artefatos permitem inspecionar decisões, falhas e resultados; a publicação de um artigo e a aprovação acadêmica continuam sem demonstração.
-
-
-\newpage
-\titulo{11}{Fontes, rastreabilidade e método de leitura}
+\titulo{F}{Fontes, rastreabilidade e método de leitura}
 \textbf{Como o relatório foi elaborado.} Localizou-se a conversa pelo aplicativo e leu-se seu registro local completo por eventos, extraindo pedidos, mudanças do goal e metadados de modelo. Esses eventos foram confrontados com o histórico Git, planos, documentos de revisão e recibos de execução. As métricas de código foram recalculadas diretamente na tag final. As quantidades das campanhas foram conferidas nos registros existentes; não se repetiram simulações nesta análise.
 
 \textbf{Critério para contradições.} Há parágrafos antigos no README e em guias que ainda dizem ``em andamento'' ou ``pausado''. Para estabelecer o encerramento foram priorizados os recibos terminais, a auditoria final, o estado v1.0.0 e a resposta da ferramenta goal, preservando textos antigos apenas como história. Copiar isoladamente uma dessas notas antigas produziria um retrato incorreto.

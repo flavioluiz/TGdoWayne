@@ -1,197 +1,158 @@
 # Roteiro da apresentação do experimento
 
-21 slides principais e dois de apoio. Duração sugerida: **26:35**, incluindo a abertura da discussão. Público: pós-graduação, sem pressupor conhecimento de ondas gravitacionais.
+15 slides principais e três de apoio. Duração sugerida: **25:50**, incluindo a abertura da discussão. Público: pós-graduação, sem pressupor conhecimento de ondas gravitacionais.
 
-O roteiro é um guia de fala, não um texto para leitura literal. Os tempos são estimativas de apresentação, não medições de ensaio. As notas também estão incorporadas ao PowerPoint.
+O roteiro orienta a fala, sem leitura literal dos slides. Os tempos são sugestões, não resultado de ensaio. As notas e fontes também estão incorporadas ao PowerPoint.
 
-## Ajustes de duração
+## Ritmo e adaptações
 
-- **Cerca de 20 minutos:** omitir os slides 6, 7, 13, 19 e 20 (total restante: 20:15), resumindo essas informações nas transições.
-- **Cerca de 27 minutos:** apresentar os 21 slides principais na sequência.
-- **Cerca de 30 minutos:** acrescentar aproximadamente três minutos de discussão no slide 21. Usar os slides 22 e 23 apenas para responder a questões.
+- **Cerca de 20 minutos:** omitir os slides 4, 5 e 12, resumindo seus pontos nas transições, e limitar o slide 15 a 40 segundos.
+- **Cerca de 26 minutos:** usar os 15 slides principais. A pergunta inicial e a discussão dos slides 10–15 recebem pouco mais da metade do tempo.
+- **30 minutos:** ampliar a discussão final em 4 minutos e 10 segundos.
+- **Apoio:** os slides 16–18 detalham métricas, custos e fontes, sem integrar o tempo principal.
 
 ## Sequência e fala sugerida
 
-### 1. Pesquisa acadêmica com agentes de IA
+### 1. Uma dissertação em poucos dias
 
-00:00–00:35 (35 s)
+00:00–01:00 (60 s)
 
-Apresentar o experimento como estudo de caso. O tema de ondas gravitacionais forneceu a tarefa científica, mas a pergunta desta apresentação é sobre automação, formação e avaliação. Não pressupor conhecimento de física.
+Abrir mostrando os artefatos reais. O agente produziu uma dissertação de 167 páginas e um artigo inicialmente de sete páginas. O manuscrito mostrado tem nove páginas após revisão posterior. Da criação ao encerramento do goal transcorreram 54h56min, arredondadas para 55 horas; desde o primeiro pedido foram cerca de 57 horas. O contador do goal marcou 30h51min, sem representar tempo de CPU. A provocação é o que uma entrega assim diz sobre a formação humana.
 
-**Fontes:** Relatório do estudo de caso, introdução.
+**Fontes:** Relatório, abertura e apêndice D; PDFs originais.
 
-### 2. A pergunta do experimento
+### 2. O que o diploma deve atestar?
 
-00:35–01:40 (65 s)
+01:00–03:00 (120 s)
 
-Distinguir qualidade do produto, aprendizagem e responsabilidade. A proposta era observar até onde o agente iria com orientação científica inicial mínima. O objetivo não é detectar uso de IA em textos.
+Apresentar a pergunta antes dos detalhes de execução. Um documento pode ser útil para avaliar o resultado científico e insuficiente para demonstrar o domínio individual. Separar aprendizagem, qualidade e responsabilidade. Evitar dizer que o PDF não prova nada ou que a formação perdeu valor. O experimento não mediu aprendizagem.
 
-**Fontes:** Relatório, seções 8 a 10.
+**Fontes:** Relatório, abertura e seção 3.
 
-### 3. O ponto de partida
+### 3. Uma intenção ampla, um TG de partida
 
-01:40–03:00 (80 s)
+03:00–04:20 (80 s)
 
-O proponente forneceu um trabalho de graduação e pediu extensões implementáveis com potencial de artigo. Declarou não dominar a área. O agente precisou procurar antecedentes e formular o recorte. A imagem é a página real do TG e não uma representação gerada.
+O proponente declara não dominar o tema e não ter fornecido hipóteses, equações ou código. Forneceu o TG de 2003 e solicitou continuidade implementável, validável e com potencial de publicação. O texto do slide é uma síntese dos pedidos, não uma citação literal. Não afirmar ausência completa de intervenção: houve acompanhamento e pareceres encaminhados.
 
-**Fontes:** TG_Wayne.pdf, página 1. Relatório, seções 1 e 3.
+**Fontes:** TG_Wayne.pdf; relatório, apêndices A a A.2.
 
-### 4. Quem tomou quais decisões
+### 4. A delegação e a revisão
 
-03:00–04:10 (70 s)
+04:20–05:40 (80 s)
 
-A participação humana foi de direção, recursos, formato e mediação dos pareceres. O Codex coordenou três subagentes e executou o trabalho científico. O Gemini elaborou dois pareceres, conforme esclarecido pelo usuário. Não se conhece sua versão.
+Ler o diagrama da esquerda para a direita. O usuário definiu a intenção e acompanhou o processo. O Codex Astra coordenou três subagentes e formulou, implementou e redigiu. Os pareceres do Gemini chegaram por intermédio do usuário. A seta dupla indica crítica e resposta, não uma integração automática entre sistemas. Não houve revisão cega nem avaliação formal por pares humanos.
 
-**Fontes:** Conversa de execução. Relatório, seções 2, 2.1 e 4.
+**Fontes:** Relatório, abertura, seção 2 e apêndices A e B.
 
-### 5. Cronologia do experimento
+### 5. A primeira decisão foi descartar caminhos
 
-04:10–05:35 (85 s)
+05:40–07:10 (90 s)
 
-Todos os horários são de Brasília. A primeira fase incluiu pausas e mudanças de estado. A revisão do artigo ocorreu depois do goal original e não está incluída em seu contador.
+Em vez de alegar que repetiu o TG como descoberta, o agente reconheceu resultados já publicados em 2004 e antecedentes posteriores. Um trabalho de 2026 motivou uma comparação entre simplificações. Não dizer que esse artigo continha uma falha já provada. O recorte foi uma pergunta de confiabilidade com originalidade candidata.
 
-**Fontes:** Relatório, seções 1, 2, 2.1 e 7.
+**Fontes:** Relatório, seção 1; protocolo e decisão de recorte na literatura.
 
-### 6. Como o agente procurou novidade
+### 6. Um teste encontrou confiança excessiva
 
-05:35–07:00 (85 s)
+07:10–08:50 (100 s)
 
-Os resultados centrais do TG já tinham publicação derivada. O agente considerou caminhos alternativos e encontrou antecedentes próximos. A decisão foi reduzir a reivindicação de novidade a uma comparação controlada, e não inventar as técnicas empregadas. Não houve revisão sistemática exaustiva.
+Explicar sem física: em dados simulados sabemos a resposta. Uma faixa de incerteza que promete conter essa resposta em 90% dos casos precisa passar por um teste. Em um parâmetro de ruído ela continha a resposta em 313 de 500 casos, 62,6%. Isso demonstra uma limitação daquela aproximação naquele teste, não erro de todos os métodos. O problema tornou-se parte do resultado científico.
 
-**Fontes:** output/pesquisa/proposta_mestrado.md e docs/literatura/decisao_recorte.md.
+**Fontes:** Relatório, seção 2 e apêndice B.1; review_efac_coverage.json.
 
-### 7. Execução orientada por etapas
+### 7. Uma IA criticou. A outra conferiu.
 
-07:00–08:10 (70 s)
+08:50–10:50 (120 s)
 
-O plano tinha 13 marcos. Não se esperou o cronograma convencional de 24 meses. Cada marco previa entregas verificáveis e PDF. Houve versões intermediárias, dificuldades de recursos e mudanças de método. A etapa concluída não garante que sua pergunta tenha resposta definitiva.
+Distinguir os ciclos. No primeiro, o Codex conferiu o parecer e acrescentou 300 análises em 50 casos sob condições fixadas, além de um estudo temporal. O complemento resolveu um problema menor. No segundo, o agente revisou o artigo sem simulações novas e recusou extrapolações: falha em simulação não prova falha inevitável em dados reais. As frases do slide são sínteses, não transcrições. A revisão foi mediada pelo usuário e não certifica o resultado.
 
-**Fontes:** implementation_plan/roadmap.json. Relatório, seção 4.
+**Fontes:** Relatório, seção 2 e apêndice A.2; article/REVISION_NOTES.md.
 
-### 8. Os produtos do estudo
+### 8. Concluir a tarefa não encerrou a pergunta
 
-08:10–09:20 (70 s)
+10:50–12:20 (90 s)
 
-As imagens mostram páginas reais dos documentos. A dissertação final tem 167 páginas. O manuscrito tinha sete na v1.0.0 e passou a nove. Também existem duas apresentações científicas. O produto atual continua sem defesa institucional ou submissão editorial.
+A comparação ampla continuou inconclusiva na precisão exigida. O estudo adicional respondeu sob condições fixadas, sem resolver a formulação ampla. O agente escolheu a alternativa simulada autorizada pelo plano porque não tinha um adaptador local validado para as séries reais. Há dados públicos, portanto não dizer que eram inexistentes. Discutir o risco de confundir entrega administrativa e conclusão científica.
 
-**Fontes:** output/pdf/v1.0.0/dissertacao.pdf, página 1. article/manuscript.pdf, página 1.
+**Fontes:** Relatório, seção 2 e apêndices B e B.1.
 
-### 9. Escala do trabalho executado
+### 9. Escala e custo do experimento
 
-09:20–10:35 (75 s)
+12:20–13:40 (80 s)
 
-O gráfico mede linhas físicas na tag v1.0.0, incluindo comentários e linhas vazias. As 45.528 análises somam C07, C09, C10 e C11 e compartilham dados, portanto não são observações independentes. Não somar reproduções como novos experimentos.
+As linhas incluem comentários e vazios. As análises principais reutilizam dados; não são 45 mil descobertas. A suíte básica soma 217 verificações, com outras auditorias. Não estimar equivalência a anos de trabalho humano sem comparação. O custo de US$ 50 é rateio informado; US$ 1.300 é equivalente em API Standard a preços de 13/09/2026. Fast seria aproximadamente US$ 2.600. A estimativa exclui Gemini, computação local, ferramentas e estudo de caso. Não mede o esforço de compreender e verificar. Detalhes no apoio.
 
-**Fontes:** evidencias.json, code_groups. Relatório, seção 6.
+**Fontes:** Relatório, apêndices C e E; estimativa_custo_api.json.
 
-### 10. Tempo de execução e tempo de formação
+### 10. O produto e a pessoa pedem provas distintas
 
-10:35–11:50 (75 s)
+13:40–15:40 (120 s)
 
-O goal retornou 111086 segundos. O calendário entre criação e encerramento foi 197802 segundos, com pausas. A revisão adicional do artigo levou cerca de 6min37s no Codex, sem incluir o Gemini. Não é uma comparação de produtividade com um estudante.
+O documento continua permitindo examinar a pesquisa. O caso mostra que sua qualidade aparente não basta para atribuir domínio ao estudante. Identificar uso de IA ou exigir declaração de ferramentas tem papel de transparência, mas não responde se a pessoa entende o que foi feito. Explicar essa distinção sem tratar integridade acadêmica como dispensável.
 
-**Fontes:** Eventos do goal e complementos_pos_goal.json. Relatório, seção 7.
+**Fontes:** Relatório, seção 3.
 
-### 11. Custos: uma ordem de grandeza
+### 11. Mais artigos ou mais conhecimento?
 
-11:50–13:05 (75 s)
+15:40–17:50 (130 s)
 
-O usuário estima ter gasto uma semana de sua cota, à qual atribui cerca de US$ 50. É um rateio da assinatura, sem equivalência contratual com créditos. A conta da API Standard aplica preços de 13/09/2026 aos registros individuais do agente principal e três subagentes: US$ 1.289,34 até o goal e US$ 14,29 de complementos científicos, total de US$ 1.303,63. Entrada sem cache: 20.583.691 tokens; em cache: 822.046.336; saída: 5.229.122. 97,56% da entrada foi cache. Não somar o contador do goal. Fast dobra o preço. Gravações de cache não aparecem nos registros; considerar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Exclui Gemini, ferramentas, computação local e elaboração do estudo de caso. Uma nova execução pode custar diferente.
+Apresentar como cenário, não previsão comprovada: se agentes aumentarem a produção, atenção de revisores pode limitar o sistema. Contribuições incrementais não perdem valor automaticamente. Uma réplica crítica ou limite bem determinado pode ser mais relevante que alegar uma grande descoberta. No caso, a limitação da aproximação e a inconclusão documentada permitem discutir utilidade. Pedir que a audiência pense no critério que usaria para priorizar um manuscrito.
 
-**Fontes:** Relatório, seção 7.1; estimativa_custo_api.json. Preços em developers.openai.com/api/docs/models/gpt-6-astra, consultados em 13/09/2026.
+**Fontes:** Relatório, seção 4.
 
-### 12. Um controle expôs confiança excessiva
+### 12. O que muda entre simular e medir?
 
-13:05–14:30 (85 s)
+17:50–19:40 (110 s)
 
-Explicar cobertura como a frequência com que uma faixa estimada contém o valor usado para gerar os dados. Em um parâmetro de ruído, uma análise nominal de 90% atingiu 313 de 500 casos, 62,6%. Não generalizar esse número para todos os parâmetros ou todos os métodos. A incerteza numérica levava a contagens de 299 a 325, ainda longe de 450.
+O experimento foi computacional. Não comparou produtividade ou qualidade com pesquisa de laboratório. Medir exige vínculo com fenômenos, calibração e desenho de ensaios; dados inéditos podem ampliar a evidência. Isso não garante superioridade do experimental: teoria e computação também contribuem e experimentos também usam automação. A pergunta comum é o que conecta a conclusão à evidência e como a pessoa responde por essa conexão.
 
-**Fontes:** docs/revisao_cientifica_1.md e results/C13/review_efac_coverage.json.
+**Fontes:** Relatório, seção 4.
 
-### 13. Correções e perguntas ainda abertas
+### 13. A orientação pode trabalhar com outra divisão
 
-14:30–15:50 (80 s)
+19:40–21:50 (130 s)
 
-Separar erro editorial, problema de execução e limitação científica. A descrição das aproximações em uma versão estava incorreta, mas o cálculo usava a semântica correta. A comparação ampla continuou inconclusiva. Um estudo com 50 casos e parâmetros fixados respondeu a uma pergunta menor com precisão.
+O agente pode executar implementações e primeiras comparações. A oportunidade é explorar ideias antes inviáveis. O orientador e o estudante precisam construir critérios, escolher problemas e verificar resultados. Isso não retira formulação do estudante; torna importante observá-la. Distinguir atividade para aprender, que pode pedir trabalho individual, da produção científica com delegação ampla. Não reduzir o estudante a operador de agentes.
 
-**Fontes:** docs/c12_errata_v0110.md, docs/revisao_cientifica_1.md.
+**Fontes:** Relatório, seções 3 e 4.
 
-### 14. Dois ciclos de revisão com Gemini
+### 14. A formação aparece antes da defesa
 
-15:50–17:05 (75 s)
+21:50–24:00 (130 s)
 
-O primeiro parecer motivou novos estudos, como as 300 análises condicionais e o teste de ajuste temporal. O segundo foi uma revisão do manuscrito e não iniciou novas simulações. Não se dispõe da conversa original do Gemini ou de sua versão.
+Propor uma sequência de avaliação concreta. Antes de rodar uma modificação, o estudante registra a previsão e a razão. Depois interpreta o novo gráfico e explica uma divergência. Na defesa reconstrói um argumento central e seus limites, em parte sem assistência quando apropriado. A banca usa registros de acompanhamento para julgar autonomia e profundidade. Para o doutorado e mestrado, discutir níveis esperados sem assumir que número de páginas diferencia os títulos. Estas são propostas pedagógicas, não resultados testados no caso.
 
-**Fontes:** Relatório, seções 2 e 2.1. article/REVISION_NOTES.md.
+**Fontes:** Relatório, seções 3 e 5.
 
-### 15. O Codex filtrou o segundo parecer
+### 15. O que passaríamos a exigir?
 
-17:05–18:25 (80 s)
+24:00–25:50 (110 s)
 
-Mostrar o valor e o risco do feedback automatizado. O agente aceitou melhorias de exposição, mas as notas de revisão recusam novidade absoluta, certeza de falha em dados reais e amplificações extremas não demonstradas. O ponto é o contraste entre persuasão retórica e suporte científico.
+Encerrar com espaço real para debate. Convidar a audiência a formular um critério para cada questão. O experimento fornece artefatos e decisões verificáveis; a qualidade científica deve ser examinada por especialistas, e aprendizagem requer estudo próprio. Não propor uma única política institucional a partir de um caso. Se houver mais tempo, discutir avaliação independente do manuscrito e comparação entre versões, ainda não realizadas.
 
-**Fontes:** article/REVISION_NOTES.md, commit 26ae3ac.
+**Fontes:** Relatório, seção 5.
 
-### 16. O que o caso demonstra
-
-18:25–19:45 (80 s)
-
-Evitar extrapolar o estudo de caso. Os produtos existem e há rastros de execução. Não houve avaliação científica independente completa, teste de aprendizagem ou aceitação editorial. Uma revisão entre modelos é observável, mas seu ganho de qualidade não foi medido por avaliadores externos.
-
-**Fontes:** Relatório, seções 8 a 10.
-
-### 17. A divisão do trabalho pode mudar
-
-19:45–21:05 (80 s)
-
-Oportunidades: explorar ideias que não chegariam à implementação e testar mais alternativas. Dificuldade: produzir pode se tornar mais rápido que compreender e validar. Não apresentar esse deslocamento como medição de todo o campo, mas como hipótese sustentada pela experiência do caso.
-
-**Fontes:** Relatório, seções 8 e 9.
-
-### 18. Formação precisa aparecer no processo
-
-21:05–22:20 (75 s)
-
-Destacar responsabilidades compartilhadas pelo programa, orientador e estudante. Propor avaliações distribuídas e distinguir exercício para aprender de tarefa de produção. A defesa deve complementar esse percurso. O caso não testa a eficácia destas propostas.
-
-**Fontes:** Relatório, seção 8.
-
-### 19. Relevância e capacidade de revisão
-
-22:20–23:30 (70 s)
-
-Discutir possíveis consequências de aumento da produção sem afirmar colapso observado de periódicos. Origem humana ou de IA não decide relevância. Contribuições incrementais podem ser valiosas se resolvem incerteza importante. Oportunidade de usar a capacidade extra para profundidade, controle e síntese.
-
-**Fontes:** Relatório, seção 9.
-
-### 20. Próximas avaliações do experimento
-
-23:30–24:45 (75 s)
-
-Estas são propostas ainda não executadas. Especialistas poderiam comparar artigo antes e depois do Gemini, checar argumentos e reproduzir resultados centrais. Para aprendizagem seria necessário outro desenho com estudantes e medidas antes e depois.
-
-**Fontes:** Relatório, seção 10.
-
-### 21. Questões para discussão
-
-24:45–26:35 (110 s)
-
-Reservar cerca de dois minutos para encerrar ou abrir uma conversa. Na versão de 20 minutos, selecionar apenas uma questão. Na de 30 minutos, usar o tempo restante para ouvir respostas. Não tratar os produtos como títulos acadêmicos aprovados.
-
-**Fontes:** Relatório do estudo de caso, discussão.
-
-### 22. Apoio: leitura correta das métricas
+### 16. Apoio: definições das métricas
 
 Apoio opcional
 
-Abrir apenas se perguntarem pelas contagens. Todas são do fechamento v1.0.0, exceto o manuscrito revisado. Os arquivos de evidências documentam regras e exclusões.
+Números históricos da v1.0.0. O manuscrito de nove páginas é posterior. O total de código arquivado não é deduplicado. O tempo do goal não é CPU. As análises compartilham dados.
 
-**Fontes:** evidencias.json, complementos_pos_goal.json.
+**Fontes:** Relatório, apêndices C e D.
 
-### 23. Apoio: documentos e fontes
+### 17. Apoio: hipóteses da estimativa de custo
 
 Apoio opcional
 
-Links completos também estão nas notas e no README. A apresentação usa a conversa de execução e artefatos do próprio projeto. Discussões privadas não foram transcritas.
+Aplicação dos preços oficiais Astra Standard de 13/09/2026 aos registros únicos por resposta. Até o goal são 6.510 respostas, com agente principal e três subagentes, totalizando US$ 1.289,34. Os complementos científicos acrescentam US$ 14,29. 97,56% da entrada veio de cache. Gravações de cache zero no registro; cobrar toda entrada nova como gravação acrescentaria cerca de US$ 53, mantida a reutilização. Fast dobra o preço. Não incluir o contador do goal nem somar raciocínio duas vezes. Exclui Gemini, computação local, ferramentas adicionais e estudo de caso. US$ 50 é estimativa do usuário sobre rateio, não tarifa de API.
+
+**Fontes:** Relatório, apêndice E; estimativa_custo_api.json; developers.openai.com/api/docs/models/gpt-6-astra.
+
+### 18. Apoio: documentos para examinar o caso
+
+Apoio opcional
+
+O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas.
 
 **Fontes:** https://github.com/flavioluiz/TGdoWayne
