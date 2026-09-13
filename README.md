@@ -20,10 +20,11 @@ O estudo de ondas gravitacionais foi o problema científico escolhido para o exp
 |---|---|---|
 | **Dissertação** | [PDF — 167 páginas, v1.0.0](output/pdf/v1.0.0/dissertacao.pdf) | [PDF — 170 páginas, v1.1.0](output/pdf/v1.1.0/dissertacao.pdf) |
 | **Artigo / manuscrito** | [PDF — 9 páginas, commit `26ae3ac`](output/pdf/comparacao_llms/manuscrito_codex.pdf) | [PDF — 9 páginas, commit `09b3584`](output/pdf/comparacao_llms/manuscrito_gemini.pdf) |
+| **Apresentação de defesa** | [PDF — 39 slides, commit `293d12a`](output/pdf/comparacao_llms/defesa_codex.pdf) | [PDF — 39 slides, commit `61fa375`](output/pdf/comparacao_llms/defesa_gemini.pdf) |
 
-**Sugestão de leitura:** abra os pares lado a lado e compare resumos, introduções e conclusões. O que ficou mais claro? O que passou a parecer mais relevante? Onde a afirmação ficou mais forte sem novos resultados? Esse contraste ajuda a discutir como a escrita influencia a avaliação do mérito científico.
+**Sugestão de leitura:** abra os pares lado a lado e compare resumos, introduções e conclusões; na apresentação de defesa, compare a abertura, a exposição dos resultados e o fechamento. O que ficou mais claro? O que passou a parecer mais relevante? Onde a afirmação ficou mais forte sem novos resultados? Esse contraste ajuda a discutir como a escrita influencia a avaliação do mérito científico.
 
-A versão final do Codex já incorporava pareceres do Gemini; na rodada seguinte, o agy recebeu um pedido explícito de revisão afirmativa. Portanto, o contraste documenta estes textos e suas instruções, não uma característica universal dos modelos. Os dados e o código científico permaneceram os mesmos nessa revisão. As cópias de comparação foram preservadas sem reedição; [origem e hashes dos quatro PDFs](output/pdf/comparacao_llms/manifesto.json).
+A versão final do Codex já incorporava pareceres do Gemini; na rodada seguinte, o agy recebeu um pedido explícito de revisão afirmativa. Portanto, o contraste documenta estes textos e suas instruções, não uma característica universal dos modelos. Os dados e o código científico permaneceram os mesmos nessa revisão. As cópias de comparação foram preservadas sem reedição; [origem e hashes dos seis PDFs](output/pdf/comparacao_llms/manifesto.json).
 
 ## Produtos científicos gerados no experimento
 
