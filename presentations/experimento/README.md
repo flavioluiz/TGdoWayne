@@ -1,30 +1,35 @@
 # Apresentação do experimento com Codex
 
-[PDF](../../output/pdf/experimento/experimento_codex.pdf) · [PowerPoint editável](experimento_codex.pptx) · [Roteiro de fala e fontes](roteiro.md)
+[PDF](../../output/pdf/experimento/experimento_codex.pdf) · [Fonte Beamer / LaTeX](experimento.tex) · [Roteiro de fala e fontes](roteiro.md)
 
-São 15 slides principais e três de apoio, em formato 16:9. O roteiro sugere 25 minutos e 50 segundos e explica adaptações para 20 ou 30 minutos. A apresentação aborda a delegação da pesquisa, busca de novidade, execução, correções, os dois pareceres do Gemini, estimativas de custo e questões de formação e avaliação. Não exige conhecimento de ondas gravitacionais. A abertura mostra os documentos produzidos e a pergunta sobre formação. Os slides principais usam capas reais, números em destaque, um diagrama e exemplos concretos; as tabelas ficam no apoio.
+**Uma dissertação pronta. Um pesquisador formado?**
 
-## Fontes e versões
+Apresentação para discussão na pós-graduação, em formato 16:9, com **12 slides principais e três de apoio**. O roteiro sugere **25 minutos**, com adaptações para 20 ou 30 minutos. Não exige conhecimento de ondas gravitacionais.
 
-As métricas se referem à pesquisa na tag v1.0.0. A revisão posterior do artigo está no commit `26ae3ac`. As fontes de cada slide aparecem no roteiro e nas notas do PowerPoint. As três imagens em `assets/` são reproduções da primeira página do TG, da dissertação v1.0.0 e do manuscrito revisado, usadas como evidência documental. As atribuições originais permanecem nas imagens. Conversas privadas de terceiros não foram reproduzidas.
+A narrativa começa pela pergunta sobre formação, apresenta o desafio e as decisões do agente, examina as correções e a revisão pelo Gemini e discute contribuição científica, evidência e avaliação. O encerramento propõe questões sobre originalidade, compreensão e delegação da pesquisa. Métricas e hipóteses de custo ficam detalhadas no apoio.
+
+A fonte foi reescrita em Beamer, com composição tipográfica própria, diagrama em TikZ e tabelas LaTeX. O PDF é produzido diretamente pelo XeLaTeX. Textos, diagrama e tabelas permanecem editáveis na fonte.
+
+## Fontes e atribuições
+
+As métricas se referem à pesquisa na tag v1.0.0. A revisão posterior do artigo está no commit `26ae3ac`. As fontes de cada slide aparecem no roteiro e nas notas Beamer. As imagens em `assets/` reproduzem a primeira página do TG, da dissertação v1.0.0 e do manuscrito revisado, como evidência documental.
+
+Flavio Ribeiro aparece como apresentador. As atribuições originais das capas, incluindo nomes fictícios, permanecem nas imagens. A apresentação não cita participantes de conversas privadas nem reproduz essas conversas.
 
 ## Compilação
 
-`build.mjs` cria os objetos editáveis com `@oai/artifact-tool`. A apresentação contém um diagrama editável dos papéis e duas tabelas nativas nos slides de apoio. O PDF é exportado pelo LibreOffice.
-
-No ambiente de criação, indicar os caminhos de Node.js, Python, LibreOffice, do pacote `@oai/artifact-tool` e da skill de apresentações do Codex:
+Na raiz do repositório, com Python 3 e uma distribuição TeX que contenha XeLaTeX, Beamer, TikZ, TeX Gyre, `fontspec`, `babel`, `booktabs` e `latexmk`:
 
 ```sh
-export PRESENTATIONS_SKILL=/caminho/para/skills/presentations
-export RUNTIME_NODE_MODULES=/caminho/para/node_modules
-export NODE_EXECUTABLE=/caminho/para/node
-export PYTHON_EXECUTABLE=/caminho/para/python3
-export SOFFICE_EXECUTABLE=/caminho/para/soffice
 bash presentations/experimento/build.sh
 ```
 
-Os arquivos temporários, renders e recibos de validação ficam em `tmp/presentations/experimento/`. A compilação requer a skill e o runtime indicados; o PDF e o PowerPoint distribuídos podem ser abertos sem eles. Após alterar conteúdo, sincronizar o roteiro e `timing.json` com as notas geradas e conferir novamente todos os slides. A recompilação pode alterar hashes por metadados e versões do renderizador.
+As fontes TeX Gyre Heros e Pagella são carregadas pelos arquivos da distribuição TeX, sem depender das fontes instaladas no sistema operacional. A compilação não requer PowerPoint, LibreOffice ou bibliotecas de geração de slides.
+
+Editar `experimento.tex` para alterar o conteúdo e a composição. Editar `timing.json` para atualizar a fala, as fontes ou os tempos. O script de compilação executa `gerar_roteiro.py`, que sincroniza `roteiro.md` e `notas.tex`. As notas ficam ocultas no PDF da audiência.
+
+Os arquivos auxiliares de compilação ficam em `tmp/presentations/experimento/beamer/`. O PDF final é copiado para `output/pdf/experimento/experimento_codex.pdf`.
 
 ## Verificação desta entrega
 
-O pacote PowerPoint passou nas verificações de integridade, geometria, fontes e estrutura editável das tabelas, além da reimportação pelo artifact-tool. Os 18 slides do PDF exportado pelo LibreOffice foram renderizados e inspecionados individualmente. Não foi feito teste de abertura no Microsoft PowerPoint. O manifesto registra os hashes desta entrega e das páginas documentais de origem.
+Os 15 slides do PDF compilado foram renderizados e inspecionados individualmente. O manifesto registra os hashes do PDF, das fontes e das páginas documentais de origem. Tempos de fala são sugestões, sem ensaio cronometrado.
