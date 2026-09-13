@@ -7,6 +7,10 @@ trabalho de graduação de Wayne Leonardo Silva de Paula (ITA, 2003). O objetivo
 uma pesquisa de mestrado de 24 meses sobre a confiabilidade da inferência da massa do gráviton
 com redes de temporização de pulsares, com potencial para um artigo metodológico.
 
+## Apresentação de defesa
+
+[Slides em PDF — 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) · [Roteiro de fala](presentations/defesa/roteiro_50min.md) · [Fonte Beamer e compilação](presentations/defesa/README.md). São 32 slides principais e 7 de apoio, com gráficos dos resultados da dissertação.
+
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 

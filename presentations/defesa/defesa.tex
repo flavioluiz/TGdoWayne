@@ -1,0 +1,317 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern,amsmath,amssymb,booktabs,array,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{Navy}{HTML}{132D46}
+\definecolor{Teal}{HTML}{008B8B}
+\definecolor{Orange}{HTML}{DA6B34}
+\definecolor{Mist}{HTML}{EDF4F7}
+\definecolor{Gray}{HTML}{64748B}
+\setbeamercolor{normal text}{fg=Navy,bg=white}
+\setbeamercolor{structure}{fg=Teal}
+\setbeamercolor{frametitle}{fg=Navy}
+\setbeamercolor{block title}{fg=white,bg=Navy}
+\setbeamercolor{block body}{fg=Navy,bg=Mist}
+\setbeamercolor{itemize item}{fg=Teal}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\small\raise1pt\hbox{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\tiny$\bullet$}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{block title}{size=\normalsize,series=\bfseries}
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+\setbeamertemplate{frametitle}{\vspace{2mm}{\scriptsize\color{Teal}\insertsectionhead\par}\vspace{1mm}\insertframetitle\par\vspace{2mm}}
+\newcommand{\MainTotal}{32}
+\newif\ifbackup
+\setbeamertemplate{footline}{\hspace{8mm}\begin{minipage}{.80\paperwidth}\color{Gray}\tiny Gráviton de Souza\enspace /\enspace Defesa de mestrado\enspace /\enspace ITA\end{minipage}\hfill{\color{Teal}\scriptsize\ifbackup Apoio\else\insertframenumber/\MainTotal\fi}\hspace{7mm}\vspace{3mm}}
+\newcommand{\take}[1]{\par\vspace{2mm}\begin{beamercolorbox}[wd=\linewidth,sep=2.5mm]{block body}\small\textbf{#1}\end{beamercolorbox}}
+\newcommand{\source}[1]{\par\vspace{1mm}{\color{Gray}\fontsize{7.5}{9}\selectfont #1\par}}
+\newcommand{\fig}[2][.95]{\centering\includegraphics[width=#1\linewidth,height=.49\textheight,keepaspectratio]{#2}\par}
+\newcommand{\bigword}[2]{\textcolor{Teal}{\fontsize{30}{34}\selectfont\bfseries #1}\par\vspace{1mm}{\small #2}}
+\newcommand{\CN}{\mathcal{CN}}
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\title{Massa do gráviton e polarizações de ondas gravitacionais em PTAs}
+\subtitle{Compressão em frequência e validação estatística}
+\author{Gráviton de Souza}
+\institute{Instituto Tecnológico de Aeronáutica\\Programa de Pós-Graduação em Física · Física Nuclear}
+\date{}
+\begin{document}
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\section{A pergunta física}
+% 01
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+\fill[Navy] (current page.south west) rectangle (current page.north east);
+\fill[Teal] ([xshift=-38mm]current page.south east) rectangle (current page.north east);
+\foreach \r in {11,19,27,35,43}{\draw[white,opacity=.18,line width=1pt] ([xshift=-19mm,yshift=42mm]current page.south east) circle (\r mm);}
+\fill[Orange] ([xshift=-19mm,yshift=42mm]current page.south east) circle (2mm);
+\end{tikzpicture}
+\begin{minipage}{.75\textwidth}
+\color{white}\small ITA / FÍSICA / DEFESA DE MESTRADO\par\vspace{6mm}
+{\raggedright\fontsize{23}{27}\selectfont\bfseries Massa do gráviton\\e polarizações de ondas\\gravitacionais em PTAs\par}
+\vspace{4mm}{\large Compressão em frequência e validação estatística\par}
+\vspace{7mm}\textbf{Gráviton de Souza}\par\vspace{1mm}{\small Orientador: Prof. Dr. Schrödinger GPT de Gotham}
+\end{minipage}
+\end{frame}
+% 02
+\begin{frame}{O que um limite de massa realmente mede?}
+\begin{columns}[T]
+\column{.57\textwidth}\vspace{3mm}{\Large Uma posterior estreita pode refletir\par\vspace{3mm}\textcolor{Teal}{informação dos dados},\par\vspace{2mm}a \textcolor{Orange}{aproximação adotada}\par\vspace{2mm}ou o \textbf{suporte da priori}.}
+\column{.38\textwidth}\begin{block}{Pergunta da pesquisa}Como separar perda de informação por compressão, erro de verossimilhança e erro de resposta dispersiva?\end{block}
+\end{columns}
+\end{frame}
+% 03
+\begin{frame}{Três passos para responder à pergunta}
+\vspace{4mm}\begin{columns}[T]
+\column{.30\textwidth}\bigword{01}{\textbf{Construir a resposta}}\vspace{3mm}\par Propagação massiva, temporização e polarizações.
+\column{.30\textwidth}\bigword{02}{\textbf{Separar as aproximações}}\vspace{3mm}\par Dados pareados e controle gaussiano.
+\column{.30\textwidth}\bigword{03}{\textbf{Medir o que se aprende}}\vspace{3mm}\par Calibração, informação e dependência da priori.
+\end{columns}\vspace{7mm}\take{A defesa conecta a física da resposta à interpretação estatística dos resultados.}
+\end{frame}
+% 04
+\begin{frame}{Um PTA compara relógios distribuídos pelo céu}
+\begin{columns}
+\column{.56\textwidth}
+\centering\begin{tikzpicture}[scale=.85,>=Latex]
+\fill[Mist] (0,0) circle(2.2);\fill[Teal] (0,0) circle(.19);\node[below=3mm] at (0,0){Terra};
+\foreach \x/\y/\lab in {-2.6/1.7/1,2.7/1.5/2,1.8/-1.6/3}{\fill[Navy] (\x,\y) circle(.09);\draw[Orange,line width=1.3pt,->] (\x,\y)--(.15,0);\node[above] at (\x,\y){\small Pulsar \lab};}
+\foreach \x in {-2.7,-1.9,-1.1,-.3,.5,1.3,2.1}{\draw[Teal,opacity=.28,line width=1pt] (\x,2.5)--(\x+.7,-2.2);}
+\node[Teal] at (0,2.9){Frente de onda gravitacional};
+\end{tikzpicture}
+\column{.41\textwidth}\begin{itemize}\item Pulsos fornecem tempos de chegada.\item O modelo de timing prevê sua evolução.\item Ondas gravitacionais deixam resíduos correlacionados.\end{itemize}
+\take{A assinatura está na correlação entre direções, frequências e fases.}
+\end{columns}\source{Ilustração esquemática. Hellings--Downs (1983); Liang--Trodden (2021).}
+\end{frame}
+% 05
+\begin{frame}{A massa muda a velocidade de propagação}
+\begin{columns}
+\column{.58\textwidth}\fig{figures/dispersao.pdf}
+\column{.38\textwidth}\[f_g=\frac{m_gc^2}{h_{\rm P}}\]\[u=f_gT,\quad f_k=\frac{k}{T}\]\[\beta_k=\frac{v_g}{c}=\sqrt{1-(u/k)^2}\]\small O primeiro canal está mais próximo do limiar de propagação.
+\end{columns}\take{Uma única frequência de referência pode alterar a resposta de cada canal.}\source{Curvas analíticas, não dados simulados. Frequências em Hz; $u$ e $\beta$ adimensionais.}
+\end{frame}
+% 06
+\begin{frame}{A resposta combina geometria e fase do pulsar}
+\[R_a^A=\underbrace{\frac{p_a^ip_a^j e^A_{ij}}{2(1+\beta\widehat\Omega\cdot p_a)}}_{\text{geometria e dispersão}}\;
+\underbrace{\left[1-e^{-iy_a(1+\beta\widehat\Omega\cdot p_a)}\right]}_{\text{Terra e pulsar}},\qquad y_a=\frac{2\pi f L_a}{c}.\]
+\vspace{3mm}\[\Gamma_{ab}(f)=\frac{3}{8\pi}\int d\Omega\sum_{A=+,\times}R_a^A R_b^{A*}.\]
+\take{A ORF, função de redução de sobreposição, transporta essa física para a covariância dos resíduos.}
+\source{Convenção tensorial de norma dois. Liang--Trodden (2021, versão corrigida); Cordes et al. (2025).}
+\end{frame}
+% 07
+\begin{frame}{Do TG histórico a um modelo físico explícito}
+\begin{columns}[T]
+\column{.47\textwidth}\begin{block}{Reprodução histórica}Convenções de curvatura e unidades.\par\vspace{3mm}Vínculos entre amplitudes métricas e deformações observáveis.\par\vspace{3mm}Limites de propagação conferidos.\end{block}
+\column{.47\textwidth}\begin{block}{Fierz--Pauli linear}$\mu\ne0$: traço e divergência impõem\[H=0,\qquad q^\mu H_{\mu\nu}=0.\]Restam cinco graus de liberdade do campo massivo.\end{block}
+\end{columns}\take{O modelo histórico de Visser e Fierz--Pauli têm vínculos diferentes; suas amplitudes não são intercambiáveis.}\source{TG de Wayne L. S. de Paula (2003); de Paula, Miranda e Marinho (2004); Visser (1998).}
+\end{frame}
+% 08
+\begin{frame}{A helicidade zero tem duas deformações vinculadas}
+\begin{columns}
+\column{.48\textwidth}\centering\begin{tikzpicture}[scale=.9]
+\draw[Gray,dashed] (0,0) circle(1);\draw[Teal,line width=2pt] (0,0) ellipse (1.45 and 1.45);
+\foreach \a in {0,45,...,315}{\fill[Teal] (\a:1.45) circle(.055);}\node at (0,-2){Transversal: breathing};
+\end{tikzpicture}
+\column{.48\textwidth}\[\boxed{\frac{p_l}{p_b}=-\left(\frac{f_g}{f}\right)^2}\]\small Na convenção de projeções de curvatura utilizada.\par\vspace{4mm}Uma única amplitude escalar produz componentes transversal e longitudinal.
+\end{columns}\take{A análise respeita o vínculo físico; não ajusta dois modos escalares independentes.}\source{Fierz--Pauli linear; conversão entre bases apresentada no material de apoio.}
+\end{frame}
+\section{Desenho da comparação}
+% 09
+\begin{frame}{Três mudanças que precisam ser distinguidas}
+\centering\begin{tikzpicture}[>=Latex,node distance=9mm,box/.style={draw=Teal,fill=Mist,rounded corners=2mm,minimum width=29mm,minimum height=13mm,align=center}]
+\node[box](a0){$A_0$\\Coeficientes};\node[box,right=of a0](a){$A$\\Estimadores};\node[box,right=of a](b){$B$\\Compressão};\node[box,right=of b](c){$C$\\Resposta fixa};
+\draw[->,thick](a0)--(a);\draw[->,thick](a)--(b);\draw[->,thick](b)--(c);
+\node[below=6mm of a,align=center,font=\small]{Distribuição\\aproximada};\node[below=6mm of b,align=center,font=\small]{Menos\\coordenadas};\node[below=6mm of c,align=center,font=\small]{Outra resposta\\em frequência};
+\end{tikzpicture}\vspace{6mm}\take{A mesma realização é usada nos contrastes: muda-se uma escolha identificável por vez.}
+\end{frame}
+% 10
+\begin{frame}{Momentos exatos não determinam uma normal}
+\begin{columns}[T]
+\column{.48\textwidth}\begin{block}{Gerador complexo próprio}\[q_k\sim\CN(0,C_k),\qquad \mathbb E[q_kq_k^T]=0\]\[C_k=P_{\rm GW}(f_k)\Gamma_k+N_k\]\end{block}
+\column{.48\textwidth}\begin{block}{Estatísticas quadráticas}\[X_i=q^\dagger H_iq\]\[\mu_i=\operatorname{tr}(H_iC)\]\[\Sigma_{ij}=\operatorname{Re}\operatorname{tr}(H_iCH_jC)\]\end{block}
+\end{columns}\take{Mesmo com média e covariância corretas, a distribuição de $X$ pode ter assimetria e caudas não gaussianas.}
+\end{frame}
+% 11
+\begin{frame}{O controle gaussiano isola a compressão}
+\begin{columns}[T]
+\column{.47\textwidth}\bigword{CN}{\textbf{Observações físicas}}\vspace{3mm}\par Coeficientes complexos geram estimadores quadráticos.\par\vspace{3mm}$A_{\rm CN}$ e $B_{\rm CN}$ usam densidades normais aproximadas.
+\column{.47\textwidth}\bigword{G}{\textbf{Controle correspondente}}\vspace{3mm}\par Sorteios normais reais com os mesmos momentos.\par\vspace{3mm}$A_{\rm G}$ e $B_{\rm G}$ têm densidades corretamente especificadas.
+\end{columns}\vspace{4mm}\take{No controle G, uma diferença de informação A/B pode ser atribuída à compressão.}
+\end{frame}
+% 12
+\begin{frame}{Congelar a velocidade não é congelar toda a ORF}
+\small\renewcommand{\arraystretch}{1.7}\begin{tabular}{lll}\toprule Modelo & Resposta do canal $k$ & O que muda?\\\midrule
+$B$ & $\Gamma(\beta_k(u),y_k)$ & Referência dispersiva\\
+$C_\beta$ & $\Gamma(\beta_1(u),y_k)$ & Velocidade comum\\
+$C_{\rm full}$ & $\Gamma(\beta_1(u),y_1)$ & Resposta inteira do primeiro canal\\\bottomrule\end{tabular}
+\vspace{4mm}\take{Todos conservam a dependência da massa. Espectros e ruídos continuam nas frequências físicas.}\source{Definições do experimento tensorial. Na extensão escalar, $C_\beta$ congela também o vínculo escalar.}
+\end{frame}
+% 13
+\begin{frame}{Experimentos complementares, perguntas distintas}
+\small\renewcommand{\arraystretch}{1.65}\begin{tabular}{>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{4.5cm}>{\raggedright\arraybackslash}p{5.3cm}}\toprule Experimento & Desenho & Pergunta\\\midrule
+Tensorial de referência & 500 sorteios da priori; 5 modelos & A normal dos estimadores calibra?\\
+Geometria ampliada & 12 pulsares/4 canais e 16/8; 596 realizações por configuração & Quanto de informação a compressão perde?\\
+Extensão escalar & 1.192 observações; 6.344 análises & Como o vínculo escalar afeta a inferência?\\
+Timing e contraste B/C & Projeção temporal; 50 casos condicionais & Quais hipóteses limitam a interpretação?\\\bottomrule\end{tabular}
+\end{frame}
+% 14
+\begin{frame}{A precisão é verificada antes da interpretação}
+\begin{columns}[T]
+\column{.30\textwidth}\bigword{{\fontsize{20}{24}\selectfont Física}}{Resposta angular}\par\vspace{3mm}Integração no céu e expansão harmônica. Limites analíticos.
+\column{.30\textwidth}\bigword{{\fontsize{20}{24}\selectfont Inferência}}{Integração posterior}\par\vspace{3mm}Refinamento, métodos independentes e sensibilidade dos quantis.
+\column{.30\textwidth}\bigword{{\fontsize{20}{24}\selectfont Estatística}}{Calibração}\par\vspace{3mm}Realizações da priori, cobertura e propagação do erro numérico.
+\end{columns}\vspace{4mm}\take{Concordância numérica e calibração estatística respondem a perguntas diferentes.}
+\end{frame}
+\section{Resultados: verossimilhança e informação}
+% 15
+\begin{frame}{Calibração: a verdade ocupa o lugar esperado?}
+\centering\begin{tikzpicture}[>=Latex,box/.style={fill=Mist,rounded corners,minimum height=10mm,align=center},node distance=8mm]
+\node[box](p){Sortear $\theta_\star$\\da priori};\node[box,right=of p](d){Simular dados\\$d\mid\theta_\star$};\node[box,right=of d](post){Calcular\\$p(\theta\mid d)$};\node[box,right=of post](pit){Avaliar\\$F(\theta_\star\mid d)$};\draw[->,thick](p)--(d);\draw[->,thick](d)--(post);\draw[->,thick](post)--(pit);
+\end{tikzpicture}\vspace{5mm}\[\text{PIT}=F(\theta_\star\mid d)\ \sim\ \mathcal U(0,1)\quad\text{sob o modelo correto.}\]
+\take{Um intervalo central de 90\% deve conter a verdade em cerca de 90\% das repetições.}\source{Calibração baseada em simulação: Talts et al. (2018); Modrák et al. (2025). Testes com correção de Holm.}
+\end{frame}
+% 16
+\begin{frame}{A cobertura cai para 62,6\% na aproximação A}
+\begin{columns}\column{.68\textwidth}\fig{figures/cobertura.pdf}\column{.28\textwidth}\bigword{62,6\%}{Cobertura obtida em $A_{\rm CN}$}\vspace{5mm}\par\small Parâmetro: $\log_{10}\mathrm{EFAC}$.\par\vspace{2mm}500 realizações da priori.\end{columns}
+\source{Dissertação, cap. 6. Pontos: coberturas nominais. Barras: sensibilidade à incerteza numérica, não intervalos binomiais. Linha tracejada: 90\%.}
+\end{frame}
+% 17
+\begin{frame}{A distribuição dos PITs revela a inadequação}
+\fig[.93]{figures/pit_efac.pdf}
+\take{O desvio da diagonal persiste mesmo com os dois primeiros momentos calculados corretamente.}
+\source{EFAC, 500 realizações. Faixas coloridas: sensibilidade numérica; tracejado: CDF uniforme. Não são bandas de confiança.}
+\end{frame}
+% 18
+\begin{frame}{Compressão consistente ainda pode perder informação}
+\[B=WA,\qquad \mu_B=W\mu_A,\qquad\Sigma_B=W\Sigma_AW^T.\]
+\vspace{2mm}\[I(\theta;B)\le I(\theta;A).\]
+{\small\textbf{Como quantificar a perda}}\[\left\langle\KL[p(\theta\mid A)\Vert\pi]\right\rangle
+-\left\langle\KL[p(\theta\mid B)\Vert\pi]\right\rangle\]
+\take{A desigualdade se aplica à média no modelo correto; não ordena toda realização individual.}\source{Desigualdade de processamento de dados; aplicação ao controle gaussiano G. Informação em nats.}
+\end{frame}
+% 19
+\begin{frame}{A geometria de catálogo amplia o experimento}
+\begin{columns}\column{.61\textwidth}\fig{../../figures/aplicacao/geometria_academica.pdf}\column{.35\textwidth}\bigword{12 $\to$ 16}{Pulsares}\vspace{4mm}\par\bigword{4 $\to$ 8}{Canais de Fourier}\vspace{4mm}\par\small Posições: catálogo MeerKAT. Distâncias, sinais e ruídos: sintéticos.\end{columns}
+\source{Dissertação, cap. 10. Populações aninhadas P12K4 e P16K8; observações pareadas.}
+\end{frame}
+% 20
+\begin{frame}{A perda média é mensurável no controle gaussiano}
+\fig[.95]{figures/informacao.pdf}
+\take{A informação sobre a massa diminui ao comprimir, nas duas configurações estudadas.}
+\source{500 sorteios da priori por configuração; $\langle\KL^{(A)}-\KL^{(B)}\rangle$. Barras: erro padrão Monte Carlo entre realizações; não erro de quadratura. Ruído fixado.}
+\end{frame}
+% 21
+\begin{frame}{A priori sozinha produz um limite superior}
+\begin{columns}\column{.56\textwidth}\fig{figures/priori.pdf}\column{.40\textwidth}\[\mathcal L(u)=\text{constante}\]\[\pi(u)=\mathcal U(0,1)\]\[\boxed{Q_{95}=0{,}95,\qquad\KL=0}\]\[m_gc^2\le 0{,}95\frac{h_{\rm P}}{T}\]\end{columns}
+\take{Relatar um limite não basta: é preciso mostrar o que a posterior aprendeu em relação à priori.}
+\end{frame}
+% 22
+\begin{frame}{Um limite mais baixo pode vir de um modelo errado}
+\begin{columns}[T]\column{.47\textwidth}\begin{block}{Sensibilidade examinada}Medida e suporte da priori.\par\vspace{2mm}Covariância completa ou diagonal.\par\vspace{2mm}Ruído, distâncias e contaminantes.\end{block}\column{.47\textwidth}\begin{block}{Interpretação}Omissões monopolares e dipolares podem deslocar os limites.\par\vspace{3mm}Uma mudança da priori altera a medida de probabilidade atribuída à massa.\end{block}\end{columns}
+\take{Robustez é estabilidade sob hipóteses justificadas, não apenas redução do quantil superior.}\source{Dissertação, cap. 8: análises condicionais de robustez.}
+\end{frame}
+\section{Resultados: frequência, polarização e timing}
+% 23
+\begin{frame}{Com ruído marginalizado, B/C permanece inconclusivo}
+\begin{columns}[T]\column{.47\textwidth}\bigword{0,01}{Escala escolhida na largura da priori}\vspace{4mm}\par 24 realizações sorteadas e oito casos de fronteira.\par\vspace{3mm}Comparação pareada de $\Delta Q_{95}(u)$.\column{.47\textwidth}\begin{block}{Resultado}As diferenças pontuais são pequenas, mas os intervalos numéricos podem cobrir $[-1,1]$.\par\vspace{3mm}Eles não resolvem a escala de interesse.\end{block}\end{columns}
+\take{Proximidade dos valores centrais não demonstra equivalência entre as respostas.}\source{Dissertação, cap. 7, tabela 7.5. Erro de integração separado da variabilidade bootstrap.}
+\end{frame}
+% 24
+\begin{frame}{Reduzir a dimensão permite uma pergunta resolvida}
+\begin{columns}[T]\column{.30\textwidth}\bigword{50}{Realizações selecionadas antes dos contrastes}\column{.30\textwidth}\bigword{6}{Modelos, nos mesmos dados}\column{.30\textwidth}\bigword{300}{Posteriores condicionais de massa}\end{columns}
+\vspace{6mm}Amplitudes e ruído fixados nos valores de geração; somente $u$ é integrado.\par\vspace{4mm}Inversão de envelopes de CDF converte sensibilidade vertical em intervalo do quantil.
+\take{É um estudo condicional complementar: a marginalização original continua sendo uma questão distinta.}
+\end{frame}
+% 25
+\begin{frame}{Os deslocamentos médios ficam abaixo da escala-alvo}
+\fig[.94]{figures/condicional.pdf}
+\take{Todos os 200 contrastes têm raio numérico menor que 0,01; as quatro médias ficam dentro da janela.}
+\source{50 realizações P16K8. Pontos: médias; barras: intervalos de sensibilidade numérica das médias. Área clara: $[-0,01;0,01]$. Não são ICs populacionais.}
+\end{frame}
+% 26
+\begin{frame}{No limiar, escalar e tensor têm a mesma forma angular}
+\begin{columns}\column{.50\textwidth}\[\beta\to0\quad\Longrightarrow\quad\Gamma_0=\frac12\Gamma_T\]\[S_T\Gamma_T+S_0\Gamma_0=\left(S_T+\frac{S_0}{2}\right)\Gamma_T\]\column{.44\textwidth}\begin{block}{Consequência física}A correlação angular identifica uma combinação de potências.\par\vspace{4mm}Ela não separa $S_T$ e $S_0$ nesse limite.\end{block}\end{columns}
+\take{Fora do limiar, informação espectral e sensibilidade podem quebrar a degenerescência.}\source{Extensão vinculada de Fierz--Pauli, normalização desta pesquisa; dissertação, cap. 9.}
+\end{frame}
+% 27
+\begin{frame}{A componente escalar também exige uma lei adequada}
+\begin{columns}\column{.50\textwidth}\bigword{365 / 500}{Cobertura de $u$ em $A_{\rm CN}$: 73\%}\vspace{5mm}\par\bigword{444 / 500}{Cobertura de $u$ em $A_{0,\rm CN}$: 88,8\%}\column{.44\textwidth}\begin{block}{Campanha escalar}Intervalos centrais nominais de 90\%.\par\vspace{3mm}O vínculo entre deformações foi mantido na resposta.\par\vspace{3mm}Ruído e amplitudes auxiliares conhecidos.\end{block}\end{columns}
+\take{A falha da normal aplicada a estimadores físicos reaparece na extensão escalar.}\source{Dissertação, cap. 9. Contagens nominais; sensibilidade numérica: [357,369] e [436,444], respectivamente.}
+\end{frame}
+% 28
+\begin{frame}{Ajustar o timing modifica a distribuição de Fourier}
+\[r=M\delta\xi+s+n\quad\xrightarrow{\text{ajuste}}\quad r_{\rm pos}=R(s+n)\quad\xrightarrow{\text{Fourier}}\quad z=Dr_{\rm pos}.\]
+\vspace{3mm}\begin{columns}[T]\column{.47\textwidth}\begin{block}{Covariância}\[C_z=DRK R^T D^\dagger\]\end{block}\column{.47\textwidth}\begin{block}{Pseudocovariância}\[P_z=DRK R^T D^T\]\end{block}\end{columns}
+\take{Ruído gaussiano no tempo não garante coeficientes próprios e independentes depois do ajuste.}\source{$K$: covariância temporal; $R$: projeção do ajuste; $D$: transformação de Fourier.}
+\end{frame}
+% 29
+\begin{frame}{A projeção remove potência nas escalas ajustadas}
+\fig[.91]{figures/timing_transfer.pdf}
+\source{Experimento sintético de um pulsar: $T=4,5$ anos, 256 tempos; 20.000 séries por amostragem. Rotação: $1,t,t^2$; termos anuais: seno e cosseno. Curvas: resposta da projeção regular.}
+\end{frame}
+% 30
+\begin{frame}{Surgem correlações entre canais e pseudocovariância}
+\fig[.92]{figures/timing_matrices.pdf}
+\take{No exemplo regular com ajuste anual, a correlação cruzada máxima chega a 0,706.}
+\source{Módulos normalizados após ajuste de rotação e termos anuais. O experimento de timing ilustra a hipótese que precisa mudar na aplicação a TOAs.}
+\end{frame}
+\section{Conclusão}
+% 31
+\begin{frame}{O próximo passo é uma inferência conjunta sobre TOAs}
+\begin{columns}[T]\column{.47\textwidth}\begin{block}{Estabelecido aqui}Resposta dispersiva e vínculo escalar.\par\vspace{2mm}Calibração das aproximações.\par\vspace{2mm}Perda de informação no controle G.\par\vspace{2mm}Efeito da priori e do ajuste temporal.\end{block}\column{.47\textwidth}\begin{block}{Extensão observacional}Amostragem irregular e ajuste de timing.\par\vspace{2mm}Distâncias e ruídos marginalizados.\par\vspace{2mm}Densidades para estimadores além da normal.\par\vspace{2mm}Validação dos contrastes B/C nessa análise.\end{block}\end{columns}
+\take{Os resultados atuais são de simulações; não fornecem um novo limite observacional de massa.}
+\end{frame}
+% 32
+\begin{frame}{Três conclusões para levar desta defesa}
+\begin{enumerate}\setlength\itemsep{5mm}
+\item \textbf{Momentos corretos não garantem uma verossimilhança adequada.} A subcobertura é um resultado central.
+\item \textbf{Compressão e aproximação da resposta são efeitos distintos.} O controle gaussiano mede a perda de informação.
+\item \textbf{Um limite superior precisa demonstrar aprendizado.} Comparar priori e posterior é parte da interpretação física.
+\end{enumerate}\vspace{4mm}\textcolor{Teal}{\Large Obrigado.}\hfill\small Gráviton de Souza · ITA
+\end{frame}
+\appendix\backuptrue
+\section{Apoio à discussão}
+\begin{frame}{Fierz--Pauli linear não encerra a questão não linear}
+\begin{itemize}\setlength\itemsep{4mm}\item \textbf{vDVZ:} o modo escalar mantém acoplamento a fontes no limite linear de massa pequena.\item \textbf{Boulware--Deser:} extensões não lineares genéricas perdem um vínculo e podem propagar um modo adicional instável.\item \textbf{Vainshtein:} efeitos não lineares suprimem a contribuição escalar perto de fontes; em modelos apropriados, $r_V\sim(r_s/\mu^2)^{1/3}$.\end{itemize}
+\source{Hinterbichler (2012); de Rham (2014); Babichev e Deffayet (2013). A análise PTA usa o regime linear especificado.}
+\end{frame}
+\begin{frame}{Convenções de base: coeficientes e curvatura}
+\[P=I-\widehat k\widehat k,\qquad L=\widehat k\widehat k,\qquad E_0\propto P-2\chi L,\quad\chi=(f_g/f)^2.\]
+\small\renewcommand{\arraystretch}{1.7}\begin{tabular}{llll}\toprule Convenção & Base transversal & Base longitudinal & Razão dos coeficientes\\\midrule Bruta & $P$ & $L$ & $-2\chi$\\ Norma dois & $P$ & $\sqrt2L$ & $-\sqrt2\chi$\\ Norma um & $P/\sqrt2$ & $L$ & $-\sqrt2\chi$\\\bottomrule\end{tabular}
+\take{As projeções de curvatura usadas no TG satisfazem $p_l/p_b=-\chi$. Um reescalamento relativo da base muda os coeficientes, não a deformação física.}
+\end{frame}
+\begin{frame}{A forma sinc remove a singularidade aparente}
+\[D=1+\beta\widehat\Omega\cdot p,\qquad g(y,D)=\frac{1-e^{-iyD}}{D}\]
+\[g(y,D)=iy\,e^{-iyD/2}\operatorname{sinc}(yD/2)\]
+\[\operatorname{sinc}(x)=\frac{\sin x}{x},\qquad\operatorname{sinc}(0)=1.\]
+\take{O limite $D\to0$ é regular: $g\to iy$. A implementação preserva o termo de pulsar.}
+\end{frame}
+\begin{frame}{Marginalização analítica da escala comum}
+\[a=g-t,\quad b=r-t,\qquad\left|\frac{\partial(g,r,t)}{\partial(a,b,t)}\right|=1\]
+\[s=10^t\quad\Longrightarrow\quad dt=\frac{ds}{s\ln10}.\]
+\begin{block}{Consequência}A integral sobre a escala comum pode ser reduzida analiticamente, respeitando o suporte transformado das prioris. Na densidade complexa, surgem diferenças de funções gama incompletas.\end{block}
+\source{Dissertação, seção 6.3 e apêndice A. O suporte finito e a transformação da medida fazem parte da integral.}
+\end{frame}
+\begin{frame}{O que significam as barras dos resultados?}
+\small\renewcommand{\arraystretch}{1.8}\begin{tabular}{>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{8.5cm}}\toprule Figura & Significado\\\midrule Cobertura / PIT & Variação permitida pela incerteza numérica da posterior.\\ Perda média de informação & Erro padrão Monte Carlo entre 500 realizações.\\ Contrastes condicionais & Intervalos numéricos propagados por inversão das CDFs; não ICs de uma população.\\\bottomrule\end{tabular}
+\take{Essas três incertezas não são intercambiáveis.}
+\end{frame}
+\begin{frame}{Referências selecionadas: física}
+\small\begin{itemize}\setlength\itemsep{3mm}
+\item De Paula, W. L. S. \textit{Estudo da polarização de ondas gravitacionais com gráviton massivo}. TG, ITA, 2003.
+\item De Paula, Miranda e Marinho. \textit{Polarization states of gravitational waves with a massive graviton}. CQG, 2004.
+\item Liang e Trodden. \textit{Detecting the stochastic gravitational wave background from massive gravity with pulsar timing arrays}. PRD, 2021; versão corrigida.
+\item Hinterbichler. \textit{Theoretical aspects of massive gravity}. RMP, 2012.
+\item De Rham. \textit{Massive Gravity}. Living Reviews in Relativity, 2014.
+\end{itemize}
+\end{frame}
+\begin{frame}{Referências selecionadas: inferência e materiais}
+\small\begin{itemize}\setlength\itemsep{3mm}
+\item Talts et al. \textit{Validating Bayesian inference with simulation-based calibration}. arXiv:1805.09294.
+\item Modrák et al. \textit{Simulation-Based Calibration Checking for Bayesian Computation: The Choice of Test Quantities Shapes Sensitivity}. Bayesian Analysis, 2025.
+\item Franciolini et al. \textit{Likelihoods for Stochastic Gravitational Wave Background Data Analysis}. PRD, 2025.
+\item Han e Zhao. \textit{Forecasting graviton-mass constraints from the full covariance of PTA--astrometry ORF estimators}. arXiv:2604.23384.
+\end{itemize}\vspace{3mm}\textbf{Dissertação, código e resultados:}\par\href{https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0}{github.com/flavioluiz/TGdoWayne · dissertação v1.0.0}
+\end{frame}
+\end{document}
