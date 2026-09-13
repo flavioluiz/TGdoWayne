@@ -10,20 +10,21 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**C11 concluído — próximo marco: C12**
+**C12 concluído — próximo marco: C13**
 
-**Última etapa concluída:** C11 — Aplicação pública ou extensão simulada.
+**Última etapa concluída:** C12 — Discussão, conclusões e manuscrito.
 
-**Progresso:** 11 de 13 marcos concluídos.
+**Progresso:** 12 de 13 marcos concluídos.
 
-**Próxima etapa:** C12 — Discussão, conclusões e manuscrito.
+**Próxima etapa:** C13 — Auditoria final e dissertação consolidada.
 
 **Atualização:** 2026-09-12.
 
-**[Baixar o PDF mais recente — v0.11.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.11.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.11.0) · [PDF versionado no repositório](output/pdf/v0.11.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v0.12.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.12.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.12.0) · [PDF versionado no repositório](output/pdf/v0.12.0/dissertacao.pdf)
 
 ### O que já foi executado
 
+- C12: discussão e conclusões integradas, resumo/introdução/revisão atualizados e manuscrito em inglês com figura reproduzível. Auditoria de 23 alegações; corrigida a descrição de C_beta/C_full, preservando os resultados executados.
 - C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.
 - C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.
 - C09: produção de robustez e capítulo 8 concluídos no alcance condicional; 25956 posteriores, 39 contrastes, 126 testes SBC com dez indeterminações e 24238 arquivos restaurados e conferidos. Falhas numéricas preservadas; nenhum limite observacional novo é declarado.
@@ -76,7 +77,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 
 ### O que está em andamento e o que falta
 
-C11 concluído no alcance simulado e condicional. Próximo marco: C12/v0.12.0, discussão, conclusões e manuscrito de artigo; depois C13/v0.13.0, auditoria final de reprodução e do documento.
+Discussão, conclusões e manuscrito preparados para revisão; 23 alegações centrais conferidas, sem nova simulação. Próximo marco: C13/v1.0.0, auditoria final de reprodução, consistência e requisitos da entrega.
 
 ## Roadmap
 
@@ -95,8 +96,8 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C09 | Robustez a prioris, ruído e covariâncias | `v0.9.0` | Concluída | [Detalhes](implementation_plan/commits/C09_prioris_covariancias.md) |
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Concluída | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
 | C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Concluída | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
-| C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Próxima — não iniciada | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
-| C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Planejada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
+| C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Concluída | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
+| C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Próxima — não iniciada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
 
 [Plano geral de execução](implementation_plan/README.md). O cronograma científico é de 24 meses; os marcos são liberados por critérios de conclusão, não só por data.
 

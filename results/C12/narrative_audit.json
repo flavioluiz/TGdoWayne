@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "claims": [
+    {
+      "name": "C11 posterior targets",
+      "value": 10728,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 correct tests",
+      "value": 42,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 correct persistent",
+      "value": 0,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 correct indeterminate",
+      "value": 3,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 approximate tests",
+      "value": 84,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 approximate persistent",
+      "value": 1,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C11 approximate indeterminate",
+      "value": 1,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "P12K4 rounded KL mean",
+      "value": 0.06211,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "P12K4 rounded KL MCSE",
+      "value": 0.00477,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "P16K8 rounded KL mean",
+      "value": 0.10631,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "P16K8 rounded KL MCSE",
+      "value": 0.00695,
+      "source": "results/C11/statistical_audit.json"
+    },
+    {
+      "name": "C10 posterior targets",
+      "value": 6344,
+      "source": "results/C10/population_synthesis/results.json"
+    },
+    {
+      "name": "C10 approximate persistent",
+      "value": 11,
+      "source": "results/C10/population_synthesis/results.json"
+    },
+    {
+      "name": "C10 correct indeterminate",
+      "value": 1,
+      "source": "results/C10/population_synthesis/results.json"
+    },
+    {
+      "name": "C09 posteriors",
+      "value": 25956,
+      "source": "results/C09/robustness_synthesis/audit.json"
+    },
+    {
+      "name": "C09 paired_contrasts",
+      "value": 39,
+      "source": "results/C09/robustness_synthesis/audit.json"
+    },
+    {
+      "name": "C09 SBC family size",
+      "value": 126,
+      "source": "results/C09/SBC_operational_events/results.json"
+    },
+    {
+      "name": "C07 unresolved PITs",
+      "value": 243,
+      "source": "results/C07/synthesis/summary.json"
+    },
+    {
+      "name": "C07 approximate persistent",
+      "value": 10,
+      "source": "results/C07/synthesis/summary.json"
+    },
+    {
+      "name": "C09 indeterminate SBC decisions",
+      "value": 10,
+      "source": "results/C09/SBC_operational_events/results.json"
+    },
+    {
+      "name": "C09 unresolved mass PITs over all25956",
+      "value": 834,
+      "source": "results/C09/production_mass_PIT/records.json"
+    },
+    {
+      "name": "C09 unresolved logL events over all25956",
+      "value": 2287,
+      "source": [
+        "results/C09/events_direct_threshold/records.json",
+        "results/C09/events_distance_direct_threshold/records.json"
+      ]
+    },
+    {
+      "name": "Response semantics",
+      "value": "B beta_k; C_beta beta_1 with y_k; C_full B channel1 at same u",
+      "source": "tmp/c11_pilot16_candidate_v2/semantics.py",
+      "cases": 12
+    }
+  ],
+  "input_sha256": {
+    "results/C11/statistical_audit.json": "77d36a7cd053b43380005ebfdbe1ebfa9518d14f1c266a6c7682433f2d3fbfbb",
+    "results/C10/population_synthesis/results.json": "220fcef502217f82874051a84333982d7b80caef745e1fad3fb9e9a0c1d2dfb7",
+    "results/C09/robustness_synthesis/audit.json": "513c0f19f2fc0ac628dee610d04bc1f96395eb09cf3224f0ea31b14c3ffa8a61",
+    "results/C09/SBC_operational_events/results.json": "d12427edaad53b32ff1743ca8c2223db15b8542eb80a571ec63b59d674085594",
+    "results/C07/synthesis/summary.json": "909ef28817342c19293fe9cb832bcf659dd480be5fd82c3708ee73b832cd4f9a",
+    "results/C09/production_mass_PIT/records.json": "60d109cd30bf7dc4c409bad91e80b330b3623afc48294bdeea8a5651b10a6485",
+    "results/C09/events_direct_threshold/records.json": "2a30855fe052f55b1d13bf95bc9c8f51df7735d4591ec02603ac0caac131b13c",
+    "results/C09/events_distance_direct_threshold/records.json": "329abaf0e5f904b32debc92cbd45e3db309de3057975733de0f1c91abae3b625",
+    "tmp/c11_pilot16_candidate_v2/semantics.py": "bab7a1f851169721a71f3de9ee6ff3bb16db388ca41d187e8b5b7374f9c33e52",
+    "article/manuscript.tex": "7cbc60c984902e4157dc57ca3cc34ca14b9e1497f4ae75be7c5d42c8835f3ee9",
+    "latex/capitulos_dissertacao/10_aplicacao.tex": "a8a89945c0acfb6893e66b5d7859edb902079f26d0c129f78ae3b017c15a509a"
+  },
+  "source_sha256": "2bd2a0b22462145b46dd48e6fcaf9f052b1c16877e4407d6529b3723c96bc6a2",
+  "scope": "Check central synthesis values and the response semantics used in C12 prose.\n\nThis is a cross-check of published numerical products, not a fresh physical run\nor an automated proof that every sentence of the manuscript is correct.\n"
+}

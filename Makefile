@@ -2,7 +2,7 @@ SCIENTIFIC_PYTHON ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 VERSION ?= $(shell python3 -c 'import json; print(json.load(open("project_status.json"))["latest_version"])')
 DOCUMENT ?= $(shell python3 -c 'import json; print(json.load(open("project_status.json"))["document"])')
 
-.PHONY: check check-inference-components check-robustness check-scalar check-application readme pdf release
+.PHONY: check check-inference-components check-robustness check-scalar check-application readme pdf article release
 
 check-inference-components:
 	$(SCIENTIFIC_PYTHON) scripts/validar_componentes_inferencia.py --check
@@ -44,3 +44,6 @@ release: check-robustness check-scalar check-application
 	python3 scripts/update_document_state.py
 	python3 scripts/build_release.py --version $(VERSION) --document $(DOCUMENT)
 	python3 scripts/verify_release.py $(VERSION)
+
+article:
+	python3 scripts/build_article.py

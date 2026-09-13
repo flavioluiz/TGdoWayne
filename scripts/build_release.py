@@ -82,7 +82,7 @@ def main():
     files.extend(ROOT.glob("Template*.zip"))
     files.extend(p for p in (ROOT / "pyproject.toml", ROOT / "uv.lock", ROOT / "requirements.txt") if p.exists())
     for directory in ("latex", "scripts", "templates", "implementation_plan", "output/pesquisa", ".github", "docs", "literature",
-                      "src", "tests", "configs", "results", "figures"):
+                      "src", "tests", "configs", "results", "figures", "article"):
         files.extend(p for p in (ROOT / directory).rglob("*") if p.is_file()
                      and "__pycache__" not in p.parts and p.name != ".DS_Store"
                      and not p.is_relative_to(ROOT / "literature/papers")

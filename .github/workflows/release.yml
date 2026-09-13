@@ -48,6 +48,9 @@ jobs:
                      '--title', version + ' — ' + manifest['stage'] + ' — ' + manifest['document'],
                      '--notes-file', str(directory / 'RELEASE_NOTES.md'),
                      manifest['pdf'], str(directory / 'manifest.json')]
+          article = Path('article/manuscript.pdf')
+          if article.exists():
+              command.append(str(article))
           if version.startswith('v0.'):
               command.append('--prerelease')
           subprocess.run(command, check=True)

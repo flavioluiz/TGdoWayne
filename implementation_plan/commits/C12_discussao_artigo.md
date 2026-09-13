@@ -33,9 +33,9 @@ previstos serão criados quando necessários; sua presença neste plano não sig
 
 ## Critérios de conclusão
 
-- [ ] Toda conclusão pode ser rastreada a um resultado validado; não há afirmação de aceitação ou submissão ainda não ocorrida.
-- [ ] O manuscrito tem contribuição delimitada e dialoga com os trabalhos mais próximos atualizados.
-- [ ] Resumo e introdução refletem os resultados obtidos, inclusive resultados nulos e reduções de escopo.
+- [x] Toda conclusão pode ser rastreada a um resultado validado; não há afirmação de aceitação ou submissão ainda não ocorrida.
+- [x] O manuscrito tem contribuição delimitada e dialoga com os trabalhos mais próximos atualizados.
+- [x] Resumo e introdução refletem os resultados obtidos, inclusive resultados nulos e reduções de escopo.
 
 ## Validação exigida
 
@@ -57,3 +57,7 @@ A submissão a periódico é um ato posterior com autores e orientação definid
 A aceitação científica é avaliada pelos critérios acima. O sucesso da compilação ou a existência de uma
 tag, isoladamente, não significa que os experimentos estejam validados. Correções posteriores seguem a
 regra de nova versão descrita no plano geral, preservando o histórico publicado.
+
+## Evidência do marco
+
+Discussão e conclusões incluídas no documento; manuscrito em `article/`. Números e semânticas conferidos em `results/C12/narrative_audit.json`; objetivos em `docs/matriz_objetivos_resultados.md`; correção textual de C11 registrada em `docs/c12_errata_v0110.md`. C13 permanece aberto. A publicação requer ainda o fechamento Git e a verificação do PDF baixado, sem confundir compilação com aceitação científica.

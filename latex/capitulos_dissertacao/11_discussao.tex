@@ -1,0 +1,50 @@
+\chapter{Discussão integrada}
+\label{chap:discussao}
+
+\section{Resposta à pergunta da pesquisa}
+
+A pergunta central distingue preservar a inferência de obter limites numericamente próximos. Os resultados não sustentam uma regra universal segundo a qual avaliar a resposta em $1/T$ preserve a posterior de massa. Também não demonstram que essa substituição produza sempre um viés detectável. No domínio estudado, a conclusão verificável é mais restrita: aproximação probabilística, compressão dos dados e congelamento da resposta têm consequências diferentes e precisam de controles separados. As comparações de equivalência que permaneceram inconclusivas não são convertidas em evidência favorável à aproximação.
+
+O contrato A0/A/B/C permite atribuir essas operações. A0 conserva os coeficientes complexos do experimento periódico. A usa estimadores quadráticos e uma verossimilhança normal com seus momentos; portanto, A0 versus A modifica a representação do dado e a distribuição usada. B aplica uma compressão fixa a A, com média e covariância transformadas consistentemente. C analisa o mesmo dado B com uma resposta aproximada. O controle G torna A e B gaussianos por construção e permite estudar compressão sem atribuir a ela a não gaussianidade dos estimadores físicos.
+
+Em particular, covariância completa não implica verossimilhança exata. As rejeições persistentes nas aproximações normais de C07, C10 e C11 mostram que reproduzir os primeiros dois momentos não basta nos cenários examinados. Essas campanhas têm desenhos e famílias de testes diferentes; suas rejeições não devem ser somadas para construir uma taxa universal de falha. Elas fornecem evidência situada contra versões específicas da aproximação, sob geradores conhecidos.
+
+\section{Informação, calibração e equivalência}
+
+Calibração sob a priori é uma propriedade conjunta do gerador e da inferência. Uma posterior pouco informativa pode passar num teste de calibração porque permanece próxima da priori. Logo, PITs compatíveis com uniformidade não demonstram que os dados mediram a massa. Cobertura em uma verdade fixa é outra pergunta, particularmente nas fronteiras do suporte: o intervalo central de uma distribuição contínua exclui $u=0$, mesmo sob um procedimento correto.
+
+No controle gaussiano de C11, a diferença média pareada entre as divergências posterior--priori de A\_G e B\_G foi $0{,}06211\pm0{,}00477$ nat em P12K4 e $0{,}10631\pm0{,}00695$ nat em P16K8. Os erros indicam um erro Monte Carlo da média, calculado com as 500 realizações da priori; não incluem sistemáticos de integração. Como o modelo é corretamente especificado, essas médias estimam a perda de informação esperada da compressão. Não há requisito de que cada realização individual obedeça à mesma ordenação.
+
+Esse resultado responde à parte informacional da hipótese sem resolver automaticamente a comparação B/C. Posteriores B pouco informativas podem permanecer próximas de C mesmo quando suas respostas diferem. Para justificar uma aproximação de resposta, é necessário demonstrar que o contraste inferencial relevante está dentro de uma tolerância previamente definida, com precisão suficiente para a decisão. Em C08, os contrastes primários permaneceram inconclusivos na escala adotada; uma curva visualmente próxima não remove essa limitação.
+
+O aumento simultâneo de pulsares e frequências em C11 tampouco permite atribuir a mudança a apenas um desses fatores. Os coeficientes P12 são subconjunto dos coeficientes P16, mas os respectivos estimadores angulares usam matrizes diferentes. Uma desigualdade de informação para o dado complexo não é automaticamente uma desigualdade entre os resumos angulares das duas configurações.
+
+\section{Precisão numérica como parte do resultado}
+
+A incerteza do cálculo deve acompanhar a inferência científica. As campanhas conservaram identificadores, estados aleatórios, tentativas interrompidas e alvos não resolvidos. Nos testes SBC, um PIT não resolvido recebe intervalo $[0,1]$ e continua no denominador. Os limites sobre valores $p$ e a propagação pela correção Holm separam rejeição persistente, rejeição excluída pelos limites e decisão indeterminada.
+
+Essa estratégia evita selecionar somente integrais fáceis, mas pode reduzir a capacidade de decisão. Em C11, todos os PITs de massa foram resolvidos operacionalmente; os eventos de logL ainda produziram quatro decisões indeterminadas nas duas famílias. Nenhuma dessas decisões autoriza afirmar calibração demonstrada ou falha científica demonstrada. Uma rejeição persistente, por sua vez, permanece rejeição para todos os valores permitidos pelos intervalos adotados, condicionalmente à validade desses intervalos.
+
+Os benchmarks e referências diretas verificam pontos, integrais e refinamentos concretos. Não constituem um certificado uniforme sobre o contínuo físico, nem prova de ausência de raízes não amostradas. A auditoria da agregação C11 reconstruiu as contagens e o ajuste múltiplo a partir das saídas funcionais, mas não repetiu a integração física. A restauração por SHA-256 demonstra identidade dos arquivos; sozinha, não demonstra correção do modelo ou reprodução integral em outra máquina. Essas distinções são necessárias para interpretar a evidência de validação sem ampliá-la além do que foi testado.
+
+\section{Continuidade com o TG e extensão escalar}
+
+A reconstrução dos vínculos, da curvatura e das convenções históricas é uma reprodução teórica rastreável, não a descoberta original das polarizações massivas. O TG de Wayne e sua publicação posterior são antecedentes do problema. Tampouco se transferem automaticamente propriedades de Fierz--Pauli ou de teorias não lineares ao modelo histórico de Visser. A análise estatística desta dissertação usa hipóteses de propagação e de população explicitadas, sem deduzir a emissão completa das fontes.
+
+Na extensão de helicidade zero, as deformações transversal e longitudinal são vinculadas pelo mesmo grau de liberdade. A relação $p_l=-\chi p_b$, com $\chi=(f_g/f)^2$, pertence às projeções de curvatura adotadas; a razão entre coeficientes de tensores de polarização normalizados é diferente. Tratar essas duas deformações como populações independentes omitiria termos cruzados da ORF e definiria outro modelo físico.
+
+A amplitude da população escalar continua sendo uma hipótese fenomenológica. A resposta vinculada não demonstra emissão escalar numa teoria completa nem implica detecção. A campanha C10 mediu falsos positivos e recuperação no domínio condicional, enquanto as matrizes de Fisher forneceram diagnósticos locais de degenerescência. Projetar nuisances numa matriz de Fisher não equivale a marginalizá-las numa posterior não linear; os resultados não são apresentados como uma inferência conjunta já realizada.
+
+\section{Posicionamento bibliográfico e contribuição delimitada}
+
+A revisão identificou antecedentes próximos que restringem a alegação de novidade. Han e Zhao já apresentam previsões de massa com covariância completa de estimadores PTA--astrometria \autocite{han2026}. Franciolini e colaboradores estudam aproximações gaussianas de verossimilhanças de fundos estocásticos e os regimes em que introduzem desvios \autocite{franciolini2025}. Assim, nem usar várias frequências, nem conservar covariâncias, nem reconhecer que uma aproximação normal pode falhar é reivindicado isoladamente como contribuição inédita.
+
+A contribuição metodológica proposta é o experimento controlado e rastreável que separa essas operações na resposta dispersiva de PTA, preserva os mesmos dados nos contrastes de resposta e propaga decisões numericamente indeterminadas. A extensão escalar vinculada e a população ampliada com posições de catálogo oferecem testes adicionais desse contrato. A prioridade e o interesse editorial dessa combinação devem ser avaliados na revisão do manuscrito; a busca dirigida não prova prioridade absoluta.
+
+\section{Alcance observacional e perspectivas}
+
+A auditoria de produtos públicos encontrou TOAs, modelos e produtos derivados. A escolha da extensão simulada não significa inexistência de observações públicas: faltou neste trabalho um adaptador validado que incorporasse timing, amostragem irregular, ruído e reprodução de um benchmark observacional. Os dados de C11 usam apenas direções reais de catálogo, com distâncias e processos sintéticos.
+
+Uma aplicação futura deve começar pela reprodução de um resultado publicado com versão, seleção e configuração de ruído fixadas. A transformação de resíduos reais para coeficientes complexos pode introduzir pseudocovariância e acoplamentos entre frequências; o experimento periódico atual não os elimina por argumento de conveniência. Também será necessário validar a resposta nas distâncias e fases efetivamente observacionais e inferir conjuntamente as nuisances relevantes.
+
+A sequência científica mais direta é, portanto, concluir a reprodução independente do núcleo disponível, selecionar um benchmark público e só então estender a inferência para timing e ruído reais. O texto e o manuscrito preparados aqui são materiais para avaliação acadêmica e editorial. Não registram submissão, aceitação, defesa ou aprovação institucional.
