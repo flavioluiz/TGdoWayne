@@ -41,7 +41,7 @@
 \begin{Canvas}
 \Bold{.9}{.78}{14}{9}{Mist}{PESQUISA ACADÊMICA COM AGENTES DE IA}
 \Display{.9}{2.40}{14.2}{30}{white}{Uma dissertação pronta.}
-\Display{.9}{3.65}{14.2}{36}{Mist}{Um pesquisador\\formado?}
+\Display{.9}{3.70}{14.2}{34}{Mist}{Um pesquisador\\formado?}
 \Body{.94}{6.91}{14}{12}{white}{Um experimento de pesquisa delegada e revisão entre modelos}
 \Bold{.94}{8.05}{5}{11}{white}{Flavio Ribeiro}
 \Body{8.3}{8.10}{6.8}{9}{Mist}{Pós-graduação no ITA / 13 setembro 2026}
@@ -55,7 +55,7 @@
 \begin{Canvas}
 \Header{A PERGUNTA}{O documento e a formação}
 \Display{.9}{2.70}{14.2}{30}{Ink}{Um bom documento\\basta para demonstrar\\domínio individual?}
-\Body{.94}{6.65}{14}{14}{Green}{O caso permite discutir a qualidade da entrega\\e a capacidade de explicar e sustentar suas escolhas.}
+\Body{.94}{6.65}{14}{14}{Green}{O agente produziu o texto.\\O domínio de quem delegou ainda precisa ser demonstrado.}
 \Page
 \end{Canvas}
 \SpeakerNote{2}
@@ -80,13 +80,13 @@
 \Header{O EXPERIMENTO}{O percurso da pesquisa delegada}
 \tikzset{etapa/.style={draw=Green,line width=.75pt,fill=Paper,text=Ink,minimum width=3.8cm,minimum height=1.1cm,inner sep=5pt,font=\sffamily\bfseries\fontsize{10.5}{13}\selectfont},fluxo/.style={Green,line width=1.2pt,-{Stealth[length=5pt]}}}
 \node[etapa] (a) at ([xshift=2.8cm,yshift=-3.3cm]O) {Instrução ampla};
-\node[etapa] (b) at ([xshift=8cm,yshift=-3.3cm]O) {Busca e recorte};
-\node[etapa] (c) at ([xshift=13.2cm,yshift=-3.3cm]O) {Execução};
-\node[etapa] (d) at ([xshift=13.2cm,yshift=-5.6cm]O) {Testes e correções};
+\node[etapa,fill=Ink,text=white] (b) at ([xshift=8cm,yshift=-3.3cm]O) {Busca e recorte};
+\node[etapa,fill=Ink,text=white] (c) at ([xshift=13.2cm,yshift=-3.3cm]O) {Execução};
+\node[etapa,fill=Ink,text=white] (d) at ([xshift=13.2cm,yshift=-5.6cm]O) {Testes e correções};
 \node[etapa] (e) at ([xshift=8cm,yshift=-5.6cm]O) {Revisão pelo Gemini};
 \node[etapa] (f) at ([xshift=2.8cm,yshift=-5.6cm]O) {Dissertação e artigo};
 \draw[fluxo] (a)--(b);\draw[fluxo] (b)--(c);\draw[fluxo] (c)--(d);\draw[fluxo] (d)--(e);\draw[fluxo] (e)--(f);
-\Bold{.94}{7.22}{14.1}{12}{Green}{Codex Astra, com três subagentes.\\Pareceres encaminhados pelo usuário.}
+\Bold{.94}{7.22}{14.1}{12}{Green}{Codex Astra conduziu recorte, execução e testes.\\O usuário definiu a direção e encaminhou os pareceres.}
 \Page
 \end{Canvas}
 \SpeakerNote{4}
@@ -96,17 +96,20 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{O EXPERIMENTO}{O que o agente entregou}
-\CoverImage{.95}{2.32}{3.5}{4.55}{dissertacao-001.png}
-\CoverImage{5.15}{2.32}{3.5}{4.55}{artigo-1.png}
-\Bold{.95}{7.08}{3.6}{13}{Ink}{Dissertação}
-\Body{.95}{7.67}{4.1}{9.5}{Muted}{167 páginas\\47 referências}
-\Bold{5.15}{7.08}{3.6}{13}{Ink}{Manuscrito}
-\Body{5.15}{7.67}{4.1}{9.5}{Muted}{9 páginas\\Após a revisão}
-\Display{10.1}{2.40}{4.9}{42}{Green}{31 h}
-\Body{10.16}{3.92}{4.8}{13}{Ink}{no contador do goal}
-\Body{10.16}{4.70}{4.8}{12}{Ink}{55 h no calendário}
-\Bold{10.16}{6.22}{4.8}{18}{Green}{\textasciitilde US\$ 1.300}
-\Body{10.16}{7.11}{4.8}{11}{Muted}{API Standard estimada}
+\Display{.94}{2.50}{6.45}{38}{Green}{26.069}
+\Display{8.2}{2.50}{6.9}{38}{Green}{45.528}
+\Bold{.94}{4.02}{6.45}{13}{Ink}{linhas de código e testes}
+\Bold{8.2}{4.02}{6.9}{13}{Ink}{análises principais}
+\Display{.94}{5.12}{3.3}{27}{Ink}{167}
+\Display{4.65}{5.12}{3.1}{27}{Ink}{9}
+\Display{8.2}{5.12}{3.2}{27}{Ink}{31 h}
+\Display{11.8}{5.20}{3.35}{23}{Ink}{US\$ 50}
+\Body{.94}{6.27}{3.4}{10.5}{Muted}{páginas de\\dissertação}
+\Body{4.65}{6.27}{3.2}{10.5}{Muted}{páginas do\\artigo revisado}
+\Body{8.2}{6.27}{3.3}{10.5}{Muted}{contador do goal\\55 h no calendário}
+\Body{11.8}{6.27}{3.35}{10.5}{Muted}{rateio estimado\\da assinatura}
+\Bold{.94}{7.62}{14.1}{10.5}{Green}{API equivalente: cerca de US\$ 1.300 Standard. Detalhes no apoio.}
+\Body{.94}{8.12}{12.8}{8.5}{Muted}{Linhas incluem comentários e vazios. As análises compartilham dados.}
 \Page
 \end{Canvas}
 \SpeakerNote{5}
@@ -116,10 +119,10 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{O EXPERIMENTO}{Os testes mudaram as conclusões}
-\Bold{.94}{2.52}{6.4}{9}{Muted}{O QUE OS TESTES MOSTRARAM}
-\Bold{8.60}{2.52}{6.5}{9}{Muted}{COMO O TRABALHO MUDOU}
-\Display{.94}{3.47}{6.45}{20}{Rust}{Certeza excessiva\\sobre o resultado}
-\Body{8.60}{3.51}{6.45}{14}{Ink}{O texto explicitou\\a limitação do método.}
+\Bold{.94}{2.52}{6.4}{9}{Muted}{O AGENTE IDENTIFICOU O PROBLEMA}
+\Bold{8.60}{2.52}{6.5}{9}{Muted}{REVIU O TEXTO E O ESCOPO}
+\Display{.94}{3.47}{6.45}{18}{Rust}{A margem de erro\\falhou no teste}
+\Body{8.60}{3.51}{6.45}{14}{Ink}{A conclusão passou a\\reconhecer a falha\\da aproximação.}
 \Display{.94}{5.68}{6.45}{20}{Rust}{A pergunta ampla\\ficou inconclusiva}
 \Body{8.60}{5.74}{6.45}{14}{Ink}{Um teste adicional\\respondeu a uma\\pergunta mais restrita.}
 \Page
@@ -136,7 +139,7 @@
 \Bold{8.6}{2.56}{6.5}{10}{Mist}{CONCLUSÕES RECUSADAS}
 \Display{.94}{3.55}{6.5}{17}{white}{Novos testes.\\Mais contexto\\para o artigo.}
 \Display{8.6}{3.55}{6.5}{17}{white}{Originalidade absoluta.\\Falha inevitável\\em dados reais.}
-\Bold{.94}{7.17}{14.1}{13}{Mist}{O que orientadores e revisores precisam verificar?}
+\Display{.94}{6.62}{14.1}{22}{Mist}{O que orientadores e revisores\\precisam verificar?}
 \Page[Mist]
 \end{Canvas}
 \SpeakerNote{7}
@@ -147,9 +150,9 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{IMPLICAÇÕES PARA A PESQUISA}{Qual contribuição merece atenção?}
-\Display{.94}{2.70}{14.1}{30}{Ink}{O que passamos a saber\\que antes não sabíamos?}
-\Body{.94}{5.56}{14.1}{17}{Green}{Uma extensão pequena pode resolver\\uma incerteza importante.}
-\Body{.94}{7.63}{14.1}{11.5}{Muted}{Produzir mais manuscritos também exige mais capacidade de avaliação.}
+\Display{.94}{2.70}{14.1}{29}{Ink}{Variar parâmetros basta\\para justificar outro artigo?}
+\Body{.94}{5.56}{14.1}{17}{Green}{Mais resultados só merecem atenção\\quando acrescentam conhecimento.}
+\Body{.94}{7.45}{14.1}{11.5}{Muted}{Uma contribuição incremental pode valer muito. Repetir sem esclarecer, quanto vale?}
 \Page
 \end{Canvas}
 \SpeakerNote{8}
@@ -161,9 +164,9 @@
 \Header{IMPLICAÇÕES PARA A PESQUISA}{Simular e medir exigem evidências distintas}
 \Display{.94}{2.74}{6.45}{25}{Green}{Simulação}
 \Display{8.6}{2.74}{6.45}{25}{Green}{Medição}
-\Body{.94}{4.15}{6.45}{15}{Ink}{Testar hipóteses\\com resposta conhecida.}
-\Body{8.6}{4.15}{6.45}{15}{Ink}{Confrontar o modelo\\com o fenômeno.}
-\Body{.94}{6.98}{14.1}{14}{Muted}{Em ambos os casos, alguém precisa justificar\\a ligação entre a evidência e a conclusão.}
+\Body{.94}{4.15}{6.45}{15}{Ink}{Milhares de análises\\podem ser automatizadas.}
+\Body{8.6}{4.15}{6.45}{15}{Ink}{Instrumentos e calibração\\exigem trabalho físico.}
+\Body{.94}{6.98}{14.1}{14}{Muted}{O laboratório impõe restrições materiais.\\A força da evidência continua sendo o critério comum.}
 \Page
 \end{Canvas}
 \SpeakerNote{9}
@@ -174,8 +177,8 @@
 \begin{Canvas}
 \Header{FORMAÇÃO E AVALIAÇÃO}{O que precisamos aprender a fazer?}
 \Bold{.94}{2.53}{14.1}{10}{Muted}{O AGENTE AMPLIA A EXECUÇÃO}
-\Display{.94}{3.58}{14.1}{26}{Ink}{A formação precisa desenvolver\\o julgamento sobre o trabalho.}
-\Body{.94}{6.31}{14.1}{17}{Green}{Por que esta pergunta importa?\\O que faria você desconfiar do resultado?}
+\Display{.94}{3.35}{14.1}{27}{Ink}{Prever falhas.\\Saber recusar uma resposta\\da máquina.}
+\Body{.94}{7.05}{14.1}{15}{Green}{Que evidência faria você rejeitar este resultado?}
 \Page
 \end{Canvas}
 \SpeakerNote{10}
@@ -259,9 +262,13 @@ Saída, com raciocínio & 5,23 & 261,46\\\bottomrule
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{EVIDÊNCIAS E FONTES}{Documentos para examinar o caso}
-\Display{.94}{2.76}{14.1}{27}{Ink}{Um caso aberto ao exame.}
-\Body{.94}{4.27}{14.1}{16}{Ink}{Relatório com evidências e apêndices\\Dissertação e manuscrito revisado\\Código, resultados e registros de revisão}
-\Bold{.94}{7.15}{14.1}{14}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Abrir o repositório e os materiais}}
+\CoverImage{.94}{2.55}{3.7}{4.82}{dissertacao-001.png}
+\CoverImage{5.0}{2.55}{3.7}{4.82}{artigo-1.png}
+\Bold{.94}{7.67}{3.7}{11}{Ink}{Dissertação}
+\Bold{5.0}{7.67}{3.7}{11}{Ink}{Manuscrito}
+\Display{9.55}{2.66}{5.55}{21}{Ink}{Um caso aberto\\ao exame.}
+\Body{9.55}{4.85}{5.55}{12}{Ink}{Relatório e apêndices\\Código e resultados\\Registros de revisão}
+\Bold{9.55}{6.93}{5.55}{12}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Abrir o repositório\\e os materiais}}
 \Backup
 \end{Canvas}
 \SpeakerNote{15}

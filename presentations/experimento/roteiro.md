@@ -41,7 +41,7 @@ O proponente declarou não dominar o tema e não forneceu uma hipótese científ
 
 04:25–06:15 (110 s)
 
-O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado.
+O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado. As três caixas escuras destacam as etapas conduzidas pelos agentes. Isso não significa ausência completa de participação humana nem permite atribuir uma porcentagem de autonomia.
 
 **Fontes:** Relatório, seções 1 e 2 e apêndices A a D.
 
@@ -49,7 +49,7 @@ O diagrama resume a ordem predominante, com iterações entre as etapas. O usuá
 
 06:15–08:05 (110 s)
 
-Mostrar as páginas reais, preservando suas atribuições originais. A dissertação tem 167 páginas e 47 referências. O manuscrito atual tem nove páginas, após revisão posterior ao goal. O contador do goal registrou 30h51min26s, arredondados para 31 horas. No calendário transcorreram 54h56min42s entre criar e concluir o goal, incluindo pausas. Esse contador não mede CPU nem equivale a tempo humano economizado. A API equivalente é estimada em cerca de US$ 1.300 Standard, com os complementos científicos, enquanto o rateio da assinatura informado é US$ 50. São medidas diferentes, com hipóteses no apoio. O plano terminou operacionalmente, mas a comparação científica ampla permaneceu inconclusiva.
+Os números em destaque são 26.069 linhas de código e testes e 45.528 análises principais, na v1.0.0. A contagem inclui comentários e linhas vazias. As análises compartilham dados e não são 45 mil experimentos independentes. Volume não mede produtividade relativa a um pesquisador humano. A dissertação tem 167 páginas e 47 referências. O artigo revisado tem nove páginas e é posterior ao goal. O goal registrou 30h51min26s, arredondados para 31 horas, e 54h56min42s no calendário. Não é tempo de CPU. US$ 50 é o rateio de assinatura estimado pelo proponente, não uma fatura específica do experimento. O equivalente em API Standard é cerca de US$ 1.300, com complementos científicos. Hipóteses e exclusões no apoio. As capas dos produtos estão no último slide de apoio.
 
 **Fontes:** PDFs da dissertação e do manuscrito; relatório, apêndices C a E.
 
@@ -57,7 +57,7 @@ Mostrar as páginas reais, preservando suas atribuições originais. A disserta�
 
 08:05–10:25 (140 s)
 
-Em simulações, conhece-se a resposta usada para gerar os dados. O agente identificou que uma faixa de incerteza para um parâmetro continha essa resposta menos vezes do que prometia. Isso limita a aproximação naquele teste, sem invalidar todo o método. A comparação ampla não atingiu a precisão exigida. Depois de crítica externa por modelo, um complemento respondeu a uma questão menor, com condições fixadas. O agente explicitou esses limites e reescreveu afirmações. Não equiparar esse comportamento, sem avaliação independente, ao rigor geral de um pesquisador experiente. A escolha de dados simulados era permitida pelo plano: faltava um adaptador local validado para usar as séries reais, não dados públicos no mundo.
+Em simulações, conhece-se a resposta usada para gerar os dados. O agente identificou que uma faixa de incerteza para um parâmetro continha essa resposta menos vezes do que prometia. Isso limita a aproximação naquele teste, sem invalidar todo o método. A comparação ampla não atingiu a precisão exigida. Depois de crítica externa por modelo, um complemento respondeu a uma questão menor, com condições fixadas. O agente explicitou esses limites e reescreveu afirmações. Não equiparar esse comportamento, sem avaliação independente, ao rigor geral de um pesquisador experiente. A escolha de dados simulados era permitida pelo plano: faltava um adaptador local validado para usar as séries reais, não dados públicos no mundo. A frase sobre o teste falhar resume uma cobertura de incerteza abaixo do valor anunciado. Não significa ausência total de acertos nem ausência de erros não detectados.
 
 **Fontes:** Relatório, seção 2 e apêndice B.1.
 
@@ -73,7 +73,7 @@ O Gemini elaborou dois pareceres, encaminhados pelo usuário. No primeiro ciclo,
 
 12:45–15:05 (140 s)
 
-A automação pode aumentar a oferta de manuscritos e o esforço necessário para selecionar, compreender e verificar resultados. Essa é uma hipótese de organização da ciência, não uma consequência medida neste caso. Evitar anunciar colapso dos periódicos ou dizer que toda pesquisa incremental perde valor. Uma extensão pequena pode resolver uma incerteza relevante. No experimento, documentar a falha de uma aproximação e uma pergunta ainda inconclusiva são resultados que merecem exame. A publicação não certificaria, sozinha, a formação individual. Abrir uma breve discussão sobre qual diferença entre antes e depois de um estudo justifica atenção dos pares.
+A automação pode aumentar a oferta de manuscritos e o esforço necessário para selecionar, compreender e verificar resultados. Essa é uma hipótese de organização da ciência, não uma consequência medida neste caso. Evitar anunciar colapso dos periódicos ou dizer que toda pesquisa incremental perde valor. Uma extensão pequena pode resolver uma incerteza relevante. No experimento, documentar a falha de uma aproximação e uma pergunta ainda inconclusiva são resultados que merecem exame. A publicação não certificaria, sozinha, a formação individual. Abrir uma breve discussão sobre qual diferença entre antes e depois de um estudo justifica atenção dos pares. A pergunta sobre variar parâmetros provoca uma discussão de relevância: uma variação pode revelar um regime novo ou resolver uma dúvida importante. O critério é a informação acrescentada, sem decretar o fim da pesquisa incremental.
 
 **Fontes:** Relatório, seção 4.
 
@@ -81,7 +81,7 @@ A automação pode aumentar a oferta de manuscritos e o esforço necessário par
 
 15:05–17:05 (120 s)
 
-Este caso foi computacional e não comparou sua produtividade à de um laboratório. Em simulações, controles com resposta conhecida permitem testar hipóteses. Medições acrescentam confronto com fenômenos e exigem instrumentação e calibração. O laboratório tem restrições materiais, mas também usa automação. Teoria e computação não perdem valor científico por serem automatizáveis. A discussão é como gerar evidência nova e interpretar seus limites, não proclamar superioridade de um tipo de pesquisa. A evidência do caso não demonstra desempenho em dados instrumentais reais.
+Este caso foi computacional e não comparou sua produtividade à de um laboratório. Em simulações, controles com resposta conhecida permitem testar hipóteses. Medições acrescentam confronto com fenômenos e exigem instrumentação e calibração. O laboratório tem restrições materiais, mas também usa automação. Teoria e computação não perdem valor científico por serem automatizáveis. A discussão é como gerar evidência nova e interpretar seus limites, não proclamar superioridade de um tipo de pesquisa. A evidência do caso não demonstra desempenho em dados instrumentais reais. O destaque ao trabalho físico não pressupõe que toda operação de laboratório deva ser humana. Calibração e instrumentação também admitem automação.
 
 **Fontes:** Relatório, seção 4.
 
@@ -89,7 +89,7 @@ Este caso foi computacional e não comparou sua produtividade à de um laborató
 
 17:05–19:25 (140 s)
 
-A escrita, programação e leitura continuam sendo atividades formativas. Automatizar sua execução não torna essas competências dispensáveis. A oportunidade é explorar mais perguntas e investigar variações antes caras. O risco é perder a experiência necessária para reconhecer um erro. Orientação e disciplinas podem separar momentos de aprendizagem individual e produção com assistência ampla. O estudante precisa formular perguntas relevantes, interpretar anomalias e saber quando uma linha deixou de ser promissora. O caso não permite afirmar que a delegação ensina essas capacidades.
+A escrita, programação e leitura continuam sendo atividades formativas. Automatizar sua execução não torna essas competências dispensáveis. A oportunidade é explorar mais perguntas e investigar variações antes caras. O risco é perder a experiência necessária para reconhecer um erro. Orientação e disciplinas podem separar momentos de aprendizagem individual e produção com assistência ampla. O estudante precisa formular perguntas relevantes, interpretar anomalias e saber quando uma linha deixou de ser promissora. O caso não permite afirmar que a delegação ensina essas capacidades. Propor uma atividade concreta: apresentar uma saída convincente do agente, pedir sinais de falha e solicitar que o estudante diga sob qual evidência a aceitaria ou rejeitaria.
 
 **Fontes:** Relatório, seções 3 e 4.
 
@@ -129,6 +129,6 @@ Aplicação dos preços oficiais Astra Standard de 13/09/2026 aos registros úni
 
 Apoio opcional.
 
-O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas.
+O repositório reúne PDFs e fontes, evidências e notas de revisão. O corpo do relatório discute decisões e formação; os apêndices guardam interações, métricas e método. Conversas privadas não foram transcritas. As imagens reproduzem as capas originais da dissertação e do manuscrito, com suas atribuições preservadas.
 
 **Fontes:** https://github.com/flavioluiz/TGdoWayne

@@ -6,7 +6,7 @@
 
 Apresentação para discussão na pós-graduação, em formato 16:9, com **12 slides principais e três de apoio**. O roteiro sugere **25 minutos**, com adaptações para 20 ou 30 minutos. Não exige conhecimento de ondas gravitacionais.
 
-A narrativa começa pela pergunta sobre formação, apresenta o desafio e as decisões do agente, examina as correções e a revisão pelo Gemini e discute contribuição científica, evidência e avaliação. O encerramento propõe questões sobre originalidade, compreensão e delegação da pesquisa. Métricas e hipóteses de custo ficam detalhadas no apoio.
+A narrativa começa pela pergunta sobre formação, apresenta o desafio e as decisões do agente, examina as correções e a revisão pelo Gemini e discute contribuição científica, evidência e avaliação. O encerramento propõe questões sobre originalidade, compreensão e delegação da pesquisa. O slide 5 destaca código, análises, páginas, tempo e custos. As definições das métricas, as hipóteses de custo e as capas dos produtos ficam detalhadas no apoio.
 
 A fonte foi reescrita em Beamer, com composição tipográfica própria, diagrama em TikZ e tabelas LaTeX. O PDF é produzido diretamente pelo XeLaTeX. Textos, diagrama e tabelas permanecem editáveis na fonte.
 
