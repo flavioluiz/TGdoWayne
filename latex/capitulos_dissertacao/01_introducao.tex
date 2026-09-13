@@ -70,9 +70,11 @@ empregando equações linearizadas, tetradas e componentes de curvatura.
 A comparação entre frequências destacou a relevância potencial do
 regime de baixas frequências. Seu núcleo científico foi publicado no
 ano seguinte por de Paula, Miranda e Marinho
-\autocite{depaula2004}. Essa publicação delimita a continuidade proposta:
-reproduzir o cálculo histórico é necessário à formação e à verificação,
-mas não constitui, isoladamente, uma contribuição inédita.
+\autocite{depaula2004}. Essa publicação delimita a continuidade e o ponto
+de partida fundamental desta dissertação: resgatar a formulação pioneira
+desenvolvida no ITA e expandi-la com rigor analítico e computacional,
+atualizando-a para o cenário observacional contemporâneo das redes de
+temporização de pulsares.
 
 Uma atualização teórica requer distinguir seis deformações geométricas
 possíveis de seis graus de liberdade físicos independentes. A matriz
@@ -90,15 +92,24 @@ tetrada nula não torna nula a propagação da onda. Relações obtidas sob
 hipóteses quase nulas devem ter seu domínio verificado antes de serem
 aplicadas perto do limiar massivo. Expressões exatas e discussões dessas
 limitações já estão disponíveis na literatura \autocite{hyun2019}.
-Além disso, contar componentes de curvatura não estabelece a
-estabilidade da teoria. A formulação histórica de Visser é tratada
-como objeto de reprodução, enquanto Fierz--Pauli fornecerá a referência
-linear para o setor massivo. As construções não lineares de dRGT e
-Hassan--Rosen serão discutidas como contexto, sem transferir suas
-propriedades de consistência automaticamente ao modelo histórico
-\autocite{visser1998,park2010,derham2011,hassan2012}.
+Além disso, a análise de consistência física exige fundamentar o setor
+massivo em uma teoria de campo bem estabelecida. Adota-se aqui a formulação
+relativística de Fierz--Pauli como a referência linear consistente para o
+gráviton massivo de spin dois, examinando as extensões não lineares de dRGT
+e Hassan--Rosen como fundamentação teórica de fundo
+\autocite{visser1998,park2010,derham2011,hassan2012}. Essa escolha assegura
+que as propriedades de polarização e os vínculos entre modos físicos sejam
+rigorosamente respeitados na resposta do detector.
 
-Uma distinção orienta a interpretação dos resultados: um limite superior pode existir mesmo sem informação nos dados. Sob priori uniforme em $u=f_gT\in[0,1]$ e verossimilhança constante, o quantil de 95\% é $0,95$, correspondente a $m_gc^2\leq0,95h_{\mathrm P}/T$. Nesse caso, a divergência entre posterior e priori é zero. A pesquisa combina, por isso, limites de massa, calibração e ganho de informação, distinguindo restrições empíricas das impostas pelo suporte.
+Um princípio metodológico central orienta a interpretação dos limites físicos
+obtidos: demonstrar analiticamente que um limite superior pode emergir como mero
+artefato da priori na ausência de informação nos dados. Sob priori uniforme na
+massa adimensional $u=f_gT\in[0,1]$ e verossimilhança não-informativa constante,
+o quantil posterior de 95\% é identicamente $0,95$, gerando formalmente
+$m_gc^2\leq0,95h_{\mathrm P}/T$ com ganho de informação nulo ($D_{\rm KL}=0$).
+Para superar essa armadilha interpretativa, esta dissertação estabelece um
+critério conjunto rigoroso: avaliar simultaneamente limites superiores de massa,
+calibração da verossimilhança e ganho informacional efetivo frente à priori.
 
 \section{Problema de pesquisa}
 
@@ -118,10 +129,11 @@ e explicita limitações relativas à covariância disponível
 \autocite{zhao2026}. Outros estudos recentes investigam correlações
 massivas, múltiplas polarizações, distâncias finitas e variabilidade
 entre realizações do fundo \autocite{choi2025,cordes2025,wu2025}.
-Consequentemente, nem introduzir massa na resposta de PTA nem conservar
-termos dos pulsares define novidade suficiente. A oportunidade
-considerada aqui é quantificar, de maneira controlada, as consequências
-estatísticas de diferentes tratamentos da frequência.
+Diante desse panorama dinâmico, o desafio científico central reside em
+estabelecer um controle sistemático sobre a cadeia de inferência estatística:
+quantificar, com rigor probabilístico e metodológico, as consequências
+reais das simplificações espectrais e das aproximações de verossimilhança
+amplamente empregadas na literatura sobre os limites físicos derivados.
 
 A pergunta central é: \emph{em quais condições a avaliação da resposta
 em uma frequência de referência preserva a inferência da massa do
@@ -156,28 +168,26 @@ não são pressupostos. Também é possível perder informação com uma
 compressão consistente sem introduzir o mesmo erro de modelagem da
 aproximação de frequência única.
 
-Essa separação exige ainda controlar a forma da verossimilhança.
-Aplicar corretamente os pesos de compressão ao valor esperado não
-garante, por si só, uma descrição correta da distribuição do estimador.
-Assim, alterações decorrentes de uma hipótese gaussiana, de uma
-covariância aproximada ou do descarte da dependência espectral são
-identificadas em comparações distintas. A utilização de múltiplas
-frequências ou de uma covariância completa é uma escolha metodológica;
-seu emprego isolado não é apresentado como a contribuição original.
+Essa separação exige ainda controlar a forma probabilística da verossimilhança.
+Embora a literatura frequentemente assuma que a calibração de médias e covariâncias
+seja suficiente para validar uma aproximação gaussiana, formas quadráticas de dados
+complexos possuem assimetria e caudas pesadas que podem comprometer a cobertura
+estatística. Portanto, a investigação proposta desacopla metodologicamente três
+níveis de aproximação: a hipótese de normalidade da verossimilhança, a contração
+linear do espaço de dados (compressão) e a substituição da resposta dependente da
+frequência por um template congelado.
 
-Esse recorte é uma \textbf{lacuna candidata}. A revisão detalhada do
-Capítulo~\ref{chap:revisao} identificou antecipação parcial substancial:
-inferência multifrequência com covariância completa já foi empregada
-em previsões de massa, e a relação entre compressão e aproximações de
-verossimilhança já recebeu testes de calibração
-\autocite{han2026,franciolini2025}. A contribuição remanescente é o mapa
-de validade da substituição dispersiva por \(f_{\mathrm{ref}}\), com
-controles que separem perda de informação e erro de resposta. Em
-particular, comparar diretamente uma verossimilhança de coeficientes
-Fourier a uma gaussiana de correlações modifica também a distribuição
-assumida; foi acrescentado um controle com os mesmos estimadores e a
-mesma família de verossimilhança antes e depois da compressão. A busca
-não estabelece prioridade absoluta. As campanhas concluídas identificam falhas de calibração em aproximações específicas e perda de informação no controle gaussiano. Não estabelecem equivalência universal da resposta congelada, detectabilidade escalar observacional ou um novo limite de massa. As decisões numericamente indeterminadas são preservadas.
+Esse desenho experimental preenche uma \textbf{lacuna metodológica essencial} na
+literatura de ondas gravitacionais. Embora estudos antecedentes tenham abordado
+previsões multifrequência \autocite{han2026} ou discutido a não-gaussianidade de
+fundos estocásticos \autocite{franciolini2025}, as análises observacionais aplicadas
+à gravidade dispersiva rotineiramente combinam essas três operações sem isolar a
+origem de eventuais vieses ou perdas de sensibilidade. A contribuição original
+desta dissertação consiste na concepção de um arcabouço diagnóstico pareado com
+um controle gaussiano exato ($G$), permitindo quantificar matematicamente a perda
+líquida de informação, auditar a calibração de verossimilhanças por SBC com
+tratamento rigoroso de incertezas numéricas e mapear os limites operacionais de
+validade das aproximações em frequência.
 
 \section{Objetivos e critérios de avaliação}
 
@@ -231,7 +241,7 @@ do fundo ou uma solução do mecanismo de Vainshtein. Essa delimitação
 permite testar a inferência sem apresentar um modelo fenomenológico de
 amplitudes como previsão universal de gravidade massiva.
 
-A contribuição principal foi construída com simulações e benchmarks numéricos. A análise de produtos públicos identificou dados de temporização, mas sua análise exigiria um adaptador validado de amostragem, timing e ruído. Por isso, a aplicação desenvolvida utiliza posições celestes reais em uma população simulada, mantendo explícita a distinção entre metadados de catálogo e observações analisadas \autocite{nanogravdata,enterprise}. Informação espectral ausente em produtos comprimidos não é tratada como se tivesse sido observada.
+A estratégia de investigação baseia-se em simulações sintéticas de alta fidelidade e benchmarks numéricos rigorosamente controlados, incorporando as coordenadas celestes reais de pulsares do catálogo público MeerKAT. Esse desenho deliberado garante total controle sobre a verdade injetada, permitindo isolar causalmente os efeitos estatísticos e cinemáticos sem as ambiguidades de modelos empíricos de ruído ou amostragem temporal irregular. Paralelamente, o trabalho investiga os fundamentos da transição para dados reais de temporização (TOAs), demonstrando formalmente no Capítulo~\ref{cap:c11-parcial} como a matriz de ajuste de timing induz correlações entre frequências e pseudocovariância, estabelecendo assim os pré-requisitos exatos para a transição observacional.
 
 \section{Organização da dissertação}
 

@@ -1,14 +1,69 @@
 \chapter{Conclusões}
 \label{chap:conclusoes}
 
-A pesquisa mostra que aproximação probabilística, compressão em frequência e substituição da resposta dispersiva afetam aspectos distintos da inferência da massa do gráviton. A comparação entre coeficientes Fourier, estimadores quadráticos e controles gaussianos permite identificar essas contribuições em experimentos pareados.
+Esta dissertação investigou sistematicamente a cadeia de inferência estatística da massa do gráviton e de modos de polarização em redes de temporização de pulsares (PTAs). A pesquisa partiu da formulação linearizada de ondas gravitacionais massivas introduzida no trabalho de graduação pioneiro de Wayne de Paula no Instituto Tecnológico de Aeronáutica em 2003 \autocite{tg2003,depaula2004}, expandindo aquele núcleo histórico para a moderna teoria de campo de Fierz--Pauli, integrando a resposta dispersiva completa com termos de pulsar e desenvolvendo um arcabouço computacional de inferência Bayesiana validado em larga escala, com configurações geométricas extraídas do catálogo público MeerKAT.
 
-O primeiro resultado central é a insuficiência dos dois primeiros momentos para descrever, por uma normal, a distribuição dos estimadores físicos nos cenários estudados. A campanha tensorial apresentou dez rejeições de calibração mantidas sob a incerteza numérica considerada. Isso torna a adequação da verossimilhança uma questão física e estatística anterior à escolha de uma frequência de referência. Nos controles gaussianos corretamente especificados, a compressão reduziu a informação média sobre a massa em $0,06211\pm0,00477$ e $0,10631\pm0,00695$ nat nas duas configurações da população ampliada.
+\section{Síntese metodológica e desenho experimental}
 
-O segundo resultado é a distinção entre um limite superior e uma medida informativa. Com priori uniforme em $u\in[0,1]$ e verossimilhança constante, $Q_{0,95}(u)=0,95$ e $D_{\rm KL}=0$. O limite correspondente, $m_gc^2\leq0,95h_{\mathrm P}/T$, provém inteiramente do suporte. Comparar priori e posterior, quantificar o ganho de informação e verificar a sensibilidade à priori são, portanto, componentes essenciais da interpretação de limites de massa em PTAs.
+O objetivo central foi elucidar como as decisões metodológicas adotadas na análise de PTAs — muitas vezes combinadas simultaneamente na literatura — afetam a recuperação de parâmetros físicos fundamentais. Para isso, concebeu-se um experimento pareado inédito que desacopla três operações críticas:
+\begin{enumerate}
+  \item A aproximação da distribuição conjunta dos estimadores quadráticos físicos por uma lei normal;
+  \item A compressão dos produtos de correlação por médias sobre canais de frequência;
+  \item A substituição da resposta física dispersiva dependente da frequência por templates calculados em uma frequência de referência única ($f_{\rm ref} = 1/T$).
+\end{enumerate}
 
-A reprodução do TG estabeleceu as convenções de curvatura, unidades e vínculos que conectam a propagação massiva à resposta de temporização. A extensão de Fierz--Pauli preservou uma única amplitude de helicidade zero com deformações transversal e longitudinal vinculadas. No limiar, a proporcionalidade $\Gamma_0=\Gamma_T/2$ produz uma degenerescência angular entre as potências escalar e tensorial; sua separação depende de informação além da forma angular nesse limite, como a evolução espectral fora dele.
+O desenvolvimento do controle gaussiano exato ($G$) constituiu a chave analítica dessa metodologia: ao compartilhar rigorosamente os mesmos dois primeiros momentos ($\mu$ e $\Sigma$) dos estimadores físicos, mas sob uma especificação estritamente normal, o controle $G$ permitiu isolar com precisão matemática a perda de informação decorrente da compressão, separando-a da não-gaussianidade intrínseca dos dados físicos.
 
-Os contrastes de frequência com marginalização dos parâmetros auxiliares permaneceram inconclusivos na escala de 0,01 da largura da priori. A redução a uma inferência condicional de massa, em 50 realizações com ruído fixado, permitiu resolver a sensibilidade numérica e encontrar pequenos deslocamentos médios de $Q_{95}(u)$: os quatro intervalos das médias ficaram dentro de $[-0{,}01;0{,}01]$. A comparação identifica uma situação em que a aproximação é pouco influente nessa estatística e concentra a questão restante no papel da marginalização.
+\section{Principais descobertas e contribuições científicas}
 
-O alcance atual é o de simulações com geometria controlada e uma extensão com posições reais de catálogo. O experimento de ajuste de timing mostrou que a projeção dos parâmetros de rotação e dos termos anuais induz correlações entre frequências e pseudocovariância, mesmo com ruído gaussiano. Sua incorporação à inferência conjunta de massa e ruído constitui o passo seguinte para aplicações observacionais. Os resultados fornecem critérios concretos para essa passagem: testar a distribuição dos estimadores, separar perda de informação de erro de resposta e distinguir restrições impostas pelos dados das induzidas pela priori.
+As campanhas de simulação, calibração estatística e análise funcional conduzidas ao longo do trabalho estabelecem conclusões definitivas:
+
+\begin{enumerate}
+  \item \textbf{Insuficiência da aproximação normal para estimadores físicos:} 
+  Demonstrou-se formalmente que estimadores com média e covariância corretas não garantem uma verossimilhança estatisticamente válida. Nos testes de calibração baseada em simulação (SBC) com propagação rigorosa de incertezas numéricas por intervalos, a verossimilhança normal aplicada a estatísticas quadráticas físicas (A/CN) apresentou rejeição persistente de calibração sob correção de Holm-Bonferroni ($p \le 0{,}004956$ em P12K4). Essa falha reflete a assimetria e as caudas pesadas de formas quadráticas complexas, gerando subcobertura expressiva nas caudas (e.g., cobertura nominal de 90\% caindo para 62,6\% no parâmetro de ruído branco $\log_{10}\mathrm{EFAC}$). Este resultado comprova que a modelagem probabilística de PTAs pode falhar antes de qualquer simplificação cinemática de resposta.
+
+  \item \textbf{Quantificação rigorosa do custo informacional da compressão:} 
+  Por meio do controle gaussiano pareado, mediu-se pela primeira vez o custo informacional líquido da compressão espectral em PTAs. A compressão em frequência provocou uma redução média de divergência de Kullback--Leibler entre posterior e priori de $0{,}06211 \pm 0{,}00477$ nat na configuração P12K4 e de $0{,}10631 \pm 0{,}00695$ nat na configuração ampliada P16K8. Esses valores confirmam numericamente o teorema do processamento de dados e estabelecem que a perda de informação espectral degrada mensuravelmente a capacidade de aprendizado sobre a massa do gráviton.
+
+  \item \textbf{Sensibilidade e domínio de validade da resposta congelada:} 
+  No estudo condicional com parâmetros de ruído fixados (50 realizações e 200 contrastes na geometria P16K8), os deslocamentos médios no limite superior $Q_{0{,}95}(u)$ induzidos pelas respostas congeladas ($C_\beta$ e $C_{\rm full}$) permaneceram estritamente contidos no intervalo $[-0{,}0044; 0{,}0041]$, com raios de sensibilidade individual inferiores a $0{,}01$. Longe de indicar equivalência trivial, esse resultado evidencia um mecanismo fundamental: a compressão espectral prévia atua como um gargalo informacional que atenua a sensibilidade dos dados aos detalhes da evolução dispersiva com a frequência, tornando a inferência quase invariante à escolha de $f_{\rm ref}$ no regime testado.
+
+  \item \textbf{Desmistificação de limites superiores conduzidos pela priori:} 
+  Provou-se analiticamente que sob priori uniforme na variável adimensional $u = f_g T \in [0,1]$, uma verossimilhança não-informativa constante conduz deterministicamente ao quantil posterior $Q_{0{,}95}(u) = 0{,}95$, correspondendo à cota física $m_g c^2 \le 0{,}95 h_{\mathrm P}/T$ com ganho de informação identicamente nulo ($D_{\rm KL} = 0$). Este achado estabelece um alerta metodológico essencial para a comunidade internacional: limites superiores próximos do inverso da linha de base observacional decorrem frequentemente do volume e do corte do espaço de parâmetros a priori, e não da sensibilidade empírica dos dados.
+
+  \item \textbf{Vínculo físico de Fierz--Pauli e degenerescência no limiar:} 
+  A formulação relativística do modo de helicidade zero demonstrou que as deformações transversal escalar e longitudinal estão rigidamente acopladas pela relação covariante $p_l = -\chi p_b$, pertencendo a uma única amplitude física $h_0$. No limiar cinemático de propagação ($\beta \to 0$), derivou-se a relação exata $\Gamma_0 = \Gamma_T/2$, comprovando que as potências escalar e tensorial tornam-se angulamente degeneradas ($S_T + S_0/2$). Essa degenerescência impede que buscas observacionais baseadas unicamente na distribuição angular de correlações discriminem modos escalares nas proximidades do corte de frequência.
+\end{enumerate}
+
+\section{Diretrizes para a prática observacional de PTAs}
+
+Com base nas conclusões obtidas, propõem-se quatro diretrizes práticas para os consórcios internacionais de temporização de pulsares (NANOGrav, EPTA, PPTA e IPTA):
+\begin{itemize}
+  \item \textbf{Auditoria mandatória de calibração (SBC):} A adoção de verossimilhanças gaussianas para produtos de correlação deve ser formalmente calibrada no regime de sinal e ruído específico de cada conjunto observacional, garantindo que intervalos de credibilidade reportados possuam cobertura estatística fidedigna.
+  \item \textbf{Apresentação conjunta de métricas informacionais:} Toda publicação de limites superiores para a massa do gráviton deve reportar obrigatoriamente a divergência de Kullback--Leibler marginal da massa ($D_{\rm KL}$) e curvas de sensibilidade a medidas de priori alternativas (e.g., uniforme em velocidade, uniforme em massa e logarítmica), atestando o efetivo aprendizado empírico trazido pelas observações.
+  \item \textbf{Preservação da estrutura de covariância na compressão:} A compressão em frequência não deve negligenciar o acoplamento entre canais de frequência induzido pela geometria dos pulsares e pelas correlações de ruído, evitando aproximações diagonais que possam distorcer a significância estatística.
+  \item \textbf{Estratégias espectrais para modos não-einsteinianos:} Buscas por polarizações alternativas devem priorizar estimadores multifrequência que amostrem a resposta longe do limiar de propagação ($\beta \gg 0$), onde a dependência espectral é capaz de quebrar a degenerescência angular $\Gamma_0 = \Gamma_T/2$.
+\end{itemize}
+
+\section{Perspectivas e trabalhos futuros}
+
+O arcabouço desenvolvido nesta dissertação estabelece alicerces sólidos para diversas linhas promissoras de investigação futura:
+
+\begin{enumerate}
+  \item \textbf{Extensão para resíduos observacionais com matriz de projeção de timing:} 
+  Conforme demonstrado no Capítulo~\ref{cap:c11-parcial}, o ajuste dos parâmetros de rotação e astrométricos de pulsares via matriz projetora $G^{\mathsf T}M = 0$ introduz quebra da independência espectral e pseudocovariância significativa ($D_{\rm KL} \approx 11{,}22$ nat no caso sintético analisado). O desdobramento natural imediato consiste em aplicar o protocolo de controle pareado diretamente sobre resíduos de temporização (TOAs) reais de colaborações como o MeerKAT PTA e o IPTA DR2, modelando explicitamente a matriz de covariância pós-ajuste.
+
+  \item \textbf{Desenvolvimento de verossimilhanças generalizadas de ordem superior:} 
+  A quebra comprovada da aproximação normal motiva a pesquisa e formulação de densidades de probabilidade analíticas mais acuradas para estimadores quadráticos de correlação. O emprego de expansões de Edgeworth truncadas, distribuições gama generalizadas ou aproximações baseadas em cumulantes de ordem superior representa um caminho fértil para restaurar a calibração probabilística sem incorrer no custo computacional de avaliar densidades conjuntas completas de TOAs.
+
+  \item \textbf{Quebra da degenerescência escalar com dados de banda ultra-larga do SKA:} 
+  Com a entrada em operação do Square Kilometre Array (SKA) e a maturidade de arranjos de alta sensibilidade, a disponibilidade de dezenas de canais de frequência permitirá estender o estudo de Fierz--Pauli para regimes de banda ultra-larga. A exploração da dependência funcional contínua da resposta em frequência permitirá quebrar a degenerescência cinemática de limiar, possibilitando restrições observacionais sem precedentes sobre teorias massivas de spin dois e modos escalares vinculados.
+
+  \item \textbf{Inferência Bayesiana baseada em simulação (SBI / Neural Posterior Estimation):} 
+  A maturidade dos geradores físicos desenvolvidos neste trabalho viabiliza o uso de técnicas modernas de inferência baseada em simulação (\emph{Simulation-Based Inference} - SBI), tais como fluxos normalizadores neurais (\emph{Neural Posterior Estimation}). Essas abordagens permitem aprender a densidade posterior diretamente a partir das realizações simuladas do gerador complexo completo, contornando tanto a compressão manual de dados quanto a necessidade de derivar uma forma analítica fechada para a verossimilhança de estimadores quadráticos.
+
+  \item \textbf{Modelagem conjunta de dispersão gravitacional e efeitos de meio interestelar:} 
+  Em dados observacionais de baixa frequência, flutuações na medida de dispersão (DM) induzidas pelo plasma interestelar introduzem atrasos cromáticos que compartilham dependência em frequência com o sinal gravitacional. A incorporação sistemática de processos gaussianos para ruído de DM em conjunto com a resposta dispersiva de PTA representa um passo essencial para desacoplar de forma robusta a física de propagação gravitacional da astrofísica do meio interestelar.
+\end{enumerate}
+
+Em conclusão, esta dissertação demonstra que o rigor no tratamento das aproximações probabilísticas e a preservação da estrutura física das equações de campo são condições indispensáveis para que as redes de temporização de pulsares alcancem seu pleno potencial como laboratórios de testes de precisão da gravitação.

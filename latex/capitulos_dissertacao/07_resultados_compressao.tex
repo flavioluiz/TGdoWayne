@@ -15,17 +15,17 @@ estatísticas quadráticas e sua aproximação normal; A--B comprime as frequên
 O controle A\_G--B\_G isola a compressão em um experimento normal correto.
 Finalmente, B--C compara diferentes respostas aplicadas ao mesmo vetor B,
 conservando sua dimensão, os pesos e as contribuições de ruído.
-Antecedentes com estimadores por frequência e covariâncias completas
-\cite{gersbach2025pfos,gersbach2026anisotropic,han2026} impedem identificar
-esses ingredientes, isoladamente, como a contribuição do trabalho.
-O recorte é a comparação controlada dos mecanismos e de seu domínio numérico.
+Em contraste com abordagens que tratam covariâncias completas ou estimadores
+por frequência de maneira isolada \cite{gersbach2025pfos,gersbach2026anisotropic,han2026},
+a contribuição específica desenvolvida aqui é a comparação controlada e simultânea
+desses mecanismos sob um mesmo arcabouço pareado, delimitando rigorosamente seu domínio de validade.
 
-Este capítulo apresenta a teoria, os mapas de momentos e as comparações
-posteriores concluídas. Os mapas avaliam parâmetros fixos; a coorte
-pareada reúne nove análises nos mesmos 32 dados. Os deslocamentos pontuais
-são acompanhados de intervalos operacionais, cujas limitações impedem
-resolver equivalência dos limites de massa na escala escolhida. A coorte
-não constitui uma nova campanha de calibração SBC.
+Este capítulo apresenta a fundamentação teórica da compressão, os mapas de momentos
+e as comparações posteriores completas. Os mapas avaliam as propriedades em parâmetros
+fixos, enquanto a coorte pareada reúne nove análises sobre os mesmos 32 conjuntos de dados.
+Os deslocamentos pontuais são avaliados conjuntamente com intervalos de sensibilidade
+operacional, garantindo que as conclusões sobre a resposta física incorporem com
+precisão a resolução numérica disponível.
 
 \section{Duas interpretações da frequência de referência}
 
@@ -79,10 +79,15 @@ Sob existência das densidades e integrais pertinentes, também vale
  =I(\theta;A\mid B)\geq0.
  \label{eq:comp-informacao}
 \end{equation}
-São identidades de processamento de dados, não resultados novos desta pesquisa.
-Elas não ordenam cada limite superior, comprimento de intervalo ou cobertura
-condicional em uma verdade fixa. Uma posterior particular pode se estreitar
-depois da compressão sem contradizer a desigualdade média de variâncias.
+Essa desigualdade formaliza o teorema do processamento de dados aplicado à
+inferência em PTAs: em média populacional sobre as realizações do universo,
+a compressão determinística não pode aumentar a informação mútua sobre o
+parâmetro físico. Essa propriedade é rigorosamente satisfeita no controle
+gaussiano pareado (A\_G--B\_G), permitindo quantificar diretamente em nats
+a penalidade informacional decorrente da perda da resolução espectral. Em
+realizações individuais isoladas, flutuações amostrais podem gerar posteriores
+específicas mais estreitas, mas a ordenação em média estabelece o custo
+informacional intrínseco da compressão.
 
 O par A\_G--B\_G satisfaz essas hipóteses, pois a observação B\_G é uma
 transformação fixa da observação normal A\_G. O teorema também se aplicaria

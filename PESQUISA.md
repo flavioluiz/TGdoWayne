@@ -30,7 +30,7 @@ Relatório do estudo de caso para discussão na pós-graduação do ITA sobre o 
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**C13 concluído — dissertação consolidada**
+**v1.1.0 — Revisão Gemini: narrativa afirmativa, conclusões expandidas e direções futuras**
 
 **Última etapa concluída:** C13 — Auditoria final e dissertação consolidada.
 
@@ -40,10 +40,11 @@ Relatório do estudo de caso para discussão na pós-graduação do ITA sobre o 
 
 **Atualização:** 2026-09-13.
 
-**[Baixar o PDF mais recente — v1.0.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v1.0.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) · [PDF versionado no repositório](output/pdf/v1.0.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v1.1.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v1.1.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.1.0) · [PDF versionado no repositório](output/pdf/v1.1.0/dissertacao.pdf)
 
 ### O que já foi executado
 
+- v1.1.0: revisão editorial e científica afirmativa por Gemini. Reformulação da introdução, resumo e abstract; expansão abrangente do Capítulo 12 (Conclusões) com síntese dos resultados, diretrizes para consórcios de PTAs e cinco direções de trabalhos futuros; revisão do artigo (9 páginas) com abstract assertivo e conclusões ampliadas.
 - C13: consolidação acadêmica, template ITA, revisão teórica e estatística, figuras legíveis e inspeção das 167 páginas. Reprodução tensorial integral: 2.500 alvos, 20.000 réplicas e 175.000 arrays iguais; nova síntese com 155 testes e 15 contrastes idênticos. Reprodução escalar e de robustez concluída, com limitações de ambiente e insumos documentadas.
 - C12: discussão e conclusões integradas, resumo/introdução/revisão atualizados e manuscrito em inglês com figura reproduzível. Auditoria de 23 alegações; corrigida a descrição de C_beta/C_full, preservando os resultados executados.
 - C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.

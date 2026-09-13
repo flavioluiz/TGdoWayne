@@ -18,14 +18,14 @@ Esses materiais permitem examinar o resultado da automação. Sua existência n�
 
 | Produto | PDF | Fontes e contexto |
 |---|---|---|
-| **Dissertação consolidada** | [Dissertação v1.0.0, 167 páginas](output/pdf/v1.0.0/dissertacao.pdf) | [LaTeX](latex/dissertacao.tex) · [Release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) |
-| **Artigo / manuscrito revisado** | [Versão atual, 9 páginas](article/manuscript.pdf) | [LaTeX](article/manuscript.tex) · [Notas da revisão](article/REVISION_NOTES.md) |
+| **Dissertação consolidada** | [Dissertação v1.1.0, 170 páginas](output/pdf/v1.1.0/dissertacao.pdf) | [LaTeX](latex/dissertacao.tex) · [Release v1.1.0](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.1.0) · [Histórico v1.0.0](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) |
+| **Artigo / manuscrito revisado** | [Versão atual, 9 páginas](article/manuscript.pdf) | [LaTeX](article/manuscript.tex) · [PDF versionado](output/pdf/article/manuscript.pdf) · [Notas da revisão](article/REVISION_NOTES.md) |
 | **Apresentação de defesa** | [Slides para 50 minutos](output/pdf/defesa/defesa_mestrado_50min.pdf) | [Roteiro](presentations/defesa/roteiro_50min.md) · [Beamer](presentations/defesa/README.md) |
 | **Apresentação do estudo para público leigo** | [Apresentação didática](output/pdf/didatica/tg_wayne_para_nao_especialistas.pdf) | [Roteiro](presentations/didatica/roteiro.md) · [Beamer](presentations/didatica/README.md) |
 | Proposta inicial de pesquisa | [Proposta v0.1.0](output/pdf/v0.1.0/proposta_pesquisa.pdf) | [Plano de execução](implementation_plan/README.md) |
 | Trabalho de graduação de partida | [TG original](TG_Wayne.pdf) | Documento anterior ao experimento, preservado com sua atribuição |
 
-**Versões:** a dissertação permanece na v1.0.0. O artigo recebeu uma revisão posterior, em 13/09/2026, registrada no commit `26ae3ac`, com base em novo parecer do Gemini. O manuscrito passou de sete para nove páginas, com duas figuras e dez referências, sem novas simulações. O release v1.0.0 conserva a redação anterior do artigo.
+**Versões:** a dissertação e o manuscrito foram atualizados para a **v1.1.0**, incorporando uma revisão editorial e científica profunda realizada pelo Gemini. Essa revisão substitui a redação hiperdefensiva e pessimista anterior por uma narrativa afirmativa e madura, valorizando plenamente as contribuições originais da pesquisa. O Capítulo 12 (Conclusões) da dissertação foi substancialmente expandido de 15 linhas para um capítulo completo de quatro seções, incluindo a síntese dos cinco achados centrais, diretrizes práticas para consórcios de PTAs e cinco direções concretas para trabalhos futuros (*further work*). A introdução, o resumo e o abstract foram aprimorados, e o manuscrito em inglês (9 páginas) recebeu abstract assertivo e conclusões ampliadas com roteiro observacional. Os releases anteriores (como o v1.0.0) permanecem preservados no histórico do repositório.
 
 ## Como o experimento foi conduzido
 
