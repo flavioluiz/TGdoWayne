@@ -18,7 +18,7 @@
 \setbeamertemplate{footline}{}
 \setbeameroption{hide notes}
 \graphicspath{{presentations/experimento/assets/}}
-\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA},colorlinks=true,urlcolor=Green}
+\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 4},colorlinks=true,urlcolor=Green}
 \setbeamercolor{normal text}{fg=Ink,bg=Paper}
 \newenvironment{Canvas}{\begin{tikzpicture}[remember picture,overlay]\coordinate (O) at (current page.north west);}{\end{tikzpicture}}
 % Texto em posições relativas à página, em centímetros. O texto continua editável.
@@ -40,8 +40,8 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Bold{.9}{.78}{14}{9}{Mist}{PESQUISA ACADÊMICA COM AGENTES DE IA}
-\Display{.9}{2.40}{14.2}{30}{white}{Uma dissertação pronta.}
-\Display{.9}{3.70}{14.2}{34}{Mist}{Um pesquisador\\formado?}
+\Display{.9}{2.70}{14.2}{28}{white}{Uma dissertação pronta.}
+\Display{.9}{4.03}{14.2}{28}{Mist}{Um pesquisador formado?}
 \Body{.94}{6.91}{14}{12}{white}{Um experimento de pesquisa delegada e revisão entre modelos}
 \Bold{.94}{8.05}{5}{11}{white}{Flavio Ribeiro}
 \Body{8.3}{8.10}{6.8}{9}{Mist}{Pós-graduação no ITA / 13 setembro 2026}
@@ -54,8 +54,8 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{A PERGUNTA}{O documento e a formação}
-\Display{.9}{2.70}{14.2}{30}{Ink}{Um bom documento\\basta para demonstrar\\domínio individual?}
-\Body{.94}{6.65}{14}{14}{Green}{O agente produziu o texto.\\O domínio de quem delegou ainda precisa ser demonstrado.}
+\Display{.9}{2.70}{14.2}{28}{Ink}{Texto e código não atestam,\\sozinhos, o domínio\\do aluno.}
+\Body{.94}{6.65}{14}{15}{Green}{A IA entregou ambos. O que a pós-graduação\\precisa avaliar agora?}
 \Page
 \end{Canvas}
 \SpeakerNote{2}
@@ -96,20 +96,16 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{O EXPERIMENTO}{O que o agente entregou}
-\Display{.94}{2.50}{6.45}{38}{Green}{26.069}
-\Display{8.2}{2.50}{6.9}{38}{Green}{45.528}
-\Bold{.94}{4.02}{6.45}{13}{Ink}{linhas de código e testes}
-\Bold{8.2}{4.02}{6.9}{13}{Ink}{análises principais}
-\Display{.94}{5.12}{3.3}{27}{Ink}{167}
-\Display{4.65}{5.12}{3.1}{27}{Ink}{9}
-\Display{8.2}{5.12}{3.2}{27}{Ink}{31 h}
-\Display{11.8}{5.20}{3.35}{23}{Ink}{US\$ 50}
-\Body{.94}{6.27}{3.4}{10.5}{Muted}{páginas de\\dissertação}
-\Body{4.65}{6.27}{3.2}{10.5}{Muted}{páginas do\\artigo revisado}
-\Body{8.2}{6.27}{3.3}{10.5}{Muted}{contador do goal\\55 h no calendário}
-\Body{11.8}{6.27}{3.35}{10.5}{Muted}{rateio estimado\\da assinatura}
-\Bold{.94}{7.62}{14.1}{10.5}{Green}{API equivalente: cerca de US\$ 1.300 Standard. Detalhes no apoio.}
-\Body{.94}{8.12}{12.8}{8.5}{Muted}{Linhas incluem comentários e vazios. As análises compartilham dados.}
+\Display{.94}{2.40}{6.5}{40}{Green}{167}
+\Display{8.2}{2.40}{6.9}{40}{Green}{9}
+\Bold{.94}{3.93}{6.5}{12}{Ink}{páginas de dissertação}
+\Bold{8.2}{3.93}{6.9}{12}{Ink}{páginas de artigo revisado}
+\Display{.94}{4.92}{6.5}{36}{Green}{31 horas}
+\Display{8.2}{4.92}{6.9}{36}{Green}{US\$ 50}
+\Body{.94}{6.20}{6.5}{11}{Muted}{Contador do goal\\55 h no calendário}
+\Body{8.2}{6.38}{6.9}{11}{Muted}{Rateio estimado da assinatura}
+\Bold{.94}{7.25}{14.1}{12}{Ink}{26.069 linhas de código e testes / 45.528 análises principais}
+\Body{.94}{7.89}{13}{9.5}{Green}{API equivalente: cerca de US\$ 1.300 Standard. Definições e custos no apoio.}
 \Page
 \end{Canvas}
 \SpeakerNote{5}
@@ -118,13 +114,14 @@
 % 06 — Dois episódios de correção, sem estatística especializada.
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{O EXPERIMENTO}{Os testes mudaram as conclusões}
-\Bold{.94}{2.52}{6.4}{9}{Muted}{O AGENTE IDENTIFICOU O PROBLEMA}
-\Bold{8.60}{2.52}{6.5}{9}{Muted}{REVIU O TEXTO E O ESCOPO}
-\Display{.94}{3.47}{6.45}{18}{Rust}{A margem de erro\\falhou no teste}
-\Body{8.60}{3.51}{6.45}{14}{Ink}{A conclusão passou a\\reconhecer a falha\\da aproximação.}
-\Display{.94}{5.68}{6.45}{20}{Rust}{A pergunta ampla\\ficou inconclusiva}
-\Body{8.60}{5.74}{6.45}{14}{Ink}{Um teste adicional\\respondeu a uma\\pergunta mais restrita.}
+\Header{O EXPERIMENTO}{A IA encontrou uma falha e reviu a tese}
+\Bold{.94}{2.52}{6.4}{10}{Muted}{PROBLEMA}
+\Bold{8.60}{2.52}{6.5}{10}{Muted}{AÇÃO DO AGENTE}
+\Display{.94}{3.43}{6.45}{19}{Rust}{Falha de calibração}
+\Body{.94}{4.59}{6.45}{14}{Ink}{A faixa prometia 90\%.\\No teste, cobriu 62,6\%.}
+\Body{.94}{6.47}{6.45}{11}{Muted}{500 casos simulados.\\Um parâmetro de ruído.}
+\Display{8.6}{3.43}{6.5}{17}{Ink}{Reconheceu o limite.\\Reduziu a alegação.\\Reescreveu o texto.}
+\Body{8.6}{6.47}{6.5}{12}{Green}{A comparação ampla\\permaneceu inconclusiva.}
 \Page
 \end{Canvas}
 \SpeakerNote{6}
@@ -149,10 +146,9 @@
 \setbeamercolor{background canvas}{bg=Paper}
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{IMPLICAÇÕES PARA A PESQUISA}{Qual contribuição merece atenção?}
-\Display{.94}{2.70}{14.1}{29}{Ink}{Variar parâmetros basta\\para justificar outro artigo?}
-\Body{.94}{5.56}{14.1}{17}{Green}{Mais resultados só merecem atenção\\quando acrescentam conhecimento.}
-\Body{.94}{7.45}{14.1}{11.5}{Muted}{Uma contribuição incremental pode valer muito. Repetir sem esclarecer, quanto vale?}
+\Header{PROVOCAÇÃO PARA O CPG}{O fim da pesquisa incremental}
+\Display{.94}{2.70}{14.1}{26}{Ink}{Se variar parâmetros pode ser\\delegado, o que ainda justifica\\outro artigo?}
+\Body{.94}{6.55}{14.1}{16}{Green}{Execução de rotina não basta como contribuição.\\Qual avanço de conhecimento exigiremos?}
 \Page
 \end{Canvas}
 \SpeakerNote{8}
@@ -176,9 +172,9 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{FORMAÇÃO E AVALIAÇÃO}{O que precisamos aprender a fazer?}
-\Bold{.94}{2.53}{14.1}{10}{Muted}{O AGENTE AMPLIA A EXECUÇÃO}
-\Display{.94}{3.35}{14.1}{27}{Ink}{Prever falhas.\\Saber recusar uma resposta\\da máquina.}
-\Body{.94}{7.05}{14.1}{15}{Green}{Que evidência faria você rejeitar este resultado?}
+\Bold{.94}{2.53}{14.1}{11}{Green}{A EXECUÇÃO VIROU COMMODITY.}
+\Display{.94}{3.35}{14.1}{25}{Ink}{Formular perguntas.\\Contestar resultados.\\Saber dizer NÃO à máquina.}
+\Body{.94}{7.05}{14.1}{15}{Green}{A formação precisa tornar essas capacidades observáveis.}
 \Page
 \end{Canvas}
 \SpeakerNote{10}

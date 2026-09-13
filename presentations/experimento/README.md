@@ -1,6 +1,6 @@
 # Apresentação do experimento com Codex
 
-[PDF](../../output/pdf/experimento/experimento_codex.pdf) · [Fonte Beamer / LaTeX](experimento.tex) · [Roteiro de fala e fontes](roteiro.md)
+[PDF — revisão 4](../../output/pdf/experimento/experimento_codex_4.pdf) · [Fonte Beamer / LaTeX](experimento.tex) · [Roteiro de fala e fontes](roteiro.md)
 
 **Uma dissertação pronta. Um pesquisador formado?**
 
@@ -28,7 +28,7 @@ As fontes TeX Gyre Heros e Pagella são carregadas pelos arquivos da distribuiç
 
 Editar `experimento.tex` para alterar o conteúdo e a composição. Editar `timing.json` para atualizar a fala, as fontes ou os tempos. O script de compilação executa `gerar_roteiro.py`, que sincroniza `roteiro.md` e `notas.tex`. As notas ficam ocultas no PDF da audiência.
 
-Os arquivos auxiliares de compilação ficam em `tmp/presentations/experimento/beamer/`. O PDF final é copiado para `output/pdf/experimento/experimento_codex.pdf`.
+Os arquivos auxiliares de compilação ficam em `tmp/presentations/experimento/beamer/`. O PDF final é copiado para `output/pdf/experimento/experimento_codex.pdf` e `output/pdf/experimento/experimento_codex_4.pdf`. Os dois arquivos são idênticos. O nome com a revisão distingue esta entrega das cópias anteriores.
 
 ## Verificação desta entrega
 

@@ -25,7 +25,7 @@ Apresentar o experimento como uma investigação sobre a delegação da pesquisa
 
 00:45–02:45 (120 s)
 
-A tese central é que o produto escrito, sozinho, não basta para demonstrar o domínio individual quando sua produção pode ser amplamente delegada. O documento continua sendo evidência sobre o trabalho científico. O caso não mediu aprendizagem, não avaliou uma turma e não prova que um pesquisador foi formado. Transparência sobre ferramentas importa, mas não substitui avaliar compreensão. Transição: o que exatamente foi delegado neste caso?
+Texto e código, sozinhos, não atestam o domínio individual quando sua produção pode ser delegada. O experimento torna essa distinção concreta: o proponente declarou não dominar o tema e o agente entregou ambos. Isso não significa que documentos sejam inúteis para avaliar a pesquisa, nem que já tenham sido prova suficiente de aprendizagem. A pergunta é o que a pós-graduação passa a exigir da pessoa, além dos produtos. O caso não mediu aprendizagem.
 
 **Fontes:** Relatório, seção 3.
 
@@ -49,15 +49,15 @@ O diagrama resume a ordem predominante, com iterações entre as etapas. O usuá
 
 06:15–08:05 (110 s)
 
-Os números em destaque são 26.069 linhas de código e testes e 45.528 análises principais, na v1.0.0. A contagem inclui comentários e linhas vazias. As análises compartilham dados e não são 45 mil experimentos independentes. Volume não mede produtividade relativa a um pesquisador humano. A dissertação tem 167 páginas e 47 referências. O artigo revisado tem nove páginas e é posterior ao goal. O goal registrou 30h51min26s, arredondados para 31 horas, e 54h56min42s no calendário. Não é tempo de CPU. US$ 50 é o rateio de assinatura estimado pelo proponente, não uma fatura específica do experimento. O equivalente em API Standard é cerca de US$ 1.300, com complementos científicos. Hipóteses e exclusões no apoio. As capas dos produtos estão no último slide de apoio.
+Os quatro destaques são 167 páginas de dissertação, nove páginas de artigo revisado, 31 horas no contador do goal e US$ 50 como rateio de assinatura estimado pelo proponente. O contador foi de 30h51min26s, com 54h56min42s no calendário, e não mede tempo de CPU. O artigo revisado é posterior ao goal. US$ 50 não é uma fatura específica da execução. O equivalente em API Standard é cerca de US$ 1.300, com os complementos científicos, conforme hipóteses e exclusões no apoio. As 26.069 linhas incluem comentários e vazios, e as 45.528 análises principais compartilham dados. Esses totais não medem qualidade nem equivalência a anos de trabalho humano. As capas aparecem no apoio.
 
 **Fontes:** PDFs da dissertação e do manuscrito; relatório, apêndices C a E.
 
-### 6. Os testes mudaram as conclusões
+### 6. A IA encontrou uma falha e reviu a tese
 
 08:05–10:25 (140 s)
 
-Em simulações, conhece-se a resposta usada para gerar os dados. O agente identificou que uma faixa de incerteza para um parâmetro continha essa resposta menos vezes do que prometia. Isso limita a aproximação naquele teste, sem invalidar todo o método. A comparação ampla não atingiu a precisão exigida. Depois de crítica externa por modelo, um complemento respondeu a uma questão menor, com condições fixadas. O agente explicitou esses limites e reescreveu afirmações. Não equiparar esse comportamento, sem avaliação independente, ao rigor geral de um pesquisador experiente. A escolha de dados simulados era permitida pelo plano: faltava um adaptador local validado para usar as séries reais, não dados públicos no mundo. A frase sobre o teste falhar resume uma cobertura de incerteza abaixo do valor anunciado. Não significa ausência total de acertos nem ausência de erros não detectados.
+O exemplo concreto é uma falha de calibração: para um parâmetro de ruído em 500 casos simulados, a faixa anunciada como 90% continha a resposta conhecida em 313 casos, ou 62,6%. Não se trata de intervalos fraudulentos nem de falha de todos os resultados do estudo. O agente registrou a limitação da aproximação. Em outros momentos, reconheceu que a comparação ampla continuava inconclusiva, respondeu a uma questão mais restrita e conteve alegações de originalidade. O slide reúne esses movimentos de revisão, sem atribuir todos à mesma causa. Não afirmar ausência geral de alucinações ou fabricação sem uma auditoria independente de todo o trabalho.
 
 **Fontes:** Relatório, seção 2 e apêndice B.1.
 
@@ -69,11 +69,11 @@ O Gemini elaborou dois pareceres, encaminhados pelo usuário. No primeiro ciclo,
 
 **Fontes:** Relatório, seção 2 e apêndice A.2; notas de revisão do artigo.
 
-### 8. Qual contribuição merece atenção?
+### 8. O fim da pesquisa incremental
 
 12:45–15:05 (140 s)
 
-A automação pode aumentar a oferta de manuscritos e o esforço necessário para selecionar, compreender e verificar resultados. Essa é uma hipótese de organização da ciência, não uma consequência medida neste caso. Evitar anunciar colapso dos periódicos ou dizer que toda pesquisa incremental perde valor. Uma extensão pequena pode resolver uma incerteza relevante. No experimento, documentar a falha de uma aproximação e uma pergunta ainda inconclusiva são resultados que merecem exame. A publicação não certificaria, sozinha, a formação individual. Abrir uma breve discussão sobre qual diferença entre antes e depois de um estudo justifica atenção dos pares. A pergunta sobre variar parâmetros provoca uma discussão de relevância: uma variação pode revelar um regime novo ou resolver uma dúvida importante. O critério é a informação acrescentada, sem decretar o fim da pesquisa incremental.
+O título é uma provocação normativa para o CPG, não uma conclusão empírica de que a pesquisa incremental acabou. Defender que execução rotineira ou pequenas variações sem informação nova não bastam para justificar artigo ou título. Uma contribuição incremental pode revelar um regime novo, eliminar uma dúvida importante ou reproduzir criticamente um resultado. O debate é qual avanço de conhecimento exigir quando parte da execução pode ser delegada. O caso não prova colapso dos periódicos nem uma taxa de dez artigos por semana. Nenhuma fala privada ou pessoa é citada.
 
 **Fontes:** Relatório, seção 4.
 
@@ -89,7 +89,7 @@ Este caso foi computacional e não comparou sua produtividade à de um laborató
 
 17:05–19:25 (140 s)
 
-A escrita, programação e leitura continuam sendo atividades formativas. Automatizar sua execução não torna essas competências dispensáveis. A oportunidade é explorar mais perguntas e investigar variações antes caras. O risco é perder a experiência necessária para reconhecer um erro. Orientação e disciplinas podem separar momentos de aprendizagem individual e produção com assistência ampla. O estudante precisa formular perguntas relevantes, interpretar anomalias e saber quando uma linha deixou de ser promissora. O caso não permite afirmar que a delegação ensina essas capacidades. Propor uma atividade concreta: apresentar uma saída convincente do agente, pedir sinais de falha e solicitar que o estudante diga sob qual evidência a aceitaria ou rejeitaria.
+A expressão sobre execução virar commodity é uma provocação sobre a divisão do trabalho, sem afirmar que toda execução científica ficou fácil ou barata. Discutir como observar a capacidade de formular uma pergunta relevante, contestar uma saída convincente e rejeitar resultados sem evidência. Uma atividade possível é apresentar uma resposta do agente e pedir que o estudante explique quais sinais a enfraquecem e qual teste decidiria sua aceitação. Escrita e programação também são meios de aprendizagem e continuam exigindo domínio. A delegação abre oportunidades, mas o caso não mediu seu efeito sobre a formação.
 
 **Fontes:** Relatório, seções 3 e 4.
 
