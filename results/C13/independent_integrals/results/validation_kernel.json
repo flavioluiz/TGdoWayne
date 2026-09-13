@@ -1,0 +1,404 @@
+{
+  "status": "PASS_same_A_B_G_families_and_conditional_prior",
+  "seconds": 0.5826066250010626,
+  "records": [
+    {
+      "u": 0,
+      "maximum_reconstruction_errors": [
+        3.259629011154175e-09,
+        4.802132025361061e-10,
+        3.637978807091713e-11
+      ],
+      "quadrature_diagnostics": {
+        "A": {
+          "maximum_relative_refinement_error": 1.7907179370851567e-11,
+          "maximum_relative_tail_bound": 4.238356307346909e-18,
+          "maximum_absolute_log_roundoff_proxy": 5.424482429728031e-08,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 23,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "B": {
+          "maximum_relative_refinement_error": 3.91236840002105e-13,
+          "maximum_relative_tail_bound": 4.0309068066563385e-18,
+          "maximum_absolute_log_roundoff_proxy": 1.0921047316989748e-09,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 0,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "combined_quadrature_evaluations_upper_bound": 98304,
+        "prior_measure": "Exact induced ratio prior, conditional uniform t on[low,high]; divided by interval width."
+      },
+      "independent_direct_scale_checks": [
+        {
+          "ratio_index": 0,
+          "maximum_log_integral_error": 4.3939962779404595e-11,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 8.532197171007283e-11,
+          "coarse_reference_error": 2.2737367544323206e-12
+        },
+        {
+          "ratio_index": 7,
+          "maximum_log_integral_error": 2.4158453015843406e-12,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 5.357492227631155e-12,
+          "coarse_reference_error": 1.6342482922482304e-13
+        },
+        {
+          "ratio_index": 15,
+          "maximum_log_integral_error": 1.4267698134062812e-10,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 2.6193447411060333e-10,
+          "coarse_reference_error": 0.001615477395034759
+        }
+      ]
+    },
+    {
+      "u": 0.5,
+      "maximum_reconstruction_errors": [
+        2.7939677238464355e-09,
+        4.3655745685100555e-10,
+        2.4556356947869062e-11
+      ],
+      "quadrature_diagnostics": {
+        "A": {
+          "maximum_relative_refinement_error": 1.850829925460872e-11,
+          "maximum_relative_tail_bound": 4.238661578411518e-18,
+          "maximum_absolute_log_roundoff_proxy": 5.5902656682676855e-08,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 24,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "B": {
+          "maximum_relative_refinement_error": 4.1012671707020066e-13,
+          "maximum_relative_tail_bound": 4.0424860825310075e-18,
+          "maximum_absolute_log_roundoff_proxy": 1.094548798705853e-09,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 0,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "combined_quadrature_evaluations_upper_bound": 98304,
+        "prior_measure": "Exact induced ratio prior, conditional uniform t on[low,high]; divided by interval width."
+      },
+      "independent_direct_scale_checks": [
+        {
+          "ratio_index": 0,
+          "maximum_log_integral_error": 7.781864042044617e-11,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 1.4728129826835357e-10,
+          "coarse_reference_error": 1.139982373388193e-06
+        },
+        {
+          "ratio_index": 7,
+          "maximum_log_integral_error": 2.41229258790554e-12,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 5.325517804521951e-12,
+          "coarse_reference_error": 1.8118839761882555e-13
+        },
+        {
+          "ratio_index": 15,
+          "maximum_log_integral_error": 2.1964297047816217e-10,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 3.8767211663071066e-10,
+          "coarse_reference_error": 0.03036276484726841
+        }
+      ]
+    },
+    {
+      "u": 1,
+      "maximum_reconstruction_errors": [
+        4.6566128730773926e-09,
+        1.3460521586239338e-10,
+        2.3646862246096134e-11
+      ],
+      "quadrature_diagnostics": {
+        "A": {
+          "maximum_relative_refinement_error": 1.3491197565183677e-11,
+          "maximum_relative_tail_bound": 4.2388324183892e-18,
+          "maximum_absolute_log_roundoff_proxy": 5.6871783204398826e-08,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 25,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "B": {
+          "maximum_relative_refinement_error": 1.2003135779560542e-13,
+          "maximum_relative_tail_bound": 4.053864486471484e-18,
+          "maximum_absolute_log_roundoff_proxy": 1.0966392805934286e-09,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 0,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 49152,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 512,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "combined_quadrature_evaluations_upper_bound": 98304,
+        "prior_measure": "Exact induced ratio prior, conditional uniform t on[low,high]; divided by interval width."
+      },
+      "independent_direct_scale_checks": [
+        {
+          "ratio_index": 0,
+          "maximum_log_integral_error": 1.5415935195051134e-10,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 2.83648660115432e-10,
+          "coarse_reference_error": 0.0031919242012463656
+        },
+        {
+          "ratio_index": 7,
+          "maximum_log_integral_error": 2.3732127374387346e-12,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 5.25091081726714e-12,
+          "coarse_reference_error": 1.5631940186722204e-13
+        },
+        {
+          "ratio_index": 15,
+          "maximum_log_integral_error": 3.192326403222978e-10,
+          "reference_orders": [
+            96,
+            192,
+            384,
+            768
+          ],
+          "reference_refinement": 5.609308573184535e-10,
+          "coarse_reference_error": 0.18611232291664237
+        }
+      ]
+    }
+  ],
+  "loglike_cdf_records": [
+    {
+      "t": -0.25,
+      "posterior_cdf": 6.439293542825908e-15,
+      "reference_error": -8.374708526841107e-17,
+      "prior_cdf": 0.08475898813907971,
+      "prior_reference_error": -8.326672684688674e-17
+    },
+    {
+      "t": -0.1,
+      "posterior_cdf": 0.024333801838638536,
+      "reference_error": 1.4363510381087963e-15,
+      "prior_cdf": 0.6006412844574434,
+      "prior_reference_error": 2.220446049250313e-16
+    },
+    {
+      "t": -0.025,
+      "posterior_cdf": 0.617805927545667,
+      "reference_error": 5.10702591327572e-15,
+      "prior_cdf": 0.9137076941588749,
+      "prior_reference_error": 7.771561172376096e-16
+    },
+    {
+      "t": 0.0,
+      "posterior_cdf": 1.0,
+      "reference_error": 0.0,
+      "prior_cdf": 1.0,
+      "prior_reference_error": 0.0
+    },
+    {
+      "t": 0.04,
+      "posterior_cdf": 0.46701467403164354,
+      "reference_error": 6.439293542825908e-15,
+      "prior_cdf": 0.874023300889957,
+      "prior_reference_error": 3.3306690738754696e-16
+    },
+    {
+      "t": 0.1,
+      "posterior_cdf": 0.09246363520995715,
+      "reference_error": 1.1657341758564144e-15,
+      "prior_cdf": 0.7050306458735389,
+      "prior_reference_error": 2.220446049250313e-16
+    },
+    {
+      "t": 0.25,
+      "posterior_cdf": 0.0003282246582976267,
+      "reference_error": -2.4096393283490336e-15,
+      "prior_cdf": 0.3422150132071612,
+      "prior_reference_error": 1.1102230246251565e-15
+    }
+  ],
+  "timings": [
+    {
+      "label": "16 saved datasets",
+      "ratio_points": 8,
+      "coefficient_seconds": 0.0006425829997169785,
+      "marginalized_seconds_including_coefficients": 0.003166041999065783,
+      "shape": [
+        8,
+        64
+      ],
+      "diagnostics": {
+        "A": {
+          "maximum_relative_refinement_error": 1.372906367402625e-11,
+          "maximum_relative_tail_bound": 4.238661578411518e-18,
+          "maximum_absolute_log_roundoff_proxy": 5.5902656682676855e-08,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 14,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 24576,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 256,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "B": {
+          "maximum_relative_refinement_error": 4.1012671707020066e-13,
+          "maximum_relative_tail_bound": 4.0424860825310075e-18,
+          "maximum_absolute_log_roundoff_proxy": 1.0884286020773995e-09,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 0,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 24576,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 256,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "combined_quadrature_evaluations_upper_bound": 49152,
+        "prior_measure": "Exact induced ratio prior, conditional uniform t on[low,high]; divided by interval width."
+      }
+    },
+    {
+      "label": "500 columns by repeating saved data; not500 realizations",
+      "ratio_points": 8,
+      "coefficient_seconds": 0.0006093749980209395,
+      "marginalized_seconds_including_coefficients": 0.04235191600309918,
+      "shape": [
+        8,
+        2000
+      ],
+      "diagnostics": {
+        "A": {
+          "maximum_relative_refinement_error": 1.372906367402625e-11,
+          "maximum_relative_tail_bound": 4.238661578411518e-18,
+          "maximum_absolute_log_roundoff_proxy": 5.5902656682676855e-08,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 442,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 768000,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 1024,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "B": {
+          "maximum_relative_refinement_error": 4.1012671707020066e-13,
+          "maximum_relative_tail_bound": 4.0424860825310075e-18,
+          "maximum_absolute_log_roundoff_proxy": 1.0884286020773995e-09,
+          "roundoff_proxy_exceeds_quadrature_tolerance_count": 0,
+          "roundoff_note": "Magnitude-based conservative proxy, not a rigorous bound; extreme tails require the separately tested floating-point accuracy statement.",
+          "coarse_order": 32,
+          "fine_order": 64,
+          "quadrature_evaluations": 768000,
+          "zero_data_analytic_cases": 0,
+          "tangent_bisection_iterations": 80,
+          "maximum_vectorized_cells": 1024,
+          "conditional_average": true,
+          "integration_variable": "z=10^(-2t), measure dz/(2ln(10) z)",
+          "mass_or_prior_approximation": false
+        },
+        "combined_quadrature_evaluations_upper_bound": 1536000,
+        "prior_measure": "Exact induced ratio prior, conditional uniform t on[low,high]; divided by interval width."
+      }
+    }
+  ],
+  "source_hashes": {
+    "src/pta/simulation.py": "cdb906c5322f3a4b77ae1f2d5f0af3e70569a315cb3f69c096ccc533ac5b59e7",
+    "src/pta/statistics.py": "f94fdecc2e8587255e794fa74c51ff68164f37c722ac692c68733aa2a1a12f86",
+    "configs/calibration/pilot_initial.json": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9",
+    "results/C07/fixtures/pilot_data.npz": "05122aa29322d820e2806b069578cfd7e00b9c68995cdb9f60f24f1d9dc485b8"
+  },
+  "production_executed": false
+}

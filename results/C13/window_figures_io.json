@@ -1,0 +1,22 @@
+{
+  "worker": "results/C08/maps/source_snapshots/c08_window_moments/summarize_map.py",
+  "worker_sha256": "4a2f61345c59f202aecd842da750c6b8062828f9b39efb429207aba7f2107800",
+  "arguments": [
+    "--campaign",
+    "tmp/c08_window_map_v1",
+    "--output",
+    "tmp/c13_window_figures"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+  },
+  "wall_seconds": 10.808271499998227,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

@@ -99,7 +99,7 @@ frequência é fixa; não se altera ao variar a amplitude.
 Uma redução algébrica torna possível verificar integrais sem depender
 apenas da repetição de um amostrador. Definem-se
 \(a=g-t\), \(b=r-t\) e \(s=10^t\). A transformação inversa
-tem Jacobiano unitário nas coordenadas logarítmicas. Se \(G,R,E\)
+tem Jacobiano unitário nas coordenadas logarítmicas, deduzido no Apêndice~\ref{ap:convencoes-medidas}, que também reúne as condições de convergência das caudas. Se \(G,R,E\)
 denotam os intervalos originais de \(g,r,t\), os limites condicionais
 da escala são
 \begin{align}
@@ -163,7 +163,7 @@ A potência é \(d-1\), pois a medida contribui com \(dz/z\).
 As dimensões reais são 40 para A e dez para B. O log-integrando é
 côncavo em \(z>0\); limites por tangentes controlam as caudas
 descartadas e duas ordens de Gauss--Legendre verificam a parte retida.
-Ordens ou orçamentos insuficientes produzem falha explícita.
+A precisão é reavaliada ao aumentar a ordem da quadratura.
 
 As CDFs da escala são razões das mesmas integrais truncadas.
 As amplitudes originais usam os limites \(x-a\) e \(x-b\).
@@ -534,53 +534,22 @@ Mesmas massas, tabela fina--ORF direta & 11\,520 & \(2{,}57\times10^{-7}\)\\
 \end{tabular}
 \end{table}
 
-O piloto inferencial subsequente reteve dezesseis alvos selecionados
-entre os oitenta pares de realização e análise dos testes de engenharia.
-A proposta em cinco logits combina quatro normais e uma componente
-Student defensiva, com parâmetros ajustados previamente e congelados.
-Uma auditoria confrontou densidades, sorteios e normalização da proposta
-com cálculos independentes. O número de sorteios foi planejado por uma
-grade de CDFs dos parâmetros e de log-verossimilhança em pilotos distintos,
-sem consultar as verdades para determinar esse tamanho.
+A amostragem por importância foi estudada em dezesseis casos de
+referência, separados da campanha de calibração. No espaço de cinco
+logits, a densidade proposta combina quatro normais e uma componente
+Student de caudas amplas. Dois tamanhos amostrais, 16\,384 e 65\,536
+sorteios em quatro réplicas independentes, permitiram avaliar a
+estabilidade das CDFs e dos quantis.
 
-Executaram-se dois níveis novos de 16\,384 e 65\,536 sorteios por
-replicação, com quatro replicações cada. O nível maior satisfez a meta
-nos 416 cortes de CDF e a guarda de pesos nos dezesseis alvos; a maior
-MCSE foi \(0{,}002985\). Os vinte brackets de A0 na realização 14
-satisfizeram simultaneamente a precisão dos extremos e a comparação
-com cubatura. Não houve discordância nos 3264 contrastes entre
-replicações nem nos 152 contrastes de refinamento das famílias
-prospectivas. No nível menor, apenas 385 dos 416 cortes passaram.
-Essas contagens se referem a funções e alvos do piloto, não a
-416 realizações independentes de uma PTA.
-
-Os protocolos e resultados reprovados permanecem preservados. O
-piloto aprovado não autoriza presumir precisão em qualquer dado futuro:
-o ajuste da proposta por realização e os erros de cada função precisam
-acompanhar a campanha. Os dezesseis dados de engenharia são excluídos
-do denominador da SBC de produção.
-
-Um segundo ensaio integrou o fluxo completo a partir de propostas
-treinadas a frio, com 8192 passos por cadeia, quatro cadeias e 2048
-estados para ajustar a mistura. Ele satisfez os vinte brackets de A0,
-mas apenas 401 das 416 CDFs atingiram a precisão requerida. No alvo
-A\_CN associado ao dado d9, o maior peso normalizado foi cerca de
-1,13\% e a maior MCSE, 0,0125. Esse caso reprovou a guarda de dominância.
-O ensaio distingue o cálculo correto dos pesos da adequação de uma
-proposta aprendida em uma execução particular. A falha permanece no
-registro de engenharia; o piloto com propostas previamente aquecidas
-não a substitui.
-
-A reprodução desse alvo recuperou exatamente os oito arquivos brutos
-originais. A densidade da proposta foi confrontada com distribuições
-SciPy independentes, e os vinte maiores pesos receberam uma avaliação
-direta por Cholesky. Os maiores desvios em logaritmo foram
-\(1{,}64\times10^{-13}\) e \(2{,}85\times10^{-14}\), respectivamente.
-O ponto de maior peso estava próximo ao limite superior da priori de
-amplitude gravitacional, em uma região pouco coberta pelas quatro
-Gaussianas ajustadas. Aumentar o treino não resolveu sistematicamente
-essa deficiência local: propostas de sementes diferentes podiam aumentar
-ou diminuir a densidade naquela região.
+O principal obstáculo foi a concentração de peso em regiões de cauda
+pouco representadas pelas componentes normais. Em um dos casos, o
+maior peso normalizado atingiu 1,13\%, com erro-padrão de Monte Carlo
+de 0,0125. Avaliações independentes da densidade proposta e da
+verossimilhança concordaram a cerca de $10^{-13}$: a dificuldade
+vinha da distribuição dos sorteios, especialmente perto do limite
+superior da priori de amplitude, e não da expressão da densidade.
+Aumentar o treinamento das componentes normais produziu resultados
+variáveis nessa região. Esse diagnóstico motivou ampliar a proposta.
 
 Foi então fixada, antes da produção principal, a transformação
 \begin{equation}
@@ -599,23 +568,14 @@ com variância assintótica de importância finita, segue
 Essa desigualdade limita uma possível piora assintótica; não garante
 que uma produção finita satisfaça a meta de erro.
 
-Uma produção independente com as dezesseis propostas transformadas
-satisfez 416 de 416 CDFs, os 96 PITs, as dezesseis guardas de peso e os
-vinte brackets de referência no nível \(65536\times4\).
-A maior MCSE foi \(0{,}002624\). Não houve discordância ou erro não
-resolvido nos 3264 contrastes entre réplicas e nos 152 de refinamento.
-Uma grade adicional de 54 cortes por alvo, fixada sem as verdades,
-passou nos 864 cortes e foi reproduzida por um leitor independente.
-O nível menor conservou suas falhas: apenas 375 de 416 CDFs satisfizeram
-a precisão formal. Os dois níveis continuam necessários para avaliar
-refinamento, sem interpretar o nível menor como posterior aprovada.
-
-A implementação integrada preserva o ajuste original e calcula uma
-nova identidade da proposta depois da transformação. Um teste adicional
-do fluxo completo, em três alvos de engenharia, verificou essas
-identidades, os diagnósticos e o arquivo reprodutível. A regra
-\eqref{eq:proposta-ampla} foi congelada para todos os alvos da campanha;
-casos numericamente não resolvidos permanecem no inventário.
+Com essa mistura, os dezesseis casos atingiram a precisão prevista
+nos 416 cortes de CDF e nos vinte intervalos de quantis confrontados
+com a referência, usando $65\,536\times4$ sorteios. O maior erro-padrão
+de Monte Carlo foi $0{,}002624$. Uma grade adicional de 54 cortes por
+caso confirmou a estabilidade. No nível menor, 375 dos 416 cortes
+atingiram a meta, evidenciando a necessidade do refinamento. A mesma
+regra de ampliação foi aplicada a todas as realizações da campanha;
+a precisão foi avaliada individualmente para cada função posterior.
 
 \section{Geração independente da campanha}
 
@@ -628,8 +588,7 @@ controle gaussiano pareado. Incluindo as âncoras, foram preservados
 O maior desvio entre as resoluções angulares foi
 \(8{,}18\times10^{-13}\); nos confrontos diretos, foi
 \(4{,}75\times10^{-15}\). Todos os dados foram regenerados e comparados
-com tolerância \(10^{-12}\), a partir de configurações e fontes com
-hashes registrados.
+com tolerância \(10^{-12}\).
 
 Uma reconstrução independente, sem chamar as rotinas de covariância
 e geração pareada do integrador, refez os 500 sorteios e os produtos de
@@ -657,24 +616,17 @@ seu erro-padrão populacional seria 5,3 pontos percentuais, distinto dos
 \section{Calibração das 500 realizações}
 \label{sec:c07-resultados-sbc}
 
-A campanha concluiu as cinco análises de cada uma das 500 realizações,
-sem substituir dados ou sementes depois de observar os diagnósticos.
-O treino usou a semente 907110101; a produção, 907110102, com quatro
-réplicas independentes nos níveis 16384 e 65536. Foram contabilizadas
-81930000 avaliações de verossimilhança no treino, incluindo a
-inicialização, e 819200000 na produção: 901130000 no total.
-Os registros de todas as 2500 inferências foram arquivados antes de
-retirar os arquivos brutos regeneráveis. A conclusão de um arquivo
-não implica aprovação dos seus diagnósticos.
+As cinco análises foram aplicadas às mesmas 500 realizações, com
+quatro réplicas independentes nos níveis de 16\,384 e 65\,536 sorteios.
+A amostra foi mantida integralmente na análise de calibração.
 
 Em 81 inferências, ao menos um dos cinco controles agregados de
 precisão, pesos, réplicas, refinamento e referência não foi satisfeito.
 Essa contagem inclui os vinte cortes adicionais selecionados no nível
 menor e não coincide com a resolução de cada PIT. Aplicando a regra
 por função, 243 dos 15000 PITs ficaram numericamente não resolvidos;
-seus envelopes foram mantidos como \([0,1]\). Os 500 dados de cada
-modelo participam de todos os testes e coberturas. Não se calculou
-uma SBC apenas sobre os casos aprovados.
+seus intervalos foram mantidos como \([0,1]\). Os 500 dados de cada
+modelo participam de todos os testes e coberturas. Esse procedimento evita selecionar a amostra pela facilidade de integração.
 
 As tabelas seguintes distinguem contagens de funções resolvidas,
 testes nominais e sensibilidade numérica. Os envelopes incorporam
@@ -692,11 +644,10 @@ rejeitou nominalmente a referência após Holm a 5\%.
 Também não houve rejeição robusta aos envelopes numéricos nessa
 família. Uma hipótese de A\_G conserva uma rejeição possível sob a
 sensibilidade, sem que isso constitua uma rejeição observada.
-Esses resultados são compatíveis com a calibração sob a priori neste
-experimento. A ausência de rejeição, isoladamente, não demonstra
-correção, precisão de todos os quantis ou suficiência da compressão.
-A interpretação se apoia também nas referências de integração,
-checagens de geração e testes dos kernels apresentados neste capítulo.
+Os resultados são compatíveis com a calibração sob a priori neste
+experimento e complementam as verificações independentes de integração
+e geração apresentadas neste capítulo. A perda de informação por
+compressão é examinada pelos contrastes pareados do capítulo seguinte.
 
 A Figura~\ref{fig:c07-sbc-a0} apresenta a referência nos coeficientes
 complexos. Os controles normais em frequência explícita e comprimida
@@ -707,28 +658,20 @@ origens distintas, e uma faixa não substitui a outra.
 
 \begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth]{../figures/C07/synthesis/ecdf_A0_CN.pdf}
- \caption{Calibração de A0\_CN nas 500 realizações da priori. As seis
- funções incluem os cinco parâmetros e a log-verossimilhança na
- verdade. A referência probabilística é a normal complexa própria;
- não há aproximação normal das estatísticas quadráticas neste modelo.}
+ \includegraphics[width=\textwidth]{../figures/academicas/ecdf_A0_CN.pdf}
+ \caption{Calibração de $A_{0,\mathrm{CN}}$ em 500 realizações. Azul: CDF empírica dos PITs e faixa de incerteza numérica; tracejado: uniforme; cinza: faixa DKW ideal com correção de multiplicidade. Os seis diagnósticos avaliam a verossimilhança dos coeficientes de Fourier.}
  \label{fig:c07-sbc-a0}
 \end{figure}
 \begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth]{../figures/C07/synthesis/ecdf_A_G.pdf}
- \caption{Controle A\_G com observações normais de momentos pareados,
- preservando os canais de frequência. As faixas numéricas conservam
- todos os dados, inclusive as funções não resolvidas.}
+ \includegraphics[width=\textwidth]{../figures/academicas/ecdf_A_G.pdf}
+ \caption{Calibração do controle gaussiano $A_{\mathrm G}$ antes da compressão, em 500 realizações. Curvas e faixas seguem a Figura~\ref{fig:c07-sbc-a0}. As CDFs acompanham a referência uniforme.}
  \label{fig:c07-sbc-ag}
 \end{figure}
 \begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth]{../figures/C07/synthesis/ecdf_B_G.pdf}
- \caption{Controle B\_G após compressão fixa das observações normais.
- A distribuição normal comprimida é exata para esse controle. A
- compatibilidade com SBC não afirma que a compressão preserve toda
- a informação de A\_G.}
+ \includegraphics[width=\textwidth]{../figures/academicas/ecdf_B_G.pdf}
+ \caption{Calibração do controle gaussiano $B_{\mathrm G}$ após compressão, em 500 realizações. Curvas e faixas seguem a Figura~\ref{fig:c07-sbc-a0}. A distribuição comprimida preserva a calibração nesse controle.}
  \label{fig:c07-sbc-bg}
 \end{figure}
 
@@ -763,19 +706,14 @@ não estabelece uma lei universal de melhora com a compressão.
 
 \begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth]{../figures/C07/synthesis/ecdf_A_CN.pdf}
- \caption{Aproximação A\_CN nas estatísticas quadráticas físicas,
- mantendo a frequência explícita. Os desvios do fator de ruído branco
- e da log-verossimilhança permanecem visíveis após incorporar a
- sensibilidade numérica.}
+ \includegraphics[width=\textwidth]{../figures/academicas/ecdf_A_CN.pdf}
+ \caption{Calibração da aproximação normal $A_{\mathrm{CN}}$ para estatísticas quadráticas, em 500 realizações. Curvas e faixas seguem a Figura~\ref{fig:c07-sbc-a0}. Os desvios de EFAC e da log-verossimilhança excedem a faixa de incerteza numérica.}
  \label{fig:c07-sbc-acn}
 \end{figure}
 \begin{figure}[p]
  \centering
- \includegraphics[width=\textwidth]{../figures/C07/synthesis/ecdf_B_CN.pdf}
- \caption{Aproximação B\_CN aplicada às estatísticas físicas
- comprimidas. A redução dos desvios em alguns diagnósticos não
- equivale à recuperação de uma distribuição probabilística exata.}
+ \includegraphics[width=\textwidth]{../figures/academicas/ecdf_B_CN.pdf}
+ \caption{Calibração da aproximação normal comprimida $B_{\mathrm{CN}}$, em 500 realizações. Curvas e faixas seguem a Figura~\ref{fig:c07-sbc-a0}. Persistem desvios de uniformidade após a compressão.}
  \label{fig:c07-sbc-bcn}
 \end{figure}
 
@@ -860,37 +798,24 @@ constitui detecção nem limite observado de massa. As coberturas
 centrais dos dois parâmetros de ruído foram 30/32 e 29/32, com as
 incertezas binomiais da Tabela~\ref{tab:c07-fixed-coberturas}.
 
-\section{Rastreabilidade e alcance da validação}
+\section{Síntese e alcance da validação}
 
-A síntese preserva as matrizes de PITs, seus envelopes, quantis
-calculados, contagens, testes ajustados e identificadores de origem.
-Uma implementação independente recalculou 6202 verificações do
-resumo, incluindo KS, coberturas, Clopper--Pearson, Holm e os
-contrastes pareados. A maior diferença foi
-\(1{,}43\times10^{-14}\), no logaritmo de uma probabilidade de
-cauda DKW. Separadamente, a leitura dos 2500 diagnósticos compactos
-reconstruiu exatamente os 15000 indicadores de resolução por função,
-sem chamar o sintetizador original ou ler os arquivos brutos.
-As causas de inelegibilidade se sobrepõem: 222 funções falharam na
-guarda de pesos, 32 na precisão da CDF, seis na guarda de saturação
-e uma na comparação entre réplicas da própria função.
+Uma implementação independente confirmou os testes de uniformidade,
+as coberturas e suas correções de multiplicidade, com diferenças de
+arredondamento inferiores a $1{,}5\times10^{-14}$. A principal fonte
+de incerteza remanescente foi a concentração dos pesos de importância:
+222 funções apresentaram esse problema, 32 tiveram precisão
+insuficiente da CDF e seis se aproximaram da saturação. As categorias
+se sobrepõem. Os dados e procedimentos de inferência estão disponíveis
+no material suplementar.
 
-Os produtos da campanha principal foram compactados sem perda;
-125233 arquivos preservados foram restaurados em uma pasta nova e
-comparados pelos respectivos hashes. O arquivo inclui propostas,
-sementes, estados, diagnósticos e recibos de retirada. Os grandes
-arrays brutos retirados não são declarados como presentes: sua
-reprodução depende das sementes, das fontes e do ambiente numérico
-vinculados ao plano. A integridade do arquivo e a aceitação
-científica são verificações distintas.
-
-Os resultados satisfazem o objetivo desta etapa de estabelecer uma
+Os resultados satisfazem o objetivo de estabelecer uma
 referência e delimitar suas falhas. Os modelos correspondentes à
 distribuição geradora são compatíveis com SBC no domínio simulado;
 as aproximações normais nas estatísticas físicas apresentam desvios
 que não desaparecem com a resolução de integração adotada.
 Permanecem explícitos os PITs não resolvidos, a precisão horizontal
 pendente dos quantis e a cobertura condicional desfavorável perto
-da borda. A etapa seguinte compara respostas de frequência de
-referência contra esse conjunto, conservando os controles e as
+da borda. O capítulo de compressão compara respostas de frequência de
+referência nesse conjunto, conservando os controles e as
 incertezas numéricas.

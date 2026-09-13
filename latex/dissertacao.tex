@@ -1,50 +1,29 @@
 % Documento cumulativo. Compilar na raiz com: make pdf
 \documentclass[msc]{ita}
 \input{configuracao}
-\input{metadados_dissertacao}
-\hypersetup{pdfsubject={Dissertação de mestrado em desenvolvimento — \VersaoTrabalho}}
+\hypersetup{pdfsubject={Massa do gráviton e polarizações de ondas gravitacionais em PTAs}}
 \AtBeginBibliography{\interlinepenalty=10000}
+\input{pretextuais/identificacao}
+\input{pretextuais/listas}
 \begin{document}
-\hypersetup{pageanchor=false}
-\begin{titlepage}
-\centering
-{\large Instituto Tecnológico de Aeronáutica\par}
-\vspace{0.4cm}
-{\normalsize Programa de Física\par}
-\vspace{0.8cm}
-{\large Gráviton de Souza\par}
-{\small Pseudônimo provisório\par}
-\vspace{1.9cm}
-{\LARGE\bfseries Massa do gráviton e polarizações de ondas gravitacionais em PTAs\par}
-\vspace{0.7cm}
-{\Large Efeitos da compressão em frequência e validação estatística\par}
-\vspace{1.5cm}
-\begin{minipage}{0.84\textwidth}
-Dissertação de mestrado em desenvolvimento, preparada com o template ITA
-fornecido para o projeto.\par
-\medskip
-Orientação (identificação provisória): Autor do TG do Wayne.\par
-\medskip
-Versão \VersaoTrabalho\ — último marco concluído: \EtapaTrabalho.
-Texto científico, discussão, conclusões e manuscrito preparados em C12. Auditoria final C13 pendente.\par
-O quadro de acompanhamento identifica os capítulos concluídos e planejados.
-Esta versão não registra aprovação, defesa ou vínculo de orientação formal.
-\end{minipage}
-\vfill
-{\large \DataTrabalho\par}
-\end{titlepage}
 \frontmatter
-\hypersetup{pageanchor=true}
-\chapter*{Resumo da versão em desenvolvimento}
-\addcontentsline{toc}{chapter}{Resumo da versão em desenvolvimento}
+\maketitle
+\begin{abstract}
 \input{capitulos_dissertacao/resumo}
-\par\medskip
-\noindent\textbf{Palavras-chave:} ondas gravitacionais; gráviton massivo;
-polarizações; temporização de pulsares; inferência estatística.
-\input{estado_capitulos}
+\keywords{ondas gravitacionais; gráviton massivo; polarizações; temporização de pulsares; inferência estatística.}
+\end{abstract}
+\begin{englishabstract}
+\input{pretextuais/resumo_ingles}
+\englishkeywords{gravitational waves; massive graviton; polarizations; pulsar timing arrays; statistical inference.}
+\end{englishabstract}
 \begingroup
 \singlespacing
 \setlength{\parskip}{0pt}
+\listoffigures
+\listoftables
+\glsaddall
+\listofabbreviations
+\listofsymbols
 \tableofcontents
 \endgroup
 \mainmatter
@@ -62,4 +41,7 @@ polarizações; temporização de pulsares; inferência estatística.
 \input{capitulos_dissertacao/11_discussao}
 \input{capitulos_dissertacao/12_conclusoes}
 \printbibliography[heading=bibintoc,title={Referências}]
+\appendix
+\input{apendices/convencoes_medidas}
+\input{pretextuais/registro}
 \end{document}

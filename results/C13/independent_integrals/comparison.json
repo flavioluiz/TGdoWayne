@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "file": "fast_kernel_validation.json",
+      "scientific_values_exact": true,
+      "original_sha256": "1d9a61e7e16591a1e50467144ba7aa0602dd3e3f8c980b25fd551c36e881e128",
+      "reproduced_sha256": "e2e39412d2a67e2dcf2e00e92cd6376af0c05d0b93342e5fd2130159a28dc4ef"
+    },
+    {
+      "file": "orf_blas_builder.json",
+      "scientific_values_exact": true,
+      "original_sha256": "f58aa3a88b928aacce0dfd002d5f03352e3a7af71340b6e94081bbf3af09b9ab",
+      "reproduced_sha256": "b14c759ce32dc445ec7222723130b7484e55caf0064b206295936a094e752d53"
+    },
+    {
+      "file": "orf_direct_checks.json",
+      "scientific_values_exact": true,
+      "original_sha256": "024b12d3eee7cf15a671de652daed57e6d8e10de32dc414f6925c8f2d8425f27",
+      "reproduced_sha256": "8eea8f80cd4c6315bed17dbafc4676536d98693226037bda0b616ed28865d9c1"
+    },
+    {
+      "file": "scale_cn.json",
+      "scientific_values_exact": true,
+      "original_sha256": "d9b013ffcb8646fe868c9621764f72ae497fde9066d3bce5e54ed4b8354fc891",
+      "reproduced_sha256": "46669cac3e53818a84dbe3128a6139bc57517610d47f7fd0552eb6d799e12232"
+    },
+    {
+      "file": "validation_guards.json",
+      "scientific_values_exact": true,
+      "original_sha256": "81f83819eeedc60eec1874b71220c91c3767835cbb9c5f4403f7813b72b498ff",
+      "reproduced_sha256": "81f83819eeedc60eec1874b71220c91c3767835cbb9c5f4403f7813b72b498ff"
+    },
+    {
+      "file": "validation_high_precision.json",
+      "scientific_values_exact": true,
+      "original_sha256": "192a817b7c5146cc74bd67174110f56660b01d271f947425d465663882848ce7",
+      "reproduced_sha256": "48d368f991e5f7bf59ed34b76886af58cf454add116e26f10cf7f3a220138a87"
+    },
+    {
+      "file": "validation_integral.json",
+      "scientific_values_exact": true,
+      "original_sha256": "d8c238eb9f17fac69290ce553da5f9fed243363f20c4cba81393cac5208d55e6",
+      "reproduced_sha256": "03ba07586475c9c0328aa1af5eb7802cc6d6e8c9becc590500a8665bb85b69e3"
+    },
+    {
+      "file": "validation_kernel.json",
+      "scientific_values_exact": true,
+      "original_sha256": "4f380defc3953555ce415f964049ded79a6ef92420464b5d9aedc458d260b9ed",
+      "reproduced_sha256": "0f7661cb35b186773feaa89f1f75d37e836f37ab3b51c9aee2d6da3115b61102"
+    }
+  ],
+  "ignored_timing_fields": [
+    "basis_build_seconds",
+    "coefficient_seconds",
+    "evaluation_seconds",
+    "marginalized_seconds_including_coefficients",
+    "median_seconds_per_parameter_point",
+    "seconds"
+  ],
+  "path_normalization": "Original project prefix to clean root only",
+  "scope": "Seven original independent integral and physical kernel scripts reexecuted; eight scientific reports agree exactly."
+}

@@ -1,0 +1,24 @@
+{
+  "status": "complete_and_compared",
+  "session_id": null,
+  "log": "tmp/c13_c07_full_execution.log",
+  "output": "/private/tmp/tgwayne-c13-clean-20260913/tmp/c13_c07_full_reproduction",
+  "targets": 2500,
+  "planned_likelihood_evaluations": 901130000,
+  "runtime_identity": "fd68cec0fea6ee43f7691cd39a201b8d6e8dc349536d501303cd6b05402ad280",
+  "driver_identity": "59dd247cc7a2fa6889dfa773400cf1610e708223ed35ef33cffef5c71fbe9ea6",
+  "identities_equal_original": true,
+  "namespace_note": "Original eight PTA modules loaded in a private package namespace; shared scalar execution and numerical sources unchanged.",
+  "next": "No tensorial production or synthesis remains pending.",
+  "last_observed_progress": {
+    "completed_total": 2500,
+    "terminal_exit_code": 0,
+    "identical_arrays": 175000
+  },
+  "partial_comparison": "results/C13/c07_inference_prefix_1152_comparison.json",
+  "final_comparison_command": ".venv/bin/python scripts/comparar_inferencia_tensorial_c13.py --clean-root /private/tmp/tgwayne-c13-clean-20260913",
+  "fresh_synthesis_command": ".venv/bin/python scripts/sintetizar_tensorial_reproduzido_c13.py --clean-root /private/tmp/tgwayne-c13-clean-20260913",
+  "synthesis_session_id": null,
+  "full_comparison": "results/C13/c07_inference_full_comparison.json",
+  "fresh_synthesis": "results/C13/c07_fresh_synthesis_comparison.json"
+}

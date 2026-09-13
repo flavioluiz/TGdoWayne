@@ -1,0 +1,24 @@
+{
+  "worker": "scripts/gerar_calibracao.py",
+  "worker_sha256": "d54c544aa53d8db85c8b2f16fb0f877863ac978add666b1cdb719ad488d25242",
+  "arguments": [
+    "build-orfs",
+    "--output",
+    "/private/tmp/tgwayne-c13-clean-20260913/tmp/c13_c07_generation_new",
+    "--construction-cache",
+    "/private/tmp/tgwayne-c13-clean-20260913/tmp/c13_c07_orf_new"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/scripts": "/private/tmp/tgwayne-c13-clean-20260913/scripts"
+  },
+  "wall_seconds": 42.83577674999833,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

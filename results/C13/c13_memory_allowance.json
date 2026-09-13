@@ -1,0 +1,11 @@
+{
+  "original_config_sha256": "3a4291d51754ccbdd79261596cab03d5638a41a7921985ce301df0a610e15baf",
+  "changed_fields": {
+    "RSS_bytes_candidate": {
+      "before": 2147483648,
+      "after": 3221225472
+    }
+  },
+  "reason": "Isolated replay exceeded the 2 GiB RSS cap with the I/O audit attached; numerical formulas, sources, seeds, population, grids and tolerances are unchanged.",
+  "reproduction_config_sha256": "65ac41bbf642efa10912a7596a19d586c0ff88c9561ce5175dfff046e1e181b0"
+}

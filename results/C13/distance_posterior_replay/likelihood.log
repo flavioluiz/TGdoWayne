@@ -1,0 +1,32 @@
+{"component": 0.9, "CPU": 8.368965999999999, "LL": 4048500}
+{"component": 1.0, "CPU": 15.475861, "LL": 8097000}
+{"component": 1.1, "CPU": 22.475353000000002, "LL": 12145500}
+Traceback (most recent call last):
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 107, in main
+    guard.check();w.write(out/'posteriors.json',reports)
+    ~~~~~~~~~~~^^
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 40, in check
+    if rss>1536*1024**2:raise MemoryError('Production RSS cap')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError: Production RSS cap
+
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 57, in main
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 121, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 120, in main
+    if error:raise SystemExit(1)
+             ^^^^^^^^^^^^^^^^^^^
+SystemExit: 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 69, in <module>
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 67, in main
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 40, in audit
+PermissionError: Original scientific tree denied: /Volumes/MacSSD/Development/github/TGdoWayne/results/C13/distance_posterior_replay/likelihood_io.json

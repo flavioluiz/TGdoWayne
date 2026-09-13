@@ -1,0 +1,64 @@
+{
+  "status": "PASS_COMPONENT_ONLY_NOT_C10_PHYSICAL_APPROVAL",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "cpu_seconds": 0.271477,
+  "summed_work_real_multiplication_estimate": 2919716,
+  "independent_sky_angular_points": 40960,
+  "maximum_estimated_memory_bytes": 325376,
+  "process_maximum_resident_bytes": 93175808,
+  "budget_pass": true,
+  "tested_maximum_phase_radians": 20,
+  "tested_beta_minimum": 0,
+  "tested_beta_maximum": 1,
+  "scope": "Raw scalar multipoles/ORFs only; no full table, PTA data, likelihood or inference",
+  "physical_likelihood_evaluations": 0,
+  "metrics": {
+    "maximum_multipole_difference": 6.684427777288334e-16,
+    "maximum_pairwise_harmonic_difference": 1.6653369185234874e-16,
+    "maximum_independent_sky_difference": 2.6867397195943357e-14,
+    "minimum_eigenvalue_across_truncations": -2.1802810356953705e-17,
+    "minimum_eigenvalue_truncation_increment": -1.6951948392154174e-17,
+    "maximum_rotation_difference": 5.273559366969494e-16,
+    "maximum_linked_component_difference": 2.9920510519909555e-14,
+    "maximum_discrepancy_if_cross_terms_omitted": 0.180700016884829
+  },
+  "sources": [
+    {
+      "path": "/private/tmp/tgwayne-c13-clean-20260913/tmp/c10_scalar_blas/src/inference/scalar_blas.py",
+      "sha256": "5cf0daf3a3972e96afd18cb5c001f5d43d16ad36c4243d4b163ac88b94acd2f7",
+      "bytes": 8960
+    },
+    {
+      "path": "/private/tmp/tgwayne-c13-clean-20260913/tmp/c10_scalar_blas/tests/test_scalar_blas.py",
+      "sha256": "8581dcb98fcc92e9975ccf1cb652db327465ae24076ad7ea12f750c0e78b7e54",
+      "bytes": 9375
+    },
+    {
+      "path": "/private/tmp/tgwayne-c13-clean-20260913/tmp/c10_scalar_blas/scripts/validar_base_escalar.py",
+      "sha256": "b968bdd47b018838902f1dd9dded8e213975ce37c199774094f6826e3fe3c16a",
+      "bytes": 2879
+    },
+    {
+      "path": "tmp/c10_scalar/scalar_fp.py",
+      "sha256": "a6bdc5b823c58a0ab1f4a119a72f077758d132b7e91aa922f488d251e09dc8f5",
+      "bytes": 8549
+    },
+    {
+      "path": "src/pta/response.py",
+      "sha256": "e0aecc6af749769df0f9cb9d8cb8d763cbf4b3e447ed42dcbc3b22030bc5851b",
+      "bytes": 1379
+    },
+    {
+      "path": "src/pta/_domain.py",
+      "sha256": "e88364a81f68b7a60f8063dd1971405fa5ee5e2106a3fa79a125deb9dabbfb61",
+      "bytes": 2294
+    },
+    {
+      "path": "src/pta/orf.py",
+      "sha256": "9a2aabb1d926507007e8ebf1e497cb34c19f9c8237550b8f06eec3f452cd2e35",
+      "bytes": 7042
+    }
+  ]
+}

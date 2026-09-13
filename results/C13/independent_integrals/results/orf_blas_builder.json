@@ -1,0 +1,258 @@
+{
+  "status": "COMPLETE",
+  "requested_nodes": 3,
+  "new_nodes": 3,
+  "written_nodes": 3,
+  "existing_nodes": 0,
+  "physical_signature": "c843ce150113aa2f7cf7f2ec3fbc3faca42a136f368de56b86b15ab2789923a1",
+  "provenance": {
+    "name": "real_blas_precomputed_associated_legendre_v2_guarded",
+    "source_sha256": {
+      "/private/tmp/tgwayne-c13-clean-20260913/src/inference/orf_table_builder.py": "071349c6ae871e4507d6550c5602b593ddcf1572a7f5d7830077fe0a8ff8d2de",
+      "/private/tmp/tgwayne-c13-clean-20260913/src/inference/orf_blas.py": "fafe983c0a9398f3b1964d3def6ed9b97dc0ca482fa4567058341f73ca3a2ef3"
+    },
+    "own_budget": {
+      "maximum_estimated_numeric_memory_bytes": 805306368,
+      "maximum_total_real_multiplications": 40000000000000,
+      "maximum_requested_nodes": 8,
+      "batch_size": 8,
+      "maximum_batch_real_multiplications": 50000000000
+    },
+    "legacy_provider_limits_modified": false,
+    "physical_signature_unchanged": true,
+    "geometry_dot_roundoff_clipping": true,
+    "eigenvalue_clipping": false
+  },
+  "total_real_multiplications": 17861479776,
+  "estimated_peak_numeric_bytes": 555729760,
+  "estimated_table_storage_bytes": 27648,
+  "timings": [
+    {
+      "frequency": 1,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 1496,
+          "nmu": 3012,
+          "basis_build_seconds": 0.15308816600008868,
+          "evaluation_seconds": 0.006260624999413267
+        },
+        {
+          "resolution": "fine",
+          "lmax": 1536,
+          "nmu": 3092,
+          "basis_build_seconds": 0.16029149999667425,
+          "evaluation_seconds": 0.006256458000279963
+        }
+      ],
+      "maximum_coarse_fine_difference": 1.9417800700693988e-13,
+      "minimum_eigenvalue": -2.7903034844784863e-16
+    },
+    {
+      "frequency": 2,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 2892,
+          "nmu": 5805,
+          "basis_build_seconds": 0.5508309169963468,
+          "evaluation_seconds": 0.01781558299990138
+        },
+        {
+          "resolution": "fine",
+          "lmax": 2932,
+          "nmu": 5885,
+          "basis_build_seconds": 0.5634000409991131,
+          "evaluation_seconds": 0.01800050000019837
+        }
+      ],
+      "maximum_coarse_fine_difference": 7.134293156241256e-13,
+      "minimum_eigenvalue": 0.3273246140707765
+    },
+    {
+      "frequency": 3,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 4288,
+          "nmu": 8597,
+          "basis_build_seconds": 1.1858902500025579,
+          "evaluation_seconds": 0.04358983400015859
+        },
+        {
+          "resolution": "fine",
+          "lmax": 4328,
+          "nmu": 8677,
+          "basis_build_seconds": 1.2136725410018698,
+          "evaluation_seconds": 0.045149915997171775
+        }
+      ],
+      "maximum_coarse_fine_difference": 7.593925488436071e-13,
+      "minimum_eigenvalue": 0.4008374547517054
+    },
+    {
+      "frequency": 4,
+      "stages": [
+        {
+          "resolution": "coarse",
+          "lmax": 5685,
+          "nmu": 11390,
+          "basis_build_seconds": 2.052656042003946,
+          "evaluation_seconds": 0.07549641699733911
+        },
+        {
+          "resolution": "fine",
+          "lmax": 5725,
+          "nmu": 11470,
+          "basis_build_seconds": 2.0878466669964837,
+          "evaluation_seconds": 0.07899791700037895
+        }
+      ],
+      "maximum_coarse_fine_difference": 6.693534615465069e-13,
+      "minimum_eigenvalue": 0.4470232808093816
+    }
+  ],
+  "sparse_direct_checks": [
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 8.245179029206226e-16,
+      "seconds": 0.5050480409990996,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 4.748351312195727e-15,
+      "seconds": 0.3456549999973504,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 1.3290688561447888e-15,
+      "seconds": 0.3494692909953301,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 4.373946459183113e-15,
+      "seconds": 0.3404647919960553,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 1.2500798202018155e-15,
+      "seconds": 0.32928474999789614,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 1,
+      "channel": 1,
+      "pair": [
+        0,
+        11
+      ],
+      "absolute_difference": 2.158957975556618e-15,
+      "seconds": 0.32242958300048485,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    },
+    {
+      "u": 0.5,
+      "channel": 4,
+      "pair": [
+        3,
+        8
+      ],
+      "absolute_difference": 4.1246217594706925e-15,
+      "seconds": 6.977616625001247,
+      "all_direct_checks_work_proxy": 377847368,
+      "maximum_direct_memory_estimate_bytes": 570013120,
+      "direct_budget": {
+        "work_proxy": 1000000000,
+        "estimated_memory_bytes": 700000000
+      }
+    }
+  ],
+  "concurrent_existing_preserved": [],
+  "VECLIB_MAXIMUM_THREADS": "unset",
+  "seconds": 17.526918875002593,
+  "destination": "/private/tmp/tgwayne-c13-clean-20260913/tmp/c07_integrated_orf_validation/cache_validation",
+  "legacy_cache_and_likelihood_comparisons": [
+    {
+      "u": 0.0,
+      "matrix_max_abs_difference": 6.439293542825908e-15,
+      "likelihood_values": 2560,
+      "maximum_logL_difference": 2.9103830456733704e-11,
+      "compatible_signature": true
+    },
+    {
+      "u": 0.5,
+      "matrix_max_abs_difference": 4.884981308350689e-15,
+      "likelihood_values": 2560,
+      "maximum_logL_difference": 1.4551915228366852e-10,
+      "compatible_signature": true
+    },
+    {
+      "u": 1.0,
+      "matrix_max_abs_difference": 3.3306690738754696e-15,
+      "likelihood_values": 2560,
+      "maximum_logL_difference": 8.731149137020111e-11,
+      "compatible_signature": true
+    }
+  ],
+  "frozen_nuisance_test_seed": 7110301,
+  "scope": "Only three anchor nodes in a new private cache; not a5000-node table or interpolation approval."
+}

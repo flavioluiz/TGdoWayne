@@ -14,25 +14,7 @@ dos trabalhos centrais, suas páginas de código e registros editoriais
 foram examinados para identificar antecedentes que uma busca somente
 por palavras-chave poderia omitir.
 
-O acervo inicial de C03 reuniu 22 PDFs com versões explícitas do arXiv, mantidos no
-acervo local \path{literature/papers/}. O catálogo
-\path{literature/catalog.json} registra URLs versionadas, datas,
-identificadores, tamanho e SHA-256; o protocolo e a matriz de
-originalidade acompanham o repositório em \path{docs/literatura/}.
-Fixar a versão permite conferir a fonte realmente utilizada, mesmo
-quando o artigo recebe uma revisão posterior. Os arquivos foram
-verificados quanto ao formato PDF, número de páginas e integridade.
-Essas cópias destinam-se
-à leitura local e não são redistribuídas automaticamente no Git; as
-licenças e a disponibilidade das versões editoriais são questões
-distintas do acesso ao preprint. Em C06 foram acrescentadas quatro
-referências metodológicas de calibração e evidências bayesianas,
-totalizando 26 PDFs e 600 páginas. A leitura dirigida desses métodos
-acompanha sua aplicação na etapa de inferência. Os complementos de C07
-elevam o acervo a 37 PDFs e 839 páginas. A auditoria dirigida de
-11 de setembro acrescenta seis antecedentes à matriz, que passa a
-23 entradas; seus registros de busca e localizadores de leitura são
-preservados separadamente da busca inicial de C03.
+O acervo consultado reúne artigos publicados e preprints identificados por suas referências bibliográficas. Foram examinados também códigos, documentação e registros editoriais relacionados às análises centrais. A seleção inclui fundamentos de gravidade massiva, resposta de pulsares, calibração bayesiana e aproximações de verossimilhança. O catálogo de fontes e os registros de aquisição estão disponíveis no material suplementar de reprodução.
 
 A consulta não constitui uma revisão sistemática exaustiva. O catálogo
 distingue leitura dirigida de métodos, consulta anterior e triagem de
@@ -41,8 +23,7 @@ de um código não implica reprodução de suas saídas. Artigos publicados,
 preprints e apresentações são identificados separadamente. Um resultado
 negativo da busca significa que determinada análise não foi localizada
 nas fontes examinadas, e não que ela inexista. Essa delimitação é
-especialmente relevante para trabalhos recentes e será retomada antes
-da submissão do manuscrito.
+especialmente relevante para trabalhos recentes, cujo posicionamento requer confronto com os antecedentes.
 
 \section{Do TG às teorias de gráviton massivo}
 
@@ -180,7 +161,7 @@ resultado analítico no regime de interesse para gravidade massiva
 \autocite{cordes2025}. A comparação requer distinguir velocidade de
 grupo e de fase: o ramo massivo com grupo subluminal tem fase
 superluminal. Incluir termos dos pulsares ou distância finita já possui
-antecedentes. A contribuição de C05 é a implementação verificada
+antecedentes. A contribuição da análise de resposta é a implementação verificada
 com normalizações compatíveis, testes de convergência e recuperação do
 limite tensorial pertinente de Hellings--Downs.
 
@@ -212,7 +193,7 @@ de propagação e ajustes de qui-quadrado, com hipóteses fixadas para a
 mistura dos setores. Há rotinas de covariância na construção dos
 produtos, mas os scripts examinados não realizam a comparação
 inferencial completa proposta aqui. Essa observação se limita aos
-arquivos e commits catalogados: não estabelece ausência de outros
+arquivos e implementações examinados: não estabelece ausência de outros
 desenvolvimentos. A melhora de ajuste reportada deve ser distinguida de
 uma detecção estatisticamente calibrada.
 
@@ -437,7 +418,7 @@ dispersão de GWTC-4 oferecem contexto adicional para o papel das
 escolhas de inferência, mas suas hipóteses de fonte e faixa espectral
 diferem das presentes \autocite{lvk2026}.
 
-\section{Atualização metodológica incorporada em C07}
+\section{Calibração e integração numérica}
 
 A bibliografia computacional recebeu complementos durante a implementação.
 Owen apresenta uma revisão de RQMC em agosto de 2026
@@ -511,44 +492,37 @@ física e sua aproximação gaussiana requerem análise própria.
 Finalmente, Crisostomi e colaboradores estudam correlações entre
 frequências introduzidas por uma janela finita e apresentam controles
 analíticos e simulações PTA \autocite{crisostomi2025covariance}.
-Isso limita a transferência de resultados do gerador periódico de C06,
+Isso limita a transferência de resultados do gerador periódico adotado,
 que define coeficientes independentes, para resíduos observacionais.
 Suprimir covariâncias entre frequências e diagonalizar a covariância
 de estimadores angulares são operações distintas. A análise de janela
-deverá preservar essa separação.
+preserva essa separação.
 
-\section{Síntese crítica e decisão de continuidade}
+\section{Síntese crítica e originalidade}
 
 A matriz de originalidade separa três classes de trabalho. São
-\emph{reproduções} a auditoria do TG, a reconstrução dos vínculos e os
-benchmarks de ORFs. São \emph{métodos existentes a adaptar} a
+\emph{reproduções} a análise do TG, a reconstrução dos vínculos e os
+benchmarks de ORFs. São \emph{métodos existentes adotados} a
 compressão linear, a inferência multifrequência, a propagação de
-covariâncias e a comparação de verossimilhanças. É
-\emph{contribuição candidata} o mapa calibrado de validade da
-substituição da resposta dispersiva por uma frequência de referência,
-com controle dos efeitos concorrentes no mesmo experimento.
+covariâncias e a comparação de verossimilhanças. O trabalho investiga a validade da substituição da resposta dispersiva
+por uma frequência de referência, com controle dos efeitos concorrentes
+no mesmo experimento e avaliação explícita das comparações inconclusivas.
 
-A auditoria encontrou antecipação parcial substancial, suficiente para
+A análise encontrou antecipação parcial substancial, suficiente para
 estreitar a alegação de originalidade. Não foi localizada, nas
 formulações e códigos examinados, uma comparação operacionalmente
-igual à proposta completa. Esse resultado justifica continuar o
-desenvolvimento; não prova prioridade absoluta. C08 avaliou contrastes numa escala prospectiva, mas suas comparações primárias permaneceram inconclusivas após propagar a incerteza numérica. C09--C11 ampliaram os testes condicionais; C11 mediu perda de informação no controle gaussiano e uma rejeição persistente de aproximação normal. Esses resultados não demonstram equivalência universal da resposta em frequência de referência. Uma posterior mais
+igual ao desenho completo deste trabalho. Essa constatação delimita
+a contribuição, mas não prova prioridade absoluta. O estudo de compressão avaliou contrastes numa escala prospectiva, mas suas comparações primárias permaneceram inconclusivas após propagar a incerteza numérica. Os estudos de robustez, extensão escalar e população ampliada estenderam os testes condicionais; o último mediu perda de informação no controle gaussiano e uma rejeição persistente de aproximação normal. Esses resultados não demonstram equivalência universal da resposta em frequência de referência. Uma posterior mais
 estreita, uma curva visualmente distinta ou uma melhoria isolada de
 qui-quadrado não constituem critérios suficientes.
 
 Alternativas contemporâneas incluem testes de polarização com LISA e
 redes espaciais \autocite{akama2026,mu2026}, além de observáveis de
 ordem superior, como os explorados por Jiménez Cruz e colaboradores
-\autocite{jimenez2026}. Elas ampliariam requisitos de resposta,
-modelagem e inferência; não serão acrescentadas ao núcleo por mera
-atualidade. A extensão de helicidade zero permanecerá condicionada à
-derivação completa e à validação do setor tensorial. Essa decisão
-preserva uma pergunta específica e compatível com o escopo de mestrado,
-mantendo explícito que os resultados estatísticos e a contribuição
-final ainda precisam ser produzidos.
+\autocite{jimenez2026}. Essas abordagens exigem modelos de resposta, observação e inferência distintos dos adotados aqui. O presente estudo se concentra em PTAs e na extensão vinculada de helicidade zero, derivada e validada em conjunto com o setor tensorial.
 
-\section{Síntese após as campanhas}
+\section{Síntese e delimitação da contribuição}
 
-A revisão dirigida dos dois antecedentes mais próximos foi reconferida na preparação de C12: Han e Zhao permanecem na versão arXiv v2 de 29 de abril de 2026, e Franciolini e colaboradores na versão arXiv v1 de 30 de maio de 2025, com referência editorial já registrada. Os PDFs correspondentes integram o acervo local catalogado. Essa checagem não altera o corte da busca temática de PTA em 11 de setembro de 2026 nem representa uma nova busca exaustiva.
+A análise dos dois antecedentes mais próximos utiliza Han e Zhao na versão arXiv v2 de 29 de abril de 2026 e Franciolini e colaboradores na versão arXiv v1 de 30 de maio de 2025, com a referência editorial correspondente. A busca temática sobre PTAs considera trabalhos disponíveis até 11 de setembro de 2026 e tem caráter dirigido, sem pretensão de exaustividade.
 
-A narrativa final restringe a contribuição ao contrato de comparação, à validação rastreável e aos resultados condicionais efetivamente obtidos. As falhas de aproximação normal não são apresentadas como princípio inédito; a covariância completa e a inferência multifrequência têm antecedentes explícitos. A discussão relaciona essas distinções aos resultados, incluindo ausência de decisão sobre equivalência em parte das comparações.
+A contribuição está no desenho comparativo, na validação numérica e nos resultados condicionais obtidos. As falhas de aproximação normal não são apresentadas como princípio inédito; a covariância completa e a inferência multifrequência têm antecedentes explícitos. A discussão relaciona essas distinções aos resultados, incluindo ausência de decisão sobre equivalência em parte das comparações.

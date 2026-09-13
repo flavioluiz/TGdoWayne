@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "scope": "Single-pulsar illustrative timing fit. Spin columns are 1,t,t^2; annual sine/cosine columns approximate astrometric fitting. No orbital model or multi-pulsar mass inference.",
+  "realizations_per_sampling": 20000,
+  "records": [
+    {
+      "sampling": "regular",
+      "fit": "none",
+      "timing_parameters": 0,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 6.088102262366993e-16,
+      "maximum_normalized_pseudocovariance": 4.547966844241667e-16,
+      "pseudo_frobenius_ratio": 3.6298051403487615e-16,
+      "maximum_standardized_covariance_error": 2.9624353229338216,
+      "empirical_relative_frobenius_error": 0.031460992815607595
+    },
+    {
+      "sampling": "regular",
+      "fit": "spin",
+      "timing_parameters": 3,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 0.614197236466735,
+      "maximum_normalized_pseudocovariance": 0.7337785548665312,
+      "pseudo_frobenius_ratio": 0.12846810357089916,
+      "maximum_standardized_covariance_error": 2.7412033979196075,
+      "empirical_relative_frobenius_error": 0.027798315699702775
+    },
+    {
+      "sampling": "regular",
+      "fit": "spin_annual",
+      "timing_parameters": 5,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 0.7060022088851199,
+      "maximum_normalized_pseudocovariance": 0.7464430692702249,
+      "pseudo_frobenius_ratio": 0.15107903556729463,
+      "maximum_standardized_covariance_error": 2.685581034556286,
+      "empirical_relative_frobenius_error": 0.024485340118228244
+    },
+    {
+      "sampling": "jittered",
+      "fit": "none",
+      "timing_parameters": 0,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 0.0021834499029806023,
+      "maximum_normalized_pseudocovariance": 0.004869408340031103,
+      "pseudo_frobenius_ratio": 0.003958346810977696,
+      "maximum_standardized_covariance_error": 2.8133991964747613,
+      "empirical_relative_frobenius_error": 0.02887205560091856
+    },
+    {
+      "sampling": "jittered",
+      "fit": "spin",
+      "timing_parameters": 3,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 0.6139189356789514,
+      "maximum_normalized_pseudocovariance": 0.7335948699439822,
+      "pseudo_frobenius_ratio": 0.12824506743180256,
+      "maximum_standardized_covariance_error": 2.852173799532765,
+      "empirical_relative_frobenius_error": 0.028972637142845276
+    },
+    {
+      "sampling": "jittered",
+      "fit": "spin_annual",
+      "timing_parameters": 5,
+      "covariance_rank": 16,
+      "maximum_cross_frequency_correlation": 0.7058305940582671,
+      "maximum_normalized_pseudocovariance": 0.746121884495151,
+      "pseudo_frobenius_ratio": 0.1507374988874403,
+      "maximum_standardized_covariance_error": 3.0632186352557937,
+      "empirical_relative_frobenius_error": 0.026726802836611236
+    }
+  ],
+  "monte_carlo_validation": {
+    "comparisons": 816,
+    "simultaneous_normal_approximation_z_limit": 4.851471180298983,
+    "family_error_probability": 0.001,
+    "note": "Gaussian covariance has Wishart moments; z thresholds use its large-sample normal approximation."
+  },
+  "CPU_seconds": 0.15490099999999996,
+  "source_sha256": "9767ce66a0db11364b5b00f6d29970ae071592ab379b1b3c864ceb348e38f3fc",
+  "config_sha256": "1e5b30397ea26ad7137bea216868aa54f6e186589b72f88f184dbcecf9fdbc42",
+  "matrices_sha256": "3f27251838c3e104373b15d659326c50ab62bd0668c96b817e059f6cc34a9176"
+}

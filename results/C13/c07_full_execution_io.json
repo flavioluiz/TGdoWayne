@@ -1,0 +1,48 @@
+{
+  "worker": "tmp/c13_c07_frozen_driver.py",
+  "worker_sha256": "38b84ac184e991269a825f7278047529a2d67819e15d40058bff805a3b62437a",
+  "arguments": [
+    "--data",
+    "results/C07/prior_predictive/data.npz",
+    "--truth-data",
+    "results/C07/prior_predictive/data.npz",
+    "--truth-logl",
+    "results/C07/prior_predictive/truth_log_likelihood.json",
+    "--table",
+    "results/C07/orf_interpolation/orf_table_pilot12x4.npz",
+    "--native-library",
+    "tmp/c13_c07_native_reference/libpta_likelihood.dylib",
+    "--native-build-manifest",
+    "results/C07/training_benchmark/native_provenance/build_manifest.json",
+    "--experiment",
+    "configs/calibration/prior_predictive_500_v1.json",
+    "--run-config",
+    "configs/calibration/campaign_500_execution_v1.json",
+    "--table-manifest",
+    "results/C07/orf_interpolation/orf_table_manifest.json",
+    "--validation-config",
+    "configs/calibration/pilot_initial.json",
+    "--protocol",
+    "configs/calibration/campaign_diagnostics_v1.json",
+    "--output",
+    "tmp/c13_c07_full_reproduction",
+    "--training-threads",
+    "1",
+    "--threads",
+    "6",
+    "--execute"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/scripts": "/private/tmp/tgwayne-c13-clean-20260913/scripts"
+  },
+  "wall_seconds": 3199.5588504589978,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

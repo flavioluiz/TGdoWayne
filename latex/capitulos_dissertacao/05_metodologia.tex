@@ -5,7 +5,7 @@ Este capítulo define o experimento gerador e verifica os momentos dos
 seus dados sintéticos. A resposta tensorial validada anteriormente é
 combinada com espectros de sinal e ruído para gerar coeficientes complexos
 de resíduos. As estatísticas antes e depois da compressão são obtidas das
-mesmas realizações. O produto desta etapa é uma implementação verificável
+mesmas realizações. O resultado é uma implementação verificável
 desse experimento; ainda não são calculados posteriors, cobertura ou
 limites de massa.
 
@@ -203,7 +203,7 @@ de 392 instantes, com cadência aproximada de 13,9764 dias. As distâncias
 são fixadas entre 100 e 300 anos-luz, e as incertezas nominais entre 100
 e 500 nanossegundos. Trata-se de uma geometria reduzida para validar
 momentos, sem pretensão de reproduzir uma PTA observada ou
-representativa. O maior \(fL/c\) é 60, dentro do envelope de C05.
+representativa. O maior \(fL/c\) é 60, dentro do domínio validado da resposta.
 
 O caso massivo usa \(u=0{,}6\),
 \(\log_{10}A_{\rm gw}=-14{,}9\), \(\gamma_{\rm gw}=4{,}1\),
@@ -229,7 +229,7 @@ seis erros-padrão; não constitui um teorema de cobertura simultânea.
 \begingroup\small\singlespacing
 \begin{tabular}{@{}lrrr@{}}
 \toprule
-Configuração & Pares auditados & Maior discrepância MC & Tempo total (s)\\
+Configuração & Pares verificados & Maior discrepância MC & Tempo total (s)\\
 \midrule
 Massiva & 275 & \(3{,}502\) & \(21{,}76\)\\
 GR & 165 & \(3{,}936\) & \(15{,}93\)\\
@@ -254,7 +254,7 @@ foi aproximadamente 4,33. Os testes unitários adicionais verificaram
 unidades e reconstrução por Fourier, as identidades de Isserlis, o
 operador de compressão, o tratamento da pseudocovariância, os argumentos
 de \(C_{\rm full}\)/\(C_\beta\) e a recusa de entradas ou
-orçamentos inválidos. Onze testes passaram.
+resoluções inválidas. Onze testes passaram.
 
 A validação não sustenta normalidade das estatísticas físicas. Por
 exemplo, no primeiro bin de autos do caso massivo, a teoria fornece
@@ -290,20 +290,20 @@ posterior, perda de informação ou falha de cobertura. No controle GR,
 \(C_{\rm full}\) confirma que congelar fases é uma aproximação
 adicional.
 
-\section{Orçamento numérico e etapas ainda necessárias}
+\section{Precisão numérica e alcance do modelo}
 
-O adaptador de referência utiliza a interface de aceitação de C05 para
+O adaptador de referência utiliza a validação da resposta tensorial para
 todos os pares. As resoluções comuns são
 \((\ell_{\max},N_\mu^{h},N_\mu^{d},N_\varphi^{d})=
 (460,900,500,1000)\) e \((520,1000,600,1200)\). São preservados os
-relatórios de refinamento, orçamento por par e soma conservadora dos
-orçamentos da matriz. Produtos escalares de direções já verificadas
+relatórios de refinamento, erro por par e soma conservadora dos
+erros da matriz. Produtos escalares de direções já verificadas
 como unitárias são saturados em \([-1,1]\) somente para remover
 arredondamento. Não há recorte de autovalores ou interpolação em massa.
 
 Essa implementação auditada é apropriada para pequenas referências,
 mas não deve recalcular a integral angular para cada avaliação de uma
-likelihood. O desenho para a campanha posterior prevê reutilizar
+likelihood. O cálculo das campanhas de inferência reutiliza
 coeficientes harmônicos de cada pulsar entre todos os pares, construir
 matrizes em nós explícitos de massa e controlar separadamente a
 quadratura de parâmetros e da ORF. Uma rede ideal com 12 pulsares,
@@ -322,8 +322,7 @@ Os cinco parâmetros iniciais previstos para inferência são
 Degenerações de massa, amplitude
 e espectro, sensibilidade às prioris e dependência efetiva dos resultados
 dos dados devem ser medidas. SBC requer injeções sorteadas da priori;
-cobertura condicional requer injeções fixas e novos dados. Nenhuma dessas
-campanhas foi executada em C06. A calibração seguirá a distinção entre
+cobertura condicional requer injeções fixas e novos dados. A calibração mantém a distinção entre
 validação por simulações da priori e diagnóstico dependente dos dados
 \cite{talts2018,modrak2025}: postos marginais, isoladamente, podem deixar
 passar um algoritmo que devolve a própria priori. O desenho prospectivo
@@ -346,6 +345,4 @@ produzir pseudocovariância \(P=\langle qq^T\rangle\ne0\). Nesse caso,
 A conversão é disponibilizada, mas não há implementação de janela ou
 ajuste neste experimento. A likelihood CN própria e os momentos
 \eqref{eq:sim-momentos} não podem ser transferidos sem correção para
-esse domínio. Os arquivos de configuração, sementes, hashes das fontes,
-relatórios JSON e amostras pequenas permitem reproduzir exatamente o
-alcance declarado desta etapa.
+esse domínio. As configurações e os procedimentos de reprodução são disponibilizados no material suplementar.

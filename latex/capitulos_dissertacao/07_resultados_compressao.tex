@@ -20,7 +20,7 @@ Antecedentes com estimadores por frequência e covariâncias completas
 esses ingredientes, isoladamente, como a contribuição do trabalho.
 O recorte é a comparação controlada dos mecanismos e de seu domínio numérico.
 
-Esta versão apresenta a teoria, os mapas de momentos e as comparações
+Este capítulo apresenta a teoria, os mapas de momentos e as comparações
 posteriores concluídas. Os mapas avaliam parâmetros fixos; a coorte
 pareada reúne nove análises nos mesmos 32 dados. Os deslocamentos pontuais
 são acompanhados de intervalos operacionais, cujas limitações impedem
@@ -368,10 +368,7 @@ exata do argumento e conferência da identidade dos arquivos.
 Além dessa grade, três massas pequenas e três argumentos para diferenças
 finitas da derivada exigiram uma extensão explícita do desenho: 67 novos
 nós de frequência, 201 matrizes nas três resoluções e 12 avaliações
-analíticas de derivadas. Os 13 processos sequenciais consumiram
-95,54 segundos de CPU dos filhos, incluindo inicialização, com pico
-de memória de aproximadamente 614 MiB (bytes do RSS convertidos por $2^{20}$). Esses custos são do mapa finito;
-nenhuma posterior ou nova realização física foi gerada.
+analíticas de derivadas, completando o mapa das respostas e de suas variações locais.
 
 As discrepâncias máximas entre resoluções foram
 $1{,}52\times10^{-12}$ nos momentos normalizados e
@@ -488,16 +485,15 @@ isoladamente, é uma medida de viés posterior ou de cobertura de limites.
 \section{Comparações posteriores nas mesmas realizações}
 
 % Texto opcional de integração: resultados publicados C07, apenas descrição.
-\subsection{Descrição pareada das 500 realizações já publicadas}
+\subsection{Descrição pareada das 500 realizações}
 \label{sec:comp-c07-descritivo}
 
-A síntese publicada no capítulo~\ref{chap:validacao} permite descrever,
+A análise do capítulo~\ref{chap:validacao} permite descrever,
 sem uma nova inferência, os contrastes A\_CN--A0\_CN, B\_CN--A\_CN e
-B\_G--A\_G nos mesmos 500 dados. Nesta seção, a direção é sempre a
-análise nova menos a anterior. Foram conferidos os 2.500 alvos, as 500
-verdades originais e a identidade dos dados, prioris e arquivos publicados.
-Todos os casos permanecem no resumo, inclusive aqueles com pendências
-numéricas. A Tabela~\ref{tab:comp-descritivo500} mostra duas medidas de
+B\_G--A\_G nos mesmos 500 dados. Cada contraste subtrai o segundo
+modelo do primeiro na ordem indicada.
+O pareamento mantém os mesmos dados e prioris nas 2.500 análises.
+O resumo inclui todas as realizações, com sua incerteza numérica. A Tabela~\ref{tab:comp-descritivo500} mostra duas medidas de
 posição das diferenças calculadas para a massa adimensional.
 
 \begin{table}[htbp]
@@ -522,34 +518,36 @@ qualquer média ou mediana. Em dois contrastes, a média e a mediana de
 $\Delta Q_{95}(u)$ têm sinais distintos. Esse fato limita a interpretação
 da média isolada; não determina a direção de um deslocamento para cada
 realização. A descrição completa retém os 20 quantis e as cinco larguras
-centrais de 90\%, com as guardas por função preservadas em arquivos.
+centrais de 90\%, acompanhados de suas estimativas de erro numérico.
 
 Os bins fixos $u\in[0;0{,}5),[0{,}5;0{,}9),[0{,}9;1]$ contêm
 243, 208 e 49 dados; os bins $\gamma\in[3;4{,}25),[4{,}25;5{,}5]$
 contêm 233 e 267 dados. As subdivisões se baseiam nas verdades e não
-selecionam realizações pelo resultado das guardas. Percentis entre os casos,
-quando apresentados nos arquivos, descrevem essa distribuição empírica;
+selecionam realizações pela precisão alcançada. Percentis entre os casos
+descrevem essa distribuição empírica;
 não são intervalos de confiança da média. Pequenas diferenças ou
 proximidade entre curvas não são convertidas em decisões de equivalência,
-materialidade ou viés populacional. A análise inferencial pareada C08, com
-brackets e incerteza explicitamente avaliados, permanece separada.
+materialidade ou viés populacional. A análise inferencial pareada, com
+intervalos de quantis e incertezas avaliados, permanece separada.
 
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=\textwidth,height=.80\textheight,keepaspectratio]{../figures/compressao/c07_descritivo/paired_quantiles_widths.pdf}
- \caption{Médias e medianas descritivas das diferenças pareadas nos 500 dados
- publicados. A largura central é $W_{90}=Q_{95}-Q_{05}$. Todos os casos são
- retidos; a figura não contém barras de erro numérico ou intervalos de confiança.}
+ \includegraphics[width=\textwidth,height=.80\textheight,keepaspectratio]{../figures/academicas/paired_quantiles.pdf}
+ \caption{Diferenças pareadas de quantis e da largura $W_{90}=Q_{95}-Q_{05}$ para massa, amplitude e índice espectral do fundo, normalizadas pela largura da priori. Círculos e barras: médias; cruzes: medianas; cores: os três contrastes indicados. Estatísticas descritivas das 500 realizações, sem barras de incerteza.}
  \label{fig:comp-c07-pares}
+\end{figure}
+
+\begin{figure}[p]
+ \centering
+ \includegraphics[width=\textwidth]{../figures/academicas/paired_noise.pdf}
+ \caption{Diferenças pareadas para a amplitude do ruído vermelho e EFAC, com a mesma normalização e convenção gráfica da Figura~\ref{fig:comp-c07-pares}. A mudança de verossimilhança afeta especialmente os quantis de EFAC.}
+ \label{fig:comp-c07-pares-ruido}
 \end{figure}
 
 \begin{figure}[htbp]
  \centering
- \includegraphics[width=\textwidth]{../figures/compressao/c07_descritivo/paired_mass_bins.pdf}
- \caption{Médias descritivas de $\Delta Q_{95}(u)$ e $\Delta W_{90}(u)$
- nos bins fixos da verdade. Cada célula informa seu número de dados;
- as pendências numéricas permanecem no denominador. As cores não expressam
- significância estatística nem equivalência entre as análises.}
+ \includegraphics[width=\textwidth]{../figures/academicas/paired_bins.pdf}
+ \caption{Médias das diferenças de $Q_{95}(u)$ (esquerda) e $W_{90}(u)$ (direita), por faixas da massa e do índice espectral verdadeiros. As linhas representam os três contrastes; cores e valores indicam diferenças normalizadas pela largura da priori. O agrupamento das 500 realizações evidencia a dependência dos deslocamentos em relação à posição no espaço de parâmetros.}
  \label{fig:comp-c07-bins}
 \end{figure}
 
@@ -558,7 +556,7 @@ brackets e incerteza explicitamente avaliados, permanece separada.
 \label{sec:comp-pareado-protocolo}
 
 A comparação principal reúne nove análises nos mesmos 32 dados: os cinco
-modelos já calculados no C07 e as variantes $C_\beta$ e $C_{\rm full}$,
+modelos do estudo de calibração e as variantes $C_\beta$ e $C_{\rm full}$,
 aplicadas aos dados CN e G. Vinte e quatro IDs foram sorteados sem reposição
 da campanha original, com semente previamente fixada; oito testes de
 fronteira foram selecionados separadamente. Somente os 24 primeiros entram
@@ -567,7 +565,7 @@ como casos individuais, sem representar amostragem da priori nem aumentar
 o tamanho amostral dessa média.
 
 Para cada variante C foram concluídos 64 alvos, após oito controles de
-engenharia. A produção segue o treino independente e as quatro réplicas IID
+referência. A produção segue o treino independente e as quatro réplicas IID
 do Capítulo~\ref{chap:validacao}, com 16.384 e 65.536 amostras por réplica
 nos níveis LOW e HIGH. Nenhuma proposta foi selecionada pela verdade do
 parâmetro. O diagnóstico geral de pesos ficou pendente em um alvo de
@@ -575,12 +573,7 @@ $C_\beta$ e em cinco de $C_{\rm full}$; todos os alvos e seus diagnósticos
 foram preservados. Esse diagnóstico geral não substitui a avaliação de
 precisão dos quantis apresentada nesta seção.
 
-Os cinco modelos C07 contribuem com 160 conjuntos HIGH. Sua reprodução
-utilizou as propostas, sementes, estados inicial e final do gerador e
-receitas originais. Os arquivos reproduzidos foram comparados pelo SHA-256
-com os arquivos originais antes da retirada dos dados brutos. Essa
-reprodução acrescenta diagnósticos aos mesmos cálculos, sem constituir
-novas realizações independentes para a calibração. A análise conserva os
+Os cinco modelos de referência contribuem com 160 conjuntos no nível de maior precisão, calculados para os mesmos dados das variantes aproximadas. A análise conserva os
 quantis de probabilidades 0,05, 0,50, 0,90 e 0,95 dos cinco parâmetros,
 totalizando 5.760 quantis nos 288 pares modelo--dado.
 
@@ -647,7 +640,7 @@ ser menor ou igual a 0,002. Também se exige peso máximo por grupo de
 0,1, mudança pareada por deleção de no máximo 0,0005, suporte finito e
 justificativa algébrica quando a MCSE é exatamente zero. A família
 principal possui limite de 397.440 comparações; as 36 vinculações dos
-quatro casos de engenharia usam outra família, de 49.680. Estas últimas
+quatro casos de referência usam outra família, de 49.680. Estas últimas
 reutilizam os mesmos valores físicos com seus cortes próprios e não
 constituem novas réplicas independentes.
 
@@ -697,14 +690,9 @@ interpretada como precisão absoluta dessa quadratura ou como limite
 uniforme do erro posterior. O resultado é um diagnóstico finito e
 operacional, com alcance menor que uma certificação de quantis.
 
-A análise compacta original atingiu o teto de CPU depois que terminaram
-as avaliações físicas. Seu estado de falha e os 143 relatórios completos
-foram preservados. Uma continuação exclusivamente estatística calculou
-os 181 relatórios faltantes, sem novas verossimilhanças, ORFs ou amostras.
-Os custos externos foram 597,413 s de CPU na execução original e
-56,304 s na continuação, totalizando 653,717 s sob orçamentos separados.
-Foram cobrados 9.892.288 valores de verossimilhança dos 10.031.616
-reservados; a diferença decorre das interrupções locais por saturação.
+A avaliação física compreendeu 9.892.288 valores de verossimilhança.
+A síntese estatística reuniu 324 relatórios e reutilizou as amostras
+e respostas já calculadas.
 
 Os diagnósticos originais dos 5.760 quantis continuam imutáveis.
 Uma avaliação suplementar aplica os controles às estatísticas de CDF
@@ -766,21 +754,17 @@ dos pontos a zero, governa a classificação.}
 \label{fig:comp-pareado-medias}
 \end{figure}
 
-Os arquivos públicos preservam 4.480 diferenças de quantis e 1.120
-diferenças de larguras centrais, além dos 10.000 sorteios bootstrap das
-médias já calculadas. As subdivisões em massa e índice espectral
-conservam suas contagens e não produzem estimativas de cobertura
-condicional. Uma recomposição independente verificou exatamente os
-contrastes, a propagação de intervalos e larguras e os percentis
-calculados a partir das médias bootstrap arquivadas. A conclusão
-inferencial deste marco é, portanto, delimitada: foram medidos os
-deslocamentos pontuais, mas sua resolução operacional não sustenta um
-domínio de equivalência de limites de massa na coorte examinada.
+A comparação reúne 4.480 diferenças de quantis e 1.120 diferenças de
+larguras centrais. Os 10.000 sorteios bootstrap avaliam a variabilidade
+das médias entre realizações. A incerteza numérica dos quantis é maior
+que os deslocamentos médios estimados, impedindo concluir equivalência
+dos limites de massa na escala de interesse. A Seção~\ref{sec:contrastes-condicionais}
+examina essa questão em um espaço de parâmetros reduzido.
 
 \subsection{Forma posterior em quatro controles normais}
 \label{sec:comp-KL-posterior}
 
-Nos quatro IDs fixados para engenharia, avaliou-se também a divergência
+Nos quatro IDs fixados para verificação, avaliou-se também a divergência
 entre as posteriores A\_G e B\_G nos mesmos dados normais. A estimativa usa
 \begin{equation}
  D_{\rm KL}\!\left[p_A(\theta\mid A)\,\Vert\,p_B(\theta\mid B)\right]
@@ -797,7 +781,7 @@ réplicas independentes já reproduzidas de B.
 \begin{table}[htbp]
 \centering\small
 \caption{Divergência posterior A\_G para B\_G nos quatro dados de
-engenharia. MCSE assintótica, em nats; não é erro entre realizações
+referência. MCSE assintótica, em nats; não é erro entre realizações
 nem certificação determinística do cálculo.}
 \label{tab:comp-KL-posterior}
 \begin{tabular}{rrr}
@@ -814,9 +798,8 @@ ID & $D_{\rm KL}$ estimada & MCSE\\
 
 A propagação retém a covariância entre a expectativa ponderada e
 $\log Z_A$, além da contribuição independente de $\log Z_B$.
-Primeiros e segundos momentos conjuntos também foram arquivados para
-reconstruir as covariâncias posteriores. Uma auditoria independente
-recompôs essas quantidades a partir das estatísticas suficientes;
+As covariâncias posteriores foram calculadas a partir dos primeiros e
+segundos momentos conjuntos e confirmadas por uma avaliação independente;
 os quatro pares satisfizeram seus diagnósticos de peso e suporte.
 As divergências não foram truncadas em zero nem usadas para escolher
 os IDs. O resultado quantifica diferenças de forma em quatro dados
@@ -839,9 +822,11 @@ trata de experimentos corretamente especificados; o mapa de $B$ contra
 $C_\beta$ ou $C_{\rm full}$ examina também mudança do modelo.
 As comparações inferenciais pareadas foram concluídas com todos os
 casos retidos. A resolução numérica não permitiu classificar os efeitos
-na escala prospectiva de 0,01; assim, o marco não estabelece que a
+na escala prospectiva de 0,01; assim, o estudo não estabelece que a
 aproximação preserve os limites de massa nem uma direção universal de
 viés. Melhorar a resolução das CDFs, especialmente nos casos de MCSE
 nula sem prova suficiente, permanece uma extensão metodológica.
 Os estudos seguintes de robustez tratam questões próprias e não
 transformam essa pendência em uma validação já obtida.
+
+Um experimento complementar com parâmetros de ruído fixados resolve a sensibilidade numérica dos contrastes de massa em uma amostra de 50 realizações (Seção~\ref{sec:contrastes-condicionais}). Essa redução de dimensão permite avaliar a aproximação de frequência em uma situação condicional, distinta da marginalização analisada neste capítulo.

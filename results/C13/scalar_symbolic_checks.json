@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "tests_run": 9,
+  "metrics": {
+    "max_auto_reference_error": 5.198341757059581e-13,
+    "max_earth_three_routes": 1.4147016891286057e-13,
+    "liang45_example": {
+      "beta": 0.9,
+      "cosine": 0,
+      "literal": 0.03162078965045033,
+      "compact": 0.020366003862741,
+      "difference": 0.011254785787709328,
+      "relative_to_compact": 0.5526261245731974
+    },
+    "complex_linked_cross_terms": {
+      "real": -0.07302636668173235,
+      "imag": 0.003013851588256559
+    },
+    "max_global_rotation_error": 7.88258347497985e-15,
+    "threshold_cross_term_example": {
+      "linked": -0.05000000000000151,
+      "cross_terms_omitted": 0.08333333333333268
+    },
+    "max_finite_direct_harmonic": 1.0201472992499379e-13,
+    "symbolic_polarization": "Matrix([[-2*sqrt(3)*beta**2/(3*(1 - beta**2)), 0, 0, 2*sqrt(3)*beta/(3*(1 - beta**2))], [0, sqrt(3)/3, 0, 0], [0, 0, sqrt(3)/3, 0], [2*sqrt(3)*beta/(3*(1 - beta**2)), 0, 0, -2*sqrt(3)/(3*(1 - beta**2))]])",
+    "symbolic_tidal": "Matrix([[sqrt(3)/6, 0, 0], [0, sqrt(3)/6, 0], [0, 0, sqrt(3)*(2*beta**2 - 2)/6]])",
+    "liang45_literal_minus_compact_second_factor": "2*beta**2*cosphi*x*(1 - 2*d)*sqrt(1 - d**2)*sqrt(1 - x**2)",
+    "symbolic_receiving_gain": "sqrt(3)*(mu**2*(2*beta**2 - 3) + 1)/(6*(beta*mu + 1))"
+  },
+  "numpy": "2.4.3",
+  "sympy": "1.14.0"
+}

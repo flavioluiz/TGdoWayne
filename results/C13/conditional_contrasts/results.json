@@ -1,0 +1,4435 @@
+{
+  "config": {
+    "population": "P16K8",
+    "ids": {
+      "start": 0,
+      "stop_exclusive": 50
+    },
+    "selection": "First 50 prior IDs, chosen before computing paired contrasts; no exclusion by outcome or precision.",
+    "models": [
+      "B_G",
+      "C_beta_G",
+      "C_full_G",
+      "B_CN",
+      "C_beta_CN",
+      "C_full_CN"
+    ],
+    "contrasts": [
+      [
+        "C_beta_G",
+        "B_G"
+      ],
+      [
+        "C_full_G",
+        "C_beta_G"
+      ],
+      [
+        "C_beta_CN",
+        "B_CN"
+      ],
+      [
+        "C_full_CN",
+        "C_beta_CN"
+      ]
+    ],
+    "probability": 0.95,
+    "cdf_sensitivity": 0.002,
+    "horizontal_tolerance": 0.01,
+    "scope": "Conditional mass posterior with fixed nuisance parameters; finite numerical sensitivity, not a uniform physical error certificate or a replacement for marginalized C08 results."
+  },
+  "input_sha256": {
+    "configs/experiments/c13_conditional_contrasts.json": "9701e03016fac0dd921fd805f008717e6fb91db71cf0ce3be3ddff538a592663",
+    "results/C13/conditional_contrasts/density_reference.py": "60288af1b62a00bbe884f15907a103e44d054e4bf73fc57e91c8da33d387eadc",
+    "preflight": "e16dc2f26f5b6875772cee1bd0867d348d979ce2331c35df59377f5c55403e4b",
+    "B_G": "2e2c649775ae1b1073664e797a40964976781efb416d36c1fd3819beb40aeeb9",
+    "B_G_synthesis": "b7376258d0062fa3b22899b5b60767bf8b5285d548c3a2093d91a79011c44671",
+    "C_beta_G": "792e82ee10efd7e9c97a0fc7a070124cdf6019724893b105c1ac2bab20bf0037",
+    "C_beta_G_synthesis": "043dc2be5c0df9e0cdc36f25e8d33d450042c43d80919e152bf4d3c8fc7e7be4",
+    "C_full_G": "f112965a1d5216102a19b79e24aacb36d0250a611ee46ef3511beebd821e429f",
+    "C_full_G_synthesis": "e63af8296bd60f04e1c5b33caa6e48965852389017192b90edfb2532f286f33a",
+    "B_CN": "3719a9ff30196b23c92faca526c234e2180e9f41abc92c8c361966e48093915a",
+    "B_CN_synthesis": "68b726cce1c97dc468a61850ae1c36428eac7696b038e1fedb2fb7d747feda15",
+    "C_beta_CN": "ec7a03157e58480d33c13deaa19f9dd8adab7e8aa2754cdfdefd63e4559cc6c1",
+    "C_beta_CN_synthesis": "49e8aac3ce0f421d25f754c897f786ffc313574c6757af9fe7e215c1d68ec1e8",
+    "C_full_CN": "deecca5edadb470f6d6e101999b5955f9f54188c810fd2834267860131437829",
+    "C_full_CN_synthesis": "06256669ecc84f20f01fa474ecb9c272ab1f07ff3533be104b9b6db6b3d9d564"
+  },
+  "quantile_details": [
+    {
+      "model": "B_G",
+      "id": 0,
+      "quantile": 0.9554087454358131,
+      "interval": [
+        0.9536187617422544,
+        0.957198465125211
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.3132424020744224e-07
+    },
+    {
+      "model": "B_G",
+      "id": 1,
+      "quantile": 0.9409961715984874,
+      "interval": [
+        0.9386545896641654,
+        0.9433388865417561
+      ],
+      "inverse_cdf_residual": 3.6637359812630166e-15,
+      "refinement_difference": 2.6202103875494487e-07
+    },
+    {
+      "model": "B_G",
+      "id": 2,
+      "quantile": 0.950094295504151,
+      "interval": [
+        0.9480987441664964,
+        0.9520894895347032
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 3.6569608052872127e-07
+    },
+    {
+      "model": "B_G",
+      "id": 3,
+      "quantile": 0.9516059639179599,
+      "interval": [
+        0.9496689586578884,
+        0.9535431129306725
+      ],
+      "inverse_cdf_residual": 6.661338147750939e-15,
+      "refinement_difference": 1.4610016707550244e-07
+    },
+    {
+      "model": "B_G",
+      "id": 4,
+      "quantile": 0.9524290378524799,
+      "interval": [
+        0.9505238555982108,
+        0.9543340792602709
+      ],
+      "inverse_cdf_residual": 7.993605777301127e-15,
+      "refinement_difference": 1.2483144939956503e-07
+    },
+    {
+      "model": "B_G",
+      "id": 5,
+      "quantile": 0.9508402601722519,
+      "interval": [
+        0.9488736717346516,
+        0.9528072548415236
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 4.2338948436082546e-07
+    },
+    {
+      "model": "B_G",
+      "id": 6,
+      "quantile": 0.9473234143874685,
+      "interval": [
+        0.9452230981353452,
+        0.9494252217870212
+      ],
+      "inverse_cdf_residual": 3.552713678800501e-15,
+      "refinement_difference": 5.29692843365126e-07
+    },
+    {
+      "model": "B_G",
+      "id": 7,
+      "quantile": 0.9479910244202555,
+      "interval": [
+        0.9459161259963048,
+        0.9500667846757205
+      ],
+      "inverse_cdf_residual": 4.551914400963142e-15,
+      "refinement_difference": 3.0226945779698866e-07
+    },
+    {
+      "model": "B_G",
+      "id": 8,
+      "quantile": 0.9522868165790963,
+      "interval": [
+        0.9503754504222832,
+        0.9541977795847033
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.2762260376563148e-07
+    },
+    {
+      "model": "B_G",
+      "id": 9,
+      "quantile": 0.9498748732143599,
+      "interval": [
+        0.9478719033763093,
+        0.9518781504126179
+      ],
+      "inverse_cdf_residual": 6.328271240363392e-15,
+      "refinement_difference": 5.2148698137521876e-08
+    },
+    {
+      "model": "B_G",
+      "id": 10,
+      "quantile": 0.9280592362549828,
+      "interval": [
+        0.9252384861373225,
+        0.9308843263321785
+      ],
+      "inverse_cdf_residual": 3.9968028886505635e-15,
+      "refinement_difference": 4.4451017866542486e-08
+    },
+    {
+      "model": "B_G",
+      "id": 11,
+      "quantile": 0.9491896664082649,
+      "interval": [
+        0.9471596888439042,
+        0.9512201817051523
+      ],
+      "inverse_cdf_residual": 4.6629367034256575e-15,
+      "refinement_difference": 3.3471033211718293e-07
+    },
+    {
+      "model": "B_G",
+      "id": 12,
+      "quantile": 0.9485837694780864,
+      "interval": [
+        0.9465303438775413,
+        0.9506376325319016
+      ],
+      "inverse_cdf_residual": 5.218048215738236e-15,
+      "refinement_difference": 6.50943808855331e-08
+    },
+    {
+      "model": "B_G",
+      "id": 13,
+      "quantile": 0.9582041174930575,
+      "interval": [
+        0.956522675858432,
+        0.9598853487184007
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.728891955738888e-07
+    },
+    {
+      "model": "B_G",
+      "id": 14,
+      "quantile": 0.951303167377224,
+      "interval": [
+        0.9493541700010074,
+        0.9532523629522697
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-15,
+      "refinement_difference": 3.1130529809519913e-07
+    },
+    {
+      "model": "B_G",
+      "id": 15,
+      "quantile": 0.954264004784362,
+      "interval": [
+        0.9524286532794956,
+        0.9560991291719034
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.869122924271551e-07
+    },
+    {
+      "model": "B_G",
+      "id": 16,
+      "quantile": 0.9570188504093431,
+      "interval": [
+        0.9552916106444582,
+        0.9587457795209757
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.004628035263579e-07
+    },
+    {
+      "model": "B_G",
+      "id": 17,
+      "quantile": 0.9533725895583605,
+      "interval": [
+        0.951503054720892,
+        0.9552416388672671
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.6309149120097288e-07
+    },
+    {
+      "model": "B_G",
+      "id": 18,
+      "quantile": 0.9505239551019786,
+      "interval": [
+        0.9485447642670235,
+        0.9525035449828773
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 4.9195296636384e-07
+    },
+    {
+      "model": "B_G",
+      "id": 19,
+      "quantile": 0.9474093866602091,
+      "interval": [
+        0.9453111859042682,
+        0.9495076560226685
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 2.2571920643699173e-07
+    },
+    {
+      "model": "B_G",
+      "id": 20,
+      "quantile": 0.9593803698020842,
+      "interval": [
+        0.9577438218572787,
+        0.9610157125793052
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.822387606959964e-07
+    },
+    {
+      "model": "B_G",
+      "id": 21,
+      "quantile": 0.9562194709939789,
+      "interval": [
+        0.9544604787871374,
+        0.9579776418325449
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.065718195913945e-07
+    },
+    {
+      "model": "B_G",
+      "id": 22,
+      "quantile": 0.938908491011843,
+      "interval": [
+        0.9364887342985823,
+        0.9413298366413221
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 1.0457842369859804e-09
+    },
+    {
+      "model": "B_G",
+      "id": 23,
+      "quantile": 0.9472409372190119,
+      "interval": [
+        0.9451360785802528,
+        0.9493461693429781
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 2.630901025924004e-07
+    },
+    {
+      "model": "B_G",
+      "id": 24,
+      "quantile": 0.9426553509196625,
+      "interval": [
+        0.9403769169925648,
+        0.944935097260333
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.2332118060640624e-07
+    },
+    {
+      "model": "B_G",
+      "id": 25,
+      "quantile": 0.9553123010956289,
+      "interval": [
+        0.9535181544698251,
+        0.9571059514980879
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.7441355288668774e-08
+    },
+    {
+      "model": "B_G",
+      "id": 26,
+      "quantile": 0.9490717223376087,
+      "interval": [
+        0.9470364695818363,
+        0.9511067091035502
+      ],
+      "inverse_cdf_residual": 4.551914400963142e-15,
+      "refinement_difference": 2.619727449415521e-07
+    },
+    {
+      "model": "B_G",
+      "id": 27,
+      "quantile": 0.9435581990895595,
+      "interval": [
+        0.9413122394435073,
+        0.9458047922923798
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 6.331319993835294e-07
+    },
+    {
+      "model": "B_G",
+      "id": 28,
+      "quantile": 0.95160108448667,
+      "interval": [
+        0.9496629899728182,
+        0.9535399068385713
+      ],
+      "inverse_cdf_residual": 4.6629367034256575e-15,
+      "refinement_difference": 9.488660367429347e-07
+    },
+    {
+      "model": "B_G",
+      "id": 29,
+      "quantile": 0.9579102082117249,
+      "interval": [
+        0.9562173800401937,
+        0.9596027878227605
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.0374873005722947e-07
+    },
+    {
+      "model": "B_G",
+      "id": 30,
+      "quantile": 0.9562950047050686,
+      "interval": [
+        0.9545377797053034,
+        0.9580510908286634
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 7.622429200049297e-07
+    },
+    {
+      "model": "B_G",
+      "id": 31,
+      "quantile": 0.9500626340950394,
+      "interval": [
+        0.9480654881460094,
+        0.9520593504213904
+      ],
+      "inverse_cdf_residual": 5.995204332975845e-15,
+      "refinement_difference": 3.4659756509292095e-07
+    },
+    {
+      "model": "B_G",
+      "id": 32,
+      "quantile": 0.9473274768016264,
+      "interval": [
+        0.945226323743239,
+        0.9494288590821679
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 4.093591103870864e-07
+    },
+    {
+      "model": "B_G",
+      "id": 33,
+      "quantile": 0.9574607543634797,
+      "interval": [
+        0.9557500319038742,
+        0.9591703458681713
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 4.361650364215208e-07
+    },
+    {
+      "model": "B_G",
+      "id": 34,
+      "quantile": 0.9571115472678154,
+      "interval": [
+        0.9553874205700025,
+        0.9588349445027083
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.6411063430421535e-07
+    },
+    {
+      "model": "B_G",
+      "id": 35,
+      "quantile": 0.9125860271839497,
+      "interval": [
+        0.9092138114889879,
+        0.915969189386314
+      ],
+      "inverse_cdf_residual": 3.552713678800501e-15,
+      "refinement_difference": 1.4251787927577197e-06
+    },
+    {
+      "model": "B_G",
+      "id": 36,
+      "quantile": 0.9613081178982773,
+      "interval": [
+        0.9597472121162061,
+        0.9628676778209905
+      ],
+      "inverse_cdf_residual": 3.3306690738754696e-16,
+      "refinement_difference": 2.347807536162705e-07
+    },
+    {
+      "model": "B_G",
+      "id": 37,
+      "quantile": 0.9541121758327031,
+      "interval": [
+        0.9522717192741971,
+        0.9559526080176808
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.0354737140813057e-07
+    },
+    {
+      "model": "B_G",
+      "id": 38,
+      "quantile": 0.9554376102453453,
+      "interval": [
+        0.9536486736030299,
+        0.957226565905158
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 6.078369840789577e-07
+    },
+    {
+      "model": "B_G",
+      "id": 39,
+      "quantile": 0.9580306307547954,
+      "interval": [
+        0.9563426427806931,
+        0.9597180944616047
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.6212035070537496e-07
+    },
+    {
+      "model": "B_G",
+      "id": 40,
+      "quantile": 0.9429240203697383,
+      "interval": [
+        0.9406564811091402,
+        0.945193347666669
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 8.879486457225028e-07
+    },
+    {
+      "model": "B_G",
+      "id": 41,
+      "quantile": 0.9552034244177356,
+      "interval": [
+        0.9534047705375608,
+        0.9570014420862588
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 7.813757807451083e-08
+    },
+    {
+      "model": "B_G",
+      "id": 42,
+      "quantile": 0.9523433839680052,
+      "interval": [
+        0.9504344060836994,
+        0.9542519541729566
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.0699440506088962e-07
+    },
+    {
+      "model": "B_G",
+      "id": 43,
+      "quantile": 0.9544798821946479,
+      "interval": [
+        0.9526534370614774,
+        0.956305266396488
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 6.570285914220264e-07
+    },
+    {
+      "model": "B_G",
+      "id": 44,
+      "quantile": 0.9426193365724114,
+      "interval": [
+        0.9403389014283586,
+        0.9449005676094043
+      ],
+      "inverse_cdf_residual": 5.551115123125783e-16,
+      "refinement_difference": 3.2668028704385677e-07
+    },
+    {
+      "model": "B_G",
+      "id": 45,
+      "quantile": 0.9517274367648834,
+      "interval": [
+        0.9497946673322435,
+        0.9536606476027557
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 5.738496555718342e-07
+    },
+    {
+      "model": "B_G",
+      "id": 46,
+      "quantile": 0.9321244595622402,
+      "interval": [
+        0.9294542533730346,
+        0.9347988990768975
+      ],
+      "inverse_cdf_residual": 6.8833827526759706e-15,
+      "refinement_difference": 6.176505498167728e-07
+    },
+    {
+      "model": "B_G",
+      "id": 47,
+      "quantile": 0.9587198682242006,
+      "interval": [
+        0.957058380292563,
+        0.9603806865417032
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 6.36782323537588e-08
+    },
+    {
+      "model": "B_G",
+      "id": 48,
+      "quantile": 0.9577526594380902,
+      "interval": [
+        0.9560538191424687,
+        0.9594513976902783
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.839283404001193e-07
+    },
+    {
+      "model": "B_G",
+      "id": 49,
+      "quantile": 0.9603425486970734,
+      "interval": [
+        0.9587443648764863,
+        0.9619400422611437
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.6301569189257634e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 0,
+      "quantile": 0.9556286279476613,
+      "interval": [
+        0.9538476015054566,
+        0.9574094263010008
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.306783249972355e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 1,
+      "quantile": 0.9400151355371794,
+      "interval": [
+        0.9376360324303556,
+        0.9423954357496918
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 1.7206395686031328e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 2,
+      "quantile": 0.9499660385553963,
+      "interval": [
+        0.9479657067834245,
+        0.9519660172164769
+      ],
+      "inverse_cdf_residual": 5.551115123125783e-15,
+      "refinement_difference": 3.7728374024936784e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 3,
+      "quantile": 0.9516290748995233,
+      "interval": [
+        0.9496932551378062,
+        0.9535650587035808
+      ],
+      "inverse_cdf_residual": 6.328271240363392e-15,
+      "refinement_difference": 1.301642588158458e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 4,
+      "quantile": 0.952499354116549,
+      "interval": [
+        0.9505972362123782,
+        0.9544013383582582
+      ],
+      "inverse_cdf_residual": 7.882583474838611e-15,
+      "refinement_difference": 1.1584985992740826e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 5,
+      "quantile": 0.9507588646154393,
+      "interval": [
+        0.9487893385861157,
+        0.952728786490223
+      ],
+      "inverse_cdf_residual": 5.218048215738236e-15,
+      "refinement_difference": 3.723060745253193e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 6,
+      "quantile": 0.9468850591707325,
+      "interval": [
+        0.944768017152608,
+        0.949003507380132
+      ],
+      "inverse_cdf_residual": 1.3322676295501878e-15,
+      "refinement_difference": 4.3308698705057935e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 7,
+      "quantile": 0.9475946857191442,
+      "interval": [
+        0.9455047967511235,
+        0.9496855168401391
+      ],
+      "inverse_cdf_residual": 4.107825191113079e-15,
+      "refinement_difference": 3.1055488303177725e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 8,
+      "quantile": 0.9524093042988203,
+      "interval": [
+        0.9505029426238215,
+        0.9543152818777725
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 2.2039919078675752e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 9,
+      "quantile": 0.9496607360095406,
+      "interval": [
+        0.9476497500859182,
+        0.951672069200526
+      ],
+      "inverse_cdf_residual": 6.106226635438361e-15,
+      "refinement_difference": 2.7977120176103654e-08
+    },
+    {
+      "model": "C_beta_G",
+      "id": 10,
+      "quantile": 0.9254182384284761,
+      "interval": [
+        0.9224992126383615,
+        0.9283424541424914
+      ],
+      "inverse_cdf_residual": 3.1086244689504383e-15,
+      "refinement_difference": 1.7646453642772286e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 11,
+      "quantile": 0.9489912526074199,
+      "interval": [
+        0.9469537228155239,
+        0.9510293570298105
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 3.646038907456628e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 12,
+      "quantile": 0.9483853195024566,
+      "interval": [
+        0.9463242862234374,
+        0.9504469332909559
+      ],
+      "inverse_cdf_residual": 4.773959005888173e-15,
+      "refinement_difference": 1.8065990314841684e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 13,
+      "quantile": 0.9586112942668497,
+      "interval": [
+        0.9569461779131649,
+        0.9602762153727479
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.2780736514137487e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 14,
+      "quantile": 0.9513082493093831,
+      "interval": [
+        0.9493596589257846,
+        0.9532570985361603
+      ],
+      "inverse_cdf_residual": 7.66053886991358e-15,
+      "refinement_difference": 3.425043982874243e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 15,
+      "quantile": 0.9545169721651436,
+      "interval": [
+        0.9526917330872925,
+        0.9563421028010665
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.6962104605086097e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 16,
+      "quantile": 0.9573204045528373,
+      "interval": [
+        0.9556054240601592,
+        0.959035134065804
+      ],
+      "inverse_cdf_residual": 3.3306690738754696e-16,
+      "refinement_difference": 3.183690348018686e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 17,
+      "quantile": 0.9535390911479038,
+      "interval": [
+        0.9516763446458483,
+        0.9554014056867035
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.0138228845324448e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 18,
+      "quantile": 0.9504132328073933,
+      "interval": [
+        0.9484298181398028,
+        0.952397158527285
+      ],
+      "inverse_cdf_residual": 7.438494264988549e-15,
+      "refinement_difference": 6.03205587479394e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 19,
+      "quantile": 0.947072607616352,
+      "interval": [
+        0.9449615008111983,
+        0.9491837374896892
+      ],
+      "inverse_cdf_residual": 4.107825191113079e-15,
+      "refinement_difference": 3.065656335454747e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 20,
+      "quantile": 0.9599236122638274,
+      "interval": [
+        0.9583088527227044,
+        0.9615372489768411
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.3739275079037725e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 21,
+      "quantile": 0.9564984571157861,
+      "interval": [
+        0.9547507959267327,
+        0.9582455017740832
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 9.172751891384223e-09
+    },
+    {
+      "model": "C_beta_G",
+      "id": 22,
+      "quantile": 0.9377053259686747,
+      "interval": [
+        0.9352397558124749,
+        0.9401729041251675
+      ],
+      "inverse_cdf_residual": 6.772360450213455e-15,
+      "refinement_difference": 1.5600461400477883e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 23,
+      "quantile": 0.9469054443229601,
+      "interval": [
+        0.9447877118112831,
+        0.9490236543286859
+      ],
+      "inverse_cdf_residual": 4.218847493575595e-15,
+      "refinement_difference": 9.359703601052871e-08
+    },
+    {
+      "model": "C_beta_G",
+      "id": 24,
+      "quantile": 0.9418718259013741,
+      "interval": [
+        0.9395633835215725,
+        0.9441817261475951
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.2351860790313935e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 25,
+      "quantile": 0.9556074249495209,
+      "interval": [
+        0.9538251297548566,
+        0.9573892266988995
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 5.33534988411688e-08
+    },
+    {
+      "model": "C_beta_G",
+      "id": 26,
+      "quantile": 0.9488851799765657,
+      "interval": [
+        0.946842762328312,
+        0.9509273114111361
+      ],
+      "inverse_cdf_residual": 3.774758283725532e-15,
+      "refinement_difference": 3.00446996059911e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 27,
+      "quantile": 0.9429251984005204,
+      "interval": [
+        0.9406550017384543,
+        0.9451961555027643
+      ],
+      "inverse_cdf_residual": 4.107825191113079e-15,
+      "refinement_difference": 6.983899012436012e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 28,
+      "quantile": 0.9515878163832339,
+      "interval": [
+        0.9496492454207306,
+        0.953527258855683
+      ],
+      "inverse_cdf_residual": 4.9960036108132044e-15,
+      "refinement_difference": 1.1010881326711797e-06
+    },
+    {
+      "model": "C_beta_G",
+      "id": 29,
+      "quantile": 0.9582504473955616,
+      "interval": [
+        0.9565713333271135,
+        0.95992926690449
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.6048154155855485e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 30,
+      "quantile": 0.9566281236579582,
+      "interval": [
+        0.9548841476873886,
+        0.9583709176407996
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 7.605743083116678e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 31,
+      "quantile": 0.9500167763293718,
+      "interval": [
+        0.9480179710358795,
+        0.9520151608854038
+      ],
+      "inverse_cdf_residual": 5.662137425588298e-15,
+      "refinement_difference": 3.7656022178200743e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 32,
+      "quantile": 0.9469646234712037,
+      "interval": [
+        0.9448497456261632,
+        0.9490798966211645
+      ],
+      "inverse_cdf_residual": 5.10702591327572e-15,
+      "refinement_difference": 3.217942154964959e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 33,
+      "quantile": 0.9577698692046769,
+      "interval": [
+        0.956071704886593,
+        0.9594669621450449
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.9227444237344145e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 34,
+      "quantile": 0.9575015732685214,
+      "interval": [
+        0.9557931053289241,
+        0.9592092627377149
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.8996405337645683e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 35,
+      "quantile": 0.9074871068596444,
+      "interval": [
+        0.9039328090657263,
+        0.9110539050931296
+      ],
+      "inverse_cdf_residual": 5.662137425588298e-15,
+      "refinement_difference": 1.5826476696956249e-06
+    },
+    {
+      "model": "C_beta_G",
+      "id": 36,
+      "quantile": 0.9618933237919405,
+      "interval": [
+        0.9603559644904268,
+        0.9634293911468338
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.1829424856623092e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 37,
+      "quantile": 0.9543057643970253,
+      "interval": [
+        0.9524731938820383,
+        0.9561383387825902
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.1437120723575305e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 38,
+      "quantile": 0.9557070942337756,
+      "interval": [
+        0.9539290532672907,
+        0.957485070741328
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.280636090621016e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 39,
+      "quantile": 0.9584064048117926,
+      "interval": [
+        0.956733586956387,
+        0.9600786384068932
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.8950599939570054e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 40,
+      "quantile": 0.9421046043882464,
+      "interval": [
+        0.9398057620357376,
+        0.9444052615047885
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 8.714127468500976e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 41,
+      "quantile": 0.9554987814075131,
+      "interval": [
+        0.9537120492591132,
+        0.9572850985781161
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.664992298535452e-08
+    },
+    {
+      "model": "C_beta_G",
+      "id": 42,
+      "quantile": 0.952422075495024,
+      "interval": [
+        0.9505164497085896,
+        0.9543273395635627
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-15,
+      "refinement_difference": 1.7324465373391718e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 43,
+      "quantile": 0.9546197833885428,
+      "interval": [
+        0.9527992453111964,
+        0.9564393985544043
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.683776610476698e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 44,
+      "quantile": 0.9418589633781083,
+      "interval": [
+        0.9395494627983274,
+        0.9441693892657252
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.83118970378915e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 45,
+      "quantile": 0.9517749376214028,
+      "interval": [
+        0.9498441871163651,
+        0.9537060943818007
+      ],
+      "inverse_cdf_residual": 7.438494264988549e-15,
+      "refinement_difference": 5.319117257762684e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 46,
+      "quantile": 0.929919817954052,
+      "interval": [
+        0.9271674278328327,
+        0.9326768410049183
+      ],
+      "inverse_cdf_residual": 2.6645352591003757e-15,
+      "refinement_difference": 5.07680076311523e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 47,
+      "quantile": 0.959193665054192,
+      "interval": [
+        0.9575512120067653,
+        0.9608354749095216
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 8.887247682221044e-08
+    },
+    {
+      "model": "C_beta_G",
+      "id": 48,
+      "quantile": 0.958141559138326,
+      "interval": [
+        0.9564583655822451,
+        0.9598246671844962
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.972617262399837e-07
+    },
+    {
+      "model": "C_beta_G",
+      "id": 49,
+      "quantile": 0.9608526427046061,
+      "interval": [
+        0.9592749496297508,
+        0.9624296277099229
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.8582625388740013e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 0,
+      "quantile": 0.9556298414486211,
+      "interval": [
+        0.9538488264732151,
+        0.9574106921027032
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.984447117215794e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 1,
+      "quantile": 0.94001325792793,
+      "interval": [
+        0.9376339767425224,
+        0.9423935387931911
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 3.268853085991452e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 2,
+      "quantile": 0.9499663438441133,
+      "interval": [
+        0.9479659581513383,
+        0.9519662992577946
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 4.6685975119142853e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 3,
+      "quantile": 0.9516295550914496,
+      "interval": [
+        0.9496937576077522,
+        0.9535655940240152
+      ],
+      "inverse_cdf_residual": 6.328271240363392e-15,
+      "refinement_difference": 1.905742531560506e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 4,
+      "quantile": 0.952499687642975,
+      "interval": [
+        0.9505975592757802,
+        0.9544017087670145
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-15,
+      "refinement_difference": 1.5294217403649668e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 5,
+      "quantile": 0.9507588939853475,
+      "interval": [
+        0.9487893538832549,
+        0.9527289714044249
+      ],
+      "inverse_cdf_residual": 5.218048215738236e-15,
+      "refinement_difference": 5.306583631403683e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 6,
+      "quantile": 0.9468838811665883,
+      "interval": [
+        0.9447669144262159,
+        0.9490025128853805
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-16,
+      "refinement_difference": 5.955176074490254e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 7,
+      "quantile": 0.9475941315314484,
+      "interval": [
+        0.945504294495198,
+        0.9496850392350998
+      ],
+      "inverse_cdf_residual": 4.218847493575595e-15,
+      "refinement_difference": 4.1133323636088903e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 8,
+      "quantile": 0.9524100821101612,
+      "interval": [
+        0.950503696260397,
+        0.9543160435495139
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.714364021327853e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 9,
+      "quantile": 0.9496596692528344,
+      "interval": [
+        0.947648685742977,
+        0.9516710468629994
+      ],
+      "inverse_cdf_residual": 6.661338147750939e-15,
+      "refinement_difference": 1.3759469008611802e-08
+    },
+    {
+      "model": "C_full_G",
+      "id": 10,
+      "quantile": 0.9254130031920302,
+      "interval": [
+        0.9224938724088886,
+        0.9283372542232782
+      ],
+      "inverse_cdf_residual": 3.219646771412954e-15,
+      "refinement_difference": 6.811930286509948e-08
+    },
+    {
+      "model": "C_full_G",
+      "id": 11,
+      "quantile": 0.9489911618927738,
+      "interval": [
+        0.9469536654787715,
+        0.9510293217167567
+      ],
+      "inverse_cdf_residual": 3.9968028886505635e-15,
+      "refinement_difference": 4.2312347814377205e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 12,
+      "quantile": 0.9483851963771569,
+      "interval": [
+        0.9463241995223163,
+        0.9504467443343437
+      ],
+      "inverse_cdf_residual": 5.10702591327572e-15,
+      "refinement_difference": 1.0405760908493988e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 13,
+      "quantile": 0.9586131636521039,
+      "interval": [
+        0.9569480684942693,
+        0.9602781371887297
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.720844705679127e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 14,
+      "quantile": 0.9513090399488168,
+      "interval": [
+        0.9493604365481043,
+        0.9532578992375546
+      ],
+      "inverse_cdf_residual": 7.549516567451064e-15,
+      "refinement_difference": 3.741137863944033e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 15,
+      "quantile": 0.954518499612026,
+      "interval": [
+        0.9526932269512731,
+        0.9563436713328067
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.140360137545485e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 16,
+      "quantile": 0.9573217582908283,
+      "interval": [
+        0.9556068292182152,
+        0.9590364922617465
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.416141555190322e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 17,
+      "quantile": 0.9535399406781714,
+      "interval": [
+        0.9516771569704846,
+        0.9554022643143801
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 1.4647757751173884e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 18,
+      "quantile": 0.9504133711650443,
+      "interval": [
+        0.9484300144541453,
+        0.9523971554845713
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 5.317677902461071e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 19,
+      "quantile": 0.9470721389452926,
+      "interval": [
+        0.9449609990100463,
+        0.9491832756958192
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 2.9383988964237773e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 20,
+      "quantile": 0.9599264242860499,
+      "interval": [
+        0.9583115893928538,
+        0.9615400515286401
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.037628336644005e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 21,
+      "quantile": 0.9564999522139398,
+      "interval": [
+        0.9547521941280097,
+        0.9582469053187093
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.1127025645318867e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 22,
+      "quantile": 0.9377026039484319,
+      "interval": [
+        0.9352368720497997,
+        0.9401702189979075
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 8.543795071425109e-08
+    },
+    {
+      "model": "C_full_G",
+      "id": 23,
+      "quantile": 0.9469043992160076,
+      "interval": [
+        0.9447866178759436,
+        0.949022672083812
+      ],
+      "inverse_cdf_residual": 4.551914400963142e-15,
+      "refinement_difference": 2.430490826377252e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 24,
+      "quantile": 0.941870165315002,
+      "interval": [
+        0.9395616752216067,
+        0.9441801453701393
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.1432800723661956e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 25,
+      "quantile": 0.9556087704797651,
+      "interval": [
+        0.953826491013807,
+        0.9573905710966834
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 5.3760600526864266e-08
+    },
+    {
+      "model": "C_full_G",
+      "id": 26,
+      "quantile": 0.9488854079721608,
+      "interval": [
+        0.9468429696581235,
+        0.9509275277969933
+      ],
+      "inverse_cdf_residual": 3.885780586188048e-15,
+      "refinement_difference": 3.065564181392588e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 27,
+      "quantile": 0.942923924210407,
+      "interval": [
+        0.9406535572166104,
+        0.9451950322519709
+      ],
+      "inverse_cdf_residual": 4.551914400963142e-15,
+      "refinement_difference": 8.409356709870863e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 28,
+      "quantile": 0.951588763193138,
+      "interval": [
+        0.9496501723874506,
+        0.9535283954316613
+      ],
+      "inverse_cdf_residual": 3.9968028886505635e-15,
+      "refinement_difference": 1.2837372715956974e-06
+    },
+    {
+      "model": "C_full_G",
+      "id": 29,
+      "quantile": 0.9582523501351513,
+      "interval": [
+        0.9565732919976437,
+        0.9599312806075418
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.977346370032109e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 30,
+      "quantile": 0.9566296267035327,
+      "interval": [
+        0.9548855176175218,
+        0.9583724779687848
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 9.106418076276768e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 31,
+      "quantile": 0.9500170530821372,
+      "interval": [
+        0.9480181954577397,
+        0.9520153621819013
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 4.3460711507403715e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 32,
+      "quantile": 0.9469638060420441,
+      "interval": [
+        0.9448488165514806,
+        0.949079090887649
+      ],
+      "inverse_cdf_residual": 5.551115123125783e-15,
+      "refinement_difference": 4.590109223823191e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 33,
+      "quantile": 0.9577712625219418,
+      "interval": [
+        0.9560728998062024,
+        0.959468315338716
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 6.271209341823791e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 34,
+      "quantile": 0.9575030693451606,
+      "interval": [
+        0.9557945786668395,
+        0.9592107572836933
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.255376845283763e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 35,
+      "quantile": 0.9074781503151166,
+      "interval": [
+        0.9039237802101582,
+        0.9110453901220346
+      ],
+      "inverse_cdf_residual": 3.4416913763379853e-15,
+      "refinement_difference": 1.874760064857206e-06
+    },
+    {
+      "model": "C_full_G",
+      "id": 36,
+      "quantile": 0.96189630232563,
+      "interval": [
+        0.9603588628519288,
+        0.9634323530524569
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.7702204707935607e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 37,
+      "quantile": 0.9543069011987765,
+      "interval": [
+        0.9524743230950645,
+        0.9561395560411794
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.065128810821662e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 38,
+      "quantile": 0.9557081545202011,
+      "interval": [
+        0.9539301173731433,
+        0.9574863293785304
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 7.68375492454787e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 39,
+      "quantile": 0.9584077548049867,
+      "interval": [
+        0.9567349514071903,
+        0.9600800573444153
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.0763123010378877e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 40,
+      "quantile": 0.9421026181394793,
+      "interval": [
+        0.939803829113959,
+        0.9444034685157091
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.129580431413757e-06
+    },
+    {
+      "model": "C_full_G",
+      "id": 41,
+      "quantile": 0.9555002016545698,
+      "interval": [
+        0.9537134176464541,
+        0.957286456656341
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.096305267735744e-08
+    },
+    {
+      "model": "C_full_G",
+      "id": 42,
+      "quantile": 0.9524227928984648,
+      "interval": [
+        0.9505171197738632,
+        0.9543280441131462
+      ],
+      "inverse_cdf_residual": 7.882583474838611e-15,
+      "refinement_difference": 2.2793879261850947e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 43,
+      "quantile": 0.9546207904181708,
+      "interval": [
+        0.9528000237265232,
+        0.9564403552312651
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 8.03644665148262e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 44,
+      "quantile": 0.9418573451139626,
+      "interval": [
+        0.9395476798102863,
+        0.9441678180603353
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.0590111927141237e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 45,
+      "quantile": 0.9517753342831989,
+      "interval": [
+        0.9498446221039404,
+        0.9537066455619827
+      ],
+      "inverse_cdf_residual": 7.216449660063518e-15,
+      "refinement_difference": 7.22396982344442e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 46,
+      "quantile": 0.9299150376560735,
+      "interval": [
+        0.927162624608201,
+        0.9326723893882297
+      ],
+      "inverse_cdf_residual": 2.9976021664879227e-15,
+      "refinement_difference": 7.760283328162032e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 47,
+      "quantile": 0.9591956289010206,
+      "interval": [
+        0.9575531841446008,
+        0.96083746245649
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.1618615725073056e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 48,
+      "quantile": 0.9581431522465041,
+      "interval": [
+        0.9564599978224704,
+        0.9598263674554427
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 6.276904421786966e-07
+    },
+    {
+      "model": "C_full_G",
+      "id": 49,
+      "quantile": 0.960854903852173,
+      "interval": [
+        0.9592772223622211,
+        0.9624318755643361
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.744231252238549e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 0,
+      "quantile": 0.9516743711797268,
+      "interval": [
+        0.9497401140872577,
+        0.9536086326300304
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-15,
+      "refinement_difference": 2.388860383950586e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 1,
+      "quantile": 0.9466824207338987,
+      "interval": [
+        0.9445554000592752,
+        0.9488104088059048
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 5.278040602352263e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 2,
+      "quantile": 0.9479649624148397,
+      "interval": [
+        0.9458905179306081,
+        0.9500406929170794
+      ],
+      "inverse_cdf_residual": 6.106226635438361e-15,
+      "refinement_difference": 5.407795229395163e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 3,
+      "quantile": 0.9498181039004878,
+      "interval": [
+        0.9478124009916167,
+        0.951824504917827
+      ],
+      "inverse_cdf_residual": 7.216449660063518e-15,
+      "refinement_difference": 6.585318480523128e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 4,
+      "quantile": 0.9512023754509784,
+      "interval": [
+        0.9492486423341804,
+        0.9531561980976947
+      ],
+      "inverse_cdf_residual": 3.774758283725532e-15,
+      "refinement_difference": 1.4098894074443535e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 5,
+      "quantile": 0.9482861478437248,
+      "interval": [
+        0.9462206554143112,
+        0.9503513690464578
+      ],
+      "inverse_cdf_residual": 4.107825191113079e-15,
+      "refinement_difference": 5.773681637233352e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 6,
+      "quantile": 0.9579935392058962,
+      "interval": [
+        0.9563029450845402,
+        0.9596831123962074
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.2389454135129938e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 7,
+      "quantile": 0.951944246212463,
+      "interval": [
+        0.9500197166383595,
+        0.9538688501405886
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.7409713448657271e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 8,
+      "quantile": 0.9518342362609757,
+      "interval": [
+        0.9499066705085311,
+        0.9537615456597228
+      ],
+      "inverse_cdf_residual": 6.439293542825908e-15,
+      "refinement_difference": 2.2363679019754557e-08
+    },
+    {
+      "model": "B_CN",
+      "id": 9,
+      "quantile": 0.9404770942121591,
+      "interval": [
+        0.9381170158699371,
+        0.9428390071569709
+      ],
+      "inverse_cdf_residual": 6.772360450213455e-15,
+      "refinement_difference": 2.9603996731797366e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 10,
+      "quantile": 0.9524240429084256,
+      "interval": [
+        0.950518767494399,
+        0.9543296267208908
+      ],
+      "inverse_cdf_residual": 7.66053886991358e-15,
+      "refinement_difference": 6.328290966806094e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 11,
+      "quantile": 0.95211643548654,
+      "interval": [
+        0.9501990878793783,
+        0.9540340988349151
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 6.722917460511013e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 12,
+      "quantile": 0.9277350709341357,
+      "interval": [
+        0.9249018625515146,
+        0.9305727917859528
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.721574909296919e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 13,
+      "quantile": 0.9513873932057721,
+      "interval": [
+        0.9494412956557547,
+        0.9533334635945071
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 2.4761262551464824e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 14,
+      "quantile": 0.9547636361647429,
+      "interval": [
+        0.9529479290906023,
+        0.9565782458666533
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 6.660907044819808e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 15,
+      "quantile": 0.937160080805639,
+      "interval": [
+        0.9346747575522555,
+        0.9396480260840742
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 5.588919271826143e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 16,
+      "quantile": 0.9581439509988403,
+      "interval": [
+        0.9564598315271474,
+        0.9598272929074566
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.9094055248025654e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 17,
+      "quantile": 0.9538878364367582,
+      "interval": [
+        0.9520392589550255,
+        0.9557367126575258
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 6.80311953327184e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 18,
+      "quantile": 0.9530721563410662,
+      "interval": [
+        0.9511916105923983,
+        0.9549523061836429
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.531953745612327e-08
+    },
+    {
+      "model": "B_CN",
+      "id": 19,
+      "quantile": 0.9529069647512299,
+      "interval": [
+        0.9510194824753152,
+        0.9547939031933531
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.0788587651310309e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 20,
+      "quantile": 0.9472805288498457,
+      "interval": [
+        0.9451784760118105,
+        0.9493833480344822
+      ],
+      "inverse_cdf_residual": 3.4416913763379853e-15,
+      "refinement_difference": 1.7204462665620923e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 21,
+      "quantile": 0.9469493257599962,
+      "interval": [
+        0.9448342871901017,
+        0.9490651773024538
+      ],
+      "inverse_cdf_residual": 4.9960036108132044e-15,
+      "refinement_difference": 1.8477217100798526e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 22,
+      "quantile": 0.9570193673159837,
+      "interval": [
+        0.9552909339893635,
+        0.9587466397194205
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.713369691795478e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 23,
+      "quantile": 0.9445308678835583,
+      "interval": [
+        0.9423229943550139,
+        0.9467394617803716
+      ],
+      "inverse_cdf_residual": 4.884981308350689e-15,
+      "refinement_difference": 2.0100646414000778e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 24,
+      "quantile": 0.9378465405578159,
+      "interval": [
+        0.9353841553071514,
+        0.9403094985158406
+      ],
+      "inverse_cdf_residual": 6.8833827526759706e-15,
+      "refinement_difference": 2.147085911952118e-06
+    },
+    {
+      "model": "B_CN",
+      "id": 25,
+      "quantile": 0.9521320343912766,
+      "interval": [
+        0.9502159659715628,
+        0.9540485627818308
+      ],
+      "inverse_cdf_residual": 6.5503158452884236e-15,
+      "refinement_difference": 6.308758164763617e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 26,
+      "quantile": 0.9599219501784354,
+      "interval": [
+        0.9583071121996475,
+        0.9615356367667021
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.3833350237811857e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 27,
+      "quantile": 0.9472151215900906,
+      "interval": [
+        0.9451103405878604,
+        0.9493204857753071
+      ],
+      "inverse_cdf_residual": 5.329070518200751e-15,
+      "refinement_difference": 3.44024476350846e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 28,
+      "quantile": 0.9563834830354262,
+      "interval": [
+        0.9546309114517879,
+        0.9581351130505211
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.7856783707248525e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 29,
+      "quantile": 0.9559794215407037,
+      "interval": [
+        0.9542111091769413,
+        0.9577466467234723
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.2503441660391985e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 30,
+      "quantile": 0.9513377767675686,
+      "interval": [
+        0.9493901365866713,
+        0.9532850647259783
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 4.2092415086791846e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 31,
+      "quantile": 0.9573042567097324,
+      "interval": [
+        0.9555873927451629,
+        0.9590204403767238
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 9.03555696929459e-09
+    },
+    {
+      "model": "B_CN",
+      "id": 32,
+      "quantile": 0.9488023474371373,
+      "interval": [
+        0.9467587384916336,
+        0.9508469749236302
+      ],
+      "inverse_cdf_residual": 5.440092820663267e-15,
+      "refinement_difference": 5.199872123995419e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 33,
+      "quantile": 0.9521372927969137,
+      "interval": [
+        0.9502207106453474,
+        0.9540544689662491
+      ],
+      "inverse_cdf_residual": 6.439293542825908e-15,
+      "refinement_difference": 4.2924788035136885e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 34,
+      "quantile": 0.9541916821508161,
+      "interval": [
+        0.952353895946478,
+        0.9560287126049993
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.9164510190481394e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 35,
+      "quantile": 0.9463928063410197,
+      "interval": [
+        0.9442558787656122,
+        0.948530161837504
+      ],
+      "inverse_cdf_residual": 4.773959005888173e-15,
+      "refinement_difference": 8.957904229500713e-08
+    },
+    {
+      "model": "B_CN",
+      "id": 36,
+      "quantile": 0.9478631962779559,
+      "interval": [
+        0.945782933015221,
+        0.9499447957896613
+      ],
+      "inverse_cdf_residual": 4.9960036108132044e-15,
+      "refinement_difference": 6.522808363440546e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 37,
+      "quantile": 0.9551513657867488,
+      "interval": [
+        0.9533503499679361,
+        0.9569514919230568
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 5.418377529986529e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 38,
+      "quantile": 0.9352566686831176,
+      "interval": [
+        0.9327011816891103,
+        0.9378148192254272
+      ],
+      "inverse_cdf_residual": 5.88418203051333e-15,
+      "refinement_difference": 6.665259522087297e-08
+    },
+    {
+      "model": "B_CN",
+      "id": 39,
+      "quantile": 0.9545708324115616,
+      "interval": [
+        0.9527476053451828,
+        0.9563933347173544
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.0994658023187895e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 40,
+      "quantile": 0.9412127728653432,
+      "interval": [
+        0.9388805448929657,
+        0.9435473483112546
+      ],
+      "inverse_cdf_residual": 6.106226635438361e-15,
+      "refinement_difference": 1.1469314441514555e-06
+    },
+    {
+      "model": "B_CN",
+      "id": 41,
+      "quantile": 0.9437730033304041,
+      "interval": [
+        0.9415378823053183,
+        0.9460094931826443
+      ],
+      "inverse_cdf_residual": 4.6629367034256575e-15,
+      "refinement_difference": 1.1314884151847338e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 42,
+      "quantile": 0.9588699378333112,
+      "interval": [
+        0.9572142085497402,
+        0.9605246973765603
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.3514802699177153e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 43,
+      "quantile": 0.9569783228089421,
+      "interval": [
+        0.9552482988929744,
+        0.9587075532550412
+      ],
+      "inverse_cdf_residual": 3.3306690738754696e-16,
+      "refinement_difference": 2.6092668781174666e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 44,
+      "quantile": 0.9507710297674951,
+      "interval": [
+        0.948800617907285,
+        0.9527403809214263
+      ],
+      "inverse_cdf_residual": 6.328271240363392e-15,
+      "refinement_difference": 8.476382955535655e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 45,
+      "quantile": 0.9472800969663931,
+      "interval": [
+        0.9451760864628759,
+        0.949384129501341
+      ],
+      "inverse_cdf_residual": 1.5543122344752192e-15,
+      "refinement_difference": 1.833112499571854e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 46,
+      "quantile": 0.9545999691218889,
+      "interval": [
+        0.9527784021480642,
+        0.9564210562652944
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.9695998842994555e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 47,
+      "quantile": 0.9512085495184301,
+      "interval": [
+        0.9492559941916133,
+        0.9531607871746438
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 3.555790732967523e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 48,
+      "quantile": 0.9127293517193973,
+      "interval": [
+        0.9093609485603141,
+        0.9161073189548348
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.4773893675101846e-07
+    },
+    {
+      "model": "B_CN",
+      "id": 49,
+      "quantile": 0.9513185653459508,
+      "interval": [
+        0.9493702432507574,
+        0.9532669910080629
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 1.69425394158651e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 0,
+      "quantile": 0.9516487168198364,
+      "interval": [
+        0.9497137568930765,
+        0.9535836855590242
+      ],
+      "inverse_cdf_residual": 7.771561172376096e-15,
+      "refinement_difference": 2.259383400371462e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 1,
+      "quantile": 0.9461993431654075,
+      "interval": [
+        0.9440534413176014,
+        0.9483465046748342
+      ],
+      "inverse_cdf_residual": 3.4416913763379853e-15,
+      "refinement_difference": 7.517054050332206e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 2,
+      "quantile": 0.9473400525716368,
+      "interval": [
+        0.9452420332312483,
+        0.9494395959671894
+      ],
+      "inverse_cdf_residual": 1.6653345369377348e-15,
+      "refinement_difference": 7.522182895458585e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 3,
+      "quantile": 0.9496248060542937,
+      "interval": [
+        0.9476117495665191,
+        0.9516386972519025
+      ],
+      "inverse_cdf_residual": 7.66053886991358e-15,
+      "refinement_difference": 8.025010738155203e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 4,
+      "quantile": 0.9512267562972058,
+      "interval": [
+        0.9492739546096404,
+        0.9531796630527127
+      ],
+      "inverse_cdf_residual": 3.3306690738754696e-15,
+      "refinement_difference": 2.081024925715269e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 5,
+      "quantile": 0.9480448141805554,
+      "interval": [
+        0.9459700393862672,
+        0.950119309323916
+      ],
+      "inverse_cdf_residual": 4.551914400963142e-15,
+      "refinement_difference": 6.175485802728531e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 6,
+      "quantile": 0.9584350992880272,
+      "interval": [
+        0.9567621996323292,
+        0.9601070961115671
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.86723366324415e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 7,
+      "quantile": 0.952004756868285,
+      "interval": [
+        0.9500827562339396,
+        0.9539268671061806
+      ],
+      "inverse_cdf_residual": 7.438494264988549e-15,
+      "refinement_difference": 2.020652167811221e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 8,
+      "quantile": 0.9517209361678679,
+      "interval": [
+        0.9497893464160145,
+        0.9536523300143376
+      ],
+      "inverse_cdf_residual": 5.88418203051333e-15,
+      "refinement_difference": 8.340152357622088e-08
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 9,
+      "quantile": 0.9393848607031671,
+      "interval": [
+        0.936983143821447,
+        0.9417884991112552
+      ],
+      "inverse_cdf_residual": 4.6629367034256575e-15,
+      "refinement_difference": 3.0638974923835605e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 10,
+      "quantile": 0.9524801598983601,
+      "interval": [
+        0.950577374847728,
+        0.9543831602148845
+      ],
+      "inverse_cdf_residual": 7.216449660063518e-15,
+      "refinement_difference": 5.160387706037994e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 11,
+      "quantile": 0.9521494146522578,
+      "interval": [
+        0.9502336184766838,
+        0.9540654685000152
+      ],
+      "inverse_cdf_residual": 6.661338147750939e-15,
+      "refinement_difference": 6.07834500288007e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 12,
+      "quantile": 0.9251167546685799,
+      "interval": [
+        0.9221856080785742,
+        0.9280522714225242
+      ],
+      "inverse_cdf_residual": 6.439293542825908e-15,
+      "refinement_difference": 2.4763933392790705e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 13,
+      "quantile": 0.9512901364879238,
+      "interval": [
+        0.9493405442265118,
+        0.9532398865851457
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 3.125329994801973e-09
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 14,
+      "quantile": 0.954964672763996,
+      "interval": [
+        0.9531572191454444,
+        0.9567711214284638
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 5.920153982597043e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 15,
+      "quantile": 0.9358022627971474,
+      "interval": [
+        0.9332653891080088,
+        0.9383420502851433
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 5.40426187023435e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 16,
+      "quantile": 0.9585461356314832,
+      "interval": [
+        0.9568782122641153,
+        0.9602133688012298
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.2986794701029822e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 17,
+      "quantile": 0.9540056590365636,
+      "interval": [
+        0.9521620646687999,
+        0.9558494597598592
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 5.511841975058829e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 18,
+      "quantile": 0.9530879046235774,
+      "interval": [
+        0.9512082680141115,
+        0.95496718503666
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.943837245667936e-08
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 19,
+      "quantile": 0.9530398070714687,
+      "interval": [
+        0.9511577625374307,
+        0.9549213268855055
+      ],
+      "inverse_cdf_residual": 3.3306690738754696e-16,
+      "refinement_difference": 1.9098972225961575e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 20,
+      "quantile": 0.9468680347013821,
+      "interval": [
+        0.9447502988539445,
+        0.9489865654239171
+      ],
+      "inverse_cdf_residual": 1.6653345369377348e-15,
+      "refinement_difference": 1.6088094167976408e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 21,
+      "quantile": 0.9465462973709792,
+      "interval": [
+        0.944415937673736,
+        0.9486775660489093
+      ],
+      "inverse_cdf_residual": 5.10702591327572e-15,
+      "refinement_difference": 1.0737056799214884e-09
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 22,
+      "quantile": 0.9574024766194933,
+      "interval": [
+        0.9556893913600055,
+        0.9591143435759946
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 6.049944045738442e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 23,
+      "quantile": 0.943957323260866,
+      "interval": [
+        0.941727470081882,
+        0.9461878992398144
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 2.904013113314008e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 24,
+      "quantile": 0.936506692507558,
+      "interval": [
+        0.9339929493038543,
+        0.9390210546176001
+      ],
+      "inverse_cdf_residual": 5.88418203051333e-15,
+      "refinement_difference": 2.0973602491425325e-06
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 25,
+      "quantile": 0.9519830652672777,
+      "interval": [
+        0.9500615923582305,
+        0.9539049034704586
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 4.98494451273146e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 26,
+      "quantile": 0.9604519962080307,
+      "interval": [
+        0.9588584578819406,
+        0.9620443947250835
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.3350852706993663e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 27,
+      "quantile": 0.9468072920797069,
+      "interval": [
+        0.9446870347769077,
+        0.9489281507077978
+      ],
+      "inverse_cdf_residual": 5.88418203051333e-15,
+      "refinement_difference": 3.27229842222998e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 28,
+      "quantile": 0.9566926903834004,
+      "interval": [
+        0.9549526279359024,
+        0.9584318788457732
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.4845924500850316e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 29,
+      "quantile": 0.9562614962026449,
+      "interval": [
+        0.9545046155683564,
+        0.9580173107562636
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 3.128027777909992e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 30,
+      "quantile": 0.951292527783325,
+      "interval": [
+        0.9493435595824814,
+        0.9532413612464942
+      ],
+      "inverse_cdf_residual": 6.772360450213455e-15,
+      "refinement_difference": 2.4170498846842747e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 31,
+      "quantile": 0.9577129749887247,
+      "interval": [
+        0.9560125551435988,
+        0.9594128673401718
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 7.909814125905967e-08
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 32,
+      "quantile": 0.9484887607520539,
+      "interval": [
+        0.9464334005862213,
+        0.9505451189958237
+      ],
+      "inverse_cdf_residual": 7.438494264988549e-15,
+      "refinement_difference": 4.1656117488741984e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 33,
+      "quantile": 0.9520942947657838,
+      "interval": [
+        0.9501762529901413,
+        0.9540129430864089
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 4.3362213653086457e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 34,
+      "quantile": 0.9543863820693228,
+      "interval": [
+        0.9525564940181876,
+        0.9562155459926014
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 3.705307036749872e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 35,
+      "quantile": 0.945987263215299,
+      "interval": [
+        0.9438347083854506,
+        0.9481401128142403
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 1.8608797036634428e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 36,
+      "quantile": 0.9475179098621914,
+      "interval": [
+        0.9454244456145408,
+        0.9496128251391782
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 7.391561467340324e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 37,
+      "quantile": 0.9554189073750572,
+      "interval": [
+        0.953628673361494,
+        0.9572083169989386
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.866274815329419e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 38,
+      "quantile": 0.9336378745334356,
+      "interval": [
+        0.9310214784706569,
+        0.9362574543602944
+      ],
+      "inverse_cdf_residual": 6.5503158452884236e-15,
+      "refinement_difference": 1.3904713269674573e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 39,
+      "quantile": 0.9548237323467579,
+      "interval": [
+        0.9530107339592329,
+        0.9566360871121996
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.388890863429637e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 40,
+      "quantile": 0.9401698769376323,
+      "interval": [
+        0.9377980130694502,
+        0.9425444379136223
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 1.151304908852957e-06
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 41,
+      "quantile": 0.9429400512982276,
+      "interval": [
+        0.940672888745804,
+        0.9452080533248857
+      ],
+      "inverse_cdf_residual": 1.5543122344752192e-15,
+      "refinement_difference": 2.439228915518399e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 42,
+      "quantile": 0.959335162757614,
+      "interval": [
+        0.9576981180114256,
+        0.9609712226729882
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.4446227203368522e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 43,
+      "quantile": 0.9573518728758963,
+      "interval": [
+        0.9556367797518953,
+        0.9590661181236104
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.490817643252541e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 44,
+      "quantile": 0.9507465463756611,
+      "interval": [
+        0.9487753381591651,
+        0.9527166982980854
+      ],
+      "inverse_cdf_residual": 6.217248937900877e-15,
+      "refinement_difference": 8.412848589989252e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 45,
+      "quantile": 0.946930962548422,
+      "interval": [
+        0.9448134704984331,
+        0.9490485575022952
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.1006973027759557e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 46,
+      "quantile": 0.9548335434492529,
+      "interval": [
+        0.9530214016331149,
+        0.9566451951484256
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.1781830172873384e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 47,
+      "quantile": 0.9511940049429195,
+      "interval": [
+        0.9492412289849415,
+        0.9531465721334885
+      ],
+      "inverse_cdf_residual": 7.327471962526033e-15,
+      "refinement_difference": 2.793417390734021e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 48,
+      "quantile": 0.907746304299571,
+      "interval": [
+        0.9041993476730196,
+        0.9113042153907609
+      ],
+      "inverse_cdf_residual": 1.6653345369377348e-15,
+      "refinement_difference": 1.599711377808788e-07
+    },
+    {
+      "model": "C_beta_CN",
+      "id": 49,
+      "quantile": 0.9513398833298702,
+      "interval": [
+        0.9493926258482545,
+        0.9532872819744093
+      ],
+      "inverse_cdf_residual": 7.216449660063518e-15,
+      "refinement_difference": 1.753534070170204e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 0,
+      "quantile": 0.9516485136749006,
+      "interval": [
+        0.9497135151255148,
+        0.9535835372592197
+      ],
+      "inverse_cdf_residual": 7.66053886991358e-15,
+      "refinement_difference": 2.664708842470276e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 1,
+      "quantile": 0.9461986530697786,
+      "interval": [
+        0.9440527517095968,
+        0.9483458313141286
+      ],
+      "inverse_cdf_residual": 5.10702591327572e-15,
+      "refinement_difference": 7.08688252859524e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 2,
+      "quantile": 0.9473377012214697,
+      "interval": [
+        0.9452398064780866,
+        0.9494373430967501
+      ],
+      "inverse_cdf_residual": 2.3314683517128287e-15,
+      "refinement_difference": 8.135461824210211e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 3,
+      "quantile": 0.9496237991608852,
+      "interval": [
+        0.9476107055281082,
+        0.9516376495677064
+      ],
+      "inverse_cdf_residual": 7.549516567451064e-15,
+      "refinement_difference": 7.038625529087739e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 4,
+      "quantile": 0.9512272675459744,
+      "interval": [
+        0.9492744938514046,
+        0.9531801986247848
+      ],
+      "inverse_cdf_residual": 2.886579864025407e-15,
+      "refinement_difference": 1.1635835273082762e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 5,
+      "quantile": 0.94804452906293,
+      "interval": [
+        0.9459697036962869,
+        0.950119056033912
+      ],
+      "inverse_cdf_residual": 4.3298697960381105e-15,
+      "refinement_difference": 6.811366133341323e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 6,
+      "quantile": 0.9584374521013559,
+      "interval": [
+        0.9567645012965975,
+        0.9601094115575197
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.633739658586265e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 7,
+      "quantile": 0.9520052833342508,
+      "interval": [
+        0.9500833038570656,
+        0.9539274243714044
+      ],
+      "inverse_cdf_residual": 7.327471962526033e-15,
+      "refinement_difference": 2.434519951188818e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 8,
+      "quantile": 0.9517200535014892,
+      "interval": [
+        0.9497883955488016,
+        0.9536514548454831
+      ],
+      "inverse_cdf_residual": 5.551115123125783e-15,
+      "refinement_difference": 3.3260826648451314e-08
+    },
+    {
+      "model": "C_full_CN",
+      "id": 9,
+      "quantile": 0.9393828232283753,
+      "interval": [
+        0.936981111657134,
+        0.9417864783310956
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 3.781834387872607e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 10,
+      "quantile": 0.9524803478888935,
+      "interval": [
+        0.9505775698671638,
+        0.9543836004663898
+      ],
+      "inverse_cdf_residual": 7.438494264988549e-15,
+      "refinement_difference": 8.080388251840986e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 11,
+      "quantile": 0.9521496280940032,
+      "interval": [
+        0.9502338165252209,
+        0.9540658833092586
+      ],
+      "inverse_cdf_residual": 6.439293542825908e-15,
+      "refinement_difference": 8.303662842878978e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 12,
+      "quantile": 0.9251118826911703,
+      "interval": [
+        0.9221806538319104,
+        0.9280474606034316
+      ],
+      "inverse_cdf_residual": 5.218048215738236e-15,
+      "refinement_difference": 2.4588631164501606e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 13,
+      "quantile": 0.9512909705983372,
+      "interval": [
+        0.9493411857125149,
+        0.9532408488513805
+      ],
+      "inverse_cdf_residual": 5.329070518200751e-15,
+      "refinement_difference": 1.5157279353861242e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 14,
+      "quantile": 0.9549653101461736,
+      "interval": [
+        0.9531576888110381,
+        0.9567717386902017
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 7.800907937394186e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 15,
+      "quantile": 0.9357993363456979,
+      "interval": [
+        0.9332624558016475,
+        0.9383393552071293
+      ],
+      "inverse_cdf_residual": 6.772360450213455e-15,
+      "refinement_difference": 7.245159920898914e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 16,
+      "quantile": 0.9585480633037582,
+      "interval": [
+        0.9568801449207051,
+        0.960215209259326
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.061150951027102e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 17,
+      "quantile": 0.9540061214282366,
+      "interval": [
+        0.9521625247817431,
+        0.9558502277891744
+      ],
+      "inverse_cdf_residual": 0.0,
+      "refinement_difference": 8.652417905485876e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 18,
+      "quantile": 0.9530887173344352,
+      "interval": [
+        0.9512090279252934,
+        0.9549679908753499
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.9194847862032987e-08
+    },
+    {
+      "model": "C_full_CN",
+      "id": 19,
+      "quantile": 0.9530407556262868,
+      "interval": [
+        0.9511586734754136,
+        0.9549222725393232
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.3373877555687983e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 20,
+      "quantile": 0.9468668869131969,
+      "interval": [
+        0.9447491800407951,
+        0.9489855507010903
+      ],
+      "inverse_cdf_residual": 1.887379141862766e-15,
+      "refinement_difference": 2.653134028030024e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 21,
+      "quantile": 0.9465455564694235,
+      "interval": [
+        0.9444152496487651,
+        0.9486768513836845
+      ],
+      "inverse_cdf_residual": 5.88418203051333e-15,
+      "refinement_difference": 1.3556743450049424e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 22,
+      "quantile": 0.9574045647988576,
+      "interval": [
+        0.9556913471361197,
+        0.9591164114678769
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 7.567635260663508e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 23,
+      "quantile": 0.9439560799324819,
+      "interval": [
+        0.941726190719516,
+        0.946186729546158
+      ],
+      "inverse_cdf_residual": 6.8833827526759706e-15,
+      "refinement_difference": 2.781716629263187e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 24,
+      "quantile": 0.9365037207296969,
+      "interval": [
+        0.9339895930686527,
+        0.9390180063792551
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 2.7117415012378743e-06
+    },
+    {
+      "model": "C_full_CN",
+      "id": 25,
+      "quantile": 0.9519826632549513,
+      "interval": [
+        0.9500611156390146,
+        0.9539048374530483
+      ],
+      "inverse_cdf_residual": 5.551115123125783e-15,
+      "refinement_difference": 7.78185927141628e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 26,
+      "quantile": 0.9604542943404462,
+      "interval": [
+        0.958860738194526,
+        0.9620466748139789
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.5176288553918624e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 27,
+      "quantile": 0.9468060515028329,
+      "interval": [
+        0.9446859004500786,
+        0.948926947308639
+      ],
+      "inverse_cdf_residual": 6.661338147750939e-15,
+      "refinement_difference": 3.269527540927797e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 28,
+      "quantile": 0.9566944373701052,
+      "interval": [
+        0.9549543387110812,
+        0.9584335861461398
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 1.7311331557134935e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 29,
+      "quantile": 0.9562627446298877,
+      "interval": [
+        0.9545056924808225,
+        0.9580185193374059
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.773211079722728e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 30,
+      "quantile": 0.9512925020589087,
+      "interval": [
+        0.9493433199434114,
+        0.9532413457755115
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 4.4068923621409795e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 31,
+      "quantile": 0.957714813347173,
+      "interval": [
+        0.9560143598748616,
+        0.9594146691294783
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 3.440280205158075e-08
+    },
+    {
+      "model": "C_full_CN",
+      "id": 32,
+      "quantile": 0.9484878713689701,
+      "interval": [
+        0.9464325348209127,
+        0.9505445691555178
+      ],
+      "inverse_cdf_residual": 6.217248937900877e-15,
+      "refinement_difference": 7.249497290251483e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 33,
+      "quantile": 0.9520946681753558,
+      "interval": [
+        0.9501766528242588,
+        0.954013455883871
+      ],
+      "inverse_cdf_residual": 5.773159728050814e-15,
+      "refinement_difference": 5.13163604498601e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 34,
+      "quantile": 0.9543869470006033,
+      "interval": [
+        0.9525569767781448,
+        0.9562160817622862
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 4.7646946599311235e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 35,
+      "quantile": 0.9459864364661753,
+      "interval": [
+        0.9438338986754738,
+        0.9481393320869682
+      ],
+      "inverse_cdf_residual": 4.6629367034256575e-15,
+      "refinement_difference": 1.535427099907949e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 36,
+      "quantile": 0.9475171964674804,
+      "interval": [
+        0.945423808465023,
+        0.9496121436589231
+      ],
+      "inverse_cdf_residual": 4.440892098500626e-15,
+      "refinement_difference": 7.584831249740631e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 37,
+      "quantile": 0.9554202779064547,
+      "interval": [
+        0.9536298792493784,
+        0.9572097107908674
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 6.659758191585041e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 38,
+      "quantile": 0.9336341747535973,
+      "interval": [
+        0.931017715647208,
+        0.9362538533937927
+      ],
+      "inverse_cdf_residual": 6.5503158452884236e-15,
+      "refinement_difference": 2.1537364769397271e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 39,
+      "quantile": 0.954825037533459,
+      "interval": [
+        0.9530119561686365,
+        0.9566373718853578
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.1709209829801068e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 40,
+      "quantile": 0.9401675365233411,
+      "interval": [
+        0.9377956368544473,
+        0.9425424046562377
+      ],
+      "inverse_cdf_residual": 7.105427357601002e-15,
+      "refinement_difference": 1.4473745527654458e-06
+    },
+    {
+      "model": "C_full_CN",
+      "id": 41,
+      "quantile": 0.9429377492204734,
+      "interval": [
+        0.9406707310396786,
+        0.9452059448839987
+      ],
+      "inverse_cdf_residual": 1.7763568394002505e-15,
+      "refinement_difference": 8.269697560070455e-08
+    },
+    {
+      "model": "C_full_CN",
+      "id": 42,
+      "quantile": 0.9593370894560316,
+      "interval": [
+        0.9577000125672325,
+        0.9609731119452244
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 1.5657289709203326e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 43,
+      "quantile": 0.9573542776949894,
+      "interval": [
+        0.955639055558918,
+        0.9590685327327073
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 4.155325072918714e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 44,
+      "quantile": 0.950747183509959,
+      "interval": [
+        0.9487757857943008,
+        0.952717268781157
+      ],
+      "inverse_cdf_residual": 6.106226635438361e-15,
+      "refinement_difference": 1.069395954012009e-06
+    },
+    {
+      "model": "C_full_CN",
+      "id": 45,
+      "quantile": 0.9469305322554247,
+      "interval": [
+        0.9448129002696858,
+        0.9490481715264848
+      ],
+      "inverse_cdf_residual": 2.220446049250313e-16,
+      "refinement_difference": 2.024810255019105e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 46,
+      "quantile": 0.954834392999178,
+      "interval": [
+        0.9530222122687042,
+        0.956646060858574
+      ],
+      "inverse_cdf_residual": 1.1102230246251565e-16,
+      "refinement_difference": 2.7986744510766215e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 47,
+      "quantile": 0.9511940461590653,
+      "interval": [
+        0.9492411506082497,
+        0.9531466121559433
+      ],
+      "inverse_cdf_residual": 6.994405055138486e-15,
+      "refinement_difference": 4.0540786794274197e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 48,
+      "quantile": 0.9077377115126398,
+      "interval": [
+        0.9041906405630808,
+        0.9112956997013784
+      ],
+      "inverse_cdf_residual": 1.3322676295501878e-15,
+      "refinement_difference": 1.0605311884237523e-07
+    },
+    {
+      "model": "C_full_CN",
+      "id": 49,
+      "quantile": 0.9513402938107011,
+      "interval": [
+        0.9493930359765603,
+        0.9532877303515617
+      ],
+      "inverse_cdf_residual": 7.216449660063518e-15,
+      "refinement_difference": 2.212129280865227e-07
+    }
+  ],
+  "contrasts": [
+    {
+      "left": "C_beta_G",
+      "right": "B_G",
+      "n": 50,
+      "mean": -0.0002150942924988186,
+      "mean_numerical_interval": [
+        -0.004189349714189507,
+        0.0037592677004638754
+      ],
+      "maximum_numerical_radius": 0.006939013928446869,
+      "maximum_interval_width": 0.013876473924729349,
+      "numerically_resolved_at_tolerance": 50,
+      "individual_intervals_inside_equivalence_window": 49,
+      "nominal_values": [
+        0.00021988251184823504,
+        -0.0009810360613079494,
+        -0.0001282569487547347,
+        2.3110981563378985e-05,
+        7.031626406905911e-05,
+        -8.139555681252464e-05,
+        -0.0004383552167359639,
+        -0.00039633870111133174,
+        0.00012248771972400707,
+        -0.0002141372048193313,
+        -0.002640997826506619,
+        -0.0001984138008449543,
+        -0.0001984499756297886,
+        0.00040717677379220607,
+        5.08193215909003e-06,
+        0.0002529673807816213,
+        0.0003015541434941982,
+        0.00016650158954334415,
+        -0.00011072229458530813,
+        -0.0003367790438570939,
+        0.0005432424617431986,
+        0.00027898612180721205,
+        -0.0012031650431683083,
+        -0.00033549289605183663,
+        -0.000783525018288378,
+        0.0002951238538919654,
+        -0.00018654236104298505,
+        -0.0006330006890391537,
+        -1.3268103436159251e-05,
+        0.00034023918383674356,
+        0.0003331189528896772,
+        -4.585776566767841e-05,
+        -0.00036285333042274104,
+        0.0003091148411972222,
+        0.0003900260007059231,
+        -0.005098920324305256,
+        0.0005852058936631765,
+        0.00019358856432216687,
+        0.00026948398843029686,
+        0.00037577405699718014,
+        -0.0008194159814919333,
+        0.00029535698977745106,
+        7.869152701878157e-05,
+        0.00013990119389495348,
+        -0.00076037319430311,
+        4.750085651938907e-05,
+        -0.002204641608188229,
+        0.00047379682999137973,
+        0.0003888997002358119,
+        0.0005100940075327687
+      ],
+      "numerical_intervals": [
+        [
+          -0.0033508636197544517,
+          0.003790664558746437
+        ],
+        [
+          -0.005702854111400479,
+          0.0037408460855263836
+        ],
+        [
+          -0.004123782751278671,
+          0.0038672730499804686
+        ],
+        [
+          -0.0038498577928662847,
+          0.0038961000456924078
+        ],
+        [
+          -0.0037368430478926795,
+          0.0038774827600474016
+        ],
+        [
+          -0.004017916255407927,
+          0.0038551147555713206
+        ],
+        [
+          -0.0046572046344131035,
+          0.003780409244786731
+        ],
+        [
+          -0.004561987924596944,
+          0.0037693908438343193
+        ],
+        [
+          -0.0036948369608817977,
+          0.003939831455489262
+        ],
+        [
+          -0.004228400326699688,
+          0.003800165824216717
+        ],
+        [
+          -0.008385113693817003,
+          0.003103968005168878
+        ],
+        [
+          -0.0042664588896283995,
+          0.003869668185906283
+        ],
+        [
+          -0.004313346308464139,
+          0.003916589413414551
+        ],
+        [
+          -0.002939170805235758,
+          0.0037535395143158956
+        ],
+        [
+          -0.0038927040264851165,
+          0.0039029285351528387
+        ],
+        [
+          -0.0034073960846109363,
+          0.003913449521570911
+        ],
+        [
+          -0.0031403554608164796,
+          0.0037435234213457624
+        ],
+        [
+          -0.0035652942214188243,
+          0.0038983509658114812
+        ],
+        [
+          -0.004073726843074499,
+          0.0038523942602615158
+        ],
+        [
+          -0.004546155211470171,
+          0.0038725515854209913
+        ],
+        [
+          -0.002706859856600796,
+          0.0037934271195624314
+        ],
+        [
+          -0.0032268459058121257,
+          0.0037850229869458296
+        ],
+        [
+          -0.006090080828847211,
+          0.0036841698265852596
+        ],
+        [
+          -0.004558457531695037,
+          0.0038875757484330142
+        ],
+        [
+          -0.005371713738760442,
+          0.003804809155030342
+        ],
+        [
+          -0.003280821743231299,
+          0.003871072229074346
+        ],
+        [
+          -0.004263946775238225,
+          0.0038908418292997737
+        ],
+        [
+          -0.005149790553925504,
+          0.0038839160592569755
+        ],
+        [
+          -0.0038906614178406684,
+          0.003864268882864841
+        ],
+        [
+          -0.0030314544956470124,
+          0.0037118868642962433
+        ],
+        [
+          -0.0031669431412747473,
+          0.0038331379354962225
+        ],
+        [
+          -0.004041379385510968,
+          0.003949672739394394
+        ],
+        [
+          -0.004579113456004702,
+          0.0038535728779255374
+        ],
+        [
+          -0.0030986409815783045,
+          0.0037169302411707017
+        ],
+        [
+          -0.0030418391737842,
+          0.0038218421677124192
+        ],
+        [
+          -0.012036380320587736,
+          0.0018400936041416127
+        ],
+        [
+          -0.0025117133305636585,
+          0.0036821790306277302
+        ],
+        [
+          -0.0034794141356424557,
+          0.0038666195083931765
+        ],
+        [
+          -0.0032975126378672615,
+          0.0038363971382981976
+        ],
+        [
+          -0.002984507505217726,
+          0.0037359956262000837
+        ],
+        [
+          -0.005387585630931335,
+          0.003748780395648299
+        ],
+        [
+          -0.0032893928271455763,
+          0.00388032804055527
+        ],
+        [
+          -0.00373550446436699,
+          0.003892933479863303
+        ],
+        [
+          -0.003506021085291633,
+          0.0037859614929268703
+        ],
+        [
+          -0.005351104811076923,
+          0.003830487837366614
+        ],
+        [
+          -0.003816460486390616,
+          0.003911427049557159
+        ],
+        [
+          -0.007631471244064825,
+          0.0032225876318837665
+        ],
+        [
+          -0.0028294745349378703,
+          0.0037770946169586317
+        ],
+        [
+          -0.0029930321080332556,
+          0.0037708480420275414
+        ],
+        [
+          -0.002665092631392918,
+          0.00368526283343662
+        ]
+      ]
+    },
+    {
+      "left": "C_full_G",
+      "right": "C_beta_G",
+      "n": 50,
+      "mean": 6.996481521470699e-08,
+      "mean_numerical_interval": [
+        -0.003981846788744346,
+        0.003982002267145293
+      ],
+      "maximum_numerical_radius": 0.007121537600836114,
+      "maximum_interval_width": 0.014242705939279676,
+      "numerically_resolved_at_tolerance": 50,
+      "individual_intervals_inside_equivalence_window": 50,
+      "nominal_values": [
+        1.2135009597180613e-06,
+        -1.87760924941216e-06,
+        3.0528871697299564e-07,
+        4.801919263330845e-07,
+        3.3352642603290406e-07,
+        2.9369908172149906e-08,
+        -1.1780041442310818e-06,
+        -5.541876957337877e-07,
+        7.778113408907217e-07,
+        -1.0667567061917183e-06,
+        -5.235236445910729e-06,
+        -9.071464612819824e-08,
+        -1.23125299733573e-07,
+        1.8693852542606137e-06,
+        7.906394337009459e-07,
+        1.5274468823101017e-06,
+        1.3537379910388836e-06,
+        8.495302675770589e-07,
+        1.3835765100278508e-07,
+        -4.686710594059562e-07,
+        2.812022222520305e-06,
+        1.4950981537253938e-06,
+        -2.7220202428734908e-06,
+        -1.0451069525352352e-06,
+        -1.6605863720764447e-06,
+        1.3455302442233474e-06,
+        2.2799559507014067e-07,
+        -1.2741901133095368e-06,
+        9.468099041454181e-07,
+        1.9027395896653587e-06,
+        1.5030455744469151e-06,
+        2.767527654823354e-07,
+        -8.174291595830496e-07,
+        1.3933172648972203e-06,
+        1.4960766392402292e-06,
+        -8.956544527816135e-06,
+        2.978533689468321e-06,
+        1.1368017511781403e-06,
+        1.0602864254360966e-06,
+        1.349993194121879e-06,
+        -1.9862487671273854e-06,
+        1.4202470567381553e-06,
+        7.174034407642083e-07,
+        1.0070296280195734e-06,
+        -1.6182641456863323e-06,
+        3.9666179618702557e-07,
+        -4.7802979784572486e-06,
+        1.963846828600957e-06,
+        1.593108178155056e-06,
+        2.2611475668510295e-06
+      ],
+      "numerical_intervals": [
+        [
+          -0.003560599827785671,
+          0.0035630905972466875
+        ],
+        [
+          -0.0047614590071694,
+          0.004757506362835451
+        ],
+        [
+          -0.0040000590651385615,
+          0.004000592474370124
+        ],
+        [
+          -0.003871301095828561,
+          0.0038723388862089703
+        ],
+        [
+          -0.003803779082478087,
+          0.003804472554636229
+        ],
+        [
+          -0.003939432606968052,
+          0.003939632818309224
+        ],
+        [
+          -0.004236592953916096,
+          0.004234495732772459
+        ],
+        [
+          -0.004181222344941116,
+          0.004180242483976304
+        ],
+        [
+          -0.0038115856173754903,
+          0.0038131009256924253
+        ],
+        [
+          -0.004023383457549046,
+          0.004021296777081185
+        ],
+        [
+          -0.005848581733602809,
+          0.005838041584916631
+        ],
+        [
+          -0.00407569155103904,
+          0.004075598901232769
+        ],
+        [
+          -0.004122733768639586,
+          0.00412245811090628
+        ],
+        [
+          -0.0033281468784785995,
+          0.003331959275564733
+        ],
+        [
+          -0.0038966619880559383,
+          0.003898240311769996
+        ],
+        [
+          -0.0036488758497933427,
+          0.0036519382455142413
+        ],
+        [
+          -0.0034283048475888256,
+          0.0034310682015872285
+        ],
+        [
+          -0.003724248716218903,
+          0.003725919668531863
+        ],
+        [
+          -0.0039671440731396945,
+          0.003967337344768507
+        ],
+        [
+          -0.00422273847964294,
+          0.0042217748846208325
+        ],
+        [
+          -0.0032256595839873503,
+          0.0032311988059356977
+        ],
+        [
+          -0.0034933076460734735,
+          0.003496109391976532
+        ],
+        [
+          -0.004936032075367858,
+          0.004930463185432665
+        ],
+        [
+          -0.004237036452742204,
+          0.004234960272528898
+        ],
+        [
+          -0.004620050925988384,
+          0.004616761848566742
+        ],
+        [
+          -0.0035627356850924663,
+          0.0035654413418267916
+        ],
+        [
+          -0.0040843417530125325,
+          0.004084765468681306
+        ],
+        [
+          -0.004542598286153887,
+          0.004540030513516591
+        ],
+        [
+          -0.0038770864682323714,
+          0.003879150010930754
+        ],
+        [
+          -0.0033559749068462486,
+          0.0033599472804283215
+        ],
+        [
+          -0.003485400023277796,
+          0.003488330281396168
+        ],
+        [
+          -0.003996965427664145,
+          0.0039973911460218225
+        ],
+        [
+          -0.004231080069683979,
+          0.004229345261485773
+        ],
+        [
+          -0.0033940623388425406,
+          0.003396610452123028
+        ],
+        [
+          -0.003414684070875418,
+          0.003417651954769174
+        ],
+        [
+          -0.007130124882971378,
+          0.007112581056308298
+        ],
+        [
+          -0.0030705282949049506,
+          0.0030763885620300746
+        ],
+        [
+          -0.0036640156875257235,
+          0.0036663621591410678
+        ],
+        [
+          -0.003554953368184788,
+          0.0035572761112396822
+        ],
+        [
+          -0.0033436869997028884,
+          0.0033464703880282665
+        ],
+        [
+          -0.004601432390829552,
+          0.004597706479971486
+        ],
+        [
+          -0.003571680931661936,
+          0.003574407397227808
+        ],
+        [
+          -0.0038102197896995316,
+          0.003811594404556584
+        ],
+        [
+          -0.0036393748278811255,
+          0.003641109920068719
+        ],
+        [
+          -0.004621709455438938,
+          0.004618355262007934
+        ],
+        [
+          -0.0038614722778602673,
+          0.0038624584456176114
+        ],
+        [
+          -0.005514216396717342,
+          0.005504961555397037
+        ],
+        [
+          -0.0032822907649208144,
+          0.003286250449724748
+        ],
+        [
+          -0.0033646693620258405,
+          0.0033680018731976347
+        ],
+        [
+          -0.003152405347701781,
+          0.003156925934585275
+        ]
+      ]
+    },
+    {
+      "left": "C_beta_CN",
+      "right": "B_CN",
+      "n": 50,
+      "mean": -0.00029888560671124774,
+      "mean_numerical_interval": [
+        -0.004350820166635703,
+        0.003753126015579451
+      ],
+      "maximum_numerical_radius": 0.0069263142502730135,
+      "maximum_interval_width": 0.013851238112261965,
+      "numerically_resolved_at_tolerance": 50,
+      "individual_intervals_inside_equivalence_window": 49,
+      "nominal_values": [
+        -2.565435989032583e-05,
+        -0.000483077568491197,
+        -0.0006249098432029587,
+        -0.00019329784619415147,
+        2.438084622735648e-05,
+        -0.000241333663169363,
+        0.0004415600821309207,
+        6.051065582202142e-05,
+        -0.00011330009310783762,
+        -0.0010922335089920132,
+        5.611698993446268e-05,
+        3.297916571776138e-05,
+        -0.0026183162655557535,
+        -9.725671784832635e-05,
+        0.00020103659925307937,
+        -0.0013578180084915514,
+        0.00040218463264285464,
+        0.0001178225998054172,
+        1.5748282511163225e-05,
+        0.00013284232023880183,
+        -0.00041249414846356025,
+        -0.0004030283890170683,
+        0.00038310930350959893,
+        -0.0005735446226923235,
+        -0.0013398480502578858,
+        -0.00014896912399886553,
+        0.0005300460295952769,
+        -0.00040782951038365045,
+        0.00030920734797423854,
+        0.0002820746619411896,
+        -4.5248984243628776e-05,
+        0.00040871827899224833,
+        -0.00031358668508341125,
+        -4.2998031129948266e-05,
+        0.00019469991850673551,
+        -0.0004055431257207198,
+        -0.0003452864157644786,
+        0.00026754158830843977,
+        -0.0016187941496820235,
+        0.0002528999351962824,
+        -0.0010428959277108962,
+        -0.0008329520321765926,
+        0.0004652249243027873,
+        0.0003735500669541647,
+        -2.4483391833918233e-05,
+        -0.00034913441797113087,
+        0.00023357432736392791,
+        -1.4544575510644364e-05,
+        -0.0049830474198262475,
+        2.1317983919355576e-05
+      ],
+      "numerical_intervals": [
+        [
+          -0.0038948757369539067,
+          0.003843571471766505
+        ],
+        [
+          -0.004756967488303454,
+          0.0037911046155589823
+        ],
+        [
+          -0.0047986596858310415,
+          0.0035490780365813324
+        ],
+        [
+          -0.00421275535130794,
+          0.0038262962602858552
+        ],
+        [
+          -0.0038822434880543266,
+          0.003931020718532352
+        ],
+        [
+          -0.004381329660190558,
+          0.0038986539096047546
+        ],
+        [
+          -0.0029209127638781807,
+          0.003804151027026914
+        ],
+        [
+          -0.0037860939066490795,
+          0.0039071504678210855
+        ],
+        [
+          -0.003972199243708285,
+          0.00374565950580652
+        ],
+        [
+          -0.005855863335523903,
+          0.003671483241318052
+        ],
+        [
+          -0.0037522518731628596,
+          0.0038643927204854434
+        ],
+        [
+          -0.0038004803582313285,
+          0.0038663806206368223
+        ],
+        [
+          -0.008387183707378565,
+          0.003150408871009591
+        ],
+        [
+          -0.003992919367995285,
+          0.0037985909293909437
+        ],
+        [
+          -0.0034210267212089196,
+          0.0038231923378614363
+        ],
+        [
+          -0.006382636976065337,
+          0.0036672927328877947
+        ],
+        [
+          -0.0029490806433413175,
+          0.0037535372740823414
+        ],
+        [
+          -0.0035746479887258653,
+          0.003810200804833741
+        ],
+        [
+          -0.003744038169531394,
+          0.0037755744442616868
+        ],
+        [
+          -0.0036361406559224374,
+          0.0039018444101902583
+        ],
+        [
+          -0.004633049180537752,
+          0.003808089412106641
+        ],
+        [
+          -0.004649239628717772,
+          0.0038432788588076416
+        ],
+        [
+          -0.00305724835941501,
+          0.003823409586631077
+        ],
+        [
+          -0.005011991698489648,
+          0.003864904884800513
+        ],
+        [
+          -0.006316549211986211,
+          0.003636899310448749
+        ],
+        [
+          -0.0039869704236003,
+          0.0036889374988958723
+        ],
+        [
+          -0.0026771788847614886,
+          0.0037372825254360365
+        ],
+        [
+          -0.004633450998399402,
+          0.003817810119937426
+        ],
+        [
+          -0.003182485114618716,
+          0.0038009673939852773
+        ],
+        [
+          -0.0032420311551158987,
+          0.0038062015793223214
+        ],
+        [
+          -0.003941505143496893,
+          0.003851224659822905
+        ],
+        [
+          -0.0030078852331250072,
+          0.0038254745950089264
+        ],
+        [
+          -0.004413574337408965,
+          0.003786380504190112
+        ],
+        [
+          -0.003878215976107824,
+          0.003792232441061527
+        ],
+        [
+          -0.0034722185868116817,
+          0.003861650046123377
+        ],
+        [
+          -0.004695453452053466,
+          0.0038842340486280325
+        ],
+        [
+          -0.0045203501751205355,
+          0.0038298921239572348
+        ],
+        [
+          -0.0033228185615628014,
+          0.003857967031002496
+        ],
+        [
+          -0.006793340754770338,
+          0.0035562726711840797
+        ],
+        [
+          -0.003382600758121579,
+          0.003888481767016838
+        ],
+        [
+          -0.005749335241804432,
+          0.0036638930206566167
+        ],
+        [
+          -0.005336604436840253,
+          0.0036701710195673476
+        ],
+        [
+          -0.0028265793651347515,
+          0.003757014123248026
+        ],
+        [
+          -0.003070773503145885,
+          0.003817819230636066
+        ],
+        [
+          -0.003965042762261173,
+          0.0039160803908003805
+        ],
+        [
+          -0.004570659002907873,
+          0.003872471039419345
+        ],
+        [
+          -0.003399654632179505,
+          0.0038667930003614126
+        ],
+        [
+          -0.003919558189702355,
+          0.003890577941875195
+        ],
+        [
+          -0.0119079712818152,
+          0.001943266830446766
+        ],
+        [
+          -0.003874365159808435,
+          0.0039170387236519
+        ]
+      ]
+    },
+    {
+      "left": "C_full_CN",
+      "right": "C_beta_CN",
+      "n": 50,
+      "mean": -2.8606671469866286e-07,
+      "mean_numerical_interval": [
+        -0.004063179192681985,
+        0.004062615709766531
+      ],
+      "maximum_numerical_radius": 0.007104982040748831,
+      "maximum_interval_width": 0.014209926856038835,
+      "numerically_resolved_at_tolerance": 50,
+      "individual_intervals_inside_equivalence_window": 50,
+      "nominal_values": [
+        -2.0314493587303417e-07,
+        -6.900956289745963e-07,
+        -2.3513501671290626e-06,
+        -1.006893408428411e-06,
+        5.112487686531608e-07,
+        -2.851176253981791e-07,
+        2.3528133287209485e-06,
+        5.26465965822176e-07,
+        -8.826663786543065e-07,
+        -2.037474791771743e-06,
+        1.8799053336238103e-07,
+        2.134417453891757e-07,
+        -4.871977409615091e-06,
+        8.341104134057531e-07,
+        6.373821775929045e-07,
+        -2.926451449503098e-06,
+        1.9276722750261044e-06,
+        4.623916729507016e-07,
+        8.127108578337428e-07,
+        9.48554818025471e-07,
+        -1.1477881852739458e-06,
+        -7.40901555662532e-07,
+        2.0881793643123814e-06,
+        -1.243328384137321e-06,
+        -2.971777861127123e-06,
+        -4.020123264281139e-07,
+        2.2981324154791594e-06,
+        -1.2405768740064715e-06,
+        1.7469867047426035e-06,
+        1.2484272428059384e-06,
+        -2.572441626380595e-08,
+        1.8383584483583348e-06,
+        -8.893830838463401e-07,
+        3.7340957204090586e-07,
+        5.649312805333651e-07,
+        -8.267491237168301e-07,
+        -7.133947109716487e-07,
+        1.370531397482111e-06,
+        -3.6997798382731872e-06,
+        1.3051867011615315e-06,
+        -2.340414291257531e-06,
+        -2.302077754201548e-06,
+        1.9266984175869695e-06,
+        2.404819093082544e-06,
+        6.371342978761518e-07,
+        -4.3029299734431703e-07,
+        8.495499251859329e-07,
+        4.121614582963673e-08,
+        -8.592786931216345e-06,
+        4.1048083088135456e-07
+      ],
+      "numerical_intervals": [
+        [
+          -0.0038701704335093456,
+          0.0038697803661432717
+        ],
+        [
+          -0.004293752965237374,
+          0.004292389996527257
+        ],
+        [
+          -0.004199789489102823,
+          0.004195309865501762
+        ],
+        [
+          -0.004027991723794311,
+          0.004025900001187299
+        ],
+        [
+          -0.003905169201308123,
+          0.003906244015144389
+        ],
+        [
+          -0.004149605627629116,
+          0.0041490166476447765
+        ],
+        [
+          -0.0033425948149695683,
+          0.0033472119251904964
+        ],
+        [
+          -0.003843563249114945,
+          0.0038446681374648684
+        ],
+        [
+          -0.003863934465536012,
+          0.003862108429468547
+        ],
+        [
+          -0.004807387454121126,
+          0.004803334509648649
+        ],
+        [
+          -0.0038055903477206554,
+          0.0038062256186618404
+        ],
+        [
+          -0.0038316519747942923,
+          0.0038322648325748165
+        ],
+        [
+          -0.005871617590613831,
+          0.0058618525248573805
+        ],
+        [
+          -0.003898700872630778,
+          0.003900304624868678
+        ],
+        [
+          -0.003613432617425638,
+          0.003614519544757333
+        ],
+        [
+          -0.0050795944834958195,
+          0.005073966099120475
+        ],
+        [
+          -0.003333223880524705,
+          0.003336996995210728
+        ],
+        [
+          -0.0036869349781161187,
+          0.0036881631203744547
+        ],
+        [
+          -0.0037581571113666223,
+          0.0037597228612383793
+        ],
+        [
+          -0.003762653410091854,
+          0.003764510001892485
+        ],
+        [
+          -0.0042373853831220165,
+          0.004235251847145793
+        ],
+        [
+          -0.004262316400144184,
+          0.004260913709948522
+        ],
+        [
+          -0.0034229964398748702,
+          0.003427020107871326
+        ],
+        [
+          -0.004461708520298369,
+          0.004459259464276055
+        ],
+        [
+          -0.005031461548947402,
+          0.005025057075400796
+        ],
+        [
+          -0.003843787831444012,
+          0.0038432450948178154
+        ],
+        [
+          -0.0031836565305575215,
+          0.0031882169320383014
+        ],
+        [
+          -0.004242250257719182,
+          0.0042399125317312825
+        ],
+        [
+          -0.0034775401346920365,
+          0.003480958210237417
+        ],
+        [
+          -0.0035116182754411085,
+          0.0035139037690494757
+        ],
+        [
+          -0.0038980413030828,
+          0.0038977861930300506
+        ],
+        [
+          -0.00339850746531023,
+          0.003402113985879418
+        ],
+        [
+          -0.004112584174911005,
+          0.004111168569296497
+        ],
+        [
+          -0.003836290262150155,
+          0.0038372028937296854
+        ],
+        [
+          -0.0036585692144566195,
+          0.0036595877440985802
+        ],
+        [
+          -0.004306214138766418,
+          0.004304623701517629
+        ],
+        [
+          -0.004189016674155166,
+          0.004187698044382349
+        ],
+        [
+          -0.003578437749560237,
+          0.003581037429373324
+        ],
+        [
+          -0.0052397387130863615,
+          0.005232374923135885
+        ],
+        [
+          -0.003624130943563064,
+          0.0036266379261249426
+        ],
+        [
+          -0.004748801059174967,
+          0.004744391586787522
+        ],
+        [
+          -0.0045373222852070905,
+          0.004533056138194658
+        ],
+        [
+          -0.0032712101057557064,
+          0.00327499393379882
+        ],
+        [
+          -0.0034270625646923847,
+          0.0034317529808119973
+        ],
+        [
+          -0.003940912503784588,
+          0.003941930621991885
+        ],
+        [
+          -0.0042356572326094355,
+          0.0042347010280516795
+        ],
+        [
+          -0.0036229828797214036,
+          0.0036246592254590704
+        ],
+        [
+          -0.0039054215252388724,
+          0.003905383171001864
+        ],
+        [
+          -0.007113574827680047,
+          0.007096352028358788
+        ],
+        [
+          -0.003894245997848933,
+          0.003895104503307212
+        ]
+      ]
+    }
+  ],
+  "interval_interpretation": "Inverse envelopes of two finite CDF representations enlarged by 0.002 vertically. Conditional on the established finite discretization checks; not frequentist confidence intervals.",
+  "population_inference": "Means describe the selected 50 paired realizations. No population equivalence claim."
+}

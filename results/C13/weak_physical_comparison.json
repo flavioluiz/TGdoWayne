@@ -1,0 +1,115 @@
+{
+  "passed": true,
+  "workers": 13,
+  "arrays": 99,
+  "comparison": [
+    {
+      "worker": "harmonic_01_0",
+      "scientific_report_exact": true,
+      "original_sha256": "d7812dc202cf63f165b0a32660fec12c862781b950e28e78c984d633798d545a",
+      "reproduced_sha256": "d7812dc202cf63f165b0a32660fec12c862781b950e28e78c984d633798d545a",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_01_1",
+      "scientific_report_exact": true,
+      "original_sha256": "88d36c966b475a897c05bcd9422102e7ed03a87a6db26c7109048115516c2bbf",
+      "reproduced_sha256": "88d36c966b475a897c05bcd9422102e7ed03a87a6db26c7109048115516c2bbf",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_01_2",
+      "scientific_report_exact": true,
+      "original_sha256": "88d36c966b475a897c05bcd9422102e7ed03a87a6db26c7109048115516c2bbf",
+      "reproduced_sha256": "88d36c966b475a897c05bcd9422102e7ed03a87a6db26c7109048115516c2bbf",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_02_0",
+      "scientific_report_exact": true,
+      "original_sha256": "0580d54e10c93040fa55e83932bffeda34cf07b2facf6c5fdb9009bff6769ba4",
+      "reproduced_sha256": "0580d54e10c93040fa55e83932bffeda34cf07b2facf6c5fdb9009bff6769ba4",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_02_1",
+      "scientific_report_exact": true,
+      "original_sha256": "8ab8e982f4c5e915391eb34dd982d51c564f30cffb43609710386138a166bc85",
+      "reproduced_sha256": "8ab8e982f4c5e915391eb34dd982d51c564f30cffb43609710386138a166bc85",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_02_2",
+      "scientific_report_exact": true,
+      "original_sha256": "8ab8e982f4c5e915391eb34dd982d51c564f30cffb43609710386138a166bc85",
+      "reproduced_sha256": "8ab8e982f4c5e915391eb34dd982d51c564f30cffb43609710386138a166bc85",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_03_0",
+      "scientific_report_exact": true,
+      "original_sha256": "517d2194427e823a190c770906d1c3a682fa4b122cd51bb4aa1a77843c88f578",
+      "reproduced_sha256": "517d2194427e823a190c770906d1c3a682fa4b122cd51bb4aa1a77843c88f578",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_03_1",
+      "scientific_report_exact": true,
+      "original_sha256": "489ffe0a12a137241cb8ce542a1def71ee1c656abb43e2720ed7b24eabba946a",
+      "reproduced_sha256": "489ffe0a12a137241cb8ce542a1def71ee1c656abb43e2720ed7b24eabba946a",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_03_2",
+      "scientific_report_exact": true,
+      "original_sha256": "214b9e35526edc02c41ef33e5b04df1bc4c9b255d12bd608b264b703bfd6566f",
+      "reproduced_sha256": "214b9e35526edc02c41ef33e5b04df1bc4c9b255d12bd608b264b703bfd6566f",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_04_0",
+      "scientific_report_exact": true,
+      "original_sha256": "ab09d33270f4ebbfd88268573a65aa9f34e955bbd6f07a7ab248d63f0c24d247",
+      "reproduced_sha256": "ab09d33270f4ebbfd88268573a65aa9f34e955bbd6f07a7ab248d63f0c24d247",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_04_1",
+      "scientific_report_exact": true,
+      "original_sha256": "be1389f01c5b0e8a7f2ee3df1f9233403b526593985c753d30b2178db0353e0f",
+      "reproduced_sha256": "be1389f01c5b0e8a7f2ee3df1f9233403b526593985c753d30b2178db0353e0f",
+      "arrays_exact": true
+    },
+    {
+      "worker": "harmonic_04_2",
+      "scientific_report_exact": true,
+      "original_sha256": "e51b97081c1c4991ed9493f2aed8bdbc66943a3632ae273bba3ca0c2dcbefc0c",
+      "reproduced_sha256": "e51b97081c1c4991ed9493f2aed8bdbc66943a3632ae273bba3ca0c2dcbefc0c",
+      "arrays_exact": true
+    },
+    {
+      "worker": "moments_00",
+      "scientific_report_exact": true,
+      "original_sha256": "b43ae76451bb14f866d1190729b74c829ebb8ffe27583071238e942bc206ad41",
+      "reproduced_sha256": "b43ae76451bb14f866d1190729b74c829ebb8ffe27583071238e942bc206ad41",
+      "arrays_exact": true
+    }
+  ],
+  "ignored_operational_fields": [
+    "CPU_seconds",
+    "RSS_peak_bytes",
+    "child_CPU_seconds_including_startup",
+    "wall_seconds"
+  ],
+  "original_resources": {
+    "real_proxy": 183897455812,
+    "child_CPU_seconds": 95.539948,
+    "angular": 0
+  },
+  "reproduced_resources": {
+    "real_proxy": 183897455812,
+    "child_CPU_seconds": 17.281924,
+    "angular": 0
+  },
+  "scope": "Unchanged C08 weak-dispersion physical controller and all workers executed in clean root with original resource limits. Scientific JSON values and arrays exactly compared. No posterior inference in this map."
+}

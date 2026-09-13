@@ -1,0 +1,25 @@
+{
+  "description": "Synthetic timing fit: equal-weight least squares; periodic and jittered sampling; known Gaussian noise and Fourier red process.",
+  "duration_years": 4.5,
+  "samples": 256,
+  "positive_fourier_modes": 8,
+  "red_modes": 20,
+  "red_first_mode_variance_ns2": 10000.0,
+  "red_spectral_index": 4.333333333333333,
+  "white_sigma_ns": 100.0,
+  "jitter_fraction_of_cadence": 0.2,
+  "realizations": 20000,
+  "batch_size": 1000,
+  "seed": 1309202601,
+  "fits": [
+    "none",
+    "spin",
+    "spin_annual"
+  ],
+  "validation": {
+    "linear_algebra_relative_tolerance": 1e-11,
+    "monte_carlo_max_absolute_standardized_covariance_error": 6.0,
+    "family_error_probability": 0.001
+  },
+  "scope": "Single-pulsar illustrative timing fit. Spin columns are 1,t,t^2; annual sine/cosine columns approximate astrometric fitting. No orbital model or multi-pulsar mass inference."
+}

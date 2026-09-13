@@ -1,0 +1,12 @@
+{"component": 0.9, "CPU": 8.188484, "LL": 4048500}
+{"component": 1.0, "CPU": 15.285021, "LL": 8097000}
+{"component": 1.1, "CPU": 22.301484000000002, "LL": 12145500}
+Traceback (most recent call last):
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 107, in main
+    guard.check();w.write(out/'posteriors.json',reports)
+    ~~~~~~~~~~~^^
+  File "/private/tmp/tgwayne-c13-clean-20260913/scripts/executar_producao_distancias_c09.py", line 40, in check
+    if rss>1536*1024**2:raise MemoryError('Production RSS cap')
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+MemoryError: Production RSS cap
+

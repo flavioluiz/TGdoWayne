@@ -10,20 +10,21 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 <!-- PROJECT_STATUS:START -->
 ## Estado atual
 
-**C12 concluído — próximo marco: C13**
+**C13 concluído — dissertação consolidada**
 
-**Última etapa concluída:** C12 — Discussão, conclusões e manuscrito.
+**Última etapa concluída:** C13 — Auditoria final e dissertação consolidada.
 
-**Progresso:** 12 de 13 marcos concluídos.
+**Progresso:** 13 de 13 marcos concluídos.
 
-**Próxima etapa:** C13 — Auditoria final e dissertação consolidada.
+**Próxima etapa:** Todos os marcos planejados concluídos.
 
-**Atualização:** 2026-09-12.
+**Atualização:** 2026-09-13.
 
-**[Baixar o PDF mais recente — v0.12.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v0.12.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v0.12.0) · [PDF versionado no repositório](output/pdf/v0.12.0/dissertacao.pdf)
+**[Baixar o PDF mais recente — v1.0.0](https://github.com/flavioluiz/TGdoWayne/releases/download/v1.0.0/dissertacao.pdf)** · [Notas do release](https://github.com/flavioluiz/TGdoWayne/releases/tag/v1.0.0) · [PDF versionado no repositório](output/pdf/v1.0.0/dissertacao.pdf)
 
 ### O que já foi executado
 
+- C13: consolidação acadêmica, template ITA, revisão teórica e estatística, figuras legíveis e inspeção das 167 páginas. Reprodução tensorial integral: 2.500 alvos, 20.000 réplicas e 175.000 arrays iguais; nova síntese com 155 testes e 15 contrastes idênticos. Reprodução escalar e de robustez concluída, com limitações de ambiente e insumos documentadas.
 - C12: discussão e conclusões integradas, resumo/introdução/revisão atualizados e manuscrito em inglês com figura reproduzível. Auditoria de 23 alegações; corrigida a descrição de C_beta/C_full, preservando os resultados executados.
 - C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.
 - C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.
@@ -77,7 +78,7 @@ com redes de temporização de pulsares, com potencial para um artigo metodológ
 
 ### O que está em andamento e o que falta
 
-Discussão, conclusões e manuscrito preparados para revisão; 23 alegações centrais conferidas, sem nova simulação. Próximo marco: C13/v1.0.0, auditoria final de reprodução, consistência e requisitos da entrega.
+Plano C01–C13 concluído. Dissertação consolidada (167 páginas) e manuscrito (sete páginas), com revisão acadêmica e reprodução científica documentadas. Campanhas tensorial, escalar, de robustez e de ampliação reproduzidas no escopo registrado em docs/reproducao.md. Estudo de timing e 300 posteriores condicionais B/C incluídos. Artigo não submetido; não houve defesa nem aprovação institucional. A comparação B/C com marginalização do ruído permanece cientificamente inconclusiva; o estudo condicional resolve a precisão na subamostra de 50 realizações.
 
 ## Roadmap
 
@@ -97,7 +98,7 @@ Cada linha corresponde a um commit de marco e a um PDF cumulativo. A primeira ve
 | C10 | Extensão com helicidade zero vinculada | `v0.10.0` | Concluída | [Detalhes](implementation_plan/commits/C10_helicidade_zero.md) |
 | C11 | Aplicação pública ou extensão simulada | `v0.11.0` | Concluída | [Detalhes](implementation_plan/commits/C11_aplicacao.md) |
 | C12 | Discussão, conclusões e manuscrito | `v0.12.0` | Concluída | [Detalhes](implementation_plan/commits/C12_discussao_artigo.md) |
-| C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Próxima — não iniciada | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
+| C13 | Auditoria final e dissertação consolidada | `v1.0.0` | Concluída | [Detalhes](implementation_plan/commits/C13_auditoria_final.md) |
 
 [Plano geral de execução](implementation_plan/README.md). O cronograma científico é de 24 meses; os marcos são liberados por critérios de conclusão, não só por data.
 
@@ -115,12 +116,15 @@ A revisão C03 identificou antecedentes próximos e delimitou a contribuição c
 validade dessa substituição dispersiva. Consulte a [decisão de recorte](docs/literatura/decisao_recorte.md).
 Os resultados centrais do TG já foram publicados; sua reprodução é uma base de validação.
 
-## Identificação da proposta
+## Identificação acadêmica
 
-- **Autor:** Gráviton de Souza — pseudônimo provisório, solicitado para esta versão.
-- **Programa:** Programa de Física.
-- **Orientação:** Autor do TG do Wayne — identificação provisória, sem atribuir orientação formal.
-- **Modelo:** template de mestrado do ITA fornecido no projeto. Os metadados acadêmicos definitivos serão atualizados posteriormente.
+- **Autor:** Gráviton de Souza.
+- **Programa:** Programa de Pós-Graduação em Física.
+- **Área de concentração:** Física Nuclear (FIS-N).
+- **Linha de pesquisa:** Astrofísica, Cosmologia e Gravitação ([enquadramento oficial](https://pgfis.ita.br/pt/post/fisica-nuclear)).
+- **Orientação:** Prof. Dr. Schrödinger GPT de Gotham.
+- **Banca:** Emmy Noether de Barros (presidente), Schrödinger GPT de Gotham (orientador), Heisenberg da Silva, Planck de Oliveira e Autor do TG do Wayne.
+- **Modelo:** template de mestrado do ITA fornecido no projeto, com folha de rosto, ficha catalográfica, cessão de direitos, banca, resumos, listas e folha de registro.
 
 ## Organização
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "current_stage": "C12",
+  "current_stage": "C13",
   "completed_stages": [
     "C01",
     "C02",
@@ -13,21 +13,31 @@
     "C09",
     "C10",
     "C11",
-    "C12"
+    "C12",
+    "C13"
   ],
-  "latest_version": "v0.12.0",
+  "latest_version": "v1.0.0",
   "document": "dissertacao",
-  "latest_pdf": "output/pdf/v0.12.0/dissertacao.pdf",
-  "updated_at": "2026-09-12",
-  "status_label": "C12 concluído — próximo marco: C13",
+  "latest_pdf": "output/pdf/v1.0.0/dissertacao.pdf",
+  "updated_at": "2026-09-13",
+  "status_label": "C13 concluído — dissertação consolidada",
   "academic_metadata": {
     "author": "Gráviton de Souza",
-    "author_status": "Pseudônimo provisório escolhido para esta versão",
-    "program": "Programa de Física",
-    "advisor_label": "Autor do TG do Wayne",
-    "advisor_status": "Identificação provisória"
+    "author_status": "Nome definitivo indicado pelo usuário",
+    "program": "Programa de Pós-Graduação em Física",
+    "advisor_label": "Prof. Dr. Schrödinger GPT de Gotham",
+    "advisor_status": "Nome definitivo indicado pelo usuário",
+    "committee": [
+      "Emmy Noether de Barros (presidente)",
+      "Heisenberg da Silva",
+      "Planck de Oliveira",
+      "Autor do TG do Wayne"
+    ],
+    "concentration_area": "Física Nuclear",
+    "research_line": "Astrofísica, Cosmologia e Gravitação"
   },
   "completed_work": [
+    "C13: consolidação acadêmica, template ITA, revisão teórica e estatística, figuras legíveis e inspeção das 167 páginas. Reprodução tensorial integral: 2.500 alvos, 20.000 réplicas e 175.000 arrays iguais; nova síntese com 155 testes e 15 contrastes idênticos. Reprodução escalar e de robustez concluída, com limitações de ambiente e insumos documentadas.",
     "C12: discussão e conclusões integradas, resumo/introdução/revisão atualizados e manuscrito em inglês com figura reproduzível. Auditoria de 23 alegações; corrigida a descrição de C_beta/C_full, preservando os resultados executados.",
     "C11: 596 realizações pareadas e 10728 posteriores; geração e agregação auditadas, 396 verificações, famílias SBC 42/84 com uma rejeição persistente e quatro indeterminações. Capítulo de aplicação ampliado; 106941 arquivos restaurados e 13 casos de componentes aprovados.",
     "C10: 1192 observações e 6344 análises concluídas; 214227550 avaliações, auditoria independente, falsos positivos, recuperação, SBC e Fisher físico. Onze rejeições persistentes nas aproximações e seis decisões indeterminadas nas três famílias; nenhum descarte.",
@@ -79,9 +89,9 @@
     "C10: preparação, piloto, refinamentos e geração empacotados; 104184 arquivos lógicos restaurados e verificados, em 14 ZIPs novos e dois anteriores. A produção de posteriores permanece em execução e fora desse pacote.",
     "C10: 110257 arquivos lógicos da produção restaurados e conferidos; 74 ZIPs distribuídos no release, com URLs e SHA-256 versionados. Treze testes C10 aprovados também com referências restauradas."
   ],
-  "current_work": "Discussão, conclusões e manuscrito preparados para revisão; 23 alegações centrais conferidas, sem nova simulação. Próximo marco: C13/v1.0.0, auditoria final de reprodução, consistência e requisitos da entrega.",
+  "current_work": "Plano C01–C13 concluído. Dissertação consolidada (167 páginas) e manuscrito (sete páginas), com revisão acadêmica e reprodução científica documentadas. Campanhas tensorial, escalar, de robustez e de ampliação reproduzidas no escopo registrado em docs/reproducao.md. Estudo de timing e 300 posteriores condicionais B/C incluídos. Artigo não submetido; não houve defesa nem aprovação institucional. A comparação B/C com marginalização do ruído permanece cientificamente inconclusiva; o estudo condicional resolve a precisão na subamostra de 50 realizações.",
   "in_progress_stages": [],
-  "execution_status": "resumed",
+  "execution_status": "complete",
   "paused_stages": [],
   "resume_only_on_user_request": false
 }

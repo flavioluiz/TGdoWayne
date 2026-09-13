@@ -1,0 +1,25 @@
+{
+  "worker": "tmp/c10_scalar_blas/scripts/validar_base_escalar.py",
+  "worker_sha256": "b968bdd47b018838902f1dd9dded8e213975ce37c199774094f6826e3fe3c16a",
+  "arguments": [
+    "--reference-file",
+    "tmp/c10_scalar/scalar_fp.py",
+    "--pta-source-root",
+    "src",
+    "--output",
+    "tmp/c13_scalar_blas_checks"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/scripts": "/private/tmp/tgwayne-c13-clean-20260913/scripts"
+  },
+  "wall_seconds": 0.2908053329992981,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

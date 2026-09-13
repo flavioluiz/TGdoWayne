@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "comparisons": [
+    {
+      "study": "C10/population_generation_audit",
+      "comparison": "Exact JSON equality with published product",
+      "reference_sha256": "d7e5c3f581525b40b84ca873ddd7cb1cd9c505f67cdc58eb22fdc0664a6abb1b",
+      "reproduced_sha256": "d7e5c3f581525b40b84ca873ddd7cb1cd9c505f67cdc58eb22fdc0664a6abb1b"
+    },
+    {
+      "study": "C10/production_audit",
+      "comparison": "Exact JSON equality with published product",
+      "reference_sha256": "77a79e359fe7b29cdbda455ea9a3473beae20b24b358bb6bf706cc5af5fcd03f",
+      "reproduced_sha256": "77a79e359fe7b29cdbda455ea9a3473beae20b24b358bb6bf706cc5af5fcd03f"
+    },
+    {
+      "study": "C10/population_synthesis",
+      "comparison": "Exact JSON equality with published product",
+      "reference_sha256": "220fcef502217f82874051a84333982d7b80caef745e1fad3fb9e9a0c1d2dfb7",
+      "reproduced_sha256": "220fcef502217f82874051a84333982d7b80caef745e1fad3fb9e9a0c1d2dfb7"
+    },
+    {
+      "study": "C10/fisher_audit",
+      "comparison": "Exact JSON equality with published product",
+      "reference_sha256": "4c02bb4be486fb8907d18950c657b2514ca09ba6cf22728a7cad52051753d437",
+      "reproduced_sha256": "4c02bb4be486fb8907d18950c657b2514ca09ba6cf22728a7cad52051753d437"
+    },
+    {
+      "study": "C09/SBC_operational_events",
+      "comparison": "Exact JSON equality with published product",
+      "reference_sha256": "d12427edaad53b32ff1743ca8c2223db15b8542eb80a571ec63b59d674085594",
+      "reproduced_sha256": "d12427edaad53b32ff1743ca8c2223db15b8542eb80a571ec63b59d674085594"
+    },
+    {
+      "study": "C10 PIT arrays",
+      "arrays": 10,
+      "comparison": "Bitwise equality of every array"
+    }
+  ],
+  "scope": "Repeated synthesis, integrals, Fisher algebra and generation from restored numerical inputs; not fresh evaluation of every scalar/robustness likelihood or ORF."
+}

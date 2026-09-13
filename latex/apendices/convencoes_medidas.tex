@@ -1,0 +1,52 @@
+\chapter{Bases escalares e medida de integração}
+\label{ap:convencoes-medidas}
+
+\section{Projeções de curvatura e bases normalizadas}
+
+Sejam $P_{ij}=\delta_{ij}-\Omega_i\Omega_j$ e $L_{ij}=\Omega_i\Omega_j$. Com o produto euclidiano de tensores espaciais, $P:P=2$, $L:L=1$ e $P:L=0$. Para helicidade zero,
+\begin{equation}
+ Q/h_0=(P-2\chi L)/\sqrt3,\qquad \chi=1-\beta^2.
+\end{equation}
+A tabela distingue coeficientes de expansão de projeções de maré.
+\begin{center}
+\begin{tabular}{p{0.18\textwidth}p{0.18\textwidth}p{0.23\textwidth}p{0.25\textwidth}}
+\toprule
+Convenção & Base transversal & Base longitudinal & Razão longitudinal/transversal\\
+\midrule
+Componentes espaciais & $P$ & $L$ & $-2\chi$\\
+Norma dois & $P$ & $\sqrt2L$ & $-\sqrt2\chi$\\
+Norma um & $P/\sqrt2$ & $L$ & $-\sqrt2\chi$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Para as projeções de curvatura $p_b=R_{0x0x}+R_{0y0y}$ e $p_l=R_{0z0z}$, a razão é $p_l/p_b=-\chi$ quando $p_b\ne0$.
+
+As duas bases ortonormais, com norma comum um ou dois, têm a mesma razão de coeficientes; a razão muda quando os dois tensores são reescalados diferentemente ou quando se usam projeções de curvatura. Se $e'_A=\lambda_Ae_A$, então $h'_A=h_A/\lambda_A$ e $\Gamma'_{AB}=\lambda_A\lambda_B^*\Gamma_{AB}$. A soma $\sum_{AB}h_Ah_B^*\Gamma_{AB}$ permanece invariante. Os termos cruzados escalar transversal--longitudinal expressam a coerência de uma única amplitude. Uma mudança de base não transforma uma mistura escalar de outra teoria no modo vinculado de Fierz--Pauli.
+
+\section{Jacobiano e suporte da escala comum}
+
+Para $a=g-t$, $b=r-t$ e $s=10^t$, a transformação inversa é $g=a+t$, $r=b+t$. Logo,
+\begin{equation}
+ \frac{\partial(g,r,t)}{\partial(a,b,t)}=
+ \begin{pmatrix}1&0&1\\0&1&1\\0&0&1\end{pmatrix},
+ \qquad dg\,dr\,dt=da\,db\,dt=\frac{da\,db\,ds}{s\ln10}.
+\end{equation}
+A priori uniforme na caixa original tem densidade $1/(\Delta G\Delta R\Delta E)$. Intersectar os três intervalos de $t$ produz os limites $t_-$ e $t_+$ da Eq.~\eqref{eq:inf-suporte-escala}. Integrar em $t$ resulta na densidade marginal $(t_+-t_-)/(\Delta G\Delta R\Delta E)$ para $(a,b)$. As razões são correlacionadas porque compartilham $t$.
+
+Na normal complexa própria, $\det C=s^{2M}\det C_0$ e a forma quadrática é $\chi s^{-2}$. A medida logarítmica e a substituição $v=\chi s^{-2}$ dão
+\begin{equation}
+ s^{-2M}e^{-\chi/s^2}\frac{ds}{s\ln10}
+ =-\frac{\chi^{-M}}{2\ln10}v^{M-1}e^{-v}\,dv,
+\end{equation}
+com inversão dos limites, reproduzindo a Eq.~\eqref{eq:inf-escala-cn}. Na normal real, $\det\Sigma=s^{4d}\det\Sigma_0$ e
+$(y-s^2\mu_0)^T(s^4\Sigma_0)^{-1}(y-s^2\mu_0)=Xz^2-2Bz+C$, com $z=s^{-2}$. O fator $s^{-2d}ds/s$ torna-se $-z^{d-1}dz/2$, justificando a Eq.~\eqref{eq:inf-escala-normal}.
+
+\section{Convergência e limites das caudas}
+
+Os limites de priori usados são finitos, com $0<s_-<s_+<\infty$ e covariâncias positivas definidas. Nessas condições, as integrais são finitas inclusive no caso de dados nulos. Para estender formalmente os limites a $s=0$ e $s=\infty$, condições adicionais são necessárias: a integral CN em $v$ converge para $M>0$ e $\chi>0$; se $\chi=0$, a integral diverge quando $s\to0$. Para a normal real, $X>0$ garante supressão gaussiana em $z\to\infty$, e $d>0$ garante integrabilidade em $z\to0$. Se $X=0$, positividade definida implica $y=0$ e $B=0$, deixando uma cauda divergente em $z\to\infty$ sem truncamento.
+
+Para $d\geq1$ e $X>0$, o log-integrando
+$\ell(z)=(d-1)\log z-Xz^2/2+Bz$ satisfaz
+$\ell''(z)=-(d-1)/z^2-X<0$. Uma tangente em $z_0$ limita superiormente $\ell$; se $\ell'(z_0)<0$, a cauda direita é limitada por
+$\int_{z_0}^\infty e^{\ell(z)}dz\leq e^{\ell(z_0)}/[-\ell'(z_0)]$.
+Esse resultado fornece um critério analítico para truncar caudas com precisão controlada.

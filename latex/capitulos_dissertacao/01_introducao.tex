@@ -98,7 +98,9 @@ Hassan--Rosen serão discutidas como contexto, sem transferir suas
 propriedades de consistência automaticamente ao modelo histórico
 \autocite{visser1998,park2010,derham2011,hassan2012}.
 
-\section{Problema de pesquisa e lacuna candidata}
+Uma distinção orienta a interpretação dos resultados: um limite superior pode existir mesmo sem informação nos dados. Sob priori uniforme em $u=f_gT\in[0,1]$ e verossimilhança constante, o quantil de 95\% é $0,95$, correspondente a $m_gc^2\leq0,95h_{\mathrm P}/T$. Nesse caso, a divergência entre posterior e priori é zero. A pesquisa combina, por isso, limites de massa, calibração e ganho de informação, distinguindo restrições empíricas das impostas pelo suporte.
+
+\section{Problema de pesquisa}
 
 Parte dos produtos de PTA é apresentada na forma de correlações
 angulares já comprimidas em frequência. Essa representação é útil para
@@ -220,7 +222,7 @@ como evidência de física adicional.
 
 \section{Delimitação e viabilidade}
 
-A proposta original foi dimensionada para 24 meses. Seu núcleo compreende
+O núcleo do trabalho compreende
 propagação linear sobre fundo plano, resposta de PTA, simulações e
 inferência estatística. As amplitudes dos setores considerados serão
 hipóteses de população explicitadas. Não serão deduzidas a emissão
@@ -229,38 +231,10 @@ do fundo ou uma solução do mecanismo de Vainshtein. Essa delimitação
 permite testar a inferência sem apresentar um modelo fenomenológico de
 amplitudes como previsão universal de gravidade massiva.
 
-A sequência original reservava os dois primeiros meses à revisão e à
-delimitação definitiva; os meses 3--8 à reconstrução teórica e à
-resposta; os meses 9--15 às simulações e à validação da comparação
-central; e os meses 16--18 à extensão escalar selecionada. Os seis
-meses finais destinam-se à aplicação viável, à consolidação dos
-resultados e à redação. Esse cronograma organiza dependências e não
-constitui evidência de que os experimentos já foram realizados.
+A contribuição principal foi construída com simulações e benchmarks numéricos. A análise de produtos públicos identificou dados de temporização, mas sua análise exigiria um adaptador validado de amostragem, timing e ruído. Por isso, a aplicação desenvolvida utiliza posições celestes reais em uma população simulada, mantendo explícita a distinção entre metadados de catálogo e observações analisadas \autocite{nanogravdata,enterprise}. Informação espectral ausente em produtos comprimidos não é tratada como se tivesse sido observada.
 
-A contribuição principal foi construída com simulações e
-benchmarks públicos. Uma aplicação observacional dependerá da
-disponibilidade de produtos com informação espectral e covariância
-suficientes. O portal de dados do NANOGrav e a infraestrutura
-ENTERPRISE foram examinados nessa decisão
-\autocite{nanogravdata,enterprise}. Se tais condições não forem
-satisfeitas dentro do escopo, a aplicação será substituída por uma
-campanha simulada ampliada, com justificativa registrada. Informação
-espectral ausente em produtos comprimidos não é tratada como se
-tivesse sido observada.
+\section{Organização da dissertação}
 
-\section{Organização da dissertação e das entregas}
+O Capítulo~\ref{chap:revisao} apresenta a revisão bibliográfica e delimita a contribuição em relação aos antecedentes. O Capítulo~\ref{chap:fundamentos} reúne os fundamentos, a reconstrução do trabalho original e os vínculos de Fierz--Pauli. A resposta tensorial de PTA é derivada e validada no Capítulo~\ref{chap:resposta-pta}, e o experimento sintético é definido no Capítulo~\ref{chap:simulacao}.
 
-A dissertação foi desenvolvida de forma cumulativa. Após esta
-introdução, o Capítulo~\ref{chap:revisao}, concluído em C03, apresenta
-a revisão bibliográfica e a decisão de recorte apoiada na matriz de originalidade. O Capítulo~\ref{chap:fundamentos}, concluído em C04, reúne os fundamentos,
-a reprodução do TG e os vínculos de Fierz--Pauli. O Capítulo~\ref{chap:resposta-pta}, concluído em C05, deriva e valida a resposta tensorial de PTA. O Capítulo~\ref{chap:simulacao}, concluído em C06,
-define o experimento sintético e valida seus momentos. C07 estabelece a inferência e seus controles. C08 e C09 apresentam a comparação de compressões e a robustez condicional. C10 examina a helicidade zero vinculada, e C11 documenta a auditoria pública e a extensão simulada justificada. A discussão e as conclusões consolidam essas entregas; o manuscrito acompanha C12. C13 realizará a auditoria final de consistência e reprodução.
-
-Cada etapa concluída terá um commit, uma versão em PDF e um registro das
-verificações executadas. O quadro de estado dos capítulos distingue, em cada versão, as entregas
-planejadas do conteúdo efetivamente produzido. A conclusão editorial de um
-capítulo não substitui sua validação científica, e a preparação de um
-manuscrito não garante aceitação por um periódico. O resultado esperado
-é uma avaliação verificável das condições em que inferências
-comprimidas são adequadas, mesmo que os testes não encontrem diferença
-estatisticamente relevante nos cenários examinados.
+O Capítulo~\ref{chap:validacao} descreve a inferência e seus controles. A comparação de compressões é apresentada no Capítulo~\ref{chap:compressao}, seguida da análise de robustez no Capítulo~\ref{chap:robustez}. A extensão de helicidade zero e a população ampliada complementam os testes. A discussão e as conclusões integram os resultados, distinguindo limitações físicas, estatísticas e numéricas.

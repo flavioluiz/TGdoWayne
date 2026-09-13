@@ -1,0 +1,82 @@
+{
+  "inputs": {
+    "data": {
+      "path": "results/C07/prior_predictive/data.npz",
+      "sha256": "63679c96852f3c0aa1e25c8a3f087c0646ceb22cd7701758491cabdd42ac0103"
+    },
+    "truth_data": {
+      "path": "results/C07/prior_predictive/data.npz",
+      "sha256": "63679c96852f3c0aa1e25c8a3f087c0646ceb22cd7701758491cabdd42ac0103"
+    },
+    "truth_logl": {
+      "path": "results/C07/prior_predictive/truth_log_likelihood.json",
+      "sha256": "19242213c776beb9426bd19786b7d3187c40c2c030637afd031f17541f64ba75"
+    },
+    "table": {
+      "path": "results/C07/orf_interpolation/orf_table_pilot12x4.npz",
+      "sha256": "75632dfbdd9cce8b60b9f760a3177a76798a4adb7ac9ccc724092aeaf53ad70d"
+    },
+    "native_library": {
+      "path": "tmp/c13_c07_native_reference/libpta_likelihood.dylib",
+      "sha256": "3a47d1757f7af1381630f6551476a97095d4ccdfd97d5050fa9e57b17d503ec6"
+    },
+    "native_build_manifest": {
+      "path": "results/C07/training_benchmark/native_provenance/build_manifest.json",
+      "sha256": "7a292917b6db16ac5b27651fd4bb629735619ee08f3e391cb0fbfe602d03f526"
+    },
+    "experiment": {
+      "path": "configs/calibration/prior_predictive_500_v1.json",
+      "sha256": "f22b0a8cd7c86e477365ea02d3b37a836458d44285b0abd323bccd174c89fdfa"
+    },
+    "settings": {
+      "path": "configs/calibration/campaign_500_execution_v1.json",
+      "sha256": "f2be9aac621cf6c5a0b90374e9d6ec0ebec7f69cea389f17f4e7dff2f3151e2c"
+    },
+    "table_manifest": {
+      "path": "results/C07/orf_interpolation/orf_table_manifest.json",
+      "sha256": "7e4ef47fe99a0a91612ff8ef22e595d03332298c65d54f8ed4995280b3f9fa8f"
+    },
+    "validation_config": {
+      "path": "configs/calibration/pilot_initial.json",
+      "sha256": "14734aa5e9382f7b8aebf047a9f15ad6a132bd89d5de3c5e61b502350cfe5aa9"
+    },
+    "protocol": {
+      "path": "configs/calibration/campaign_diagnostics_v1.json",
+      "sha256": "35cddd37258b7728df3889fd60f4a11b600305e73f1ad8bc347f8ef28250ef76"
+    }
+  },
+  "worker": "scripts/run_calibration_campaign.py",
+  "arguments": [
+    "--data",
+    "results/C07/prior_predictive/data.npz",
+    "--truth-data",
+    "results/C07/prior_predictive/data.npz",
+    "--truth-logl",
+    "results/C07/prior_predictive/truth_log_likelihood.json",
+    "--table",
+    "results/C07/orf_interpolation/orf_table_pilot12x4.npz",
+    "--native-library",
+    "tmp/c13_c07_native_reference/libpta_likelihood.dylib",
+    "--native-build-manifest",
+    "results/C07/training_benchmark/native_provenance/build_manifest.json",
+    "--experiment",
+    "configs/calibration/prior_predictive_500_v1.json",
+    "--run-config",
+    "configs/calibration/campaign_500_execution_v1.json",
+    "--table-manifest",
+    "results/C07/orf_interpolation/orf_table_manifest.json",
+    "--validation-config",
+    "configs/calibration/pilot_initial.json",
+    "--protocol",
+    "configs/calibration/campaign_diagnostics_v1.json",
+    "--output",
+    "tmp/c13_c07_full_reproduction",
+    "--training-threads",
+    "1",
+    "--threads",
+    "6"
+  ],
+  "original_targets": 2500,
+  "expected_likelihood_evaluations": 901130000,
+  "scope": "Exact original inputs and thread plan; production requires a successful fresh preflight."
+}

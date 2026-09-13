@@ -1,0 +1,23 @@
+{
+  "status": "complete_and_compared",
+  "session_id": 44384,
+  "worker": "scripts/executar_campanha_escalar_c10.py --execute",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "output": "tmp/c10_production_v1",
+  "reference": "tmp/c13_c10_production_published",
+  "log": "tmp/c13_scalar_full_production.log",
+  "original_CPU_cap": 7200,
+  "targets_total": 6344,
+  "next": "No scalar production or synthesis pending; see scalar_full_production_comparison.json and scalar_fresh_synthesis_comparison.json.",
+  "last_observed_progress": {
+    "stage": "posteriors",
+    "targets": 4800,
+    "expected": 6344,
+    "charged": {
+      "grid": 159134400,
+      "truth": 19032,
+      "events": 3573293
+    },
+    "CPU": 4762.85438
+  }
+}

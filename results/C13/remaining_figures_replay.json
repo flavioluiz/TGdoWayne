@@ -1,0 +1,189 @@
+{
+  "scope": "Regeneration from retained inputs; identical raster comparison at 120 dpi; not physical campaign replay.",
+  "recovery": [
+    {
+      "path": "tmp/c08_G0/c07_publication_resource_release.json",
+      "archive": "results/C08/campaign_archives/replay_v1/evidence_part000.zip",
+      "sha256": "2df291b4d91cc79f5364d05f35798a584cdacb911eab42e1b7c21ad8126453fb"
+    },
+    {
+      "path": "tmp/c08_paired_synthesis_OUTPUT/summary.json",
+      "source": "results/C08/paired32/summary.json",
+      "sha256": "af531d7931868ea68d9934853d19a38912cecdc582a8cd4fd33c0d00a417f64c"
+    }
+  ],
+  "runs": [
+    {
+      "worker": "results/C08/maps/source_snapshots/c08_weak_dispersion/plot_completed.py",
+      "worker_sha256": "0a93c108190da94fd3e6ae985e742c84bc23a11fbe8d658ce3c142682d252910",
+      "arguments": [
+        "--summary",
+        "results/C08/maps/g2_weak/summary",
+        "--output",
+        "/private/tmp/tgwayne-c13-clean-20260913/tmp/c13_remaining_figures/weak"
+      ],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+      },
+      "wall_seconds": 0.9257422919981764,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    },
+    {
+      "worker": "results/C08/c07_descriptive/summarize.py",
+      "worker_sha256": "428bd2140d8ebe4d92ae17355452b287e4a5aea7b90fd6a07d72e30ebc596458",
+      "arguments": [
+        "--repository",
+        "/private/tmp/tgwayne-c13-clean-20260913",
+        "--output",
+        "/private/tmp/tgwayne-c13-clean-20260913/tmp/c13_remaining_figures/descriptive"
+      ],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+        "/Volumes/MacSSD/Development/github/TGdoWayne/tmp/release_downloads/v0.7.1/verification.json": "/private/tmp/tgwayne-c13-clean-20260913/tmp/release_downloads/v0.7.1/verification.json"
+      },
+      "wall_seconds": 9.118240041003446,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    },
+    {
+      "worker": "results/C08/c07_descriptive/plot_mass_bins_v2.py",
+      "worker_sha256": "dfad684f75fe0c878395d00963cd8e812e2c5a0ddf490b1344badc49d535dd16",
+      "arguments": [],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+      },
+      "wall_seconds": 8.87642041700019,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    },
+    {
+      "worker": "results/C08/paired32/render_mean_v2.py",
+      "worker_sha256": "9de8df8f46feacac97b011649c06b45795d8a53a580846a45b1bf08a9a00ca6b",
+      "arguments": [],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+      },
+      "wall_seconds": 8.853921124995395,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    },
+    {
+      "worker": "docs/pausa_v0.8.5/figuras_analiticas.py",
+      "worker_sha256": "b327a1164e33efc0bf5d236c37cb40f268368d5dc5d7759c6d2bb537f9f88e16",
+      "arguments": [],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+      },
+      "wall_seconds": 8.969689667006605,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    },
+    {
+      "worker": "scripts/figura_geometria_dissertacao.py",
+      "worker_sha256": "9b8fc3222fec7708e84b255f73183827184350614025fe592c170e6badca777b",
+      "arguments": [],
+      "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+      "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+      "negative_control_passed": true,
+      "blocked_reads": [
+        "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+      ],
+      "mapped_paths": {
+        "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv"
+      },
+      "wall_seconds": 8.642918583995197,
+      "failure": null,
+      "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+    }
+  ],
+  "comparisons": [
+    {
+      "original": "figures/compressao/g2_fraca/g2_momentos.pdf",
+      "reproduced": "tmp/c13_remaining_figures/weak/g2_momentos.pdf",
+      "passed": true,
+      "original_sha256": "383a735913621d3bc1193dd7404f0c737a12a17efd1ed57650b5137295fd75f1",
+      "reproduced_sha256": "383a735913621d3bc1193dd7404f0c737a12a17efd1ed57650b5137295fd75f1"
+    },
+    {
+      "original": "figures/compressao/g2_fraca/expansao_fraca.pdf",
+      "reproduced": "tmp/c13_remaining_figures/weak/expansao_fraca.pdf",
+      "passed": true,
+      "original_sha256": "eb95248cf195b5562ed8a472c4d9a5f46a464d1cbd56ddb0537462dc635a7529",
+      "reproduced_sha256": "eb95248cf195b5562ed8a472c4d9a5f46a464d1cbd56ddb0537462dc635a7529"
+    },
+    {
+      "original": "figures/compressao/c07_descritivo/paired_quantiles_widths.pdf",
+      "reproduced": "tmp/c13_remaining_figures/descriptive/paired_quantiles_widths.pdf",
+      "passed": true,
+      "original_sha256": "0abda8e335bf2fb1eb16902429ffc3b0b49a7c7ab1c9a20b5efc4da97781ce63",
+      "reproduced_sha256": "aac6793a7cd56d8a14c8d13930fdc25189382f69ab323ea443ebf3c10abcb5d3"
+    },
+    {
+      "original": "figures/compressao/c07_descritivo/paired_mass_bins.pdf",
+      "reproduced": "results/C08/c07_descriptive/figures_v2/paired_mass_bins.pdf",
+      "passed": true,
+      "original_sha256": "b98a2f2856030fe27f097c2302a1f2cf81d24752095270d9356a028b0555fbfd",
+      "reproduced_sha256": "18da2d936e5837489bc4781754315441e8f956d66fa83a707d1cf9bf6f6cb856"
+    },
+    {
+      "original": "figures/compressao/pareado32/u95_representative_mean.pdf",
+      "reproduced": "tmp/c08_synthesis_visual/mean_v2/u95_representative_mean.pdf",
+      "passed": true,
+      "original_sha256": "e09e897453f8afc513a7b0d81690d1faf028805c9f4a5518a94f322c433e34f9",
+      "reproduced_sha256": "07c7192f2df940e7a40f8674e211174a189c8946466bfd250895a17e20186310"
+    },
+    {
+      "original": "figures/robustez/prioris_suporte.pdf",
+      "reproduced": "docs/pausa_v0.8.5/figuras_analiticas_v1/prioris_suporte.pdf",
+      "passed": true,
+      "original_sha256": "b6d750805aa0b759a813d7e7d370f78d7c6e19c9d1ccb1508a89b5741476d4c7",
+      "reproduced_sha256": "b6d750805aa0b759a813d7e7d370f78d7c6e19c9d1ccb1508a89b5741476d4c7"
+    },
+    {
+      "original": "figures/robustez/fisher_direcao.pdf",
+      "reproduced": "docs/pausa_v0.8.5/figuras_analiticas_v1/fisher_direcao.pdf",
+      "passed": true,
+      "original_sha256": "caa49de6a1741a47d26f8cf4fc6ccc6e0a171a7d172845154b69b46fe0f7ab03",
+      "reproduced_sha256": "caa49de6a1741a47d26f8cf4fc6ccc6e0a171a7d172845154b69b46fe0f7ab03"
+    },
+    {
+      "original": "figures/aplicacao/geometria_academica.pdf",
+      "reproduced": "figures/aplicacao/geometria_academica.pdf",
+      "passed": true,
+      "original_sha256": "59ecc9b9a2aeca75b3560d6b64037fd05724ca880c7a72bb3cf7ea86895e55c7",
+      "reproduced_sha256": "c4187285450bebb9673a1676578f717842e92183373693bab1e46a57d0455909"
+    }
+  ],
+  "passed": true
+}

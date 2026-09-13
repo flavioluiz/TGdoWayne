@@ -1,0 +1,12 @@
+A0_CN correct_mixture 500
+A0_CN nominal_scale_only 1000
+B_CN_full_variable correct_mixture 1500
+B_CN_full_variable nominal_scale_only 2000
+B_G_full_variable correct_mixture 2500
+B_G_full_variable nominal_scale_only 3000
+{"status": "COMPLETED_FROM_CACHED_COMPONENTS", "posteriors": 3000, "CPU": 8.607451000000001, "peak_RSS_bytes": 674250752, "new_likelihood_values": 0, "new_ORFs": 0, "cumulative_C09": 67017097, "mesh_passed": 3000, "heldout_passed": 2166, "scipy_passed": 3000, "all_gates_passed": 2166, "groups": [{"model": "A0_CN", "mode": "correct_mixture", "mesh_passed": 500, "heldout_passed": 121}, {"model": "A0_CN", "mode": "nominal_scale_only", "mesh_passed": 500, "heldout_passed": 45}, {"model": "B_CN_full_variable", "mode": "correct_mixture", "mesh_passed": 500, "heldout_passed": 500}, {"model": "B_CN_full_variable", "mode": "nominal_scale_only", "mesh_passed": 500, "heldout_passed": 500}, {"model": "B_G_full_variable", "mode": "correct_mixture", "mesh_passed": 500, "heldout_passed": 500}, {"model": "B_G_full_variable", "mode": "nominal_scale_only", "mesh_passed": 500, "heldout_passed": 500}], "calibration_complete": false, "C09_complete": false}
+Traceback (most recent call last):
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 69, in <module>
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 67, in main
+  File "/Volumes/MacSSD/Development/github/TGdoWayne/scripts/executar_isolado_c13.py", line 40, in audit
+PermissionError: Original scientific tree denied: /Volumes/MacSSD/Development/github/TGdoWayne/results/C13/distance_posterior_replay/posterior_io.json

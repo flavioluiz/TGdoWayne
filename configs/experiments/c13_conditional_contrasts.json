@@ -1,0 +1,11 @@
+{
+  "population": "P16K8",
+  "ids": {"start": 0, "stop_exclusive": 50},
+  "selection": "First 50 prior IDs, chosen before computing paired contrasts; no exclusion by outcome or precision.",
+  "models": ["B_G", "C_beta_G", "C_full_G", "B_CN", "C_beta_CN", "C_full_CN"],
+  "contrasts": [["C_beta_G", "B_G"], ["C_full_G", "C_beta_G"], ["C_beta_CN", "B_CN"], ["C_full_CN", "C_beta_CN"]],
+  "probability": 0.95,
+  "cdf_sensitivity": 0.002,
+  "horizontal_tolerance": 0.01,
+  "scope": "Conditional mass posterior with fixed nuisance parameters; finite numerical sensitivity, not a uniform physical error certificate or a replacement for marginalized C08 results."
+}

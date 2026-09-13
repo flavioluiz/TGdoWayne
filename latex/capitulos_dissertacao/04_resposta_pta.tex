@@ -8,9 +8,9 @@ de temporização. É necessário acompanhar a trajetória do fóton,
 comparar as frequências medidas nos extremos e conservar as fases
 relativas. As referências de validação são Liang--Trodden, na revisão
 arXiv v3, e Cordes e colaboradores, na revisão v2
-\autocite{liang2021,cordes2025}. Os resultados numéricos apresentados
-referem-se à implementação e às configurações efetivamente executadas;
-não constituem ainda uma campanha de inferência.
+\autocite{liang2021,cordes2025}. Os resultados numéricos deste capítulo
+validam a resposta angular nas configurações estudadas e fundamentam
+as campanhas de inferência apresentadas nos capítulos seguintes.
 
 \section{Geometria e convenções de Fourier}
 
@@ -41,7 +41,7 @@ A onda viajante exige \(f\geq f_g\). O código rejeita frequências
 inferiores, em vez de substituir a raiz por seu módulo. No limiar,
 \(\beta=0\), as expressões serão avaliadas por limites regulares.
 Essa rejeição é o domínio de uma função de resposta de ondas
-viajantes. O simulador de C06 fixa um suporte no qual todos os canais
+viajantes. O simulador fixa um suporte no qual todos os canais
 permanecem viajantes. Uma extensão deverá definir como representar um setor ausente abaixo do limiar; rejeitar um argumento
 da função não equivale a excluir automaticamente uma hipótese física
 inteira.
@@ -119,8 +119,7 @@ com \(\operatorname{sinc}u=\sin u/u\), obtém-se
 \(g(y,0)=iy\). Assim, o ponto \(D=0\), possível em
 \(\beta=1\), \(\mu=-1\), é removível na resposta completa.
 Não é necessário recortar uma região angular ao redor desse ponto.
-A implementação considera que a função \texttt{numpy.sinc} utiliza
-\(\sin(\pi u)/(\pi u)\), ajustando seu argumento.
+Adota-se por continuidade \(\operatorname{sinc}(0)=1\).
 
 \subsection{Componentes temporais e observadores livres}
 
@@ -395,12 +394,12 @@ decimais; os casos \(\beta=0,1\) e \(\delta=1\) recebem
 limites próprios. Essa estabilidade algébrica não substitui o
 controle das integrais oscilatórias da resposta completa.
 
-\section{Benchmarks executados e orçamento de erro}
+\section{Comparações de referência e precisão numérica}
 
 A implementação integrada foi executada com NumPy 2.4.3 e SciPy 1.17.1.
 Seus 23 testes incluem oito verificações de domínio, transferência,
 limites, integrações e normalização; quatro testes físicos independentes;
-e onze controles de entradas, orçamento e convergência da interface. Uma campanha de 20 configurações selecionadas, com
+e onze controles de domínio e convergência. Uma campanha de 20 configurações selecionadas, com
 \(\zeta=\pi/8\), comparou a integral direta à série refinada.
 Os valores de \(fL/c\) foram \(0{,}125\), \(1{,}125\),
 \(10{,}125\), \(100{,}125\) e \(1000{,}125\), com
@@ -410,7 +409,7 @@ A maior diferença absoluta entre métodos foi
 \(2{,}94\times10^{-13}\). Esses pontos não certificam um domínio
 contínuo com a mesma tolerância.
 
-Uma auditoria acrescentou quatro testes físicos independentes. Foi
+Quatro comparações físicas independentes complementam a validação. Foi
 construído um céu comum para seis pulsares, com polarizações TT
 explícitas, direções gerais e um par quase coincidente. Nas fases
 entre 19 e 90 utilizadas nesses testes, a diferença máxima para a
@@ -473,7 +472,7 @@ da integral terrestre foram \(1{,}84\times10^{-7}\) e
 absoluta inicial de \(10^{-5}\). Erro relativo não é uma medida
 adequada exatamente em uma raiz. Fora delas, a tolerância relativa
 inicial do plano é \(10^{-3}\), a ser propagada posteriormente
-para o orçamento de erro da inferência.
+para o controle do erro na inferência.
 
 \subsection{Resolução necessária e limites da validação}
 
@@ -504,11 +503,9 @@ e a resolução das correlações entre posições próximas. A campanha
 não certifica distâncias arbitrariamente grandes, todas as geometrias
 ou a estabilidade de cada configuração sob qualquer priori.
 
-\subsection{Contrato de aceitação da implementação}
+\subsection{Critérios de convergência}
 
-A interface \texttt{pta.checked\_orf} exige resoluções grossa e fina,
-um orçamento de trabalho e memória e tolerâncias absoluta e relativa.
-Compara separadamente o refinamento dos nós harmônicos, o aumento de
+A precisão é avaliada com resoluções grossa e fina e tolerâncias absoluta e relativa. Compara separadamente o refinamento dos nós harmônicos, o aumento de
 \(\ell_{\max}\), o refinamento da quadratura direta e o acordo entre
 métodos. Para apenas Terra, utiliza a referência analítica. Todos os
 critérios devem satisfazer
@@ -517,22 +514,7 @@ critérios devem satisfazer
                    +\epsilon_{\mathrm{rel}}\lvert\Gamma_{ab}\rvert.
  \label{eq:pta-aceitacao}
 \end{equation}
-A ausência de convergência gera uma falha com diagnóstico. Não há
-crescimento automático das resoluções: uma nova tentativa exige um novo
-orçamento explícito. As estimativas de trabalho e memória são recursos
-aproximados de planejamento, não limites rigorosos de tempo ou memória
-residente. O acordo por refinamento também é um critério empírico,
-não uma prova de erro absoluto para todo o domínio contínuo.
-
-As entradas rejeitam valores não finitos, produtos escalares fora de
-\([-1,1]\), fases negativas e uma única fase ausente. As ordens de
-quadratura são inteiros positivos. O envelope de fase aceito é
-\(0\leq y\leq2\pi\,1000{,}125+1\), cobrindo as duas campanhas;
-as ordens têm teto de 20000. Pontos dentro desse envelope continuam
-sujeitos às verificações de convergência. As funções numéricas de baixo
-nível têm o prefixo \texttt{raw\_}, exigem resolução e não conferem
-aceitação por si mesmas. O teste da auto GR sub-resolvida é recusado
-pela interface, apesar de seu resultado bruto ser finito.
+Os critérios comparam refinamentos independentes nas fases $0\leq y\leq2\pi\,1000{,}125+1$. Configurações que não atingem a precisão requerida são identificadas antes da inferência. O refinamento é especialmente importante para autocorrelações próximas do limite de massa nula, onde um valor finito pode esconder resolução angular insuficiente.
 
 A campanha de aceitação integrada acrescentou refinamento separado em
 58 casos: os 20 pares principais, 16 casos de coerência, 20 autos e dois
@@ -552,12 +534,7 @@ a malha fina produziu aproximadamente \(-1{,}44\times10^{-6}\),
 enquanto a grossa produziu \(1{,}84\times10^{-7}\). Ambas passaram
 pela tolerância absoluta, assim como sua diferença. Não se pressupõe
 monotonicidade nem se seleciona apenas a malha com resultado mais
-próximo de zero. A execução completa levou 64,82 segundos nesta máquina,
-com cache de nós compartilhado; os hashes de fontes e configuração
-permaneceram inalterados. O registro de 58 casos é separado das campanhas
-iniciais e pode ser reconstituído pelo script do repositório.
-
-\begin{figure}[htbp]
+próximo de zero. \begin{figure}[htbp]
  \centering
  \includegraphics[width=\textwidth]{../figures/C05/orf_limites.pdf}
  \caption{Limites analíticos da resposta tensorial. À esquerda, a
@@ -571,14 +548,14 @@ iniciais e pode ser reconstituído pelo script do repositório.
 \end{figure}
 A Figura~\ref{fig:pta-limites} distingue a mudança do modelo da
 incerteza numérica. Seu código de geração e o arquivo vetorial integram
-o release; a precisão dos benchmarks é examinada nos registros de
+o material suplementar; a precisão dos benchmarks é examinada nos registros de
 validação separados.
 
 \section{Passagem para o simulador e alcance científico}
 
 Os resultados estabelecem uma implementação tensorial com
 normalização rastreável, dois métodos de integração e limites
-analíticos compatíveis. Os módulos integrados de C05 validam o domínio
+analíticos compatíveis. Os métodos de cálculo validam o domínio
 das entradas e exigem resoluções explícitas; a interface de aceitação
 retorna também o relatório de refinamento. Uma
 função que retorna um número finito não oferece, por esse fato,
@@ -586,7 +563,7 @@ garantia de convergência. Tampouco a concordância de duas integrações
 da resposta completa valida automaticamente sua substituição pela
 contribuição terrestre e uma diagonal assintótica.
 
-O simulador de C06 utiliza os mesmos espectros, fases e
+O simulador utiliza os mesmos espectros, fases e
 convenções de covariância. Se incorporar médias em distância ou
 frequência, elas deverão atuar no modelo e na estatística de maneira
 compatível. A positividade de \eqref{eq:pta-positividade} integra os
@@ -596,7 +573,7 @@ incoerentes precisa ser validada nas escalas
 \(\beta y\) e \(\lvert\mathbf b_{ab}\rvert\) utilizadas.
 
 Não foram inferidas massas, medidas coberturas ou detectadas
-polarizações adicionais nesta etapa. O campo gaussiano, isotrópico e
+polarizações adicionais nesta análise da resposta. O campo gaussiano, isotrópico e
 TT é uma hipótese de população; a geração astrofísica e a relação
 entre potência tensorial e setores adicionais permanecem separadas.
 As campanhas posteriores deverão quantificar se erros residuais de

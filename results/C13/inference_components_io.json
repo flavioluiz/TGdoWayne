@@ -1,0 +1,20 @@
+{
+  "worker": "scripts/validar_componentes_inferencia.py",
+  "worker_sha256": "35d90d6adb32250fc3ab04ff99898c0eea66a54e280cebc1e7e58a23e7959c08",
+  "arguments": [
+    "--check"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/scripts": "/private/tmp/tgwayne-c13-clean-20260913/scripts"
+  },
+  "wall_seconds": 10.882018417003565,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

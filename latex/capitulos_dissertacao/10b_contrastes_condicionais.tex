@@ -1,0 +1,71 @@
+\section{Precisão dos contrastes de frequência com ruído fixado}
+\label{sec:contrastes-condicionais}
+
+A comparação com marginalização dos parâmetros de ruído, apresentada
+no Capítulo~\ref{chap:compressao}, deixou intervalos numéricos amplos
+para as diferenças de limites superiores. Para examinar a aproximação
+de frequência em uma situação mais simples, consideram-se aqui as
+primeiras 50 realizações da priori da geometria de 16 pulsares e oito
+frequências. A escolha dos identificadores precedeu o cálculo dos
+contrastes. Os parâmetros de amplitude e ruído são fixados nos valores
+de geração, e somente $u$ é integrado. A pergunta passa a ser quanto
+a resposta de frequência altera o quantil de massa quando esses
+parâmetros são conhecidos.
+
+As duas representações positivas da densidade posterior, construídas
+com as quadraturas de ordens 32 e 64, fornecem CDFs $F_{32}$ e $F_{64}$.
+A margem de sensibilidade vertical $\varepsilon_F=0{,}002$, usada neste
+capítulo, é convertida em um intervalo horizontal para o quantil:
+\begin{equation}
+ I_{95}=\left[
+ \min_{j\in\{32,64\}}F_j^{-1}(0{,}95-\varepsilon_F),\;
+ \max_{j\in\{32,64\}}F_j^{-1}(0{,}95+\varepsilon_F)
+ \right].
+\end{equation}
+Essa inversão incorpora a inclinação local da CDF: uma mesma incerteza
+vertical pode corresponder a larguras distintas em massa. Para um
+contraste $Q^{(X)}_{95}-Q^{(Y)}_{95}$, o intervalo é
+$[I^{(X)}_- - I^{(Y)}_+,\ I^{(X)}_+ - I^{(Y)}_-]$.
+A integração independente de cada segmento polinomial por
+Gauss--Legendre confirmou as 900 inversões utilizadas, com resíduo
+máximo de $8{,}7\times10^{-15}$ na CDF. A incerteza relevante continua
+sendo a representação da posterior, e não a solução da equação inversa.
+
+\begin{table}[htbp]
+\centering
+\caption{Contrastes condicionais de $Q_{95}(u)$ nas 50 realizações.
+O intervalo da média incorpora a sensibilidade numérica de todos os
+pares; $r_{\max}$ é o maior afastamento de um extremo em relação ao
+contraste nominal individual.}
+\label{tab:contrastes-condicionais}
+\small
+\begin{tabular}{lrrr}
+\toprule
+Contraste & Média & Intervalo numérico da média & $r_{\max}$\\
+\midrule
+$C_{\beta,\mathrm G}-B_{\mathrm G}$ & $-0{,}000215$ & $[-0{,}004190;\ 0{,}003760]$ & $0{,}006940$\\
+$C_{\mathrm{full},\mathrm G}-C_{\beta,\mathrm G}$ & $0{,}00000007$ & $[-0{,}003982;\ 0{,}003983]$ & $0{,}007122$\\
+$C_{\beta,\mathrm{CN}}-B_{\mathrm{CN}}$ & $-0{,}000299$ & $[-0{,}004351;\ 0{,}003754]$ & $0{,}006927$\\
+$C_{\mathrm{full},\mathrm{CN}}-C_{\beta,\mathrm{CN}}$ & $-0{,}00000029$ & $[-0{,}004064;\ 0{,}004063]$ & $0{,}007105$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A sensibilidade numérica de cada contraste é inferior a $0{,}01$ em
+cada direção. Para $C_\beta-B$, 49 dos 50 intervalos individuais ficam
+inteiramente em $[-0{,}01;0{,}01]$, tanto no controle gaussiano quanto
+nas estatísticas quadráticas físicas. Para $C_{\mathrm{full}}-C_\beta$,
+essa condição vale nos 50 pares de cada família. Os intervalos das
+quatro médias também cabem nessa faixa. Portanto, a aproximação produz
+pequenos deslocamentos médios do limite superior nessa amostra
+condicional, embora um dos pares de cada contraste $C_\beta-B$ ainda
+ultrapasse a janela de equivalência.
+
+Os intervalos da tabela descrevem a sensibilidade às representações
+numéricas e à margem vertical especificada. A dispersão entre
+realizações constitui outra fonte de incerteza; não foi usada aqui
+para uma afirmação de equivalência populacional. Além disso, os
+contrastes CN permanecem condicionais à aproximação normal da
+verossimilhança. A conclusão se refere à inferência de massa com ruído
+fixado nessa geometria, enquanto o efeito conjunto da aproximação e
+da marginalização permanece a questão aberta do estudo anterior.

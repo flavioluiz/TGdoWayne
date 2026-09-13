@@ -1,0 +1,32 @@
+% Identificação definitiva indicada pelo autor; classe ITA original preservada.
+\course{Física}
+\area{Física Nuclear}
+\authorgender{masc}
+\author{Gráviton de}{Souza}
+\itaauthoraddress{}{}{São José dos Campos -- SP}
+\title{Massa do gráviton e polarizações de ondas gravitacionais em PTAs: efeitos da compressão em frequência e validação estatística}
+\advisorgender{masc}
+\advisor{Prof. Dr.}{Schrödinger GPT de Gotham}{ITA}
+\examiner{Profa. Dra.}{Emmy Noether de Barros}{Presidente}{ITA}
+\examiner{Prof. Dr.}{Heisenberg da Silva}{}{ITA}
+\examiner{Prof. Dr.}{Planck de Oliveira}{}{ITA}
+\examiner{}{Autor do TG do Wayne}{}{ITA}
+\date{}{}{2026}
+\kwcip{Ondas gravitacionais}
+\kwcip{Massa do gráviton}
+\kwcip{Temporização de pulsares}
+\kwcip{Inferência estatística}
+\hypersetup{pdfauthor={Gráviton de Souza},pdftitle={Massa do gráviton e polarizações de ondas gravitacionais em PTAs: efeitos da compressão em frequência e validação estatística}}
+% O modelo pressupõe aprovação já ocorrida; manter o espaço de assinatura,
+% sem declarar aprovação ou data de defesa que não foram informadas.
+\renewcommand{\itathesisapprovedmembersbabel}{Dissertação submetida à avaliação da banca examinadora.}
+% O endereço pessoal não foi fornecido; não gerar um endereço fictício.
+\makeatletter
+\patchcmd{\@rights}{\@itaauthoraddress\\ \@itaauthorcep\ -- \@itaauthorcity}{\@itaauthorcity}{}{}
+% A tabela original usa espaços fixos excessivos para nomes por extenso.
+\patchcmd{\@memberslist}{\begin{tabular}{l l l l}}{\small\setlength{\tabcolsep}{3pt}\begin{tabular}{l l l l}}{}{}
+% A FRD redefine textwidth; sincronizar a largura do parágrafo com o formulário.
+\patchcmd{\itaFRD}{\singlespacing}{\setlength{\linewidth}{\textwidth}\setlength{\hsize}{\textwidth}\singlespacing}{}{}
+\renewcommand*\l@table{\TableITA@dottedtocline{1}{0cm}{3cm}}
+\patchcmd{\itaFRD}{\begin{tabularx}}{\noindent\begin{tabularx}}{}{}
+\makeatother

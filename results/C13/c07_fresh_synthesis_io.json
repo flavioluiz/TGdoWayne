@@ -1,0 +1,39 @@
+{
+  "worker": "scripts/sintetizar_calibracao.py",
+  "worker_sha256": "2968c8005245386a0a4d666747ac7bcc80217437714ea166a69f160565660c9b",
+  "arguments": [
+    "--diagnostics",
+    "tmp/c13_c07_full_reproduction/diagnostics",
+    "--production",
+    "tmp/c13_c07_full_reproduction/production",
+    "--experiment",
+    "configs/calibration/prior_predictive_500_v1.json",
+    "--data",
+    "results/C07/prior_predictive/data.npz",
+    "--truth-logl",
+    "results/C07/prior_predictive/truth_log_likelihood.json",
+    "--config",
+    "configs/calibration/sbc_synthesis_v1.json",
+    "--numerical-protocol",
+    "configs/calibration/campaign_diagnostics_v1.json",
+    "--validation-evidence",
+    "results/C07/validation_evidence.json",
+    "--scientific-protocol",
+    "configs/calibration/diagnostics_v1.json",
+    "--output",
+    "tmp/c13_c07_fresh_synthesis"
+  ],
+  "original_root": "/Volumes/MacSSD/Development/github/TGdoWayne",
+  "clean_root": "/private/tmp/tgwayne-c13-clean-20260913",
+  "negative_control_passed": true,
+  "blocked_reads": [
+    "/Volumes/MacSSD/Development/github/TGdoWayne/project_status.json"
+  ],
+  "mapped_paths": {
+    "/Volumes/MacSSD/Development/github/TGdoWayne/.venv": "/private/tmp/tgwayne-c13-clean-20260913/.venv",
+    "/Volumes/MacSSD/Development/github/TGdoWayne/scripts": "/private/tmp/tgwayne-c13-clean-20260913/scripts"
+  },
+  "wall_seconds": 5.244104542005516,
+  "failure": null,
+  "scope": "Python file-I/O relocation audit; no original scientific input opened. Runtime dependencies reused."
+}

@@ -1,9 +1,7 @@
 \chapter[Helicidade zero]{Extensão escalar vinculada de Fierz--Pauli: inferência condicional}
 \label{cap:c10-parcial}
 
-\noindent\textbf{Estado: campanha condicional concluída; limitações numéricas explicitadas.}
-
-Este capítulo reúne a extensão teórica e os componentes numéricos já desenvolvidos para incluir a helicidade zero de Fierz--Pauli. Há uma derivação da resposta observável, verificações independentes da função de redução de sobreposição (ORF) e um resultado negativo de interpolação que restringe o uso desses cálculos. O primeiro piloto físico escalar foi executado em 16 dados fixos de engenharia. Suas verificações de integração identificaram falhas que motivaram refinamentos preservando os caches. A campanha populacional subsequente concluiu 6.344 análises, com falsos positivos, recuperação, calibração e degenerescências locais avaliados no domínio condicional declarado. Os casos numericamente indeterminados permanecem nos resultados.
+Este capítulo estende o experimento à helicidade zero de Fierz--Pauli, mantendo o vínculo físico entre as deformações escalar transversal e longitudinal. A resposta observável é derivada e verificada por métodos independentes. A inferência populacional compreende 6.344 análises, com avaliação de calibração, falsos positivos, recuperação e degenerescências locais. Os resultados são condicionais aos parâmetros auxiliares especificados, e os casos numericamente indeterminados permanecem na análise.
 
 \section{Uma amplitude escalar e seus vínculos}
 
@@ -57,7 +55,7 @@ Os termos métricos individualmente grandes cancelam nessa combinação. O cálc
 \begin{equation}
  R_{0i0j}=\frac{\omega^2h_0}{2\sqrt3}\operatorname{diag}(1,1,-2\chi).
 \end{equation}
-Assim, se $p_b=R_{0x0x}+R_{0y0y}$ e $p_l=R_{0z0z}$, vale $p_l=-\chi p_b$. Na base de norma dois $e^b=P$ e $e^l=\sqrt2\,\widehat\Omega\widehat\Omega$, a razão entre coeficientes é, diferentemente, $-\sqrt2\chi$.
+Assim, se $p_b=R_{0x0x}+R_{0y0y}$ e $p_l=R_{0z0z}$, vale $p_l=-\chi p_b$. Na base de norma dois $e^b=P$ e $e^l=\sqrt2\,\widehat\Omega\widehat\Omega$, a razão entre coeficientes é, diferentemente, $-\sqrt2\chi$. O Apêndice~\ref{ap:convencoes-medidas} explicita a conversão entre bases.
 
 Definindo $A_\beta(\mu)=1+(2\beta^2-3)\mu^2$, o núcleo geométrico pode ser escrito como
 \begin{equation}
@@ -111,9 +109,9 @@ A população é parametrizada por $\varepsilon=S_0/S_T$, sendo $S_T$ a potênci
 \end{equation}
 Não se renormaliza a diagonal da ORF para cada massa. Equipartição por grau de liberdade corresponderia a $S_0=S_T$, mas não foi deduzida uma hipótese de emissão, screening ou equipartição física. O modo escalar de \href{https://arxiv.org/pdf/2306.13593v4}{Bernardo--Ng} pertence a outra combinação escalar--tensorial; o sinal e a proporção longitudinal diferem dos de Fierz--Pauli, impedindo transferir diretamente seus cancelamentos multipolares.
 
-Uma auditoria algébrica também identificou diferença entre o produto compacto acima e um termo da expansão impressa da Eq.~(45) de Liang--Trodden: o fator angular requerido é $\sin(2\xi)$ onde a expansão consultada apresenta $\sin\xi$. Em $\beta=0{,}9$ e $\xi=\pi/2$, a leitura literal produz $0{,}03162079$, enquanto a construção por observadores, a expansão harmônica e a referência terrestre independente dão $0{,}02036600$. Registra-se a discrepância da expressão examinada, sem alegar errata formal ou impacto inferencial já medido.
+Uma comparação algébrica também identificou diferença entre o produto compacto acima e um termo da expansão impressa da Eq.~(45) de Liang--Trodden: o fator angular requerido é $\sin(2\xi)$ onde a expansão consultada apresenta $\sin\xi$. Em $\beta=0{,}9$ e $\xi=\pi/2$, a leitura literal produz $0{,}03162079$, enquanto a construção por observadores, a expansão harmônica e a referência terrestre independente dão $0{,}02036600$. Registra-se a discrepância da expressão examinada, sem alegar errata formal ou impacto inferencial já medido.
 
-\section{Modelo estatístico e momentos implementados}
+\section{Modelo estatístico e momentos das observações}
 
 Para massa fixa, a covariância de cada coeficiente complexo próprio é afim na potência escalar,
 \begin{equation}
@@ -130,43 +128,17 @@ $C_0$ inclui ruído e setor tensorial, enquanto $C_1$ contém a contribuição e
 \end{align}
 O termo misto completo impede tratar a covariância como interpolação linear. Com frequências independentes, a compressão fixa usa $\mu_B=\sum_k w_k\mu_k$ e $\Sigma_B=\sum_k w_k^2\Sigma_k$. A0 conserva a densidade CN normalizada; A e B aplicam as normais aos estimadores físicos ou ao controle G. Zerando $\varepsilon$, recupera-se o modelo tensorial na mesma massa, e não necessariamente a teoria sem massa.
 
-O candidato inferencial é condicional em $(u,\varepsilon)$, com quatro nuisances conhecidas, $u\in[0{,}001,1]$ e medida própria $du/0{,}999\,d\varepsilon$. A hipótese nula $\varepsilon=0$ usa a mesma priori em $u$. A API seletiva calcula cinco análises dispersivas e somente B\_CN/B\_G em cada aproximação C, totalizando nove análises; não calcula densidades descartadas para ocultar seu custo. Em C$_\beta$, congelam-se conjuntamente $\beta$ e $\chi$ do vínculo escalar, preservando as fases por canal. Em C$_{\rm full}$, congela-se a ORF inteira, mantendo os espectros e ruídos nas frequências físicas.
+O candidato inferencial é condicional em $(u,\varepsilon)$, com quatro nuisances conhecidas, $u\in[0{,}001,1]$ e medida própria $du/0{,}999\,d\varepsilon$. A hipótese nula $\varepsilon=0$ usa a mesma priori em $u$. Comparam-se cinco modelos dispersivos e quatro aproximações de frequência: C$_\beta$ e C$_{\rm full}$ aplicadas a B\_CN e B\_G, totalizando nove análises. Em C$_\beta$, congelam-se conjuntamente $\beta$ e $\chi$ do vínculo escalar, preservando as fases por canal. Em C$_{\rm full}$, congela-se a ORF inteira, mantendo os espectros e ruídos nas frequências físicas.
 
-\section{Resultados numéricos concluídos e falha preservada}
+\section{Validação da resposta e da integração posterior}
 
-As verificações iniciais incluíram nove testes simbólicos/numéricos e nove casos adicionais de ORF finita, chegando ao domínio de fase já examinado em C05. Eles verificaram observadores, normalização, vínculo, termos cruzados, rotação, positividade e limites. São controles discretos, sem certificação uniforme do domínio contínuo.
+A convergência da integração angular nos nós não garante precisão entre eles. A interpolação linear da resposta de 129 para 257 nós apresentou erro absoluto máximo de $0{,}23918$; de 257 para 513, o erro foi $0{,}10553$. Esses resultados reprovaram os critérios de interpolação. A inferência utilizou valores explicitamente calculados e refinados da resposta, com validação própria das integrais posteriores.
 
-Na geometria integrada C06 --- dez pulsares, três canais, $T=15$ anos e distâncias sintéticas de 100--300 anos-luz --- as fases chegam a $120\pi$ radianos. Foram concluídos controles de oito massas e uma tabela nodal aninhada de 129/257/513 massas, para os setores TT e escalar e para as cinco configurações únicas de velocidade/fase necessárias às respostas dispersiva e C$_\beta$. Os controles de céu independente passaram: a maior diferença harmônico--direto foi aproximadamente $3{,}28\times10^{-12}$. Na tabela, o refinamento da quadratura angular teve erro máximo $5{,}24\times10^{-13}$; o mínimo autovalor, aproximadamente $-2{,}40\times10^{-16}$, foi compatível com roundoff, sem recorte de autovalores.
+O piloto compreendeu 16 observações fixas e nove análises por observação. Quatro observações eram puramente tensoriais e doze continham uma componente escalar; essa seleção não constitui amostra de calibração sob a priori. A geração foi reconstruída a partir das sementes e das contrações matriciais, com discrepância relativa escalada máxima de $2{,}22\times10^{-16}$. A comparação das densidades normalizadas com uma implementação independente apresentou diferença máxima em log-verossimilhança de $3{,}45\times10^{-13}$. O limite $\varepsilon=0$ recuperou a referência tensorial, com diferença de $6{,}39\times10^{-14}$.
 
-Esses resultados não aprovaram a interpolação em massa. A interpolação linear de 129 para 257 nós apresentou erro absoluto máximo $0{,}23918$; de 257 para 513, $0{,}10553$. Ambos reprovaram seus critérios. O estado da tabela permanece \texttt{COMPONENT\_ORF\_TABLE\_FAIL}. A convergência angular de valores nodais e a precisão entre nós são questões diferentes; a primeira não autoriza promover a segunda. O conjunto consumiu aproximadamente 133,91 s de CPU combinada e não calculou posteriores escalares.
+A validação distingue a integração de tabelas positivas da identificação dos conjuntos de nível da verossimilhança. Eventos próximos a pontos estacionários exigiram limites locais e refinamentos adicionais. Não se inferiu convergência do evento apenas da concordância das evidências ou dos quantis.
 
-A alternativa preparada consulta apenas nós explicitamente disponíveis, com recibo de reutilização que aceita seus controles angulares e preserva a falha de interpolação. A integração da likelihood, da evidência e dos contornos continua a exigir validação própria. Para o evento de logL em $\varepsilon$, o candidato utiliza envelopes matriciais de células inteiras e classificação dentro/fora/ambígua; não supõe a existência de apenas duas raízes.
-
-\section{Primeiro piloto físico e auditorias}
-
-O executor seletivo produziu 16 dados de engenharia e nove análises por dado, totalizando 144 análises. Utilizou malhas aninhadas em $(u,\varepsilon)$, quatro dados com referências mais finas, produtos de quadratura independentes e referências de evento. Os dados fixos incluem quatro casos com $\varepsilon=0$ e doze mistos; não constituem uma amostra populacional SBC. As quatro realizações tensoriais, em particular, não sustentam uma estimativa precisa de taxa de falsos positivos.
-
-A execução terminou com 11.930.676 avaliações de logL cobradas e concluídas e 365,11 s de CPU agregada. Nenhuma reserva ficou sem conclusão. Foram calculados os nós adicionais necessários; a resposta não foi obtida pela interpolação linear previamente reprovada. O teto prospectivo de 15 milhões de avaliações permanece distinto do custo realizado.
-
-A reconstrução independente dos dados a partir das sementes e das contrações matriciais teve diferença relativa escalada máxima de $2{,}22\times10^{-16}$. O confronto de densidades normalizadas com SciPy apresentou diferença máxima de logL de $3{,}45\times10^{-13}$; o limite $\varepsilon=0$ recuperou a referência C06 com diferença de $6{,}39\times10^{-14}$. A integração independente das 216 tabelas positivas reproduziu as evidências e suas diferenças com erro máximo de $7{,}11\times10^{-15}$. Esse último controle refere-se à representação bilinear tabulada da likelihood, não a um certificado uniforme da função física contínua.
-
-As comparações fina/grossa reprovaram logZ de H1 para A\_CN nos dados 9 e 15, e a CDF de logL para C\_full\_G no dado 14. As comparações alta/fina e produto independente/alta nos quatro dados selecionados passaram nos critérios registrados. Isso não apaga as três falhas primárias.
-
-As 36 referências de evento usam, cada uma, duas regras em massa, com 192 e 384 nós e pesos positivos. Suas 20.736 fatias em $\varepsilon$ preservaram 2.227.236 valores em cache. A auditoria recompôs as somas ponderadas de numerador, massa ambígua e denominador, reproduzindo os agregados sem diferença observada e sem denominadores ausentes. Apenas três referências de evento passaram operacionalmente; 33 permaneceram indeterminadas. Em todas as 33, falharam a largura do envelope e a comparação com o evento bilinear. A diferença de logZ entre regras em massa permaneceu abaixo de 0,001: normalização estável não implica fronteira de evento resolvida.
-
-\section{Refinamento da classificação e trabalho pendente}
-
-O diagnóstico das fatias apontou 9.571 casos que atingiram o limite original de 16 subdivisões, 1.729 falhas por orçamento local e 363 incompatibilidades entre a partição e a referência de quadratura. Um teste posterior selecionou prospectivamente, por referência, a fatia de 384 nós que mais contribuía para a incerteza ponderada. Aumentando o limite para 256 subdivisões, 28 das 36 fatias selecionadas passaram, contra uma antes do refinamento. Foram cobradas 9.604 avaliações adicionais. Uma segunda execução restrita às oito restantes, com até 2.048 subdivisões, resolveu seis, consumindo 12.284 avaliações. Os controles de reutilização dos caches coincidiram exatamente nos pontos recalculados. Os dois testes consumiram, respectivamente, 4,74 e 8,31 s de CPU.
-
-Esses resultados são diagnósticos selecionados, não aprovação de eventos bidimensionais completos. Uma continuação limitada visitou 3.500 das 9.325 fatias ainda indeterminadas, ordenadas pela contribuição à incerteza da integral. Passaram 2.857 fatias e 643 permaneceram indeterminadas. Foram cobradas 1.655.144 avaliações adicionais e consumidos 845,84 s de CPU; o acumulado chegou a 13.607.708 avaliações. A auditoria confirmou a preservação exata dos caches e reproduziu as 72 somas em massa sem diferença observada.
-
-A execução parou por espaço. A verificação a cada cem fatias permitiu que a saída atingisse 272.666.455 bytes, ultrapassando o teto local de 256 MiB em 4.230.999 bytes. Essa falha do controle de recursos foi registrada separadamente da auditoria numérica; o controle deve ser corrigido antes de outra execução. Os limites de avaliações e CPU do lote foram respeitados.
-
-As incompatibilidades originais entre a partição e a quadratura tiveram diferenças relativas de até $4{,}99\times10^{-15}$. Um modelo operacional explícito, com margem relativa de massa de $10^{-10}$ e termo para a soma positiva, tornou essas comparações compatíveis e rejeitou um controle negativo com discrepância material. Isso não fornece certificação por arredondamento dirigido nem resolve a fronteira ambígua. A recomposição com esse modelo recuperou 206 numeradores anteriormente indisponíveis, mas manteve apenas três das 36 referências completas aprovadas e 33 indeterminadas. Assim, o avanço nas fatias não foi suficiente para validar os eventos bidimensionais. Nesse ponto restavam 5.825 fatias não visitadas, além dos casos ambíguos já refinados; a continuação seguinte trata essas pendências.
-
-\section{Limites locais de Taylor e fechamento numérico do piloto}
-
-O refinamento adicional das análises A\_CN no dado 9 e C\_full\_G no dado 14 passou nas comparações alta/fina, independente/alta e nos controles de evidência H0/H1. Foram cobradas 273.038 avaliações; 66.306 valores da malha fina foram reutilizados exatamente. A integração independente das novas tabelas apresentou diferença máxima de $3{,}56\times10^{-15}$. O dado 15 de A\_CN já possuía os controles superiores aprovados. Esses resultados permitem adotar as representações mais finas sem apagar as reprovações históricas das malhas anteriores.
+\subsection{Limites locais para conjuntos de nível}
 
 Para reduzir a classificação ambígua perto de pontos estacionários, foi acrescentado um limite local. Seja $x$ o centro de uma célula de meia largura $h$ e $M_2$ um majorante de $|\ell''|$ nessa célula. Então
 \begin{equation}
@@ -185,39 +157,20 @@ Somam-se os majorantes dos canais. Um limite correspondente para a normal real i
 
 O novo intervalo é intersectado com o envelope anterior. Quando não há um limite positivo de Neumann, conserva-se o método anterior; uma incompatibilidade gera uma falha registrada. Não se presume monotonicidade ou quantidade de raízes. As desigualdades se referem aos polinômios fornecidos em aritmética exata. A avaliação float64 e a margem explícita continuam a representar controles operacionais, sem certificação por arredondamento dirigido.
 
-Quatro testes sintéticos verificaram a densidade CN complexa contra uma normal real de dimensão dobrada, a normal correlacionada multicanal, a escala quadrática perto de um ponto estacionário e a indisponibilidade do limite de Neumann. O teste físico selecionado resolveu as 36 fatias difíceis com 1.836 avaliações adicionais. Sua auditoria verificou 28.730 associações entre valores em cache e células finais.
 
-Na continuação, passaram todas as 4.884 fatias visitadas, com 495.606 avaliações adicionais; as 1.579 restantes foram concluídas em uma execução separada, com 159.795 avaliações. Os limites de recursos dessas execuções foram respeitados. As auditorias preservaram os valores anteriores e recompuseram as 72 regras em massa sem diferença observada.
+Os controles sintéticos verificaram densidades complexas e reais equivalentes, normais correlacionadas multicanais, pontos estacionários e o caso em que o limite de Neumann não está disponível. Ao final dos refinamentos, as 36 referências completas de evento passaram nos critérios operacionais de largura da CDF, mudança de normalização e comparação com malhas e quadraturas independentes. Esses controles não constituem uma certificação uniforme da função física contínua.
 
-Ao final, as \textbf{36 referências completas de evento passaram} nos controles operacionais de largura da CDF, mudança de logZ, comparação com malhas e quadratura independente, underflow amostrado e comparação com o evento bilinear. O acumulado do piloto e seus refinamentos é 14.537.983 avaliações, abaixo do teto de 15 milhões. A soma da CPU das execuções físicas é aproximadamente 1.554,17 s; as auditorias de leitura são contabilizadas separadamente.
+\subsection{Quadratura aninhada}
 
-\section{Integração aninhada e reutilização dos momentos}
+O eixo de massa utiliza nós de Chebyshev--Lobatto e pesos positivos de Clenshaw--Curtis normalizados para a priori uniforme. O eixo em $\varepsilon$ é uniforme, com regras de Simpson composto de 32 e 64 painéis. Nas fronteiras dos conjuntos de nível, os painéis parciais recebem avaliações próprias. A exatidão polinomial e a positividade fundamentam a construção, mas não certificam isoladamente o erro da verossimilhança \autocite{trefethen2021exactness}.
 
-Para tornar a campanha populacional viável, foi implementada uma quadratura que reutiliza os nós físicos já avaliados. O eixo em massa é Chebyshev--Lobatto, com pesos positivos de Clenshaw--Curtis normalizados para a priori uniforme. O eixo em $\varepsilon$ é uniforme e permite regras positivas de Simpson composto com 32 e 64 painéis. Nas fronteiras das uniões classificadas, os painéis parciais recebem avaliações adicionais contabilizadas. A discussão de exatidão e positividade de quadraturas em \textcite{trefethen2021exactness} fundamenta essa escolha metodológica; a exatidão polinomial, isoladamente, não certifica o erro desta likelihood.
+As comparações completas entre regras de 129, 257 e 513 nós de massa e referências Gauss--Legendre e bilineares passaram nos critérios operacionais. Uma reconstrução independente da integração em $\varepsilon$ apresentou diferença escalada máxima inferior a $4{,}43\times10^{-16}$. Os momentos dos estimadores foram reutilizados quando covariância e geometria eram idênticas; nenhuma densidade de uma observação foi atribuída a outra.
 
-Os testes verificaram os pesos e momentos polinomiais, a coincidência dos nós reais com o eixo congelado, a integração de uniões parciais e um evento analítico independente. Uma tentativa inicial falhou ao serializar um booleano NumPy, após 51 avaliações; o histórico foi preservado. A correção conserva o cache antes do relatório. O confronto seguinte em 36 nós compartilhados passou, com 3.924 avaliações adicionais. A validação integral visitou 18.468 fatias, todas aprovadas nos controles operacionais, consumindo outras 80.564 avaliações e 131,66 s de CPU.
+\section{Desenho populacional}
 
-A auditoria verificou 2.462.828 associações entre valores e células finais. Recompôs Simpson por uma fórmula independente, com diferença escalada máxima inferior a $4{,}43\times10^{-16}$, e as somas ponderadas em massa sem diferença observada. As 36 comparações completas passaram ao confrontar as regras com 129, 257 e 513 nós com as referências Gauss--Legendre e bilineares anteriores. As diferenças entre regras continuam a ser estimativas operacionais de erro, sem arredondamento dirigido. O total acumulado passou a 14.622.522 avaliações.
+Foram geradas 1.192 observações: 500 tensoriais, 500 da priori conjunta e seis células fixas de 32 realizações. Cinco métodos foram aplicados a todos os dados e quatro aproximações de resposta a 96 dados predefinidos, totalizando 6.344 análises. Somente as 500 observações da priori conjunta entram na calibração SBC; o subconjunto das aproximações de resposta permanece descritivo. As famílias estatísticas foram definidas antes da geração.
 
-Os momentos dos estimadores dependem das covariâncias e da geometria, mas não da observação particular. Um cache limitado, identificado pelos bytes exatos das matrizes, conserva esses momentos sem reutilizar densidades de dados diferentes. Em 2.580 casos, os 5.160 cálculos comparados reproduziram exatamente os relatórios originais. O trecho medido passou de 13,531 s para 12,169 s de CPU, redução de aproximadamente 10\%. O cache ocupou 4.475.520 bytes numéricos em 259 entradas, além dos metadados; não foram calculadas novas likelihoods nesse teste. Incluindo 27,42 s do benchmark completo e uma reserva conservadora de 30 s para a tentativa cuja CPU não foi registrada, o consumo de execução do piloto é limitado contabilmente por 1.744,05 s.
-
-\section{Preparação e execução da campanha populacional}
-
-O fechamento numérico do piloto não constitui calibração populacional. O desenho prospectivo conserva 500 injeções tensoriais, 500 dados da priori conjunta em $(u,\varepsilon)$ e 192 realizações de recuperação, distribuídas em seis células com 32 repetições. Cinco métodos foram aplicados a todos os dados e quatro aproximações C a 96 dados predefinidos, totalizando 6.344 análises. A malha fina representa 210.322.632 avaliações antes dos controles adicionais; o teto de produção foi fixado em 300 milhões. A preparação examinou o custo das referências de evento com reutilização dos valores nodais.
-
-A enumeração dos IDs corrigiu uma contagem anterior do texto: duas réplicas próximas do limiar, já presentes no protocolo original, haviam sido omitidas apenas do resumo aritmético. São 96 dados C e 384 análises C; nenhum dado previsto foi removido. As famílias estatísticas foram enumeradas antes da geração: 39 hipóteses nos controles corretos, 26 nas aproximações e seis comparações pareadas de cobertura central. Apenas os 500 dados da priori conjunta entram no SBC. O subconjunto C permanece descritivo.
-
-A extrapolação do trecho analítico com cache para 2.500 eventos e 257 massas é de aproximadamente 3.030 s, mas não inclui geração, ORFs nas verdades, novas densidades, resumos ou escrita. Não é um limite superior de custo.
-
-Um teste posterior do fluxo completo utilizou os dados piloto 0 e 3, sem gerar novas observações. Concluiu dez análises D e 2.570 eventos, cobrando 331.530 avaliações de malha e 10.766 adicionais. As dez comparações primárias e vinte agregados CC passaram; a auditoria reproduziu os extremos das CDFs do banco anterior sem diferença observada. Foram consumidos 15,98 s de CPU. O acumulado mais recente é 14.964.818 avaliações e 1.760,03 s de CPU superior contabilizada.
-
-A projeção linear dos trechos do fluxo completo alcançou 4.136,52 s, acima do alvo candidato inicial de 3.600 s. Essa extrapolação a partir de dois dados D não caracteriza exatamente os lotes maiores ou as variantes C e não é um limite superior. Os valores de malha e caches foram conservados para evitar recalculá-los; a decisão prospectiva sobre o orçamento da produção é registrada a seguir.
-
-O módulo local de Fisher passou em quatro testes analíticos: equivalência entre a CN própria e sua representação real de dimensão dobrada; informação conhecida de média e variância; projeção das nuisances com degenerescência exata; e derivadas unilaterais dentro do suporte. A projeção é feita no espaço dos escores, sem inverter direções singulares. As matrizes físicas dos oito pontos previstos são apresentadas ao final deste capítulo.
-
-Após a comparação dos avaliadores preparados, a maior diferença observada nas densidades foi $2{,}14\times10^{-14}$, sem mudança nos extremos das CDFs. O orçamento prospectivo de CPU da produção foi revisto para 7.200 s antes das injeções populacionais, preservando o teto de 300 milhões de avaliações, as 1.192 observações, os critérios científicos e todos os limites históricos do piloto. A estimativa inicial de uma hora não era um critério de aceitação estatística.
-
-Foram geradas as 1.192 observações previstas. A resposta foi calculada em 1.000 novas massas, nos três níveis harmônicos, sem interpolação. A reconstrução independente das sementes e das contrações reproduziu as verdades exatamente e as matrizes de dados com diferença relativa escalada máxima de $4{,}09\times10^{-16}$. A campanha das 6.344 análises foi concluída; os resultados populacionais e seus controles são apresentados nas seções seguintes. Um quantil positivo de $\varepsilon$ não demonstra detecção.
+A resposta foi calculada em mil novas massas, com três resoluções harmônicas. A reconstrução independente reproduziu as verdades exatamente e as matrizes de dados com diferença relativa escalada máxima de $4{,}09\times10^{-16}$. Um quantil posterior positivo da potência escalar não é, por si só, evidência de detecção.
 
 \section{Critérios prospectivos da síntese populacional}
 
@@ -265,23 +218,16 @@ da representação numérica, sem certificado uniforme da função física.
 
 \section{Resultados da campanha populacional}
 
-As 6.344 análises previstas foram concluídas, sem descarte de observações.
-Foram cobradas e concluídas 210.322.632 avaliações nas malhas,
-19.032 nas verdades e 3.885.886 adicionais nos eventos, totalizando
-214.227.550 avaliações. A execução consumiu 5.309,02 s de CPU e
-5.547,26 s de tempo decorrido, abaixo dos tetos prospectivos. A saída
-contabilizada ocupou 4.518.073.054 bytes. Essa contagem não inclui novamente
-as ORFs e observações geradas na etapa anterior.
-
-A auditoria independente reconstruiu as evidências, CDFs marginais,
-quantis e agregados dos 2.500 eventos diretos. Foram conferidas
-86.768.386 associações entre valores em cache e células finais. As maiores
-diferenças foram $7{,}11\times10^{-15}$ em logZ,
+As 6.344 análises foram concluídas, preservando todas as observações.
+Uma integração independente confirmou as evidências, CDFs marginais,
+quantis e probabilidades dos 2.500 eventos diretos. As maiores diferenças
+foram $7{,}11\times10^{-15}$ em $\log Z$,
 $1{,}67\times10^{-15}$ nas CDFs dos parâmetros,
 $2{,}74\times10^{-14}$ no resíduo da CDF avaliada nos quantis e
-$1{,}07\times10^{-14}$ nas log-massas dos eventos.
-Essa concordância valida a reconstrução das representações armazenadas;
-não elimina os intervalos operacionais de erro da integração física.
+$1{,}07\times10^{-14}$ nas log-probabilidades dos eventos.
+Esses valores medem a concordância entre as avaliações da representação
+interpolada; a incerteza de integração da resposta física é propagada
+separadamente nos resultados a seguir.
 
 \subsection{Calibração e sensibilidade numérica}
 
@@ -319,13 +265,16 @@ são aprovações de calibração.}
 
 \begin{figure}[p]
 \centering
-\includegraphics[width=\textwidth,height=.78\textheight,keepaspectratio]{../figures/escalar/sbc_ecdf.pdf}
-\caption{Desvios das CDFs empíricas dos PITs em relação à uniforme.
-Linhas: representação nominal; faixas: envelope das CDFs permitido pelos
-intervalos numéricos, incluindo os casos $[0,1]$. Cada painel usa todos
-os 500 dados da priori conjunta. A interpretação dos testes é dada pela
-Tabela~\ref{tab:c10-sbc-familias}, com as correções de multiplicidade.}
-\label{fig:c10-sbc}
+\includegraphics[width=\textwidth,height=.78\textheight,keepaspectratio]{../figures/academicas/scalar_reference.pdf}
+\caption{Calibração escalar dos modelos de referência: desvio da CDF empírica dos PITs em relação à uniforme, em 500 realizações por modelo. Linhas azuis: estimativas nominais; faixas: envelopes numéricos, incluindo intervalos $[0,1]$. O zero corresponde à uniformidade; os testes constam da Tabela~\ref{tab:c10-sbc-familias}.}
+ \label{fig:c10-sbc}
+\end{figure}
+
+\begin{figure}[p]
+\centering
+\includegraphics[width=\textwidth]{../figures/academicas/scalar_approximation.pdf}
+\caption{Calibração das aproximações normais na extensão escalar. Mesmos eixos, faixas e tamanho amostral da Figura~\ref{fig:c10-sbc}. Os desvios de uniformidade, particularmente em $A_{\mathrm{CN}}$, mostram a sensibilidade à escolha da verossimilhança.}
+\label{fig:c10-sbc-aproximacoes}
 \end{figure}
 
 A cobertura central nominal de 90\% para $u$ foi 444/500 em A0\_CN,
@@ -434,7 +383,7 @@ Para o experimento normal real, acrescenta-se o termo de média e aparece o fato
 \end{equation}
 Em B\_G, a soma de canais é substituída pela média e covariância do vetor comprimido com os pesos fixos. Não se atribui essa Fisher normal à distribuição física exata dos estimadores quadráticos.
 
-As diferenças finitas foram refinadas até o passo relativo $1{,}953125\times10^{-6}$, com estênceis unilaterais nas fronteiras. Perto de $u=0{,}995$ e de $u=1$, os passos iniciais não eram suficientes. A antissimetria de arredondamento foi medida e removida antes da aplicação da identidade hermitiana; a projeção das derivadas foi limitada pela escala do erro da diferença finita, sem modificar autovalores para reparar positividade. As tentativas rejeitadas pelos controles estão preservadas no histórico computacional.
+As diferenças finitas foram refinadas até o passo relativo $1{,}953125\times10^{-6}$, com estênceis unilaterais nas fronteiras. Perto de $u=0{,}995$ e de $u=1$, os passos iniciais não eram suficientes. A antissimetria de arredondamento foi medida e removida antes da aplicação da identidade hermitiana; a projeção das derivadas foi limitada pela escala do erro da diferença finita, sem modificar autovalores para reparar positividade.
 
 As 24 matrizes passaram nos critérios de mudança relativa inferior a $10^{-3}$, refinamento harmônico e estabilidade do posto entre os dois últimos passos. Uma reconstrução independente por traços e pela regra da cadeia apresentou diferença relativa máxima de $1{,}89\times10^{-5}$. A informação das quatro nuisances foi projetada pelo espaço dos escores, conservando direções singulares sem inversão artificial.
 
@@ -447,4 +396,4 @@ Nas seis células de recuperação, os três métodos tiveram posto numérico se
  \label{fig:fisher-escalar-compressao}
 \end{figure}
 
-A Figura~\ref{fig:fisher-escalar-compressao} quantifica a perda local de informação pela compressão dentro do experimento G. Os menores autovalores ficam entre 0,0042 e 0,0071; os maiores, entre 0,625 e 0,710. Assim, há combinações locais dos seis parâmetros que conservam menos de 1\% da informação, embora outras direções conservem uma fração maior. Isso não significa que um parâmetro isolado, como $u$, perca necessariamente a mesma fração. Os resultados dependem deste experimento e não substituem a recuperação populacional nem uma posterior com nuisances livres. C10 conclui a extensão condicional prevista, conservando as indeterminações numéricas e as limitações de recuperação descritas neste capítulo.
+A Figura~\ref{fig:fisher-escalar-compressao} quantifica a perda local de informação pela compressão dentro do experimento G. Os menores autovalores ficam entre 0,0042 e 0,0071; os maiores, entre 0,625 e 0,710. Assim, há combinações locais dos seis parâmetros que conservam menos de 1\% da informação, embora outras direções conservem uma fração maior. Isso não significa que um parâmetro isolado, como $u$, perca necessariamente a mesma fração. Os resultados dependem deste experimento e não substituem a recuperação populacional nem uma posterior com nuisances livres. A extensão condicional conserva as indeterminações numéricas e as limitações de recuperação descritas neste capítulo.
