@@ -8,4 +8,4 @@ python3 presentations/experimento/gerar_roteiro.py
 latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error \
   -outdir="$task_tmp" -jobname=experimento_codex presentations/experimento/experimento.tex
 cp "$task_tmp/experimento_codex.pdf" "$PROJECT_ROOT/output/pdf/experimento/experimento_codex.pdf"
-cp "$task_tmp/experimento_codex.pdf" "$PROJECT_ROOT/output/pdf/experimento/experimento_codex_6.pdf"
+cp "$task_tmp/experimento_codex.pdf" "$PROJECT_ROOT/output/pdf/experimento/experimento_codex_7.pdf"

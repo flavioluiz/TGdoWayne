@@ -4,12 +4,20 @@ Este repositório documenta um experimento de **automação de pesquisa científ
 
 O estudo de ondas gravitacionais foi o problema científico escolhido para o experimento. A questão central deste repositório é o processo de pesquisa com IA e suas implicações para mestrado, doutorado e trabalho dos pesquisadores.
 
+## Resultado atual: a primeira avaliação especializada questiona a entrega
+
+**Atualização de 13/09/2026: o experimento não demonstrou a produção autônoma de uma dissertação de mestrado adequada.** Na primeira leitura, um especialista no tema e autor do trabalho de partida questionou a clareza, a coerência científica do conjunto e a utilidade dos cálculos. Diante desse retorno, a avaliação atual do proponente é que o trabalho não atende ao objetivo acadêmico no estado em que foi entregue. Pode haver partes aproveitáveis; isso ainda precisa ser demonstrado.
+
+Essa leitura é inicial, sem auditoria completa de cada resultado ou parecer formal de banca. Entretanto, ela muda a interpretação do caso: **o encerramento do goal, o volume de código e os testes internos não equivalem à validação científica**. Os pareceres de outro LLM também não asseguraram que a entrega fizesse sentido para um especialista. Os custos abaixo são os custos desta tentativa, não o preço de uma dissertação cientificamente validada.
+
+A revisão bibliográfica foi dirigida por termos e antecedentes selecionados. Não há registro de um levantamento sistemático dos trabalhos que citaram o artigo de 2004 derivado do TG. O agente documentou a mudança de foco para análises estatísticas de sinais de pulsares, mas a pertinência dessa escolha não foi validada por um especialista antes da execução extensa. A [síntese da reavaliação](output/pdf/relatorio_experimento/reavaliacao_especialista.md) separa evidências, avaliações e hipóteses sem reproduzir conversas privadas.
+
 ## Materiais sobre o experimento
 
 | Material | Acesso | Conteúdo |
 |---|---|---|
-| **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, decisões, erros, revisões, métricas, modelos e questões para discussão |
-| **Apresentação do experimento, 20–30 min** | [PDF — revisão 6](output/pdf/experimento/experimento_codex_6.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
+| **Relatório do estudo de caso** | [PDF](output/pdf/relatorio_experimento/relatorio.pdf) · [LaTeX](output/pdf/relatorio_experimento/relatorio.tex) | Interações, avaliação especializada inicial, revisão das conclusões, métricas e próximos experimentos |
+| **Apresentação do experimento, 20–30 min** | [PDF — revisão 7](output/pdf/experimento/experimento_codex_7.pdf) · [Beamer / LaTeX](presentations/experimento/experimento.tex) · [Roteiro](presentations/experimento/roteiro.md) | 12 slides principais e três de apoio, com duração sugerida de 25 minutos |
 | Evidências da execução | [Métricas históricas](output/pdf/relatorio_experimento/evidencias.json) · [Complementos após o goal](output/pdf/relatorio_experimento/complementos_pos_goal.json) · [Revisão pelo agy](output/pdf/relatorio_experimento/revisao_agy.json) | Contagens, eventos do goal, revisão do artigo e reescrita pelo Gemini |
 
 ## Compare as versões do Codex e do Gemini
@@ -28,7 +36,7 @@ A versão final do Codex já incorporava pareceres do Gemini; na rodada seguinte
 
 ## Produtos científicos gerados no experimento
 
-Esses materiais permitem examinar o resultado da automação. Sua existência não significa defesa, aprovação institucional, submissão ou aceitação de artigo.
+Esses materiais permitem examinar o resultado da automação. São produtos sob crítica especializada inicial, preservados como evidência do experimento. Sua existência não significa adequação como dissertação, defesa, aprovação institucional, submissão ou aceitação de artigo.
 
 | Produto | PDF | Fontes e contexto |
 |---|---|---|
@@ -39,7 +47,7 @@ Esses materiais permitem examinar o resultado da automação. Sua existência n�
 | Proposta inicial de pesquisa | [Proposta v0.1.0](output/pdf/v0.1.0/proposta_pesquisa.pdf) | [Plano de execução](implementation_plan/README.md) |
 | Trabalho de graduação de partida | [TG original](TG_Wayne.pdf) | Documento anterior ao experimento, preservado com sua atribuição |
 
-**Versões:** a dissertação e o manuscrito foram revisados diretamente pelo **agy / Gemini 3.8 Flash (High)** no commit `09b3584`, tag **v1.1.0**. A pedido do proponente, a revisão valorizou a exposição das contribuições, reorganizou as conclusões em quatro seções e acrescentou cinco direções de trabalhos futuros. A dissertação passou de 167 para 170 páginas; o artigo manteve nove. Não houve nova campanha numérica registrada, e o código e os resultados científicos não mudaram no commit. O relatório examina tanto os ganhos de clareza quanto o fortalecimento de algumas alegações com a mesma evidência. As versões anteriores permanecem no histórico.
+**Versões:** a dissertação e o manuscrito foram revisados diretamente pelo **agy / Gemini 3.8 Flash (High)** no commit `09b3584`, tag **v1.1.0**. A pedido do proponente, a revisão valorizou a exposição das contribuições, reorganizou as conclusões em quatro seções e acrescentou cinco direções de trabalhos futuros. A dissertação passou de 167 para 170 páginas; o artigo manteve nove. Não houve nova campanha numérica registrada, e o código e os resultados científicos não mudaram no commit. O relatório examina a reorganização editorial e o fortalecimento de alegações com a mesma evidência. A crítica especializada impede tratar a revisão afirmativa como ganho de clareza ou de qualidade já demonstrado. As versões anteriores permanecem no histórico.
 
 ## Como o experimento foi conduzido
 
@@ -59,7 +67,7 @@ A execução principal ocorreu de **10 a 13 de setembro de 2026**, predominantem
 | Intervalo no calendário do goal | **54 h 56 min 42 s**, com pausas e retomadas |
 | Código principal na v1.0.0 | **26.069 linhas** em módulos, scripts e testes, incluindo comentários e linhas vazias |
 | Campanhas principais | **45.528 análises** em quatro campanhas; incluem análises diferentes dos mesmos dados |
-| Plano científico | **13 marcos concluídos**, com resultados, limitações e histórico de falhas |
+| Plano científico | **13 marcos encerrados pelo agente**, sem certificação de adequação científica |
 | Revisão posterior do artigo pelo Codex | Cerca de **6 min 37 s** no turno do Codex; exclui o trabalho no Gemini e não altera o contador do goal |
 | Revisão direta pelo agy | **20 min 47 s** de calendário; **15 min 44 s** após autorização; sem goal e sem nova campanha numérica |
 
@@ -77,7 +85,15 @@ Os números são registros deste caso, não fatores gerais de produtividade. Qua
 - **Revisão entre modelos:** quais críticas ajudam, quais exageram conclusões e o que ainda requer avaliação especializada?
 - **Narrativa e mérito:** quanto uma revisão afirmativa melhora a clareza e quanto muda a percepção de valor dos mesmos resultados?
 
-O repositório contém um estudo de caso, sem grupo de comparação ou medida de aprendizagem. Há evidências de execução e correção de rota, mas a contribuição científica continua sujeita a avaliação externa. Uma comparação central permaneceu inconclusiva em seu escopo mais amplo. O artigo não foi submetido e não houve defesa ou aprovação institucional. Os nomes fictícios usados nos produtos acadêmicos fazem parte do experimento.
+O repositório contém um estudo de caso, sem grupo de comparação ou medida de aprendizagem. Há evidências de execução e correções internas; a primeira leitura externa especializada questiona a coerência e a utilidade científica da entrega. Uma comparação central permaneceu inconclusiva em seu escopo mais amplo. O artigo não foi submetido e não houve defesa ou aprovação institucional. Os nomes fictícios usados nos produtos acadêmicos fazem parte do experimento.
+
+## Próximos experimentos possíveis
+
+1. **Avaliar se algo pode ser recuperado:** selecionar com especialista uma pergunta pequena e uma alegação verificável; confrontar literatura e cálculo independente antes de reescrever. Admitir encerrar essa tentativa se não houver contribuição útil.
+2. **Refazer com orientação científica prévia:** partir de proposta humana ou discutida com especialista, com critérios de êxito e revisões intermediárias antes de ampliar as simulações. Contabilizar o trabalho humano necessário.
+3. **Testar melhores meios de revisão bibliográfica:** acrescentar rastreamento de citações e acesso autorizado a bases; comparar cobertura e relevância com a busca por termos. Separar o efeito das ferramentas do efeito da orientação.
+
+São propostas, ainda não executadas. Os produtos científicos permanecem intactos. O critério passa a ser uma resposta compreensível, correta e útil, com esforço de verificação medido; produzir mais documentos não resolve a avaliação negativa.
 
 ## Navegação técnica e reprodução
 

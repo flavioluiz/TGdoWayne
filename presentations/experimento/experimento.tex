@@ -18,7 +18,7 @@
 \setbeamertemplate{footline}{}
 \setbeameroption{hide notes}
 \graphicspath{{presentations/experimento/assets/}}
-\hypersetup{pdftitle={Uma dissertação pronta. Um pesquisador formado?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 6: comparação Codex / Gemini},colorlinks=true,urlcolor=Green}
+\hypersetup{pdftitle={Uma dissertação gerada. Uma pesquisa que faz sentido?},pdfauthor={Flavio Ribeiro},pdfsubject={Pesquisa acadêmica com agentes de IA - Revisão 7: reavaliação especializada inicial},colorlinks=true,urlcolor=Green}
 \setbeamercolor{normal text}{fg=Ink,bg=Paper}
 \newenvironment{Canvas}{\begin{tikzpicture}[remember picture,overlay]\coordinate (O) at (current page.north west);}{\end{tikzpicture}}
 % Texto em posições relativas à página, em centímetros. O texto continua editável.
@@ -40,9 +40,9 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Bold{.9}{.78}{14}{9}{Mist}{PESQUISA ACADÊMICA COM AGENTES DE IA}
-\Display{.9}{2.70}{14.2}{28}{white}{Uma dissertação pronta.}
-\Display{.9}{4.03}{14.2}{28}{Mist}{Um pesquisador formado?}
-\Body{.94}{6.91}{14}{12}{white}{Um experimento de pesquisa delegada e revisão entre modelos}
+\Display{.9}{2.70}{14.2}{28}{white}{Uma dissertação gerada.}
+\Display{.9}{4.03}{14.2}{28}{Mist}{Uma pesquisa que faz sentido?}
+\Body{.94}{6.91}{14}{12}{white}{Um experimento de delegação, revisão e avaliação especializada}
 \Bold{.94}{8.05}{5}{11}{white}{Flavio Ribeiro}
 \Body{8.3}{8.10}{6.8}{9}{Mist}{Pós-graduação no ITA / 13 setembro 2026}
 \end{Canvas}
@@ -53,9 +53,9 @@
 \setbeamercolor{background canvas}{bg=Paper}
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{A PERGUNTA}{O documento e a formação}
-\Display{.9}{2.70}{14.2}{28}{Ink}{Texto e código não atestam,\\sozinhos, o domínio\\do aluno.}
-\Body{.94}{6.65}{14}{15}{Green}{A IA entregou ambos. O que a pós-graduação\\precisa avaliar agora?}
+\Header{O RESULTADO ATUAL}{O documento não encerrou a pesquisa}
+\Display{.9}{2.70}{14.2}{28}{Ink}{A entrega não demonstrou\\uma dissertação\\adequada.}
+\Body{.94}{6.65}{14}{15}{Green}{A primeira leitura especializada questionou\\coerência, clareza e utilidade científica.}
 \Page
 \end{Canvas}
 \SpeakerNote{2}
@@ -86,7 +86,7 @@
 \node[etapa] (e) at ([xshift=8cm,yshift=-5.6cm]O) {Revisões com Gemini};
 \node[etapa] (f) at ([xshift=2.8cm,yshift=-5.6cm]O) {Dissertação e artigo};
 \draw[fluxo] (a)--(b);\draw[fluxo] (b)--(c);\draw[fluxo] (c)--(d);\draw[fluxo] (d)--(e);\draw[fluxo] (e)--(f);
-\Bold{.94}{7.22}{14.1}{12}{Green}{Codex Astra conduziu recorte, execução e testes.\\O usuário definiu a direção e encaminhou os pareceres.}
+\Bold{.94}{7.22}{14.1}{12}{Green}{Codex Astra conduziu recorte, execução e testes.\\A leitura especializada veio depois da execução extensa.}
 \Page
 \end{Canvas}
 \SpeakerNote{4}
@@ -95,7 +95,7 @@
 % 05 — Volume, tempo e custo têm definições detalhadas nos slides de apoio.
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{O EXPERIMENTO}{O que o agente entregou}
+\Header{O EXPERIMENTO}{O volume produzido não assegurou mérito}
 \Display{.94}{2.40}{6.5}{40}{Green}{170}
 \Display{8.2}{2.40}{6.9}{40}{Green}{9}
 \Bold{.94}{3.93}{6.5}{12}{Ink}{páginas de dissertação}
@@ -106,7 +106,7 @@
 \Body{.94}{6.20}{6.5}{11}{Muted}{Contador do goal\\55 h no calendário}
 \Body{8.2}{6.38}{6.9}{11}{Muted}{Rateio estimado da assinatura}
 \Bold{.94}{7.25}{14.1}{12}{Ink}{26.069 linhas de código e testes / 45.528 análises principais}
-\Body{.94}{7.89}{13}{9.5}{Green}{API equivalente: cerca de US\$ 1.300 Standard. Definições e custos no apoio.}
+\Body{.94}{7.89}{13}{9.5}{Green}{API: cerca de US\$ 1.300 Standard. Custo da tentativa, sem validação científica.}
 \Page
 \end{Canvas}
 \SpeakerNote{5}
@@ -115,14 +115,14 @@
 % 06 — Dois episódios de correção, sem estatística especializada.
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{O EXPERIMENTO}{A IA encontrou uma falha e reviu a tese}
+\Header{O EXPERIMENTO}{Testes internos validam a pesquisa?}
 \Bold{.94}{2.52}{6.4}{10}{Muted}{PROBLEMA}
 \Bold{8.60}{2.52}{6.5}{10}{Muted}{AÇÃO DO AGENTE}
 \Display{.94}{3.43}{6.45}{19}{Rust}{Falha de calibração}
 \Body{.94}{4.59}{6.45}{14}{Ink}{A faixa prometia 90\%.\\No teste, cobriu 62,6\%.}
 \Body{.94}{6.47}{6.45}{11}{Muted}{500 casos simulados.\\Um parâmetro de ruído.}
 \Display{8.6}{3.43}{6.5}{17}{Ink}{Reconheceu o limite.\\Reduziu a alegação.\\Reescreveu o texto.}
-\Body{8.6}{6.47}{6.5}{12}{Green}{A comparação ampla\\permaneceu inconclusiva.}
+\Body{8.6}{6.47}{6.5}{12}{Green}{A pergunta ampla continuou\\sem resposta conclusiva.}
 \Page
 \end{Canvas}
 \SpeakerNote{6}
@@ -136,36 +136,38 @@
 \Bold{.94}{2.40}{6.5}{10}{Mist}{GEMINI AVALIA / CODEX REVISA}
 \Bold{8.2}{2.40}{6.9}{10}{Mist}{AGY / GEMINI REESCREVE}
 \Display{.94}{3.17}{6.5}{19}{white}{Testar as críticas.\\Explicitar os limites.}
-\Display{8.2}{3.17}{6.9}{19}{white}{Valorizar os achados.\\Propor continuidade.}
+\Display{8.2}{3.17}{6.9}{19}{white}{Fortalecer o texto.\\Manter os resultados.}
 \Body{.94}{5.23}{6.5}{11}{Mist}{Narrativa mais defensiva.}
 \Body{8.2}{5.23}{6.9}{11}{Mist}{Narrativa mais afirmativa.\\Gemini 3.8 Flash / 21 min.}
-\Display{.94}{6.80}{14.1}{21}{white}{Mudou a evidência ou a nossa\\percepção do valor da pesquisa?}
+\Display{.94}{6.80}{14.1}{21}{white}{Uma narrativa mais afirmativa\\não estabeleceu qualidade científica.}
 \Page[Mist]
 \end{Canvas}
 \SpeakerNote{7}
 \end{frame}
 
-% 08 — Cenário para debate, sem previsão de colapso editorial.
+% 08 — Retorno especializado inicial, sem nomes ou falas privadas.
 \setbeamercolor{background canvas}{bg=Paper}
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{PROVOCAÇÃO PARA O CPG}{O fim da pesquisa incremental}
-\Display{.94}{2.70}{14.1}{26}{Ink}{Se variar parâmetros pode ser\\delegado, o que ainda justifica\\outro artigo?}
-\Body{.94}{6.55}{14.1}{16}{Green}{Execução de rotina não basta como contribuição.\\Qual avanço de conhecimento exigiremos?}
+\Header{A REAVALIAÇÃO}{A primeira leitura especializada foi negativa}
+\Display{.94}{2.65}{14.1}{27}{Rust}{O texto é coerente?\\Os cálculos são úteis?}
+\Body{.94}{5.50}{14.1}{16}{Ink}{A crítica alcança o sentido da pesquisa,\\além da redação.}
+\Body{.94}{7.25}{14.1}{12}{Muted}{Avaliação inicial. Partes aproveitáveis ainda precisam ser demonstradas.}
 \Page
 \end{Canvas}
 \SpeakerNote{8}
 \end{frame}
 
-% 09 — Computação e laboratório: diferenças de evidência, sem hierarquia.
+% 09 — Busca dirigida versus rastreamento de citações.
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{IMPLICAÇÕES PARA A PESQUISA}{Simular e medir exigem evidências distintas}
-\Display{.94}{2.74}{6.45}{25}{Green}{Simulação}
-\Display{8.6}{2.74}{6.45}{25}{Green}{Medição}
-\Body{.94}{4.15}{6.45}{15}{Ink}{Milhares de análises\\podem ser automatizadas.}
-\Body{8.6}{4.15}{6.45}{15}{Ink}{Instrumentos e calibração\\exigem trabalho físico.}
-\Body{.94}{6.98}{14.1}{14}{Muted}{O laboratório impõe restrições materiais.\\A força da evidência continua sendo o critério comum.}
+\Header{ONDE REEXAMINAR}{Busca bibliográfica: alcance e lacunas}
+\Bold{.94}{2.60}{6.45}{11}{Green}{O QUE FOI REGISTRADO}
+\Bold{8.2}{2.60}{6.9}{11}{Rust}{O QUE FALTOU VALIDAR}
+\Display{.94}{3.50}{6.45}{20}{Ink}{Busca por termos.\\Leitura de métodos.}
+\Display{8.2}{3.50}{6.9}{20}{Ink}{A ligação com o TG.\\O valor da pergunta.}
+\Body{.94}{5.72}{14.1}{14}{Ink}{Não houve rastreamento sistemático documentado\\dos trabalhos que citaram o artigo de partida.}
+\Body{.94}{7.28}{14.1}{12}{Green}{Mais acesso ajuda. Não garante uma boa pergunta.}
 \Page
 \end{Canvas}
 \SpeakerNote{9}
@@ -175,7 +177,7 @@
 \begin{frame}[plain]
 \begin{Canvas}
 \Header{FORMAÇÃO E AVALIAÇÃO}{O que precisamos aprender a fazer?}
-\Bold{.94}{2.53}{14.1}{11}{Green}{A EXECUÇÃO VIROU COMMODITY.}
+\Bold{.94}{2.53}{14.1}{11}{Green}{O JULGAMENTO NÃO FOI SUBSTITUÍDO.}
 \Display{.94}{3.35}{14.1}{25}{Ink}{Formular perguntas.\\Contestar resultados.\\Saber dizer NÃO à máquina.}
 \Body{.94}{7.05}{14.1}{15}{Green}{A formação precisa tornar essas capacidades observáveis.}
 \Page
@@ -183,20 +185,17 @@
 \SpeakerNote{10}
 \end{frame}
 
-% 11 — Proposta pedagógica, não resultado testado pelo experimento.
+% 11 — Experimentos futuros, ainda não executados.
 \begin{frame}[plain]
 \begin{Canvas}
-\Header{FORMAÇÃO E AVALIAÇÃO}{A avaliação pode acompanhar as decisões}
-\Bold{.94}{2.80}{4.1}{10}{Green}{ANTES DO TESTE}
-\Bold{6.08}{2.80}{4.3}{10}{Green}{DURANTE A PESQUISA}
-\Bold{11.24}{2.80}{3.9}{10}{Green}{NA DEFESA}
-\Display{.94}{3.80}{4.1}{25}{Ink}{Prever}
-\Display{6.08}{3.80}{4.3}{24}{Ink}{Interpretar}
-\Display{11.24}{3.80}{3.9}{24}{Ink}{Sustentar}
-\Body{.94}{5.14}{4.1}{14}{Ink}{O que mudará?\\Por quê?}
-\Body{6.08}{5.14}{4.3}{14}{Ink}{Por que houve\\surpresa?}
-\Body{11.24}{5.14}{3.9}{13.5}{Ink}{O argumento\\resiste à\\alteração?}
-\Bold{.94}{7.56}{14.1}{12}{Green}{Domínio demonstrado ao longo do curso, além do PDF.}
+\Header{PRÓXIMOS EXPERIMENTOS}{Recuperar uma parte ou recomeçar?}
+\Bold{.94}{2.65}{6.45}{11}{Green}{01 / RECUPERAÇÃO DELIMITADA}
+\Bold{8.2}{2.65}{6.9}{11}{Green}{02 / PROPOSTA COM ESPECIALISTA}
+\Display{.94}{3.50}{6.45}{20}{Ink}{Uma pergunta.\\Um teste externo.}
+\Display{8.2}{3.50}{6.9}{20}{Ink}{Proposta discutida.\\Revisão a cada etapa.}
+\Body{.94}{5.90}{6.45}{13}{Muted}{Parar se não houver\\contribuição útil.}
+\Body{8.2}{5.90}{6.9}{13}{Muted}{Medir qualidade e\\trabalho humano.}
+\Bold{.94}{7.45}{14.1}{12}{Green}{Busca por citações: testar seu efeito separadamente.}
 \Page
 \end{Canvas}
 \SpeakerNote{11}
@@ -208,11 +207,11 @@
 \begin{Canvas}
 \DarkHeader{DISCUSSÃO}{Três questões para a pós-graduação}
 \Body{.94}{2.75}{1}{17}{Mist}{01}
-\Display{2.58}{2.64}{12.5}{20}{white}{Que originalidade exigiremos\\no mestrado e no doutorado?}
+\Display{2.58}{2.64}{12.5}{20}{white}{Quem decide se a pergunta\\vale a pesquisa?}
 \Body{.94}{4.68}{1}{17}{Mist}{02}
-\Display{2.58}{4.57}{12.5}{20}{white}{Como disciplinas e qualificações\\podem demonstrar compreensão?}
+\Display{2.58}{4.57}{12.5}{20}{white}{Como avaliar o argumento\\antes de ampliar a execução?}
 \Body{.94}{6.61}{1}{17}{Mist}{03}
-\Display{2.58}{6.50}{12.5}{20}{white}{Como ensinar a delegar pesquisa\\e a julgar o que o agente entrega?}
+\Display{2.58}{6.50}{12.5}{20}{white}{Quanto trabalho humano custa\\julgar o que o agente entrega?}
 \Page[Mist]
 \end{Canvas}
 \SpeakerNote{12}
@@ -269,7 +268,7 @@ Saída, com raciocínio & 5,23 & 261,46\\\bottomrule
 \Bold{8.2}{4.80}{6.9}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/09b3584b5eea40251f84fb594da9551cba2b925d/output/pdf/v1.1.0/dissertacao.pdf}{Dissertação / 170 páginas}}
 \Bold{.94}{5.54}{6.5}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/26ae3acd6016fcff9f8505980c90b3f908b2beb2/article/manuscript.pdf}{Artigo / 9 páginas}}
 \Bold{8.2}{5.54}{6.9}{13}{Green}{\href{https://github.com/flavioluiz/TGdoWayne/blob/09b3584b5eea40251f84fb594da9551cba2b925d/article/manuscript.pdf}{Artigo / 9 páginas}}
-\Body{.94}{6.73}{14.1}{12}{Ink}{Abra os PDFs. Compare resumos, introduções e conclusões.}
+\Body{.94}{6.73}{14.1}{12}{Ink}{Ambas as versões precisam de avaliação científica.}
 \Body{.94}{7.41}{14.1}{10}{Muted}{Contraste deste caso, sob pedidos diferentes. Dados e código preservados.}
 \Bold{.94}{8.05}{12.8}{10}{Green}{\href{https://github.com/flavioluiz/TGdoWayne}{Comparação e demais materiais no README}}
 \Backup

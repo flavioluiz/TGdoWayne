@@ -2,16 +2,16 @@
   "slides": 15,
   "main_slides": 12,
   "suggested_seconds": 1500,
-  "visual_review": "Slides 7 e 15 renderizados e inspecionados após explicitar o contraste de tom e adicionar quatro links aos PDFs históricos. Mantidos 12 slides principais e três de apoio.",
-  "validation": "XeLaTeX, 15 páginas, 1.500 segundos sugeridos; sem transbordamentos no log. PDFs históricos conferidos contra Git. Hiperlinks incorporados ao slide 15 e limites de texto verificados. Revisão 6 distinta da 5.",
+  "visual_review": "15 slides renderizados; conjunto e slides alterados inspecionados. Ajustados títulos, quebras e espaçamento nas novas páginas. Nenhuma sobreposição visual restante.",
+  "validation": "XeLaTeX; 15 páginas, 12 principais; 1.500 segundos sugeridos. Sem overfull no log final. Revisão 7 diferente da 6, que permanece intacta.",
   "files": {
-    "experimento.tex": "f5b96ee97c154efc9a3c80de15cda324bb2d0c975eae75057b413123898c22ee",
-    "notas.tex": "ca00b32209becf8a36ebc12aa540230e9077c08822037cc090a8616f9015aec9",
+    "experimento.tex": "91ea466daf2ec4104bd92802d19f02aef9ec19db577433e94df5520264af3023",
+    "notas.tex": "559d8073a03802bf6f7c572f1f9ea0f4e3a14f57beefb22523846690e051193f",
     "gerar_roteiro.py": "e033bb79422f6fad85f91af17dab650f9b2849f0cb9c7144d3e8947c1fcdaeda",
-    "roteiro.md": "9c4dc6b9bc712cf8b02bd3fc15f5c07d3a9ff034f089e12fd20a8a1a9a774a19",
-    "timing.json": "0713e6c1ddfe8da093c01c2344efcb1e68d27650a5ffa03f7772e4b2668f8a5d",
-    "README.md": "1b22f40d97e9904969c431d910a53b500292c7cc57eff2b22131f9abe79b2237",
-    "build.sh": "a44ace772afcf4f07452ffdcdee644617fcf90a25492b97ec4204564008c3f37",
+    "roteiro.md": "175016b073bb8e044a3f9375aa5be316bd374c6739e312d7c1a0a36d99a17583",
+    "timing.json": "563c0b7fdc150a57a5f59ab9d04ae932efb9e079a0cbf4d6b33c15b9e1aa38d0",
+    "README.md": "bcd8b7db6d1e20016b6a9b1ab0108ad2e0c06ccdca557cc447e96820f0f25d83",
+    "build.sh": "4729849ed0ad30c5373c987901842668a740ce4ed44373ebf2cf1a03a3150349",
     "assets/tg-01.png": "86169d094cd18919ba0780d0da9c3a5e1ab511d8d56bfe7e3a4313da5134940a",
     "assets/dissertacao-001.png": "0c6090ab00460d403d9ab4d61ccaeb06b911a8861e59e544b531d51f1d55c1b8",
     "assets/artigo-1.png": "b089adb9222dfd091e63b5ad9c2b3c2e91052b0232b6d5642ae8b9bf7d734db5",
@@ -20,7 +20,7 @@
   },
   "pdf": {
     "path": "../../output/pdf/experimento/experimento_codex.pdf",
-    "sha256": "81e6462dc93514114dbc0879eb0e472c20537ac0ed87222fe792066be2e98581"
+    "sha256": "1d02237d6b84b65b6838c68f2dda7bb4e679097b260af92aee9b59a261ba7045"
   },
   "documentary_assets": {
     "assets/tg-01.png": {
@@ -53,10 +53,11 @@
     }
   },
   "format": "Beamer / XeLaTeX",
-  "revision": 6,
+  "revision": 7,
   "versioned_pdf": {
-    "path": "../../output/pdf/experimento/experimento_codex_6.pdf",
-    "sha256": "81e6462dc93514114dbc0879eb0e472c20537ac0ed87222fe792066be2e98581"
+    "path": "../../output/pdf/experimento/experimento_codex_7.pdf",
+    "sha256": "1d02237d6b84b65b6838c68f2dda7bb4e679097b260af92aee9b59a261ba7045"
   },
-  "comparison_manifest": "../../output/pdf/comparacao_llms/manifesto.json"
+  "comparison_manifest": "../../output/pdf/comparacao_llms/manifesto.json",
+  "assessment_source": "../../output/pdf/relatorio_experimento/reavaliacao_especialista.md"
 }

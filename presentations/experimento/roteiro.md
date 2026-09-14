@@ -13,21 +13,21 @@ O roteiro orienta a fala, sem leitura literal dos slides. Os tempos são sugest�
 
 ## Sequência e fala sugerida
 
-### 1. Uma dissertação pronta. Um pesquisador formado?
+### 1. Uma dissertação gerada. Uma pesquisa que faz sentido?
 
 00:00–00:45 (45 s)
 
-Apresentar o experimento como uma investigação sobre a delegação da pesquisa e as evidências de formação. O tema científico serviu de terreno de teste. Não houve concessão de título, defesa ou aprovação institucional. A apresentação organiza uma discussão para a pós-graduação, sem pretender representar uma posição institucional.
+A abertura foi revista após a primeira leitura especializada, recebida em 13/09/2026. O caso não demonstrou uma dissertação adequada. Há muita execução documentada, mas coerência e utilidade foram questionadas. Não identificar o revisor nem reproduzir falas privadas. É uma leitura inicial, não parecer formal de banca ou auditoria de todos os cálculos.
 
-**Fontes:** Relatório do estudo de caso, abertura.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
-### 2. O documento e a formação
+### 2. O documento não encerrou a pesquisa
 
 00:45–02:45 (120 s)
 
-Texto e código, sozinhos, não atestam o domínio individual quando sua produção pode ser delegada. O experimento torna essa distinção concreta: o proponente declarou não dominar o tema e o agente entregou ambos. Isso não significa que documentos sejam inúteis para avaliar a pesquisa, nem que já tenham sido prova suficiente de aprendizagem. A pergunta é o que a pós-graduação passa a exigir da pessoa, além dos produtos. O caso não mediu aprendizagem.
+O proponente passou a considerar a entrega inadequada como dissertação no estado atual. A nova evidência exige rever a interpretação anterior, centrada no volume e no problema da formação. A questão agora inclui se o próprio produto faz sentido. Não inferir que todos os cálculos estejam errados ou que toda pesquisa com IA fracassa. A possibilidade de reaproveitamento continua sem demonstração.
 
-**Fontes:** Relatório, seção 3.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
 ### 3. O desafio inicial
 
@@ -41,23 +41,23 @@ O proponente declarou não dominar o tema e não forneceu uma hipótese científ
 
 04:25–06:15 (110 s)
 
-O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado. As três caixas escuras destacam as etapas conduzidas pelos agentes. Isso não significa ausência completa de participação humana nem permite atribuir uma porcentagem de autonomia. Depois dos pareceres, o proponente mudou também o executor: pediu ao agy/Gemini uma revisão direta para valorizar os resultados na escrita.
+O diagrama resume a ordem predominante, com iterações entre as etapas. O usuário definiu a intenção. O Codex Astra formulou o recorte, organizou um plano de 13 marcos e coordenou três subagentes. Consultou antecedentes para evitar anunciar como novidade o que já existia. Executou quatro campanhas principais com 45.528 análises, que compartilham dados e não correspondem a igual número de simulações independentes. Os testes levaram a correções. Os dois pareceres do Gemini chegaram por intermédio do usuário. O artigo teve uma revisão após o encerramento do goal. O tempo humano não foi cronometrado. As três caixas escuras destacam as etapas conduzidas pelos agentes. Isso não significa ausência completa de participação humana nem permite atribuir uma porcentagem de autonomia. Depois dos pareceres, o proponente mudou também o executor: pediu ao agy/Gemini uma revisão direta para valorizar os resultados na escrita. A leitura especializada posterior questionou a coerência e utilidade. A transição de tema foi registrada, mas a decisão não teve validação científica prévia por especialista.
 
 **Fontes:** Relatório, seções 1 e 2 e apêndices A a D. Relatório, seção 2.1 e apêndice A.3.
 
-### 5. O que o agente entregou
+### 5. O volume produzido não assegurou mérito
 
 06:15–08:05 (110 s)
 
-A dissertação tinha 167 páginas ao concluir o goal e passou a 170 na revisão do agy, v1.1.0. O artigo foi de sete a nove páginas na revisão anterior pelo Codex e manteve nove com o agy. Os 26.069 incluem comentários e linhas vazias; 45.528 são análises principais de quatro campanhas, com reutilização de dados. Código e campanhas são contagens históricas, sem novas campanhas nessa revisão. O contador do goal marca 30 h 51 min, em cerca de 55 h de calendário; não mede CPU nem tempo de formação. Os US$ 50 são o rateio aproximado da assinatura informado pelo usuário; cerca de US$ 1.300 é a equivalência de API Standard dos registros do Codex, incluindo complementos científicos. Ambos excluem o custo do Gemini e do agy. A rodada do agy levou 20 min 47 s de calendário e não se soma ao contador histórico do goal.
+A dissertação tinha 167 páginas ao concluir o goal e passou a 170 na revisão do agy, v1.1.0. O artigo foi de sete a nove páginas na revisão anterior pelo Codex e manteve nove com o agy. Os 26.069 incluem comentários e linhas vazias; 45.528 são análises principais de quatro campanhas, com reutilização de dados. Código e campanhas são contagens históricas, sem novas campanhas nessa revisão. O contador do goal marca 30 h 51 min, em cerca de 55 h de calendário; não mede CPU nem tempo de formação. Os US$ 50 são o rateio aproximado da assinatura informado pelo usuário; cerca de US$ 1.300 é a equivalência de API Standard dos registros do Codex, incluindo complementos científicos. Ambos excluem o custo do Gemini e do agy. A rodada do agy levou 20 min 47 s de calendário e não se soma ao contador histórico do goal. Todos os valores são custo e volume desta tentativa, sem equivalência com uma dissertação adequada.
 
 **Fontes:** Relatório, apêndices A.3 e C–E; revisao_agy.json.
 
-### 6. A IA encontrou uma falha e reviu a tese
+### 6. Testes internos validam a pesquisa?
 
 08:05–10:25 (140 s)
 
-O exemplo concreto é uma falha de calibração: para um parâmetro de ruído em 500 casos simulados, a faixa anunciada como 90% continha a resposta conhecida em 313 casos, ou 62,6%. Não se trata de intervalos fraudulentos nem de falha de todos os resultados do estudo. O agente registrou a limitação da aproximação. Em outros momentos, reconheceu que a comparação ampla continuava inconclusiva, respondeu a uma questão mais restrita e conteve alegações de originalidade. O slide reúne esses movimentos de revisão, sem atribuir todos à mesma causa. Não afirmar ausência geral de alucinações ou fabricação sem uma auditoria independente de todo o trabalho.
+O exemplo concreto é uma falha de calibração: para um parâmetro de ruído em 500 casos simulados, a faixa anunciada como 90% continha a resposta conhecida em 313 casos, ou 62,6%. Não se trata de intervalos fraudulentos nem de falha de todos os resultados do estudo. O agente registrou a limitação da aproximação. Em outros momentos, reconheceu que a comparação ampla continuava inconclusiva, respondeu a uma questão mais restrita e conteve alegações de originalidade. O slide reúne esses movimentos de revisão, sem atribuir todos à mesma causa. Não afirmar ausência geral de alucinações ou fabricação sem uma auditoria independente de todo o trabalho. Testes implementados no próprio projeto não garantem que a pergunta seja útil, o modelo adequado ou a interpretação correta.
 
 **Fontes:** Relatório, seção 2 e apêndice B.1.
 
@@ -65,49 +65,49 @@ O exemplo concreto é uma falha de calibração: para um parâmetro de ruído em
 
 10:25–12:45 (140 s)
 
-Começar pelo papel anterior do Gemini: dois pareceres encaminhados pelo usuário. O Codex conferiu as críticas, acrescentou estudos pontuais e melhorou o artigo; também recusou originalidade absoluta e generalizações para dados reais. Depois, o usuário considerou o texto pessimista e pediu uma revisão afirmativa diretamente ao agy, com Gemini 3.8 Flash (High), confirmado no log local. Foram dois pedidos e cerca de 21 minutos de calendário, incluindo leitura, edição, compilação, correção de referências e publicação. O agy colocou os achados em primeiro plano e ampliou as conclusões e os trabalhos futuros. Não houve nova campanha numérica ou busca bibliográfica registrada. Algumas mudanças melhoram a exposição; outras aumentam a força das alegações, como pela primeira vez. A comparação ampla continua aberta na discussão do artigo. Perguntar quanto da impressão de qualidade muda apenas com a narrativa. Oportunidade: combinar verificação crítica e comunicação afirmativa. Avaliar clareza e suporte das alegações separadamente, sem concluir que todo Codex é defensivo ou todo Gemini é afirmativo: os pedidos também foram diferentes. O README reúne os dois pares de PDFs: dissertação e artigo finais do Codex e versões do Gemini. O apoio 15 contém quatro links clicáveis para a comparação direta. Neste caso, a primeira narrativa é mais defensiva e a segunda, mais afirmativa.
+Dois pareceres Gemini foram encaminhados ao Codex; depois o agy reescreveu diretamente para uma narrativa afirmativa. Houve mudança de estrutura e fortalecimento de alegações, sem nova campanha científica nessa revisão. A crítica humana posterior impede chamar isso de ganho de clareza comprovado. Os problemas não podem ser atribuídos só ao Gemini, pois recorte e implementação precedem sua reescrita. Os pares de PDFs permanecem no README e apoio 15. Uma resposta posterior do Gemini à crítica é hipótese interpretativa, não validação independente.
 
-**Fontes:** Relatório, seções 2 e 2.1, apêndices A.2 e A.3; revisao_agy.json; commit 09b3584.
+**Fontes:** Relatório, seções 2.1–2.2; revisao_agy.json; reavaliacao_especialista.md.
 
-### 8. O fim da pesquisa incremental
+### 8. A primeira leitura especializada foi negativa
 
 12:45–15:05 (140 s)
 
-O título é uma provocação normativa para o CPG, não uma conclusão empírica de que a pesquisa incremental acabou. Defender que execução rotineira ou pequenas variações sem informação nova não bastam para justificar artigo ou título. Uma contribuição incremental pode revelar um regime novo, eliminar uma dúvida importante ou reproduzir criticamente um resultado. O debate é qual avanço de conhecimento exigir quando parte da execução pode ser delegada. O caso não prova colapso dos periódicos nem uma taxa de dez artigos por semana. Nenhuma fala privada ou pessoa é citada.
+A crítica especializada inicial questionou termos, coerência e utilidade. Não reduzir o problema a estilo nem explicar a reação como simples preferência de área do leitor. A resposta posterior do Gemini defendeu alguns resultados, mas não é auditoria independente. Também não concluir que tudo está errado: é necessário verificar alegações específicas. O experimento não atingiu adequação científica demonstrada, mesmo tendo encerrado seu goal operacional.
 
-**Fontes:** Relatório, seção 4.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
-### 9. Simular e medir exigem evidências distintas
+### 9. Busca bibliográfica: alcance e lacunas
 
 15:05–17:05 (120 s)
 
-Este caso foi computacional e não comparou sua produtividade à de um laboratório. Em simulações, controles com resposta conhecida permitem testar hipóteses. Medições acrescentam confronto com fenômenos e exigem instrumentação e calibração. O laboratório tem restrições materiais, mas também usa automação. Teoria e computação não perdem valor científico por serem automatizáveis. A discussão é como gerar evidência nova e interpretar seus limites, não proclamar superioridade de um tipo de pesquisa. A evidência do caso não demonstra desempenho em dados instrumentais reais. O destaque ao trabalho físico não pressupõe que toda operação de laboratório deva ser humana. Calibração e instrumentação também admitem automação.
+O protocolo registra busca por termos, leitura dirigida, referências e inspeção de código. Não registra levantamento sistemático de artigos que citaram a publicação de 2004. Seguir antecedentes e seguir citações posteriores são caminhos complementares. O catálogo tem 41 PDFs e 1.214 páginas; isso mede acervo, não compreensão. O deslocamento para análises de sinais de pulsares está documentado, portanto não foi oculto no histórico. Sua pertinência científica não foi validada antes da execução extensa. Ferramentas de citações e acesso autorizado a bases podem melhorar cobertura, mas sua contribuição deve ser comparada e não presumida.
 
-**Fontes:** Relatório, seção 4.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
 ### 10. O que precisamos aprender a fazer?
 
 17:05–19:25 (140 s)
 
-A expressão sobre execução virar commodity é uma provocação sobre a divisão do trabalho, sem afirmar que toda execução científica ficou fácil ou barata. Discutir como observar a capacidade de formular uma pergunta relevante, contestar uma saída convincente e rejeitar resultados sem evidência. Uma atividade possível é apresentar uma resposta do agente e pedir que o estudante explique quais sinais a enfraquecem e qual teste decidiria sua aceitação. Escrita e programação também são meios de aprendizagem e continuam exigindo domínio. A delegação abre oportunidades, mas o caso não mediu seu efeito sobre a formação.
+A capacidade de executar tarefas não substituiu o julgamento da pergunta e da utilidade. Ensinar a formular, contestar e interromper uma linha sem contribuição. Prever um resultado antes do teste, interpretá-lo depois e sustentar uma conclusão diante de mudança de hipótese são exemplos de avaliação. Este caso não mediu aprendizagem e não prova que toda execução científica virou tarefa simples.
 
-**Fontes:** Relatório, seções 3 e 4.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
-### 11. A avaliação pode acompanhar as decisões
+### 11. Recuperar uma parte ou recomeçar?
 
 19:25–22:05 (160 s)
 
-Proposta pedagógica, não intervenção avaliada neste caso. Antes de executar uma mudança, pedir uma previsão justificada. Depois, pedir que a pessoa explique o resultado, especialmente quando diverge da previsão. Na defesa, modificar uma hipótese ou condição, solicitar um argumento central e seus limites, com trechos sem assistência quando apropriado. Um teste ao vivo exige critérios justos e não deve reduzir domínio a rapidez de digitação ou memória. Registros ao longo do curso, qualificações e conversa oral podem complementar o documento final. Discutir como graduar profundidade e autonomia entre mestrado e doutorado.
+Duas propostas ainda não executadas. Recuperação: escolher com especialista uma alegação pequena, explicar o problema e verificar por via independente antes de reescrever. Encerrar se não houver contribuição útil; não insistir pelo investimento acumulado. Nova execução: proposta humana ou discutida antes do código, exemplo mínimo e avaliações intermediárias antes de aumentar as simulações. Medir esforço humano e custo de revisão, não apenas tokens. Como teste adicional, comparar ferramentas de citações com busca por termos, mantendo condições comparáveis para separar acesso e supervisão.
 
-**Fontes:** Relatório, seções 3 e 5.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
 ### 12. Três questões para a pós-graduação
 
 22:05–25:00 (175 s)
 
-Reservar quase três minutos para abrir a discussão. A primeira questão trata da contribuição e dos patamares de originalidade e autonomia de mestrado e doutorado. A segunda trata de disciplinas, qualificações e defesas capazes de tornar compreensão observável. A terceira pergunta como ensinar a usar agentes sem impedir a construção de competências necessárias para julgá-los. O caso oferece artefatos e decisões auditáveis. Não estabelece uma política institucional nem demonstra aprendizagem. O relatório e os demais produtos estão no repositório, com fontes acessíveis no apoio.
+Abrir a discussão sobre relevância da pergunta, avaliação precoce do argumento e custo humano de revisão. O caso demonstra produção de artefatos e correções internas, mas não êxito científico autônomo. A leitura inicial negativa deve orientar os próximos testes sem generalização universal. Não atribuir à IA a substituição de anos de formação; tampouco descartar apoio computacional sem avaliar tarefas delimitadas.
 
-**Fontes:** Relatório, seção 5.
+**Fontes:** Relatório, seções 2.2–2.3; reavaliacao_especialista.md; protocolo_busca.md.
 
 ### 13. Definições das métricas
 
@@ -129,6 +129,6 @@ Aplicação dos preços oficiais Astra Standard de 13/09/2026 aos registros úni
 
 Apoio opcional.
 
-Abrir os quatro links: dissertação final do Codex v1.0.0 (167 páginas), revisão Gemini v1.1.0 (170 páginas), artigo final do Codex no commit 26ae3ac (9 páginas) e revisão Gemini no commit 09b3584 (9 páginas). Comparar resumos, introduções e conclusões. A narrativa do Codex é mais defensiva e a do Gemini, mais afirmativa neste caso. Perguntar o que ganhou clareza e quais alegações ficaram mais fortes com os mesmos dados. A versão Codex já incorporava pareceres do Gemini; o agy recebeu um pedido específico de revisão afirmativa. Não se trata de uma comparação controlada entre modelos. O README também oferece cópias preservadas, links para o relatório, fontes e demais produtos.
+Abrir os quatro links: dissertação final do Codex v1.0.0 (167 páginas), revisão Gemini v1.1.0 (170 páginas), artigo final do Codex no commit 26ae3ac (9 páginas) e revisão Gemini no commit 09b3584 (9 páginas). Comparar resumos, introduções e conclusões. A narrativa do Codex é mais defensiva e a do Gemini, mais afirmativa neste caso. Perguntar o que ganhou clareza e quais alegações ficaram mais fortes com os mesmos dados. A versão Codex já incorporava pareceres do Gemini; o agy recebeu um pedido específico de revisão afirmativa. Não se trata de uma comparação controlada entre modelos. O README também oferece cópias preservadas, links para o relatório, fontes e demais produtos. As duas versões precisam de avaliação científica; a revisão afirmativa não assegurou clareza para o especialista.
 
 **Fontes:** README, seção Compare as versões do Codex e do Gemini; relatório, seção 2.1; output/pdf/comparacao_llms/manifesto.json.
