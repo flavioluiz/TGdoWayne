@@ -1,6 +1,6 @@
-# Dissertação v2.0.0-rc.2 — candidata a revisão humana
+# Dissertação v2.0.0-rc.3 — candidata a revisão humana
 
-**PDF:** [`output/pdf/v2.0.0-rc.2/dissertacao.pdf`](../output/pdf/v2.0.0-rc.2/dissertacao.pdf) (60 páginas)
+**PDF:** [`output/pdf/v2.0.0-rc.3/dissertacao.pdf`](../output/pdf/v2.0.0-rc.3/dissertacao.pdf) (62 páginas)
 
 **Título:** *Polarizações de ondas gravitacionais com gráviton massivo: o modelo de Visser revisitado e as assinaturas em redes de temporização de pulsares*
 
@@ -20,7 +20,7 @@ Esta é uma reescrita completa da dissertação, feita depois que a leitura espe
 | 2. Fundamentos | Polarizações e classes E(2); família de termos de massa (Fierz–Pauli, `a = 1`; Visser, `a = 1/2`); fantasma, vDVZ, dRGT, Vainshtein; limites; PTAs |
 | 3. TG revisitado | Matriz de marés exata; **seis amplitudes em Visser confirmadas exatamente**; o sexto modo é o traço, um fantasma escalar; em Fierz–Pauli, cinco modos e `p_l = −(f_g/f)² p_b`; validade do NP/E(2) (erro de ~60% no exemplo de 2004); supressão `(f_g/f)²` e sua dependência da normalização; fator 2 na massa |
 | 4. PTA | A resposta de temporização depende só da matriz de marés do TG; ORFs tensorial e de helicidade zero com termos dos pulsares; degenerescência no limiar explicada por simetria SO(3); discrepância em Liang–Trodden eq. 45 |
-| 5. Simulações | Resultados antigos reinterpretados com rótulos físicos: pouca informação sobre a massa; a compressão remove cerca de 95% dela; a aproximação normal multiplica por ~10 as falsas detecções escalares; limitações declaradas |
+| 5. Simulações | Resultados antigos reinterpretados com rótulos físicos: pouca informação sobre a massa; a média fixa em frequência testada remove cerca de 95% dela; a aproximação normal multiplica por ~10 as falsas detecções escalares; limitações declaradas |
 | 6. Conclusões | Respostas a Q1–Q3; próximo passo: previsão de sensibilidade para uma rede realista |
 
 ## Verificações feitas nesta reescrita
@@ -41,9 +41,15 @@ Esta é uma reescrita completa da dissertação, feita depois que a leitura espe
 
 ```bash
 make -C dissertacao_v2 figuras   # regenera as figuras (usa .venv)
-make -C dissertacao_v2 pdf       # compila e copia para output/pdf/v2.0.0-rc.2/
+make -C dissertacao_v2 pdf       # compila e copia para output/pdf/v2.0.0-rc.3/
 ```
 
-SHA-256 do PDF publicado: `a37a19bfba561c59c7d575cc1de0e62e03ac3e57aaacd98c47ade80b51c31ee4`.
+SHA-256 do PDF publicado: `3a2cf918ba00c9c72e3343160cb795f818cff5a38fc585ceb2d45128284e02d3`.
 
 **Nota sobre a rc.1:** o PDF da tag `v2.0.0-rc.1` saiu com o resumo, o abstract e a folha de registro do template ITA (texto de exemplo sobre um manipulador subatuado). A causa foi uma colisão de nomes: `pretextuais/resumo.tex` casava com `templates/ita/PreTextuais/resumo.tex` no disco do macOS, que não diferencia maiúsculas de minúsculas, e o template vinha antes no `TEXINPUTS`. A rc.2 renomeia os arquivos (`resumo_v2.tex`, `abstract_v2.tex`, `referencias_v2.bib`) e põe as fontes da dissertação antes do template. O corpo do texto é o mesmo da rc.1.
+
+**Mudanças na rc.3.** A rc.3 responde a uma revisão crítica do GPT-6 Astra.
+- A pouca informação sobre a massa passa a ser apresentada como explicação plausível, não demonstrada, das diferenças pequenas entre as respostas.
+- Corrige a descrição dos métodos de integração: a campanha tensorial I usou amostragem por importância.
+- Restringe as conclusões sobre compressão à média fixa testada e cita esquemas que preservam informação.
+- Deixa claro, no resumo, que as amplitudes de Newman–Penrose do TG são contrações exatas e que só a sua leitura como polarizações é aproximada.

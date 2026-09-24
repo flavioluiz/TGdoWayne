@@ -79,9 +79,12 @@ informação perdida na compressão.
 
 A Tabela~\ref{tab:sim-campanhas} resume as três campanhas usadas. Em
 todas, os parâmetros verdadeiros foram sorteados da priori (500
-realizações por análise), e as posteriores foram calculadas por
-integração numérica determinística, com controle explícito do erro
-numérico (Apêndice~\ref{ap:reproducao}).
+realizações por análise). Na campanha tensorial I, com cinco parâmetros,
+as posteriores foram estimadas por amostragem por importância, com
+réplicas independentes. Nas campanhas tensorial II e escalar, com um e
+dois parâmetros, foram calculadas por quadratura determinística. Em
+todas, o erro numérico foi controlado explicitamente
+(Apêndice~\ref{ap:reproducao}).
 
 \begin{table}[htbp]
 \centering
@@ -148,28 +151,45 @@ disponível. A perda devida à compressão, medida no controle gaussiano,
 
 Três lições decorrem desse resultado.
 
-\paragraph{A compressão em frequência destrói quase toda a informação
-sobre a massa.} Isso era esperado pela Eq.~\eqref{eq:pta-fraca}. A
+\paragraph{A compressão examinada destrói quase toda a informação
+sobre a massa.} A compressão testada é uma média fixa, não otimizada,
+dos estimadores sobre os canais. A perda era esperada pela
+Eq.~\eqref{eq:pta-fraca}. A
 distorção dispersiva decai como $1/k^2$, e a média sobre os canais dilui
 o canal mais baixo, onde está quase toda a informação, com canais que
 quase não dependem da massa. A análise local de Fisher na campanha
 escalar confirma esse padrão com seis parâmetros. Algumas combinações
 de parâmetros retêm 60--70\% da informação após a compressão, enquanto
-a combinação mais afetada retém menos de 1\%.
+a combinação mais afetada retém menos de 1\%. O resultado não se
+estende automaticamente a outras compressões. Existem esquemas
+construídos para preservar a informação sobre parâmetros escolhidos,
+como a compressão pelo escore \autocite{alsing2018compression} e as
+compressões de dados propostas para PTAs \autocite{vanhaasteren2013}.
+Sua adequação à massa do gráviton não foi testada aqui.
 
-\paragraph{Uma aproximação pode parecer inofensiva porque não há o que
-errar.} Na campanha tensorial II, as posteriores obtidas com a resposta
+\paragraph{Diferenças pequenas não validam uma aproximação quando os
+dados informam pouco.} Na campanha tensorial II, as posteriores obtidas com a resposta
 avaliada em $f_{\rm ref}=1/T$ (Eq.~\ref{eq:pta-fref}) foram comparadas
 com as da resposta exata, sobre as mesmas correlações comprimidas. Em
 50 realizações com ruído conhecido, os deslocamentos do limite superior
 de 95\% de $u$ foram todos menores que $0{,}01$, e as médias ficaram
-entre $-0{,}0044$ e $0{,}0041$. Isso \emph{não} valida a aproximação. As
-correlações comprimidas quase não contêm informação sobre a massa, e
-uma mudança na resposta não tem como deslocar uma posterior que é
-praticamente a priori. As mesmas aproximações mudam apreciavelmente a
-distribuição prevista dos dados perto do limiar quando o sinal é
-intenso (Seção~\ref{sec:pta-informacao}). Quando a nuisance foi
-marginalizada, a comparação ficou inconclusiva na mesma escala.
+entre $-0{,}0044$ e $0{,}0041$. Esse resultado não basta para validar a
+aproximação. Uma explicação plausível é a pouca informação: se as
+correlações comprimidas quase não informam sobre a massa, as posteriores
+das duas respostas ficam ambas próximas da priori e, por isso, próximas
+entre si. Essa explicação é uma hipótese compatível com os resultados,
+não uma relação causal demonstrada; testá-la exigiria repetir a
+comparação em regimes com mais informação. Dois fatos pesam a favor dela.
+Primeiro, as mesmas aproximações mudam apreciavelmente a distribuição
+prevista dos dados perto do limiar quando o sinal é intenso
+(Seção~\ref{sec:pta-informacao}). Segundo, a informação aparente não é
+um indicador confiável quando o modelo está errado. Com as correlações
+por frequência e a aproximação normal, a KL média foi de $0{,}099$ e
+$0{,}146$~nat nas duas redes, \emph{maior} que a dos dados completos com a
+verossimilhança exata ($0{,}069$ e $0{,}114$~nat). Uma análise incorreta
+pode, portanto, exibir informação que os dados não contêm. Quando a
+nuisance foi marginalizada, a comparação ficou inconclusiva na mesma
+escala.
 
 \paragraph{Limites superiores podem ser só a priori.} Se os dados não
 informam nada, com verossimilhança constante e priori uniforme em
@@ -314,8 +334,9 @@ a amplitude medida, e marginalizar o ruído e as distâncias. Deveria
 também perguntar diretamente qual a menor massa e qual a menor fração
 escalar que podem ser distinguidas da RG. As ferramentas desenvolvidas
 já comportam esse estudo: resposta com termos dos pulsares, setor
-escalar vinculado e controle do erro numérico. As conclusões metodológicas
-deste capítulo são robustas a essa mudança de regime, porque dizem
-respeito à forma da verossimilhança e à compressão. São elas: testar a
-verossimilhança dos estimadores, não comprimir em frequência quando o
-objetivo é a massa e reportar a informação ganha junto com os limites.
+escalar vinculado e controle do erro numérico. As lições metodológicas
+deste capítulo valem para os cenários testados e devem ser reavaliadas
+nesse novo regime. Elas indicam três cuidados: testar a verossimilhança
+dos estimadores no regime de interesse, verificar quanta informação
+sobre a massa uma eventual compressão preserva e reportar a informação
+ganha junto com os limites.

@@ -50,11 +50,16 @@ Experimento de ajuste de temporização &
 
 \section{Controle do erro numérico}
 
-As posteriores foram calculadas por quadratura determinística na massa
-e, na campanha escalar, também em $\varepsilon$. Não se usou amostragem
-por Monte Carlo. Para cada realização, a posterior foi avaliada com duas
-resoluções, e a diferença entre elas foi propagada como um intervalo
-numérico em cada quantidade derivada, como quantis, coberturas e fatores
+Os métodos de integração diferem entre as campanhas. Na campanha
+tensorial I, a posterior tem cinco parâmetros. Ela foi estimada por
+amostragem por importância: uma proposta ajustada num piloto e
+congelada, e réplicas independentes com 16\,384 e 65\,536 sorteios
+(\texttt{src/inference/campaign\_iid.py}). O erro padrão de Monte Carlo e
+a concordância entre réplicas e níveis compuseram envelopes numéricos
+para cada quantidade derivada. Nas campanhas tensorial II e escalar,
+com um e dois parâmetros, as posteriores foram calculadas por quadratura
+determinística em duas resoluções, e a diferença entre elas foi
+propagada da mesma forma. Isso vale para quantis, coberturas e fatores
 de Bayes. Quando o intervalo numérico não permitia decidir um teste, o
 resultado foi registrado como indeterminado, e a realização não foi
 descartada. As contagens citadas no Capítulo~\ref{cap:simulacoes} são

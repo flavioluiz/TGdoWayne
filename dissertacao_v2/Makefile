@@ -7,7 +7,7 @@ figuras:
 
 pdf:
 	cd latex && TEXINPUTS=$(CURDIR)/latex//:$(ROOT)/templates/ita//: latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error -outdir=../build dissertacao.tex
-	mkdir -p ../output/pdf/v2.0.0-rc.2 && cp build/dissertacao.pdf ../output/pdf/v2.0.0-rc.2/dissertacao.pdf
+	mkdir -p ../output/pdf/v2.0.0-rc.3 && cp build/dissertacao.pdf ../output/pdf/v2.0.0-rc.3/dissertacao.pdf
 
 clean:
 	rm -rf build
