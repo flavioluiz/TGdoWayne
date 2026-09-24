@@ -1,6 +1,6 @@
-# Dissertação v2.0.0-rc.1 — candidata a revisão humana
+# Dissertação v2.0.0-rc.2 — candidata a revisão humana
 
-**PDF:** [`output/pdf/v2.0.0-rc.1/dissertacao.pdf`](../output/pdf/v2.0.0-rc.1/dissertacao.pdf) (60 páginas)
+**PDF:** [`output/pdf/v2.0.0-rc.2/dissertacao.pdf`](../output/pdf/v2.0.0-rc.2/dissertacao.pdf) (60 páginas)
 
 **Título:** *Polarizações de ondas gravitacionais com gráviton massivo: o modelo de Visser revisitado e as assinaturas em redes de temporização de pulsares*
 
@@ -41,7 +41,9 @@ Esta é uma reescrita completa da dissertação, feita depois que a leitura espe
 
 ```bash
 make -C dissertacao_v2 figuras   # regenera as figuras (usa .venv)
-make -C dissertacao_v2 pdf       # compila e copia para output/pdf/v2.0.0-rc.1/
+make -C dissertacao_v2 pdf       # compila e copia para output/pdf/v2.0.0-rc.2/
 ```
 
-SHA-256 do PDF publicado: `0efa7799ade0420e0c027c9cb80f27267cd9572b757ec4aaa978ae5a74d0c156`.
+SHA-256 do PDF publicado: `a37a19bfba561c59c7d575cc1de0e62e03ac3e57aaacd98c47ade80b51c31ee4`.
+
+**Nota sobre a rc.1:** o PDF da tag `v2.0.0-rc.1` saiu com o resumo, o abstract e a folha de registro do template ITA (texto de exemplo sobre um manipulador subatuado). A causa foi uma colisão de nomes: `pretextuais/resumo.tex` casava com `templates/ita/PreTextuais/resumo.tex` no disco do macOS, que não diferencia maiúsculas de minúsculas, e o template vinha antes no `TEXINPUTS`. A rc.2 renomeia os arquivos (`resumo_v2.tex`, `abstract_v2.tex`, `referencias_v2.bib`) e põe as fontes da dissertação antes do template. O corpo do texto é o mesmo da rc.1.
