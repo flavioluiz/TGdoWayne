@@ -1,0 +1,41 @@
+% Dissertação -- versão 2 (reescrita a partir do TG e dos resultados já obtidos).
+% Compilar a partir de dissertacao_v2/ com:  make pdf
+\documentclass[msc]{ita}
+\input{configuracao}
+\input{pretextuais/identificacao}
+\input{pretextuais/listas}
+\begin{document}
+\frontmatter
+\maketitle
+\begin{abstract}
+\input{pretextuais/resumo}
+\keywords{ondas gravitacionais; gráviton massivo; polarizações; temporização de pulsares.}
+\end{abstract}
+\begin{englishabstract}
+\input{pretextuais/abstract}
+\englishkeywords{gravitational waves; massive graviton; polarization; pulsar timing arrays.}
+\end{englishabstract}
+\begingroup
+\singlespacing
+\setlength{\parskip}{0pt}
+\listoffigures
+\listoftables
+\glsaddall
+\listofabbreviations
+\listofsymbols
+\tableofcontents
+\endgroup
+\mainmatter
+\pagenumbering{arabic}
+\input{capitulos/01_introducao}
+\input{capitulos/02_fundamentos}
+\input{capitulos/03_polarizacoes}
+\input{capitulos/04_resposta_pta}
+\input{capitulos/05_simulacoes}
+\input{capitulos/06_conclusoes}
+\printbibliography[heading=bibintoc,title={Referências}]
+\appendix
+\input{apendices/A_convencoes}
+\input{apendices/B_reproducao}
+\input{pretextuais/registro}
+\end{document}

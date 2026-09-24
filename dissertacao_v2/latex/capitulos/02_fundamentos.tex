@@ -1,0 +1,306 @@
+\chapter{Fundamentos e revisão da literatura}
+\label{cap:fundamentos}
+
+Este capítulo reúne o que é necessário para ler os capítulos seguintes:
+as polarizações na RG e em teorias métricas gerais, a gravitação
+massiva linear e seus problemas conhecidos, os limites observacionais
+sobre a massa do gráviton e o princípio de detecção por PTAs. A última
+seção situa a dissertação na literatura recente.
+
+\section{Ondas gravitacionais na relatividade geral linearizada}
+
+Adota-se a assinatura $\eta_{\mu\nu}=\operatorname{diag}(1,-1,-1,-1)$,
+como no TG. Longe das fontes, escreve-se
+$g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu}$, com $|h_{\mu\nu}|\ll1$, e
+define-se a perturbação com traço invertido
+$\bar h_{\mu\nu}=h_{\mu\nu}-\frac12\eta_{\mu\nu}h$, onde
+$h=\eta^{\mu\nu}h_{\mu\nu}$. Na condição harmônica
+$\partial^\mu\bar h_{\mu\nu}=0$, as equações de Einstein no vácuo
+reduzem-se a $\Box\bar h_{\mu\nu}=0$ \autocite{maggiore2008}. Uma onda
+plana $\bar h_{\mu\nu}\propto e^{-i\omega t+ikz}$ tem $\omega=ck$.
+
+A condição harmônica não fixa completamente o calibre. As
+transformações residuais permitem anular as componentes temporais e o
+traço, e impor transversalidade; no calibre transverso e sem traço (TT)
+restam apenas $h_{11}=-h_{22}=h_+$ e $h_{12}=h_\times$. Esse é o
+conteúdo físico da RG: duas polarizações, de helicidades $\pm2$
+\autocite{maggiore2008}. O TG reproduz essa contagem no seu Capítulo~3.
+
+Um detector não mede $h_{\mu\nu}$ diretamente, pois $h_{\mu\nu}$
+depende do calibre. O observável local é a curvatura. Para duas
+partículas livres próximas, separadas por $\xi^j$, a equação do desvio
+geodésico dá a aceleração relativa em termos das componentes
+\begin{equation}
+ E_{ij}\equiv R_{0i0j},
+ \label{eq:fund-marés}
+\end{equation}
+chamadas componentes ``elétricas'' do tensor de Riemann ou matriz de
+marés. A convenção de sinal adotada e a relação
+$\ddot\xi^i=c^2E_{ij}\xi^j$ estão no Apêndice~\ref{ap:convencoes}. Como
+o Riemann linearizado é invariante por transformações infinitesimais de
+coordenadas, $E_{ij}$ não depende do calibre. É ele que o TG calcula e é
+dele que partirá a resposta de PTA no Capítulo~\ref{cap:pta}.
+
+\section{Polarizações em teorias métricas}
+
+A matriz $E_{ij}$ é simétrica e tem seis componentes. Para uma onda que
+se propaga ao longo de $z$, elas se organizam por seu comportamento sob
+rotações em torno do eixo de propagação:
+\begin{itemize}
+ \item dois modos tensoriais, $E_{11}-E_{22}$ e $E_{12}$, de helicidade
+ $\pm2$, os únicos presentes na RG;
+ \item dois modos vetoriais, $E_{13}$ e $E_{23}$, de helicidade $\pm1$;
+ \item dois modos escalares, de helicidade zero: o transversal ou
+ \emph{breathing}, $E_{11}+E_{22}$, e o longitudinal, $E_{33}$.
+\end{itemize}
+Uma teoria métrica genérica pode excitar até esses seis padrões. A
+teoria determina quantos deles variam de modo independente e com que
+relação de dispersão.
+
+Eardley, Lee e Lightman organizaram essa descrição no formalismo de
+Newman--Penrose \autocite{eardley1973}. Para ondas planas nulas, com
+vetor de onda $k^\mu$ tal que $k^\mu k_\mu=0$, as identidades de Bianchi
+reduzem as componentes independentes do Riemann a seis, descritas pelas
+amplitudes $\Psi_2$ (real), $\Psi_3$ (complexa), $\Psi_4$ (complexa) e
+$\Phi_{22}$ (real), com helicidades $0$, $\pm1$, $\pm2$ e $0$. O
+subgrupo de Lorentz que preserva um vetor nulo é isomorfo ao grupo
+euclidiano E(2). Sob suas transformações, a presença de algumas
+amplitudes depende do observador, mas certas afirmações são invariantes.
+Isso define as classes E(2):
+\begin{itemize}
+ \item II$_6$: $\Psi_2\neq0$; todos os observadores concordam sobre
+ $\Psi_2$, e até seis modos podem aparecer;
+ \item III$_5$: $\Psi_2=0$ e $\Psi_3\neq0$;
+ \item N$_3$: $\Psi_2=\Psi_3=0$, com $\Psi_4\neq0$ e $\Phi_{22}\neq0$;
+ \item N$_2$: apenas $\Psi_4\neq0$, como na RG;
+ \item O$_1$: apenas $\Phi_{22}\neq0$; O$_0$: nenhuma onda.
+\end{itemize}
+Teorias escalares--tensoriais do tipo Brans--Dicke são da classe
+N$_3$; a RG é N$_2$ \autocite{will2014}.
+
+O ponto relevante para esta dissertação é o domínio da classificação.
+Ela foi construída para ondas exatamente nulas e estendida a ondas
+\emph{quase} nulas. Nesse caso, introduz-se
+\begin{equation}
+ \epsilon=\left(\frac{c}{v_g}\right)^2-1
+ \label{eq:fund-epsilon}
+\end{equation}
+e desprezam-se correções de ordem $\epsilon$ nas relações entre as
+componentes \autocite{eardley1973}. O TG e o artigo de 2004 adotam essa
+extensão (TG, eqs.~5.7 e 5.33--5.43). Para uma onda massiva, $\epsilon$
+não é necessariamente pequeno. O Capítulo~\ref{cap:polarizacoes} examina
+esse ponto quantitativamente.
+
+\section{Gravitação massiva linear}
+\label{sec:fund-massiva}
+
+\subsection{Uma família de termos de massa}
+
+Em torno de Minkowski, a ação quadrática de um campo simétrico
+$h_{\mu\nu}$ que reproduz a RG linearizada sem massa admite um termo de
+massa com duas estruturas possíveis, $h_{\mu\nu}h^{\mu\nu}$ e $h^2$.
+Nas convenções do Capítulo~\ref{cap:polarizacoes}, as equações no vácuo
+podem ser escritas como
+\begin{equation}
+ G^{(1)}_{\mu\nu}[h]-\frac{\mu^2}{2}
+ \left(h_{\mu\nu}-a\,\eta_{\mu\nu}h\right)=0,
+ \qquad \mu=\frac{m_gc}{\hbar},
+ \label{eq:fund-familia}
+\end{equation}
+em que $G^{(1)}_{\mu\nu}$ é o tensor de Einstein linearizado e $a$ é um
+número real. A identidade de Bianchi linearizada,
+$\partial^\mu G^{(1)}_{\mu\nu}\equiv0$, impõe quatro vínculos,
+$\partial^\mu(h_{\mu\nu}-a\eta_{\mu\nu}h)=0$, que não são escolhas de
+calibre: a massa quebra a invariância de calibre da teoria sem massa.
+Dois casos importam aqui.
+\begin{itemize}
+ \item $a=1$ é o termo de Fierz--Pauli \autocite{fierz1939}. O traço da
+ equação, combinado com os vínculos, dá $h=0$; restam
+ $\partial^\mu h_{\mu\nu}=0$ e $(\Box+\mu^2)h_{\mu\nu}=0$. São
+ $10-4-1=5$ graus de liberdade, as cinco helicidades de uma partícula
+ massiva de spin dois.
+ \item $a=\frac12$ é o termo de Visser. Os vínculos tornam-se
+ $\partial^\mu\bar h_{\mu\nu}=0$, e a equação reduz-se a
+ $(\Box+\mu^2)\bar h_{\mu\nu}=0$. O traço não é eliminado, e restam
+ seis graus de liberdade.
+\end{itemize}
+O segundo caso é o do TG. O termo de massa de Visser é
+\autocite{visser1998}
+\begin{equation}
+ \mathcal L_{\rm mass}\propto m_g^2\left[
+ (g-g_0)_{\mu\nu}(g-g_0)^{\mu\nu}-\frac12(g-g_0)^2\right],
+ \label{eq:fund-visser}
+\end{equation}
+com índices elevados pela métrica de fundo $g_0$. Linearizado com
+$g_0=\eta$, isso corresponde a $a=\frac12$. Visser nota explicitamente
+que esse termo não é o de Fierz--Pauli. Afirma também que a escolha é
+essencial para um limite clássico bem comportado quando $m_g\to0$
+\autocite{visser1998}.
+
+\subsection{O sexto modo é um fantasma}
+\label{sec:fund-fantasma}
+
+Para $a\neq1$, o modo adicional é um escalar associado ao traço de
+$h_{\mu\nu}$. Sua energia cinética tem sinal oposto ao dos demais
+modos, isto é, trata-se de um fantasma. Essa é uma propriedade conhecida
+dos termos de massa lineares que não são de Fierz--Pauli
+\autocite{hinterbichler2012}. Park estudou explicitamente essa família.
+Ele decompôs o campo em uma parte de spin dois, de massa $m$, e um
+escalar fantasma de massa $m_a^2=(4a-1)m^2/[2(1-a)]$ \autocite{park2010}.
+Para $a=\frac12$, $m_a=m$: o fantasma tem a mesma massa e, portanto, a
+mesma relação de dispersão dos demais modos. Isso é consistente com a
+equação única $(\Box+\mu^2)\bar h_{\mu\nu}=0$ do modelo de Visser.
+
+O mesmo fantasma explica por que o modelo de Visser não sofre a
+descontinuidade vDVZ na ordem linear. Com fontes conservadas, a solução
+de $(\Box+\mu^2)\bar h_{\mu\nu}=-16\pi GT_{\mu\nu}/c^4$ tem a mesma
+estrutura tensorial da RG, $T'^{\mu\nu}T_{\mu\nu}-\frac12T'T$,
+multiplicada por um propagador de Yukawa. Em Fierz--Pauli, a estrutura
+é $T'^{\mu\nu}T_{\mu\nu}-\frac13T'T$, e a diferença não desaparece
+quando $m_g\to0$ \autocite{vandam1970,zakharov1970}. Em Fierz--Pauli, a
+helicidade zero acopla-se ao traço de $T_{\mu\nu}$; no modelo de Visser,
+o fantasma escalar acopla-se ao traço com sinal oposto e cancela esse
+efeito a distâncias muito menores que $\mu^{-1}$ \autocite{park2010}.
+O ``sexto estado de polarização'' do TG é, portanto, o grau de
+liberdade que torna o modelo livre de vDVZ na ordem linear, ao preço de
+uma instabilidade.
+
+\subsection{Estrutura não linear}
+\label{sec:fund-naolinear}
+
+A consistência de Fierz--Pauli é linear. Boulware e Deser mostraram que
+extensões não lineares genéricas reintroduzem um sexto modo fantasma
+\autocite{boulware1972}. A construção de de Rham, Gabadadze e Tolley
+(dRGT) escolhe o potencial de modo a preservar o vínculo que o elimina
+\autocite{derham2011}; a versão bimétrica de Hassan e Rosen torna
+dinâmica também a segunda métrica \autocite{hassan2012}. Em torno de
+fundos planos, o setor massivo dessas teorias tem o conteúdo linear de
+Fierz--Pauli; na versão bimétrica, ele vem acompanhado de um gráviton
+sem massa \autocite{derham2014review}.
+
+A descontinuidade vDVZ é resolvida por outro mecanismo. Perto de uma
+fonte de raio de Schwarzschild $r_s$, as interações não lineares da
+helicidade zero dominam abaixo do raio de Vainshtein,
+$r_V\sim(r_s/\mu^2)^{1/3}$, e suprimem a força escalar adicional
+\autocite{vainshtein1972,babichev2013}. Essa supressão tem consequência
+direta para esta dissertação. A amplitude com que a helicidade zero é
+\emph{emitida} por fontes astrofísicas depende da dinâmica não linear.
+Não é fixada pela análise de propagação linear. Por isso, nos
+Capítulos~\ref{cap:pta} e~\ref{cap:simulacoes}, a potência do modo
+escalar será um parâmetro livre.
+
+\section{Limites observacionais sobre a massa do gráviton}
+
+A Tabela~\ref{tab:fund-limites} resume limites representativos, com a
+frequência de corte $f_g=m_gc^2/h$ correspondente. Os métodos diferem.
+Os limites por ondas gravitacionais testam a dispersão ao longo da
+propagação. Os de efemérides planetárias testam um potencial de Yukawa
+estático, cuja relação com a massa de dispersão depende da teoria e do
+mecanismo de Vainshtein. Os valores não são, portanto, estritamente
+intercambiáveis \autocite{will2014,lvk2026}.
+
+\begin{table}[htbp]
+\centering
+\caption{Limites superiores representativos sobre a massa do gráviton e
+frequência de corte correspondente, $f_g=m_gc^2/h$.}
+\label{tab:fund-limites}
+\small
+\begin{tabular}{p{0.46\textwidth}cc}
+\toprule
+Origem & $m_g$ (eV$/c^2$) & $f_g$ (Hz)\\
+\midrule
+Sistema Solar, adotado no artigo de 2004 \autocite{depaula2004} & $4{,}4\times10^{-22}$ & $1{,}1\times10^{-7}$\\
+GWTC-3, priori uniforme na massa, 90\% \autocite{lvk2026} & $2{,}23\times10^{-23}$ & $5{,}4\times10^{-9}$\\
+GWTC-4, 90\% \autocite{lvk2026} & $1{,}92\times10^{-23}$ & $4{,}6\times10^{-9}$\\
+NANOGrav 15 anos com modelo espectral \autocite{wu2024} & $8{,}2\times10^{-24}$ & $2{,}0\times10^{-9}$\\
+Efemérides planetárias, 99,7\% (citado em \autocite{lvk2026}) & $1{,}01\times10^{-24}$ & $2{,}4\times10^{-10}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Duas observações orientam a leitura. Primeiro, todos os limites por
+ondas gravitacionais situam $f_g$ em poucos nanohertz ou abaixo, isto é,
+na banda das PTAs ou abaixo dela. Segundo, a análise de Wu e
+colaboradores mostra que as correlações angulares do NANOGrav, sozinhas,
+não fornecem um limite superior explícito no intervalo
+$3\times10^{-25}$--$8\times10^{-24}\,\mathrm{eV}/c^2$. O limite da
+tabela depende da combinação com o espectro observado \autocite{wu2024}.
+Esse resultado antecipa um tema do Capítulo~\ref{cap:simulacoes}: a
+informação sobre a massa contida na forma das correlações é pequena.
+
+\section{Redes de temporização de pulsares}
+
+Pulsares de milissegundo são relógios de grande estabilidade. Uma PTA
+mede, para cada pulsar, os tempos de chegada (TOAs) dos pulsos ao longo
+de anos, e subtrai um modelo de temporização que inclui rotação,
+astrometria e órbita. Uma onda gravitacional que atravessa a linha de
+visada altera a frequência aparente dos pulsos. O resíduo de
+temporização é a integral temporal desse desvio fracionário de
+frequência, $r_a(t)=\int^t z_a(t')\,dt'$ \autocite{detweiler1979}.
+
+Para um fundo estocástico, isotrópico e não polarizado da RG, a
+correlação entre os resíduos de dois pulsares separados por um ângulo
+$\zeta$ tem a forma de Hellings--Downs \autocite{hellings1983},
+\begin{equation}
+ \Gamma_{\rm HD}(\zeta)=\frac12-\frac{x}{4}+\frac32x\ln x,
+ \qquad x=\frac{1-\cos\zeta}{2}.
+ \label{eq:fund-hd}
+\end{equation}
+Essa curva é a assinatura de uma onda gravitacional tensorial e sem
+massa. Sua observação, com significância crescente, é a base da
+evidência reportada em 2023 \autocite{agazie2023}. O espectro de um fundo
+de binárias de buracos negros supermassivos é uma lei de potência,
+$h_c(f)\propto f^{-2/3}$, que nos resíduos corresponde a um índice
+espectral $\gamma=13/3$. Com observações de duração $T$, a resolução em
+frequência é $1/T$. Para $T$ entre cinco e vinte anos, os canais mais
+baixos ficam entre cerca de $1,6$ e $6\,\mathrm{nHz}$, a mesma ordem das
+frequências de corte da Tabela~\ref{tab:fund-limites}.
+
+\section{PTAs e gravidade massiva: estado da arte}
+
+Lee, Jenet e Price calcularam as correlações de PTA para polarizações
+não einsteinianas \autocite{lee2008}. Lee e colaboradores incluíram a
+dispersão de um gráviton massivo na correlação tensorial, com o termo da
+Terra, e estimaram a sensibilidade de PTAs à massa \autocite{lee2010}.
+Liang e Trodden derivaram as correlações de todas as polarizações de
+uma teoria massiva, com termos da Terra e do pulsar
+\autocite{liang2021}. A revisão mais recente desse trabalho inclui o
+movimento dos observadores quando a perturbação tem componentes
+temporais. Cordes e colaboradores trataram distâncias finitas e
+velocidades de fase arbitrárias, com expressões fechadas para o termo
+da Terra e para a autocorrelação \autocite{cordes2025}. Bernardo e Ng
+estudaram correlações escalares e tensoriais em teorias modificadas e
+seu limite de variância cósmica \autocite{bernardo2024}.
+
+No lado observacional, Wu e colaboradores limitaram a massa com os dados
+de 15 anos do NANOGrav \autocite{wu2024}. A colaboração NANOGrav buscou
+polarizações transversais adicionais sem encontrar evidência
+significativa \autocite{nanograv2024}. Choi e Kahniashvili compararam
+setores massivos com correlações binadas de diferentes PTAs
+\autocite{choi2025}; Wu, Bi e Huang estudaram o efeito da interferência
+de um número finito de fontes \autocite{wu2025}. Zhao e Wang analisaram
+correlações comprimidas em frequência do MeerKAT. Eles avaliaram a
+resposta dispersiva em uma frequência de referência $f=1/T$ e
+projetaram limites para o SKA \autocite{zhao2026}. Han e Zhao
+estudaram previsões com a covariância completa de estimadores de
+correlação \autocite{han2026}. Franciolini e colaboradores discutiram as
+verossimilhanças apropriadas para dados de fundos estocásticos
+\autocite{franciolini2025}.
+
+Do lado da cinemática local, Hyun, Kim e Lee obtiveram as amplitudes
+exatas dos seis modos para propagação não nula. Eles apontaram as
+limitações das aproximações quase nulas \autocite{hyun2019}.
+
+\section{Onde esta dissertação se situa}
+
+A literatura de PTAs trata as polarizações adicionais, em geral, como
+setores fenomenológicos independentes, cada um com sua potência. A
+literatura sobre o TG e seus sucessores trata a cinemática local, sem
+chegar ao observável de temporização. Esta dissertação faz a ligação
+entre as duas. O Capítulo~\ref{cap:polarizacoes} revisa a cinemática do
+TG de forma exata e a reinterpreta. O Capítulo~\ref{cap:pta} mostra que
+a resposta de PTA depende apenas da matriz de marés calculada no TG, e
+calcula as correlações do setor de helicidade zero de Fierz--Pauli, no
+qual as deformações transversal e longitudinal vêm de uma única
+amplitude. O Capítulo~\ref{cap:simulacoes} avalia quanto disso uma rede
+pequena consegue medir.

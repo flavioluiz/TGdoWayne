@@ -1,0 +1,181 @@
+\chapter{Introdução}
+\label{cap:introducao}
+
+\section{Contexto}
+
+Na relatividade geral (RG), uma onda gravitacional no vácuo propaga-se
+com a velocidade da luz e possui dois estados de polarização, os modos
+``$+$'' e ``$\times$''. Ambas as propriedades decorrem de o gráviton,
+na linguagem de teoria de campos, ser uma partícula de spin dois sem
+massa. Uma massa não nula muda as duas coisas ao mesmo tempo: a relação
+de dispersão passa a depender da frequência e surgem estados de
+polarização adicionais. Por isso, a propagação e a polarização das ondas
+gravitacionais são, desde os anos 1970, instrumentos naturais para testar
+a gravitação \autocite{eardley1973,will2014}.
+
+Esses testes deixaram de ser apenas propostas. Desde a primeira detecção
+direta de uma coalescência de buracos negros \autocite{gw150914}, as
+colaborações LIGO, Virgo e KAGRA (LVK) restringem a massa do gráviton
+pela dispersão acumulada ao longo da propagação; o limite mais recente
+é $m_g\leq1{,}92\times10^{-23}\,\mathrm{eV}/c^2$ a 90\% de credibilidade
+\autocite{lvk2026}. Em 2023, redes de temporização de pulsares (PTAs)
+reportaram evidência de um fundo estocástico de ondas gravitacionais na
+faixa de nanohertz, identificado pela correlação angular de
+Hellings--Downs entre os resíduos de diferentes pulsares
+\autocite{agazie2023,hellings1983}. Esses dados já foram usados para
+limitar a massa do gráviton \autocite{wu2024} e para buscar polarizações
+transversais adicionais \autocite{nanograv2024}.
+
+\section{O trabalho de partida}
+
+Esta dissertação parte do Trabalho de Graduação de Wayne Leonardo Silva
+de Paula, defendido no ITA em 2003 \autocite{tg2003}, cujo núcleo foi
+publicado no ano seguinte por de Paula, Miranda e Marinho
+\autocite{depaula2004}. O TG estudou a teoria bimétrica de Visser
+\autocite{visser1998}, na qual a massa do gráviton é introduzida por um
+termo que depende de uma métrica de fundo não dinâmica. Linearizando as
+equações de campo em torno de Minkowski e aplicando o formalismo de
+Newman--Penrose (NP) e a classificação E(2) de Eardley, Lee e Lightman
+\autocite{eardley1973}, o trabalho obteve três resultados:
+\begin{enumerate}
+ \item as ondas planas fracas da teoria pertencem à classe~II$_6$, isto é,
+ admitem até seis estados de polarização, com conteúdo de helicidades
+ $0$, $\pm1$ e $\pm2$;
+ \item expressões explícitas para as amplitudes NP
+ $\Psi_2,\Psi_3,\Psi_4$ e $\Phi_{22}$ em termos das componentes da
+ perturbação métrica, e a matriz de marés $E_{ij}$ que atuaria sobre
+ um detector;
+ \item uma comparação entre bandas de frequência: para amplitudes métricas
+ comparáveis, os modos adicionais seriam desprezíveis na banda dos
+ interferômetros terrestres e tornar-se-iam comparáveis aos modos da RG
+ em frequências próximas de $10^{-7}\,\mathrm{Hz}$. O TG concluiu que
+ detectores de baixa frequência seriam os mais adequados para
+ discriminar a teoria massiva.
+\end{enumerate}
+
+\section{O que mudou em vinte anos}
+
+Três desenvolvimentos posteriores tornam oportuno revisitar esses
+resultados.
+
+\paragraph{Teoria.} Sabe-se hoje que, entre os termos de massa
+quadráticos em torno de Minkowski, apenas a combinação de Fierz--Pauli
+\autocite{fierz1939} propaga exatamente cinco graus de liberdade sem
+fantasmas. Qualquer outra combinação propaga um sexto modo escalar com
+energia cinética de sinal errado \autocite{hinterbichler2012,park2010}.
+O termo de Visser não é de Fierz--Pauli; o próprio autor observa que
+essa escolha é deliberada, para evitar a descontinuidade de van
+Dam--Veltman--Zakharov (vDVZ) no limite de massa nula
+\autocite{visser1998,vandam1970,zakharov1970}. A contagem de seis
+polarizações do TG deve, portanto, ser reinterpretada à luz desse
+conhecimento. Também se compreende melhor a estrutura não linear:
+o fantasma de Boulware--Deser, sua eliminação na teoria de de Rham,
+Gabadadze e Tolley (dRGT) e o mecanismo de Vainshtein
+\autocite{boulware1972,derham2011,vainshtein1972,babichev2013}.
+
+\paragraph{Limites.} O limite do Sistema Solar usado em 2004 era
+$m_g<4{,}4\times10^{-22}\,\mathrm{eV}/c^2$. Os limites atuais são cerca
+de vinte a cinquenta vezes menores. Como os efeitos cinemáticos da massa
+são controlados pela razão $(f_g/f)^2$, em que $f_g=m_gc^2/h$ é a
+frequência de corte, a banda em que os modos adicionais deixam de ser
+suprimidos desloca-se de $10^{-7}\,\mathrm{Hz}$ para poucos nanohertz.
+Essa é precisamente a banda das PTAs.
+
+\paragraph{Formalismo.} A classificação E(2) foi construída para ondas
+nulas ou quase nulas. Ela pressupõe que a diferença entre a velocidade
+da onda e a da luz seja pequena. No regime em que os modos adicionais
+seriam relevantes, $f\sim f_g$, essa hipótese deixa de valer. O próprio
+exemplo numérico de baixa frequência do artigo de 2004 corresponde a uma
+velocidade de grupo de cerca de um quarto da velocidade da luz. Uma
+revisão do resultado exige, portanto, um tratamento exato em $f/f_g$
+\autocite{hyun2019}.
+
+\section{Questões e objetivos}
+
+A dissertação busca responder três questões encadeadas.
+
+\begin{enumerate}
+ \item[Q1.] \emph{O que permanece correto nos resultados do TG quando a
+ análise é refeita sem a aproximação quase nula, e como eles se comparam
+ à teoria linear consistente de Fierz--Pauli?}
+ \item[Q2.] \emph{Se os modos adicionais só podem ter efeito apreciável
+ na banda de nanohertz, como eles aparecem nas correlações entre
+ pulsares medidas por uma PTA?}
+ \item[Q3.] \emph{Quanto uma PTA pequena consegue efetivamente aprender
+ sobre a massa e sobre um modo escalar, e que cuidados de análise esses
+ testes exigem?}
+\end{enumerate}
+
+Os objetivos específicos correspondentes são:
+\begin{enumerate}
+ \item reconstruir a matriz de marés de uma onda plana massiva sem supor
+ propagação nula; contar as amplitudes independentes no modelo de Visser
+ e em Fierz--Pauli; identificar a origem física do sexto modo;
+ \item delimitar o domínio de validade das expressões NP do TG e da
+ classificação E(2) para ondas massivas, e rever a comparação entre
+ bandas de frequência com os limites atuais;
+ \item derivar a resposta de temporização de pulsares a uma onda massiva,
+ incluindo o termo do pulsar e o movimento dos observadores, e calcular
+ as correlações angulares dos setores tensorial e de helicidade zero;
+ \item usar simulações controladas, já executadas, para estimar a
+ informação disponível sobre a massa e sobre o modo escalar em redes
+ pequenas, e identificar aproximações de análise que distorcem as
+ conclusões.
+\end{enumerate}
+
+\section{Contribuições e delimitação}
+
+As contribuições desta dissertação são as seguintes.
+\begin{itemize}
+ \item Uma revisão exata, em $f/f_g$, da cinemática de polarização do TG.
+ Confirma-se que o modelo linear de Visser possui seis amplitudes de maré
+ independentes. Mostra-se que a sexta é o modo escalar associado ao traço
+ da perturbação, que na teoria linear não Fierz--Pauli é um fantasma. Em
+ Fierz--Pauli, restam cinco amplitudes, e as deformações escalares
+ transversal e longitudinal ficam vinculadas por
+ $p_l/p_b=-(f_g/f)^2$.
+ \item A identificação dos limites de validade das amplitudes NP do TG:
+ o erro da leitura quase nula de $\Psi_4$ é
+ $1-(1+\beta)^2/4$, e as classes E(2) não são invariantes para ondas
+ massivas. Registram-se também uma ambiguidade de fator dois na
+ normalização da massa e uma convenção de sinal da curvatura.
+ \item A demonstração de que a conclusão qualitativa do TG sobre as bandas
+ de frequência se mantém, mas depende da hipótese de amplitudes métricas
+ comparáveis. Com os limites atuais, a razão entre marés não tensoriais
+ e tensoriais só é de ordem um na banda das PTAs.
+ \item A resposta de PTA para os setores tensorial e de helicidade zero
+ de Fierz--Pauli, com termo do pulsar e movimento dos observadores. Ela
+ é expressa diretamente pela matriz de marés, o que liga o objeto
+ calculado no TG ao observável de temporização. Mostra-se que, no limiar
+ $f=f_g$, todas as helicidades produzem a mesma correlação angular por
+ estado, e explica-se essa degenerescência pela simetria de rotação do
+ referencial de repouso da onda. Identifica-se também uma discrepância
+ numa expressão publicada da correlação escalar.
+ \item Uma avaliação honesta, a partir de campanhas sintéticas já
+ executadas, do pouco que redes pequenas aprendem sobre a massa. Mostra-se
+ que a aproximação normal usual para estimadores de correlação multiplica
+ por cerca de dez a taxa de falsas detecções de polarização escalar.
+\end{itemize}
+
+A dissertação não deduz a emissão de ondas por fontes astrofísicas em uma
+teoria massiva completa, não resolve o mecanismo de Vainshtein e não
+analisa dados observacionais de PTAs. As amplitudes dos modos adicionais
+são tratadas como parâmetros fenomenológicos. As simulações usam redes
+pequenas, ruído conhecido e sinal fraco; seus resultados não são
+restrições observacionais. Ao longo do texto, essas limitações são
+discutidas no ponto em que afetam cada conclusão.
+
+\section{Organização}
+
+O Capítulo~\ref{cap:fundamentos} revisa as polarizações na RG e em
+teorias métricas gerais, a gravitação massiva, os limites observacionais
+e a detecção por PTAs. O Capítulo~\ref{cap:polarizacoes} contém a revisão
+do TG: matriz de marés exata, contagem de modos em Visser e em
+Fierz--Pauli, validade do formalismo NP e comparação entre bandas. O
+Capítulo~\ref{cap:pta} leva esses resultados às correlações entre
+pulsares. O Capítulo~\ref{cap:simulacoes} apresenta os experimentos
+sintéticos e o que eles ensinam sobre a capacidade de uma PTA pequena.
+O Capítulo~\ref{cap:conclusoes} responde às questões Q1--Q3 e indica os
+próximos passos. O Apêndice~\ref{ap:convencoes} reúne convenções, e o
+Apêndice~\ref{ap:reproducao} relaciona cada resultado aos programas que o
+produzem.

@@ -1,0 +1,68 @@
+\chapter{Reprodução dos resultados}
+\label{ap:reproducao}
+
+Todos os cálculos estão no repositório do projeto. A
+Tabela~\ref{tab:ap-reproducao} relaciona cada resultado aos programas
+e arquivos que o produzem. Os caminhos são relativos à raiz do
+repositório.
+
+\begin{table}[htbp]
+\centering
+\caption{Resultados e programas correspondentes.}
+\label{tab:ap-reproducao}
+\small
+\begin{tabular}{p{0.36\textwidth}p{0.56\textwidth}}
+\toprule
+Resultado & Programas e dados\\
+\midrule
+Matriz de marés, postos, vínculo escalar, expressões do TG
+(Cap.~\ref{cap:polarizacoes}) &
+\texttt{src/polarizacoes/foundations.py}; \texttt{scripts/reproduzir\_tg.py}
+(19 testes simbólicos); \texttt{tests/test\_polarizacoes.py},
+\texttt{tests/test\_normalizacao.py}\\[1mm]
+Correlações tensoriais com termos dos pulsares; validação por duas rotas
+(Cap.~\ref{cap:pta}) &
+\texttt{src/pta/orf.py}, \texttt{src/pta/response.py};
+\texttt{scripts/validar\_orf.py}, \texttt{scripts/benchmark\_orf.py};
+\texttt{results/C05/}\\[1mm]
+Figuras desta versão e conferência independente das correlações
+apenas-Terra (tensorial e escalar) &
+\texttt{dissertacao\_v2/scripts/figuras.py}\\[1mm]
+Campanha tensorial I (ruído livre) &
+\texttt{scripts/run\_calibration\_campaign.py},
+\texttt{scripts/sintetizar\_calibracao.py}; \texttt{results/C07/}\\[1mm]
+Campanha tensorial II e contrastes condicionais &
+\texttt{scripts/comparar\_populacao\_c13.py},
+\texttt{scripts/contrastes\_condicionais\_c13.py};
+\texttt{results/C11/statistical\_audit.json},
+\texttt{results/C13/conditional\_contrasts/}\\[1mm]
+Campanha escalar, falsas detecções e Fisher &
+\texttt{scripts/gerar\_populacao\_escalar\_c10.py},
+\texttt{scripts/sintetizar\_campanha\_escalar\_c10.py},
+\texttt{scripts/calcular\_fisher\_escalar\_c10.py};
+\texttt{results/C10/population\_synthesis/}\\[1mm]
+Experimento de ajuste de temporização &
+\texttt{scripts/experimento\_timing\_c13.py};
+\texttt{results/C13/timing\_projection/}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Controle do erro numérico}
+
+As posteriores foram calculadas por quadratura determinística na massa
+e, na campanha escalar, também em $\varepsilon$. Não se usou amostragem
+por Monte Carlo. Para cada realização, a posterior foi avaliada com duas
+resoluções, e a diferença entre elas foi propagada como um intervalo
+numérico em cada quantidade derivada, como quantis, coberturas e fatores
+de Bayes. Quando o intervalo numérico não permitia decidir um teste, o
+resultado foi registrado como indeterminado, e a realização não foi
+descartada. As contagens citadas no Capítulo~\ref{cap:simulacoes} são
+os valores nominais. Em todos os casos citados, a conclusão qualitativa
+não depende da resolução numérica. As exceções, como as comparações
+marginalizadas da aproximação de frequência de referência, foram
+declaradas inconclusivas no texto.
+
+As correlações angulares foram aceitas apenas após refinamento
+independente da quadratura angular e do corte multipolar, com tolerância
+absoluta de $10^{-5}$ e relativa de $10^{-3}$.

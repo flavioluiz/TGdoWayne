@@ -12,6 +12,10 @@ Essa leitura é inicial, sem auditoria completa de cada resultado ou parecer for
 
 A revisão bibliográfica foi dirigida por termos e antecedentes selecionados. Não há registro de um levantamento sistemático dos trabalhos que citaram o artigo de 2004 derivado do TG. O agente documentou a mudança de foco para análises estatísticas de sinais de pulsares, mas a pertinência dessa escolha não foi validada por um especialista antes da execução extensa. A [síntese da reavaliação](output/pdf/relatorio_experimento/reavaliacao_especialista.md) separa evidências, avaliações e hipóteses sem reproduzir conversas privadas.
 
+## Nova versão candidata a revisão humana: v2.0.0-rc.1
+
+**24/09/2026:** a dissertação foi reescrita por completo, com base nas críticas à v1.x: [PDF — 60 páginas](output/pdf/v2.0.0-rc.1/dissertacao.pdf) · [fontes, diagnóstico e verificações](dissertacao_v2/README.md). A nova versão volta à pergunta física do TG, os estados de polarização com gráviton massivo, e a leva até o observável de redes de temporização de pulsares. Ela reaproveita os cálculos existentes e reinterpreta as simulações com as limitações declaradas, entre elas o regime pouco informativo sobre a massa. A reescrita foi feita pelo Claude (Opus 5.5) sem nova campanha numérica. **Ainda não passou por revisão especialista.** A v1.1.0 permanece preservada abaixo para comparação.
+
 ## Materiais sobre o experimento
 
 | Material | Acesso | Conteúdo |

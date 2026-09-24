@@ -1,0 +1,101 @@
+\chapter{Convenções e conversões}
+\label{ap:convencoes}
+
+\section{Unidades}
+
+A Tabela~\ref{tab:ap-unidades} relaciona as grandezas em unidades
+naturais, usadas nas derivações, às grandezas físicas. A massa $m_g$ é
+sempre a massa de dispersão; $h=2\pi\hbar$.
+
+\begin{table}[htbp]
+\centering
+\caption{Conversão entre unidades naturais e grandezas físicas.}
+\label{tab:ap-unidades}
+\small
+\begin{tabular}{lll}
+\toprule
+Grandeza & $c=\hbar=1$ & Unidades físicas\\
+\midrule
+Energia de repouso & $m_g$ & $m_gc^2$\\
+Número de onda de massa & $\mu=m_g$ & $\mu=m_gc/\hbar$\\
+Frequência de corte & $f_g=m_g/2\pi$ & $f_g=m_gc^2/h$\\
+Relação de dispersão & $\omega^2=k^2+\mu^2$ & $\omega^2=c^2k^2+(m_gc^2/\hbar)^2$\\
+Massa adimensional & $u=f_gT$ & $m_gc^2=uh/T$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Numericamente, $f_g=2{,}418\times10^{14}\,\mathrm{Hz}\times
+(m_gc^2/\mathrm{eV})$. Para $T=4{,}5$ anos, $h/T=2{,}91\times10^{-23}$~eV;
+para $T=15$ anos, $h/T=8{,}74\times10^{-24}$~eV.
+
+\section{Sinais e curvatura}
+
+Assinatura $(+,-,-,-)$; onda plana $\propto e^{-i\omega t+ikz}$, com
+$q_\mu=(-\omega,0,0,k)$ e $\partial_\mu\to iq_\mu$. O Riemann linearizado é
+dado pela Eq.~\eqref{eq:pol-riemann}. Nessa convenção,
+$R^{\rm TG}_{\alpha\beta\gamma\delta}=-R_{\alpha\beta\gamma\delta}$ em
+relação ao apêndice Maple do TG. Com essa convenção, a equação do
+desvio geodésico, escrita com componentes espaciais euclidianas, é
+$\ddot\xi^i=c^2E_{ij}\xi^j$ com $E_{ij}=R_{0i0j}$; na convenção do TG, o
+sinal se inverte. Postos, razões entre componentes e correlações
+angulares não dependem desse sinal global.
+
+No Capítulo~\ref{cap:pta}, a fase é escrita como
+$e^{i\omega(t-\beta\hat\Omega\cdot\mathbf x/c)}$, conjugada da anterior.
+Isso não altera nenhum resultado físico, mas a conjugação deve ser
+aplicada de modo consistente às correlações cruzadas complexas.
+
+\section{Tétradas}
+
+O apêndice do TG usa a tétrada simétrica
+\begin{equation}
+ l^\mu=\frac{(1,0,0,1)}{\sqrt2},\quad
+ n^\mu=\frac{(1,0,0,-1)}{\sqrt2},\quad
+ m^\mu=\frac{(0,1,i,0)}{\sqrt2},\quad
+ \bar m^\mu=\frac{(0,1,-i,0)}{\sqrt2},
+\end{equation}
+com $l\cdot n=1$ e $m\cdot\bar m=-1$ na assinatura adotada. O corpo do
+TG (eqs.~5.12--5.13) usa $k=\sqrt2\,l$ e $l_{\rm TG}=n/\sqrt2$. Esse
+reescalonamento é um \emph{boost} da tétrada: projeções com dois vetores
+$n$ mudam por um fator dois. Com as mesmas orientações, as expressões
+\eqref{eq:pol-np-tg} correspondem às contrações
+$\Psi_2^{\rm TG}=R(n,l,n,l)/6$, $\Psi_3^{\rm TG}=R(n,l,n,m)/2$,
+$\Psi_4^{\rm TG}=R(n,m,n,m)$ e $\Phi_{22}^{\rm TG}=R(n,\bar m,n,m)$,
+com o sinal $R^{\rm TG}=-R$.
+
+\section{Bases para a helicidade zero}
+
+Sejam $P_{ij}=\delta_{ij}-\Omega_i\Omega_j$ e $L_{ij}=\Omega_i\Omega_j$,
+com $P:P=2$, $L:L=1$ e $P:L=0$. A parte espacial observável da
+helicidade zero é $Q/h_0=(P-2\chi L)/\sqrt3$. A razão entre os
+coeficientes longitudinal e transversal depende da base escolhida:
+\begin{center}
+\small
+\begin{tabular}{llll}
+\toprule
+Convenção & Base transversal & Base longitudinal & Razão\\
+\midrule
+Componentes de maré ($p_l/p_b$) & $E_{11}+E_{22}$ & $E_{33}$ & $-\chi$\\
+Componentes espaciais & $P$ & $L$ & $-2\chi$\\
+Bases de norma dois & $P$ & $\sqrt2L$ & $-\sqrt2\chi$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Uma mudança de base reescala os coeficientes e as correlações parciais
+de modo que a covariância total $\sum_{AB}h_Ah_B^*\Gamma_{AB}$ seja
+invariante. Nenhuma mudança de base transforma dois setores escalares
+independentes no modo vinculado de Fierz--Pauli, pois os termos
+cruzados expressam a coerência de uma única amplitude.
+
+\section{Espectros}
+
+A covariância do campo é
+$\langle\tilde h_A(f,\hat\Omega)\tilde h_{A'}^*(f',\hat\Omega')\rangle
+=\frac{S_A(|f|)}{8\pi}\delta_{AA'}\delta(f-f')\delta^2(\hat\Omega,\hat\Omega')$.
+Com a normalização $\mathcal N_T=3/(8\pi)$ da ORF tensorial, o espectro
+unilateral dos resíduos é
+$S^r_{ab}=\Gamma_{ab}S_h/(6\pi^2f^2)=\Gamma_{ab}h_c^2/(12\pi^2f^3)$, com
+$h_c^2=2fS_h$ \autocite{cordes2025}. Para comparar com Liang e Trodden,
+cujas polarizações circulares têm norma unitária, o coeficiente de
+normalização daquele trabalho deve ser $3/(4\pi)$ \autocite{liang2021}.
